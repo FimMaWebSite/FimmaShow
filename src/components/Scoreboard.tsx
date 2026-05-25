@@ -9,6 +9,9 @@ interface ScoreboardProps {
   lastTeamIndex: number;
   pointsEarned: number;
   onNextRound: () => void;
+  isTournament?: boolean;
+  tournamentRound?: number;
+  isRoundOver?: boolean;
 }
 
 export const Scoreboard: React.FC<ScoreboardProps> = ({
@@ -17,6 +20,9 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
   lastTeamIndex,
   pointsEarned,
   onNextRound,
+  isTournament = false,
+  tournamentRound = 1,
+  isRoundOver = false,
 }) => {
   const handleStartNext = () => {
     playClick();
@@ -28,6 +34,25 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
 
   // Sort teams for overall leaderboard
   const sortedTeams = [...teams].sort((a, b) => b.points - a.points);
+
+  const getRoundName = (round: number) => {
+    switch (round) {
+      case 1: return "Marylin Monroe";
+      case 2: return "9,5 Sekundy";
+      case 3: return "Odwrócone Kalambury";
+      case 4: return "Bomba (Finał)";
+      default: return "";
+    }
+  };
+
+  const getNextRoundName = (round: number) => {
+    switch (round) {
+      case 1: return "Rundy 2: 9,5 Sekundy";
+      case 2: return "Rundy 3: Odwrócone Kalambury";
+      case 3: return "Rundy Finałowej: Bomba! 💣";
+      default: return "";
+    }
+  };
 
   return (
     <div className="flex-container max-w-md mx-auto fade-in" style={{ padding: '36px 12px', minHeight: '85vh', justifyContent: 'center' }}>
@@ -41,7 +66,7 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
       {/* Round Result Title */}
       <div className="flex-container" style={{ textAlign: 'center', marginBottom: '32px', gap: '8px' }}>
         <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-          Koniec rundy!
+          {isTournament ? `Runda ${tournamentRound} z 3: ${getRoundName(tournamentRound)}` : 'Koniec rundy!'}
         </span>
         <h2 style={{ fontSize: '28px', fontWeight: 900, color: 'white', textTransform: 'uppercase' }}>
           Wynik drużyny <span style={{ color: lastTeam.color }}>{lastTeam.name}</span>
@@ -89,17 +114,51 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
 
       {/* Next Player CTA */}
       <div className="flex-container w-full" style={{ gap: '16px' }}>
-        <div style={{ fontSize: '14px', fontWeight: 500, color: 'hsl(var(--text-secondary))' }}>
-          Następnie gra: <span style={{ fontWeight: 800, color: nextTeam.color }}>{nextTeam.name}</span>
-        </div>
-        <button
-          onClick={handleStartNext}
-          className="btn btn-primary w-full"
-          style={{ padding: '16px', fontSize: '15px' }}
-        >
-          DALEJ DO RUNDY
-          <ArrowRight size={18} />
-        </button>
+        {isTournament ? (
+          isRoundOver ? (
+            <div className="flex-container w-full" style={{ gap: '16px' }}>
+              <div style={{ fontSize: '14px', fontWeight: 500, color: 'hsl(var(--text-secondary))', textAlign: 'center' }}>
+                Wszyscy rozegrali turę w tej rundzie!
+              </div>
+              <button
+                onClick={handleStartNext}
+                className="btn btn-primary w-full"
+                style={{ padding: '16px', fontSize: '15px', background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 50%, #ffd700 100%)', border: 'none' }}
+              >
+                PRZEJDŹ DO {getNextRoundName(tournamentRound).toUpperCase()}
+                <ArrowRight size={18} />
+              </button>
+            </div>
+          ) : (
+            <div className="flex-container w-full" style={{ gap: '16px' }}>
+              <div style={{ fontSize: '14px', fontWeight: 500, color: 'hsl(var(--text-secondary))' }}>
+                Następnie gra: <span style={{ fontWeight: 800, color: nextTeam.color }}>{nextTeam.name}</span>
+              </div>
+              <button
+                onClick={handleStartNext}
+                className="btn btn-primary w-full"
+                style={{ padding: '16px', fontSize: '15px' }}
+              >
+                ROZPOCZNIJ TURĘ
+                <ArrowRight size={18} />
+              </button>
+            </div>
+          )
+        ) : (
+          <>
+            <div style={{ fontSize: '14px', fontWeight: 500, color: 'hsl(var(--text-secondary))' }}>
+              Następnie gra: <span style={{ fontWeight: 800, color: nextTeam.color }}>{nextTeam.name}</span>
+            </div>
+            <button
+              onClick={handleStartNext}
+              className="btn btn-primary w-full"
+              style={{ padding: '16px', fontSize: '15px' }}
+            >
+              DALEJ DO RUNDY
+              <ArrowRight size={18} />
+            </button>
+          </>
+        )}
       </div>
     </div>
   );

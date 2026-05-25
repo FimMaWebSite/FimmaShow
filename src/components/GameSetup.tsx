@@ -148,13 +148,17 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   };
 
   const handleStartGame = () => {
-    if (selectedCategories.length === 0) {
+    if (gameMode !== 'TOURNAMENT' && selectedCategories.length === 0) {
       playWrong();
       alert('Wybierz przynajmniej jedną kategorię haseł.');
       return;
     }
     playClick();
-    onStart(teams, { roundTime, pointsToWin, selectedCategories });
+    onStart(teams, { 
+      roundTime: gameMode === 'TOURNAMENT' ? 60 : roundTime, 
+      pointsToWin: gameMode === 'TOURNAMENT' ? 9999 : pointsToWin, 
+      selectedCategories: gameMode === 'TOURNAMENT' ? [] : selectedCategories 
+    });
   };
 
   return (
@@ -234,78 +238,113 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
           </div>
         </div>
 
-        {/* Right Card: Game Settings */}
-        <div className="glass flex-col gap-md">
-          <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
-            <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
-            Zasady Gry
-          </h3>
-
-          {/* Round Time */}
-          <div className="form-group">
-            <label className="form-label">Czas rundy</label>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
-              {(gameMode === 'NINE_SECONDS' 
-                ? [5, 7.5, 9.5, 12, 15] 
-                : gameMode === 'REVERSE_CHARADES' 
-                ? [60, 90, 120, 150, 180] 
-                : [30, 45, 60, 90, 120]
-              ).map((t) => (
-                <button
-                  key={t}
-                  onClick={() => { playClick(); setRoundTime(t); }}
-                  className={`btn ${roundTime === t ? 'btn-primary' : 'btn-secondary'}`}
-                  style={{ padding: '8px 4px', fontSize: '11px', borderRadius: '10px' }}
-                >
-                  {t}s
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Points to Win */}
-          <div className="form-group">
-            <label className="form-label">Punkty do wygranej</label>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
-              {[10, 15, 20, 25, 30].map((pts) => (
-                <button
-                  key={pts}
-                  onClick={() => { playClick(); setPointsToWin(pts); }}
-                  className={`btn ${pointsToWin === pts ? 'btn-primary' : 'btn-secondary'}`}
-                  style={{ padding: '8px 4px', fontSize: '11px', borderRadius: '10px' }}
-                >
-                  {pts}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Categories Selector */}
-          <div className="form-group">
-            <label className="form-label">Kategorie haseł</label>
-            {loading ? (
-              <div style={{ fontSize: '13px', color: 'hsl(var(--text-muted))' }}>Wczytywanie kategorii...</div>
-            ) : categories.length === 0 ? (
-              <div style={{ fontSize: '13px', color: '#ff5c75', fontWeight: 600 }}>Brak haseł w bazie! Dodaj hasła najpierw.</div>
-            ) : (
-              <div className="category-tags-group">
-                {categories.map((cat) => {
-                  const isSelected = selectedCategories.includes(cat);
-                  return (
-                    <button
-                      key={cat}
-                      onClick={() => toggleCategory(cat)}
-                      className={`category-tag-btn ${isSelected ? 'active' : ''}`}
-                    >
-                      {isSelected && <Check size={12} />}
-                      {cat}
-                    </button>
-                  );
-                })}
+        {/* Right Card: Game Settings / Tournament Preview */}
+        {gameMode === 'TOURNAMENT' ? (
+          <div className="glass flex-col gap-md">
+            <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
+              <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
+              Przebieg Teleturnieju
+            </h3>
+            
+            <div className="flex-col gap-sm" style={{ marginTop: '8px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--primary))' }}>RUNDA 1</span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>Marylin Monroe (Tabu)</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Każda drużyna ma 60 sekund na odgadnięcie postaci z tabu.</span>
               </div>
-            )}
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: '#f97316' }}>RUNDA 2</span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>9,5 Sekundy</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Mistrz Gry czyta pytania, a drużyna ma 9.5 sekundy na szybkie odpowiedzi.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: '#8b5cf6' }}>RUNDA 3</span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>Odwrócone Kalambury</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Pokazywanie haseł-czynności w formie pantomimy (czas: 120s).</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'linear-gradient(135deg, rgba(255, 60, 0, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%)', border: '1px solid rgba(255, 60, 0, 0.2)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>RUNDA FINAŁOWA</span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>Bomba! 💣</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Opisywanie haseł bez słów zakazanych i przekazywanie tykającej bomby. Kto trzyma bombę podczas wybuchu, ten przegrywa!</span>
+              </div>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="glass flex-col gap-md">
+            <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
+              <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
+              Zasady Gry
+            </h3>
+
+            {/* Round Time */}
+            <div className="form-group">
+              <label className="form-label">Czas rundy</label>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+                {(gameMode === 'NINE_SECONDS' 
+                  ? [5, 7.5, 9.5, 12, 15] 
+                  : gameMode === 'REVERSE_CHARADES' 
+                  ? [60, 90, 120, 150, 180] 
+                  : [30, 45, 60, 90, 120]
+                ).map((t) => (
+                  <button
+                    key={t}
+                    onClick={() => { playClick(); setRoundTime(t); }}
+                    className={`btn ${roundTime === t ? 'btn-primary' : 'btn-secondary'}`}
+                    style={{ padding: '8px 4px', fontSize: '11px', borderRadius: '10px' }}
+                  >
+                    {t}s
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Points to Win */}
+            <div className="form-group">
+              <label className="form-label">Punkty do wygranej</label>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+                {[10, 15, 20, 25, 30].map((pts) => (
+                  <button
+                    key={pts}
+                    onClick={() => { playClick(); setPointsToWin(pts); }}
+                    className={`btn ${pointsToWin === pts ? 'btn-primary' : 'btn-secondary'}`}
+                    style={{ padding: '8px 4px', fontSize: '11px', borderRadius: '10px' }}
+                  >
+                    {pts}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Categories Selector */}
+            <div className="form-group">
+              <label className="form-label">Kategorie haseł</label>
+              {loading ? (
+                <div style={{ fontSize: '13px', color: 'hsl(var(--text-muted))' }}>Wczytywanie kategorii...</div>
+              ) : categories.length === 0 ? (
+                <div style={{ fontSize: '13px', color: '#ff5c75', fontWeight: 600 }}>Brak haseł w bazie! Dodaj hasła najpierw.</div>
+              ) : (
+                <div className="category-tags-group">
+                  {categories.map((cat) => {
+                    const isSelected = selectedCategories.includes(cat);
+                    return (
+                      <button
+                        key={cat}
+                        onClick={() => toggleCategory(cat)}
+                        className={`category-tag-btn ${isSelected ? 'active' : ''}`}
+                      >
+                        {isSelected && <Check size={12} />}
+                        {cat}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       <button

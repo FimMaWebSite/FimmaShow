@@ -10,7 +10,7 @@ import { Tv, Sparkles } from 'lucide-react';
 import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES } from './data/defaultData';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
-export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES';
+export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB';
 
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
@@ -26,6 +26,21 @@ const App: React.FC = () => {
   const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
   const [lastTeamIndex, setLastTeamIndex] = useState(0);
   const [lastPointsEarned, setLastPointsEarned] = useState(0);
+
+  // Tournament specific states
+  const [tournamentRound, setTournamentRound] = useState(1);
+  const [tournamentTurnsPlayedInRound, setTournamentTurnsPlayedInRound] = useState(0);
+
+  // Helper to get active game mode inside tournament
+  const getActiveGameMode = (): GameMode => {
+    if (selectedGame === 'TOURNAMENT') {
+      if (tournamentRound === 1) return 'MARYLIN_MONROE';
+      if (tournamentRound === 2) return 'NINE_SECONDS';
+      if (tournamentRound === 3) return 'REVERSE_CHARADES';
+      if (tournamentRound === 4) return 'BOMB';
+    }
+    return selectedGame;
+  };
 
   // Initialize localStorage if empty
   const initLocalDb = () => {
@@ -59,6 +74,10 @@ const App: React.FC = () => {
       endpoint = '/api/reverse-charades';
       localKey = 'fimma_reverse_charades';
       defaultBackup = DEFAULT_REVERSE_CHARADES;
+    } else if (game === 'BOMB') {
+      endpoint = '/api/words';
+      localKey = 'fimma_words';
+      defaultBackup = DEFAULT_WORDS;
     }
 
     try {
@@ -84,61 +103,147 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
-    loadGameData(selectedGame);
+    if (selectedGame !== 'TOURNAMENT') {
+      loadGameData(selectedGame);
+    }
   }, [selectedGame]);
 
   const handleStartSetup = (game: GameMode) => {
     setSelectedGame(game);
-    loadGameData(game);
+    if (game === 'TOURNAMENT') {
+      setTournamentRound(1);
+      setTournamentTurnsPlayedInRound(0);
+      loadGameData('MARYLIN_MONROE');
+    } else {
+      loadGameData(game);
+    }
     setView('SETUP');
   };
 
   const handleStartGame = (teamsSetup: Team[], gameSettings: GameSettings) => {
     setTeams(teamsSetup);
-    setSettings(gameSettings);
+    if (selectedGame === 'TOURNAMENT') {
+      setSettings({
+        roundTime: 60, // Runda 1 (Marilyn Monroe) is 60s
+        pointsToWin: 9999, // Tournament continues till the end
+        selectedCategories: []
+      });
+      setTournamentRound(1);
+      setTournamentTurnsPlayedInRound(0);
+    } else {
+      setSettings(gameSettings);
+    }
     setCurrentTeamIndex(0);
     setView('GAMEPLAY');
   };
 
-  const handleRoundEnd = (pointsEarned: number) => {
+  const handleRoundEnd = (pointsEarned: number, loserTeamId?: number) => {
     setLastPointsEarned(pointsEarned);
     setLastTeamIndex(currentTeamIndex);
 
-    // Update team score
-    const updatedTeams = teams.map((team, idx) => {
-      if (idx === currentTeamIndex) {
-        const newScore = Math.max(0, team.points + pointsEarned); // score can't go below 0
-        return { ...team, points: newScore };
+    let updatedTeams = [...teams];
+
+    if (selectedGame === 'TOURNAMENT') {
+      if (loserTeamId !== undefined) {
+        // Bomb exploded - deduct points from holding team
+        updatedTeams = teams.map((team) => {
+          if (team.id === loserTeamId) {
+            return { ...team, points: Math.max(0, team.points - 3) };
+          }
+          return team;
+        });
+        setTeams(updatedTeams);
+        // Show winner screen (final round ends the game)
+        setView('WINNER');
+        return;
+      } else {
+        // Normal tournament round (Rounds 1-3)
+        updatedTeams = teams.map((team, idx) => {
+          if (idx === currentTeamIndex) {
+            return { ...team, points: Math.max(0, team.points + pointsEarned) };
+          }
+          return team;
+        });
+        setTeams(updatedTeams);
+
+        const nextTurnsPlayed = tournamentTurnsPlayedInRound + 1;
+        setTournamentTurnsPlayedInRound(nextTurnsPlayed);
+
+        const nextIdx = (currentTeamIndex + 1) % teams.length;
+        setCurrentTeamIndex(nextIdx);
+        setView('SCOREBOARD');
       }
-      return team;
-    });
-
-    setTeams(updatedTeams);
-
-    // Check if team reached the winning condition
-    const currentTeamScore = updatedTeams[currentTeamIndex].points;
-    const isWinnerFound = currentTeamScore >= settings.pointsToWin;
-
-    // Determine who plays next (round-robin)
-    const nextIdx = (currentTeamIndex + 1) % teams.length;
-    setCurrentTeamIndex(nextIdx);
-
-    if (isWinnerFound) {
-      setView('WINNER');
     } else {
-      setView('SCOREBOARD');
+      // Normal single game mode
+      updatedTeams = teams.map((team, idx) => {
+        if (idx === currentTeamIndex) {
+          const newScore = Math.max(0, team.points + pointsEarned);
+          return { ...team, points: newScore };
+        }
+        return team;
+      });
+
+      setTeams(updatedTeams);
+
+      const currentTeamScore = updatedTeams[currentTeamIndex].points;
+      const isWinnerFound = currentTeamScore >= settings.pointsToWin;
+
+      const nextIdx = (currentTeamIndex + 1) % teams.length;
+      setCurrentTeamIndex(nextIdx);
+
+      if (isWinnerFound) {
+        setView('WINNER');
+      } else {
+        setView('SCOREBOARD');
+      }
     }
   };
 
   const handleNextRound = () => {
+    if (selectedGame === 'TOURNAMENT' && tournamentTurnsPlayedInRound === teams.length) {
+      // Advance to the next round of the tournament
+      const nextRound = tournamentRound + 1;
+      setTournamentRound(nextRound);
+      setTournamentTurnsPlayedInRound(0);
+      setCurrentTeamIndex(0);
+
+      let nextRoundTime = 60;
+      let nextMode: GameMode = 'MARYLIN_MONROE';
+      if (nextRound === 2) {
+        nextRoundTime = 9.5;
+        nextMode = 'NINE_SECONDS';
+      } else if (nextRound === 3) {
+        nextRoundTime = 120;
+        nextMode = 'REVERSE_CHARADES';
+      } else if (nextRound === 4) {
+        nextRoundTime = 60;
+        nextMode = 'BOMB';
+      }
+
+      setSettings(prev => ({
+        ...prev,
+        roundTime: nextRoundTime
+      }));
+
+      loadGameData(nextMode);
+    }
     setView('GAMEPLAY');
   };
 
   const handleRestart = () => {
-    // Reset points
     const resetTeams = teams.map(t => ({ ...t, points: 0 }));
     setTeams(resetTeams);
     setCurrentTeamIndex(0);
+    if (selectedGame === 'TOURNAMENT') {
+      setTournamentRound(1);
+      setTournamentTurnsPlayedInRound(0);
+      setSettings({
+        roundTime: 60,
+        pointsToWin: 9999,
+        selectedCategories: []
+      });
+      loadGameData('MARYLIN_MONROE');
+    }
     setView('GAMEPLAY');
   };
 
@@ -196,7 +301,8 @@ const App: React.FC = () => {
             availableWords={availableWords}
             onRoundEnd={handleRoundEnd}
             onExitGame={handleHome}
-            gameMode={selectedGame}
+            gameMode={getActiveGameMode()}
+            teams={teams}
           />
         )}
         {view === 'SCOREBOARD' && (
@@ -206,6 +312,9 @@ const App: React.FC = () => {
             lastTeamIndex={lastTeamIndex}
             pointsEarned={lastPointsEarned}
             onNextRound={handleNextRound}
+            isTournament={selectedGame === 'TOURNAMENT'}
+            tournamentRound={tournamentRound}
+            isRoundOver={tournamentTurnsPlayedInRound === teams.length}
           />
         )}
         {view === 'WINNER' && (

@@ -108,3 +108,54 @@ export const playBuzzer = () => {
     console.error('Audio playback failed', e);
   }
 };
+
+export const playExplosion = () => {
+  try {
+    const ctx = getAudioContext();
+    const now = ctx.currentTime;
+    
+    // Low rumble oscillator
+    const osc = ctx.createOscillator();
+    const gainOsc = ctx.createGain();
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(100, now);
+    osc.frequency.linearRampToValueAtTime(10, now + 1.2);
+    
+    gainOsc.gain.setValueAtTime(0.35, now);
+    gainOsc.gain.exponentialRampToValueAtTime(0.0001, now + 1.2);
+    
+    osc.connect(gainOsc);
+    gainOsc.connect(ctx.destination);
+    osc.start(now);
+    osc.stop(now + 1.2);
+    
+    // White noise / crash sound
+    const bufferSize = ctx.sampleRate * 1.5; 
+    const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) {
+      data[i] = Math.random() * 2 - 1;
+    }
+    
+    const noiseNode = ctx.createBufferSource();
+    noiseNode.buffer = buffer;
+    
+    const filter = ctx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.frequency.setValueAtTime(800, now);
+    filter.frequency.exponentialRampToValueAtTime(50, now + 1.5);
+    
+    const gainNoise = ctx.createGain();
+    gainNoise.gain.setValueAtTime(0.3, now);
+    gainNoise.gain.exponentialRampToValueAtTime(0.0001, now + 1.5);
+    
+    noiseNode.connect(filter);
+    filter.connect(gainNoise);
+    gainNoise.connect(ctx.destination);
+    
+    noiseNode.start(now);
+    noiseNode.stop(now + 1.5);
+  } catch (e) {
+    console.error('Audio playback failed', e);
+  }
+};

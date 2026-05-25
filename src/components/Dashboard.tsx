@@ -57,6 +57,55 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
         </p>
       </div>
 
+      {/* Tournament Banner / Card */}
+      <div className="glass glass-interactive portal-card w-full" style={{
+        position: 'relative',
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, rgba(255, 60, 0, 0.08) 0%, rgba(255, 215, 0, 0.08) 100%)',
+        border: '2px solid hsl(var(--primary))',
+        boxShadow: '0 0 25px rgba(255, 60, 0, 0.2)',
+        marginBottom: '32px',
+        padding: '28px',
+        minHeight: 'auto'
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div className="badge-active" style={{
+            background: 'linear-gradient(90deg, #ff3c00, #ffd700)',
+            color: 'white',
+            fontWeight: 900,
+            letterSpacing: '0.1em',
+            boxShadow: '0 4px 10px rgba(255, 60, 0, 0.3)'
+          }}>
+            TRYB TELETURNIEJU (POLECANY)
+          </div>
+          <h2 style={{ fontSize: '26px', fontWeight: 900, color: 'white', textTransform: 'uppercase', marginTop: '8px' }}>
+            WIELKI SHOW: FIMMA SHOW
+          </h2>
+          <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6', maxWidth: '600px' }}>
+            Rozegraj pełny turniej składający się z 3 rund eliminacyjnych (Marylin Monroe, 9,5 Sekundy, Odwrócone Kalambury) i weź udział w ekscytującym finale z wybuchową Bombą!
+          </p>
+        </div>
+        <button
+          onClick={() => {
+            playClick();
+            onStartGame('TOURNAMENT');
+          }}
+          className="btn btn-primary"
+          style={{
+            alignSelf: 'flex-start',
+            marginTop: '20px',
+            padding: '12px 28px',
+            fontSize: '15px',
+            background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 50%, #ffd700 100%)',
+            border: 'none',
+            boxShadow: '0 6px 18px rgba(255, 60, 0, 0.3)',
+          }}
+        >
+          <Play size={16} fill="currentColor" />
+          ROZPOCZNIJ TELETURNIEJ
+        </button>
+      </div>
+
       {/* Game Selection Grid */}
       <div className="grid-layout grid-2 gap-lg w-full" style={{ marginBottom: '48px' }}>
         {/* Active Game: Marylin Monroe */}
