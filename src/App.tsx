@@ -7,6 +7,8 @@ import { Scoreboard } from './components/Scoreboard';
 import { WinnerScreen } from './components/WinnerScreen';
 import { Tv, Sparkles } from 'lucide-react';
 
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES } from './data/defaultData';
+
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
 export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES';
 
@@ -25,22 +27,59 @@ const App: React.FC = () => {
   const [lastTeamIndex, setLastTeamIndex] = useState(0);
   const [lastPointsEarned, setLastPointsEarned] = useState(0);
 
+  // Initialize localStorage if empty
+  const initLocalDb = () => {
+    if (!localStorage.getItem('fimma_words')) {
+      localStorage.setItem('fimma_words', JSON.stringify(DEFAULT_WORDS));
+    }
+    if (!localStorage.getItem('fimma_nine_seconds')) {
+      localStorage.setItem('fimma_nine_seconds', JSON.stringify(DEFAULT_NINE_SECONDS));
+    }
+    if (!localStorage.getItem('fimma_reverse_charades')) {
+      localStorage.setItem('fimma_reverse_charades', JSON.stringify(DEFAULT_REVERSE_CHARADES));
+    }
+  };
+
+  useEffect(() => {
+    initLocalDb();
+  }, []);
+
   // Fetch database items based on selected game
   const loadGameData = async (game: GameMode) => {
+    initLocalDb();
+    let endpoint = '/api/words';
+    let localKey = 'fimma_words';
+    let defaultBackup: any[] = DEFAULT_WORDS;
+
+    if (game === 'NINE_SECONDS') {
+      endpoint = '/api/nine-seconds';
+      localKey = 'fimma_nine_seconds';
+      defaultBackup = DEFAULT_NINE_SECONDS;
+    } else if (game === 'REVERSE_CHARADES') {
+      endpoint = '/api/reverse-charades';
+      localKey = 'fimma_reverse_charades';
+      defaultBackup = DEFAULT_REVERSE_CHARADES;
+    }
+
     try {
-      let endpoint = '/api/words';
-      if (game === 'NINE_SECONDS') {
-        endpoint = '/api/nine-seconds';
-      } else if (game === 'REVERSE_CHARADES') {
-        endpoint = '/api/reverse-charades';
-      }
       const res = await fetch(endpoint);
-      if (res.ok) {
+      const contentType = res.headers.get('content-type');
+      if (res.ok && contentType && contentType.includes('application/json')) {
         const data = await res.json();
         setAvailableWords(data);
+        localStorage.setItem(localKey, JSON.stringify(data));
+        return;
       }
     } catch (err) {
-      console.error('Błąd połączenia z serwerem API:', err);
+      console.warn('API error, falling back to localStorage:', err);
+    }
+
+    // Fallback to local storage
+    const localData = localStorage.getItem(localKey);
+    if (localData) {
+      setAvailableWords(JSON.parse(localData));
+    } else {
+      setAvailableWords(defaultBackup);
     }
   };
 

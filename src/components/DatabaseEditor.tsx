@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer, Users } from 'lucide-react';
 import { playClick, playCorrect, playWrong } from '../utils/audio';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES } from '../data/defaultData';
 
 export interface WordData {
   id: string;
@@ -37,28 +38,46 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   const [errorMsg, setErrorMsg] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
 
-  // Fetch from backend
+  // Fetch from backend (falls back to localStorage)
   const fetchItems = async () => {
+    let endpoint = '/api/words';
+    let localKey = 'fimma_words';
+    let defaultBackup: any[] = DEFAULT_WORDS;
+
+    if (activeTab === 'NINE_SECONDS') {
+      endpoint = '/api/nine-seconds';
+      localKey = 'fimma_nine_seconds';
+      defaultBackup = DEFAULT_NINE_SECONDS;
+    } else if (activeTab === 'REVERSE_CHARADES') {
+      endpoint = '/api/reverse-charades';
+      localKey = 'fimma_reverse_charades';
+      defaultBackup = DEFAULT_REVERSE_CHARADES;
+    }
+
     try {
       setLoading(true);
-      let endpoint = '/api/words';
-      if (activeTab === 'NINE_SECONDS') {
-        endpoint = '/api/nine-seconds';
-      } else if (activeTab === 'REVERSE_CHARADES') {
-        endpoint = '/api/reverse-charades';
-      }
       const res = await fetch(endpoint);
-      if (res.ok) {
+      const contentType = res.headers.get('content-type');
+      if (res.ok && contentType && contentType.includes('application/json')) {
         const data = await res.json();
         setItems(data);
-      } else {
-        console.error('Błąd pobierania danych');
+        localStorage.setItem(localKey, JSON.stringify(data));
+        setLoading(false);
+        return;
       }
     } catch (err) {
-      console.error('Błąd połączenia z serwerem:', err);
-    } finally {
-      setLoading(false);
+      console.warn('API error in DB editor, using localStorage:', err);
     }
+
+    // Fallback to local storage
+    const localData = localStorage.getItem(localKey);
+    if (localData) {
+      setItems(JSON.parse(localData));
+    } else {
+      setItems(defaultBackup);
+      localStorage.setItem(localKey, JSON.stringify(defaultBackup));
+    }
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -124,24 +143,58 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       payload.question = wordInput.trim();
     }
 
+    let baseEndpoint = '/api/words';
+    let localKey = 'fimma_words';
+    let defaultBackup: any[] = DEFAULT_WORDS;
+
+    if (activeTab === 'NINE_SECONDS') {
+      baseEndpoint = '/api/nine-seconds';
+      localKey = 'fimma_nine_seconds';
+      defaultBackup = DEFAULT_NINE_SECONDS;
+    } else if (activeTab === 'REVERSE_CHARADES') {
+      baseEndpoint = '/api/reverse-charades';
+      localKey = 'fimma_reverse_charades';
+      defaultBackup = DEFAULT_REVERSE_CHARADES;
+    }
+
+    const saveLocally = () => {
+      const localData = localStorage.getItem(localKey);
+      let list = localData ? JSON.parse(localData) : [...defaultBackup];
+      if (isEditing) {
+        // Edit existing
+        list = list.map((item: any) => {
+          if (item.id === isEditing) {
+            return {
+              ...item,
+              category: payload.category,
+              difficulty: payload.difficulty,
+              word: payload.word,
+              forbidden: payload.forbidden,
+              question: payload.question
+            };
+          }
+          return item;
+        });
+      } else {
+        // Add new
+        const newItem = {
+          id: Date.now().toString(),
+          ...payload
+        };
+        list.push(newItem);
+      }
+      localStorage.setItem(localKey, JSON.stringify(list));
+    };
+
     try {
       let res;
-      let baseEndpoint = '/api/words';
-      if (activeTab === 'NINE_SECONDS') {
-        baseEndpoint = '/api/nine-seconds';
-      } else if (activeTab === 'REVERSE_CHARADES') {
-        baseEndpoint = '/api/reverse-charades';
-      }
-
       if (isEditing) {
-        // PUT Request
         res = await fetch(`${baseEndpoint}/${isEditing}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
       } else {
-        // POST Request
         res = await fetch(baseEndpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -149,22 +202,26 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         });
       }
 
-      if (res.ok) {
+      const contentType = res.headers.get('content-type');
+      if (res.ok && contentType && contentType.includes('application/json')) {
         playCorrect();
         setSuccessMsg(isEditing ? 'Pomyślnie zaktualizowano!' : 'Pomyślnie dodano do bazy!');
         resetForm();
         fetchItems();
         setTimeout(() => setSuccessMsg(''), 3000);
-      } else {
-        const errData = await res.json();
-        setErrorMsg(errData.error || 'Wystąpił błąd zapisu.');
-        playWrong();
+        return;
       }
     } catch (err) {
-      setErrorMsg('Błąd połączenia z serwerem.');
-      playWrong();
-      console.error(err);
+      console.warn('Backend unavailable, falling back to localStorage save:', err);
     }
+
+    // Save to localStorage directly (offline fallback)
+    saveLocally();
+    playCorrect();
+    setSuccessMsg(isEditing ? 'Zaktualizowano lokalnie (Tryb offline)!' : 'Dodano lokalnie (Tryb offline)!');
+    resetForm();
+    fetchItems();
+    setTimeout(() => setSuccessMsg(''), 3000);
   };
 
   const handleEdit = (item: any) => {
@@ -182,7 +239,6 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     }
     setCategoryInput(item.category);
     setDifficultyInput(item.difficulty);
-    // Scroll to form
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -196,13 +252,22 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       
     if (!window.confirm(confirmMsg)) return;
     playClick();
+
+    let baseEndpoint = '/api/words';
+    let localKey = 'fimma_words';
+    let defaultBackup: any[] = DEFAULT_WORDS;
+
+    if (activeTab === 'NINE_SECONDS') {
+      baseEndpoint = '/api/nine-seconds';
+      localKey = 'fimma_nine_seconds';
+      defaultBackup = DEFAULT_NINE_SECONDS;
+    } else if (activeTab === 'REVERSE_CHARADES') {
+      baseEndpoint = '/api/reverse-charades';
+      localKey = 'fimma_reverse_charades';
+      defaultBackup = DEFAULT_REVERSE_CHARADES;
+    }
+
     try {
-      let baseEndpoint = '/api/words';
-      if (activeTab === 'NINE_SECONDS') {
-        baseEndpoint = '/api/nine-seconds';
-      } else if (activeTab === 'REVERSE_CHARADES') {
-        baseEndpoint = '/api/reverse-charades';
-      }
       const res = await fetch(`${baseEndpoint}/${id}`, {
         method: 'DELETE'
       });
@@ -210,14 +275,21 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         setSuccessMsg('Usunięto pomyślnie.');
         fetchItems();
         setTimeout(() => setSuccessMsg(''), 3000);
-      } else {
-        playWrong();
-        console.error('Błąd usuwania');
+        return;
       }
     } catch (err) {
-      playWrong();
-      console.error(err);
+      console.warn('Backend unavailable, falling back to localStorage delete:', err);
     }
+
+    // Delete locally (offline fallback)
+    const localData = localStorage.getItem(localKey);
+    let list = localData ? JSON.parse(localData) : [...defaultBackup];
+    list = list.filter((item: any) => item.id !== id);
+    localStorage.setItem(localKey, JSON.stringify(list));
+    
+    setSuccessMsg('Usunięto lokalnie (Tryb offline).');
+    fetchItems();
+    setTimeout(() => setSuccessMsg(''), 3000);
   };
 
   // Get unique categories for filtering
