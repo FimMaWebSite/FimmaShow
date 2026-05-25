@@ -1,0 +1,261 @@
+[
+  {
+    "id": "1",
+    "word": "Marylin Monroe",
+    "forbidden": ["aktorka", "ameryka", "blondynka"],
+    "category": "Popkultura",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "2",
+    "word": "Adam Małysz",
+    "forbidden": ["skoki", "wąsy", "Wisła"],
+    "category": "Polska",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "3",
+    "word": "Harry Potter",
+    "forbidden": ["magia", "blizna", "okulary"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "4",
+    "word": "Robert Lewandowski",
+    "forbidden": ["piłka", "napastnik", "bramka"],
+    "category": "Polska",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "5",
+    "word": "Donald Trump",
+    "forbidden": ["prezydent", "USA", "włosy"],
+    "category": "Ludzie",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "6",
+    "word": "Kopciuszek",
+    "forbidden": ["pantofelek", "bal", "dynia"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "7",
+    "word": "Sherlock Holmes",
+    "forbidden": ["detektyw", "lupa", "Watson"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "8",
+    "word": "Wieża Eiffla",
+    "forbidden": ["Paryż", "Francja", "metalowa"],
+    "category": "Popkultura",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "9",
+    "word": "Albert Einstein",
+    "forbidden": ["fizyka", "teoria", "względność"],
+    "category": "Ludzie",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "10",
+    "word": "Michael Jackson",
+    "forbidden": ["piosenkarz", "taniec", "moonwalk"],
+    "category": "Popkultura",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "11",
+    "word": "Shrek",
+    "forbidden": ["ogr", "bagno", "osioł"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "12",
+    "word": "Mikołaj Kopernik",
+    "forbidden": ["słońce", "ziemia", "wstrzymał"],
+    "category": "Polska",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "13",
+    "word": "Wielki Mur Chiński",
+    "forbidden": ["kosmos", "Chiny", "budowla"],
+    "category": "Popkultura",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "14",
+    "word": "Geralt z Rivii",
+    "forbidden": ["wiedźmin", "potwory", "miecze"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "15",
+    "word": "Steve Jobs",
+    "forbidden": ["Apple", "telefon", "prezentacja"],
+    "category": "Ludzie",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "16",
+    "word": "Juliusz Cezar",
+    "forbidden": ["Rzym", "cesarz", "Brutus"],
+    "category": "Historia",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "17",
+    "word": "Leonardo da Vinci",
+    "forbidden": ["malarz", "Mona Lisa", "renesans"],
+    "category": "Historia",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "18",
+    "word": "Kubuś Puchatek",
+    "forbidden": ["miód", "las", "Prosiaczek"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "19",
+    "word": "Winston Churchill",
+    "forbidden": ["brytyjski", "wojna", "cygaro"],
+    "category": "Historia",
+    "difficulty": "Trudny"
+  },
+  {
+    "id": "20",
+    "word": "Napoleon Bonaparte",
+    "forbidden": ["Francja", "bitwa", "niski"],
+    "category": "Historia",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "21",
+    "word": "Kleopatra",
+    "forbidden": ["Egipt", "królowa", "Nil"],
+    "category": "Historia",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "22",
+    "word": "Elvis Presley",
+    "forbidden": ["król", "rock", "gitara"],
+    "category": "Popkultura",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "23",
+    "word": "Bill Gates",
+    "forbidden": ["Microsoft", "bogaty", "system"],
+    "category": "Ludzie",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "24",
+    "word": "Maria Skłodowska-Curie",
+    "forbidden": ["chemia", "nobel", "rad"],
+    "category": "Polska",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "25",
+    "word": "Freddie Mercury",
+    "forbidden": ["Queen", "wąsy", "wokalista"],
+    "category": "Popkultura",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "26",
+    "word": "Cristiano Ronaldo",
+    "forbidden": ["CR7", "Portugalia", "piłkarz"],
+    "category": "Popkultura",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "27",
+    "word": "Spider-Man",
+    "forbidden": ["pająk", "sieć", "bohater"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "28",
+    "word": "Batman",
+    "forbidden": ["nietoperz", "Gotham", "Bruce"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "29",
+    "word": "Indiana Jones",
+    "forbidden": ["bicz", "kapelusz", "archeolog"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "30",
+    "word": "Myszka Miki",
+    "forbidden": ["Disney", "uszy", "kreskówka"],
+    "category": "Postacie Fikcyjne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "31",
+    "word": "Jan Paweł II",
+    "forbidden": ["papież", "Rzym", "Polak"],
+    "category": "Polska",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "32",
+    "word": "Lech Wałęsa",
+    "forbidden": ["Solidarność", "prezydent", "stocznia"],
+    "category": "Polska",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "33",
+    "word": "Krystyna Czubówna",
+    "forbidden": ["lektor", "przyroda", "głos"],
+    "category": "Polska",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "34",
+    "word": "Tadeusz Kościuszko",
+    "forbidden": ["powstanie", "generał", "insurekcja"],
+    "category": "Polska",
+    "difficulty": "Trudny"
+  },
+  {
+    "id": "35",
+    "word": "Czesław Niemen",
+    "forbidden": ["piosenkarz", "dziwny jest", "czesław"],
+    "category": "Polska",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "36",
+    "word": "Wisława Szymborska",
+    "forbidden": ["nobel", "poezja", "wiersze"],
+    "category": "Polska",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "37",
+    "word": "Fryderyk Chopin",
+    "forbidden": ["pianino", "kompozytor", "Żelazowa"],
+    "category": "Polska",
+    "difficulty": "Średni"
+  }
+]
