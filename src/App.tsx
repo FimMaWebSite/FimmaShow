@@ -44,6 +44,15 @@ const App: React.FC = () => {
 
   // Initialize localStorage if empty
   const initLocalDb = () => {
+    const oldNineSec = localStorage.getItem('fimma_nine_seconds');
+    if (oldNineSec && oldNineSec.includes('Wymień 3')) {
+      localStorage.removeItem('fimma_nine_seconds');
+    }
+    const oldCharades = localStorage.getItem('fimma_reverse_charades');
+    if (oldCharades && oldCharades.includes('Picie gorącej kawy')) {
+      localStorage.removeItem('fimma_reverse_charades');
+    }
+
     if (!localStorage.getItem('fimma_words')) {
       localStorage.setItem('fimma_words', JSON.stringify(DEFAULT_WORDS));
     }

@@ -263,61 +263,61 @@ export const DEFAULT_WORDS = [
 export const DEFAULT_NINE_SECONDS = [
   {
     "id": "q1",
-    "question": "Wymień 3 państwa graniczące z Polską",
+    "question": "Wymień państwa graniczące z Polską",
     "category": "Geografia",
     "difficulty": "Łatwy"
   },
   {
     "id": "q2",
-    "question": "Wymień 3 marki niemieckich samochodów",
+    "question": "Wymień marki niemieckich samochodów",
     "category": "Motoryzacja",
     "difficulty": "Łatwy"
   },
   {
     "id": "q3",
-    "question": "Wymień 3 owoce cytrusowe",
+    "question": "Wymień owoce cytrusowe",
     "category": "Jedzenie",
     "difficulty": "Łatwy"
   },
   {
     "id": "q4",
-    "question": "Wymień 3 stolice europejskie",
+    "question": "Wymień stolice europejskie",
     "category": "Geografia",
     "difficulty": "Łatwy"
   },
   {
     "id": "q5",
-    "question": "Wymień 3 polskie rzeki",
+    "question": "Wymień polskie rzeki",
     "category": "Polska",
     "difficulty": "Łatwy"
   },
   {
     "id": "q6",
-    "question": "Wymień 3 dyscypliny sportów zimowych",
+    "question": "Wymień dyscypliny sportów zimowych",
     "category": "Sport",
     "difficulty": "Łatwy"
   },
   {
     "id": "q7",
-    "question": "Wymień 3 części przygód Harry'ego Pottera",
+    "question": "Wymień części przygód Harry'ego Pottera",
     "category": "Popkultura",
     "difficulty": "Łatwy"
   },
   {
     "id": "q8",
-    "question": "Wymień 3 planety Układu Słonecznego",
+    "question": "Wymień planety Układu Słonecznego",
     "category": "Nauka",
     "difficulty": "Łatwy"
   },
   {
     "id": "q9",
-    "question": "Wymień 3 ssaki morskie",
+    "question": "Wymień ssaki morskie",
     "category": "Przyroda",
     "difficulty": "Łatwy"
   },
   {
     "id": "q10",
-    "question": "Wymień 3 pasma górskie w Polsce",
+    "question": "Wymień pasma górskie w Polsce",
     "category": "Polska",
     "difficulty": "Łatwy"
   }
