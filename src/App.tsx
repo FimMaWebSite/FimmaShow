@@ -7,7 +7,7 @@ import { Scoreboard } from './components/Scoreboard';
 import { WinnerScreen } from './components/WinnerScreen';
 import { Tv, Sparkles } from 'lucide-react';
 
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES } from './data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS } from './data/defaultData';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
 export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB';
@@ -53,6 +53,9 @@ const App: React.FC = () => {
     if (!localStorage.getItem('fimma_reverse_charades')) {
       localStorage.setItem('fimma_reverse_charades', JSON.stringify(DEFAULT_REVERSE_CHARADES));
     }
+    if (!localStorage.getItem('fimma_bomb_words')) {
+      localStorage.setItem('fimma_bomb_words', JSON.stringify(DEFAULT_BOMB_WORDS));
+    }
   };
 
   useEffect(() => {
@@ -75,9 +78,9 @@ const App: React.FC = () => {
       localKey = 'fimma_reverse_charades';
       defaultBackup = DEFAULT_REVERSE_CHARADES;
     } else if (game === 'BOMB') {
-      endpoint = '/api/words';
-      localKey = 'fimma_words';
-      defaultBackup = DEFAULT_WORDS;
+      endpoint = '/api/bomb-words';
+      localKey = 'fimma_bomb_words';
+      defaultBackup = DEFAULT_BOMB_WORDS;
     }
 
     try {
@@ -200,7 +203,7 @@ const App: React.FC = () => {
   };
 
   const handleNextRound = () => {
-    if (selectedGame === 'TOURNAMENT' && tournamentTurnsPlayedInRound === teams.length) {
+    if (selectedGame === 'TOURNAMENT' && tournamentTurnsPlayedInRound === teams.length * 2) {
       // Advance to the next round of the tournament
       const nextRound = tournamentRound + 1;
       setTournamentRound(nextRound);
@@ -314,7 +317,7 @@ const App: React.FC = () => {
             onNextRound={handleNextRound}
             isTournament={selectedGame === 'TOURNAMENT'}
             tournamentRound={tournamentRound}
-            isRoundOver={tournamentTurnsPlayedInRound === teams.length}
+            isRoundOver={tournamentTurnsPlayedInRound === teams.length * 2}
           />
         )}
         {view === 'WINNER' && (

@@ -326,31 +326,31 @@ export const DEFAULT_NINE_SECONDS = [
 export const DEFAULT_REVERSE_CHARADES = [
   {
     "id": "rc1",
-    "question": "Picie gorącej kawy",
+    "question": "Picie kawy",
     "category": "Czynności Codzienne",
     "difficulty": "Łatwy"
   },
   {
     "id": "rc2",
-    "question": "Jazda na hulajnodze",
+    "question": "Hulajnoga",
     "category": "Sport i Ruch",
     "difficulty": "Łatwy"
   },
   {
     "id": "rc3",
-    "question": "Koszenie trawnika kosiarką",
+    "question": "Koszenie trawy",
     "category": "Prace Domowe",
     "difficulty": "Łatwy"
   },
   {
     "id": "rc4",
-    "question": "Łowienie ryb na wędkę",
+    "question": "Łowienie ryb",
     "category": "Hobby",
     "difficulty": "Łatwy"
   },
   {
     "id": "rc5",
-    "question": "Wiercenie dziury w ścianie",
+    "question": "Wiercenie",
     "category": "Prace Domowe",
     "difficulty": "Średni"
   },
@@ -362,7 +362,7 @@ export const DEFAULT_REVERSE_CHARADES = [
   },
   {
     "id": "rc7",
-    "question": "Gra w ping-ponga",
+    "question": "Ping-pong",
     "category": "Sport i Ruch",
     "difficulty": "Łatwy"
   },
@@ -380,19 +380,19 @@ export const DEFAULT_REVERSE_CHARADES = [
   },
   {
     "id": "rc10",
-    "question": "Gra na perkusji",
+    "question": "Perkusja",
     "category": "Muzyka",
     "difficulty": "Średni"
   },
   {
     "id": "rc11",
-    "question": "Malowanie obrazu pędzlem",
+    "question": "Malowanie",
     "category": "Hobby",
     "difficulty": "Łatwy"
   },
   {
     "id": "rc12",
-    "question": "Pływanie żabką w basenie",
+    "question": "Pływanie",
     "category": "Sport i Ruch",
     "difficulty": "Łatwy"
   },
@@ -404,14 +404,42 @@ export const DEFAULT_REVERSE_CHARADES = [
   },
   {
     "id": "rc14",
-    "question": "Wspinaczka na górę",
+    "question": "Wspinaczka",
     "category": "Sport i Ruch",
     "difficulty": "Średni"
   },
   {
     "id": "rc15",
-    "question": "Odkurzanie pokoju odkurzaczem",
+    "question": "Odkurzanie",
     "category": "Prace Domowe",
     "difficulty": "Łatwy"
   }
+];
+
+export const DEFAULT_BOMB_WORDS = [
+  { "id": "b1", "word": "Telewizor", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "b2", "word": "Klimatyzacja", "category": "Dom", "difficulty": "Średni" },
+  { "id": "b3", "word": "Słońce", "category": "Natura", "difficulty": "Łatwy" },
+  { "id": "b4", "word": "Komputer", "category": "Technologia", "difficulty": "Łatwy" },
+  { "id": "b5", "word": "Rower", "category": "Sport", "difficulty": "Łatwy" },
+  { "id": "b6", "word": "Książka", "category": "Kultura", "difficulty": "Łatwy" },
+  { "id": "b7", "word": "Pizza", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "b8", "word": "Wakacje", "category": "Rozrywka", "difficulty": "Łatwy" },
+  { "id": "b9", "word": "Czekolada", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "b10", "word": "Kino", "category": "Rozrywka", "difficulty": "Łatwy" },
+  { "id": "b11", "word": "Samochód", "category": "Transport", "difficulty": "Łatwy" },
+  { "id": "b12", "word": "Telefon", "category": "Technologia", "difficulty": "Łatwy" },
+  { "id": "b13", "word": "Zegarek", "category": "Moda", "difficulty": "Łatwy" },
+  { "id": "b14", "word": "Okulary", "category": "Moda", "difficulty": "Łatwy" },
+  { "id": "b15", "word": "Kawa", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "b16", "word": "Biurko", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "b17", "word": "Klucz", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "b18", "word": "Pies", "category": "Zwierzęta", "difficulty": "Łatwy" },
+  { "id": "b19", "word": "Kot", "category": "Zwierzęta", "difficulty": "Łatwy" },
+  { "id": "b20", "word": "Las", "category": "Natura", "difficulty": "Łatwy" },
+  { "id": "b21", "word": "Deszcz", "category": "Natura", "difficulty": "Łatwy" },
+  { "id": "b22", "word": "Szkoła", "category": "Edukacja", "difficulty": "Łatwy" },
+  { "id": "b23", "word": "Muzyka", "category": "Kultura", "difficulty": "Łatwy" },
+  { "id": "b24", "word": "Banan", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "b25", "word": "Pomidor", "category": "Jedzenie", "difficulty": "Łatwy" }
 ];

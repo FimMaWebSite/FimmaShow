@@ -173,22 +173,22 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     setPointsThisRound(prev => prev + 1);
     triggerPopup('+1', 'plus');
     
-    // Move to next word/question
-    nextWord();
+    // Move to next word/question ONLY IF NOT in 9.5 seconds
+    if (gameMode !== 'NINE_SECONDS') {
+      nextWord();
+    }
   };
 
   const handleWrong = () => {
     if (!isPlaying) return;
     playWrong();
-    if (gameMode === 'NINE_SECONDS' || gameMode === 'REVERSE_CHARADES') {
-      triggerPopup('+0', 'minus');
-    } else {
-      setPointsThisRound(prev => prev - 1);
-      triggerPopup('-1', 'minus');
-    }
+    setPointsThisRound(prev => prev - 1);
+    triggerPopup('-1', 'minus');
     
-    // Move to next word/question
-    nextWord();
+    // Move to next word/question ONLY IF NOT in 9.5 seconds
+    if (gameMode !== 'NINE_SECONDS') {
+      nextWord();
+    }
   };
 
   const nextWord = () => {
@@ -696,7 +696,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               style={{ flexGrow: 1, padding: '16px', fontSize: '15px' }}
             >
               <X size={18} />
-              {gameMode === 'NINE_SECONDS' ? 'NIEUDANE (0)' : 'BŁĄD (-1)'}
+              BŁĄD (-1)
             </button>
             <button
               onClick={handleCorrect}
