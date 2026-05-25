@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Users, Settings, Plus, Minus, Check } from 'lucide-react';
 import { playClick, playWrong } from '../utils/audio';
+import { GameMode } from '../App';
 
 export interface Team {
   id: number;
@@ -18,6 +19,7 @@ export interface GameSettings {
 interface GameSetupProps {
   onBack: () => void;
   onStart: (teams: Team[], settings: GameSettings) => void;
+  gameMode: GameMode;
 }
 
 const PRESET_COLORS = [
@@ -29,13 +31,13 @@ const PRESET_COLORS = [
   '#8b5cf6', // Violet
 ];
 
-export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart }) => {
+export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode }) => {
   const [teams, setTeams] = useState<Team[]>([
     { id: 1, name: 'Drużyna A', color: '#f97316', points: 0 },
     { id: 2, name: 'Drużyna B', color: '#eab308', points: 0 }
   ]);
 
-  const [roundTime, setRoundTime] = useState(60);
+  const [roundTime, setRoundTime] = useState(gameMode === 'NINE_SECONDS' ? 9.5 : 60);
   const [pointsToWin, setPointsToWin] = useState(15);
   const [categories, setCategories] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -45,10 +47,11 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart }) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch('/api/words');
+        const endpoint = gameMode === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+        const res = await fetch(endpoint);
         if (res.ok) {
           const data = await res.json();
-          const cats = Array.from(new Set(data.map((w: { category: string }) => w.category))) as string[];
+          const cats = Array.from(new Set(data.map((w: any) => w.category))) as string[];
           setCategories(cats);
           setSelectedCategories(cats); // Default: Select all
         }
@@ -59,7 +62,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart }) => {
       }
     };
     fetchCategories();
-  }, []);
+  }, [gameMode]);
 
   const handleBackClick = () => {
     playClick();
@@ -215,7 +218,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart }) => {
           <div className="form-group">
             <label className="form-label">Czas rundy</label>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
-              {[30, 45, 60, 90, 120].map((t) => (
+              {(gameMode === 'NINE_SECONDS' ? [5, 7.5, 9.5, 12, 15] : [30, 45, 60, 90, 120]).map((t) => (
                 <button
                   key={t}
                   onClick={() => { playClick(); setRoundTime(t); }}

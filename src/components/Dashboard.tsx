@@ -1,16 +1,22 @@
 import React from 'react';
-import { Play, Database, Lock, Sparkles, Tv } from 'lucide-react';
+import { Play, Database, Lock, Sparkles, Tv, Timer } from 'lucide-react';
 import { playClick } from '../utils/audio';
+import { GameMode } from '../App';
 
 interface DashboardProps {
-  onStartGame: () => void;
+  onStartGame: (game: GameMode) => void;
   onOpenDatabase: () => void;
 }
 
 export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabase }) => {
-  const handleStartClick = () => {
+  const handleStartMarilyn = () => {
     playClick();
-    onStartGame();
+    onStartGame('MARYLIN_MONROE');
+  };
+
+  const handleStartNineSeconds = () => {
+    playClick();
+    onStartGame('NINE_SECONDS');
   };
 
   const handleDbClick = () => {
@@ -62,11 +68,34 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
             </p>
           </div>
           <button
-            onClick={handleStartClick}
+            onClick={handleStartMarilyn}
             className="btn btn-primary"
             style={{ width: '100%', marginTop: '24px' }}
           >
             <Play size={16} fill="currentColor" />
+            GRAJ TERAZ
+          </button>
+        </div>
+
+        {/* Active Game: 9,5 Sekundy */}
+        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(249, 115, 22, 0.05) 100%)', border: '1px solid rgba(249, 115, 22, 0.15)' }}>
+          <div>
+            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #ff3c00, #ff8c00)', color: 'white' }}>
+              NOWA GRA
+            </div>
+            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
+              9,5 Sekundy
+            </h3>
+            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
+              Masz tylko 9.5 sekundy, aby udzielić jak najwięcej poprawnych odpowiedzi na wylosowane pytanie. Presja czasu gwarantowana!
+            </p>
+          </div>
+          <button
+            onClick={handleStartNineSeconds}
+            className="btn btn-primary"
+            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 100%)', border: 'none' }}
+          >
+            <Timer size={16} />
             GRAJ TERAZ
           </button>
         </div>

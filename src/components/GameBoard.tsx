@@ -1,15 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, Check, X, RotateCcw, AlertTriangle, HelpCircle } from 'lucide-react';
-import { WordData } from './DatabaseEditor';
+
 import { Team, GameSettings } from './GameSetup';
 import { playClick, playCorrect, playWrong, playTick, playBuzzer } from '../utils/audio';
+import { GameMode } from '../App';
 
 interface GameBoardProps {
   currentTeam: Team;
   settings: GameSettings;
-  availableWords: WordData[];
+  availableWords: any[];
   onRoundEnd: (teamPointsThisRound: number) => void;
   onExitGame: () => void;
+  gameMode: GameMode;
 }
 
 export const GameBoard: React.FC<GameBoardProps> = ({
@@ -18,8 +20,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   availableWords,
   onRoundEnd,
   onExitGame,
+  gameMode,
 }) => {
-  const [shuffledWords, setShuffledWords] = useState<WordData[]>([]);
+  const [shuffledWords, setShuffledWords] = useState<any[]>([]);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isReadyPhase, setIsReadyPhase] = useState(true);
@@ -31,7 +34,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const popupIdCounter = useRef(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Filter and shuffle words on mount
+  // Filter and shuffle items on mount
   useEffect(() => {
     const filtered = availableWords.filter(w => settings.selectedCategories.includes(w.category));
     // Fisher-Yates Shuffle
@@ -43,12 +46,12 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     setShuffledWords(shuffled);
   }, [availableWords, settings.selectedCategories]);
 
-  // Timer logic
+  // Timer logic - runs at 100ms interval for sub-second precision (useful for 9.5s)
   useEffect(() => {
     if (isPlaying && !isReadyPhase) {
       timerRef.current = setInterval(() => {
         setTimeLeft(prev => {
-          if (prev <= 1) {
+          if (prev <= 0.1) {
             clearInterval(timerRef.current!);
             setIsPlaying(false);
             playBuzzer();
@@ -58,13 +61,25 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             }, 1500);
             return 0;
           }
-          // Tick sound in the final 10 seconds
-          if (prev <= 10) {
-            playTick();
+
+          const nextVal = Math.round((prev - 0.1) * 10) / 10;
+
+          // Sound triggers on whole seconds
+          if (gameMode === 'NINE_SECONDS') {
+            // Tick every full second
+            if (nextVal % 1 === 0 && nextVal > 0) {
+              playTick();
+            }
+          } else {
+            // Marylin Monroe: Tick sound in the final 10 seconds
+            if (nextVal <= 10 && nextVal % 1 === 0 && nextVal > 0) {
+              playTick();
+            }
           }
-          return prev - 1;
+
+          return nextVal;
         });
-      }, 1000);
+      }, 100);
     } else {
       if (timerRef.current) clearInterval(timerRef.current);
     }
@@ -72,7 +87,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isPlaying, isReadyPhase, pointsThisRound, onRoundEnd]);
+  }, [isPlaying, isReadyPhase, pointsThisRound, onRoundEnd, gameMode]);
 
   const handleStartRound = () => {
     playClick();
@@ -91,17 +106,21 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     setPointsThisRound(prev => prev + 1);
     triggerPopup('+1', 'plus');
     
-    // Move to next word
+    // Move to next word/question
     nextWord();
   };
 
   const handleWrong = () => {
     if (!isPlaying) return;
     playWrong();
-    setPointsThisRound(prev => prev - 1);
-    triggerPopup('-1', 'minus');
+    if (gameMode === 'NINE_SECONDS') {
+      triggerPopup('+0', 'minus');
+    } else {
+      setPointsThisRound(prev => prev - 1);
+      triggerPopup('-1', 'minus');
+    }
     
-    // Move to next word
+    // Move to next word/question
     nextWord();
   };
 
@@ -131,6 +150,14 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   };
 
   const currentWord = shuffledWords[currentWordIndex];
+
+  // Helper to format remaining time nicely (with one decimal place if 9.5s)
+  const formatTime = (time: number) => {
+    if (gameMode === 'NINE_SECONDS' || time % 1 !== 0) {
+      return time.toFixed(1);
+    }
+    return Math.floor(time).toString();
+  };
 
   return (
     <div className="flex-container max-w-xl mx-auto fade-in" style={{ padding: '12px', minHeight: '85vh', justifyContent: 'space-between', position: 'relative' }}>
@@ -173,7 +200,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             <div className="flex-col gap-xs">
               <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white' }}>Kolej na {currentTeam.name}</h3>
               <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', lineHeight: 1.5 }}>
-                Oddaj telefon/urządzenie osobie, która będzie opisywać hasło. Inni członkowie drużyny nie mogą patrzeć na ekran!
+                {gameMode === 'MARYLIN_MONROE' 
+                  ? 'Oddaj telefon/urządzenie osobie, która będzie opisywać hasło. Inni członkowie drużyny nie mogą patrzeć na ekran!'
+                  : 'Wylosowane pytanie przeczyta Wam Mistrz Gry! Oddaj telefon osobie pełniącej rolę prowadzącego. Inni członkowie drużyny nie patrzą na ekran!'}
               </p>
             </div>
             <button
@@ -191,25 +220,62 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               /* Zero Presji Styled Card */
               <div className="zero-presji-card-container">
                 <div className="zero-presji-card-inner">
-                  {/* Word title */}
-                  <h2 className="zero-presji-card-title">{currentWord.word}</h2>
-                  
-                  {/* Forbidden words container */}
-                  <div className="taboo-container">
-                    <span className="taboo-header">
-                      Słowa Zakazane
-                    </span>
-                    <div className="taboo-words-list">
-                      {currentWord.forbidden.map((fw, idx) => (
-                        <div
-                          key={idx}
-                          className="taboo-word-item"
-                        >
-                          {fw}
+                  {gameMode === 'MARYLIN_MONROE' ? (
+                    <>
+                      {/* Word title */}
+                      <h2 className="zero-presji-card-title">{currentWord.word}</h2>
+                      
+                      {/* Forbidden words container */}
+                      <div className="taboo-container">
+                        <span className="taboo-header">
+                          Słowa Zakazane
+                        </span>
+                        <div className="taboo-words-list">
+                          {currentWord.forbidden.map((fw: string, idx: number) => (
+                            <div
+                              key={idx}
+                              className="taboo-word-item"
+                            >
+                              {fw}
+                            </div>
+                          ))}
                         </div>
-                      ))}
-                    </div>
-                  </div>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      {/* 9,5 Sekundy Title styling */}
+                      <div style={{
+                        fontFamily: 'var(--font-display)',
+                        fontSize: 'clamp(1.4rem, 3.2vw, 2.5rem)',
+                        fontWeight: 900,
+                        textTransform: 'uppercase',
+                        color: '#d31010',
+                        marginBottom: '16px',
+                        letterSpacing: '0.05em',
+                        borderBottom: '3px dashed rgba(26, 10, 3, 0.2)',
+                        paddingBottom: '8px',
+                        width: '100%',
+                        maxWidth: '450px'
+                      }}>
+                        9,5 Sekundy
+                      </div>
+
+                      {/* Question */}
+                      <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px 0' }}>
+                        <p style={{
+                          fontSize: 'clamp(1.3rem, 2.8vw, 2rem)',
+                          fontWeight: 900,
+                          color: '#1a0a03',
+                          lineHeight: 1.35,
+                          maxWidth: '520px',
+                          textShadow: '0.5px 0.5px 0px rgba(255,255,255,0.8)'
+                        }}>
+                          {currentWord.question}
+                        </p>
+                      </div>
+                    </>
+                  )}
 
                   {/* Tiny logo badge resembling Zero Presji logo */}
                   <div className="zero-presji-logo-badge">
@@ -222,7 +288,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             ) : (
               <div className="glass flex-col items-center" style={{ padding: '32px', textAlign: 'center', color: '#ff5c75', gap: '8px' }}>
                 <AlertTriangle size={32} />
-                <span>Brak haseł w wybranej kategorii!</span>
+                <span>Brak pytań w wybranej kategorii!</span>
               </div>
             )}
           </div>
@@ -252,21 +318,21 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                   r="34"
                   strokeDasharray="213"
                   strokeDashoffset={213 - (213 * timeLeft) / settings.roundTime}
-                  stroke={timeLeft <= 10 ? '#ef4444' : '#f97316'}
+                  stroke={timeLeft <= (gameMode === 'NINE_SECONDS' ? 3 : 10) ? '#ef4444' : '#f97316'}
                   strokeWidth="5"
                   strokeLinecap="round"
                   fill="transparent"
-                  style={{ transition: 'stroke-dashoffset 1s linear, stroke 0.2s' }}
+                  style={{ transition: 'stroke-dashoffset 0.1s linear, stroke 0.2s' }}
                 />
               </svg>
-              <div className={`timer-text-overlay ${timeLeft <= 10 ? 'text-danger timer-danger' : 'text-light'}`} style={{ color: timeLeft <= 10 ? '#ef4444' : 'white' }}>
-                {timeLeft}
+              <div className={`timer-text-overlay ${timeLeft <= (gameMode === 'NINE_SECONDS' ? 3 : 10) ? 'text-danger timer-danger' : 'text-light'}`} style={{ color: timeLeft <= (gameMode === 'NINE_SECONDS' ? 3 : 10) ? '#ef4444' : 'white', fontSize: gameMode === 'NINE_SECONDS' ? '18px' : '22px' }}>
+                {formatTime(timeLeft)}
               </div>
             </div>
             <div className="flex-col">
               <span className="stat-label">Pozostały Czas</span>
               <span style={{ fontSize: '13px', fontWeight: 600, color: 'hsl(var(--text-secondary))' }}>
-                {!isPlaying ? 'Gra wstrzymana' : timeLeft <= 10 ? 'Ostatnie sekundy!' : 'Czas ucieka!'}
+                {!isPlaying ? 'Gra wstrzymana' : timeLeft <= (gameMode === 'NINE_SECONDS' ? 3 : 10) ? 'Ostatnie sekundy!' : 'Czas ucieka!'}
               </span>
             </div>
           </div>
@@ -280,7 +346,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               style={{ flexGrow: 1, padding: '16px', fontSize: '15px' }}
             >
               <X size={18} />
-              BŁĄD (-1)
+              {gameMode === 'NINE_SECONDS' ? 'NIEUDANE (0)' : 'BŁĄD (-1)'}
             </button>
             <button
               onClick={handleCorrect}

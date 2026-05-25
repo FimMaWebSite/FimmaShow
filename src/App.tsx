@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Dashboard } from './components/Dashboard';
-import { DatabaseEditor, WordData } from './components/DatabaseEditor';
+import { DatabaseEditor } from './components/DatabaseEditor';
 import { GameSetup, Team, GameSettings } from './components/GameSetup';
 import { GameBoard } from './components/GameBoard';
 import { Scoreboard } from './components/Scoreboard';
@@ -8,10 +8,12 @@ import { WinnerScreen } from './components/WinnerScreen';
 import { Tv, Sparkles } from 'lucide-react';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
+export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS';
 
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
-  const [availableWords, setAvailableWords] = useState<WordData[]>([]);
+  const [selectedGame, setSelectedGame] = useState<GameMode>('MARYLIN_MONROE');
+  const [availableWords, setAvailableWords] = useState<any[]>([]);
   const [teams, setTeams] = useState<Team[]>([]);
   const [settings, setSettings] = useState<GameSettings>({
     roundTime: 60,
@@ -23,10 +25,11 @@ const App: React.FC = () => {
   const [lastTeamIndex, setLastTeamIndex] = useState(0);
   const [lastPointsEarned, setLastPointsEarned] = useState(0);
 
-  // Fetch words database on load
-  const loadWords = async () => {
+  // Fetch database items based on selected game
+  const loadGameData = async (game: GameMode) => {
     try {
-      const res = await fetch('/api/words');
+      const endpoint = game === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+      const res = await fetch(endpoint);
       if (res.ok) {
         const data = await res.json();
         setAvailableWords(data);
@@ -37,11 +40,12 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
-    loadWords();
-  }, []);
+    loadGameData(selectedGame);
+  }, [selectedGame]);
 
-  const handleStartSetup = () => {
-    loadWords(); // reload fresh words list
+  const handleStartSetup = (game: GameMode) => {
+    setSelectedGame(game);
+    loadGameData(game);
     setView('SETUP');
   };
 
@@ -138,6 +142,7 @@ const App: React.FC = () => {
           <GameSetup 
             onBack={() => setView('DASHBOARD')} 
             onStart={handleStartGame} 
+            gameMode={selectedGame}
           />
         )}
         {view === 'GAMEPLAY' && (
@@ -147,6 +152,7 @@ const App: React.FC = () => {
             availableWords={availableWords}
             onRoundEnd={handleRoundEnd}
             onExitGame={handleHome}
+            gameMode={selectedGame}
           />
         )}
         {view === 'SCOREBOARD' && (

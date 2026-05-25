@@ -10,39 +10,40 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3001;
 const DB_PATH = path.join(__dirname, 'db', 'words.json');
+const DB_PATH_9S = path.join(__dirname, 'db', 'nine_seconds.json');
 
 app.use(cors());
 app.use(express.json());
 
 // Ensure database directory and file exist
-const ensureDbExists = () => {
-  const dbDir = path.dirname(DB_PATH);
+const ensureDbExists = (filePath) => {
+  const dbDir = path.dirname(filePath);
   if (!fs.existsSync(dbDir)) {
     fs.mkdirSync(dbDir, { recursive: true });
   }
-  if (!fs.existsSync(DB_PATH)) {
-    fs.writeFileSync(DB_PATH, JSON.stringify([], null, 2), 'utf-8');
+  if (!fs.existsSync(filePath)) {
+    fs.writeFileSync(filePath, JSON.stringify([], null, 2), 'utf-8');
   }
 };
 
-const readDb = () => {
-  ensureDbExists();
+const readDb = (filePath = DB_PATH) => {
+  ensureDbExists(filePath);
   try {
-    const data = fs.readFileSync(DB_PATH, 'utf-8');
+    const data = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(data);
   } catch (error) {
-    console.error('Błąd odczytu bazy danych:', error);
+    console.error(`Błąd odczytu bazy danych (${filePath}):`, error);
     return [];
   }
 };
 
-const writeDb = (data) => {
-  ensureDbExists();
+const writeDb = (data, filePath = DB_PATH) => {
+  ensureDbExists(filePath);
   try {
-    fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2), 'utf-8');
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
     return true;
   } catch (error) {
-    console.error('Błąd zapisu do bazy danych:', error);
+    console.error(`Błąd zapisu do bazy danych (${filePath}):`, error);
     return false;
   }
 };
@@ -121,6 +122,87 @@ app.delete('/api/words/:id', (req, res) => {
 
   if (writeDb(filteredWords)) {
     res.json({ message: 'Hasło usunięte pomyślnie.' });
+  } else {
+    res.status(500).json({ error: 'Błąd zapisu bazy danych.' });
+  }
+});
+
+// ==========================================
+// API: 9,5 SEKUNDY ENDPOINTS
+// ==========================================
+
+// Get all questions
+app.get('/api/nine-seconds', (req, res) => {
+  const questions = readDb(DB_PATH_9S);
+  res.json(questions);
+});
+
+// Add a new question
+app.post('/api/nine-seconds', (req, res) => {
+  const { question, category, difficulty } = req.body;
+  if (!question) {
+    return res.status(400).json({ error: 'Niepoprawne dane. Wymagane jest pytanie.' });
+  }
+
+  const questions = readDb(DB_PATH_9S);
+  const newQuestion = {
+    id: Date.now().toString(),
+    question: question.trim(),
+    category: category || 'Ogólne',
+    difficulty: difficulty || 'Średni'
+  };
+
+  questions.push(newQuestion);
+  if (writeDb(questions, DB_PATH_9S)) {
+    res.status(201).json(newQuestion);
+  } else {
+    res.status(500).json({ error: 'Błąd zapisu bazy danych.' });
+  }
+});
+
+// Update an existing question
+app.put('/api/nine-seconds/:id', (req, res) => {
+  const { id } = req.params;
+  const { question, category, difficulty } = req.body;
+
+  if (!question) {
+    return res.status(400).json({ error: 'Niepoprawne dane. Wymagane jest pytanie.' });
+  }
+
+  const questions = readDb(DB_PATH_9S);
+  const questionIndex = questions.findIndex(q => q.id === id);
+
+  if (questionIndex === -1) {
+    return res.status(404).json({ error: 'Nie znaleziono pytania o podanym ID.' });
+  }
+
+  const updatedQuestion = {
+    ...questions[questionIndex],
+    question: question.trim(),
+    category: category || 'Ogólne',
+    difficulty: difficulty || 'Średni'
+  };
+
+  questions[questionIndex] = updatedQuestion;
+  if (writeDb(questions, DB_PATH_9S)) {
+    res.json(updatedQuestion);
+  } else {
+    res.status(500).json({ error: 'Błąd zapisu bazy danych.' });
+  }
+});
+
+// Delete a question
+app.delete('/api/nine-seconds/:id', (req, res) => {
+  const { id } = req.params;
+  const questions = readDb(DB_PATH_9S);
+  const filteredQuestions = questions.filter(q => q.id !== id);
+
+  if (questions.length === filteredQuestions.length) {
+    return res.status(404).json({ error: 'Nie znaleziono pytania o podanym ID.' });
+  }
+
+  if (writeDb(filteredQuestions, DB_PATH_9S)) {
+    res.json({ message: 'Pytanie usunięte pomyślnie.' });
   } else {
     res.status(500).json({ error: 'Błąd zapisu bazy danych.' });
   }

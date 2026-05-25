@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter } from 'lucide-react';
+import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer } from 'lucide-react';
 import { playClick, playCorrect, playWrong } from '../utils/audio';
 
 export interface WordData {
@@ -10,12 +10,20 @@ export interface WordData {
   difficulty: string;
 }
 
+export interface QuestionData {
+  id: string;
+  question: string;
+  category: string;
+  difficulty: string;
+}
+
 interface DatabaseEditorProps {
   onBack: () => void;
 }
 
 export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
-  const [words, setWords] = useState<WordData[]>([]);
+  const [activeTab, setActiveTab] = useState<'MARYLIN_MONROE' | 'NINE_SECONDS'>('MARYLIN_MONROE');
+  const [items, setItems] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('Wszystkie');
@@ -29,16 +37,17 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   const [errorMsg, setErrorMsg] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
 
-  // Fetch words from backend
-  const fetchWords = async () => {
+  // Fetch from backend
+  const fetchItems = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/words');
+      const endpoint = activeTab === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+      const res = await fetch(endpoint);
       if (res.ok) {
         const data = await res.json();
-        setWords(data);
+        setItems(data);
       } else {
-        console.error('Błąd pobierania haseł');
+        console.error('Błąd pobierania danych');
       }
     } catch (err) {
       console.error('Błąd połączenia z serwerem:', err);
@@ -48,8 +57,11 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   };
 
   useEffect(() => {
-    fetchWords();
-  }, []);
+    fetchItems();
+    resetForm();
+    setSearch('');
+    setCategoryFilter('Wszystkie');
+  }, [activeTab]);
 
   const handleBackClick = () => {
     playClick();
@@ -66,7 +78,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     setIsEditing(null);
     setWordInput('');
     setForbiddenInputs(['', '', '']);
-    setCategoryInput('Popkultura');
+    setCategoryInput(activeTab === 'MARYLIN_MONROE' ? 'Popkultura' : 'Ogólne');
     setDifficultyInput('Średni');
     setErrorMsg('');
   };
@@ -78,37 +90,42 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
 
     // Validations
     if (!wordInput.trim()) {
-      setErrorMsg('Wprowadź hasło główne.');
+      setErrorMsg(activeTab === 'MARYLIN_MONROE' ? 'Wprowadź hasło główne.' : 'Wprowadź treść pytania.');
       playWrong();
       return;
     }
 
-    const filteredForbidden = forbiddenInputs.map(w => w.trim()).filter(Boolean);
-    if (filteredForbidden.length < 3) {
-      setErrorMsg('Wprowadź dokładnie 3 słowa zakazane.');
-      playWrong();
-      return;
-    }
-
-    const payload = {
-      word: wordInput.trim(),
-      forbidden: filteredForbidden,
+    let payload: any = {
       category: categoryInput,
       difficulty: difficultyInput
     };
 
+    if (activeTab === 'MARYLIN_MONROE') {
+      const filteredForbidden = forbiddenInputs.map(w => w.trim()).filter(Boolean);
+      if (filteredForbidden.length < 3) {
+        setErrorMsg('Wprowadź dokładnie 3 słowa zakazane.');
+        playWrong();
+        return;
+      }
+      payload.word = wordInput.trim();
+      payload.forbidden = filteredForbidden;
+    } else {
+      payload.question = wordInput.trim();
+    }
+
     try {
       let res;
+      const baseEndpoint = activeTab === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
       if (isEditing) {
         // PUT Request
-        res = await fetch(`/api/words/${isEditing}`, {
+        res = await fetch(`${baseEndpoint}/${isEditing}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
       } else {
         // POST Request
-        res = await fetch('/api/words', {
+        res = await fetch(baseEndpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
@@ -117,9 +134,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
 
       if (res.ok) {
         playCorrect();
-        setSuccessMsg(isEditing ? 'Pomyślnie zaktualizowano hasło!' : 'Pomyślnie dodano nowe hasło!');
+        setSuccessMsg(isEditing ? 'Pomyślnie zaktualizowano!' : 'Pomyślnie dodano do bazy!');
         resetForm();
-        fetchWords();
+        fetchItems();
         setTimeout(() => setSuccessMsg(''), 3000);
       } else {
         const errData = await res.json();
@@ -133,31 +150,40 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     }
   };
 
-  const handleEdit = (word: WordData) => {
+  const handleEdit = (item: any) => {
     playClick();
-    setIsEditing(word.id);
-    setWordInput(word.word);
-    setForbiddenInputs([
-      word.forbidden[0] || '',
-      word.forbidden[1] || '',
-      word.forbidden[2] || ''
-    ]);
-    setCategoryInput(word.category);
-    setDifficultyInput(word.difficulty);
+    setIsEditing(item.id);
+    if (activeTab === 'MARYLIN_MONROE') {
+      setWordInput(item.word);
+      setForbiddenInputs([
+        item.forbidden[0] || '',
+        item.forbidden[1] || '',
+        item.forbidden[2] || ''
+      ]);
+    } else {
+      setWordInput(item.question);
+    }
+    setCategoryInput(item.category);
+    setDifficultyInput(item.difficulty);
     // Scroll to form
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleDelete = async (id: string) => {
-    if (!window.confirm('Czy na pewno chcesz usunąć to hasło?')) return;
+    const confirmMsg = activeTab === 'MARYLIN_MONROE' 
+      ? 'Czy na pewno chcesz usunąć to hasło?' 
+      : 'Czy na pewno chcesz usunąć to pytanie?';
+      
+    if (!window.confirm(confirmMsg)) return;
     playClick();
     try {
-      const res = await fetch(`/api/words/${id}`, {
+      const baseEndpoint = activeTab === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+      const res = await fetch(`${baseEndpoint}/${id}`, {
         method: 'DELETE'
       });
       if (res.ok) {
-        setSuccessMsg('Hasło zostało usunięte.');
-        fetchWords();
+        setSuccessMsg('Usunięto pomyślnie.');
+        fetchItems();
         setTimeout(() => setSuccessMsg(''), 3000);
       } else {
         playWrong();
@@ -170,20 +196,25 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   };
 
   // Get unique categories for filtering
-  const categories = ['Wszystkie', ...Array.from(new Set(words.map(w => w.category)))];
+  const categories = ['Wszystkie', ...Array.from(new Set(items.map(w => w.category)))];
 
-  // Filtered words list
-  const filteredWords = words.filter(w => {
-    const matchesSearch = w.word.toLowerCase().includes(search.toLowerCase()) || 
-                          w.forbidden.some(fw => fw.toLowerCase().includes(search.toLowerCase()));
-    const matchesCategory = categoryFilter === 'Wszystkie' || w.category === categoryFilter;
+  // Filtered items list
+  const filteredItems = items.filter(item => {
+    let matchesSearch = false;
+    if (activeTab === 'MARYLIN_MONROE') {
+      matchesSearch = item.word.toLowerCase().includes(search.toLowerCase()) || 
+                      item.forbidden.some((fw: string) => fw.toLowerCase().includes(search.toLowerCase()));
+    } else {
+      matchesSearch = item.question.toLowerCase().includes(search.toLowerCase());
+    }
+    const matchesCategory = categoryFilter === 'Wszystkie' || item.category === categoryFilter;
     return matchesSearch && matchesCategory;
   });
 
   return (
     <div className="w-full fade-in" style={{ padding: '24px 0' }}>
       {/* Header */}
-      <div className="flex-row justify-between items-center" style={{ marginBottom: '32px', flexWrap: 'wrap', gap: '16px' }}>
+      <div className="flex-row justify-between items-center" style={{ marginBottom: '24px', flexWrap: 'wrap', gap: '16px' }}>
         <button
           onClick={handleBackClick}
           className="btn btn-secondary"
@@ -193,8 +224,28 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           Powrót do menu
         </button>
         <h2 style={{ fontSize: '32px', fontWeight: 900, textTransform: 'uppercase', color: 'white' }}>
-          Baza Haseł
+          Baza Pytań i Haseł
         </h2>
+      </div>
+
+      {/* Tabs */}
+      <div className="flex-row gap-sm" style={{ marginBottom: '32px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)', paddingBottom: '12px' }}>
+        <button
+          onClick={() => { playClick(); setActiveTab('MARYLIN_MONROE'); }}
+          className={`btn ${activeTab === 'MARYLIN_MONROE' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 20px' }}
+        >
+          <Tv size={16} />
+          Marylin Monroe (Tabu)
+        </button>
+        <button
+          onClick={() => { playClick(); setActiveTab('NINE_SECONDS'); }}
+          className={`btn ${activeTab === 'NINE_SECONDS' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 20px' }}
+        >
+          <Timer size={16} />
+          9,5 Sekundy (Pytania)
+        </button>
       </div>
 
       <div className="db-layout">
@@ -203,7 +254,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           <div className="glass" style={{ padding: '24px', position: 'sticky', top: '90px' }}>
             <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               {isEditing ? <Edit2 size={16} style={{ color: 'hsl(var(--primary))' }} /> : <Plus size={16} style={{ color: 'hsl(var(--primary))' }} />}
-              {isEditing ? 'Edytuj Hasło' : 'Dodaj Nowe Hasło'}
+              {isEditing 
+                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : 'Edytuj Pytanie') 
+                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : 'Dodaj Nowe Pytanie')}
             </h3>
 
             {errorMsg && (
@@ -219,31 +272,35 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
 
             <form onSubmit={handleSubmit} className="flex-col gap-md">
               <div className="form-group">
-                <label className="form-label">Hasło główne</label>
+                <label className="form-label">
+                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : 'Treść pytania'}
+                </label>
                 <input
                   type="text"
                   value={wordInput}
                   onChange={(e) => setWordInput(e.target.value)}
-                  placeholder="np. Robert Lewandowski"
+                  placeholder={activeTab === 'MARYLIN_MONROE' ? 'np. Robert Lewandowski' : 'np. Wymień 3 państwa graniczące z Polską'}
                   className="input-field"
                 />
               </div>
 
-              <div className="form-group">
-                <label className="form-label">3 Słowa Zakazane</label>
-                <div className="flex-col gap-xs">
-                  {forbiddenInputs.map((val, idx) => (
-                    <input
-                      key={idx}
-                      type="text"
-                      value={val}
-                      onChange={(e) => handleForbiddenChange(idx, e.target.value)}
-                      placeholder={`Słowo zakazane ${idx + 1}`}
-                      className="input-field"
-                    />
-                  ))}
+              {activeTab === 'MARYLIN_MONROE' && (
+                <div className="form-group">
+                  <label className="form-label">3 Słowa Zakazane</label>
+                  <div className="flex-col gap-xs">
+                    {forbiddenInputs.map((val, idx) => (
+                      <input
+                        key={idx}
+                        type="text"
+                        value={val}
+                        onChange={(e) => handleForbiddenChange(idx, e.target.value)}
+                        placeholder={`Słowo zakazane ${idx + 1}`}
+                        className="input-field"
+                      />
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
               <div className="form-row-2">
                 <div className="form-group">
@@ -253,13 +310,30 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                     onChange={(e) => setCategoryInput(e.target.value)}
                     className="select-field"
                   >
-                    <option value="Popkultura">Popkultura</option>
-                    <option value="Ludzie">Ludzie</option>
-                    <option value="Postacie Fikcyjne">Postacie Fikcyjne</option>
-                    <option value="Historia">Historia</option>
-                    <option value="Polska">Polska</option>
-                    <option value="Geografia">Geografia</option>
-                    <option value="Inne">Inne</option>
+                    {activeTab === 'MARYLIN_MONROE' ? (
+                      <>
+                        <option value="Popkultura">Popkultura</option>
+                        <option value="Ludzie">Ludzie</option>
+                        <option value="Postacie Fikcyjne">Postacie Fikcyjne</option>
+                        <option value="Historia">Historia</option>
+                        <option value="Polska">Polska</option>
+                        <option value="Geografia">Geografia</option>
+                        <option value="Inne">Inne</option>
+                      </>
+                    ) : (
+                      <>
+                        <option value="Ogólne">Ogólne</option>
+                        <option value="Geografia">Geografia</option>
+                        <option value="Motoryzacja">Motoryzacja</option>
+                        <option value="Jedzenie">Jedzenie</option>
+                        <option value="Polska">Polska</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Popkultura">Popkultura</option>
+                        <option value="Nauka">Nauka</option>
+                        <option value="Przyroda">Przyroda</option>
+                        <option value="Historia">Historia</option>
+                      </>
+                    )}
                   </select>
                 </div>
                 <div className="form-group">
@@ -282,7 +356,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                   className="btn btn-primary"
                   style={{ flexGrow: 1, padding: '12px 16px', fontSize: '13px' }}
                 >
-                  {isEditing ? 'Zapisz zmiany' : 'Dodaj Hasło'}
+                  {isEditing ? 'Zapisz zmiany' : 'Dodaj do bazy'}
                 </button>
                 {isEditing && (
                   <button
@@ -299,7 +373,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           </div>
         </div>
 
-        {/* Right Side: Words Table */}
+        {/* Right Side: Table */}
         <div className="flex-col w-full">
           {/* Controls: Search and Filter */}
           <div className="glass db-filter-bar" style={{ padding: '16px', marginBottom: '24px', flexDirection: 'row', alignItems: 'center' }}>
@@ -309,7 +383,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Szukaj hasła lub słowa zakazanego..."
+                placeholder={activeTab === 'MARYLIN_MONROE' ? "Szukaj hasła lub słowa zakazanego..." : "Szukaj pytania..."}
                 className="input-field search-input"
               />
             </div>
@@ -334,66 +408,70 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           <div className="glass table-wrapper" style={{ padding: 0 }}>
             {loading ? (
               <div style={{ textAlign: 'center', padding: '48px', color: 'hsl(var(--text-secondary))', fontWeight: 500 }}>
-                Wczytywanie bazy haseł...
+                Wczytywanie bazy danych...
               </div>
-            ) : filteredWords.length === 0 ? (
+            ) : filteredItems.length === 0 ? (
               <div style={{ textAlign: 'center', padding: '48px', color: 'hsl(var(--text-secondary))', fontWeight: 500 }}>
-                Brak haseł spełniających kryteria wyszukiwania.
+                Brak pozycji spełniających kryteria wyszukiwania.
               </div>
             ) : (
               <table className="db-table">
                 <thead>
                   <tr>
-                    <th>Hasło</th>
-                    <th>Słowa zakazane</th>
+                    <th>{activeTab === 'MARYLIN_MONROE' ? 'Hasło' : 'Pytanie'}</th>
+                    {activeTab === 'MARYLIN_MONROE' && <th>Słowa zakazane</th>}
                     <th style={{ width: '180px' }}>Szczegóły</th>
                     <th style={{ textAlign: 'right', width: '100px' }}>Akcje</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredWords.map((word) => (
-                    <tr key={word.id}>
-                      <td style={{ fontWeight: 700, color: 'white' }}>{word.word}</td>
-                      <td>
-                        <div className="flex-row gap-xs" style={{ flexWrap: 'wrap' }}>
-                          {word.forbidden.map((fw, idx) => (
-                            <span
-                              key={idx}
-                              className="badge-tag"
-                              style={{ background: 'rgba(239, 68, 68, 0.08)', borderColor: 'rgba(239, 68, 68, 0.15)', color: '#ff5c75', fontSize: '11px', fontWeight: 700 }}
-                            >
-                              {fw}
-                            </span>
-                          ))}
-                        </div>
+                  {filteredItems.map((item) => (
+                    <tr key={item.id}>
+                      <td style={{ fontWeight: 700, color: 'white', maxWidth: '300px', whiteSpace: 'normal', wordBreak: 'break-word' }}>
+                        {activeTab === 'MARYLIN_MONROE' ? item.word : item.question}
                       </td>
+                      {activeTab === 'MARYLIN_MONROE' && (
+                        <td>
+                          <div className="flex-row gap-xs" style={{ flexWrap: 'wrap' }}>
+                            {item.forbidden.map((fw: string, idx: number) => (
+                              <span
+                                key={idx}
+                                className="badge-tag"
+                                style={{ background: 'rgba(239, 68, 68, 0.08)', borderColor: 'rgba(239, 68, 68, 0.15)', color: '#ff5c75', fontSize: '11px', fontWeight: 700 }}
+                              >
+                                {fw}
+                              </span>
+                            ))}
+                          </div>
+                        </td>
+                      )}
                       <td>
                         <div className="flex-row gap-xs">
-                          <span className="badge-tag">{word.category}</span>
+                          <span className="badge-tag">{item.category}</span>
                           <span
                             className={`badge-tag ${
-                              word.difficulty === 'Łatwy'
+                              item.difficulty === 'Łatwy'
                                 ? 'badge-difficulty-easy'
-                                : word.difficulty === 'Średni'
+                                : item.difficulty === 'Średni'
                                 ? 'badge-difficulty-medium'
                                 : 'badge-difficulty-hard'
                             }`}
                           >
-                            {word.difficulty}
+                            {item.difficulty}
                           </span>
                         </div>
                       </td>
                       <td style={{ textAlign: 'right' }}>
                         <div className="flex-row gap-xs justify-center" style={{ justifyContent: 'flex-end' }}>
                           <button
-                            onClick={() => handleEdit(word)}
+                            onClick={() => handleEdit(item)}
                             className="btn-icon"
                             title="Edytuj"
                           >
                             <Edit2 size={13} />
                           </button>
                           <button
-                            onClick={() => handleDelete(word.id)}
+                            onClick={() => handleDelete(item.id)}
                             className="btn-icon btn-icon-danger"
                             title="Usuń"
                           >
