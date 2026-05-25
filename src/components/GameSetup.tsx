@@ -3,6 +3,8 @@ import { ArrowLeft, Users, Settings, Plus, Minus, Check } from 'lucide-react';
 import { playClick, playWrong } from '../utils/audio';
 import { GameMode } from '../App';
 
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES } from '../data/defaultData';
+
 export interface Team {
   id: number;
   name: string;
@@ -48,25 +50,43 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   // Fetch available categories from server
   useEffect(() => {
     const fetchCategories = async () => {
+      let endpoint = '/api/words';
+      let localKey = 'fimma_words';
+      let defaultBackup: any[] = DEFAULT_WORDS;
+
+      if (gameMode === 'NINE_SECONDS') {
+        endpoint = '/api/nine-seconds';
+        localKey = 'fimma_nine_seconds';
+        defaultBackup = DEFAULT_NINE_SECONDS;
+      } else if (gameMode === 'REVERSE_CHARADES') {
+        endpoint = '/api/reverse-charades';
+        localKey = 'fimma_reverse_charades';
+        defaultBackup = DEFAULT_REVERSE_CHARADES;
+      }
+
       try {
-        let endpoint = '/api/words';
-        if (gameMode === 'NINE_SECONDS') {
-          endpoint = '/api/nine-seconds';
-        } else if (gameMode === 'REVERSE_CHARADES') {
-          endpoint = '/api/reverse-charades';
-        }
         const res = await fetch(endpoint);
-        if (res.ok) {
+        const contentType = res.headers.get('content-type');
+        if (res.ok && contentType && contentType.includes('application/json')) {
           const data = await res.json();
           const cats = Array.from(new Set(data.map((w: any) => w.category))) as string[];
           setCategories(cats);
           setSelectedCategories(cats); // Default: Select all
+          localStorage.setItem(localKey, JSON.stringify(data));
+          setLoading(false);
+          return;
         }
       } catch (err) {
-        console.error(err);
-      } finally {
-        setLoading(false);
+        console.warn('API error in setup categories, using localStorage:', err);
       }
+
+      // Fallback to local storage
+      const localData = localStorage.getItem(localKey);
+      const data = localData ? JSON.parse(localData) : defaultBackup;
+      const cats = Array.from(new Set(data.map((w: any) => w.category))) as string[];
+      setCategories(cats);
+      setSelectedCategories(cats);
+      setLoading(false);
     };
     fetchCategories();
   }, [gameMode]);
