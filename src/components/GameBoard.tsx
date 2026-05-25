@@ -46,7 +46,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   // Filter and shuffle items on mount
   useEffect(() => {
     let filtered = availableWords;
-    if (gameMode !== 'BOMB') {
+    if (gameMode !== 'BOMB' && settings.selectedCategories && settings.selectedCategories.length > 0) {
       filtered = availableWords.filter(w => settings.selectedCategories.includes(w.category));
     }
     // Fisher-Yates Shuffle
