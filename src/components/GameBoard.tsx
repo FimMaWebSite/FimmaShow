@@ -113,7 +113,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const handleWrong = () => {
     if (!isPlaying) return;
     playWrong();
-    if (gameMode === 'NINE_SECONDS') {
+    if (gameMode === 'NINE_SECONDS' || gameMode === 'REVERSE_CHARADES') {
       triggerPopup('+0', 'minus');
     } else {
       setPointsThisRound(prev => prev - 1);
@@ -202,7 +202,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', lineHeight: 1.5 }}>
                 {gameMode === 'MARYLIN_MONROE' 
                   ? 'Oddaj telefon/urządzenie osobie, która będzie opisywać hasło. Inni członkowie drużyny nie mogą patrzeć na ekran!'
-                  : 'Wylosowane pytanie przeczyta Wam Mistrz Gry! Oddaj telefon osobie pełniącej rolę prowadzącego. Inni członkowie drużyny nie patrzą na ekran!'}
+                  : gameMode === 'NINE_SECONDS'
+                  ? 'Wylosowane pytanie przeczyta Wam Mistrz Gry! Oddaj telefon osobie pełniącej rolę prowadzącego. Inni członkowie drużyny nie patrzą na ekran!'
+                  : 'Pokazujesz hasła-czynności partnerowi, nakazując mu wykonywanie pantomimy! Oddaj telefon osobie pokazującej. Współgracz zgadujący nie patrzy na ekran!'}
               </p>
             </div>
             <button
@@ -218,8 +220,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           <div className="flex-container w-full">
             {currentWord ? (
               /* Zero Presji Styled Card */
-              <div className="zero-presji-card-container">
-                <div className="zero-presji-card-inner">
+              <div className="zero-presji-card-container" style={gameMode === 'REVERSE_CHARADES' ? { background: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f43f5e 100%)', boxShadow: '0 20px 50px rgba(139, 92, 246, 0.3)' } : undefined}>
+                <div className="zero-presji-card-inner" style={gameMode === 'REVERSE_CHARADES' ? { background: 'radial-gradient(circle, #fbf7ff 0%, #f3e8ff 60%, #e9d5ff 100%)', borderColor: '#4c1d95' } : undefined}>
                   {gameMode === 'MARYLIN_MONROE' ? (
                     <>
                       {/* Word title */}
@@ -242,7 +244,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         </div>
                       </div>
                     </>
-                  ) : (
+                  ) : gameMode === 'NINE_SECONDS' ? (
                     <>
                       {/* 9,5 Sekundy Title styling */}
                       <div style={{
@@ -275,6 +277,39 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         </p>
                       </div>
                     </>
+                  ) : (
+                    <>
+                      {/* Odwrócone Kalambury Title styling */}
+                      <div style={{
+                        fontFamily: 'var(--font-display)',
+                        fontSize: 'clamp(1.2rem, 3.2vw, 2.2rem)',
+                        fontWeight: 900,
+                        textTransform: 'uppercase',
+                        color: '#8b5cf6',
+                        marginBottom: '16px',
+                        letterSpacing: '0.05em',
+                        borderBottom: '3px dashed rgba(139, 92, 246, 0.2)',
+                        paddingBottom: '8px',
+                        width: '100%',
+                        maxWidth: '450px'
+                      }}>
+                        Odwrócone Kalambury
+                      </div>
+
+                      {/* Action */}
+                      <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px 0' }}>
+                        <p style={{
+                          fontSize: 'clamp(1.3rem, 2.8vw, 2.2rem)',
+                          fontWeight: 900,
+                          color: '#1d0b3a',
+                          lineHeight: 1.35,
+                          maxWidth: '520px',
+                          textShadow: '0.5px 0.5px 0px rgba(255,255,255,0.8)'
+                        }}>
+                          {currentWord.question}
+                        </p>
+                      </div>
+                    </>
                   )}
 
                   {/* Tiny logo badge resembling Zero Presji logo */}
@@ -288,7 +323,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             ) : (
               <div className="glass flex-col items-center" style={{ padding: '32px', textAlign: 'center', color: '#ff5c75', gap: '8px' }}>
                 <AlertTriangle size={32} />
-                <span>Brak pytań w wybranej kategorii!</span>
+                <span>
+                  {gameMode === 'MARYLIN_MONROE' ? 'Brak haseł' : gameMode === 'NINE_SECONDS' ? 'Brak pytań' : 'Brak czynności'} w wybranej kategorii!
+                </span>
               </div>
             )}
           </div>
@@ -318,7 +355,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                   r="34"
                   strokeDasharray="213"
                   strokeDashoffset={213 - (213 * timeLeft) / settings.roundTime}
-                  stroke={timeLeft <= (gameMode === 'NINE_SECONDS' ? 3 : 10) ? '#ef4444' : '#f97316'}
+                  stroke={timeLeft <= (gameMode === 'NINE_SECONDS' ? 3 : 10) ? '#ef4444' : gameMode === 'REVERSE_CHARADES' ? '#8b5cf6' : '#f97316'}
                   strokeWidth="5"
                   strokeLinecap="round"
                   fill="transparent"

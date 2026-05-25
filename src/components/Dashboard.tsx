@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Database, Lock, Sparkles, Tv, Timer } from 'lucide-react';
+import { Play, Database, Lock, Sparkles, Tv, Timer, Users } from 'lucide-react';
 import { playClick } from '../utils/audio';
 import { GameMode } from '../App';
 
@@ -17,6 +17,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
   const handleStartNineSeconds = () => {
     playClick();
     onStartGame('NINE_SECONDS');
+  };
+
+  const handleStartReverseCharades = () => {
+    playClick();
+    onStartGame('REVERSE_CHARADES');
   };
 
   const handleDbClick = () => {
@@ -96,6 +101,29 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
             style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 100%)', border: 'none' }}
           >
             <Timer size={16} />
+            GRAJ TERAZ
+          </button>
+        </div>
+
+        {/* Active Game: Odwrócone Kalambury */}
+        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%)', border: '1px solid rgba(139, 92, 246, 0.15)' }}>
+          <div>
+            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #8b5cf6, #ec4899)', color: 'white' }}>
+              NOWA GRA
+            </div>
+            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
+              Odwrócone Kalambury
+            </h3>
+            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
+              Pokazuj hasła-czynności partnerowi, nakazując mu wykonywanie pantomimy! Masz na to dwie minuty.
+            </p>
+          </div>
+          <button
+            onClick={handleStartReverseCharades}
+            className="btn btn-primary"
+            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)', border: 'none' }}
+          >
+            <Users size={16} />
             GRAJ TERAZ
           </button>
         </div>

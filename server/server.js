@@ -11,6 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const DB_PATH = path.join(__dirname, 'db', 'words.json');
 const DB_PATH_9S = path.join(__dirname, 'db', 'nine_seconds.json');
+const DB_PATH_RC = path.join(__dirname, 'db', 'reverse_charades.json');
 
 app.use(cors());
 app.use(express.json());
@@ -203,6 +204,87 @@ app.delete('/api/nine-seconds/:id', (req, res) => {
 
   if (writeDb(filteredQuestions, DB_PATH_9S)) {
     res.json({ message: 'Pytanie usunięte pomyślnie.' });
+  } else {
+    res.status(500).json({ error: 'Błąd zapisu bazy danych.' });
+  }
+});
+
+// ==========================================
+// API: ODWRÓCONE KALAMBURY ENDPOINTS
+// ==========================================
+
+// Get all activities
+app.get('/api/reverse-charades', (req, res) => {
+  const activities = readDb(DB_PATH_RC);
+  res.json(activities);
+});
+
+// Add a new activity
+app.post('/api/reverse-charades', (req, res) => {
+  const { question, category, difficulty } = req.body;
+  if (!question) {
+    return res.status(400).json({ error: 'Niepoprawne dane. Wymagana jest treść czynności.' });
+  }
+
+  const activities = readDb(DB_PATH_RC);
+  const newActivity = {
+    id: Date.now().toString(),
+    question: question.trim(),
+    category: category || 'Ogólne',
+    difficulty: difficulty || 'Średni'
+  };
+
+  activities.push(newActivity);
+  if (writeDb(activities, DB_PATH_RC)) {
+    res.status(201).json(newActivity);
+  } else {
+    res.status(500).json({ error: 'Błąd zapisu bazy danych.' });
+  }
+});
+
+// Update an existing activity
+app.put('/api/reverse-charades/:id', (req, res) => {
+  const { id } = req.params;
+  const { question, category, difficulty } = req.body;
+
+  if (!question) {
+    return res.status(400).json({ error: 'Niepoprawne dane. Wymagana jest treść czynności.' });
+  }
+
+  const activities = readDb(DB_PATH_RC);
+  const activityIndex = activities.findIndex(a => a.id === id);
+
+  if (activityIndex === -1) {
+    return res.status(404).json({ error: 'Nie znaleziono czynności o podanym ID.' });
+  }
+
+  const updatedActivity = {
+    ...activities[activityIndex],
+    question: question.trim(),
+    category: category || 'Ogólne',
+    difficulty: difficulty || 'Średni'
+  };
+
+  activities[activityIndex] = updatedActivity;
+  if (writeDb(activities, DB_PATH_RC)) {
+    res.json(updatedActivity);
+  } else {
+    res.status(500).json({ error: 'Błąd zapisu bazy danych.' });
+  }
+});
+
+// Delete an activity
+app.delete('/api/reverse-charades/:id', (req, res) => {
+  const { id } = req.params;
+  const activities = readDb(DB_PATH_RC);
+  const filteredActivities = activities.filter(a => a.id !== id);
+
+  if (activities.length === filteredActivities.length) {
+    return res.status(404).json({ error: 'Nie znaleziono czynności o podanym ID.' });
+  }
+
+  if (writeDb(filteredActivities, DB_PATH_RC)) {
+    res.json({ message: 'Czynność usunięta pomyślnie.' });
   } else {
     res.status(500).json({ error: 'Błąd zapisu bazy danych.' });
   }

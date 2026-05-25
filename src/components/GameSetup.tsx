@@ -37,7 +37,9 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
     { id: 2, name: 'Drużyna B', color: '#eab308', points: 0 }
   ]);
 
-  const [roundTime, setRoundTime] = useState(gameMode === 'NINE_SECONDS' ? 9.5 : 60);
+  const [roundTime, setRoundTime] = useState(
+    gameMode === 'NINE_SECONDS' ? 9.5 : gameMode === 'REVERSE_CHARADES' ? 120 : 60
+  );
   const [pointsToWin, setPointsToWin] = useState(15);
   const [categories, setCategories] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -47,7 +49,12 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const endpoint = gameMode === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+        let endpoint = '/api/words';
+        if (gameMode === 'NINE_SECONDS') {
+          endpoint = '/api/nine-seconds';
+        } else if (gameMode === 'REVERSE_CHARADES') {
+          endpoint = '/api/reverse-charades';
+        }
         const res = await fetch(endpoint);
         if (res.ok) {
           const data = await res.json();
@@ -218,7 +225,12 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
           <div className="form-group">
             <label className="form-label">Czas rundy</label>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
-              {(gameMode === 'NINE_SECONDS' ? [5, 7.5, 9.5, 12, 15] : [30, 45, 60, 90, 120]).map((t) => (
+              {(gameMode === 'NINE_SECONDS' 
+                ? [5, 7.5, 9.5, 12, 15] 
+                : gameMode === 'REVERSE_CHARADES' 
+                ? [60, 90, 120, 150, 180] 
+                : [30, 45, 60, 90, 120]
+              ).map((t) => (
                 <button
                   key={t}
                   onClick={() => { playClick(); setRoundTime(t); }}

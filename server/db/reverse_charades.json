@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "question": "Picie gorącej kawy",
+    "category": "Czynności Codzienne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "2",
+    "question": "Jazda na hulajnodze",
+    "category": "Sport i Ruch",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "3",
+    "question": "Koszenie trawnika kosiarką",
+    "category": "Prace Domowe",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "4",
+    "question": "Łowienie ryb na wędkę",
+    "category": "Hobby",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "5",
+    "question": "Wiercenie dziury w ścianie",
+    "category": "Prace Domowe",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "6",
+    "question": "Robienie zakupów",
+    "category": "Czynności Codzienne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "7",
+    "question": "Gra w ping-ponga",
+    "category": "Sport i Ruch",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "8",
+    "question": "Smażenie naleśników",
+    "category": "Kuchnia",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "9",
+    "question": "Czesanie włosów",
+    "category": "Czynności Codzienne",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "10",
+    "question": "Gra na perkusji",
+    "category": "Muzyka",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "11",
+    "question": "Malowanie obrazu pędzlem",
+    "category": "Hobby",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "12",
+    "question": "Pływanie żabką w basenie",
+    "category": "Sport i Ruch",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "13",
+    "question": "Lepienie bałwana",
+    "category": "Rozrywka",
+    "difficulty": "Łatwy"
+  },
+  {
+    "id": "14",
+    "question": "Wspinaczka na górę",
+    "category": "Sport i Ruch",
+    "difficulty": "Średni"
+  },
+  {
+    "id": "15",
+    "question": "Odkurzanie pokoju odkurzaczem",
+    "category": "Prace Domowe",
+    "difficulty": "Łatwy"
+  }
+]

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer } from 'lucide-react';
+import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer, Users } from 'lucide-react';
 import { playClick, playCorrect, playWrong } from '../utils/audio';
 
 export interface WordData {
@@ -22,7 +22,7 @@ interface DatabaseEditorProps {
 }
 
 export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
-  const [activeTab, setActiveTab] = useState<'MARYLIN_MONROE' | 'NINE_SECONDS'>('MARYLIN_MONROE');
+  const [activeTab, setActiveTab] = useState<'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES'>('MARYLIN_MONROE');
   const [items, setItems] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
@@ -41,7 +41,12 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   const fetchItems = async () => {
     try {
       setLoading(true);
-      const endpoint = activeTab === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+      let endpoint = '/api/words';
+      if (activeTab === 'NINE_SECONDS') {
+        endpoint = '/api/nine-seconds';
+      } else if (activeTab === 'REVERSE_CHARADES') {
+        endpoint = '/api/reverse-charades';
+      }
       const res = await fetch(endpoint);
       if (res.ok) {
         const data = await res.json();
@@ -90,7 +95,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
 
     // Validations
     if (!wordInput.trim()) {
-      setErrorMsg(activeTab === 'MARYLIN_MONROE' ? 'Wprowadź hasło główne.' : 'Wprowadź treść pytania.');
+      let validationMsg = 'Wprowadź hasło główne.';
+      if (activeTab === 'NINE_SECONDS') {
+        validationMsg = 'Wprowadź treść pytania.';
+      } else if (activeTab === 'REVERSE_CHARADES') {
+        validationMsg = 'Wprowadź treść czynności.';
+      }
+      setErrorMsg(validationMsg);
       playWrong();
       return;
     }
@@ -115,7 +126,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
 
     try {
       let res;
-      const baseEndpoint = activeTab === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+      let baseEndpoint = '/api/words';
+      if (activeTab === 'NINE_SECONDS') {
+        baseEndpoint = '/api/nine-seconds';
+      } else if (activeTab === 'REVERSE_CHARADES') {
+        baseEndpoint = '/api/reverse-charades';
+      }
+
       if (isEditing) {
         // PUT Request
         res = await fetch(`${baseEndpoint}/${isEditing}`, {
@@ -170,14 +187,22 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   };
 
   const handleDelete = async (id: string) => {
-    const confirmMsg = activeTab === 'MARYLIN_MONROE' 
-      ? 'Czy na pewno chcesz usunąć to hasło?' 
-      : 'Czy na pewno chcesz usunąć to pytanie?';
+    let confirmMsg = 'Czy na pewno chcesz usunąć to hasło?';
+    if (activeTab === 'NINE_SECONDS') {
+      confirmMsg = 'Czy na pewno chcesz usunąć to pytanie?';
+    } else if (activeTab === 'REVERSE_CHARADES') {
+      confirmMsg = 'Czy na pewno chcesz usunąć tę czynność?';
+    }
       
     if (!window.confirm(confirmMsg)) return;
     playClick();
     try {
-      const baseEndpoint = activeTab === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+      let baseEndpoint = '/api/words';
+      if (activeTab === 'NINE_SECONDS') {
+        baseEndpoint = '/api/nine-seconds';
+      } else if (activeTab === 'REVERSE_CHARADES') {
+        baseEndpoint = '/api/reverse-charades';
+      }
       const res = await fetch(`${baseEndpoint}/${id}`, {
         method: 'DELETE'
       });
@@ -229,22 +254,30 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       </div>
 
       {/* Tabs */}
-      <div className="flex-row gap-sm" style={{ marginBottom: '32px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)', paddingBottom: '12px' }}>
+      <div className="flex-row gap-xs" style={{ marginBottom: '32px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)', paddingBottom: '12px', flexWrap: 'wrap' }}>
         <button
           onClick={() => { playClick(); setActiveTab('MARYLIN_MONROE'); }}
           className={`btn ${activeTab === 'MARYLIN_MONROE' ? 'btn-primary' : 'btn-secondary'}`}
-          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 20px' }}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
         >
-          <Tv size={16} />
+          <Tv size={15} />
           Marylin Monroe (Tabu)
         </button>
         <button
           onClick={() => { playClick(); setActiveTab('NINE_SECONDS'); }}
           className={`btn ${activeTab === 'NINE_SECONDS' ? 'btn-primary' : 'btn-secondary'}`}
-          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 20px' }}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
         >
-          <Timer size={16} />
+          <Timer size={15} />
           9,5 Sekundy (Pytania)
+        </button>
+        <button
+          onClick={() => { playClick(); setActiveTab('REVERSE_CHARADES'); }}
+          className={`btn ${activeTab === 'REVERSE_CHARADES' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
+        >
+          <Users size={15} />
+          Odwrócone Kalambury (Czynności)
         </button>
       </div>
 
@@ -255,8 +288,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               {isEditing ? <Edit2 size={16} style={{ color: 'hsl(var(--primary))' }} /> : <Plus size={16} style={{ color: 'hsl(var(--primary))' }} />}
               {isEditing 
-                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : 'Edytuj Pytanie') 
-                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : 'Dodaj Nowe Pytanie')}
+                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : activeTab === 'NINE_SECONDS' ? 'Edytuj Pytanie' : 'Edytuj Czynność') 
+                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : activeTab === 'NINE_SECONDS' ? 'Dodaj Nowe Pytanie' : 'Dodaj Czynność')}
             </h3>
 
             {errorMsg && (
@@ -273,13 +306,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <form onSubmit={handleSubmit} className="flex-col gap-md">
               <div className="form-group">
                 <label className="form-label">
-                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : 'Treść pytania'}
+                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : activeTab === 'NINE_SECONDS' ? 'Treść pytania' : 'Hasło (Czynność)'}
                 </label>
                 <input
                   type="text"
                   value={wordInput}
                   onChange={(e) => setWordInput(e.target.value)}
-                  placeholder={activeTab === 'MARYLIN_MONROE' ? 'np. Robert Lewandowski' : 'np. Wymień 3 państwa graniczące z Polską'}
+                  placeholder={activeTab === 'MARYLIN_MONROE' ? 'np. Robert Lewandowski' : activeTab === 'NINE_SECONDS' ? 'np. Wymień 3 państwa graniczące z Polską' : 'np. Jazda na hulajnodze'}
                   className="input-field"
                 />
               </div>
@@ -310,7 +343,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                     onChange={(e) => setCategoryInput(e.target.value)}
                     className="select-field"
                   >
-                    {activeTab === 'MARYLIN_MONROE' ? (
+                    {activeTab === 'MARYLIN_MONROE' && (
                       <>
                         <option value="Popkultura">Popkultura</option>
                         <option value="Ludzie">Ludzie</option>
@@ -320,7 +353,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                         <option value="Geografia">Geografia</option>
                         <option value="Inne">Inne</option>
                       </>
-                    ) : (
+                    )}
+                    {activeTab === 'NINE_SECONDS' && (
                       <>
                         <option value="Ogólne">Ogólne</option>
                         <option value="Geografia">Geografia</option>
@@ -332,6 +366,18 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                         <option value="Nauka">Nauka</option>
                         <option value="Przyroda">Przyroda</option>
                         <option value="Historia">Historia</option>
+                      </>
+                    )}
+                    {activeTab === 'REVERSE_CHARADES' && (
+                      <>
+                        <option value="Ogólne">Ogólne</option>
+                        <option value="Czynności Codzienne">Czynności Codzienne</option>
+                        <option value="Sport i Ruch">Sport i Ruch</option>
+                        <option value="Prace Domowe">Prace Domowe</option>
+                        <option value="Hobby">Hobby</option>
+                        <option value="Kuchnia">Kuchnia</option>
+                        <option value="Muzyka">Muzyka</option>
+                        <option value="Rozrywka">Rozrywka</option>
                       </>
                     )}
                   </select>
@@ -383,7 +429,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder={activeTab === 'MARYLIN_MONROE' ? "Szukaj hasła lub słowa zakazanego..." : "Szukaj pytania..."}
+                placeholder={activeTab === 'MARYLIN_MONROE' ? "Szukaj hasła lub słowa zakazanego..." : activeTab === 'NINE_SECONDS' ? "Szukaj pytania..." : "Szukaj czynności..."}
                 className="input-field search-input"
               />
             </div>
@@ -418,7 +464,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
               <table className="db-table">
                 <thead>
                   <tr>
-                    <th>{activeTab === 'MARYLIN_MONROE' ? 'Hasło' : 'Pytanie'}</th>
+                    <th>{activeTab === 'MARYLIN_MONROE' ? 'Hasło' : activeTab === 'NINE_SECONDS' ? 'Pytanie' : 'Czynność'}</th>
                     {activeTab === 'MARYLIN_MONROE' && <th>Słowa zakazane</th>}
                     <th style={{ width: '180px' }}>Szczegóły</th>
                     <th style={{ textAlign: 'right', width: '100px' }}>Akcje</th>

@@ -8,7 +8,7 @@ import { WinnerScreen } from './components/WinnerScreen';
 import { Tv, Sparkles } from 'lucide-react';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
-export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS';
+export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES';
 
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
@@ -28,7 +28,12 @@ const App: React.FC = () => {
   // Fetch database items based on selected game
   const loadGameData = async (game: GameMode) => {
     try {
-      const endpoint = game === 'MARYLIN_MONROE' ? '/api/words' : '/api/nine-seconds';
+      let endpoint = '/api/words';
+      if (game === 'NINE_SECONDS') {
+        endpoint = '/api/nine-seconds';
+      } else if (game === 'REVERSE_CHARADES') {
+        endpoint = '/api/reverse-charades';
+      }
       const res = await fetch(endpoint);
       if (res.ok) {
         const data = await res.json();
