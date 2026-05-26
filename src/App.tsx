@@ -7,10 +7,10 @@ import { Scoreboard } from './components/Scoreboard';
 import { WinnerScreen } from './components/WinnerScreen';
 import { Tv, Sparkles } from 'lucide-react';
 
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS } from './data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME } from './data/defaultData';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
-export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB';
+export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME';
 
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
@@ -65,6 +65,9 @@ const App: React.FC = () => {
     if (!localStorage.getItem('fimma_bomb_words')) {
       localStorage.setItem('fimma_bomb_words', JSON.stringify(DEFAULT_BOMB_WORDS));
     }
+    if (!localStorage.getItem('fimma_p_game')) {
+      localStorage.setItem('fimma_p_game', JSON.stringify(DEFAULT_P_GAME));
+    }
   };
 
   useEffect(() => {
@@ -90,6 +93,10 @@ const App: React.FC = () => {
       endpoint = '/api/bomb-words';
       localKey = 'fimma_bomb_words';
       defaultBackup = DEFAULT_BOMB_WORDS;
+    } else if (game === 'P_GAME') {
+      endpoint = '/api/p-game';
+      localKey = 'fimma_p_game';
+      defaultBackup = DEFAULT_P_GAME;
     }
 
     try {

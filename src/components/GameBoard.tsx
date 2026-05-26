@@ -517,6 +517,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                   ? 'Oddaj telefon/urządzenie osobie, która będzie opisywać hasło. Inni członkowie drużyny nie mogą patrzeć na ekran!'
                   : gameMode === 'NINE_SECONDS'
                   ? 'Wylosowane pytanie przeczyta Wam Mistrz Gry! Oddaj telefon osobie pełniącej rolę prowadzącego. Inni członkowie drużyny nie patrzą na ekran!'
+                  : gameMode === 'P_GAME'
+                  ? 'Będziesz opisywać hasło swojej drużynie używając WYŁĄCZNIE słów zaczynających się na literę P! Inni członkowie drużyny nie patrzą na ekran!'
                   : 'Pokazujesz hasła-czynności partnerowi, nakazując mu wykonywanie pantomimy! Oddaj telefon osobie pokazującej. Współgracz zgadujący nie patrzy na ekran!'}
               </p>
             </div>
@@ -533,8 +535,20 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           <div className="flex-container w-full">
             {currentWord ? (
               /* Zero Presji Styled Card */
-              <div className="zero-presji-card-container" style={gameMode === 'REVERSE_CHARADES' ? { background: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f43f5e 100%)', boxShadow: '0 20px 50px rgba(139, 92, 246, 0.3)' } : undefined}>
-                <div className="zero-presji-card-inner" style={gameMode === 'REVERSE_CHARADES' ? { background: 'radial-gradient(circle, #fbf7ff 0%, #f3e8ff 60%, #e9d5ff 100%)', borderColor: '#4c1d95' } : undefined}>
+              <div className="zero-presji-card-container" style={
+                gameMode === 'REVERSE_CHARADES' 
+                  ? { background: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f43f5e 100%)', boxShadow: '0 20px 50px rgba(139, 92, 246, 0.3)' } 
+                  : gameMode === 'P_GAME'
+                  ? { background: 'linear-gradient(135deg, #ff0000 0%, #ff8c00 50%, #eab308 100%)', boxShadow: '0 20px 50px rgba(255, 60, 0, 0.35)' }
+                  : undefined
+              }>
+                <div className="zero-presji-card-inner" style={
+                  gameMode === 'REVERSE_CHARADES' 
+                    ? { background: 'radial-gradient(circle, #fbf7ff 0%, #f3e8ff 60%, #e9d5ff 100%)', borderColor: '#4c1d95' } 
+                    : gameMode === 'P_GAME'
+                    ? { background: 'radial-gradient(circle, #ffe6e6 0%, #fff2e6 60%, #fffce6 100%)', borderColor: '#d31010' }
+                    : undefined
+                }>
                   {gameMode === 'MARYLIN_MONROE' ? (
                     <>
                       {/* Word title */}
@@ -590,6 +604,47 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         </p>
                       </div>
                     </>
+                  ) : gameMode === 'P_GAME' ? (
+                    <>
+                      {/* Gra na P Title styling */}
+                      <div style={{
+                        fontFamily: 'var(--font-display)',
+                        fontSize: 'clamp(1.4rem, 3.2vw, 2.5rem)',
+                        fontWeight: 900,
+                        textTransform: 'uppercase',
+                        color: '#d31010',
+                        marginBottom: '16px',
+                        letterSpacing: '0.05em',
+                        borderBottom: '3px dashed rgba(211, 16, 16, 0.25)',
+                        paddingBottom: '8px',
+                        width: '100%',
+                        maxWidth: '450px'
+                      }}>
+                        Gra na P
+                      </div>
+
+                      {/* Prompt */}
+                      <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px 0' }}>
+                        <h2 className="zero-presji-card-title" style={{ color: '#ffffff', filter: 'drop-shadow(0px 6px 6px rgba(0,0,0,0.2))' }}>
+                          {currentWord.word}
+                        </h2>
+                      </div>
+                      
+                      <div style={{
+                        fontSize: '12px',
+                        fontWeight: 800,
+                        color: '#d31010',
+                        background: 'rgba(211, 16, 16, 0.08)',
+                        border: '1px dashed rgba(211, 16, 16, 0.3)',
+                        borderRadius: '10px',
+                        padding: '6px 12px',
+                        marginTop: '10px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        Podpowiadaj tylko słowami na literę P!
+                      </div>
+                    </>
                   ) : (
                     <>
                       {/* Odwrócone Kalambury Title styling */}
@@ -637,7 +692,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <div className="glass flex-col items-center" style={{ padding: '32px', textAlign: 'center', color: '#ff5c75', gap: '8px' }}>
                 <AlertTriangle size={32} />
                 <span>
-                  {gameMode === 'MARYLIN_MONROE' ? 'Brak haseł' : gameMode === 'NINE_SECONDS' ? 'Brak pytań' : 'Brak czynności'} w wybranej kategorii!
+                  {gameMode === 'MARYLIN_MONROE' ? 'Brak haseł' : gameMode === 'NINE_SECONDS' ? 'Brak pytań' : gameMode === 'P_GAME' ? 'Brak haseł' : 'Brak czynności'} w wybranej kategorii!
                 </span>
               </div>
             )}

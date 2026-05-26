@@ -443,3 +443,36 @@ export const DEFAULT_BOMB_WORDS = [
   { "id": "b24", "word": "Banan", "category": "Jedzenie", "difficulty": "Łatwy" },
   { "id": "b25", "word": "Pomidor", "category": "Jedzenie", "difficulty": "Łatwy" }
 ];
+
+export const DEFAULT_P_GAME = [
+  { "id": "p1", "word": "Książka", "category": "Kultura", "difficulty": "Łatwy" },
+  { "id": "p2", "word": "Rower", "category": "Sport", "difficulty": "Łatwy" },
+  { "id": "p3", "word": "Słońce", "category": "Natura", "difficulty": "Łatwy" },
+  { "id": "p4", "word": "Zupa", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p5", "word": "Telefon", "category": "Technologia", "difficulty": "Łatwy" },
+  { "id": "p6", "word": "Klucz", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "p7", "word": "Pies", "category": "Zwierzęta", "difficulty": "Łatwy" },
+  { "id": "p8", "word": "Kot", "category": "Zwierzęta", "difficulty": "Łatwy" },
+  { "id": "p9", "word": "Kawa", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p10", "word": "Szkoła", "category": "Edukacja", "difficulty": "Łatwy" },
+  { "id": "p11", "word": "Samochód", "category": "Transport", "difficulty": "Łatwy" },
+  { "id": "p12", "word": "Chleb", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p13", "word": "Drzewo", "category": "Natura", "difficulty": "Łatwy" },
+  { "id": "p14", "word": "Ogród", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "p15", "word": "Zegar", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "p16", "word": "Lustro", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "p17", "word": "Poduszka", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "p18", "word": "Łóżko", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "p19", "word": "Okno", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "p20", "word": "Kubek", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p21", "word": "Nóż", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p22", "word": "Butelka", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p23", "word": "Jabłko", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p24", "word": "Banan", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p25", "word": "Pomidor", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p26", "word": "Ogórek", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p27", "word": "Ziemniak", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p28", "word": "Ser", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p29", "word": "Masło", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "p30", "word": "Cukier", "category": "Jedzenie", "difficulty": "Łatwy" }
+];

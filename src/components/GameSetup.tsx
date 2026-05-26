@@ -3,7 +3,7 @@ import { ArrowLeft, Users, Settings, Plus, Minus, Check } from 'lucide-react';
 import { playClick, playWrong } from '../utils/audio';
 import { GameMode } from '../App';
 
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES } from '../data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_P_GAME } from '../data/defaultData';
 
 export interface Team {
   id: number;
@@ -62,6 +62,10 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
         endpoint = '/api/reverse-charades';
         localKey = 'fimma_reverse_charades';
         defaultBackup = DEFAULT_REVERSE_CHARADES;
+      } else if (gameMode === 'P_GAME') {
+        endpoint = '/api/p-game';
+        localKey = 'fimma_p_game';
+        defaultBackup = DEFAULT_P_GAME;
       }
 
       try {

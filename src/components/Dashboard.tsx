@@ -24,6 +24,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
     onStartGame('REVERSE_CHARADES');
   };
 
+  const handleStartPGame = () => {
+    playClick();
+    onStartGame('P_GAME');
+  };
+
   const handleDbClick = () => {
     playClick();
     onOpenDatabase();
@@ -173,6 +178,29 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
             style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)', border: 'none' }}
           >
             <Users size={16} />
+            GRAJ TERAZ
+          </button>
+        </div>
+
+        {/* Active Game: Gra na P */}
+        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(234, 179, 8, 0.05) 100%)', border: '1px solid rgba(234, 179, 8, 0.15)' }}>
+          <div>
+            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #ff3c00, #eab308)', color: 'white' }}>
+              NOWA GRA
+            </div>
+            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
+              Gra na P
+            </h3>
+            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
+              Odgadnij jak najwięcej haseł. Twój partner podpowiada Ci, używając wyłącznie słów zaczynających się na literę „P”!
+            </p>
+          </div>
+          <button
+            onClick={handleStartPGame}
+            className="btn btn-primary"
+            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ff3c00 0%, #eab308 100%)', border: 'none' }}
+          >
+            <Play size={16} fill="currentColor" />
             GRAJ TERAZ
           </button>
         </div>
