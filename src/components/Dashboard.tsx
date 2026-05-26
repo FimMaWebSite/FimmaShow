@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Database, Lock, Sparkles, Tv, Timer, Users } from 'lucide-react';
+import { Play, Database, Sparkles, Tv, Timer, Users } from 'lucide-react';
 import { playClick } from '../utils/audio';
 import { GameMode } from '../App';
 
@@ -43,12 +43,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
     playClick();
     onOpenDatabase();
   };
-
-  const lockedGames = [
-    { title: 'Koło Fortuny', desc: 'Kręć kołem, odgaduj hasła i zdobywaj nagrody.' },
-    { title: 'Familiada', desc: 'Dwie drużyny odpowiadają na pytania zadane ankietowanym.' },
-    { title: 'Awantura o Kasę', desc: 'Licytuj pytania i walcz o skrzynie z nagrodami.' }
-  ];
 
   return (
     <div className="flex-container max-w-xl mx-auto fade-in" style={{ padding: '36px 12px', minHeight: '85vh', justifyContent: 'center' }}>
@@ -264,33 +258,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
           </button>
         </div>
 
-        {/* Locked Games */}
-        {lockedGames.map((game, index) => (
-          <div 
-            key={index} 
-            className="glass portal-card"
-            style={{ opacity: 0.5, border: '1px solid rgba(255, 255, 255, 0.03)' }}
-          >
-            <div>
-              <div className="badge-locked" style={{ marginBottom: '16px' }}>
-                <Lock size={12} /> WKRÓTCE
-              </div>
-              <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'hsl(var(--text-secondary))', marginBottom: '8px' }}>
-                {game.title}
-              </h3>
-              <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-muted))', lineHeight: '1.6' }}>
-                {game.desc}
-              </p>
-            </div>
-            <button
-              disabled
-              className="btn btn-secondary"
-              style={{ width: '100%', marginTop: '24px', cursor: 'not-allowed' }}
-            >
-              ZABLOKOWANE
-            </button>
-          </div>
-        ))}
       </div>
 
       {/* Database Admin Button */}
