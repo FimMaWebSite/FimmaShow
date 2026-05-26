@@ -72,7 +72,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
   // Normal Timer logic (runs at 100ms interval for non-Bomb modes)
   useEffect(() => {
-    if (gameMode === 'BOMB') return;
+    if (gameMode === 'BOMB' || gameMode === 'SPY') return;
 
     if (isPlaying && !isReadyPhase) {
       timerRef.current = setInterval(() => {
@@ -240,13 +240,15 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const location = shuffledWords.length > 0 ? shuffledWords[0].word : "Samolot";
     setSelectedLocation(location);
 
+    // Total players = spyPlayerCount * 2 (e.g. 2 players per team = 4 players total)
+    const totalPlayers = spyPlayerCount * 2;
+
     // Select spy index
-    const randomSpy = Math.floor(Math.random() * spyPlayerCount);
+    const randomSpy = Math.floor(Math.random() * totalPlayers);
     setSpyIndex(randomSpy);
 
     // Select questions
     const localQuestions = localStorage.getItem('fimma_spy_questions');
-    // Simple mock database questions if localStorage is not set yet
     const defaultQuestions = [
       { "question": "Jakie dźwięki najczęściej pojawiają się w tym miejscu?" },
       { "question": "Podaj 2 przykłady akcesoriów/przedmiotów w tym miejscu." },
@@ -263,8 +265,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const shuffledQ = [...questionsDb].sort(() => Math.random() - 0.5);
     
     // Assign questions for Round 1 and Round 2
-    const round1Q = shuffledQ.slice(0, spyPlayerCount).map(q => q.question);
-    const round2Q = shuffledQ.slice(spyPlayerCount, spyPlayerCount * 2).map(q => q.question);
+    const round1Q = shuffledQ.slice(0, totalPlayers).map(q => q.question);
+    const round2Q = shuffledQ.slice(totalPlayers, totalPlayers * 2).map(q => q.question);
     
     setSpyQuestions({
       round1: round1Q,
@@ -278,7 +280,25 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     setIsPlaying(true);
   };
 
+  // Helper to resolve player name and team color for multiplayer SPY mode
+  const getSpyPlayerName = (idx: number) => {
+    if (!teams || teams.length < 2) {
+      return { name: `Gracz ${idx + 1}`, color: '#fff' };
+    }
+    const teamIdx = idx % 2; // alternates: 0 for Team A, 1 for Team B
+    const playerNum = Math.floor(idx / 2) + 1;
+    const team = teams[teamIdx];
+    return {
+      name: `${team.name} - Gracz ${playerNum}`,
+      color: team.color
+    };
+  };
+
   if (gameMode === 'SPY') {
+    const totalPlayers = spyPlayerCount * 2;
+    const activePlayerInfo = getSpyPlayerName(revealPlayerIdx);
+    const questionPlayerInfo = getSpyPlayerName(questionPlayerIdx);
+
     return (
       <div className="flex-container max-w-xl mx-auto fade-in" style={{ padding: '12px', minHeight: '85vh', justifyContent: 'space-between', position: 'relative' }}>
         <style>{`
@@ -330,7 +350,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           </div>
           <div className="game-header-stats">
             <div className="stat-box">
-              <span className="stat-label">Tura drużyny</span>
+              <span className="stat-label">Typuje Drużyna</span>
               <span className="stat-value" style={{ color: currentTeam.color }}>{currentTeam.name}</span>
             </div>
           </div>
@@ -341,15 +361,15 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           <div className="glass flex-col items-center" style={{ padding: '36px', textAlign: 'center', maxWidth: '500px', width: '100%', gap: '24px' }}>
             <div style={{ width: '80px', height: '80px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '40px' }}>🕵️‍♂️</div>
             <div className="flex-col gap-xs">
-              <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white' }}>LICZBA GRACZY</h3>
+              <h3 style={{ fontSize: '20px', fontWeight: 800, color: 'white' }}>LICZBA GRACZY NA DRUŻYNĘ</h3>
               <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))' }}>
-                Podaj liczbę graczy z drużyny <strong>{currentTeam.name}</strong>, którzy wezmą udział w tej rozgrywce.
+                Podaj liczbę graczy przypadającą na jedną drużynę.
               </p>
             </div>
             
             <div className="flex-row gap-md items-center" style={{ margin: '10px 0' }}>
               <button
-                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.max(3, prev - 1)); }}
+                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.max(2, prev - 1)); }}
                 className="btn btn-secondary"
                 style={{ padding: '16px', borderRadius: '50%', width: '56px', height: '56px', fontSize: '20px' }}
               >
@@ -357,13 +377,17 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               </button>
               <span style={{ fontSize: '32px', fontWeight: 900, color: 'white', minWidth: '60px' }}>{spyPlayerCount}</span>
               <button
-                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.min(10, prev + 1)); }}
+                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.min(8, prev + 1)); }}
                 className="btn btn-secondary"
                 style={{ padding: '16px', borderRadius: '50%', width: '56px', height: '56px', fontSize: '20px' }}
               >
                 +
               </button>
             </div>
+
+            <p style={{ fontSize: '12px', color: 'hsl(var(--text-muted))' }}>
+              Łącznie graczy w grze: <strong>{spyPlayerCount * 2}</strong> (po {spyPlayerCount} z {teams?.[0]?.name || 'Drużyny A'} i {teams?.[1]?.name || 'Drużyny B'})
+            </p>
 
             <button
               onClick={() => { playClick(); startSpyGame(); }}
@@ -381,16 +405,16 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             <div className="spy-card-container">
               <div className="spy-card-inner">
                 <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--text-muted))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
-                  KROK {revealPlayerIdx + 1} Z {spyPlayerCount}
+                  KROK {revealPlayerIdx + 1} Z {totalPlayers}
                 </span>
 
                 {!cardRevealed ? (
                   <>
-                    <h2 style={{ fontSize: '28px', fontWeight: 900, color: 'white', marginBottom: '8px' }}>
-                      GRACZ {revealPlayerIdx + 1}
+                    <h2 style={{ fontSize: '28px', fontWeight: 900, color: activePlayerInfo.color, marginBottom: '8px' }}>
+                      {activePlayerInfo.name}
                     </h2>
                     <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', marginBottom: '24px', maxWidth: '300px' }}>
-                      Weź telefon i kliknij przycisk abaixo, aby potajemnie sprawdzić swoją rolę.
+                      Weź telefon i kliknij przycisk poniżej, aby potajemnie sprawdzić swoją rolę.
                     </p>
                     <button
                       onClick={() => { playClick(); setCardRevealed(true); }}
@@ -425,7 +449,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     <button
                       onClick={() => {
                         playClick();
-                        if (revealPlayerIdx < spyPlayerCount - 1) {
+                        if (revealPlayerIdx < totalPlayers - 1) {
                           setRevealPlayerIdx(prev => prev + 1);
                           setCardRevealed(false);
                         } else {
@@ -438,7 +462,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                       className="btn btn-secondary"
                       style={{ padding: '14px 28px' }}
                     >
-                      UKRYJ I PRZEKAŻ GRACZOWI {revealPlayerIdx + 2}
+                      {revealPlayerIdx < totalPlayers - 1 
+                        ? `UKRYJ I PRZEKAŻ: ${getSpyPlayerName(revealPlayerIdx + 1).name}`
+                        : 'ROZPOCZNIJ RUNDĘ PYTAŃ'
+                      }
                     </button>
                   </>
                 )}
@@ -464,8 +491,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
             <div className="spy-card-container">
               <div className="spy-card-inner">
-                <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
-                  PYTANIE DLA GRACZA {questionPlayerIdx + 1}
+                <span style={{ fontSize: '12px', fontWeight: 800, color: questionPlayerInfo.color, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+                  PYTANIE DLA: {questionPlayerInfo.name.toUpperCase()}
                 </span>
 
                 <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -488,27 +515,43 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               </div>
             </div>
 
-            <button
-              onClick={() => {
-                playClick();
-                if (questionPlayerIdx < spyPlayerCount - 1) {
-                  setQuestionPlayerIdx(prev => prev + 1);
-                } else {
-                  // All players answered in this round
-                  if (spyRound === 1) {
-                    setSpyRound(2);
-                    setQuestionPlayerIdx(0);
+            <div className="flex-col w-full gap-sm items-center" style={{ maxWidth: '400px' }}>
+              <button
+                onClick={() => {
+                  playClick();
+                  if (questionPlayerIdx < totalPlayers - 1) {
+                    setQuestionPlayerIdx(prev => prev + 1);
                   } else {
-                    // Completed both rounds, go to voting
-                    setSpyPhase('VOTING');
+                    // All players answered in this round
+                    if (spyRound === 1) {
+                      setSpyRound(2);
+                      setQuestionPlayerIdx(0);
+                    } else {
+                      // Completed both rounds, go to voting
+                      setSpyPhase('VOTING');
+                    }
                   }
-                }
-              }}
-              className="btn btn-primary"
-              style={{ width: '100%', maxWidth: '400px', padding: '16px', background: 'linear-gradient(135deg, #444 0%, #222 100%)', border: 'none' }}
-            >
-              NASTĘPNE PYTANIE
-            </button>
+                }}
+                className="btn btn-primary w-full"
+                style={{ padding: '16px', background: 'linear-gradient(135deg, #444 0%, #222 100%)', border: 'none' }}
+              >
+                NASTĘPNE PYTANIE
+              </button>
+
+              {/* Voting shortcut option only during Round 1 */}
+              {spyRound === 1 && (
+                <button
+                  onClick={() => {
+                    playClick();
+                    setSpyPhase('VOTING');
+                  }}
+                  className="btn btn-secondary w-full"
+                  style={{ border: '1px dashed rgba(255,255,255,0.2)', padding: '12px' }}
+                >
+                  TYPUJ SZPIEGA JUŻ TERAZ 🕵️‍♂️
+                </button>
+              )}
+            </div>
           </div>
         )}
 
@@ -519,25 +562,30 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             <div className="flex-col gap-xs" style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '24px', fontWeight: 900, color: 'white' }}>TYPOWANIE SZPIEGA</h3>
               <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))' }}>
-                Przedyskutujcie odpowiedzi. Kto Waszym zdaniem jest szpiegiem? Kliknij na wybranego gracza, aby sprawdzić wynik.
+                Przedyskutujcie odpowiedzi. Kto Waszym zdaniem jest szpiegiem? <br/>
+                Kliknij na wybranego gracza. Typuje drużyna: <strong style={{ color: currentTeam.color }}>{currentTeam.name}</strong>.
               </p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px', width: '100%', marginTop: '12px' }}>
-              {Array.from({ length: spyPlayerCount }).map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    playClick();
-                    setVotedPlayerIdx(idx);
-                    setSpyPhase('RESULT');
-                  }}
-                  className="btn btn-secondary"
-                  style={{ padding: '16px', fontSize: '14px', borderRadius: '12px' }}
-                >
-                  Gracz {idx + 1}
-                </button>
-              ))}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)', gap: '10px', width: '100%', marginTop: '12px' }}>
+              {Array.from({ length: totalPlayers }).map((_, idx) => {
+                const playerInfo = getSpyPlayerName(idx);
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => {
+                      playClick();
+                      setVotedPlayerIdx(idx);
+                      setSpyPhase('RESULT');
+                    }}
+                    className="btn btn-secondary"
+                    style={{ padding: '14px', fontSize: '14px', borderRadius: '12px', borderLeft: `5px solid ${playerInfo.color}`, textAlign: 'left', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+                  >
+                    <span>{playerInfo.name}</span>
+                    <span style={{ fontSize: '11px', color: 'hsl(var(--text-muted))' }}>Kliknij, by wytypować</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
         )}
@@ -552,7 +600,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                   TRAFIONY!
                 </h2>
                 <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))' }}>
-                  Szpiegiem był rzeczywiście <strong>Gracz {spyIndex + 1}</strong>! Lokalizacja to: <strong>{selectedLocation}</strong>.
+                  Szpiegiem był rzeczywiście <strong style={{ color: getSpyPlayerName(spyIndex).color }}>{getSpyPlayerName(spyIndex).name}</strong>! <br/>
+                  Lokalizacja to: <strong>{selectedLocation}</strong>.
                 </p>
                 <div style={{ background: 'rgba(16, 185, 129, 0.15)', border: '2.5px solid #10b981', borderRadius: '16px', padding: '12px 36px', color: 'white', fontWeight: 900, fontSize: '20px' }}>
                   +5 PUNKTÓW DLA {currentTeam.name.toUpperCase()}!
@@ -576,8 +625,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                   PUDŁO!
                 </h2>
                 <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))' }}>
-                  Wytypowaliście Gracza {votedPlayerIdx + 1}. <br/>
-                  Prawdziwym szpiegiem był <strong>Gracz {spyIndex + 1}</strong>! Lokalizacja to: <strong>{selectedLocation}</strong>.
+                  Wytypowaliście gracza: <strong style={{ color: getSpyPlayerName(votedPlayerIdx).color }}>{getSpyPlayerName(votedPlayerIdx).name}</strong>. <br/>
+                  Prawdziwym szpiegiem był <strong style={{ color: getSpyPlayerName(spyIndex).color }}>{getSpyPlayerName(spyIndex).name}</strong>! <br/>
+                  Lokalizacja to: <strong>{selectedLocation}</strong>.
                 </p>
                 <div style={{ background: 'rgba(239, 68, 68, 0.15)', border: '2.5px solid #ef4444', borderRadius: '16px', padding: '12px 36px', color: 'white', fontWeight: 900, fontSize: '16px', lineHeight: 1.4 }}>
                   +5 PUNKTÓW DLA DRUGIEJ DRUŻYNY!
