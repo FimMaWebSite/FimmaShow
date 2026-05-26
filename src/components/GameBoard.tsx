@@ -322,18 +322,12 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
     const handleRevolverFailed = () => {
       playWrong();
-      const newFailed = [...revolverFailedTeams, revolverTeamTurnIdx];
-      if (newFailed.length >= allTeams.length) {
-        setRevolverPhase('ALL_FAILED');
-      } else {
-        setRevolverFailedTeams(newFailed);
-        let next = (revolverTeamTurnIdx + 1) % allTeams.length;
-        while (newFailed.includes(next)) {
-          next = (next + 1) % allTeams.length;
-        }
-        setRevolverTeamTurnIdx(next);
-        setRevolverWordRevealed(false);
-      }
+      // Just move to next team — game continues indefinitely until someone guesses
+      const next = (revolverTeamTurnIdx + 1) % allTeams.length;
+      setRevolverTeamTurnIdx(next);
+      setRevolverWordRevealed(false);
+      // Track how many clues have been given (for display)
+      setRevolverFailedTeams(prev => [...prev, revolverTeamTurnIdx]);
     };
 
     const handleRevolverNext = (won: boolean) => {
@@ -488,18 +482,14 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 Podpowiadacz z <span style={{ color: activeTeam.color }}>{activeTeam.name}</span> daje JEDNO słowo wskazówki
               </div>
               <div style={{ fontSize: '12.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-                Następnie guesser drużyny próbuje odgadnąć hasło. Jeśli nie trafi — kolej przechodzi do następnej drużyny.
+                Jeśli nie trafią — kolej przechodzi do następnej drużyny. Gra trwa aż ktoś odgadnie!
               </div>
             </div>
 
-            {/* Already failed teams */}
+            {/* Clue counter */}
             {revolverFailedTeams.length > 0 && (
-              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                {revolverFailedTeams.map(idx => (
-                  <div key={idx} style={{ fontSize: '11px', padding: '4px 10px', borderRadius: '999px', background: 'rgba(239,68,68,0.12)', border: '1px solid rgba(239,68,68,0.25)', color: '#ef4444', fontWeight: 700 }}>
-                    ✗ {allTeams[idx].name} spudłowała
-                  </div>
-                ))}
+              <div style={{ fontSize: '12px', color: 'hsl(var(--text-secondary))', fontWeight: 600 }}>
+                Dano już wskazówek: {revolverFailedTeams.length} 🔫
               </div>
             )}
 
@@ -508,7 +498,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <button
                 onClick={handleRevolverGuessed}
                 className="btn btn-primary"
-                style={{ flex: 1, padding: '18px', fontSize: '16px', background: 'linear-gradient(135deg, #16a34a, #15803d)', border: 'none', borderRadius: '18px' }}
+                style={{ flex: 2, padding: '18px', fontSize: '16px', background: 'linear-gradient(135deg, #16a34a, #15803d)', border: 'none', borderRadius: '18px' }}
               >
                 <Check size={20} />
                 Odgadli! ✅
@@ -516,12 +506,19 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <button
                 onClick={handleRevolverFailed}
                 className="btn btn-secondary"
-                style={{ flex: 1, padding: '18px', fontSize: '16px', borderRadius: '18px' }}
+                style={{ flex: 2, padding: '18px', fontSize: '16px', borderRadius: '18px' }}
               >
                 <X size={20} />
                 Nie trafili →
               </button>
             </div>
+            {/* Skip word option */}
+            <button
+              onClick={() => { playClick(); onRoundEnd(0); }}
+              style={{ fontSize: '12px', color: 'hsl(var(--text-secondary))', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline', padding: '4px' }}
+            >
+              Pomiń hasło (brak punktów)
+            </button>
           </div>
         )}
 
@@ -542,28 +539,6 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             </div>
             <button
               onClick={() => handleRevolverNext(true)}
-              className="btn btn-primary"
-              style={{ padding: '16px 40px', fontSize: '16px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}
-            >
-              Następna runda →
-            </button>
-          </div>
-        )}
-
-        {revolverPhase === 'ALL_FAILED' && (
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '24px', textAlign: 'center' }}>
-            <div style={{ fontSize: '72px' }}>💨</div>
-            <div>
-              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
-                Nikt nie odgadł!
-              </div>
-              <div style={{ fontSize: '32px', fontWeight: 900, color: '#fde68a', marginBottom: '8px' }}>
-                {revolverWord?.word}
-              </div>
-              <div style={{ fontSize: '13px', color: 'hsl(var(--text-secondary))' }}>Hasło przepada. Brak punktów.</div>
-            </div>
-            <button
-              onClick={() => handleRevolverNext(false)}
               className="btn btn-primary"
               style={{ padding: '16px 40px', fontSize: '16px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}
             >
