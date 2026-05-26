@@ -10,7 +10,7 @@ import { Tv, Sparkles } from 'lucide-react';
 import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME, DEFAULT_SPY_LOCATIONS, DEFAULT_SPY_QUESTIONS, DEFAULT_LIPS_WORDS } from './data/defaultData';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
-export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME' | 'SPY' | 'LIPS';
+export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME' | 'SPY' | 'LIPS' | 'REVOLVER';
 
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
@@ -114,6 +114,10 @@ const App: React.FC = () => {
       endpoint = '/api/lips-words';
       localKey = 'fimma_lips_words';
       defaultBackup = DEFAULT_LIPS_WORDS;
+    } else if (game === 'REVOLVER') {
+      endpoint = '/api/words';
+      localKey = 'fimma_words';
+      defaultBackup = DEFAULT_WORDS;
     }
 
     try {

@@ -55,10 +55,18 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const [votedPlayerIdx, setVotedPlayerIdx] = useState(-1);
   const [selectedLocation, setSelectedLocation] = useState('');
 
+  // Revolver game state
+  const [revolverPhase, setRevolverPhase] = useState<'SETUP' | 'REVEAL' | 'PLAYING' | 'WON' | 'ALL_FAILED'>('SETUP');
+  const [revolverWordIdx, _setRevolverWordIdx] = useState(0);
+  const [revolverTeamTurnIdx, setRevolverTeamTurnIdx] = useState(0);
+  const [revolverWordRevealed, setRevolverWordRevealed] = useState(false);
+  const [revolverFailedTeams, setRevolverFailedTeams] = useState<number[]>([]);
+  const [revolverWinnerIdx, setRevolverWinnerIdx] = useState(-1);
+
   // Filter and shuffle items on mount
   useEffect(() => {
     let filtered = availableWords;
-    if (gameMode !== 'BOMB' && gameMode !== 'SPY' && gameMode !== 'LIPS' && settings.selectedCategories && settings.selectedCategories.length > 0) {
+    if (gameMode !== 'BOMB' && gameMode !== 'SPY' && gameMode !== 'LIPS' && gameMode !== 'REVOLVER' && settings.selectedCategories && settings.selectedCategories.length > 0) {
       filtered = availableWords.filter(w => settings.selectedCategories.includes(w.category));
     }
     // Fisher-Yates Shuffle
@@ -294,7 +302,281 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     };
   };
 
+  if (gameMode === 'REVOLVER') {
+    const allTeams = teams || [currentTeam];
+    const revolverWord = shuffledWords[revolverWordIdx];
+
+    const startRevolver = () => {
+      playClick();
+      setRevolverPhase('REVEAL');
+      setRevolverTeamTurnIdx(0);
+      setRevolverFailedTeams([]);
+      setRevolverWordRevealed(false);
+    };
+
+    const handleRevolverGuessed = () => {
+      playCorrect();
+      setRevolverWinnerIdx(revolverTeamTurnIdx);
+      setRevolverPhase('WON');
+    };
+
+    const handleRevolverFailed = () => {
+      playWrong();
+      const newFailed = [...revolverFailedTeams, revolverTeamTurnIdx];
+      if (newFailed.length >= allTeams.length) {
+        setRevolverPhase('ALL_FAILED');
+      } else {
+        setRevolverFailedTeams(newFailed);
+        let next = (revolverTeamTurnIdx + 1) % allTeams.length;
+        while (newFailed.includes(next)) {
+          next = (next + 1) % allTeams.length;
+        }
+        setRevolverTeamTurnIdx(next);
+        setRevolverWordRevealed(false);
+      }
+    };
+
+    const handleRevolverNext = (won: boolean) => {
+      playClick();
+      if (won) {
+        const winnerTeam = allTeams[revolverWinnerIdx];
+        const isCurrentTeamWinner = winnerTeam.id === currentTeam.id;
+        onRoundEnd(isCurrentTeamWinner ? 1 : 0);
+      } else {
+        onRoundEnd(0);
+      }
+    };
+
+    const activeTeam = allTeams[revolverTeamTurnIdx];
+    const winnerTeam = revolverWinnerIdx >= 0 ? allTeams[revolverWinnerIdx] : null;
+
+    return (
+      <div className="flex-container max-w-xl mx-auto fade-in" style={{ padding: '12px', minHeight: '85vh', justifyContent: 'space-between', position: 'relative' }}>
+        <style>{`
+          .revolver-word-card {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            max-width: 680px;
+            background: linear-gradient(135deg, #1c1008 0%, #2a1a05 100%);
+            border-radius: 28px;
+            border: 2px solid rgba(180, 83, 9, 0.4);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 0 1px rgba(180, 83, 9, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+          }
+          .revolver-team-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+          }
+          .revolver-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+          }
+        `}</style>
+
+        {/* Header */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+          <button onClick={handleExitClick} className="btn btn-secondary" style={{ padding: '8px 14px', fontSize: '12px', borderRadius: '12px' }}>
+            ✕ Zakończ
+          </button>
+          <div style={{ fontSize: '22px', fontWeight: 900, color: '#fcd34d', letterSpacing: '0.05em' }}>
+            🔫 REWOLWER
+          </div>
+          <div style={{ fontSize: '13px', fontWeight: 700, color: 'hsl(var(--text-secondary))' }}>
+            {allTeams.map(t => t.points).join(' – ')} pkt
+          </div>
+        </div>
+
+        {revolverPhase === 'SETUP' && (
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '28px', textAlign: 'center' }}>
+            <div style={{ fontSize: '56px' }}>🔫</div>
+            <div>
+              <div style={{ fontSize: '28px', fontWeight: 900, color: 'white', marginBottom: '12px' }}>Rewolwer</div>
+              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', maxWidth: '360px', lineHeight: '1.7' }}>
+                Jedno hasło – drużyny dają po jednej wskazówce na zmianę. Kto odgadnie, zgarnia punkt!
+              </div>
+            </div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+              {allTeams.map((t, i) => (
+                <div key={i} className="revolver-team-pill" style={{ background: `${t.color}22`, border: `1px solid ${t.color}55` }}>
+                  <div className="revolver-dot" style={{ background: t.color }} />
+                  <span style={{ color: t.color }}>{t.name}</span>
+                  <span style={{ color: 'rgba(255,255,255,0.5)' }}>{t.points} pkt</span>
+                </div>
+              ))}
+            </div>
+            <button onClick={startRevolver} className="btn btn-primary" style={{ padding: '16px 40px', fontSize: '17px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}>
+              <Play size={18} fill="currentColor" />
+              LOSUJ HASŁO
+            </button>
+          </div>
+        )}
+
+        {revolverPhase === 'REVEAL' && revolverWord && (
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '24px', width: '100%' }}>
+            <div style={{ fontSize: '14px', fontWeight: 700, color: 'hsl(var(--text-secondary))', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+              Hasło rundy
+            </div>
+
+            {/* Word Card — tap to reveal */}
+            <div
+              className="revolver-word-card"
+              onClick={() => setRevolverWordRevealed(r => !r)}
+            >
+              {revolverWordRevealed ? (
+                <div style={{ textAlign: 'center', padding: '24px' }}>
+                  <div style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', fontWeight: 900, color: '#fde68a', letterSpacing: '-0.02em', textShadow: '0 0 40px rgba(253, 230, 138, 0.3)' }}>
+                    {revolverWord.word}
+                  </div>
+                  {revolverWord.category && (
+                    <div style={{ fontSize: '12px', color: 'rgba(253, 230, 138, 0.5)', marginTop: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                      {revolverWord.category}
+                    </div>
+                  )}
+                  <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', marginTop: '10px' }}>Stuknij aby ukryć</div>
+                </div>
+              ) : (
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '42px', marginBottom: '12px' }}>🔒</div>
+                  <div style={{ fontSize: '15px', color: 'rgba(253, 230, 138, 0.7)', fontWeight: 700 }}>Stuknij aby odsłonić hasło</div>
+                  <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', marginTop: '8px' }}>Tylko podpowiadacze patrzą!</div>
+                </div>
+              )}
+            </div>
+
+            <div style={{ fontSize: '13px', color: 'hsl(var(--text-secondary))', textAlign: 'center', maxWidth: '360px', lineHeight: '1.6' }}>
+              Każdy podpowiadacz (jedna osoba z drużyny) niech podejdzie i zapamięta hasło. Gracze-odgadujący odwracają wzrok!
+            </div>
+
+            <button
+              onClick={() => { playClick(); setRevolverPhase('PLAYING'); setRevolverWordRevealed(false); }}
+              className="btn btn-primary"
+              style={{ padding: '14px 36px', fontSize: '15px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}
+            >
+              Wszyscy zapamiętali → START
+            </button>
+          </div>
+        )}
+
+        {revolverPhase === 'PLAYING' && revolverWord && (
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px', width: '100%' }}>
+            {/* Active team indicator */}
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '12px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>
+                Teraz gra
+              </div>
+              <div className="revolver-team-pill" style={{ fontSize: '18px', padding: '10px 24px', background: `${activeTeam.color}22`, border: `2px solid ${activeTeam.color}88` }}>
+                <div className="revolver-dot" style={{ background: activeTeam.color, width: '14px', height: '14px' }} />
+                <span style={{ color: activeTeam.color, fontWeight: 900 }}>{activeTeam.name}</span>
+              </div>
+            </div>
+
+            {/* Instruction */}
+            <div className="glass" style={{ width: '100%', padding: '20px 24px', textAlign: 'center', borderRadius: '20px', background: 'rgba(255,255,255,0.03)' }}>
+              <div style={{ fontSize: '15px', color: 'white', fontWeight: 800, marginBottom: '8px' }}>
+                Podpowiadacz z <span style={{ color: activeTeam.color }}>{activeTeam.name}</span> daje JEDNO słowo wskazówki
+              </div>
+              <div style={{ fontSize: '12.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
+                Następnie guesser drużyny próbuje odgadnąć hasło. Jeśli nie trafi — kolej przechodzi do następnej drużyny.
+              </div>
+            </div>
+
+            {/* Already failed teams */}
+            {revolverFailedTeams.length > 0 && (
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                {revolverFailedTeams.map(idx => (
+                  <div key={idx} style={{ fontSize: '11px', padding: '4px 10px', borderRadius: '999px', background: 'rgba(239,68,68,0.12)', border: '1px solid rgba(239,68,68,0.25)', color: '#ef4444', fontWeight: 700 }}>
+                    ✗ {allTeams[idx].name} spudłowała
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Action buttons */}
+            <div style={{ display: 'flex', gap: '12px', width: '100%' }}>
+              <button
+                onClick={handleRevolverGuessed}
+                className="btn btn-primary"
+                style={{ flex: 1, padding: '18px', fontSize: '16px', background: 'linear-gradient(135deg, #16a34a, #15803d)', border: 'none', borderRadius: '18px' }}
+              >
+                <Check size={20} />
+                Odgadli! ✅
+              </button>
+              <button
+                onClick={handleRevolverFailed}
+                className="btn btn-secondary"
+                style={{ flex: 1, padding: '18px', fontSize: '16px', borderRadius: '18px' }}
+              >
+                <X size={20} />
+                Nie trafili →
+              </button>
+            </div>
+          </div>
+        )}
+
+        {revolverPhase === 'WON' && winnerTeam && (
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '24px', textAlign: 'center' }}>
+            <div style={{ fontSize: '72px' }}>🎯</div>
+            <div>
+              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+                Odgadnięto!
+              </div>
+              <div style={{ fontSize: '36px', fontWeight: 900, color: '#fde68a', marginBottom: '8px' }}>
+                {revolverWord?.word}
+              </div>
+              <div className="revolver-team-pill" style={{ fontSize: '18px', padding: '10px 24px', background: `${winnerTeam.color}22`, border: `2px solid ${winnerTeam.color}88`, margin: '0 auto' }}>
+                <div className="revolver-dot" style={{ background: winnerTeam.color, width: '14px', height: '14px' }} />
+                <span style={{ color: winnerTeam.color, fontWeight: 900 }}>{winnerTeam.name} +1 pkt</span>
+              </div>
+            </div>
+            <button
+              onClick={() => handleRevolverNext(true)}
+              className="btn btn-primary"
+              style={{ padding: '16px 40px', fontSize: '16px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}
+            >
+              Następna runda →
+            </button>
+          </div>
+        )}
+
+        {revolverPhase === 'ALL_FAILED' && (
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '24px', textAlign: 'center' }}>
+            <div style={{ fontSize: '72px' }}>💨</div>
+            <div>
+              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+                Nikt nie odgadł!
+              </div>
+              <div style={{ fontSize: '32px', fontWeight: 900, color: '#fde68a', marginBottom: '8px' }}>
+                {revolverWord?.word}
+              </div>
+              <div style={{ fontSize: '13px', color: 'hsl(var(--text-secondary))' }}>Hasło przepada. Brak punktów.</div>
+            </div>
+            <button
+              onClick={() => handleRevolverNext(false)}
+              className="btn btn-primary"
+              style={{ padding: '16px 40px', fontSize: '16px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}
+            >
+              Następna runda →
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  }
+
   if (gameMode === 'SPY') {
+
     const totalPlayers = spyPlayerCount * 2;
     const activePlayerInfo = getSpyPlayerName(revealPlayerIdx);
     const questionPlayerInfo = getSpyPlayerName(questionPlayerIdx);

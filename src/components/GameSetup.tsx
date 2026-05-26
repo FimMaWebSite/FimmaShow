@@ -156,7 +156,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   };
 
   const handleStartGame = () => {
-    if (gameMode !== 'TOURNAMENT' && gameMode !== 'SPY' && gameMode !== 'LIPS' && selectedCategories.length === 0) {
+    if (gameMode !== 'TOURNAMENT' && gameMode !== 'SPY' && gameMode !== 'LIPS' && gameMode !== 'REVOLVER' && selectedCategories.length === 0) {
       playWrong();
       alert('Wybierz przynajmniej jedną kategorię haseł.');
       return;
@@ -165,7 +165,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
     onStart(teams, { 
       roundTime: gameMode === 'TOURNAMENT' ? 60 : roundTime, 
       pointsToWin: gameMode === 'TOURNAMENT' ? 9999 : gameMode === 'SPY' ? 15 : pointsToWin, 
-      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' || gameMode === 'LIPS' ? [] : selectedCategories 
+      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' || gameMode === 'LIPS' || gameMode === 'REVOLVER' ? [] : selectedCategories 
     });
   };
 
@@ -247,7 +247,36 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
         </div>
 
         {/* Right Card: Game Settings / Tournament Preview */}
-        {gameMode === 'LIPS' ? (
+        {gameMode === 'REVOLVER' ? (
+          <div className="glass flex-col gap-md">
+            <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
+              <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
+              Zasady Gry: Rewolwer 🔫
+            </h3>
+            
+            <div className="flex-col gap-sm" style={{ marginTop: '8px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Jedno Hasło dla Wszystkich</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Na ekranie pojawia się jedno tajne hasło. Jeden gracz z każdej drużyny je widzi i zostaje podpowiadaczem.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Jedna Wskazówka, Jedna Szansa</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Drużyna aktywna daje jedną wskazówkę (jedno słowo), jej guesser próbuje odgadnąć. Jeśli nie trafi – kolej przechodzi do następnej drużyny.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Rotacja Drużyn</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Drużyny grają na zmianę aż do odgadnięcia hasła. Jeśli wszystkie drużyny spróbują i nikt nie odgadnie – hasło przepada.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'linear-gradient(135deg, rgba(180, 83, 9, 0.15) 0%, rgba(120, 53, 15, 0.2) 100%)', border: '1px solid rgba(180, 83, 9, 0.3)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: '#fcd34d' }}>Punktacja</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Drużyna, która odgadnie hasło, zdobywa <strong style={{color:'white'}}>+1 punkt</strong>. Gra do ustalonej liczby punktów.</span>
+              </div>
+            </div>
+          </div>
+        ) : gameMode === 'LIPS' ? (
           <div className="glass flex-col gap-md">
             <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
               <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />

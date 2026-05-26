@@ -39,6 +39,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
     onStartGame('LIPS');
   };
 
+  const handleStartRevolver = () => {
+    playClick();
+    onStartGame('REVOLVER');
+  };
+
   const handleDbClick = () => {
     playClick();
     onOpenDatabase();
@@ -252,6 +257,29 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
             onClick={handleStartLips}
             className="btn btn-primary"
             style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ef4444 0%, #db2777 100%)', border: 'none' }}
+          >
+            <Play size={16} fill="currentColor" />
+            GRAJ TERAZ
+          </button>
+        </div>
+
+        {/* Active Game: Rewolwer */}
+        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(120, 53, 15, 0.15) 0%, rgba(180, 83, 9, 0.1) 100%)', border: '1px solid rgba(180, 83, 9, 0.25)' }}>
+          <div>
+            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #78350f, #b45309)', color: '#fde68a' }}>
+              NOWA GRA 🔫
+            </div>
+            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
+              Rewolwer
+            </h3>
+            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
+              Jedno hasło, które zna jeden gracz z każdej drużyny. Drużyny na zmianę dają jedną wskazówkę słowem – punkt dla tej, która odgadnie!
+            </p>
+          </div>
+          <button
+            onClick={handleStartRevolver}
+            className="btn btn-primary"
+            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #78350f 0%, #b45309 100%)', border: 'none' }}
           >
             <Play size={16} fill="currentColor" />
             GRAJ TERAZ
