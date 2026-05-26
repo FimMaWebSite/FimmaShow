@@ -7,10 +7,10 @@ import { Scoreboard } from './components/Scoreboard';
 import { WinnerScreen } from './components/WinnerScreen';
 import { Tv, Sparkles } from 'lucide-react';
 
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME } from './data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME, DEFAULT_SPY_LOCATIONS, DEFAULT_SPY_QUESTIONS } from './data/defaultData';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
-export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME';
+export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME' | 'SPY';
 
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
@@ -68,6 +68,12 @@ const App: React.FC = () => {
     if (!localStorage.getItem('fimma_p_game')) {
       localStorage.setItem('fimma_p_game', JSON.stringify(DEFAULT_P_GAME));
     }
+    if (!localStorage.getItem('fimma_spy_locations')) {
+      localStorage.setItem('fimma_spy_locations', JSON.stringify(DEFAULT_SPY_LOCATIONS));
+    }
+    if (!localStorage.getItem('fimma_spy_questions')) {
+      localStorage.setItem('fimma_spy_questions', JSON.stringify(DEFAULT_SPY_QUESTIONS));
+    }
   };
 
   useEffect(() => {
@@ -97,6 +103,10 @@ const App: React.FC = () => {
       endpoint = '/api/p-game';
       localKey = 'fimma_p_game';
       defaultBackup = DEFAULT_P_GAME;
+    } else if (game === 'SPY') {
+      endpoint = '/api/spy-locations';
+      localKey = 'fimma_spy_locations';
+      defaultBackup = DEFAULT_SPY_LOCATIONS;
     }
 
     try {
@@ -156,11 +166,39 @@ const App: React.FC = () => {
     setView('GAMEPLAY');
   };
 
-  const handleRoundEnd = (pointsEarned: number, loserTeamId?: number) => {
+  const handleRoundEnd = (pointsEarned: number, loserTeamId?: number, opponentPointsEarned?: number) => {
     setLastPointsEarned(pointsEarned);
     setLastTeamIndex(currentTeamIndex);
 
     let updatedTeams = [...teams];
+
+    if (selectedGame === 'SPY') {
+      updatedTeams = teams.map((team, idx) => {
+        let pts = team.points;
+        if (idx === currentTeamIndex) {
+          pts = Math.max(0, pts + pointsEarned);
+        } else if (opponentPointsEarned !== undefined) {
+          pts = Math.max(0, pts + opponentPointsEarned);
+        }
+        return { ...team, points: pts };
+      });
+      setTeams(updatedTeams);
+
+      const currentTeamScore = updatedTeams[currentTeamIndex].points;
+      const opponentIdx = (currentTeamIndex + 1) % teams.length;
+      const opponentTeamScore = updatedTeams[opponentIdx].points;
+      const isWinnerFound = currentTeamScore >= settings.pointsToWin || opponentTeamScore >= settings.pointsToWin;
+
+      const nextIdx = (currentTeamIndex + 1) % teams.length;
+      setCurrentTeamIndex(nextIdx);
+
+      if (isWinnerFound) {
+        setView('WINNER');
+      } else {
+        setView('SCOREBOARD');
+      }
+      return;
+    }
 
     if (selectedGame === 'TOURNAMENT') {
       if (loserTeamId !== undefined) {

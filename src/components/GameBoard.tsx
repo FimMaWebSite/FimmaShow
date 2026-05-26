@@ -9,7 +9,7 @@ interface GameBoardProps {
   currentTeam: Team;
   settings: GameSettings;
   availableWords: any[];
-  onRoundEnd: (teamPointsThisRound: number, loserTeamId?: number) => void;
+  onRoundEnd: (teamPointsThisRound: number, loserTeamId?: number, opponentPointsEarned?: number) => void;
   onExitGame: () => void;
   gameMode: GameMode;
   teams?: Team[];
@@ -43,10 +43,22 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const popupIdCounter = useRef(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Spy game state
+  const [spyPlayerCount, setSpyPlayerCount] = useState(4);
+  const [spyPhase, setSpyPhase] = useState<'SETUP' | 'REVEAL' | 'QUESTIONS' | 'VOTING' | 'RESULT'>('SETUP');
+  const [revealPlayerIdx, setRevealPlayerIdx] = useState(0);
+  const [cardRevealed, setCardRevealed] = useState(false);
+  const [spyIndex, setSpyIndex] = useState(-1);
+  const [spyQuestions, setSpyQuestions] = useState<{ round1: string[]; round2: string[] }>({ round1: [], round2: [] });
+  const [questionPlayerIdx, setQuestionPlayerIdx] = useState(0);
+  const [spyRound, setSpyRound] = useState(1);
+  const [votedPlayerIdx, setVotedPlayerIdx] = useState(-1);
+  const [selectedLocation, setSelectedLocation] = useState('');
+
   // Filter and shuffle items on mount
   useEffect(() => {
     let filtered = availableWords;
-    if (gameMode !== 'BOMB' && settings.selectedCategories && settings.selectedCategories.length > 0) {
+    if (gameMode !== 'BOMB' && gameMode !== 'SPY' && settings.selectedCategories && settings.selectedCategories.length > 0) {
       filtered = availableWords.filter(w => settings.selectedCategories.includes(w.category));
     }
     // Fisher-Yates Shuffle
@@ -222,6 +234,372 @@ export const GameBoard: React.FC<GameBoardProps> = ({
       onExitGame();
     }
   };
+
+  const startSpyGame = () => {
+    // Select location
+    const location = shuffledWords.length > 0 ? shuffledWords[0].word : "Samolot";
+    setSelectedLocation(location);
+
+    // Select spy index
+    const randomSpy = Math.floor(Math.random() * spyPlayerCount);
+    setSpyIndex(randomSpy);
+
+    // Select questions
+    const localQuestions = localStorage.getItem('fimma_spy_questions');
+    // Simple mock database questions if localStorage is not set yet
+    const defaultQuestions = [
+      { "question": "Jakie dźwięki najczęściej pojawiają się w tym miejscu?" },
+      { "question": "Podaj 2 przykłady akcesoriów/przedmiotów w tym miejscu." },
+      { "question": "Co ludzie najczęściej tam robią?" },
+      { "question": "Jacy profesjonaliści tam pracują?" },
+      { "question": "Jak się ubieramy, idąc w to miejsce?" },
+      { "question": "Czy wstęp tam jest zazwyczaj płatny?" },
+      { "question": "Jaka pogoda lub pora dnia sprzyja wizycie w tym miejscu?" },
+      { "question": "Czego absolutnie nie wolno tam robić?" },
+      { "question": "Jaki jest główny cel wizyty w tym miejscu?" },
+      { "question": "Czy to miejsce jest zazwyczaj głośne czy ciche?" }
+    ];
+    const questionsDb = localQuestions ? JSON.parse(localQuestions) : defaultQuestions;
+    const shuffledQ = [...questionsDb].sort(() => Math.random() - 0.5);
+    
+    // Assign questions for Round 1 and Round 2
+    const round1Q = shuffledQ.slice(0, spyPlayerCount).map(q => q.question);
+    const round2Q = shuffledQ.slice(spyPlayerCount, spyPlayerCount * 2).map(q => q.question);
+    
+    setSpyQuestions({
+      round1: round1Q,
+      round2: round2Q
+    });
+
+    setRevealPlayerIdx(0);
+    setCardRevealed(false);
+    setSpyPhase('REVEAL');
+    setIsReadyPhase(false);
+    setIsPlaying(true);
+  };
+
+  if (gameMode === 'SPY') {
+    return (
+      <div className="flex-container max-w-xl mx-auto fade-in" style={{ padding: '12px', minHeight: '85vh', justifyContent: 'space-between', position: 'relative' }}>
+        <style>{`
+          .spy-card-container {
+            aspect-ratio: 16 / 10;
+            width: 100%;
+            max-width: 680px;
+            background: linear-gradient(135deg, #1f1f23 0%, #111113 100%);
+            border-radius: 40px;
+            padding: 14px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 2px solid rgba(255,255,255,0.05);
+          }
+
+          .spy-card-inner {
+            background: radial-gradient(circle, #2d2d35 0%, #151518 100%);
+            border-radius: 30px;
+            width: 100%;
+            height: 100%;
+            border: 4px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 32px;
+            text-align: center;
+            position: relative;
+            box-shadow: inset 0 4px 15px rgba(0,0,0,0.4);
+          }
+          
+          .spy-text-gold {
+            background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        `}</style>
+
+        {/* Header bar */}
+        <div className="game-header-bar" style={{ borderColor: 'rgba(255, 255, 255, 0.1)', background: 'rgba(255, 255, 255, 0.02)' }}>
+          <div className="game-header-team">
+            <span style={{ fontSize: '12px', fontWeight: 900, color: 'white', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              GRA: SZPIEG 🕵️‍♂️
+            </span>
+          </div>
+          <div className="game-header-stats">
+            <div className="stat-box">
+              <span className="stat-label">Tura drużyny</span>
+              <span className="stat-value" style={{ color: currentTeam.color }}>{currentTeam.name}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Setup Phase */}
+        {spyPhase === 'SETUP' && (
+          <div className="glass flex-col items-center" style={{ padding: '36px', textAlign: 'center', maxWidth: '500px', width: '100%', gap: '24px' }}>
+            <div style={{ width: '80px', height: '80px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '40px' }}>🕵️‍♂️</div>
+            <div className="flex-col gap-xs">
+              <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white' }}>LICZBA GRACZY</h3>
+              <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))' }}>
+                Podaj liczbę graczy z drużyny <strong>{currentTeam.name}</strong>, którzy wezmą udział w tej rozgrywce.
+              </p>
+            </div>
+            
+            <div className="flex-row gap-md items-center" style={{ margin: '10px 0' }}>
+              <button
+                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.max(3, prev - 1)); }}
+                className="btn btn-secondary"
+                style={{ padding: '16px', borderRadius: '50%', width: '56px', height: '56px', fontSize: '20px' }}
+              >
+                -
+              </button>
+              <span style={{ fontSize: '32px', fontWeight: 900, color: 'white', minWidth: '60px' }}>{spyPlayerCount}</span>
+              <button
+                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.min(10, prev + 1)); }}
+                className="btn btn-secondary"
+                style={{ padding: '16px', borderRadius: '50%', width: '56px', height: '56px', fontSize: '20px' }}
+              >
+                +
+              </button>
+            </div>
+
+            <button
+              onClick={() => { playClick(); startSpyGame(); }}
+              className="btn btn-primary w-full"
+              style={{ padding: '16px', fontSize: '16px', background: 'linear-gradient(135deg, #333 0%, #111 100%)', border: '1px solid rgba(255,255,255,0.1)' }}
+            >
+              ROZPOCZNIJ ROZDAWANIE RÓL
+            </button>
+          </div>
+        )}
+
+        {/* Reveal Roles Phase */}
+        {spyPhase === 'REVEAL' && (
+          <div className="flex-container w-full" style={{ flexGrow: 1, justifyContent: 'center', margin: '20px 0' }}>
+            <div className="spy-card-container">
+              <div className="spy-card-inner">
+                <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--text-muted))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+                  KROK {revealPlayerIdx + 1} Z {spyPlayerCount}
+                </span>
+
+                {!cardRevealed ? (
+                  <>
+                    <h2 style={{ fontSize: '28px', fontWeight: 900, color: 'white', marginBottom: '8px' }}>
+                      GRACZ {revealPlayerIdx + 1}
+                    </h2>
+                    <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', marginBottom: '24px', maxWidth: '300px' }}>
+                      Weź telefon i kliknij przycisk abaixo, aby potajemnie sprawdzić swoją rolę.
+                    </p>
+                    <button
+                      onClick={() => { playClick(); setCardRevealed(true); }}
+                      className="btn btn-primary"
+                      style={{ padding: '14px 28px', background: 'linear-gradient(135deg, #555 0%, #222 100%)', border: 'none' }}
+                    >
+                      POKAŻ MOJĄ KARTĘ
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <h4 style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+                      TWOJA ROLA TO:
+                    </h4>
+                    
+                    {revealPlayerIdx === spyIndex ? (
+                      <h2 className="spy-text-gold" style={{ fontSize: '42px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '16px' }}>
+                        🕵️‍♂️ SZPIEG
+                      </h2>
+                    ) : (
+                      <h2 style={{ fontSize: '42px', fontWeight: 900, color: 'white', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '16px' }}>
+                        {selectedLocation}
+                      </h2>
+                    )}
+
+                    <p style={{ fontSize: '13px', color: 'hsl(var(--text-muted))', marginBottom: '24px', maxWidth: '360px' }}>
+                      {revealPlayerIdx === spyIndex 
+                        ? 'Nie znasz lokalizacji. Musisz słuchać innych i udawać, że wiesz o jakie miejsce chodzi!' 
+                        : 'Zapamiętaj to miejsce i nie pokazuj go nikomu. Odpowiadaj sprytnie na pytania.'}
+                    </p>
+
+                    <button
+                      onClick={() => {
+                        playClick();
+                        if (revealPlayerIdx < spyPlayerCount - 1) {
+                          setRevealPlayerIdx(prev => prev + 1);
+                          setCardRevealed(false);
+                        } else {
+                          // All players checked roles, advance to questions
+                          setQuestionPlayerIdx(0);
+                          setSpyRound(1);
+                          setSpyPhase('QUESTIONS');
+                        }
+                      }}
+                      className="btn btn-secondary"
+                      style={{ padding: '14px 28px' }}
+                    >
+                      UKRYJ I PRZEKAŻ GRACZOWI {revealPlayerIdx + 2}
+                    </button>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Questions Phase */}
+        {spyPhase === 'QUESTIONS' && (
+          <div className="flex-container w-full" style={{ flexGrow: 1, justifyContent: 'center', margin: '20px 0', gap: '20px' }}>
+            <div style={{
+              background: 'rgba(255, 255, 255, 0.03)',
+              border: '1px solid rgba(255,255,255,0.06)',
+              padding: '10px 24px',
+              borderRadius: '12px',
+              fontWeight: 800,
+              color: 'white',
+              fontSize: '15px'
+            }}>
+              RUNDA PYTAŃ: {spyRound} Z 2
+            </div>
+
+            <div className="spy-card-container">
+              <div className="spy-card-inner">
+                <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+                  PYTANIE DLA GRACZA {questionPlayerIdx + 1}
+                </span>
+
+                <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <p style={{
+                    fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)',
+                    fontWeight: 800,
+                    color: 'white',
+                    lineHeight: 1.4,
+                    maxWidth: '520px'
+                  }}>
+                    {spyRound === 1 
+                      ? spyQuestions.round1[questionPlayerIdx] 
+                      : spyQuestions.round2[questionPlayerIdx]}
+                  </p>
+                </div>
+
+                <div style={{ fontSize: '11px', color: 'hsl(var(--text-muted))', marginTop: '16px' }}>
+                  Odpowiedz głośno na to pytanie!
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick={() => {
+                playClick();
+                if (questionPlayerIdx < spyPlayerCount - 1) {
+                  setQuestionPlayerIdx(prev => prev + 1);
+                } else {
+                  // All players answered in this round
+                  if (spyRound === 1) {
+                    setSpyRound(2);
+                    setQuestionPlayerIdx(0);
+                  } else {
+                    // Completed both rounds, go to voting
+                    setSpyPhase('VOTING');
+                  }
+                }
+              }}
+              className="btn btn-primary"
+              style={{ width: '100%', maxWidth: '400px', padding: '16px', background: 'linear-gradient(135deg, #444 0%, #222 100%)', border: 'none' }}
+            >
+              NASTĘPNE PYTANIE
+            </button>
+          </div>
+        )}
+
+        {/* Voting Phase */}
+        {spyPhase === 'VOTING' && (
+          <div className="glass flex-col items-center" style={{ padding: '32px', maxWidth: '550px', width: '100%', gap: '20px' }}>
+            <div style={{ fontSize: '32px' }}>🕵️‍♂️</div>
+            <div className="flex-col gap-xs" style={{ textAlign: 'center' }}>
+              <h3 style={{ fontSize: '24px', fontWeight: 900, color: 'white' }}>TYPOWANIE SZPIEGA</h3>
+              <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))' }}>
+                Przedyskutujcie odpowiedzi. Kto Waszym zdaniem jest szpiegiem? Kliknij na wybranego gracza, aby sprawdzić wynik.
+              </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px', width: '100%', marginTop: '12px' }}>
+              {Array.from({ length: spyPlayerCount }).map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    playClick();
+                    setVotedPlayerIdx(idx);
+                    setSpyPhase('RESULT');
+                  }}
+                  className="btn btn-secondary"
+                  style={{ padding: '16px', fontSize: '14px', borderRadius: '12px' }}
+                >
+                  Gracz {idx + 1}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Result Phase */}
+        {spyPhase === 'RESULT' && (
+          <div className="glass flex-col items-center" style={{ padding: '36px', textAlign: 'center', maxWidth: '500px', width: '100%', gap: '24px' }}>
+            {votedPlayerIdx === spyIndex ? (
+              <>
+                <div style={{ fontSize: '64px', animation: 'bounce 0.5s infinite' }}>🎯</div>
+                <h2 style={{ fontSize: '32px', fontWeight: 900, color: '#10b981', textTransform: 'uppercase' }}>
+                  TRAFIONY!
+                </h2>
+                <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))' }}>
+                  Szpiegiem był rzeczywiście <strong>Gracz {spyIndex + 1}</strong>! Lokalizacja to: <strong>{selectedLocation}</strong>.
+                </p>
+                <div style={{ background: 'rgba(16, 185, 129, 0.15)', border: '2.5px solid #10b981', borderRadius: '16px', padding: '12px 36px', color: 'white', fontWeight: 900, fontSize: '20px' }}>
+                  +5 PUNKTÓW DLA {currentTeam.name.toUpperCase()}!
+                </div>
+                
+                <button
+                  onClick={() => {
+                    playClick();
+                    onRoundEnd(5, undefined, 0); // +5 for current team, 0 for opponent
+                  }}
+                  className="btn btn-primary w-full"
+                  style={{ marginTop: '12px', padding: '16px' }}
+                >
+                  ZAKOŃCZ TURĘ
+                </button>
+              </>
+            ) : (
+              <>
+                <div style={{ fontSize: '64px' }}>❌</div>
+                <h2 style={{ fontSize: '32px', fontWeight: 900, color: '#ef4444', textTransform: 'uppercase' }}>
+                  PUDŁO!
+                </h2>
+                <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))' }}>
+                  Wytypowaliście Gracza {votedPlayerIdx + 1}. <br/>
+                  Prawdziwym szpiegiem był <strong>Gracz {spyIndex + 1}</strong>! Lokalizacja to: <strong>{selectedLocation}</strong>.
+                </p>
+                <div style={{ background: 'rgba(239, 68, 68, 0.15)', border: '2.5px solid #ef4444', borderRadius: '16px', padding: '12px 36px', color: 'white', fontWeight: 900, fontSize: '16px', lineHeight: 1.4 }}>
+                  +5 PUNKTÓW DLA DRUGIEJ DRUŻYNY!
+                </div>
+
+                <button
+                  onClick={() => {
+                    playClick();
+                    onRoundEnd(0, undefined, 5); // 0 for current team, +5 for opponent
+                  }}
+                  className="btn btn-primary w-full"
+                  style={{ marginTop: '12px', padding: '16px' }}
+                >
+                  ZAKOŃCZ TURĘ
+                </button>
+              </>
+            )}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   const currentWord = shuffledWords[currentWordIndex];
 

@@ -476,3 +476,34 @@ export const DEFAULT_P_GAME = [
   { "id": "p29", "word": "Masło", "category": "Jedzenie", "difficulty": "Łatwy" },
   { "id": "p30", "word": "Cukier", "category": "Jedzenie", "difficulty": "Łatwy" }
 ];
+
+export const DEFAULT_SPY_LOCATIONS = [
+  { "id": "sl1", "word": "Samolot" },
+  { "id": "sl2", "word": "Szkoła" },
+  { "id": "sl3", "word": "Szpital" },
+  { "id": "sl4", "word": "Kino" },
+  { "id": "sl5", "word": "Teatr" },
+  { "id": "sl6", "word": "Plaża" },
+  { "id": "sl7", "word": "Restauracja" },
+  { "id": "sl8", "word": "Siłownia" },
+  { "id": "sl9", "word": "Statek kosmiczny" },
+  { "id": "sl10", "word": "ZOO" },
+  { "id": "sl11", "word": "Supermarket" },
+  { "id": "sl12", "word": "Hotel" },
+  { "id": "sl13", "word": "Wesołe miasteczko" },
+  { "id": "sl14", "word": "Muzeum" },
+  { "id": "sl15", "word": "Dworzec kolejowy" }
+];
+
+export const DEFAULT_SPY_QUESTIONS = [
+  { "id": "sq1", "question": "Jakie dźwięki najczęściej pojawiają się w tym miejscu?" },
+  { "id": "sq2", "question": "Podaj 2 przykłady akcesoriów/przedmiotów w tym miejscu." },
+  { "id": "sq3", "question": "Co ludzie najczęściej tam robią?" },
+  { "id": "sq4", "question": "Jacy profesjonaliści tam pracują?" },
+  { "id": "sq5", "question": "Jak się ubieramy, idąc w to miejsce?" },
+  { "id": "sq6", "question": "Czy wstęp tam jest zazwyczaj płatny?" },
+  { "id": "sq7", "question": "Jaka pogoda lub pora dnia sprzyja wizycie w tym miejscu?" },
+  { "id": "sq8", "question": "Czego absolutnie nie wolno tam robić?" },
+  { "id": "sq9", "question": "Jaki jest główny cel wizyty w tym miejscu?" },
+  { "id": "sq10", "question": "Czy to miejsce jest zazwyczaj głośne czy ciche?" }
+];

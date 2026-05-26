@@ -29,6 +29,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
     onStartGame('P_GAME');
   };
 
+  const handleStartSpy = () => {
+    playClick();
+    onStartGame('SPY');
+  };
+
   const handleDbClick = () => {
     playClick();
     onOpenDatabase();
@@ -199,6 +204,29 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
             onClick={handleStartPGame}
             className="btn btn-primary"
             style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ff3c00 0%, #eab308 100%)', border: 'none' }}
+          >
+            <Play size={16} fill="currentColor" />
+            GRAJ TERAZ
+          </button>
+        </div>
+
+        {/* Active Game: Szpieg */}
+        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(30, 30, 35, 0.5) 0%, rgba(10, 10, 10, 0.7) 100%)', border: '1px solid rgba(255, 255, 255, 0.12)' }}>
+          <div>
+            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #111111, #333333)', color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}>
+              NOWA GRA
+            </div>
+            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
+              Szpieg
+            </h3>
+            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
+              Wszyscy gracze znają tę samą lokalizację, z wyjątkiem jednej osoby – Szpiega. Odpowiadajcie na pytania i zdemaskujcie szpiega!
+            </p>
+          </div>
+          <button
+            onClick={handleStartSpy}
+            className="btn btn-primary"
+            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #222 0%, #000 100%)', border: '1px solid rgba(255,255,255,0.1)' }}
           >
             <Play size={16} fill="currentColor" />
             GRAJ TERAZ

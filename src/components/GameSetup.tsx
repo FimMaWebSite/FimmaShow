@@ -152,7 +152,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   };
 
   const handleStartGame = () => {
-    if (gameMode !== 'TOURNAMENT' && selectedCategories.length === 0) {
+    if (gameMode !== 'TOURNAMENT' && gameMode !== 'SPY' && selectedCategories.length === 0) {
       playWrong();
       alert('Wybierz przynajmniej jedną kategorię haseł.');
       return;
@@ -160,8 +160,8 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
     playClick();
     onStart(teams, { 
       roundTime: gameMode === 'TOURNAMENT' ? 60 : roundTime, 
-      pointsToWin: gameMode === 'TOURNAMENT' ? 9999 : pointsToWin, 
-      selectedCategories: gameMode === 'TOURNAMENT' ? [] : selectedCategories 
+      pointsToWin: gameMode === 'TOURNAMENT' ? 9999 : gameMode === 'SPY' ? 15 : pointsToWin, 
+      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' ? [] : selectedCategories 
     });
   };
 
@@ -243,7 +243,36 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
         </div>
 
         {/* Right Card: Game Settings / Tournament Preview */}
-        {gameMode === 'TOURNAMENT' ? (
+        {gameMode === 'SPY' ? (
+          <div className="glass flex-col gap-md">
+            <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
+              <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
+              Zasady Gry: Szpieg
+            </h3>
+            
+            <div className="flex-col gap-sm" style={{ marginTop: '8px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Losowanie Ról</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Każdy gracz po kolei sprawdza kartę na telefonie. Wszyscy widzą tę samą lokalizację, z wyjątkiem jednej osoby – Szpiega.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Pytania od Mistrza Gry</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Na ekranie pojawia się pytanie dla każdego gracza. Odpowiadacie na nie na głos. Szpieg musi improwizować.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Typowanie Szpiega</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Po rundzie pytań typujecie, kto jest Szpiegiem.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.2) 100%)', border: '1px solid rgba(16, 185, 129, 0.2)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: '#10b981' }}>Punktacja</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Wskazanie prawdziwego szpiega = **+5 punktów** dla Waszej drużyny. Pomyłka = **+5 punktów** dla rywali.</span>
+              </div>
+            </div>
+          </div>
+        ) : gameMode === 'TOURNAMENT' ? (
           <div className="glass flex-col gap-md">
             <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
               <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
