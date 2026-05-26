@@ -507,3 +507,37 @@ export const DEFAULT_SPY_QUESTIONS = [
   { "id": "sq9", "question": "Jaki jest główny cel wizyty w tym miejscu?" },
   { "id": "sq10", "question": "Czy to miejsce jest zazwyczaj głośne czy ciche?" }
 ];
+
+export const DEFAULT_LIPS_WORDS = [
+  { "id": "l1", "word": "Różowy słoń", "category": "Zwierzęta", "difficulty": "Średni" },
+  { "id": "l2", "word": "Masło orzechowe", "category": "Jedzenie", "difficulty": "Średni" },
+  { "id": "l3", "word": "Kebab z frytkami", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "l4", "word": "Ciepłe mleko", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "l5", "word": "Kaktus", "category": "Natura", "difficulty": "Łatwy" },
+  { "id": "l6", "word": "Gorąca czekolada", "category": "Jedzenie", "difficulty": "Średni" },
+  { "id": "l7", "word": "Czarna kawa", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "l8", "word": "Sok pomidorowy", "category": "Jedzenie", "difficulty": "Średni" },
+  { "id": "l9", "word": "Katar sienny", "category": "Zdrowie", "difficulty": "Średni" },
+  { "id": "l10", "word": "Szczoteczka", "category": "Dom", "difficulty": "Łatwy" },
+  { "id": "l11", "word": "Pasta do zębów", "category": "Dom", "difficulty": "Średni" },
+  { "id": "l12", "word": "Zimny prysznic", "category": "Czynności", "difficulty": "Średni" },
+  { "id": "l13", "word": "Latający dywan", "category": "Magia", "difficulty": "Średni" },
+  { "id": "l14", "word": "Złota rybka", "category": "Zwierzęta", "difficulty": "Łatwy" },
+  { "id": "l15", "word": "Czerwony balon", "category": "Przedmioty", "difficulty": "Łatwy" },
+  { "id": "l16", "word": "Pyszna pizza", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "l17", "word": "Wakacje", "category": "Rozrywka", "difficulty": "Łatwy" },
+  { "id": "l18", "word": "Lody waniliowe", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "l19", "word": "Zupa pomidorowa", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "l20", "word": "Słodki pączek", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "l21", "word": "Stara szafa", "category": "Dom", "difficulty": "Średni" },
+  { "id": "l22", "word": "Szybki pociąg", "category": "Pojazdy", "difficulty": "Łatwy" },
+  { "id": "l23", "word": "Zielona żaba", "category": "Zwierzęta", "difficulty": "Łatwy" },
+  { "id": "l24", "word": "Mokra trawa", "category": "Natura", "difficulty": "Średni" },
+  { "id": "l25", "word": "Małpa", "category": "Zwierzęta", "difficulty": "Łatwy" },
+  { "id": "l26", "word": "Duża chmura", "category": "Natura", "difficulty": "Łatwy" },
+  { "id": "l27", "word": "Biały ząb", "category": "Ludzie", "difficulty": "Łatwy" },
+  { "id": "l28", "word": "Czyste okno", "category": "Dom", "difficulty": "Średni" },
+  { "id": "l29", "word": "Świeży chleb", "category": "Jedzenie", "difficulty": "Łatwy" },
+  { "id": "l30", "word": "Pocztówka", "category": "Przedmioty", "difficulty": "Średni" }
+];
+

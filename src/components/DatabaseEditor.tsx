@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer, Users } from 'lucide-react';
 import { playClick, playCorrect, playWrong } from '../utils/audio';
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES } from '../data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_LIPS_WORDS } from '../data/defaultData';
 
 export interface WordData {
   id: string;
@@ -23,7 +23,7 @@ interface DatabaseEditorProps {
 }
 
 export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
-  const [activeTab, setActiveTab] = useState<'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES'>('MARYLIN_MONROE');
+  const [activeTab, setActiveTab] = useState<'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'LIPS'>('MARYLIN_MONROE');
   const [items, setItems] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
@@ -52,6 +52,10 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       endpoint = '/api/reverse-charades';
       localKey = 'fimma_reverse_charades';
       defaultBackup = DEFAULT_REVERSE_CHARADES;
+    } else if (activeTab === 'LIPS') {
+      endpoint = '/api/lips-words';
+      localKey = 'fimma_lips_words';
+      defaultBackup = DEFAULT_LIPS_WORDS;
     }
 
     try {
@@ -119,6 +123,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         validationMsg = 'Wprowadź treść pytania.';
       } else if (activeTab === 'REVERSE_CHARADES') {
         validationMsg = 'Wprowadź treść czynności.';
+      } else if (activeTab === 'LIPS') {
+        validationMsg = 'Wprowadź hasło do odczytania z ust.';
       }
       setErrorMsg(validationMsg);
       playWrong();
@@ -139,6 +145,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       }
       payload.word = wordInput.trim();
       payload.forbidden = filteredForbidden;
+    } else if (activeTab === 'LIPS') {
+      payload.word = wordInput.trim();
     } else {
       payload.question = wordInput.trim();
     }
@@ -155,6 +163,10 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       baseEndpoint = '/api/reverse-charades';
       localKey = 'fimma_reverse_charades';
       defaultBackup = DEFAULT_REVERSE_CHARADES;
+    } else if (activeTab === 'LIPS') {
+      baseEndpoint = '/api/lips-words';
+      localKey = 'fimma_lips_words';
+      defaultBackup = DEFAULT_LIPS_WORDS;
     }
 
     const saveLocally = () => {
@@ -227,13 +239,15 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   const handleEdit = (item: any) => {
     playClick();
     setIsEditing(item.id);
-    if (activeTab === 'MARYLIN_MONROE') {
+    if (activeTab === 'MARYLIN_MONROE' || activeTab === 'LIPS') {
       setWordInput(item.word);
-      setForbiddenInputs([
-        item.forbidden[0] || '',
-        item.forbidden[1] || '',
-        item.forbidden[2] || ''
-      ]);
+      if (activeTab === 'MARYLIN_MONROE') {
+        setForbiddenInputs([
+          item.forbidden[0] || '',
+          item.forbidden[1] || '',
+          item.forbidden[2] || ''
+        ]);
+      }
     } else {
       setWordInput(item.question);
     }
@@ -248,6 +262,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       confirmMsg = 'Czy na pewno chcesz usunąć to pytanie?';
     } else if (activeTab === 'REVERSE_CHARADES') {
       confirmMsg = 'Czy na pewno chcesz usunąć tę czynność?';
+    } else if (activeTab === 'LIPS') {
+      confirmMsg = 'Czy na pewno chcesz usunąć to hasło z ust?';
     }
       
     if (!window.confirm(confirmMsg)) return;
@@ -265,6 +281,10 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       baseEndpoint = '/api/reverse-charades';
       localKey = 'fimma_reverse_charades';
       defaultBackup = DEFAULT_REVERSE_CHARADES;
+    } else if (activeTab === 'LIPS') {
+      baseEndpoint = '/api/lips-words';
+      localKey = 'fimma_lips_words';
+      defaultBackup = DEFAULT_LIPS_WORDS;
     }
 
     try {
@@ -272,6 +292,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         method: 'DELETE'
       });
       if (res.ok) {
+        playCorrect();
         setSuccessMsg('Usunięto pomyślnie.');
         fetchItems();
         setTimeout(() => setSuccessMsg(''), 3000);
@@ -287,6 +308,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     list = list.filter((item: any) => item.id !== id);
     localStorage.setItem(localKey, JSON.stringify(list));
     
+    playCorrect();
     setSuccessMsg('Usunięto lokalnie (Tryb offline).');
     fetchItems();
     setTimeout(() => setSuccessMsg(''), 3000);
@@ -301,6 +323,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     if (activeTab === 'MARYLIN_MONROE') {
       matchesSearch = item.word.toLowerCase().includes(search.toLowerCase()) || 
                       item.forbidden.some((fw: string) => fw.toLowerCase().includes(search.toLowerCase()));
+    } else if (activeTab === 'LIPS') {
+      matchesSearch = item.word.toLowerCase().includes(search.toLowerCase());
     } else {
       matchesSearch = item.question.toLowerCase().includes(search.toLowerCase());
     }
@@ -351,6 +375,14 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           <Users size={15} />
           Odwrócone Kalambury (Czynności)
         </button>
+        <button
+          onClick={() => { playClick(); setActiveTab('LIPS'); }}
+          className={`btn ${activeTab === 'LIPS' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
+        >
+          <Users size={15} />
+          Usta Usta (Hasła)
+        </button>
       </div>
 
       <div className="db-layout">
@@ -360,8 +392,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               {isEditing ? <Edit2 size={16} style={{ color: 'hsl(var(--primary))' }} /> : <Plus size={16} style={{ color: 'hsl(var(--primary))' }} />}
               {isEditing 
-                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : activeTab === 'NINE_SECONDS' ? 'Edytuj Pytanie' : 'Edytuj Czynność') 
-                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : activeTab === 'NINE_SECONDS' ? 'Dodaj Nowe Pytanie' : 'Dodaj Czynność')}
+                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : activeTab === 'NINE_SECONDS' ? 'Edytuj Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Edytuj Czynność' : 'Edytuj Hasło z Ust') 
+                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : activeTab === 'NINE_SECONDS' ? 'Dodaj Nowe Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Dodaj Czynność' : 'Dodaj Hasło z Ust')}
             </h3>
 
             {errorMsg && (
@@ -378,13 +410,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <form onSubmit={handleSubmit} className="flex-col gap-md">
               <div className="form-group">
                 <label className="form-label">
-                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : activeTab === 'NINE_SECONDS' ? 'Treść pytania' : 'Hasło (Czynność)'}
+                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : activeTab === 'NINE_SECONDS' ? 'Treść pytania' : activeTab === 'LIPS' ? 'Hasło z Ust' : 'Hasło (Czynność)'}
                 </label>
                 <input
                   type="text"
                   value={wordInput}
                   onChange={(e) => setWordInput(e.target.value)}
-                  placeholder={activeTab === 'MARYLIN_MONROE' ? 'np. Robert Lewandowski' : activeTab === 'NINE_SECONDS' ? 'np. Wymień 3 państwa graniczące z Polską' : 'np. Jazda na hulajnodze'}
+                  placeholder={activeTab === 'MARYLIN_MONROE' ? 'np. Robert Lewandowski' : activeTab === 'NINE_SECONDS' ? 'np. Wymień 3 państwa graniczące z Polską' : activeTab === 'LIPS' ? 'np. Różowy słoń' : 'np. Jazda na hulajnodze'}
                   className="input-field"
                 />
               </div>
@@ -452,6 +484,18 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                         <option value="Rozrywka">Rozrywka</option>
                       </>
                     )}
+                    {activeTab === 'LIPS' && (
+                      <>
+                        <option value="Jedzenie">Jedzenie</option>
+                        <option value="Zwierzęta">Zwierzęta</option>
+                        <option value="Natura">Natura</option>
+                        <option value="Dom">Dom</option>
+                        <option value="Przedmioty">Przedmioty</option>
+                        <option value="Pojazdy">Pojazdy</option>
+                        <option value="Zdrowie">Zdrowie</option>
+                        <option value="Inne">Inne</option>
+                      </>
+                    )}
                   </select>
                 </div>
                 <div className="form-group">
@@ -501,7 +545,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder={activeTab === 'MARYLIN_MONROE' ? "Szukaj hasła lub słowa zakazanego..." : activeTab === 'NINE_SECONDS' ? "Szukaj pytania..." : "Szukaj czynności..."}
+                placeholder={activeTab === 'MARYLIN_MONROE' ? "Szukaj hasła lub słowa zakazanego..." : activeTab === 'NINE_SECONDS' ? "Szukaj pytania..." : activeTab === 'LIPS' ? "Szukaj hasła z ust..." : "Szukaj czynności..."}
                 className="input-field search-input"
               />
             </div>
@@ -536,7 +580,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
               <table className="db-table">
                 <thead>
                   <tr>
-                    <th>{activeTab === 'MARYLIN_MONROE' ? 'Hasło' : activeTab === 'NINE_SECONDS' ? 'Pytanie' : 'Czynność'}</th>
+                    <th>{activeTab === 'MARYLIN_MONROE' ? 'Hasło' : activeTab === 'NINE_SECONDS' ? 'Pytanie' : activeTab === 'LIPS' ? 'Hasło z Ust' : 'Czynność'}</th>
                     {activeTab === 'MARYLIN_MONROE' && <th>Słowa zakazane</th>}
                     <th style={{ width: '180px' }}>Szczegóły</th>
                     <th style={{ textAlign: 'right', width: '100px' }}>Akcje</th>
@@ -546,7 +590,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                   {filteredItems.map((item) => (
                     <tr key={item.id}>
                       <td style={{ fontWeight: 700, color: 'white', maxWidth: '300px', whiteSpace: 'normal', wordBreak: 'break-word' }}>
-                        {activeTab === 'MARYLIN_MONROE' ? item.word : item.question}
+                        {(activeTab === 'MARYLIN_MONROE' || activeTab === 'LIPS') ? item.word : item.question}
                       </td>
                       {activeTab === 'MARYLIN_MONROE' && (
                         <td>

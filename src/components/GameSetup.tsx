@@ -3,7 +3,7 @@ import { ArrowLeft, Users, Settings, Plus, Minus, Check } from 'lucide-react';
 import { playClick, playWrong } from '../utils/audio';
 import { GameMode } from '../App';
 
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_P_GAME } from '../data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_P_GAME, DEFAULT_LIPS_WORDS } from '../data/defaultData';
 
 export interface Team {
   id: number;
@@ -66,6 +66,10 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
         endpoint = '/api/p-game';
         localKey = 'fimma_p_game';
         defaultBackup = DEFAULT_P_GAME;
+      } else if (gameMode === 'LIPS') {
+        endpoint = '/api/lips-words';
+        localKey = 'fimma_lips_words';
+        defaultBackup = DEFAULT_LIPS_WORDS;
       }
 
       try {
@@ -152,7 +156,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   };
 
   const handleStartGame = () => {
-    if (gameMode !== 'TOURNAMENT' && gameMode !== 'SPY' && selectedCategories.length === 0) {
+    if (gameMode !== 'TOURNAMENT' && gameMode !== 'SPY' && gameMode !== 'LIPS' && selectedCategories.length === 0) {
       playWrong();
       alert('Wybierz przynajmniej jedną kategorię haseł.');
       return;
@@ -161,7 +165,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
     onStart(teams, { 
       roundTime: gameMode === 'TOURNAMENT' ? 60 : roundTime, 
       pointsToWin: gameMode === 'TOURNAMENT' ? 9999 : gameMode === 'SPY' ? 15 : pointsToWin, 
-      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' ? [] : selectedCategories 
+      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' || gameMode === 'LIPS' ? [] : selectedCategories 
     });
   };
 
@@ -243,7 +247,31 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
         </div>
 
         {/* Right Card: Game Settings / Tournament Preview */}
-        {gameMode === 'SPY' ? (
+        {gameMode === 'LIPS' ? (
+          <div className="glass flex-col gap-md">
+            <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
+              <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
+              Zasady Gry: Usta Usta 🎧
+            </h3>
+            
+            <div className="flex-col gap-sm" style={{ marginTop: '8px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: '#ef4444' }}>⚠️ WYMAGANE SŁUCHAWKI</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Upewnij się, że jeden z graczy ma na uszach słuchawki z puszczoną bardzo głośną muzyką, tak aby nie słyszał podpowiadającego partnera.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Czytanie z Ruchu Warg</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Drugi gracz stara się podpowiedzieć wyświetlone hasło wyłącznie poprzez wyraźne wypowiadanie słów bez używania głosu lub szeptem.</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Bez krzyczenia</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Podpowiadający nie może krzyczeć ani gestykulować rękami. Gracz w słuchawkach musi odgadnąć jak najwięcej haseł.</span>
+              </div>
+            </div>
+          </div>
+        ) : gameMode === 'SPY' ? (
           <div className="glass flex-col gap-md">
             <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
               <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />

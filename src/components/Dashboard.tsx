@@ -34,6 +34,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
     onStartGame('SPY');
   };
 
+  const handleStartLips = () => {
+    playClick();
+    onStartGame('LIPS');
+  };
+
   const handleDbClick = () => {
     playClick();
     onOpenDatabase();
@@ -227,6 +232,32 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
             onClick={handleStartSpy}
             className="btn btn-primary"
             style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #222 0%, #000 100%)', border: '1px solid rgba(255,255,255,0.1)' }}
+          >
+            <Play size={16} fill="currentColor" />
+            GRAJ TERAZ
+          </button>
+        </div>
+
+        {/* Active Game: Usta Usta */}
+        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(219, 39, 119, 0.05) 100%)', border: '1px solid rgba(219, 39, 119, 0.15)' }}>
+          <div>
+            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #ef4444, #db2777)', color: 'white' }}>
+              NOWA GRA 🎧
+            </div>
+            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
+              Usta Usta
+            </h3>
+            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
+              Czytanie z ruchu warg! Jeden gracz zakłada słuchawki z głośną muzyką, a partner próbuje przekazać mu hasło ruchem ust.
+            </p>
+            <div style={{ marginTop: '10px', padding: '8px 12px', background: 'rgba(239, 68, 68, 0.12)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '10px', fontSize: '11px', fontWeight: 700, color: '#ef4444' }}>
+              ⚠️ Wymagane słuchawki z głośną muzyką!
+            </div>
+          </div>
+          <button
+            onClick={handleStartLips}
+            className="btn btn-primary"
+            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ef4444 0%, #db2777 100%)', border: 'none' }}
           >
             <Play size={16} fill="currentColor" />
             GRAJ TERAZ

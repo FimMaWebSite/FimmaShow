@@ -7,10 +7,10 @@ import { Scoreboard } from './components/Scoreboard';
 import { WinnerScreen } from './components/WinnerScreen';
 import { Tv, Sparkles } from 'lucide-react';
 
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME, DEFAULT_SPY_LOCATIONS, DEFAULT_SPY_QUESTIONS } from './data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME, DEFAULT_SPY_LOCATIONS, DEFAULT_SPY_QUESTIONS, DEFAULT_LIPS_WORDS } from './data/defaultData';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
-export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME' | 'SPY';
+export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME' | 'SPY' | 'LIPS';
 
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
@@ -74,6 +74,9 @@ const App: React.FC = () => {
     if (!localStorage.getItem('fimma_spy_questions')) {
       localStorage.setItem('fimma_spy_questions', JSON.stringify(DEFAULT_SPY_QUESTIONS));
     }
+    if (!localStorage.getItem('fimma_lips_words')) {
+      localStorage.setItem('fimma_lips_words', JSON.stringify(DEFAULT_LIPS_WORDS));
+    }
   };
 
   useEffect(() => {
@@ -107,6 +110,10 @@ const App: React.FC = () => {
       endpoint = '/api/spy-locations';
       localKey = 'fimma_spy_locations';
       defaultBackup = DEFAULT_SPY_LOCATIONS;
+    } else if (game === 'LIPS') {
+      endpoint = '/api/lips-words';
+      localKey = 'fimma_lips_words';
+      defaultBackup = DEFAULT_LIPS_WORDS;
     }
 
     try {
