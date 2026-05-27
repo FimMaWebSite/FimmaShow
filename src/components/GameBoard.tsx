@@ -63,6 +63,11 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const [revolverFailedTeams, setRevolverFailedTeams] = useState<number[]>([]);
   const [revolverWinnerIdx, setRevolverWinnerIdx] = useState(-1);
 
+  // 9.5 seconds specific state
+  const [nineSecReady, setNineSecReady] = useState(false);
+  const [nineSecFinished, setNineSecFinished] = useState(false);
+  const [nineSecFinalPoints, setNineSecFinalPoints] = useState(0);
+
   // Filter and shuffle items on mount
   useEffect(() => {
     let filtered = availableWords;
@@ -89,10 +94,16 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             clearInterval(timerRef.current!);
             setIsPlaying(false);
             playBuzzer();
-            // Automatically complete the round after a short delay
-            setTimeout(() => {
-              onRoundEnd(pointsThisRound);
-            }, 1500);
+            if (gameMode === 'NINE_SECONDS') {
+              // Show result screen before advancing
+              setNineSecFinalPoints(pointsThisRound);
+              setNineSecFinished(true);
+            } else {
+              // Automatically complete the round after a short delay
+              setTimeout(() => {
+                onRoundEnd(pointsThisRound);
+              }, 1500);
+            }
             return 0;
           }
 
@@ -1210,11 +1221,82 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               </p>
             </div>
             <button
-              onClick={handleStartRound}
+              onClick={() => {
+                playClick();
+                if (gameMode === 'NINE_SECONDS') {
+                  setIsReadyPhase(false);
+                  setNineSecReady(true);
+                  setNineSecFinished(false);
+                  setNineSecFinalPoints(0);
+                } else {
+                  handleStartRound();
+                }
+              }}
               className="btn btn-primary"
               style={{ width: '100%', padding: '16px', fontSize: '16px' }}
             >
               ROZPOCZNIJ RUNDĘ
+            </button>
+          </div>
+        ) : nineSecReady && gameMode === 'NINE_SECONDS' ? (
+          /* 9.5s — Question Preview: MG reads the question, then taps START */
+          <div className="glass flex-col items-center" style={{ padding: '36px', textAlign: 'center', maxWidth: '500px', width: '100%', gap: '24px', border: '2px solid rgba(211, 16, 16, 0.4)' }}>
+            <div style={{ fontSize: '13px', fontWeight: 800, color: '#d31010', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              🎙️ Pytanie do odczytania
+            </div>
+            <div style={{
+              background: 'radial-gradient(circle, #fffdf9 0%, #fff9f0 60%, #fff3e0 100%)',
+              border: '3px solid #d31010',
+              borderRadius: '20px',
+              padding: '28px 24px',
+              width: '100%',
+            }}>
+              <div style={{
+                fontSize: 'clamp(1.3rem, 2.8vw, 2rem)',
+                fontWeight: 900,
+                color: '#1a0a03',
+                lineHeight: 1.4,
+              }}>
+                {currentWord?.question || 'Brak pytania'}
+              </div>
+            </div>
+            <p style={{ fontSize: '13px', color: 'hsl(var(--text-secondary))', lineHeight: 1.6 }}>
+              Mistrz Gry głośno czyta pytanie drużynie. Gdy wszyscy są gotowi — kliknij START!
+            </p>
+            <button
+              onClick={() => { setNineSecReady(false); handleStartRound(); }}
+              className="btn btn-primary"
+              style={{ width: '100%', padding: '18px', fontSize: '18px', background: 'linear-gradient(135deg, #d31010 0%, #ff6b00 100%)', border: 'none', fontWeight: 900, letterSpacing: '0.05em' }}
+            >
+              ⏱ START — LEĆ!
+            </button>
+          </div>
+        ) : nineSecFinished && gameMode === 'NINE_SECONDS' ? (
+          /* 9.5s — Result screen: show final points before going to scoreboard */
+          <div className="glass flex-col items-center" style={{ padding: '40px', textAlign: 'center', maxWidth: '480px', width: '100%', gap: '20px' }}>
+            <div style={{ fontSize: '64px' }}>⏰</div>
+            <div>
+              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Czas minął!</div>
+              <div style={{ fontSize: '15px', color: 'hsl(var(--text-secondary))', marginTop: '4px', fontStyle: 'italic' }}>„{currentWord?.question}"</div>
+            </div>
+            <div style={{
+              background: nineSecFinalPoints > 0 ? 'rgba(16, 185, 129, 0.15)' : nineSecFinalPoints < 0 ? 'rgba(239, 68, 68, 0.15)' : 'rgba(255,255,255,0.05)',
+              border: `2.5px solid ${nineSecFinalPoints > 0 ? '#10b981' : nineSecFinalPoints < 0 ? '#ef4444' : 'rgba(255,255,255,0.1)'}`,
+              borderRadius: '20px',
+              padding: '20px 40px',
+              width: '100%',
+            }}>
+              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', marginBottom: '4px' }}>Punkty tej rundy</div>
+              <div style={{ fontSize: '64px', fontWeight: 900, color: nineSecFinalPoints > 0 ? '#10b981' : nineSecFinalPoints < 0 ? '#ef4444' : 'white', lineHeight: 1 }}>
+                {nineSecFinalPoints > 0 ? '+' : ''}{nineSecFinalPoints}
+              </div>
+            </div>
+            <button
+              onClick={() => { playClick(); onRoundEnd(nineSecFinalPoints); }}
+              className="btn btn-primary"
+              style={{ width: '100%', padding: '16px', fontSize: '16px' }}
+            >
+              ZAKOŃCZ TURĘ →
             </button>
           </div>
         ) : (
