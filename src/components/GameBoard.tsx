@@ -1279,18 +1279,37 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Czas minął!</div>
               <div style={{ fontSize: '15px', color: 'hsl(var(--text-secondary))', marginTop: '4px', fontStyle: 'italic' }}>„{currentWord?.question}"</div>
             </div>
+
+            {/* Score display + adjustment buttons */}
             <div style={{
               background: nineSecFinalPoints > 0 ? 'rgba(16, 185, 129, 0.15)' : nineSecFinalPoints < 0 ? 'rgba(239, 68, 68, 0.15)' : 'rgba(255,255,255,0.05)',
               border: `2.5px solid ${nineSecFinalPoints > 0 ? '#10b981' : nineSecFinalPoints < 0 ? '#ef4444' : 'rgba(255,255,255,0.1)'}`,
               borderRadius: '20px',
-              padding: '20px 40px',
+              padding: '20px 24px',
               width: '100%',
             }}>
-              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', marginBottom: '4px' }}>Punkty tej rundy</div>
-              <div style={{ fontSize: '64px', fontWeight: 900, color: nineSecFinalPoints > 0 ? '#10b981' : nineSecFinalPoints < 0 ? '#ef4444' : 'white', lineHeight: 1 }}>
-                {nineSecFinalPoints > 0 ? '+' : ''}{nineSecFinalPoints}
+              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', marginBottom: '12px' }}>Punkty tej rundy — możesz poprawić:</div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
+                <button
+                  onClick={() => { playWrong(); setNineSecFinalPoints(p => p - 1); }}
+                  className="btn btn-danger"
+                  style={{ width: '56px', height: '56px', borderRadius: '14px', fontSize: '24px', fontWeight: 900, padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                >
+                  −
+                </button>
+                <div style={{ fontSize: '72px', fontWeight: 900, color: nineSecFinalPoints > 0 ? '#10b981' : nineSecFinalPoints < 0 ? '#ef4444' : 'white', lineHeight: 1, minWidth: '80px', textAlign: 'center' }}>
+                  {nineSecFinalPoints > 0 ? '+' : ''}{nineSecFinalPoints}
+                </div>
+                <button
+                  onClick={() => { playCorrect(); setNineSecFinalPoints(p => p + 1); }}
+                  className="btn btn-success"
+                  style={{ width: '56px', height: '56px', borderRadius: '14px', fontSize: '24px', fontWeight: 900, padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                >
+                  +
+                </button>
               </div>
             </div>
+
             <button
               onClick={() => { playClick(); onRoundEnd(nineSecFinalPoints); }}
               className="btn btn-primary"
