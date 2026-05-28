@@ -456,16 +456,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Database Editor Table */
 .db-layout {
-  display: grid;
-  grid-template-cols: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .db-layout {
-    grid-template-cols: 320px 1fr;
-  }
 }
 
 .db-filter-bar {
@@ -1182,13 +1176,4 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   gap: 20px;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .db-sidebar {
-    position: sticky;
-    top: 90px;
-    align-self: flex-start;
-    z-index: 5;
-  }
 }
