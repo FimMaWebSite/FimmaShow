@@ -489,7 +489,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
 
       <div className="db-layout">
         {/* Left Side Column */}
-        <div style={{ position: 'sticky', top: '90px', display: 'flex', flexDirection: 'column', gap: '20px', alignSelf: 'flex-start' }}>
+        <div className="db-sidebar">
           <div className="glass" style={{ padding: '24px' }}>
             <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               {isEditing ? <Edit2 size={16} style={{ color: 'hsl(var(--primary))' }} /> : <Plus size={16} style={{ color: 'hsl(var(--primary))' }} />}

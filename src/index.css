@@ -1178,3 +1178,19 @@ h1, h2, h3, h4, h5, h6 {
     align-items: stretch !important;
   }
 }
+
+.db-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .db-sidebar {
+    position: sticky;
+    top: 90px;
+    align-self: flex-start;
+    z-index: 5;
+  }
+}
