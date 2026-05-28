@@ -424,6 +424,22 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     document.body.removeChild(link);
   };
 
+  const handleRestoreDefaults = () => {
+    if (!window.confirm('Czy na pewno chcesz przywrócić domyślne hasła dla tej zakładki? Wszystkie Twoje zmiany zostaną utracone.')) return;
+    
+    let localKey = 'fimma_words';
+    let defaultBackup: any[] = DEFAULT_WORDS;
+    if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; }
+    else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; }
+    else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
+
+    localStorage.setItem(localKey, JSON.stringify(defaultBackup));
+    playCorrect();
+    setSuccessMsg('Przywrócono domyślną bazę haseł.');
+    fetchItems();
+    setTimeout(() => setSuccessMsg(''), 3000);
+  };
+
   // Get unique categories for filtering
   const categories = ['Wszystkie', ...Array.from(new Set(items.map(w => w.category || 'Ogólne')))];
 
@@ -698,14 +714,27 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                 </label>
               </div>
 
-              <button
-                onClick={handleCsvExport}
-                className="btn btn-secondary w-full"
-                style={{ padding: '10px', fontSize: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', borderRadius: '10px', marginTop: '4px' }}
-              >
-                <Download size={14} />
-                Eksportuj tę zakładkę do CSV
-              </button>
+              <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
+                <button
+                  type="button"
+                  onClick={handleCsvExport}
+                  className="btn btn-secondary"
+                  style={{ flexGrow: 1, padding: '10px', fontSize: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', borderRadius: '10px' }}
+                >
+                  <Download size={14} />
+                  Eksport do CSV
+                </button>
+                
+                <button
+                  type="button"
+                  onClick={handleRestoreDefaults}
+                  className="btn btn-secondary"
+                  style={{ flexGrow: 1, padding: '10px', fontSize: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', borderRadius: '10px', background: 'rgba(239, 68, 68, 0.05)', border: '1px solid rgba(239, 68, 68, 0.15)', color: '#ff5c75' }}
+                  title="Przywróci fabryczną listę haseł i wyczyści uszkodzone znaki"
+                >
+                  Przywróć domyślne
+                </button>
+              </div>
             </div>
           </div>
         </div>
