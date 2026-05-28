@@ -234,8 +234,24 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
 
     const reader = new FileReader();
     reader.onload = (event) => {
-      const text = event.target?.result as string;
-      if (!text) return;
+      const arrayBuffer = event.target?.result as ArrayBuffer;
+      if (!arrayBuffer) return;
+
+      let text = '';
+      try {
+        // Try decoding as UTF-8 (fatal: true forces error on invalid characters)
+        const utf8Decoder = new TextDecoder('utf-8', { fatal: true });
+        text = utf8Decoder.decode(arrayBuffer);
+      } catch (err) {
+        // Fallback to Windows-1250 (CP1250) for Polish Excel files
+        try {
+          const cp1250Decoder = new TextDecoder('windows-1250');
+          text = cp1250Decoder.decode(arrayBuffer);
+        } catch (e2) {
+          // Final fallback
+          text = new TextDecoder('utf-8').decode(arrayBuffer);
+        }
+      }
 
       try {
         const lines = text.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
@@ -352,7 +368,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       e.target.value = '';
     };
 
-    reader.readAsText(file, 'UTF-8');
+    reader.readAsArrayBuffer(file);
   };
 
   const handleCsvExport = () => {
