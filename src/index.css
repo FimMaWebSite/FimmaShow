@@ -493,8 +493,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .table-wrapper {
-  max-height: 520px;
-  overflow-y: auto;
   border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
