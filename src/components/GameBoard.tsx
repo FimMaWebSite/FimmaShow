@@ -37,7 +37,12 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const [isExploded, setIsExploded] = useState(false);
   const tickAccumulatorRef = useRef(0);
   const hasExplodedRef = useRef(false);
-  
+
+  // Bomb round handicap delay state
+  const [bombDelayTargetSeconds, setBombDelayTargetSeconds] = useState(0);
+  const [penalizedTeamIds, setPenalizedTeamIds] = useState<number[]>([]);
+  const [currentBombDelayLeft, setCurrentBombDelayLeft] = useState(0);
+
   // Point popups animation tracking
   const [popups, setPopups] = useState<{ id: number; value: string; type: 'plus' | 'minus' }[]>([]);
   const popupIdCounter = useRef(0);
@@ -67,6 +72,25 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const [nineSecReady, setNineSecReady] = useState(false);
   const [nineSecFinished, setNineSecFinished] = useState(false);
   const [nineSecFinalPoints, setNineSecFinalPoints] = useState(0);
+
+  // Calculate bomb handicap delay on mount
+  useEffect(() => {
+    if (gameMode === 'BOMB' && teams && teams.length >= 2) {
+      const pointsArray = teams.map(t => t.points);
+      const maxPoints = Math.max(...pointsArray);
+      const minPoints = Math.min(...pointsArray);
+      const diff = maxPoints - minPoints;
+      
+      if (diff > 0) {
+        const delay = Math.round((diff / 2) * 10) / 10;
+        setBombDelayTargetSeconds(delay);
+
+        // Find teams that have the min score
+        const penalizedIds = teams.filter(t => t.points === minPoints).map(t => t.id);
+        setPenalizedTeamIds(penalizedIds);
+      }
+    }
+  }, [gameMode, teams]);
 
   // Filter and shuffle items on mount
   useEffect(() => {
@@ -140,6 +164,14 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
     if (isPlaying && !isReadyPhase && !isExploded) {
       timerRef.current = setInterval(() => {
+        // First handle delay if it's active
+        setCurrentBombDelayLeft(prevDelay => {
+          if (prevDelay > 0) {
+            return Math.max(0, Math.round((prevDelay - 0.1) * 10) / 10);
+          }
+          return 0;
+        });
+
         setBombTimeLeft(prev => {
           if (prev <= 0.1) {
             clearInterval(timerRef.current!);
@@ -188,6 +220,14 @@ export const GameBoard: React.FC<GameBoardProps> = ({
       setIsExploded(false);
       hasExplodedRef.current = false;
       tickAccumulatorRef.current = 0;
+
+      // Calculate initial delay if starting team is penalized
+      const currentStartingTeam = teams ? teams[initialIdx] : currentTeam;
+      if (currentStartingTeam && penalizedTeamIds.includes(currentStartingTeam.id)) {
+        setCurrentBombDelayLeft(bombDelayTargetSeconds);
+      } else {
+        setCurrentBombDelayLeft(0);
+      }
     }
     setIsReadyPhase(false);
     setIsPlaying(true);
@@ -241,9 +281,19 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   };
 
   const handleBombPass = () => {
-    if (!isPlaying || isExploded) return;
+    if (!isPlaying || isExploded || currentBombDelayLeft > 0) return;
     playCorrect();
-    setActiveTeamIdx(prev => (prev + 1) % (teams ? teams.length : 2));
+    const nextIdx = (activeTeamIdx + 1) % (teams ? teams.length : 2);
+    setActiveTeamIdx(nextIdx);
+    
+    // Check if the team receiving the bomb is penalized
+    const nextTeam = teams ? teams[nextIdx] : null;
+    if (nextTeam && penalizedTeamIds.includes(nextTeam.id)) {
+      setCurrentBombDelayLeft(bombDelayTargetSeconds);
+    } else {
+      setCurrentBombDelayLeft(0);
+    }
+    
     nextWord();
   };
 
@@ -1059,30 +1109,59 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               {currentWord ? (
                 <div className="zero-presji-card-container" style={{ background: 'linear-gradient(135deg, #1e1b18 0%, #2f2a24 100%)', border: '4px solid #111', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }}>
                   <div className="zero-presji-card-inner" style={{ background: 'radial-gradient(circle, #2d2925 0%, #1e1b19 100%)', borderColor: '#111' }}>
-                    <div style={{
-                      fontFamily: 'var(--font-display)',
-                      fontSize: '11px',
-                      fontWeight: 900,
-                      color: 'hsl(var(--primary))',
-                      letterSpacing: '0.15em',
-                      textTransform: 'uppercase',
-                      marginBottom: '16px'
-                    }}>
-                      HASŁO DO OPISANIA (BEZ ZAKAZANYCH SŁÓW)
-                    </div>
+                    {currentBombDelayLeft > 0 ? (
+                      <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
+                        <div style={{ fontSize: '48px', animation: 'spin 2s linear infinite' }}>⏳</div>
+                        <div style={{
+                          fontFamily: 'var(--font-display)',
+                          fontSize: '18px',
+                          fontWeight: 900,
+                          color: '#ef4444',
+                          letterSpacing: '0.05em',
+                          textTransform: 'uppercase'
+                        }}>
+                          Czas oczekiwania na kartę
+                        </div>
+                        <div style={{
+                          fontSize: '56px',
+                          fontWeight: 900,
+                          color: 'white',
+                          fontFamily: 'monospace'
+                        }}>
+                          {currentBombDelayLeft.toFixed(1)}s
+                        </div>
+                        <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.4)', maxWidth: '300px', lineHeight: 1.4, textAlign: 'center' }}>
+                          Jesteście w tyle z punktami! Musicie odczekać karne sekundy przed zobaczeniem hasła!
+                        </div>
+                      </div>
+                    ) : (
+                      <>
+                        <div style={{
+                          fontFamily: 'var(--font-display)',
+                          fontSize: '11px',
+                          fontWeight: 900,
+                          color: 'hsl(var(--primary))',
+                          letterSpacing: '0.15em',
+                          textTransform: 'uppercase',
+                          marginBottom: '16px'
+                        }}>
+                          HASŁO DO OPISANIA (BEZ ZAKAZANYCH SŁÓW)
+                        </div>
 
-                    <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <h2 style={{
-                        fontSize: 'clamp(2rem, 5vw, 4.2rem)',
-                        fontWeight: 900,
-                        textTransform: 'uppercase',
-                        color: '#ffffff',
-                        textShadow: '0 4px 10px rgba(0,0,0,0.5)',
-                        lineHeight: 1.1
-                      }}>
-                        {currentWord.word}
-                      </h2>
-                    </div>
+                        <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          <h2 style={{
+                            fontSize: 'clamp(2rem, 5vw, 4.2rem)',
+                            fontWeight: 900,
+                            textTransform: 'uppercase',
+                            color: '#ffffff',
+                            textShadow: '0 4px 10px rgba(0,0,0,0.5)',
+                            lineHeight: 1.1
+                          }}>
+                            {currentWord.word}
+                          </h2>
+                        </div>
+                      </>
+                    )}
 
                     {/* Zero Presji Show badge */}
                     <div className="zero-presji-logo-badge" style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
@@ -1135,22 +1214,23 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           <div className="gameplay-controls-panel" style={{ background: 'rgba(255, 60, 0, 0.02)', borderColor: 'rgba(255, 60, 0, 0.15)', padding: '20px' }}>
             <button
               onClick={handleBombPass}
-              disabled={!isPlaying || isExploded}
+              disabled={!isPlaying || isExploded || currentBombDelayLeft > 0}
               className="btn btn-primary w-full"
               style={{
                 padding: '20px',
                 fontSize: '18px',
                 borderRadius: '20px',
-                background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 100%)',
+                background: currentBombDelayLeft > 0 ? 'linear-gradient(135deg, #4b5563 0%, #374151 100%)' : 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 100%)',
                 border: 'none',
-                boxShadow: '0 8px 24px rgba(255, 60, 0, 0.35)',
+                boxShadow: currentBombDelayLeft > 0 ? 'none' : '0 8px 24px rgba(255, 60, 0, 0.35)',
                 fontWeight: 900,
                 letterSpacing: '0.02em',
-                flexGrow: 1
+                flexGrow: 1,
+                cursor: currentBombDelayLeft > 0 ? 'not-allowed' : 'pointer'
               }}
             >
               <Check size={22} />
-              ZGADNIĘTE (PRZEKAŻ BOMBĘ!) 💣
+              {currentBombDelayLeft > 0 ? 'CZEKAJ NA PODNIESIENIE...' : 'ZGADNIĘTE (PRZEKAŻ BOMBĘ!) 💣'}
             </button>
 
             {/* Exit button */}

@@ -48,10 +48,11 @@ const App: React.FC = () => {
   // Helper to get active game mode inside tournament
   const getActiveGameMode = (): GameMode => {
     if (selectedGame === 'TOURNAMENT') {
-      if (tournamentRound === 1) return 'MARYLIN_MONROE';
-      if (tournamentRound === 2) return 'NINE_SECONDS';
-      if (tournamentRound === 3) return 'REVERSE_CHARADES';
-      if (tournamentRound === 4) return 'BOMB';
+      const customGames = settings.tournamentGames || ['MARYLIN_MONROE', 'NINE_SECONDS', 'REVERSE_CHARADES'];
+      if (tournamentRound <= customGames.length) {
+        return customGames[tournamentRound - 1];
+      }
+      return 'BOMB';
     }
     return selectedGame;
   };
@@ -160,13 +161,21 @@ const App: React.FC = () => {
   const handleStartGame = (teamsSetup: Team[], gameSettings: GameSettings) => {
     setTeams(teamsSetup);
     if (selectedGame === 'TOURNAMENT') {
+      const customGames = gameSettings.tournamentGames || ['MARYLIN_MONROE', 'NINE_SECONDS', 'REVERSE_CHARADES'];
+      const firstGame = customGames[0] || 'MARYLIN_MONROE';
+      let firstRoundTime = 60;
+      if (firstGame === 'NINE_SECONDS') firstRoundTime = 9.5;
+      else if (firstGame === 'REVERSE_CHARADES') firstRoundTime = 120;
+
       setSettings({
-        roundTime: 60, // Runda 1 (Marilyn Monroe) is 60s
+        roundTime: firstRoundTime,
         pointsToWin: 9999, // Tournament continues till the end
-        selectedCategories: []
+        selectedCategories: [],
+        tournamentGames: customGames
       });
       setTournamentRound(1);
       setTournamentTurnsPlayedInRound(0);
+      loadGameData(firstGame);
     } else {
       setSettings(gameSettings);
     }
@@ -265,6 +274,7 @@ const App: React.FC = () => {
   };
 
   const handleNextRound = () => {
+    const customGames = settings.tournamentGames || ['MARYLIN_MONROE', 'NINE_SECONDS', 'REVERSE_CHARADES'];
     if (selectedGame === 'TOURNAMENT' && tournamentTurnsPlayedInRound === teams.length * 2) {
       // Advance to the next round of the tournament
       const nextRound = tournamentRound + 1;
@@ -272,17 +282,16 @@ const App: React.FC = () => {
       setTournamentTurnsPlayedInRound(0);
       setCurrentTeamIndex(0);
 
+      let nextMode: GameMode = 'BOMB';
+      if (nextRound <= customGames.length) {
+        nextMode = customGames[nextRound - 1];
+      }
+
       let nextRoundTime = 60;
-      let nextMode: GameMode = 'MARYLIN_MONROE';
-      if (nextRound === 2) {
+      if (nextMode === 'NINE_SECONDS') {
         nextRoundTime = 9.5;
-        nextMode = 'NINE_SECONDS';
-      } else if (nextRound === 3) {
+      } else if (nextMode === 'REVERSE_CHARADES') {
         nextRoundTime = 120;
-        nextMode = 'REVERSE_CHARADES';
-      } else if (nextRound === 4) {
-        nextRoundTime = 60;
-        nextMode = 'BOMB';
       }
 
       setSettings(prev => ({

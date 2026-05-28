@@ -16,6 +16,7 @@ export interface GameSettings {
   roundTime: number;
   pointsToWin: number;
   selectedCategories: string[];
+  tournamentGames?: GameMode[];
 }
 
 interface GameSetupProps {
@@ -46,6 +47,11 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   const [categories, setCategories] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
+  const [tournamentGames, setTournamentGames] = useState<GameMode[]>([
+    'MARYLIN_MONROE',
+    'NINE_SECONDS',
+    'REVERSE_CHARADES'
+  ]);
 
   // Fetch available categories from server
   useEffect(() => {
@@ -165,7 +171,8 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
     onStart(teams, { 
       roundTime: gameMode === 'TOURNAMENT' ? 60 : roundTime, 
       pointsToWin: gameMode === 'TOURNAMENT' ? 9999 : gameMode === 'SPY' ? 15 : pointsToWin, 
-      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' || gameMode === 'LIPS' || gameMode === 'REVOLVER' ? [] : selectedCategories 
+      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' || gameMode === 'LIPS' || gameMode === 'REVOLVER' ? [] : selectedCategories,
+      tournamentGames: gameMode === 'TOURNAMENT' ? tournamentGames : undefined
     });
   };
 
@@ -331,34 +338,75 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
           </div>
         ) : gameMode === 'TOURNAMENT' ? (
           <div className="glass flex-col gap-md">
-            <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
-              <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
-              Przebieg Teleturnieju
-            </h3>
+            <div className="setup-box-header" style={{ marginBottom: 0 }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
+                Rundy Teleturnieju
+              </h3>
+              <div className="flex-row gap-xs items-center">
+                <button
+                  onClick={() => {
+                    playClick();
+                    if (tournamentGames.length <= 1) return;
+                    setTournamentGames(tournamentGames.slice(0, -1));
+                  }}
+                  disabled={tournamentGames.length <= 1}
+                  className="btn btn-icon"
+                  style={{ padding: '6px', borderRadius: '8px' }}
+                >
+                  <Minus size={14} />
+                </button>
+                <span style={{ fontSize: '14px', fontWeight: 800, color: 'white', padding: '0 8px' }}>
+                  {tournamentGames.length}
+                </span>
+                <button
+                  onClick={() => {
+                    playClick();
+                    if (tournamentGames.length >= 5) return;
+                    setTournamentGames([...tournamentGames, 'MARYLIN_MONROE']);
+                  }}
+                  disabled={tournamentGames.length >= 5}
+                  className="btn btn-icon"
+                  style={{ padding: '6px', borderRadius: '8px' }}
+                >
+                  <Plus size={14} />
+                </button>
+              </div>
+            </div>
             
             <div className="flex-col gap-sm" style={{ marginTop: '8px' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--primary))' }}>RUNDA 1</span>
-                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>Marylin Monroe (Tabu)</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Każda drużyna ma 60 sekund na odgadnięcie postaci z tabu.</span>
-              </div>
+              {tournamentGames.map((game, index) => (
+                <div key={index} style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '6px' }}>
+                  <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--primary))' }}>
+                    RUNDA {index + 1}
+                  </span>
+                  <select
+                    value={game}
+                    onChange={(e) => {
+                      playClick();
+                      const updated = [...tournamentGames];
+                      updated[index] = e.target.value as GameMode;
+                      setTournamentGames(updated);
+                    }}
+                    className="select-field"
+                    style={{ padding: '8px 12px', fontSize: '13px', borderRadius: '10px', height: '38px', backgroundPosition: 'right 8px center' }}
+                  >
+                    <option value="MARYLIN_MONROE">Marylin Monroe (Tabu)</option>
+                    <option value="NINE_SECONDS">9,5 Sekundy (Pytania)</option>
+                    <option value="REVERSE_CHARADES">Odwrócone Kalambury (Czynności)</option>
+                    <option value="LIPS">Usta Usta (Ruch warg)</option>
+                    <option value="P_GAME">Gra na P</option>
+                  </select>
+                </div>
+              ))}
 
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: '#f97316' }}>RUNDA 2</span>
-                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>9,5 Sekundy</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Mistrz Gry czyta pytania, a drużyna ma 9.5 sekundy na szybkie odpowiedzi.</span>
-              </div>
-
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: '#8b5cf6' }}>RUNDA 3</span>
-                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>Odwrócone Kalambury</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Pokazywanie haseł-czynności w formie pantomimy (czas: 120s).</span>
-              </div>
-
+              {/* Fixed Final Round */}
               <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'linear-gradient(135deg, rgba(255, 60, 0, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%)', border: '1px solid rgba(255, 60, 0, 0.2)', borderRadius: '14px', gap: '4px' }}>
                 <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>RUNDA FINAŁOWA</span>
                 <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>Bomba! 💣</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Opisywanie haseł bez słów zakazanych i przekazywanie tykającej bomby. Kto trzyma bombę podczas wybuchu, ten przegrywa!</span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>
+                  Opisywanie haseł bez słów zakazanych i przekazywanie tykającej bomby. Przegrywająca para ma dodatkowe utrudnienie czasowe w postaci opóźnienia kart!
+                </span>
               </div>
             </div>
           </div>
