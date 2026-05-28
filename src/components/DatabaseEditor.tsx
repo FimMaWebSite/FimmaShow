@@ -517,7 +517,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                       {activeTab === 'MARYLIN_MONROE' && (
                         <td>
                           <div className="flex-row gap-xs" style={{ flexWrap: 'wrap' }}>
-                            {item.forbidden.map((fw: string, idx: number) => (
+                            {Array.isArray(item.forbidden) ? item.forbidden.map((fw: string, idx: number) => (
                               <span
                                 key={idx}
                                 className="badge-tag"
@@ -525,7 +525,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                               >
                                 {fw}
                               </span>
-                            ))}
+                            )) : null}
                           </div>
                         </td>
                       )}
