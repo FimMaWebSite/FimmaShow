@@ -12,8 +12,22 @@ import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
 export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME' | 'SPY' | 'LIPS' | 'REVOLVER';
 
+const ADMIN_HASH = '1ec3e7600872b0de2ac7d720cb588b63f1979dce3e19eb0eda2c3698dd773b77';
+
+// Hash a string using SHA-256 (Web Crypto API)
+async function sha256(message: string): Promise<string> {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
+  const [showAdminModal, setShowAdminModal] = useState(false);
+  const [adminInput, setAdminInput] = useState('');
+  const [adminError, setAdminError] = useState(false);
+  const [adminShake, setAdminShake] = useState(false);
   const [selectedGame, setSelectedGame] = useState<GameMode>('MARYLIN_MONROE');
   const [availableWords, setAvailableWords] = useState<any[]>([]);
   const [teams, setTeams] = useState<Team[]>([]);
@@ -347,8 +361,114 @@ const App: React.FC = () => {
         {view === 'DASHBOARD' && (
           <Dashboard 
             onStartGame={handleStartSetup} 
-            onOpenDatabase={() => setView('DATABASE')} 
+            onOpenDatabase={() => {
+              setAdminInput('');
+              setAdminError(false);
+              setShowAdminModal(true);
+            }} 
           />
+        )}
+        {/* Admin Password Modal */}
+        {showAdminModal && (
+          <div style={{
+            position: 'fixed', inset: 0, zIndex: 9999,
+            background: 'rgba(0,0,0,0.85)',
+            backdropFilter: 'blur(8px)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            padding: '24px'
+          }}>
+            <div
+              className="glass"
+              style={{
+                padding: '40px 36px', maxWidth: '400px', width: '100%',
+                textAlign: 'center', borderRadius: '28px',
+                border: adminError ? '2px solid rgba(239,68,68,0.5)' : '1px solid rgba(255,255,255,0.08)',
+                animation: adminShake ? 'shake 0.4s ease' : 'none',
+                transition: 'border 0.2s'
+              }}
+            >
+              <style>{`
+                @keyframes shake {
+                  0%, 100% { transform: translateX(0); }
+                  20% { transform: translateX(-10px); }
+                  40% { transform: translateX(10px); }
+                  60% { transform: translateX(-8px); }
+                  80% { transform: translateX(8px); }
+                }
+              `}</style>
+              <div style={{ fontSize: '48px', marginBottom: '16px' }}>🔐</div>
+              <h3 style={{ fontSize: '22px', fontWeight: 900, color: 'white', marginBottom: '8px' }}>
+                Panel Administratora
+              </h3>
+              <p style={{ fontSize: '13px', color: 'hsl(var(--text-secondary))', marginBottom: '24px', lineHeight: 1.6 }}>
+                Tylko dla autoryzowanych użytkowników.
+              </p>
+              <input
+                type="password"
+                value={adminInput}
+                onChange={e => { setAdminInput(e.target.value); setAdminError(false); }}
+                onKeyDown={async e => {
+                  if (e.key === 'Enter') {
+                    const hash = await sha256(adminInput);
+                    if (hash === ADMIN_HASH) {
+                      setShowAdminModal(false);
+                      setAdminInput('');
+                      setView('DATABASE');
+                    } else {
+                      setAdminError(true);
+                      setAdminShake(true);
+                      setTimeout(() => setAdminShake(false), 400);
+                      setAdminInput('');
+                    }
+                  }
+                }}
+                placeholder="Hasło..."
+                className="input-field"
+                autoFocus
+                style={{
+                  width: '100%',
+                  marginBottom: '16px',
+                  textAlign: 'center',
+                  fontSize: '18px',
+                  letterSpacing: '0.2em',
+                  border: adminError ? '2px solid #ef4444' : undefined
+                }}
+              />
+              {adminError && (
+                <div style={{ color: '#ef4444', fontSize: '13px', fontWeight: 700, marginBottom: '12px' }}>
+                  ❌ Błędne hasło. Spróbuj ponownie.
+                </div>
+              )}
+              <div style={{ display: 'flex', gap: '12px' }}>
+                <button
+                  onClick={async () => {
+                    const hash = await sha256(adminInput);
+                    if (hash === ADMIN_HASH) {
+                      setShowAdminModal(false);
+                      setAdminInput('');
+                      setView('DATABASE');
+                    } else {
+                      setAdminError(true);
+                      setAdminShake(true);
+                      setTimeout(() => setAdminShake(false), 400);
+                      setAdminInput('');
+                    }
+                  }}
+                  className="btn btn-primary"
+                  style={{ flex: 1, padding: '12px' }}
+                >
+                  Wejdź
+                </button>
+                <button
+                  onClick={() => { setShowAdminModal(false); setAdminInput(''); setAdminError(false); }}
+                  className="btn btn-secondary"
+                  style={{ padding: '12px 16px' }}
+                >
+                  Anuluj
+                </button>
+              </div>
+            </div>
+          </div>
         )}
         {view === 'DATABASE' && (
           <DatabaseEditor 
