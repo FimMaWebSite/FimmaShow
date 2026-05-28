@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer, Users } from 'lucide-react';
+import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer, Users, Upload, Download, FileSpreadsheet } from 'lucide-react';
 import { playClick, playCorrect, playWrong } from '../utils/audio';
 import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_LIPS_WORDS } from '../data/defaultData';
 
@@ -228,6 +228,186 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     setTimeout(() => setSuccessMsg(''), 3000);
   };
 
+  const handleCsvImport = (e: React.ChangeEvent<HTMLInputElement>, replaceExisting: boolean) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const text = event.target?.result as string;
+      if (!text) return;
+
+      try {
+        const lines = text.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+        if (lines.length === 0) {
+          setErrorMsg('Plik CSV jest pusty.');
+          playWrong();
+          return;
+        }
+
+        const newItems: any[] = [];
+        let separator = ';';
+        const firstLine = lines[0];
+        const commaCount = (firstLine.match(/,/g) || []).length;
+        const semicolonCount = (firstLine.match(/;/g) || []).length;
+        if (commaCount > semicolonCount) {
+          separator = ',';
+        }
+
+        for (let i = 0; i < lines.length; i++) {
+          const row = lines[i];
+          const fields = row.split(separator).map(f => {
+            let cleaned = f.trim();
+            if (cleaned.startsWith('"') && cleaned.endsWith('"')) {
+              cleaned = cleaned.substring(1, cleaned.length - 1);
+            }
+            return cleaned;
+          });
+
+          // Skip header row
+          if (i === 0 && (
+            fields[0].toLowerCase().includes('hasło') || 
+            fields[0].toLowerCase().includes('pytanie') || 
+            fields[0].toLowerCase().includes('czynność') ||
+            fields[0].toLowerCase().includes('word') ||
+            fields[0].toLowerCase().includes('question')
+          )) {
+            continue;
+          }
+
+          if (fields.length === 0 || !fields[0]) continue;
+
+          let itemPayload: any = {};
+          
+          if (activeTab === 'MARYLIN_MONROE') {
+            if (fields.length < 4) continue;
+            itemPayload = {
+              id: `csv-${Date.now()}-${i}-${Math.random().toString(36).substr(2, 4)}`,
+              word: fields[0],
+              forbidden: [fields[1] || '', fields[2] || '', fields[3] || ''],
+              category: fields[4] || 'Popkultura',
+              difficulty: fields[5] || 'Średni'
+            };
+          } else if (activeTab === 'LIPS') {
+            itemPayload = {
+              id: `csv-${Date.now()}-${i}-${Math.random().toString(36).substr(2, 4)}`,
+              word: fields[0],
+              category: fields[1] || 'Inne',
+              difficulty: fields[2] || 'Średni'
+            };
+          } else {
+            itemPayload = {
+              id: `csv-${Date.now()}-${i}-${Math.random().toString(36).substr(2, 4)}`,
+              question: fields[0],
+              category: fields[1] || 'Ogólne',
+              difficulty: fields[2] || 'Średni'
+            };
+          }
+          
+          newItems.push(itemPayload);
+        }
+
+        if (newItems.length === 0) {
+          setErrorMsg('Nie wczytano żadnych poprawnych wierszy z pliku.');
+          playWrong();
+          return;
+        }
+
+        let localKey = 'fimma_words';
+        let defaultBackup: any[] = DEFAULT_WORDS;
+        if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; }
+        else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; }
+        else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
+
+        let finalItems: any[] = [];
+        if (replaceExisting) {
+          finalItems = newItems;
+        } else {
+          const localData = localStorage.getItem(localKey);
+          let existing: any[] = [];
+          if (localData) {
+            try {
+              const parsed = JSON.parse(localData);
+              existing = Array.isArray(parsed) ? parsed : [...defaultBackup];
+            } catch {
+              existing = [...defaultBackup];
+            }
+          } else {
+            existing = [...defaultBackup];
+          }
+          finalItems = [...existing, ...newItems];
+        }
+
+        localStorage.setItem(localKey, JSON.stringify(finalItems));
+        playCorrect();
+        setSuccessMsg(`Pomyślnie zaimportowano ${newItems.length} pozycji!`);
+        fetchItems();
+        setTimeout(() => setSuccessMsg(''), 5000);
+      } catch (err) {
+        console.error(err);
+        setErrorMsg('Wystąpił błąd podczas analizy pliku CSV.');
+        playWrong();
+      }
+      
+      e.target.value = '';
+    };
+
+    reader.readAsText(file, 'UTF-8');
+  };
+
+  const handleCsvExport = () => {
+    let localKey = 'fimma_words';
+    let defaultBackup: any[] = DEFAULT_WORDS;
+    let filename = 'marylin_monroe_tabu.csv';
+
+    if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; filename = '9_5_sekundy_pytania.csv'; }
+    else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; filename = 'odwrocone_kalambury_czynnosci.csv'; }
+    else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; filename = 'usta_usta_hasla.csv'; }
+
+    const localData = localStorage.getItem(localKey);
+    let list: any[] = [];
+    if (localData) {
+      try {
+        const parsed = JSON.parse(localData);
+        list = Array.isArray(parsed) ? parsed : [...defaultBackup];
+      } catch {
+        list = [...defaultBackup];
+      }
+    } else {
+      list = [...defaultBackup];
+    }
+
+    let csvContent = '\uFEFF';
+    
+    if (activeTab === 'MARYLIN_MONROE') {
+      csvContent += 'Hasło;Słowo zakazane 1;Słowo zakazane 2;Słowo zakazane 3;Kategoria;Trudność\n';
+      list.forEach(item => {
+        const forbidden = Array.isArray(item.forbidden) ? item.forbidden : ['', '', ''];
+        csvContent += `"${item.word || ''}";"${forbidden[0] || ''}";"${forbidden[1] || ''}";"${forbidden[2] || ''}";"${item.category || ''}";"${item.difficulty || ''}"\n`;
+      });
+    } else if (activeTab === 'LIPS') {
+      csvContent += 'Hasło;Kategoria;Trudność\n';
+      list.forEach(item => {
+        csvContent += `"${item.word || ''}";"${item.category || ''}";"${item.difficulty || ''}"\n`;
+      });
+    } else {
+      csvContent += 'Pytanie/Czynność;Kategoria;Trudność\n';
+      list.forEach(item => {
+        csvContent += `"${item.question || item.word || ''}";"${item.category || ''}";"${item.difficulty || ''}"\n`;
+      });
+    }
+
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.setAttribute('href', url);
+    link.setAttribute('download', filename);
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   // Get unique categories for filtering
   const categories = ['Wszystkie', ...Array.from(new Set(items.map(w => w.category || 'Ogólne')))];
 
@@ -308,9 +488,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       </div>
 
       <div className="db-layout">
-        {/* Left Side: Form Editor */}
-        <div>
-          <div className="glass" style={{ padding: '24px', position: 'sticky', top: '90px' }}>
+        {/* Left Side Column */}
+        <div style={{ position: 'sticky', top: '90px', display: 'flex', flexDirection: 'column', gap: '20px', alignSelf: 'flex-start' }}>
+          <div className="glass" style={{ padding: '24px' }}>
             <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               {isEditing ? <Edit2 size={16} style={{ color: 'hsl(var(--primary))' }} /> : <Plus size={16} style={{ color: 'hsl(var(--primary))' }} />}
               {isEditing 
@@ -454,6 +634,63 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                 )}
               </div>
             </form>
+          </div>
+
+          {/* CSV Tools card */}
+          <div className="glass" style={{ padding: '20px', marginTop: '20px' }}>
+            <h3 style={{ fontSize: '15px', fontWeight: 800, color: 'white', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <FileSpreadsheet size={16} style={{ color: 'hsl(var(--primary))' }} />
+              Narzędzia CSV (Excel)
+            </h3>
+            
+            <p style={{ fontSize: '11px', color: 'hsl(var(--text-muted))', marginBottom: '16px', lineHeight: 1.4 }}>
+              Format pliku CSV (kolumny oddzielone <strong>średnikami</strong>, wiersz nagłówkowy jest opcjonalny i automatycznie pomijany):<br/>
+              {activeTab === 'MARYLIN_MONROE' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Hasło;Zakazane1;Zakazane2;Zakazane3;Kategoria;Trudność</code>}
+              {activeTab === 'NINE_SECONDS' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Pytanie;Kategoria;Trudność</code>}
+              {activeTab === 'REVERSE_CHARADES' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Czynność;Kategoria;Trudność</code>}
+              {activeTab === 'LIPS' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Hasło;Kategoria;Trudność</code>}
+            </p>
+
+            <div className="flex-col gap-xs">
+              <div style={{ display: 'flex', gap: '8px' }}>
+                <label className="btn btn-secondary" style={{ flexGrow: 1, padding: '10px', fontSize: '12px', cursor: 'pointer', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', borderRadius: '10px' }} title="Doda nowe pozycje na koniec obecnej bazy haseł">
+                  <Upload size={14} />
+                  Dodaj z CSV
+                  <input
+                    type="file"
+                    accept=".csv"
+                    onChange={(e) => handleCsvImport(e, false)}
+                    style={{ display: 'none' }}
+                  />
+                </label>
+                
+                <label className="btn btn-secondary" style={{ flexGrow: 1, padding: '10px', fontSize: '12px', cursor: 'pointer', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', borderRadius: '10px', background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.25)', color: '#ff5c75' }} title="CAŁKOWICIE wyczyści obecne hasła w tej zakładce i wgra tylko hasła z pliku CSV">
+                  <Upload size={14} />
+                  Zastąp z CSV
+                  <input
+                    type="file"
+                    accept=".csv"
+                    onChange={(e) => {
+                      if(window.confirm('Czy na pewno chcesz USUNĄĆ obecne hasła z tej zakładki i wgrać TYLKO hasła z pliku CSV?')) {
+                        handleCsvImport(e, true);
+                      } else {
+                        e.target.value = '';
+                      }
+                    }}
+                    style={{ display: 'none' }}
+                  />
+                </label>
+              </div>
+
+              <button
+                onClick={handleCsvExport}
+                className="btn btn-secondary w-full"
+                style={{ padding: '10px', fontSize: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', borderRadius: '10px', marginTop: '4px' }}
+              >
+                <Download size={14} />
+                Eksportuj tę zakładkę do CSV
+              </button>
+            </div>
           </div>
         </div>
 
