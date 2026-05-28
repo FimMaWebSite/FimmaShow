@@ -462,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .db-layout {
     grid-template-cols: 320px 1fr;
   }
@@ -1186,7 +1186,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .db-sidebar {
     position: sticky;
     top: 90px;

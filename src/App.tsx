@@ -340,7 +340,7 @@ const App: React.FC = () => {
       )}
 
       {/* Main Content Area */}
-      <main className="main-content">
+      <main className="main-content" style={view === 'DATABASE' ? { maxWidth: '1600px', width: '95%' } : undefined}>
         {view === 'DASHBOARD' && (
           <Dashboard 
             onStartGame={handleStartSetup} 
