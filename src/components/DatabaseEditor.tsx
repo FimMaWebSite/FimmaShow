@@ -57,7 +57,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     const localData = localStorage.getItem(localKey);
     if (localData) {
       try {
-        setItems(JSON.parse(localData));
+        const parsed = JSON.parse(localData);
+        if (Array.isArray(parsed)) {
+          setItems(parsed);
+        } else {
+          setItems(defaultBackup);
+          localStorage.setItem(localKey, JSON.stringify(defaultBackup));
+        }
       } catch {
         setItems(defaultBackup);
         localStorage.setItem(localKey, JSON.stringify(defaultBackup));
@@ -136,7 +142,17 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
 
     const localData = localStorage.getItem(localKey);
-    let list = localData ? JSON.parse(localData) : [...defaultBackup];
+    let list: any[] = [];
+    if (localData) {
+      try {
+        const parsed = JSON.parse(localData);
+        list = Array.isArray(parsed) ? parsed : [...defaultBackup];
+      } catch {
+        list = [...defaultBackup];
+      }
+    } else {
+      list = [...defaultBackup];
+    }
 
     if (isEditing) {
       list = list.map((item: any) => item.id === isEditing
@@ -192,7 +208,17 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
 
     const localData = localStorage.getItem(localKey);
-    let list = localData ? JSON.parse(localData) : [...defaultBackup];
+    let list: any[] = [];
+    if (localData) {
+      try {
+        const parsed = JSON.parse(localData);
+        list = Array.isArray(parsed) ? parsed : [...defaultBackup];
+      } catch {
+        list = [...defaultBackup];
+      }
+    } else {
+      list = [...defaultBackup];
+    }
     list = list.filter((item: any) => item.id !== id);
     localStorage.setItem(localKey, JSON.stringify(list));
 
