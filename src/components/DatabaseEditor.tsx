@@ -38,45 +38,30 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   const [errorMsg, setErrorMsg] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
 
-  // Fetch from backend (falls back to localStorage)
-  const fetchItems = async () => {
-    let endpoint = '/api/words';
+  // Load from localStorage only (no backend on GitHub Pages)
+  const fetchItems = () => {
     let localKey = 'fimma_words';
     let defaultBackup: any[] = DEFAULT_WORDS;
 
     if (activeTab === 'NINE_SECONDS') {
-      endpoint = '/api/nine-seconds';
       localKey = 'fimma_nine_seconds';
       defaultBackup = DEFAULT_NINE_SECONDS;
     } else if (activeTab === 'REVERSE_CHARADES') {
-      endpoint = '/api/reverse-charades';
       localKey = 'fimma_reverse_charades';
       defaultBackup = DEFAULT_REVERSE_CHARADES;
     } else if (activeTab === 'LIPS') {
-      endpoint = '/api/lips-words';
       localKey = 'fimma_lips_words';
       defaultBackup = DEFAULT_LIPS_WORDS;
     }
 
-    try {
-      setLoading(true);
-      const res = await fetch(endpoint);
-      const contentType = res.headers.get('content-type');
-      if (res.ok && contentType && contentType.includes('application/json')) {
-        const data = await res.json();
-        setItems(data);
-        localStorage.setItem(localKey, JSON.stringify(data));
-        setLoading(false);
-        return;
-      }
-    } catch (err) {
-      console.warn('API error in DB editor, using localStorage:', err);
-    }
-
-    // Fallback to local storage
     const localData = localStorage.getItem(localKey);
     if (localData) {
-      setItems(JSON.parse(localData));
+      try {
+        setItems(JSON.parse(localData));
+      } catch {
+        setItems(defaultBackup);
+        localStorage.setItem(localKey, JSON.stringify(defaultBackup));
+      }
     } else {
       setItems(defaultBackup);
       localStorage.setItem(localKey, JSON.stringify(defaultBackup));
@@ -111,7 +96,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     setErrorMsg('');
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMsg('');
     setSuccessMsg('');
@@ -119,22 +104,15 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     // Validations
     if (!wordInput.trim()) {
       let validationMsg = 'Wprowadź hasło główne.';
-      if (activeTab === 'NINE_SECONDS') {
-        validationMsg = 'Wprowadź treść pytania.';
-      } else if (activeTab === 'REVERSE_CHARADES') {
-        validationMsg = 'Wprowadź treść czynności.';
-      } else if (activeTab === 'LIPS') {
-        validationMsg = 'Wprowadź hasło do odczytania z ust.';
-      }
+      if (activeTab === 'NINE_SECONDS') validationMsg = 'Wprowadź treść pytania.';
+      else if (activeTab === 'REVERSE_CHARADES') validationMsg = 'Wprowadź treść czynności.';
+      else if (activeTab === 'LIPS') validationMsg = 'Wprowadź hasło do odczytania z ust.';
       setErrorMsg(validationMsg);
       playWrong();
       return;
     }
 
-    let payload: any = {
-      category: categoryInput,
-      difficulty: difficultyInput
-    };
+    let payload: any = { category: categoryInput, difficulty: difficultyInput };
 
     if (activeTab === 'MARYLIN_MONROE') {
       const filteredForbidden = forbiddenInputs.map(w => w.trim()).filter(Boolean);
@@ -151,86 +129,27 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       payload.question = wordInput.trim();
     }
 
-    let baseEndpoint = '/api/words';
     let localKey = 'fimma_words';
     let defaultBackup: any[] = DEFAULT_WORDS;
+    if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; }
+    else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; }
+    else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
 
-    if (activeTab === 'NINE_SECONDS') {
-      baseEndpoint = '/api/nine-seconds';
-      localKey = 'fimma_nine_seconds';
-      defaultBackup = DEFAULT_NINE_SECONDS;
-    } else if (activeTab === 'REVERSE_CHARADES') {
-      baseEndpoint = '/api/reverse-charades';
-      localKey = 'fimma_reverse_charades';
-      defaultBackup = DEFAULT_REVERSE_CHARADES;
-    } else if (activeTab === 'LIPS') {
-      baseEndpoint = '/api/lips-words';
-      localKey = 'fimma_lips_words';
-      defaultBackup = DEFAULT_LIPS_WORDS;
+    const localData = localStorage.getItem(localKey);
+    let list = localData ? JSON.parse(localData) : [...defaultBackup];
+
+    if (isEditing) {
+      list = list.map((item: any) => item.id === isEditing
+        ? { ...item, ...payload }
+        : item
+      );
+    } else {
+      list.push({ id: Date.now().toString(), ...payload });
     }
 
-    const saveLocally = () => {
-      const localData = localStorage.getItem(localKey);
-      let list = localData ? JSON.parse(localData) : [...defaultBackup];
-      if (isEditing) {
-        // Edit existing
-        list = list.map((item: any) => {
-          if (item.id === isEditing) {
-            return {
-              ...item,
-              category: payload.category,
-              difficulty: payload.difficulty,
-              word: payload.word,
-              forbidden: payload.forbidden,
-              question: payload.question
-            };
-          }
-          return item;
-        });
-      } else {
-        // Add new
-        const newItem = {
-          id: Date.now().toString(),
-          ...payload
-        };
-        list.push(newItem);
-      }
-      localStorage.setItem(localKey, JSON.stringify(list));
-    };
-
-    try {
-      let res;
-      if (isEditing) {
-        res = await fetch(`${baseEndpoint}/${isEditing}`, {
-          method: 'PUT',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-      } else {
-        res = await fetch(baseEndpoint, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-      }
-
-      const contentType = res.headers.get('content-type');
-      if (res.ok && contentType && contentType.includes('application/json')) {
-        playCorrect();
-        setSuccessMsg(isEditing ? 'Pomyślnie zaktualizowano!' : 'Pomyślnie dodano do bazy!');
-        resetForm();
-        fetchItems();
-        setTimeout(() => setSuccessMsg(''), 3000);
-        return;
-      }
-    } catch (err) {
-      console.warn('Backend unavailable, falling back to localStorage save:', err);
-    }
-
-    // Save to localStorage directly (offline fallback)
-    saveLocally();
+    localStorage.setItem(localKey, JSON.stringify(list));
     playCorrect();
-    setSuccessMsg(isEditing ? 'Zaktualizowano lokalnie (Tryb offline)!' : 'Dodano lokalnie (Tryb offline)!');
+    setSuccessMsg(isEditing ? 'Pomyślnie zaktualizowano!' : 'Pomyślnie dodano do bazy!');
     resetForm();
     fetchItems();
     setTimeout(() => setSuccessMsg(''), 3000);
@@ -256,60 +175,28 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleDelete = async (id: string) => {
+  const handleDelete = (id: string) => {
     let confirmMsg = 'Czy na pewno chcesz usunąć to hasło?';
-    if (activeTab === 'NINE_SECONDS') {
-      confirmMsg = 'Czy na pewno chcesz usunąć to pytanie?';
-    } else if (activeTab === 'REVERSE_CHARADES') {
-      confirmMsg = 'Czy na pewno chcesz usunąć tę czynność?';
-    } else if (activeTab === 'LIPS') {
-      confirmMsg = 'Czy na pewno chcesz usunąć to hasło z ust?';
-    }
-      
+    if (activeTab === 'NINE_SECONDS') confirmMsg = 'Czy na pewno chcesz usunąć to pytanie?';
+    else if (activeTab === 'REVERSE_CHARADES') confirmMsg = 'Czy na pewno chcesz usunąć tę czynność?';
+    else if (activeTab === 'LIPS') confirmMsg = 'Czy na pewno chcesz usunąć to hasło z ust?';
+
     if (!window.confirm(confirmMsg)) return;
     playClick();
 
-    let baseEndpoint = '/api/words';
     let localKey = 'fimma_words';
     let defaultBackup: any[] = DEFAULT_WORDS;
+    if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; }
+    else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; }
+    else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
 
-    if (activeTab === 'NINE_SECONDS') {
-      baseEndpoint = '/api/nine-seconds';
-      localKey = 'fimma_nine_seconds';
-      defaultBackup = DEFAULT_NINE_SECONDS;
-    } else if (activeTab === 'REVERSE_CHARADES') {
-      baseEndpoint = '/api/reverse-charades';
-      localKey = 'fimma_reverse_charades';
-      defaultBackup = DEFAULT_REVERSE_CHARADES;
-    } else if (activeTab === 'LIPS') {
-      baseEndpoint = '/api/lips-words';
-      localKey = 'fimma_lips_words';
-      defaultBackup = DEFAULT_LIPS_WORDS;
-    }
-
-    try {
-      const res = await fetch(`${baseEndpoint}/${id}`, {
-        method: 'DELETE'
-      });
-      if (res.ok) {
-        playCorrect();
-        setSuccessMsg('Usunięto pomyślnie.');
-        fetchItems();
-        setTimeout(() => setSuccessMsg(''), 3000);
-        return;
-      }
-    } catch (err) {
-      console.warn('Backend unavailable, falling back to localStorage delete:', err);
-    }
-
-    // Delete locally (offline fallback)
     const localData = localStorage.getItem(localKey);
     let list = localData ? JSON.parse(localData) : [...defaultBackup];
     list = list.filter((item: any) => item.id !== id);
     localStorage.setItem(localKey, JSON.stringify(list));
-    
+
     playCorrect();
-    setSuccessMsg('Usunięto lokalnie (Tryb offline).');
+    setSuccessMsg('Usunięto pomyślnie.');
     fetchItems();
     setTimeout(() => setSuccessMsg(''), 3000);
   };
