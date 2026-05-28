@@ -98,59 +98,42 @@ const App: React.FC = () => {
   }, []);
 
   // Fetch database items based on selected game
-  const loadGameData = async (game: GameMode) => {
+  const loadGameData = (game: GameMode) => {
     initLocalDb();
-    let endpoint = '/api/words';
     let localKey = 'fimma_words';
     let defaultBackup: any[] = DEFAULT_WORDS;
 
     if (game === 'NINE_SECONDS') {
-      endpoint = '/api/nine-seconds';
       localKey = 'fimma_nine_seconds';
       defaultBackup = DEFAULT_NINE_SECONDS;
     } else if (game === 'REVERSE_CHARADES') {
-      endpoint = '/api/reverse-charades';
       localKey = 'fimma_reverse_charades';
       defaultBackup = DEFAULT_REVERSE_CHARADES;
     } else if (game === 'BOMB') {
-      endpoint = '/api/bomb-words';
       localKey = 'fimma_bomb_words';
       defaultBackup = DEFAULT_BOMB_WORDS;
     } else if (game === 'P_GAME') {
-      endpoint = '/api/p-game';
       localKey = 'fimma_p_game';
       defaultBackup = DEFAULT_P_GAME;
     } else if (game === 'SPY') {
-      endpoint = '/api/spy-locations';
       localKey = 'fimma_spy_locations';
       defaultBackup = DEFAULT_SPY_LOCATIONS;
     } else if (game === 'LIPS') {
-      endpoint = '/api/lips-words';
       localKey = 'fimma_lips_words';
       defaultBackup = DEFAULT_LIPS_WORDS;
     } else if (game === 'REVOLVER') {
-      endpoint = '/api/words';
       localKey = 'fimma_words';
       defaultBackup = DEFAULT_WORDS;
     }
 
-    try {
-      const res = await fetch(endpoint);
-      const contentType = res.headers.get('content-type');
-      if (res.ok && contentType && contentType.includes('application/json')) {
-        const data = await res.json();
-        setAvailableWords(data);
-        localStorage.setItem(localKey, JSON.stringify(data));
-        return;
-      }
-    } catch (err) {
-      console.warn('API error, falling back to localStorage:', err);
-    }
-
-    // Fallback to local storage
+    // Load from local storage
     const localData = localStorage.getItem(localKey);
     if (localData) {
-      setAvailableWords(JSON.parse(localData));
+      try {
+        setAvailableWords(JSON.parse(localData));
+      } catch {
+        setAvailableWords(defaultBackup);
+      }
     } else {
       setAvailableWords(defaultBackup);
     }

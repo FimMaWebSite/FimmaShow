@@ -159,19 +159,20 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     playClick();
     setIsEditing(item.id);
     if (activeTab === 'MARYLIN_MONROE' || activeTab === 'LIPS') {
-      setWordInput(item.word);
+      setWordInput(item.word || item.question || '');
       if (activeTab === 'MARYLIN_MONROE') {
+        const forbidden = Array.isArray(item.forbidden) ? item.forbidden : [];
         setForbiddenInputs([
-          item.forbidden[0] || '',
-          item.forbidden[1] || '',
-          item.forbidden[2] || ''
+          forbidden[0] || '',
+          forbidden[1] || '',
+          forbidden[2] || ''
         ]);
       }
     } else {
-      setWordInput(item.question);
+      setWordInput(item.question || item.word || '');
     }
-    setCategoryInput(item.category);
-    setDifficultyInput(item.difficulty);
+    setCategoryInput(item.category || 'Ogólne');
+    setDifficultyInput(item.difficulty || 'Średni');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -202,20 +203,28 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   };
 
   // Get unique categories for filtering
-  const categories = ['Wszystkie', ...Array.from(new Set(items.map(w => w.category)))];
+  const categories = ['Wszystkie', ...Array.from(new Set(items.map(w => w.category || 'Ogólne')))];
 
   // Filtered items list
   const filteredItems = items.filter(item => {
+    if (!item) return false;
     let matchesSearch = false;
+    const searchLower = search.toLowerCase();
+    
     if (activeTab === 'MARYLIN_MONROE') {
-      matchesSearch = item.word.toLowerCase().includes(search.toLowerCase()) || 
-                      item.forbidden.some((fw: string) => fw.toLowerCase().includes(search.toLowerCase()));
+      const word = item.word || item.question || '';
+      const forbidden = Array.isArray(item.forbidden) ? item.forbidden : [];
+      matchesSearch = word.toLowerCase().includes(searchLower) || 
+                      forbidden.some((fw: string) => fw && fw.toLowerCase().includes(searchLower));
     } else if (activeTab === 'LIPS') {
-      matchesSearch = item.word.toLowerCase().includes(search.toLowerCase());
+      const word = item.word || item.question || '';
+      matchesSearch = word.toLowerCase().includes(searchLower);
     } else {
-      matchesSearch = item.question.toLowerCase().includes(search.toLowerCase());
+      const text = item.question || item.word || '';
+      matchesSearch = text.toLowerCase().includes(searchLower);
     }
-    const matchesCategory = categoryFilter === 'Wszystkie' || item.category === categoryFilter;
+    const itemCategory = item.category || 'Ogólne';
+    const matchesCategory = categoryFilter === 'Wszystkie' || itemCategory === categoryFilter;
     return matchesSearch && matchesCategory;
   });
 
@@ -477,7 +486,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                   {filteredItems.map((item) => (
                     <tr key={item.id}>
                       <td style={{ fontWeight: 700, color: 'white', maxWidth: '300px', whiteSpace: 'normal', wordBreak: 'break-word' }}>
-                        {(activeTab === 'MARYLIN_MONROE' || activeTab === 'LIPS') ? item.word : item.question}
+                        {item.question || item.word || ''}
                       </td>
                       {activeTab === 'MARYLIN_MONROE' && (
                         <td>
