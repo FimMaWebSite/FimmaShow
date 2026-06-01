@@ -49,7 +49,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   // Spy game state
-  const [spyPlayerCount, setSpyPlayerCount] = useState(4);
+  const [spyPlayerCount] = useState(2);
   const [spyPhase, setSpyPhase] = useState<'SETUP' | 'REVEAL' | 'QUESTIONS' | 'VOTING' | 'RESULT'>('SETUP');
   const [revealPlayerIdx, setRevealPlayerIdx] = useState(0);
   const [cardRevealed, setCardRevealed] = useState(false);
@@ -681,30 +681,16 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             <div className="flex-col gap-xs">
               <h3 style={{ fontSize: '20px', fontWeight: 800, color: 'white' }}>LICZBA GRACZY NA DRUŻYNĘ</h3>
               <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))' }}>
-                Podaj liczbę graczy przypadającą na jedną drużynę.
+                W tej grze każda drużyna składa się z dokładnie 2 graczy.
               </p>
             </div>
             
             <div className="flex-row gap-md items-center" style={{ margin: '10px 0' }}>
-              <button
-                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.max(2, prev - 1)); }}
-                className="btn btn-secondary"
-                style={{ padding: '16px', borderRadius: '50%', width: '56px', height: '56px', fontSize: '20px' }}
-              >
-                -
-              </button>
-              <span style={{ fontSize: '32px', fontWeight: 900, color: 'white', minWidth: '60px' }}>{spyPlayerCount}</span>
-              <button
-                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.min(8, prev + 1)); }}
-                className="btn btn-secondary"
-                style={{ padding: '16px', borderRadius: '50%', width: '56px', height: '56px', fontSize: '20px' }}
-              >
-                +
-              </button>
+              <span style={{ fontSize: '32px', fontWeight: 900, color: 'white', minWidth: '60px' }}>2</span>
             </div>
 
             <p style={{ fontSize: '12px', color: 'hsl(var(--text-muted))' }}>
-              Łącznie graczy w grze: <strong>{spyPlayerCount * 2}</strong> (po {spyPlayerCount} z {teams?.[0]?.name || 'Drużyny A'} i {teams?.[1]?.name || 'Drużyny B'})
+              Łącznie graczy w grze: <strong>4</strong> (po 2 z {teams?.[0]?.name || 'Drużyny A'} i {teams?.[1]?.name || 'Drużyny B'})
             </p>
 
             <button
