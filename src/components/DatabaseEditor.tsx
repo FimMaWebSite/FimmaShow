@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer, Users, Upload, Download, FileSpreadsheet } from 'lucide-react';
 import { playClick, playCorrect, playWrong } from '../utils/audio';
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_LIPS_WORDS } from '../data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_LIPS_WORDS, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME, DEFAULT_SPY_LOCATIONS } from '../data/defaultData';
 
 export interface WordData {
   id: string;
   word: string;
-  forbidden: string[];
+  forbidden?: string[];
   category: string;
   difficulty: string;
 }
@@ -22,8 +22,10 @@ interface DatabaseEditorProps {
   onBack: () => void;
 }
 
+type TabMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'LIPS' | 'BOMB' | 'P_GAME' | 'SPY';
+
 export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
-  const [activeTab, setActiveTab] = useState<'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'LIPS'>('MARYLIN_MONROE');
+  const [activeTab, setActiveTab] = useState<TabMode>('MARYLIN_MONROE');
   const [items, setItems] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
@@ -52,6 +54,15 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     } else if (activeTab === 'LIPS') {
       localKey = 'fimma_lips_words';
       defaultBackup = DEFAULT_LIPS_WORDS;
+    } else if (activeTab === 'BOMB') {
+      localKey = 'fimma_bomb_words';
+      defaultBackup = DEFAULT_BOMB_WORDS;
+    } else if (activeTab === 'P_GAME') {
+      localKey = 'fimma_p_game';
+      defaultBackup = DEFAULT_P_GAME;
+    } else if (activeTab === 'SPY') {
+      localKey = 'fimma_spy_locations';
+      defaultBackup = DEFAULT_SPY_LOCATIONS;
     }
 
     const localData = localStorage.getItem(localKey);
@@ -97,7 +108,10 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     setIsEditing(null);
     setWordInput('');
     setForbiddenInputs(['', '', '']);
-    setCategoryInput(activeTab === 'MARYLIN_MONROE' ? 'Popkultura' : 'Ogólne');
+    setCategoryInput(
+      activeTab === 'MARYLIN_MONROE' ? 'Popkultura' :
+      activeTab === 'SPY' ? 'Lokalizacje' : 'Ogólne'
+    );
     setDifficultyInput('Średni');
     setErrorMsg('');
   };
@@ -113,6 +127,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       if (activeTab === 'NINE_SECONDS') validationMsg = 'Wprowadź treść pytania.';
       else if (activeTab === 'REVERSE_CHARADES') validationMsg = 'Wprowadź treść czynności.';
       else if (activeTab === 'LIPS') validationMsg = 'Wprowadź hasło do odczytania z ust.';
+      else if (activeTab === 'SPY') validationMsg = 'Wprowadź nazwę lokalizacji.';
       setErrorMsg(validationMsg);
       playWrong();
       return;
@@ -129,8 +144,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       }
       payload.word = wordInput.trim();
       payload.forbidden = filteredForbidden;
-    } else if (activeTab === 'LIPS') {
+    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME') {
       payload.word = wordInput.trim();
+    } else if (activeTab === 'SPY') {
+      payload.word = wordInput.trim();
+      // SPY locations might not strictly use categories/difficulty in gameplay but let's persist them anyway.
+      payload.category = 'Lokalizacje';
+      payload.difficulty = 'Średni';
     } else {
       payload.question = wordInput.trim();
     }
@@ -140,6 +160,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; }
     else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; }
     else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
+    else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; }
+    else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; }
+    else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; }
 
     const localData = localStorage.getItem(localKey);
     let list: any[] = [];
@@ -174,7 +197,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   const handleEdit = (item: any) => {
     playClick();
     setIsEditing(item.id);
-    if (activeTab === 'MARYLIN_MONROE' || activeTab === 'LIPS') {
+    if (activeTab === 'MARYLIN_MONROE' || activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'SPY') {
       setWordInput(item.word || item.question || '');
       if (activeTab === 'MARYLIN_MONROE') {
         const forbidden = Array.isArray(item.forbidden) ? item.forbidden : [];
@@ -187,7 +210,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     } else {
       setWordInput(item.question || item.word || '');
     }
-    setCategoryInput(item.category || 'Ogólne');
+    setCategoryInput(item.category || (activeTab === 'SPY' ? 'Lokalizacje' : 'Ogólne'));
     setDifficultyInput(item.difficulty || 'Średni');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -197,6 +220,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     if (activeTab === 'NINE_SECONDS') confirmMsg = 'Czy na pewno chcesz usunąć to pytanie?';
     else if (activeTab === 'REVERSE_CHARADES') confirmMsg = 'Czy na pewno chcesz usunąć tę czynność?';
     else if (activeTab === 'LIPS') confirmMsg = 'Czy na pewno chcesz usunąć to hasło z ust?';
+    else if (activeTab === 'SPY') confirmMsg = 'Czy na pewno chcesz usunąć tę lokalizację?';
 
     if (!window.confirm(confirmMsg)) return;
     playClick();
@@ -206,6 +230,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; }
     else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; }
     else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
+    else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; }
+    else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; }
+    else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; }
 
     const localData = localStorage.getItem(localKey);
     let list: any[] = [];
@@ -286,7 +313,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             fields[0].toLowerCase().includes('pytanie') || 
             fields[0].toLowerCase().includes('czynność') ||
             fields[0].toLowerCase().includes('word') ||
-            fields[0].toLowerCase().includes('question')
+            fields[0].toLowerCase().includes('question') ||
+            fields[0].toLowerCase().includes('lokalizacja')
           )) {
             continue;
           }
@@ -304,12 +332,19 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
               category: fields[4] || 'Popkultura',
               difficulty: fields[5] || 'Średni'
             };
-          } else if (activeTab === 'LIPS') {
+          } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME') {
             itemPayload = {
               id: `csv-${Date.now()}-${i}-${Math.random().toString(36).substr(2, 4)}`,
               word: fields[0],
-              category: fields[1] || 'Inne',
+              category: fields[1] || 'Ogólne',
               difficulty: fields[2] || 'Średni'
+            };
+          } else if (activeTab === 'SPY') {
+            itemPayload = {
+              id: `csv-${Date.now()}-${i}-${Math.random().toString(36).substr(2, 4)}`,
+              word: fields[0],
+              category: 'Lokalizacje',
+              difficulty: 'Średni'
             };
           } else {
             itemPayload = {
@@ -334,6 +369,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; }
         else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; }
         else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
+        else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; }
+        else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; }
+        else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; }
 
         let finalItems: any[] = [];
         if (replaceExisting) {
@@ -379,6 +417,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; filename = '9_5_sekundy_pytania.csv'; }
     else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; filename = 'odwrocone_kalambury_czynnosci.csv'; }
     else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; filename = 'usta_usta_hasla.csv'; }
+    else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; filename = 'bomba_hasla.csv'; }
+    else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; filename = 'gra_na_p_hasla.csv'; }
+    else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; filename = 'szpieg_lokalizacje.csv'; }
 
     const localData = localStorage.getItem(localKey);
     let list: any[] = [];
@@ -401,10 +442,15 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         const forbidden = Array.isArray(item.forbidden) ? item.forbidden : ['', '', ''];
         csvContent += `"${item.word || ''}";"${forbidden[0] || ''}";"${forbidden[1] || ''}";"${forbidden[2] || ''}";"${item.category || ''}";"${item.difficulty || ''}"\n`;
       });
-    } else if (activeTab === 'LIPS') {
+    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME') {
       csvContent += 'Hasło;Kategoria;Trudność\n';
       list.forEach(item => {
         csvContent += `"${item.word || ''}";"${item.category || ''}";"${item.difficulty || ''}"\n`;
+      });
+    } else if (activeTab === 'SPY') {
+      csvContent += 'Lokalizacja;Kategoria;Trudność\n';
+      list.forEach(item => {
+        csvContent += `"${item.word || ''}";"Lokalizacje";"Średni"\n`;
       });
     } else {
       csvContent += 'Pytanie/Czynność;Kategoria;Trudność\n';
@@ -432,6 +478,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     if (activeTab === 'NINE_SECONDS') { localKey = 'fimma_nine_seconds'; defaultBackup = DEFAULT_NINE_SECONDS; }
     else if (activeTab === 'REVERSE_CHARADES') { localKey = 'fimma_reverse_charades'; defaultBackup = DEFAULT_REVERSE_CHARADES; }
     else if (activeTab === 'LIPS') { localKey = 'fimma_lips_words'; defaultBackup = DEFAULT_LIPS_WORDS; }
+    else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; }
+    else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; }
+    else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; }
 
     localStorage.setItem(localKey, JSON.stringify(defaultBackup));
     playCorrect();
@@ -454,14 +503,14 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       const forbidden = Array.isArray(item.forbidden) ? item.forbidden : [];
       matchesSearch = word.toLowerCase().includes(searchLower) || 
                       forbidden.some((fw: string) => fw && fw.toLowerCase().includes(searchLower));
-    } else if (activeTab === 'LIPS') {
+    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'SPY') {
       const word = item.word || item.question || '';
       matchesSearch = word.toLowerCase().includes(searchLower);
     } else {
       const text = item.question || item.word || '';
       matchesSearch = text.toLowerCase().includes(searchLower);
     }
-    const itemCategory = item.category || 'Ogólne';
+    const itemCategory = item.category || (activeTab === 'SPY' ? 'Lokalizacje' : 'Ogólne');
     const matchesCategory = categoryFilter === 'Wszystkie' || itemCategory === categoryFilter;
     return matchesSearch && matchesCategory;
   });
@@ -507,7 +556,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
         >
           <Users size={15} />
-          Odwrócone Kalambury (Czynności)
+          Odwrócone Kalambury
         </button>
         <button
           onClick={() => { playClick(); setActiveTab('LIPS'); }}
@@ -515,7 +564,28 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
         >
           <Users size={15} />
-          Usta Usta (Hasła)
+          Usta Usta
+        </button>
+        <button
+          onClick={() => { playClick(); setActiveTab('BOMB'); }}
+          className={`btn ${activeTab === 'BOMB' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
+        >
+          <span>💣</span> Bomb (Hasła)
+        </button>
+        <button
+          onClick={() => { playClick(); setActiveTab('P_GAME'); }}
+          className={`btn ${activeTab === 'P_GAME' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
+        >
+          <span>P</span> Gra na P
+        </button>
+        <button
+          onClick={() => { playClick(); setActiveTab('SPY'); }}
+          className={`btn ${activeTab === 'SPY' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
+        >
+          <span>🕵️</span> Szpieg (Lokalizacje)
         </button>
       </div>
 
@@ -526,8 +596,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               {isEditing ? <Edit2 size={16} style={{ color: 'hsl(var(--primary))' }} /> : <Plus size={16} style={{ color: 'hsl(var(--primary))' }} />}
               {isEditing 
-                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : activeTab === 'NINE_SECONDS' ? 'Edytuj Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Edytuj Czynność' : 'Edytuj Hasło z Ust') 
-                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : activeTab === 'NINE_SECONDS' ? 'Dodaj Nowe Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Dodaj Czynność' : 'Dodaj Hasło z Ust')}
+                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : activeTab === 'NINE_SECONDS' ? 'Edytuj Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Edytuj Czynność' : activeTab === 'LIPS' ? 'Edytuj Hasło z Ust' : activeTab === 'BOMB' ? 'Edytuj Hasło Bomby' : activeTab === 'P_GAME' ? 'Edytuj Hasło Gry na P' : 'Edytuj Lokalizację') 
+                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : activeTab === 'NINE_SECONDS' ? 'Dodaj Nowe Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Dodaj Czynność' : activeTab === 'LIPS' ? 'Dodaj Hasło z Ust' : activeTab === 'BOMB' ? 'Dodaj Hasło Bomby' : activeTab === 'P_GAME' ? 'Dodaj Hasło Gry na P' : 'Dodaj Lokalizację')}
             </h3>
 
             {errorMsg && (
@@ -544,13 +614,21 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <form onSubmit={handleSubmit} className="flex-col gap-md">
               <div className="form-group">
                 <label className="form-label">
-                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : activeTab === 'NINE_SECONDS' ? 'Treść pytania' : activeTab === 'LIPS' ? 'Hasło z Ust' : 'Hasło (Czynność)'}
+                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : activeTab === 'NINE_SECONDS' ? 'Treść pytania' : activeTab === 'LIPS' ? 'Hasło z Ust' : activeTab === 'BOMB' ? 'Hasło Bomby' : activeTab === 'P_GAME' ? 'Hasło Gry na P' : activeTab === 'SPY' ? 'Lokalizacja' : 'Hasło (Czynność)'}
                 </label>
                 <input
                   type="text"
                   value={wordInput}
                   onChange={(e) => setWordInput(e.target.value)}
-                  placeholder={activeTab === 'MARYLIN_MONROE' ? 'np. Robert Lewandowski' : activeTab === 'NINE_SECONDS' ? 'np. Wymień 3 państwa graniczące z Polską' : activeTab === 'LIPS' ? 'np. Różowy słoń' : 'np. Jazda na hulajnodze'}
+                  placeholder={
+                    activeTab === 'MARYLIN_MONROE' ? 'np. Robert Lewandowski' : 
+                    activeTab === 'NINE_SECONDS' ? 'np. Wymień 3 państwa graniczące z Polską' : 
+                    activeTab === 'LIPS' ? 'np. Różowy słoń' : 
+                    activeTab === 'BOMB' ? 'np. Telewizor' :
+                    activeTab === 'P_GAME' ? 'np. Książka' :
+                    activeTab === 'SPY' ? 'np. Szpital' :
+                    'np. Jazda na hulajnodze'
+                  }
                   className="input-field"
                 />
               </div>
@@ -573,78 +651,83 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                 </div>
               )}
 
-              <div className="form-row-2">
-                <div className="form-group">
-                  <label className="form-label">Kategoria</label>
-                  <select
-                    value={categoryInput}
-                    onChange={(e) => setCategoryInput(e.target.value)}
-                    className="select-field"
-                  >
-                    {activeTab === 'MARYLIN_MONROE' && (
-                      <>
-                        <option value="Popkultura">Popkultura</option>
-                        <option value="Ludzie">Ludzie</option>
-                        <option value="Postacie Fikcyjne">Postacie Fikcyjne</option>
-                        <option value="Historia">Historia</option>
-                        <option value="Polska">Polska</option>
-                        <option value="Geografia">Geografia</option>
-                        <option value="Inne">Inne</option>
-                      </>
-                    )}
-                    {activeTab === 'NINE_SECONDS' && (
-                      <>
-                        <option value="Ogólne">Ogólne</option>
-                        <option value="Geografia">Geografia</option>
-                        <option value="Motoryzacja">Motoryzacja</option>
-                        <option value="Jedzenie">Jedzenie</option>
-                        <option value="Polska">Polska</option>
-                        <option value="Sport">Sport</option>
-                        <option value="Popkultura">Popkultura</option>
-                        <option value="Nauka">Nauka</option>
-                        <option value="Przyroda">Przyroda</option>
-                        <option value="Historia">Historia</option>
-                      </>
-                    )}
-                    {activeTab === 'REVERSE_CHARADES' && (
-                      <>
-                        <option value="Ogólne">Ogólne</option>
-                        <option value="Czynności Codzienne">Czynności Codzienne</option>
-                        <option value="Sport i Ruch">Sport i Ruch</option>
-                        <option value="Prace Domowe">Prace Domowe</option>
-                        <option value="Hobby">Hobby</option>
-                        <option value="Kuchnia">Kuchnia</option>
-                        <option value="Muzyka">Muzyka</option>
-                        <option value="Rozrywka">Rozrywka</option>
-                      </>
-                    )}
-                    {activeTab === 'LIPS' && (
-                      <>
-                        <option value="Jedzenie">Jedzenie</option>
-                        <option value="Zwierzęta">Zwierzęta</option>
-                        <option value="Natura">Natura</option>
-                        <option value="Dom">Dom</option>
-                        <option value="Przedmioty">Przedmioty</option>
-                        <option value="Pojazdy">Pojazdy</option>
-                        <option value="Zdrowie">Zdrowie</option>
-                        <option value="Inne">Inne</option>
-                      </>
-                    )}
-                  </select>
+              {activeTab !== 'SPY' && (
+                <div className="form-row-2">
+                  <div className="form-group">
+                    <label className="form-label">Kategoria</label>
+                    <select
+                      value={categoryInput}
+                      onChange={(e) => setCategoryInput(e.target.value)}
+                      className="select-field"
+                    >
+                      {activeTab === 'MARYLIN_MONROE' && (
+                        <>
+                          <option value="Popkultura">Popkultura</option>
+                          <option value="Ludzie">Ludzie</option>
+                          <option value="Postacie Fikcyjne">Postacie Fikcyjne</option>
+                          <option value="Historia">Historia</option>
+                          <option value="Polska">Polska</option>
+                          <option value="Geografia">Geografia</option>
+                          <option value="Inne">Inne</option>
+                        </>
+                      )}
+                      {(activeTab === 'NINE_SECONDS' || activeTab === 'BOMB' || activeTab === 'P_GAME') && (
+                        <>
+                          <option value="Ogólne">Ogólne</option>
+                          <option value="Geografia">Geografia</option>
+                          <option value="Motoryzacja">Motoryzacja</option>
+                          <option value="Jedzenie">Jedzenie</option>
+                          <option value="Polska">Polska</option>
+                          <option value="Sport">Sport</option>
+                          <option value="Popkultura">Popkultura</option>
+                          <option value="Nauka">Nauka</option>
+                          <option value="Przyroda">Przyroda</option>
+                          <option value="Historia">Historia</option>
+                          <option value="Kultura">Kultura</option>
+                          <option value="Technologia">Technologia</option>
+                          <option value="Dom">Dom</option>
+                        </>
+                      )}
+                      {activeTab === 'REVERSE_CHARADES' && (
+                        <>
+                          <option value="Ogólne">Ogólne</option>
+                          <option value="Czynności Codzienne">Czynności Codzienne</option>
+                          <option value="Sport i Ruch">Sport i Ruch</option>
+                          <option value="Prace Domowe">Prace Domowe</option>
+                          <option value="Hobby">Hobby</option>
+                          <option value="Kuchnia">Kuchnia</option>
+                          <option value="Muzyka">Muzyka</option>
+                          <option value="Rozrywka">Rozrywka</option>
+                        </>
+                      )}
+                      {activeTab === 'LIPS' && (
+                        <>
+                          <option value="Jedzenie">Jedzenie</option>
+                          <option value="Zwierzęta">Zwierzęta</option>
+                          <option value="Natura">Natura</option>
+                          <option value="Dom">Dom</option>
+                          <option value="Przedmioty">Przedmioty</option>
+                          <option value="Pojazdy">Pojazdy</option>
+                          <option value="Zdrowie">Zdrowie</option>
+                          <option value="Inne">Inne</option>
+                        </>
+                      )}
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Trudność</label>
+                    <select
+                      value={difficultyInput}
+                      onChange={(e) => setDifficultyInput(e.target.value)}
+                      className="select-field"
+                    >
+                      <option value="Łatwy">Łatwy</option>
+                      <option value="Średni">Średni</option>
+                      <option value="Trudny">Trudny</option>
+                    </select>
+                  </div>
                 </div>
-                <div className="form-group">
-                  <label className="form-label">Trudność</label>
-                  <select
-                    value={difficultyInput}
-                    onChange={(e) => setDifficultyInput(e.target.value)}
-                    className="select-field"
-                  >
-                    <option value="Łatwy">Łatwy</option>
-                    <option value="Średni">Średni</option>
-                    <option value="Trudny">Trudny</option>
-                  </select>
-                </div>
-              </div>
+              )}
 
               <div className="flex-row gap-sm" style={{ marginTop: '12px' }}>
                 <button
@@ -678,9 +761,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <p style={{ fontSize: '11px', color: 'hsl(var(--text-muted))', marginBottom: '16px', lineHeight: 1.4 }}>
               Format pliku CSV (kolumny oddzielone <strong>średnikami</strong>, wiersz nagłówkowy jest opcjonalny i automatycznie pomijany):<br/>
               {activeTab === 'MARYLIN_MONROE' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Hasło;Zakazane1;Zakazane2;Zakazane3;Kategoria;Trudność</code>}
-              {activeTab === 'NINE_SECONDS' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Pytanie;Kategoria;Trudność</code>}
-              {activeTab === 'REVERSE_CHARADES' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Czynność;Kategoria;Trudność</code>}
-              {activeTab === 'LIPS' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Hasło;Kategoria;Trudność</code>}
+              {(activeTab === 'NINE_SECONDS' || activeTab === 'REVERSE_CHARADES' || activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME') && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Hasło/Pytanie;Kategoria;Trudność</code>}
+              {activeTab === 'SPY' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Lokalizacja</code>}
             </p>
 
             <div className="flex-col gap-xs">
@@ -749,25 +831,35 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder={activeTab === 'MARYLIN_MONROE' ? "Szukaj hasła lub słowa zakazanego..." : activeTab === 'NINE_SECONDS' ? "Szukaj pytania..." : activeTab === 'LIPS' ? "Szukaj hasła z ust..." : "Szukaj czynności..."}
+                placeholder={
+                  activeTab === 'MARYLIN_MONROE' ? "Szukaj hasła lub słowa zakazanego..." : 
+                  activeTab === 'NINE_SECONDS' ? "Szukaj pytania..." : 
+                  activeTab === 'LIPS' ? "Szukaj hasła z ust..." : 
+                  activeTab === 'BOMB' ? "Szukaj hasła bomby..." :
+                  activeTab === 'P_GAME' ? "Szukaj hasła gry na P..." :
+                  activeTab === 'SPY' ? "Szukaj lokalizacji..." :
+                  "Szukaj czynności..."
+                }
                 className="input-field search-input"
               />
             </div>
-            <div className="flex-row gap-xs items-center" style={{ minWidth: '160px' }}>
-              <Filter style={{ color: 'hsl(var(--text-muted))' }} size={16} />
-              <select
-                value={categoryFilter}
-                onChange={(e) => setCategoryFilter(e.target.value)}
-                className="select-field"
-                style={{ padding: '8px 32px 8px 12px', fontSize: '13px', borderRadius: '10px' }}
-              >
-                {categories.map((cat, idx) => (
-                  <option key={idx} value={cat}>
-                    {cat}
-                  </option>
-                ))}
-              </select>
-            </div>
+            {activeTab !== 'SPY' && (
+              <div className="flex-row gap-xs items-center" style={{ minWidth: '160px' }}>
+                <Filter style={{ color: 'hsl(var(--text-muted))' }} size={16} />
+                <select
+                  value={categoryFilter}
+                  onChange={(e) => setCategoryFilter(e.target.value)}
+                  className="select-field"
+                  style={{ padding: '8px 32px 8px 12px', fontSize: '13px', borderRadius: '10px' }}
+                >
+                  {categories.map((cat, idx) => (
+                    <option key={idx} value={cat}>
+                      {cat}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
           </div>
 
           {/* Table Container */}
@@ -784,9 +876,17 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
               <table className="db-table">
                 <thead>
                   <tr>
-                    <th>{activeTab === 'MARYLIN_MONROE' ? 'Hasło' : activeTab === 'NINE_SECONDS' ? 'Pytanie' : activeTab === 'LIPS' ? 'Hasło z Ust' : 'Czynność'}</th>
+                    <th>
+                      {activeTab === 'MARYLIN_MONROE' ? 'Hasło' : 
+                       activeTab === 'NINE_SECONDS' ? 'Pytanie' : 
+                       activeTab === 'LIPS' ? 'Hasło z Ust' : 
+                       activeTab === 'BOMB' ? 'Hasło Bomby' :
+                       activeTab === 'P_GAME' ? 'Hasło Gry na P' :
+                       activeTab === 'SPY' ? 'Lokalizacja' :
+                       'Czynność'}
+                    </th>
                     {activeTab === 'MARYLIN_MONROE' && <th>Słowa zakazane</th>}
-                    <th style={{ width: '180px' }}>Szczegóły</th>
+                    {activeTab !== 'SPY' && <th style={{ width: '180px' }}>Szczegóły</th>}
                     <th style={{ textAlign: 'right', width: '100px' }}>Akcje</th>
                   </tr>
                 </thead>
@@ -811,22 +911,24 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                           </div>
                         </td>
                       )}
-                      <td>
-                        <div className="flex-row gap-xs">
-                          <span className="badge-tag">{item.category}</span>
-                          <span
-                            className={`badge-tag ${
-                              item.difficulty === 'Łatwy'
-                                ? 'badge-difficulty-easy'
-                                : item.difficulty === 'Średni'
-                                ? 'badge-difficulty-medium'
-                                : 'badge-difficulty-hard'
-                            }`}
-                          >
-                            {item.difficulty}
-                          </span>
-                        </div>
-                      </td>
+                      {activeTab !== 'SPY' && (
+                        <td>
+                          <div className="flex-row gap-xs">
+                            <span className="badge-tag">{item.category}</span>
+                            <span
+                              className={`badge-tag ${
+                                item.difficulty === 'Łatwy'
+                                  ? 'badge-difficulty-easy'
+                                  : item.difficulty === 'Średni'
+                                  ? 'badge-difficulty-medium'
+                                  : 'badge-difficulty-hard'
+                              }`}
+                            >
+                              {item.difficulty}
+                            </span>
+                          </div>
+                        </td>
+                      )}
                       <td style={{ textAlign: 'right' }}>
                         <div className="flex-row gap-xs justify-center" style={{ justifyContent: 'flex-end' }}>
                           <button
