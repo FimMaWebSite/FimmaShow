@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Plus, Trash2, Edit2, Search, Filter, Tv, Timer, Users, Upload, Download, FileSpreadsheet } from 'lucide-react';
 import { playClick, playCorrect, playWrong } from '../utils/audio';
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_LIPS_WORDS, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME, DEFAULT_SPY_LOCATIONS } from '../data/defaultData';
+import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_LIPS_WORDS, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME, DEFAULT_SPY_LOCATIONS, DEFAULT_SPY_QUESTIONS } from '../data/defaultData';
 
 export interface WordData {
   id: string;
@@ -22,7 +22,7 @@ interface DatabaseEditorProps {
   onBack: () => void;
 }
 
-type TabMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'LIPS' | 'BOMB' | 'P_GAME' | 'SPY';
+type TabMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'LIPS' | 'BOMB' | 'P_GAME' | 'SPY' | 'SPY_QUESTIONS' | 'REVOLVER';
 
 export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   const [activeTab, setActiveTab] = useState<TabMode>('MARYLIN_MONROE');
@@ -63,6 +63,12 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     } else if (activeTab === 'SPY') {
       localKey = 'fimma_spy_locations';
       defaultBackup = DEFAULT_SPY_LOCATIONS;
+    } else if (activeTab === 'SPY_QUESTIONS') {
+      localKey = 'fimma_spy_questions';
+      defaultBackup = DEFAULT_SPY_QUESTIONS;
+    } else if (activeTab === 'REVOLVER') {
+      localKey = 'fimma_words';
+      defaultBackup = DEFAULT_WORDS;
     }
 
     const localData = localStorage.getItem(localKey);
@@ -110,7 +116,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     setForbiddenInputs(['', '', '']);
     setCategoryInput(
       activeTab === 'MARYLIN_MONROE' ? 'Popkultura' :
-      activeTab === 'SPY' ? 'Lokalizacje' : 'Ogólne'
+      activeTab === 'SPY' ? 'Lokalizacje' : 
+      activeTab === 'SPY_QUESTIONS' ? 'Pytania' : 'Ogólne'
     );
     setDifficultyInput('Średni');
     setErrorMsg('');
@@ -128,6 +135,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       else if (activeTab === 'REVERSE_CHARADES') validationMsg = 'Wprowadź treść czynności.';
       else if (activeTab === 'LIPS') validationMsg = 'Wprowadź hasło do odczytania z ust.';
       else if (activeTab === 'SPY') validationMsg = 'Wprowadź nazwę lokalizacji.';
+      else if (activeTab === 'SPY_QUESTIONS') validationMsg = 'Wprowadź treść pytania dla Szpiega.';
       setErrorMsg(validationMsg);
       playWrong();
       return;
@@ -144,12 +152,15 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       }
       payload.word = wordInput.trim();
       payload.forbidden = filteredForbidden;
-    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME') {
+    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'REVOLVER') {
       payload.word = wordInput.trim();
     } else if (activeTab === 'SPY') {
       payload.word = wordInput.trim();
-      // SPY locations might not strictly use categories/difficulty in gameplay but let's persist them anyway.
       payload.category = 'Lokalizacje';
+      payload.difficulty = 'Średni';
+    } else if (activeTab === 'SPY_QUESTIONS') {
+      payload.question = wordInput.trim();
+      payload.category = 'Pytania';
       payload.difficulty = 'Średni';
     } else {
       payload.question = wordInput.trim();
@@ -163,6 +174,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; }
     else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; }
     else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; }
+    else if (activeTab === 'SPY_QUESTIONS') { localKey = 'fimma_spy_questions'; defaultBackup = DEFAULT_SPY_QUESTIONS; }
+    else if (activeTab === 'REVOLVER') { localKey = 'fimma_words'; defaultBackup = DEFAULT_WORDS; }
 
     const localData = localStorage.getItem(localKey);
     let list: any[] = [];
@@ -197,7 +210,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
   const handleEdit = (item: any) => {
     playClick();
     setIsEditing(item.id);
-    if (activeTab === 'MARYLIN_MONROE' || activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'SPY') {
+    if (activeTab === 'MARYLIN_MONROE' || activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'SPY' || activeTab === 'REVOLVER') {
       setWordInput(item.word || item.question || '');
       if (activeTab === 'MARYLIN_MONROE') {
         const forbidden = Array.isArray(item.forbidden) ? item.forbidden : [];
@@ -210,7 +223,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     } else {
       setWordInput(item.question || item.word || '');
     }
-    setCategoryInput(item.category || (activeTab === 'SPY' ? 'Lokalizacje' : 'Ogólne'));
+    setCategoryInput(item.category || (activeTab === 'SPY' ? 'Lokalizacje' : activeTab === 'SPY_QUESTIONS' ? 'Pytania' : 'Ogólne'));
     setDifficultyInput(item.difficulty || 'Średni');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -221,6 +234,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     else if (activeTab === 'REVERSE_CHARADES') confirmMsg = 'Czy na pewno chcesz usunąć tę czynność?';
     else if (activeTab === 'LIPS') confirmMsg = 'Czy na pewno chcesz usunąć to hasło z ust?';
     else if (activeTab === 'SPY') confirmMsg = 'Czy na pewno chcesz usunąć tę lokalizację?';
+    else if (activeTab === 'SPY_QUESTIONS') confirmMsg = 'Czy na pewno chcesz usunąć to pytanie dla Szpiega?';
 
     if (!window.confirm(confirmMsg)) return;
     playClick();
@@ -233,6 +247,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; }
     else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; }
     else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; }
+    else if (activeTab === 'SPY_QUESTIONS') { localKey = 'fimma_spy_questions'; defaultBackup = DEFAULT_SPY_QUESTIONS; }
+    else if (activeTab === 'REVOLVER') { localKey = 'fimma_words'; defaultBackup = DEFAULT_WORDS; }
 
     const localData = localStorage.getItem(localKey);
     let list: any[] = [];
@@ -266,16 +282,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
 
       let text = '';
       try {
-        // Try decoding as UTF-8 (fatal: true forces error on invalid characters)
         const utf8Decoder = new TextDecoder('utf-8', { fatal: true });
         text = utf8Decoder.decode(arrayBuffer);
       } catch (err) {
-        // Fallback to Windows-1250 (CP1250) for Polish Excel files
         try {
           const cp1250Decoder = new TextDecoder('windows-1250');
           text = cp1250Decoder.decode(arrayBuffer);
         } catch (e2) {
-          // Final fallback
           text = new TextDecoder('utf-8').decode(arrayBuffer);
         }
       }
@@ -307,7 +320,6 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             return cleaned;
           });
 
-          // Skip header row
           if (i === 0 && (
             fields[0].toLowerCase().includes('hasło') || 
             fields[0].toLowerCase().includes('pytanie') || 
@@ -332,7 +344,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
               category: fields[4] || 'Popkultura',
               difficulty: fields[5] || 'Średni'
             };
-          } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME') {
+          } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'REVOLVER') {
             itemPayload = {
               id: `csv-${Date.now()}-${i}-${Math.random().toString(36).substr(2, 4)}`,
               word: fields[0],
@@ -344,6 +356,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
               id: `csv-${Date.now()}-${i}-${Math.random().toString(36).substr(2, 4)}`,
               word: fields[0],
               category: 'Lokalizacje',
+              difficulty: 'Średni'
+            };
+          } else if (activeTab === 'SPY_QUESTIONS') {
+            itemPayload = {
+              id: `csv-${Date.now()}-${i}-${Math.random().toString(36).substr(2, 4)}`,
+              question: fields[0],
+              category: 'Pytania',
               difficulty: 'Średni'
             };
           } else {
@@ -372,6 +391,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; }
         else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; }
         else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; }
+        else if (activeTab === 'SPY_QUESTIONS') { localKey = 'fimma_spy_questions'; defaultBackup = DEFAULT_SPY_QUESTIONS; }
+        else if (activeTab === 'REVOLVER') { localKey = 'fimma_words'; defaultBackup = DEFAULT_WORDS; }
 
         let finalItems: any[] = [];
         if (replaceExisting) {
@@ -420,6 +441,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; filename = 'bomba_hasla.csv'; }
     else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; filename = 'gra_na_p_hasla.csv'; }
     else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; filename = 'szpieg_lokalizacje.csv'; }
+    else if (activeTab === 'SPY_QUESTIONS') { localKey = 'fimma_spy_questions'; defaultBackup = DEFAULT_SPY_QUESTIONS; filename = 'szpieg_pytania.csv'; }
+    else if (activeTab === 'REVOLVER') { localKey = 'fimma_words'; defaultBackup = DEFAULT_WORDS; filename = 'rewolwer_hasla.csv'; }
 
     const localData = localStorage.getItem(localKey);
     let list: any[] = [];
@@ -442,7 +465,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         const forbidden = Array.isArray(item.forbidden) ? item.forbidden : ['', '', ''];
         csvContent += `"${item.word || ''}";"${forbidden[0] || ''}";"${forbidden[1] || ''}";"${forbidden[2] || ''}";"${item.category || ''}";"${item.difficulty || ''}"\n`;
       });
-    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME') {
+    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'REVOLVER') {
       csvContent += 'Hasło;Kategoria;Trudność\n';
       list.forEach(item => {
         csvContent += `"${item.word || ''}";"${item.category || ''}";"${item.difficulty || ''}"\n`;
@@ -451,6 +474,11 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       csvContent += 'Lokalizacja;Kategoria;Trudność\n';
       list.forEach(item => {
         csvContent += `"${item.word || ''}";"Lokalizacje";"Średni"\n`;
+      });
+    } else if (activeTab === 'SPY_QUESTIONS') {
+      csvContent += 'Pytanie;Kategoria;Trudność\n';
+      list.forEach(item => {
+        csvContent += `"${item.question || item.word || ''}";"Pytania";"Średni"\n`;
       });
     } else {
       csvContent += 'Pytanie/Czynność;Kategoria;Trudność\n';
@@ -481,6 +509,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     else if (activeTab === 'BOMB') { localKey = 'fimma_bomb_words'; defaultBackup = DEFAULT_BOMB_WORDS; }
     else if (activeTab === 'P_GAME') { localKey = 'fimma_p_game'; defaultBackup = DEFAULT_P_GAME; }
     else if (activeTab === 'SPY') { localKey = 'fimma_spy_locations'; defaultBackup = DEFAULT_SPY_LOCATIONS; }
+    else if (activeTab === 'SPY_QUESTIONS') { localKey = 'fimma_spy_questions'; defaultBackup = DEFAULT_SPY_QUESTIONS; }
+    else if (activeTab === 'REVOLVER') { localKey = 'fimma_words'; defaultBackup = DEFAULT_WORDS; }
 
     localStorage.setItem(localKey, JSON.stringify(defaultBackup));
     playCorrect();
@@ -489,10 +519,8 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
     setTimeout(() => setSuccessMsg(''), 3000);
   };
 
-  // Get unique categories for filtering
   const categories = ['Wszystkie', ...Array.from(new Set(items.map(w => w.category || 'Ogólne')))];
 
-  // Filtered items list
   const filteredItems = items.filter(item => {
     if (!item) return false;
     let matchesSearch = false;
@@ -503,21 +531,23 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
       const forbidden = Array.isArray(item.forbidden) ? item.forbidden : [];
       matchesSearch = word.toLowerCase().includes(searchLower) || 
                       forbidden.some((fw: string) => fw && fw.toLowerCase().includes(searchLower));
-    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'SPY') {
+    } else if (activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'SPY' || activeTab === 'REVOLVER') {
       const word = item.word || item.question || '';
       matchesSearch = word.toLowerCase().includes(searchLower);
+    } else if (activeTab === 'SPY_QUESTIONS') {
+      const text = item.question || item.word || '';
+      matchesSearch = text.toLowerCase().includes(searchLower);
     } else {
       const text = item.question || item.word || '';
       matchesSearch = text.toLowerCase().includes(searchLower);
     }
-    const itemCategory = item.category || (activeTab === 'SPY' ? 'Lokalizacje' : 'Ogólne');
+    const itemCategory = item.category || (activeTab === 'SPY' ? 'Lokalizacje' : activeTab === 'SPY_QUESTIONS' ? 'Pytania' : 'Ogólne');
     const matchesCategory = categoryFilter === 'Wszystkie' || itemCategory === categoryFilter;
     return matchesSearch && matchesCategory;
   });
 
   return (
     <div className="w-full fade-in" style={{ padding: '24px 0' }}>
-      {/* Header */}
       <div className="flex-row justify-between items-center" style={{ marginBottom: '24px', flexWrap: 'wrap', gap: '16px' }}>
         <button
           onClick={handleBackClick}
@@ -532,7 +562,6 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
         </h2>
       </div>
 
-      {/* Tabs */}
       <div className="flex-row gap-xs" style={{ marginBottom: '32px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)', paddingBottom: '12px', flexWrap: 'wrap' }}>
         <button
           onClick={() => { playClick(); setActiveTab('MARYLIN_MONROE'); }}
@@ -581,23 +610,36 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           <span>P</span> Gra na P
         </button>
         <button
+          onClick={() => { playClick(); setActiveTab('REVOLVER'); }}
+          className={`btn ${activeTab === 'REVOLVER' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
+        >
+          <span>🔫</span> Rewolwer
+        </button>
+        <button
           onClick={() => { playClick(); setActiveTab('SPY'); }}
           className={`btn ${activeTab === 'SPY' ? 'btn-primary' : 'btn-secondary'}`}
           style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
         >
           <span>🕵️</span> Szpieg (Lokalizacje)
         </button>
+        <button
+          onClick={() => { playClick(); setActiveTab('SPY_QUESTIONS'); }}
+          className={`btn ${activeTab === 'SPY_QUESTIONS' ? 'btn-primary' : 'btn-secondary'}`}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', borderRadius: '12px', padding: '10px 16px', fontSize: '13px' }}
+        >
+          <span>❓</span> Szpieg (Pytania)
+        </button>
       </div>
 
       <div className="db-layout">
-        {/* Left Side Column */}
         <div className="db-sidebar">
           <div className="glass" style={{ padding: '24px' }}>
             <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               {isEditing ? <Edit2 size={16} style={{ color: 'hsl(var(--primary))' }} /> : <Plus size={16} style={{ color: 'hsl(var(--primary))' }} />}
               {isEditing 
-                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : activeTab === 'NINE_SECONDS' ? 'Edytuj Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Edytuj Czynność' : activeTab === 'LIPS' ? 'Edytuj Hasło z Ust' : activeTab === 'BOMB' ? 'Edytuj Hasło Bomby' : activeTab === 'P_GAME' ? 'Edytuj Hasło Gry na P' : 'Edytuj Lokalizację') 
-                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : activeTab === 'NINE_SECONDS' ? 'Dodaj Nowe Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Dodaj Czynność' : activeTab === 'LIPS' ? 'Dodaj Hasło z Ust' : activeTab === 'BOMB' ? 'Dodaj Hasło Bomby' : activeTab === 'P_GAME' ? 'Dodaj Hasło Gry na P' : 'Dodaj Lokalizację')}
+                ? (activeTab === 'MARYLIN_MONROE' ? 'Edytuj Hasło' : activeTab === 'NINE_SECONDS' ? 'Edytuj Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Edytuj Czynność' : activeTab === 'LIPS' ? 'Edytuj Hasło z Ust' : activeTab === 'BOMB' ? 'Edytuj Hasło Bomby' : activeTab === 'P_GAME' ? 'Edytuj Hasło Gry na P' : activeTab === 'REVOLVER' ? 'Edytuj Hasło Rewolwera' : activeTab === 'SPY' ? 'Edytuj Lokalizację' : 'Edytuj Pytanie Szpiega') 
+                : (activeTab === 'MARYLIN_MONROE' ? 'Dodaj Nowe Hasło' : activeTab === 'NINE_SECONDS' ? 'Dodaj Nowe Pytanie' : activeTab === 'REVERSE_CHARADES' ? 'Dodaj Czynność' : activeTab === 'LIPS' ? 'Dodaj Hasło z Ust' : activeTab === 'BOMB' ? 'Dodaj Hasło Bomby' : activeTab === 'P_GAME' ? 'Dodaj Hasło Gry na P' : activeTab === 'REVOLVER' ? 'Dodaj Hasło Rewolwera' : activeTab === 'SPY' ? 'Dodaj Lokalizację' : 'Dodaj Pytanie Szpiega')}
             </h3>
 
             {errorMsg && (
@@ -614,7 +656,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <form onSubmit={handleSubmit} className="flex-col gap-md">
               <div className="form-group">
                 <label className="form-label">
-                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : activeTab === 'NINE_SECONDS' ? 'Treść pytania' : activeTab === 'LIPS' ? 'Hasło z Ust' : activeTab === 'BOMB' ? 'Hasło Bomby' : activeTab === 'P_GAME' ? 'Hasło Gry na P' : activeTab === 'SPY' ? 'Lokalizacja' : 'Hasło (Czynność)'}
+                  {activeTab === 'MARYLIN_MONROE' ? 'Hasło główne' : activeTab === 'NINE_SECONDS' ? 'Treść pytania' : activeTab === 'LIPS' ? 'Hasło z Ust' : activeTab === 'BOMB' ? 'Hasło Bomby' : activeTab === 'P_GAME' ? 'Hasło Gry na P' : activeTab === 'REVOLVER' ? 'Hasło Rewolwera' : activeTab === 'SPY' ? 'Lokalizacja' : activeTab === 'SPY_QUESTIONS' ? 'Pytanie Szpiega' : 'Hasło (Czynność)'}
                 </label>
                 <input
                   type="text"
@@ -626,7 +668,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                     activeTab === 'LIPS' ? 'np. Różowy słoń' : 
                     activeTab === 'BOMB' ? 'np. Telewizor' :
                     activeTab === 'P_GAME' ? 'np. Książka' :
+                    activeTab === 'REVOLVER' ? 'np. Banan' :
                     activeTab === 'SPY' ? 'np. Szpital' :
+                    activeTab === 'SPY_QUESTIONS' ? 'np. Co ludzie najczęściej tam robią?' :
                     'np. Jazda na hulajnodze'
                   }
                   className="input-field"
@@ -651,7 +695,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                 </div>
               )}
 
-              {activeTab !== 'SPY' && (
+              {activeTab !== 'SPY' && activeTab !== 'SPY_QUESTIONS' && (
                 <div className="form-row-2">
                   <div className="form-group">
                     <label className="form-label">Kategoria</label>
@@ -671,7 +715,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                           <option value="Inne">Inne</option>
                         </>
                       )}
-                      {(activeTab === 'NINE_SECONDS' || activeTab === 'BOMB' || activeTab === 'P_GAME') && (
+                      {(activeTab === 'NINE_SECONDS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'REVOLVER') && (
                         <>
                           <option value="Ogólne">Ogólne</option>
                           <option value="Geografia">Geografia</option>
@@ -751,7 +795,6 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             </form>
           </div>
 
-          {/* CSV Tools card */}
           <div className="glass" style={{ padding: '20px', marginTop: '20px' }}>
             <h3 style={{ fontSize: '15px', fontWeight: 800, color: 'white', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <FileSpreadsheet size={16} style={{ color: 'hsl(var(--primary))' }} />
@@ -761,8 +804,9 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             <p style={{ fontSize: '11px', color: 'hsl(var(--text-muted))', marginBottom: '16px', lineHeight: 1.4 }}>
               Format pliku CSV (kolumny oddzielone <strong>średnikami</strong>, wiersz nagłówkowy jest opcjonalny i automatycznie pomijany):<br/>
               {activeTab === 'MARYLIN_MONROE' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Hasło;Zakazane1;Zakazane2;Zakazane3;Kategoria;Trudność</code>}
-              {(activeTab === 'NINE_SECONDS' || activeTab === 'REVERSE_CHARADES' || activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME') && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Hasło/Pytanie;Kategoria;Trudność</code>}
+              {(activeTab === 'NINE_SECONDS' || activeTab === 'REVERSE_CHARADES' || activeTab === 'LIPS' || activeTab === 'BOMB' || activeTab === 'P_GAME' || activeTab === 'REVOLVER') && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Hasło/Pytanie;Kategoria;Trudność</code>}
               {activeTab === 'SPY' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Lokalizacja</code>}
+              {activeTab === 'SPY_QUESTIONS' && <code style={{ display: 'block', padding: '4px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', color: 'hsl(var(--primary))', marginTop: '4px', overflowX: 'auto', whiteSpace: 'nowrap' }}>Pytanie</code>}
             </p>
 
             <div className="flex-col gap-xs">
@@ -821,9 +865,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
           </div>
         </div>
 
-        {/* Right Side: Table */}
         <div className="flex-col w-full">
-          {/* Controls: Search and Filter */}
           <div className="glass db-filter-bar" style={{ padding: '16px', marginBottom: '24px', flexDirection: 'row', alignItems: 'center' }}>
             <div className="search-wrapper">
               <Search className="search-icon" size={16} />
@@ -837,13 +879,15 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                   activeTab === 'LIPS' ? "Szukaj hasła z ust..." : 
                   activeTab === 'BOMB' ? "Szukaj hasła bomby..." :
                   activeTab === 'P_GAME' ? "Szukaj hasła gry na P..." :
+                  activeTab === 'REVOLVER' ? "Szukaj hasła rewolwera..." :
                   activeTab === 'SPY' ? "Szukaj lokalizacji..." :
+                  activeTab === 'SPY_QUESTIONS' ? "Szukaj pytania szpiega..." :
                   "Szukaj czynności..."
                 }
                 className="input-field search-input"
               />
             </div>
-            {activeTab !== 'SPY' && (
+            {activeTab !== 'SPY' && activeTab !== 'SPY_QUESTIONS' && (
               <div className="flex-row gap-xs items-center" style={{ minWidth: '160px' }}>
                 <Filter style={{ color: 'hsl(var(--text-muted))' }} size={16} />
                 <select
@@ -862,7 +906,6 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
             )}
           </div>
 
-          {/* Table Container */}
           <div className="glass table-wrapper" style={{ padding: 0 }}>
             {loading ? (
               <div style={{ textAlign: 'center', padding: '48px', color: 'hsl(var(--text-secondary))', fontWeight: 500 }}>
@@ -882,11 +925,13 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                        activeTab === 'LIPS' ? 'Hasło z Ust' : 
                        activeTab === 'BOMB' ? 'Hasło Bomby' :
                        activeTab === 'P_GAME' ? 'Hasło Gry na P' :
+                       activeTab === 'REVOLVER' ? 'Hasło Rewolwera' :
                        activeTab === 'SPY' ? 'Lokalizacja' :
+                       activeTab === 'SPY_QUESTIONS' ? 'Pytanie Szpiega' :
                        'Czynność'}
                     </th>
                     {activeTab === 'MARYLIN_MONROE' && <th>Słowa zakazane</th>}
-                    {activeTab !== 'SPY' && <th style={{ width: '180px' }}>Szczegóły</th>}
+                    {activeTab !== 'SPY' && activeTab !== 'SPY_QUESTIONS' && <th style={{ width: '180px' }}>Szczegóły</th>}
                     <th style={{ textAlign: 'right', width: '100px' }}>Akcje</th>
                   </tr>
                 </thead>
@@ -911,7 +956,7 @@ export const DatabaseEditor: React.FC<DatabaseEditorProps> = ({ onBack }) => {
                           </div>
                         </td>
                       )}
-                      {activeTab !== 'SPY' && (
+                      {activeTab !== 'SPY' && activeTab !== 'SPY_QUESTIONS' && (
                         <td>
                           <div className="flex-row gap-xs">
                             <span className="badge-tag">{item.category}</span>
