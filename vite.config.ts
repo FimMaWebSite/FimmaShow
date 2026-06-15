@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/FimmaShow/',
+  base: process.env.BUILD_MOBILE === 'true' ? '/' : '/FimmaShow/',
   server: {
     port: 5173,
     proxy: {

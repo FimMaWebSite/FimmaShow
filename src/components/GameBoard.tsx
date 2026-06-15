@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, Check, X, RotateCcw, AlertTriangle, HelpCircle } from 'lucide-react';
+import { Play, Pause, Check, X, AlertTriangle, HelpCircle, ArrowLeft } from 'lucide-react';
 
 import { Team, GameSettings } from './GameSetup';
 import { playClick, playCorrect, playWrong, playTick, playBuzzer, playExplosion } from '../utils/audio';
@@ -442,8 +442,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
-          <button onClick={handleExitClick} className="btn btn-secondary" style={{ padding: '8px 14px', fontSize: '12px', borderRadius: '12px' }}>
-            ✕ Zakończ
+          <button onClick={handleExitClick} className="btn btn-secondary" style={{ padding: '8px 14px', fontSize: '12px', borderRadius: '12px', color: '#ff5c75', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <ArrowLeft size={13} /> Powrót
           </button>
           <div style={{ fontSize: '22px', fontWeight: 900, color: '#fcd34d', letterSpacing: '0.05em' }}>
             🔫 REWOLWER
@@ -660,8 +660,11 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         `}</style>
 
         {/* Header bar */}
-        <div className="game-header-bar" style={{ borderColor: 'rgba(255, 255, 255, 0.1)', background: 'rgba(255, 255, 255, 0.02)' }}>
-          <div className="game-header-team">
+        <div className="game-header-bar" style={{ borderColor: 'rgba(255, 255, 255, 0.1)', background: 'rgba(255, 255, 255, 0.02)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <button onClick={handleExitClick} className="btn btn-secondary" style={{ padding: '6px 12px', fontSize: '11px', borderRadius: '10px', color: '#ff5c75', display: 'flex', alignItems: 'center', gap: '4px' }}>
+              <ArrowLeft size={12} /> Powrót
+            </button>
             <span style={{ fontSize: '12px', fontWeight: 900, color: 'white', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
               GRA: SZPIEG 🕵️‍♂️
             </span>
@@ -959,10 +962,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
   // Helper to format remaining time nicely (with one decimal place if 9.5s)
   const formatTime = (time: number) => {
-    if (gameMode === 'NINE_SECONDS' || time % 1 !== 0) {
+    if (gameMode === 'NINE_SECONDS') {
       return time.toFixed(1);
     }
-    return Math.floor(time).toString();
+    return Math.ceil(time).toString();
   };
 
   if (gameMode === 'BOMB') {
@@ -1197,7 +1200,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
         {/* Action Controls for Bomb */}
         {!isReadyPhase && (
-          <div className="gameplay-controls-panel" style={{ background: 'rgba(255, 60, 0, 0.02)', borderColor: 'rgba(255, 60, 0, 0.15)', padding: '20px' }}>
+          <div className="gameplay-controls-panel" style={{ background: 'rgba(255, 60, 0, 0.02)', borderColor: 'rgba(255, 60, 0, 0.15)', padding: '20px', flexDirection: 'column', gap: '12px' }}>
             <button
               onClick={handleBombPass}
               disabled={!isPlaying || isExploded || currentBombDelayLeft > 0}
@@ -1211,7 +1214,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 boxShadow: currentBombDelayLeft > 0 ? 'none' : '0 8px 24px rgba(255, 60, 0, 0.35)',
                 fontWeight: 900,
                 letterSpacing: '0.02em',
-                flexGrow: 1,
+                width: '100%',
                 cursor: currentBombDelayLeft > 0 ? 'not-allowed' : 'pointer'
               }}
             >
@@ -1223,10 +1226,24 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             <button
               onClick={handleExitClick}
               className="btn btn-secondary"
-              style={{ padding: '18px', color: '#ff5c75', borderRadius: '20px' }}
-              title="Przerwij grę"
+              style={{
+                padding: '12px 20px',
+                color: '#ff5c75',
+                borderColor: 'rgba(255, 92, 117, 0.25)',
+                background: 'rgba(255, 92, 117, 0.05)',
+                borderRadius: '14px',
+                width: '100%',
+                fontWeight: 800,
+                fontSize: '13px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px'
+              }}
+              title="Wyjdź do menu głównego"
             >
-              <RotateCcw size={20} />
+              <ArrowLeft size={15} />
+              POWRÓT DO MENU
             </button>
           </div>
         )}
@@ -1323,7 +1340,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 color: '#1a0a03',
                 lineHeight: 1.4,
               }}>
-                {currentWord?.question || 'Brak pytania'}
+                {currentWord?.question || currentWord?.word || 'Brak pytania'}
               </div>
             </div>
             <p style={{ fontSize: '13px', color: 'hsl(var(--text-secondary))', lineHeight: 1.6 }}>
@@ -1343,7 +1360,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             <div style={{ fontSize: '64px' }}>⏰</div>
             <div>
               <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Czas minął!</div>
-              <div style={{ fontSize: '15px', color: 'hsl(var(--text-secondary))', marginTop: '4px', fontStyle: 'italic' }}>„{currentWord?.question}"</div>
+              <div style={{ fontSize: '15px', color: 'hsl(var(--text-secondary))', marginTop: '4px', fontStyle: 'italic' }}>„{currentWord?.question || currentWord?.word || ''}"</div>
             </div>
 
             {/* Score display + adjustment buttons */}
@@ -1410,24 +1427,26 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                   {gameMode === 'MARYLIN_MONROE' ? (
                     <>
                       {/* Word title */}
-                      <h2 className="zero-presji-card-title">{currentWord.word}</h2>
+                      <h2 className="zero-presji-card-title">{currentWord.word || currentWord.question || ''}</h2>
                       
                       {/* Forbidden words container */}
-                      <div className="taboo-container">
-                        <span className="taboo-header">
-                          Słowa Zakazane
-                        </span>
-                        <div className="taboo-words-list">
-                          {currentWord.forbidden.map((fw: string, idx: number) => (
-                            <div
-                              key={idx}
-                              className="taboo-word-item"
-                            >
-                              {fw}
-                            </div>
-                          ))}
+                      {currentWord.forbidden && Array.isArray(currentWord.forbidden) && (
+                        <div className="taboo-container">
+                          <span className="taboo-header">
+                            Słowa Zakazane
+                          </span>
+                          <div className="taboo-words-list">
+                            {currentWord.forbidden.map((fw: string, idx: number) => (
+                              <div
+                                key={idx}
+                                className="taboo-word-item"
+                              >
+                                {fw}
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </>
                   ) : gameMode === 'NINE_SECONDS' ? (
                     <>
@@ -1458,7 +1477,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                           maxWidth: '520px',
                           textShadow: '0.5px 0.5px 0px rgba(255,255,255,0.8)'
                         }}>
-                          {currentWord.question}
+                          {currentWord.question || currentWord.word || ''}
                         </p>
                       </div>
                     </>
@@ -1484,7 +1503,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                       {/* Prompt */}
                       <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px 0' }}>
                         <h2 className="zero-presji-card-title" style={{ color: '#ffffff', filter: 'drop-shadow(0px 6px 6px rgba(0,0,0,0.2))' }}>
-                          {currentWord.word}
+                          {currentWord.word || currentWord.question || ''}
                         </h2>
                       </div>
                       
@@ -1532,7 +1551,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                           maxWidth: '520px',
                           textShadow: '0.5px 0.5px 0px rgba(255,255,255,0.8)'
                         }}>
-                          {currentWord.question}
+                          {currentWord.question || currentWord.word || ''}
                         </p>
                       </div>
                     </>
@@ -1558,7 +1577,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                       {/* Word to guess */}
                       <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px 0' }}>
                         <h2 className="zero-presji-card-title" style={{ color: '#ffffff', filter: 'drop-shadow(0px 6px 6px rgba(0,0,0,0.2))' }}>
-                          {currentWord.word}
+                          {currentWord.word || currentWord.question || ''}
                         </h2>
                       </div>
                       
@@ -1581,7 +1600,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     <>
                       {/* Fallback */}
                       <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <h2 className="zero-presji-card-title">{currentWord.word || currentWord.question}</h2>
+                        <h2 className="zero-presji-card-title">{currentWord.word || currentWord.question || ''}</h2>
                       </div>
                     </>
                   )}
@@ -1671,22 +1690,35 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           </div>
 
           {/* Pause / Exit button */}
-          <div className="gameplay-aux-actions">
+          <div className="gameplay-aux-actions" style={{ display: 'flex', gap: '12px', width: '100%', justifyContent: 'center', marginTop: '4px' }}>
             <button
               onClick={handlePauseToggle}
               className="btn btn-secondary"
-              style={{ padding: '12px' }}
+              style={{ padding: '12px 18px', fontSize: '13px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}
               title={isPlaying ? 'Wstrzymaj grę' : 'Wznów grę'}
             >
-              {isPlaying ? <Pause size={16} /> : <Play size={16} fill="currentColor" />}
+              {isPlaying ? <Pause size={15} /> : <Play size={15} fill="currentColor" />}
+              <span>{isPlaying ? 'PAUZA' : 'WZNÓW'}</span>
             </button>
             <button
               onClick={handleExitClick}
               className="btn btn-secondary"
-              style={{ padding: '12px', color: '#ff5c75' }}
-              title="Wyjdź z gry"
+              style={{
+                padding: '12px 20px',
+                color: '#ff5c75',
+                borderColor: 'rgba(255, 92, 117, 0.25)',
+                background: 'rgba(255, 92, 117, 0.05)',
+                fontSize: '13px',
+                fontWeight: 800,
+                borderRadius: '12px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}
+              title="Wyjdź do menu głównego"
             >
-              <RotateCcw size={16} />
+              <ArrowLeft size={15} />
+              <span>POWRÓT DO MENU</span>
             </button>
           </div>
         </div>
