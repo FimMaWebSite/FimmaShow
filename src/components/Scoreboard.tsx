@@ -2,6 +2,7 @@ import React from 'react';
 import { Trophy, ArrowRight, Star } from 'lucide-react';
 import { Team } from './GameSetup';
 import { playClick } from '../utils/audio';
+import { Language } from '../data/translations';
 
 interface ScoreboardProps {
   teams: Team[];
@@ -12,6 +13,7 @@ interface ScoreboardProps {
   isTournament?: boolean;
   tournamentRound?: number;
   isRoundOver?: boolean;
+  language: Language;
 }
 
 export const Scoreboard: React.FC<ScoreboardProps> = ({
@@ -23,6 +25,7 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
   isTournament = false,
   tournamentRound = 1,
   isRoundOver = false,
+  language,
 }) => {
   const handleStartNext = () => {
     playClick();
@@ -37,25 +40,25 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
 
   const getRoundName = (round: number) => {
     switch (round) {
-      case 1: return "Marylin Monroe";
-      case 2: return "9,5 Sekundy";
-      case 3: return "Odwrócone Kalambury";
-      case 4: return "Bomba (Finał)";
+      case 1: return language === 'EN' ? "Marilyn Monroe" : "Marylin Monroe";
+      case 2: return language === 'EN' ? "9.5 Seconds" : "9,5 Sekundy";
+      case 3: return language === 'EN' ? "Reverse Charades" : "Odwrócone Kalambury";
+      case 4: return language === 'EN' ? "Bomb (Final)" : "Bomba (Finał)";
       default: return "";
     }
   };
 
   const getNextRoundName = (round: number) => {
     switch (round) {
-      case 1: return "Rundy 2: 9,5 Sekundy";
-      case 2: return "Rundy 3: Odwrócone Kalambury";
-      case 3: return "Rundy Finałowej: Bomba! 💣";
+      case 1: return language === 'EN' ? "Round 2: 9.5 Seconds" : "Rundy 2: 9,5 Sekundy";
+      case 2: return language === 'EN' ? "Round 3: Reverse Charades" : "Rundy 3: Odwrócone Kalambury";
+      case 3: return language === 'EN' ? "Final Round: Bomb! 💣" : "Rundy Finałowej: Bomba! 💣";
       default: return "";
     }
   };
 
   return (
-    <div className="flex-container max-w-md mx-auto fade-in" style={{ padding: '36px 12px', minHeight: '85vh', justifyContent: 'center' }}>
+    <div className="flex-container max-md mx-auto fade-in" style={{ padding: '36px 12px', minHeight: '85vh', justifyContent: 'center' }}>
       {/* Trophy Icon */}
       <div className="trophy-glow-wrapper">
         <div className="trophy-badge" style={{ width: '80px', height: '80px' }}>
@@ -66,15 +69,17 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
       {/* Round Result Title */}
       <div className="flex-container" style={{ textAlign: 'center', marginBottom: '32px', gap: '8px' }}>
         <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-          {isTournament ? `Runda ${tournamentRound} z 3: ${getRoundName(tournamentRound)}` : 'Koniec rundy!'}
+          {isTournament 
+            ? (language === 'EN' ? `Round ${tournamentRound} of 3: ${getRoundName(tournamentRound)}` : `Runda ${tournamentRound} z 3: ${getRoundName(tournamentRound)}`) 
+            : (language === 'EN' ? 'Round Over!' : 'Koniec rundy!')}
         </span>
         <h2 style={{ fontSize: '28px', fontWeight: 900, color: 'white', textTransform: 'uppercase' }}>
-          Wynik drużyny <span style={{ color: lastTeam.color }}>{lastTeam.name}</span>
+          {language === 'EN' ? 'Score of team ' : 'Wynik drużyny '}<span style={{ color: lastTeam.color }}>{lastTeam.name}</span>
         </h2>
         <div className="flex-row gap-xs items-center" style={{ background: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '6px 14px', borderRadius: '12px', marginTop: '8px' }}>
           <Star size={14} style={{ color: 'hsl(var(--secondary))' }} fill="currentColor" />
           <span style={{ fontWeight: 800, fontSize: '16px', color: 'white' }}>
-            {pointsEarned >= 0 ? `+${pointsEarned}` : pointsEarned} pkt
+            {pointsEarned >= 0 ? `+${pointsEarned}` : pointsEarned} {language === 'EN' ? 'pts' : 'pkt'}
           </span>
         </div>
       </div>
@@ -82,7 +87,7 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
       {/* Leaderboard List */}
       <div className="glass w-full flex-col" style={{ padding: '24px', marginBottom: '32px' }}>
         <h4 style={{ fontSize: '11px', fontWeight: 700, color: 'hsl(var(--text-muted))', textTransform: 'uppercase', letterSpacing: '0.05em', borderBottom: '1px solid rgba(255, 255, 255, 0.05)', paddingBottom: '10px', marginBottom: '16px' }}>
-          Tabela Wyników
+          {language === 'EN' ? 'Leaderboard' : 'Tabela Wyników'}
         </h4>
         <div className="leaderboard-list">
           {sortedTeams.map((team, index) => {
@@ -103,7 +108,7 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
                   </span>
                 </div>
                 <div className="flex-row gap-xs">
-                  <span style={{ fontWeight: 900, color: 'white', fontSize: '14px' }}>{team.points} pkt</span>
+                  <span style={{ fontWeight: 900, color: 'white', fontSize: '14px' }}>{team.points} {language === 'EN' ? 'pts' : 'pkt'}</span>
                   {isLeader && <Trophy size={12} style={{ color: '#ffd700', marginLeft: '4px' }} fill="currentColor" />}
                 </div>
               </div>
@@ -118,28 +123,28 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
           isRoundOver ? (
             <div className="flex-container w-full" style={{ gap: '16px' }}>
               <div style={{ fontSize: '14px', fontWeight: 500, color: 'hsl(var(--text-secondary))', textAlign: 'center' }}>
-                Wszyscy rozegrali turę w tej rundzie!
+                {language === 'EN' ? 'Everyone has played a turn in this round!' : 'Wszyscy rozegrali turę w tej rundzie!'}
               </div>
               <button
                 onClick={handleStartNext}
                 className="btn btn-primary w-full"
                 style={{ padding: '16px', fontSize: '15px', background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 50%, #ffd700 100%)', border: 'none' }}
               >
-                PRZEJDŹ DO {getNextRoundName(tournamentRound).toUpperCase()}
+                {language === 'EN' ? 'GO TO ' : 'PRZEJDŹ DO '}{getNextRoundName(tournamentRound).toUpperCase()}
                 <ArrowRight size={18} />
               </button>
             </div>
           ) : (
             <div className="flex-container w-full" style={{ gap: '16px' }}>
               <div style={{ fontSize: '14px', fontWeight: 500, color: 'hsl(var(--text-secondary))' }}>
-                Następnie gra: <span style={{ fontWeight: 800, color: nextTeam.color }}>{nextTeam.name}</span>
+                {language === 'EN' ? 'Next up: ' : 'Następnie gra: '}<span style={{ fontWeight: 800, color: nextTeam.color }}>{nextTeam.name}</span>
               </div>
               <button
                 onClick={handleStartNext}
                 className="btn btn-primary w-full"
                 style={{ padding: '16px', fontSize: '15px' }}
               >
-                ROZPOCZNIJ TURĘ
+                {language === 'EN' ? 'START TURN' : 'ROZPOCZNIJ RUNDĘ'}
                 <ArrowRight size={18} />
               </button>
             </div>
@@ -147,14 +152,14 @@ export const Scoreboard: React.FC<ScoreboardProps> = ({
         ) : (
           <>
             <div style={{ fontSize: '14px', fontWeight: 500, color: 'hsl(var(--text-secondary))' }}>
-              Następnie gra: <span style={{ fontWeight: 800, color: nextTeam.color }}>{nextTeam.name}</span>
+              {language === 'EN' ? 'Next up: ' : 'Następnie gra: '}<span style={{ fontWeight: 800, color: nextTeam.color }}>{nextTeam.name}</span>
             </div>
             <button
               onClick={handleStartNext}
               className="btn btn-primary w-full"
               style={{ padding: '16px', fontSize: '15px' }}
             >
-              DALEJ DO RUNDY
+              {language === 'EN' ? 'CONTINUE TO ROUND' : 'DALEJ DO RUNDY'}
               <ArrowRight size={18} />
             </button>
           </>

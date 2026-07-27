@@ -3,7 +3,17 @@ import { ArrowLeft, Users, Settings, Plus, Minus, Check } from 'lucide-react';
 import { playClick, playWrong } from '../utils/audio';
 import { GameMode } from '../App';
 
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_P_GAME, DEFAULT_LIPS_WORDS } from '../data/defaultData';
+import {
+  DEFAULT_WORDS,
+  DEFAULT_NINE_SECONDS,
+  DEFAULT_REVERSE_CHARADES,
+  DEFAULT_P_GAME,
+  DEFAULT_LIPS_WORDS,
+  DEFAULT_BOMB_WORDS,
+  DEFAULT_REVOLVER_WORDS,
+  DEFAULT_WAVELENGTH_WORDS
+} from '../data/defaultDataMulti';
+import { Language, getTranslation } from '../data/translations';
 
 export interface Team {
   id: number;
@@ -23,6 +33,7 @@ interface GameSetupProps {
   onBack: () => void;
   onStart: (teams: Team[], settings: GameSettings) => void;
   gameMode: GameMode;
+  language: Language;
 }
 
 const PRESET_COLORS = [
@@ -34,10 +45,54 @@ const PRESET_COLORS = [
   '#8b5cf6', // Violet
 ];
 
-export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode }) => {
+const getCategoryEmoji = (cat: string): string => {
+  const c = cat.toLowerCase();
+  if (c.includes('fikcyjn')) return '🧙‍♂️';
+  if (c.includes('ludzie') && c.includes('relac')) return '🤝';
+  if (c.includes('ludzie') && c.includes('zawod')) return '👨‍⚕️';
+  if (c.includes('ludzie')) return '👥';
+  if (c.includes('polska') && c.includes('świat')) return '🌍';
+  if (c.includes('polska')) return '🇵🇱';
+  if (c.includes('popkultur') && c.includes('zwariowan')) return '🤪';
+  if (c.includes('popkultur') && c.includes('medi')) return '🎬';
+  if (c.includes('popkultur') || c.includes('postaci')) return '🌟';
+  if (c.includes('życie codzienne') || c.includes('codzienn')) return '🏠';
+  if (c.includes('gry & technologi')) return '🎮';
+  if (c.includes('czynności')) return '💼';
+  if (c.includes('zwierzęta') || c.includes('natur')) return '🦁';
+  if (c.includes('sport') || c.includes('hobby')) return '⚽';
+  if (c.includes('przedmiot') && c.includes('codzien')) return '🎒';
+  if (c.includes('przedmiot')) return '🔑';
+  if (c.includes('miejsca') && c.includes('sytuac')) return '📍';
+  if (c.includes('miejsca') && c.includes('zawod')) return '🏢';
+  if (c.includes('miejsca') || c.includes('pojęc')) return '🗺️';
+  if (c.includes('absurdaln') || c.includes('głupi')) return '🤡';
+  if (c.includes('łamacz')) return '👅';
+  if (c.includes('imprezow')) return '🥳';
+  if (c.includes('fonetyczn')) return '🗣️';
+  if (c.includes('rzecz') || c.includes('obiekt')) return '📦';
+  if (c.includes('pojęci')) return '🔮';
+  return '🏷️';
+};
+
+const getGameModeDescription = (mode: GameMode, lang: Language): string => {
+  switch (mode) {
+    case 'MARYLIN_MONROE': return getTranslation('marilynDesc', lang);
+    case 'NINE_SECONDS': return getTranslation('nineSecDesc', lang);
+    case 'REVERSE_CHARADES': return getTranslation('reverseCharadesDesc', lang);
+    case 'P_GAME': return getTranslation('pGameDesc', lang);
+    case 'SPY': return getTranslation('spyDesc', lang);
+    case 'LIPS': return getTranslation('lipsDesc', lang);
+    case 'REVOLVER': return getTranslation('revolverDesc', lang);
+    case 'WAVELENGTH': return getTranslation('wavelengthDesc', lang);
+    default: return '';
+  }
+};
+
+export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode, language }) => {
   const [teams, setTeams] = useState<Team[]>([
-    { id: 1, name: 'Drużyna A', color: '#f97316', points: 0 },
-    { id: 2, name: 'Drużyna B', color: '#eab308', points: 0 }
+    { id: 1, name: language === 'EN' ? 'Team A' : 'Drużyna A', color: '#f97316', points: 0 },
+    { id: 2, name: language === 'EN' ? 'Team B' : 'Drużyna B', color: '#eab308', points: 0 }
   ]);
 
   const [roundTime, setRoundTime] = useState(
@@ -46,64 +101,72 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   const [pointsToWin, setPointsToWin] = useState(15);
   const [categories, setCategories] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [categoryCounts, setCategoryCounts] = useState<{ [key: string]: number }>({});
   const [loading, setLoading] = useState(true);
+  const [showAdvanced, setShowAdvanced] = useState(false);
   const [tournamentGames, setTournamentGames] = useState<GameMode[]>([
     'MARYLIN_MONROE',
     'NINE_SECONDS',
     'REVERSE_CHARADES'
   ]);
 
-  // Fetch available categories from server
+  // Fetch available categories and counts
   useEffect(() => {
-    const fetchCategories = async () => {
-      let endpoint = '/api/words';
-      let localKey = 'fimma_words';
-      let defaultBackup: any[] = DEFAULT_WORDS;
+    const fetchCategories = () => {
+      let localKey = `fimma_words_${language}`;
+      let defaultBackup: any[] = DEFAULT_WORDS[language] || DEFAULT_WORDS['PL'] || [];
 
       if (gameMode === 'NINE_SECONDS') {
-        endpoint = '/api/nine-seconds';
-        localKey = 'fimma_nine_seconds';
-        defaultBackup = DEFAULT_NINE_SECONDS;
+        localKey = `fimma_nine_seconds_${language}`;
+        defaultBackup = DEFAULT_NINE_SECONDS[language] || DEFAULT_NINE_SECONDS['PL'] || [];
       } else if (gameMode === 'REVERSE_CHARADES') {
-        endpoint = '/api/reverse-charades';
-        localKey = 'fimma_reverse_charades';
-        defaultBackup = DEFAULT_REVERSE_CHARADES;
+        localKey = `fimma_reverse_charades_${language}`;
+        defaultBackup = DEFAULT_REVERSE_CHARADES[language] || DEFAULT_REVERSE_CHARADES['PL'] || [];
+      } else if (gameMode === 'BOMB') {
+        localKey = `fimma_bomb_words_${language}`;
+        defaultBackup = DEFAULT_BOMB_WORDS[language] || DEFAULT_BOMB_WORDS['PL'] || [];
       } else if (gameMode === 'P_GAME') {
-        endpoint = '/api/p-game';
-        localKey = 'fimma_p_game';
-        defaultBackup = DEFAULT_P_GAME;
+        localKey = `fimma_p_game_${language}`;
+        defaultBackup = DEFAULT_P_GAME[language] || DEFAULT_P_GAME['PL'] || [];
       } else if (gameMode === 'LIPS') {
-        endpoint = '/api/lips-words';
-        localKey = 'fimma_lips_words';
-        defaultBackup = DEFAULT_LIPS_WORDS;
+        localKey = `fimma_lips_words_${language}`;
+        defaultBackup = DEFAULT_LIPS_WORDS[language] || DEFAULT_LIPS_WORDS['PL'] || [];
+      } else if (gameMode === 'REVOLVER') {
+        localKey = `fimma_revolver_words_${language}`;
+        defaultBackup = DEFAULT_REVOLVER_WORDS[language] || DEFAULT_REVOLVER_WORDS['PL'] || [];
+      } else if (gameMode === 'WAVELENGTH') {
+        localKey = `fimma_wavelength_words_${language}`;
+        defaultBackup = DEFAULT_WAVELENGTH_WORDS[language] || DEFAULT_WAVELENGTH_WORDS['PL'] || [];
       }
 
-      try {
-        const res = await fetch(endpoint);
-        const contentType = res.headers.get('content-type');
-        if (res.ok && contentType && contentType.includes('application/json')) {
-          const data = await res.json();
-          const cats = Array.from(new Set(data.map((w: any) => w.category))) as string[];
-          setCategories(cats);
-          setSelectedCategories(cats); // Default: Select all
-          localStorage.setItem(localKey, JSON.stringify(data));
-          setLoading(false);
-          return;
-        }
-      } catch (err) {
-        console.warn('API error in setup categories, using localStorage:', err);
-      }
-
-      // Fallback to local storage
       const localData = localStorage.getItem(localKey);
-      const data = localData ? JSON.parse(localData) : defaultBackup;
-      const cats = Array.from(new Set(data.map((w: any) => w.category))) as string[];
+      let data: any[] = defaultBackup;
+      if (localData) {
+        try {
+          data = JSON.parse(localData);
+          if (!Array.isArray(data)) data = defaultBackup;
+        } catch {
+          data = defaultBackup;
+        }
+      }
+
+      const cats = Array.from(new Set(data.map((w: any) => w.category).filter(Boolean))) as string[];
+      
+      const counts: { [key: string]: number } = {};
+      data.forEach((w: any) => {
+        if (w.category) {
+          counts[w.category] = (counts[w.category] || 0) + 1;
+        }
+      });
+
       setCategories(cats);
       setSelectedCategories(cats);
+      setCategoryCounts(counts);
       setLoading(false);
     };
+
     fetchCategories();
-  }, [gameMode]);
+  }, [gameMode, language]);
 
   const handleBackClick = () => {
     playClick();
@@ -119,7 +182,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
     const nextId = teams.length + 1;
     const newTeam: Team = {
       id: nextId,
-      name: `Drużyna ${String.fromCharCode(64 + nextId)}`,
+      name: language === 'EN' ? `Team ${String.fromCharCode(64 + nextId)}` : `Drużyna ${String.fromCharCode(64 + nextId)}`,
       color: PRESET_COLORS[nextId - 1] || PRESET_COLORS[0],
       points: 0
     };
@@ -162,34 +225,61 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
   };
 
   const handleStartGame = () => {
-    if (gameMode !== 'TOURNAMENT' && gameMode !== 'SPY' && gameMode !== 'LIPS' && gameMode !== 'REVOLVER' && selectedCategories.length === 0) {
+    if (gameMode !== 'TOURNAMENT' && gameMode !== 'SPY' && selectedCategories.length === 0) {
       playWrong();
-      alert('Wybierz przynajmniej jedną kategorię haseł.');
+      alert(language === 'EN' ? 'Please select at least one word category.' : 'Wybierz przynajmniej jedną kategorię haseł.');
       return;
     }
     playClick();
     onStart(teams, { 
       roundTime: gameMode === 'TOURNAMENT' ? 60 : roundTime, 
       pointsToWin: gameMode === 'TOURNAMENT' ? 9999 : gameMode === 'SPY' ? 15 : pointsToWin, 
-      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' || gameMode === 'LIPS' || gameMode === 'REVOLVER' ? [] : selectedCategories,
+      selectedCategories: gameMode === 'TOURNAMENT' || gameMode === 'SPY' ? [] : selectedCategories,
       tournamentGames: gameMode === 'TOURNAMENT' ? tournamentGames : undefined
     });
   };
 
   return (
-    <div className="flex-container max-w-lg mx-auto fade-in" style={{ padding: '16px 0' }}>
+    <div className="flex-container max-w-5xl mx-auto fade-in" style={{ padding: '24px 12px', minHeight: '85vh', justifyContent: 'flex-start' }}>
       <button
         onClick={handleBackClick}
         className="btn btn-secondary"
         style={{ alignSelf: 'flex-start', marginBottom: '24px', padding: '8px 16px', fontSize: '13px', borderRadius: '12px' }}
       >
         <ArrowLeft size={16} />
-        Anuluj
+        {language === 'EN' ? 'Cancel' : 'Anuluj'}
       </button>
 
-      <h2 style={{ fontSize: '32px', fontWeight: 900, textTransform: 'uppercase', color: 'white', marginBottom: '32px', textAlign: 'center' }}>
-        Konfiguracja Gry
+      <h2 style={{ fontSize: '32px', fontWeight: 900, textTransform: 'uppercase', color: 'white', marginBottom: '24px', textAlign: 'center' }}>
+        {getTranslation('gameSetupTitle', language)}
       </h2>
+
+      {/* Quick Play Button */}
+      <div style={{ display: 'flex', flexDirection: 'column', width: '100%', maxWidth: '450px', margin: '0 auto 24px auto', gap: '8px', zIndex: 5 }}>
+        <button
+          onClick={() => {
+            playClick();
+            onStart(teams, {
+              roundTime: gameMode === 'TOURNAMENT' ? 60 : gameMode === 'NINE_SECONDS' ? 9.5 : gameMode === 'REVERSE_CHARADES' ? 120 : 60,
+              pointsToWin: gameMode === 'TOURNAMENT' ? 9999 : gameMode === 'SPY' ? 15 : 15,
+              selectedCategories: categories.length > 0 ? categories : [],
+              tournamentGames: gameMode === 'TOURNAMENT' ? tournamentGames : undefined
+            });
+          }}
+          className="btn btn-primary"
+          style={{
+            padding: '14px 28px',
+            fontSize: '15px',
+            borderRadius: '9999px',
+            background: 'linear-gradient(135deg, #f97316 0%, #eab308 100%)',
+            boxShadow: '0 4px 12px rgba(249, 115, 22, 0.2)',
+            textTransform: 'uppercase',
+            fontWeight: 900
+          }}
+        >
+          {getTranslation('quickPlayBtn', language)}
+        </button>
+      </div>
 
       <div className="setup-grid">
         {/* Left Card: Team Configuration */}
@@ -197,7 +287,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
           <div className="setup-box-header">
             <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Users size={18} style={{ color: 'hsl(var(--primary))' }} />
-              Drużyny
+              {language === 'EN' ? 'Teams' : 'Drużyny'}
             </h3>
             <div className="flex-row gap-xs items-center">
               <button
@@ -232,7 +322,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
                     type="text"
                     value={team.name}
                     onChange={(e) => updateTeamName(idx, e.target.value)}
-                    placeholder={`Drużyna ${idx + 1}`}
+                    placeholder={getTranslation('teamNamePlaceholder', language) + ` ${idx + 1}`}
                     className="input-field"
                     style={{ padding: '8px 12px' }}
                   />
@@ -254,85 +344,74 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
         </div>
 
         {/* Right Card: Game Settings / Tournament Preview */}
-        {gameMode === 'REVOLVER' ? (
+        {gameMode === 'SPY' ? (
           <div className="glass flex-col gap-md">
             <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
               <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
-              Zasady Gry: Rewolwer 🔫
+              {language === 'EN' ? 'Game Rules: Spy' : 'Zasady Gry: Szpieg'}
             </h3>
             
-            <div className="flex-col gap-sm" style={{ marginTop: '8px' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Jedno Hasło dla Wszystkich</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Na ekranie pojawia się jedno tajne hasło. Jeden gracz z każdej drużyny je widzi i zostaje podpowiadaczem.</span>
-              </div>
-
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Jedna Wskazówka, Jedna Szansa</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Drużyna aktywna daje jedną wskazówkę (jedno słowo), jej guesser próbuje odgadnąć. Jeśli nie trafi – kolej przechodzi do następnej drużyny.</span>
-              </div>
-
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Rotacja Drużyn</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Drużyny grają na zmianę aż do odgadnięcia hasła. Jeśli wszystkie drużyny spróbują i nikt nie odgadnie – hasło przepada.</span>
-              </div>
-
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'linear-gradient(135deg, rgba(180, 83, 9, 0.15) 0%, rgba(120, 53, 15, 0.2) 100%)', border: '1px solid rgba(180, 83, 9, 0.3)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: '#fcd34d' }}>Punktacja</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Drużyna, która odgadnie hasło, zdobywa <strong style={{color:'white'}}>+1 punkt</strong>. Gra do ustalonej liczby punktów.</span>
-              </div>
+            {/* Game Description Banner */}
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%)',
+              border: '1px solid rgba(255, 255, 255, 0.06)',
+              borderRadius: '16px',
+              padding: '16px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '6px'
+            }}>
+              <span style={{ fontSize: '11px', fontWeight: 900, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                {language === 'EN' ? 'HOW TO PLAY' : 'JAK GRAĆ'}
+              </span>
+              <span style={{ fontSize: '12.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.5' }}>
+                {getGameModeDescription(gameMode, language)}
+              </span>
             </div>
-          </div>
-        ) : gameMode === 'LIPS' ? (
-          <div className="glass flex-col gap-md">
-            <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
-              <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
-              Zasady Gry: Usta Usta 🎧
-            </h3>
-            
-            <div className="flex-col gap-sm" style={{ marginTop: '8px' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: '#ef4444' }}>⚠️ WYMAGANE SŁUCHAWKI</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Upewnij się, że jeden z graczy ma na uszach słuchawki z puszczoną bardzo głośną muzyką, tak aby nie słyszał podpowiadającego partnera.</span>
-              </div>
 
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Czytanie z Ruchu Warg</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Drugi gracz stara się podpowiedzieć wyświetlone hasło wyłącznie poprzez wyraźne wypowiadanie słów bez używania głosu lub szeptem.</span>
-              </div>
-
-              <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Bez krzyczenia</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Podpowiadający nie może krzyczeć ani gestykulować rękami. Gracz w słuchawkach musi odgadnąć jak najwięcej haseł.</span>
-              </div>
-            </div>
-          </div>
-        ) : gameMode === 'SPY' ? (
-          <div className="glass flex-col gap-md">
-            <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
-              <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
-              Zasady Gry: Szpieg
-            </h3>
-            
             <div className="flex-col gap-sm" style={{ marginTop: '8px' }}>
               <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Losowanie Ról</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Każdy gracz po kolei sprawdza kartę na telefonie. Wszyscy widzą tę samą lokalizację, z wyjątkiem jednej osoby – Szpiega.</span>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>
+                  {language === 'EN' ? 'Role Drawing' : 'Losowanie Ról'}
+                </span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>
+                  {language === 'EN' 
+                    ? 'Each player takes turns checking their card on the phone. Everyone sees the same location except the Spy.' 
+                    : 'Każdy gracz po kolei sprawdza kartę na telefonie. Wszyscy widzą tę samą lokalizację, z wyjątkiem jednej osoby – Szpiega.'}
+                </span>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Pytania od Mistrza Gry</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Na ekranie pojawia się pytanie dla każdego gracza. Odpowiadacie na nie na głos. Szpieg musi improwizować.</span>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>
+                  {language === 'EN' ? 'Questions' : 'Pytania od Mistrza Gry'}
+                </span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>
+                  {language === 'EN' 
+                    ? 'A question appears on screen for each player. Answer out loud. The spy must improvise.' 
+                    : 'Na ekranie pojawia się pytanie dla każdego gracza. Odpowiadacie na nie na głos. Szpieg musi improwizować.'}
+                </span>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>Typowanie Szpiega</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Po rundzie pytań typujecie, kto jest Szpiegiem.</span>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: 'white' }}>
+                  {language === 'EN' ? 'Voting for the Spy' : 'Typowanie Szpiega'}
+                </span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>
+                  {language === 'EN' 
+                    ? 'After the question rounds, vote on who you think the Spy is.' 
+                    : 'Po rundzie pytań typujecie, kto jest Szpiegiem.'}
+                </span>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.2) 100%)', border: '1px solid rgba(16, 185, 129, 0.2)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: '#10b981' }}>Punktacja</span>
-                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>Wskazanie prawdziwego szpiega = **+5 punktów** dla Waszej drużyny. Pomyłka = **+5 punktów** dla rywali.</span>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: '#10b981' }}>
+                  {language === 'EN' ? 'Scoring' : 'Punktacja'}
+                </span>
+                <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>
+                  {language === 'EN' 
+                    ? 'Identifying the correct spy = +5 points for your team. Mistake = +5 points for opponents.' 
+                    : 'Wskazanie prawdziwego szpiega = +5 punktów dla Waszej drużyny. Pomyłka = +5 punktów dla rywali.'}
+                </span>
               </div>
             </div>
           </div>
@@ -341,7 +420,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
             <div className="setup-box-header" style={{ marginBottom: 0 }}>
               <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white', display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
-                Rundy Teleturnieju
+                {language === 'EN' ? 'Tournament Rounds' : 'Rundy Teleturnieju'}
               </h3>
               <div className="flex-row gap-xs items-center">
                 <button
@@ -378,7 +457,7 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
               {tournamentGames.map((game, index) => (
                 <div key={index} style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '14px', gap: '6px' }}>
                   <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--primary))' }}>
-                    RUNDA {index + 1}
+                    {language === 'EN' ? 'ROUND' : 'RUNDA'} {index + 1}
                   </span>
                   <select
                     value={game}
@@ -391,21 +470,25 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
                     className="select-field"
                     style={{ padding: '8px 12px', fontSize: '13px', borderRadius: '10px', height: '38px', backgroundPosition: 'right 8px center' }}
                   >
-                    <option value="MARYLIN_MONROE">Marylin Monroe (Tabu)</option>
-                    <option value="NINE_SECONDS">9,5 Sekundy (Pytania)</option>
-                    <option value="REVERSE_CHARADES">Odwrócone Kalambury (Czynności)</option>
-                    <option value="LIPS">Usta Usta (Ruch warg)</option>
-                    <option value="P_GAME">Gra na P</option>
+                    <option value="MARYLIN_MONROE">{language === 'EN' ? 'Marilyn Monroe (Taboo)' : 'Marylin Monroe (Tabu)'}</option>
+                    <option value="NINE_SECONDS">{language === 'EN' ? '9.5 Seconds (Questions)' : '9,5 Sekundy (Pytania)'}</option>
+                    <option value="REVERSE_CHARADES">{language === 'EN' ? 'Reverse Charades (Actions)' : 'Odwrócone Kalambury (Czynności)'}</option>
+                    <option value="LIPS">{language === 'EN' ? 'Lips (Lip movements)' : 'Usta Usta (Ruch warg)'}</option>
+                    <option value="P_GAME">{language === 'EN' ? 'P Game' : 'Gra na P'}</option>
                   </select>
                 </div>
               ))}
 
               {/* Fixed Final Round */}
               <div style={{ display: 'flex', flexDirection: 'column', padding: '12px', background: 'linear-gradient(135deg, rgba(255, 60, 0, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%)', border: '1px solid rgba(255, 60, 0, 0.2)', borderRadius: '14px', gap: '4px' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>RUNDA FINAŁOWA</span>
-                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>Bomba! 💣</span>
+                <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>
+                  {language === 'EN' ? 'FINAL ROUND' : 'RUNDA FINAŁOWA'}
+                </span>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: 'white' }}>{language === 'EN' ? 'Bomb! 💣' : 'Bomba! 💣'}</span>
                 <span style={{ fontSize: '11.5px', color: 'hsl(var(--text-secondary))' }}>
-                  Opisywanie haseł bez słów zakazanych i przekazywanie tykającej bomby. Przegrywająca para ma dodatkowe utrudnienie czasowe w postaci opóźnienia kart!
+                  {language === 'EN' 
+                    ? 'Describing words without forbidden words and passing a ticking bomb. The losing team gets a time handicap with card delays!' 
+                    : 'Opisywanie haseł bez słów zakazanych i przekazywanie tykającej bomby. Przegrywająca para ma dodatkowe utrudnienie czasowe w postaci opóźnienia kart!'}
                 </span>
               </div>
             </div>
@@ -414,83 +497,198 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode 
           <div className="glass flex-col gap-md">
             <h3 className="setup-box-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 0 }}>
               <Settings size={18} style={{ color: 'hsl(var(--primary))' }} />
-              Zasady Gry
+              {language === 'EN' ? 'Game Rules' : 'Zasady Gry'}
             </h3>
 
-            {/* Round Time */}
-            <div className="form-group">
-              <label className="form-label">Czas rundy</label>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
-                {(gameMode === 'NINE_SECONDS' 
-                  ? [5, 7.5, 9.5, 12, 15] 
-                  : gameMode === 'REVERSE_CHARADES' 
-                  ? [60, 90, 120, 150, 180] 
-                  : [30, 45, 60, 90, 120]
-                ).map((t) => (
-                  <button
-                    key={t}
-                    onClick={() => { playClick(); setRoundTime(t); }}
-                    className={`btn ${roundTime === t ? 'btn-primary' : 'btn-secondary'}`}
-                    style={{ padding: '8px 4px', fontSize: '11px', borderRadius: '10px' }}
-                  >
-                    {t}s
-                  </button>
-                ))}
-              </div>
+            {/* Game Description Banner */}
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%)',
+              border: '1px solid rgba(255, 255, 255, 0.06)',
+              borderRadius: '16px',
+              padding: '16px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '6px'
+            }}>
+              <span style={{ fontSize: '11px', fontWeight: 900, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                {language === 'EN' ? 'HOW TO PLAY' : 'JAK GRAĆ'}
+              </span>
+              <span style={{ fontSize: '12.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.5' }}>
+                {getGameModeDescription(gameMode, language)}
+              </span>
             </div>
 
-            {/* Points to Win */}
-            <div className="form-group">
-              <label className="form-label">Punkty do wygranej</label>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
-                {[10, 15, 20, 25, 30].map((pts) => (
-                  <button
-                    key={pts}
-                    onClick={() => { playClick(); setPointsToWin(pts); }}
-                    className={`btn ${pointsToWin === pts ? 'btn-primary' : 'btn-secondary'}`}
-                    style={{ padding: '8px 4px', fontSize: '11px', borderRadius: '10px' }}
-                  >
-                    {pts}
-                  </button>
-                ))}
+            {gameMode === 'LIPS' && (
+              <div style={{
+                marginTop: '-4px',
+                padding: '10px 14px',
+                background: 'rgba(239, 68, 68, 0.1)',
+                border: '1px solid rgba(239, 68, 68, 0.2)',
+                borderRadius: '12px',
+                fontSize: '11.5px',
+                fontWeight: 700,
+                color: '#ef4444',
+                lineHeight: '1.4'
+              }}>
+                {getTranslation('lipsInstructions', language)}
               </div>
-            </div>
+            )}
 
-            {/* Categories Selector */}
-            <div className="form-group">
-              <label className="form-label">Kategorie haseł</label>
-              {loading ? (
-                <div style={{ fontSize: '13px', color: 'hsl(var(--text-muted))' }}>Wczytywanie kategorii...</div>
-              ) : categories.length === 0 ? (
-                <div style={{ fontSize: '13px', color: '#ff5c75', fontWeight: 600 }}>Brak haseł w bazie! Dodaj hasła najpierw.</div>
-              ) : (
-                <div className="category-tags-group">
-                  {categories.map((cat) => {
-                    const isSelected = selectedCategories.includes(cat);
-                    return (
+            {/* Advanced Settings Toggle Button */}
+            {gameMode !== 'WAVELENGTH' && (
+              <button
+                type="button"
+                onClick={() => { playClick(); setShowAdvanced(!showAdvanced); }}
+                className="btn btn-secondary"
+                style={{
+                  padding: '10px 16px',
+                  fontSize: '12.5px',
+                  borderRadius: '12px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  width: '100%',
+                  marginTop: '4px',
+                  border: '1px solid rgba(255, 255, 255, 0.05)'
+                }}
+              >
+                <Settings size={14} style={{ color: 'hsl(var(--secondary))' }} />
+                <span>{getTranslation('advancedSettings', language)}</span>
+                <span style={{ fontSize: '10px', marginLeft: 'auto', opacity: 0.6 }}>{showAdvanced ? '▲' : '▼'}</span>
+              </button>
+            )}
+
+            {/* Collapsible Area */}
+            {(showAdvanced || gameMode === 'WAVELENGTH') && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '4px', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '16px' }}>
+                {/* Round Time */}
+                <div className="form-group">
+                  <label className="form-label">{language === 'EN' ? 'Round time' : 'Czas rundy'}</label>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+                    {(gameMode === 'NINE_SECONDS' 
+                      ? [5, 7.5, 9.5, 12, 15] 
+                      : gameMode === 'REVERSE_CHARADES' 
+                      ? [60, 90, 120, 150, 180] 
+                      : [30, 45, 60, 90, 120]
+                    ).map((t) => (
                       <button
-                        key={cat}
-                        onClick={() => toggleCategory(cat)}
-                        className={`category-tag-btn ${isSelected ? 'active' : ''}`}
+                        key={t}
+                        onClick={() => { playClick(); setRoundTime(t); }}
+                        className={`btn ${roundTime === t ? 'btn-primary' : 'btn-secondary'}`}
+                        style={{ padding: '8px 4px', fontSize: '11px', borderRadius: '10px' }}
                       >
-                        {isSelected && <Check size={12} />}
-                        {cat}
+                        {t}s
                       </button>
-                    );
-                  })}
+                    ))}
+                  </div>
                 </div>
-              )}
-            </div>
+
+                {/* Points to Win */}
+                <div className="form-group">
+                  <label className="form-label">{language === 'EN' ? 'Points to win' : 'Punkty do wygranej'}</label>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+                    {[10, 15, 20, 25, 30].map((pts) => (
+                      <button
+                        key={pts}
+                        onClick={() => { playClick(); setPointsToWin(pts); }}
+                        className={`btn ${pointsToWin === pts ? 'btn-primary' : 'btn-secondary'}`}
+                        style={{ padding: '8px 4px', fontSize: '11px', borderRadius: '10px' }}
+                      >
+                        {pts}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Categories Selector */}
+                {gameMode !== 'WAVELENGTH' && (
+                  <div className="form-group">
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                      <label className="form-label" style={{ marginBottom: 0 }}>
+                        {language === 'EN' ? 'Word categories' : 'Kategorie haseł'}
+                      </label>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          playClick();
+                          if (selectedCategories.length === categories.length) {
+                            setSelectedCategories([categories[0]]);
+                          } else {
+                            setSelectedCategories([...categories]);
+                          }
+                        }}
+                        className="btn-link"
+                        style={{
+                          fontSize: '12.5px',
+                          color: 'hsl(var(--primary))',
+                          background: 'none',
+                          border: 'none',
+                          cursor: 'pointer',
+                          fontWeight: 700,
+                          padding: 0
+                        }}
+                      >
+                        {selectedCategories.length === categories.length 
+                          ? getTranslation('deselectAll', language) 
+                          : getTranslation('selectAll', language)}
+                      </button>
+                    </div>
+
+                    {loading ? (
+                      <div style={{ fontSize: '13px', color: 'hsl(var(--text-muted))' }}>
+                        {language === 'EN' ? 'Loading categories...' : 'Wczytywanie kategorii...'}
+                      </div>
+                    ) : categories.length === 0 ? (
+                      <div style={{ fontSize: '13px', color: '#ff5c75', fontWeight: 600 }}>
+                        {language === 'EN' ? 'No words in the database! Please add some first.' : 'Brak haseł w bazie! Dodaj hasła najpierw.'}
+                      </div>
+                    ) : (
+                      <div className="category-grid">
+                        {categories.map((cat) => {
+                          const isSelected = selectedCategories.includes(cat);
+                          const emoji = getCategoryEmoji(cat);
+                          const count = categoryCounts[cat] || 0;
+                          return (
+                            <div
+                              key={cat}
+                              onClick={() => toggleCategory(cat)}
+                              className={`category-item ${isSelected ? 'active' : ''}`}
+                            >
+                              <div className="category-checkbox">
+                                {isSelected && <Check size={12} strokeWidth={3} />}
+                              </div>
+                              <span style={{ fontSize: '13px' }}>{emoji} {cat}</span>
+                              <span className="category-count">{count}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         )}
       </div>
 
       <button
         onClick={handleStartGame}
-        className="btn btn-primary w-full"
-        style={{ marginTop: '24px', padding: '16px', fontSize: '16px', borderRadius: '16px' }}
+        className="btn btn-primary"
+        style={{
+          width: '100%',
+          maxWidth: '450px',
+          marginTop: '36px',
+          padding: '16px 32px',
+          fontSize: '16px',
+          borderRadius: '16px',
+          background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 50%, #ffd700 100%)',
+          border: 'none',
+          boxShadow: '0 6px 20px rgba(255, 60, 0, 0.3)',
+        }}
       >
-        ROZPOCZNIJ ROZGRYWKĘ
+        {getTranslation('startGameBtn', language)}
       </button>
     </div>
   );

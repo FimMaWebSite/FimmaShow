@@ -2,14 +2,16 @@ import React from 'react';
 import { Trophy, Home, RefreshCw, Star } from 'lucide-react';
 import { Team } from './GameSetup';
 import { playClick } from '../utils/audio';
+import { Language } from '../data/translations';
 
 interface WinnerScreenProps {
   teams: Team[];
   onRestart: () => void;
   onHome: () => void;
+  language: Language;
 }
 
-export const WinnerScreen: React.FC<WinnerScreenProps> = ({ teams, onRestart, onHome }) => {
+export const WinnerScreen: React.FC<WinnerScreenProps> = ({ teams, onRestart, onHome, language }) => {
   const handleRestartClick = () => {
     playClick();
     onRestart();
@@ -65,7 +67,7 @@ export const WinnerScreen: React.FC<WinnerScreenProps> = ({ teams, onRestart, on
 
         <div className="flex-container" style={{ gap: '8px' }}>
           <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-            Zwycięzca Teleturnieju!
+            {language === 'EN' ? 'Tournament Winner!' : 'Zwycięzca Teleturnieju!'}
           </span>
           <h2 
             className="winner-banner"
@@ -76,7 +78,7 @@ export const WinnerScreen: React.FC<WinnerScreenProps> = ({ teams, onRestart, on
           <div className="flex-row gap-xs items-center" style={{ background: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '6px 14px', borderRadius: '12px', marginTop: '4px' }}>
             <Star size={14} style={{ color: 'hsl(var(--secondary))' }} fill="currentColor" />
             <span style={{ fontWeight: 800, fontSize: '15px', color: 'white' }}>
-              Wynik końcowy: {winner.points} pkt
+              {language === 'EN' ? `Final Score: ${winner.points} pts` : `Wynik końcowy: ${winner.points} pkt`}
             </span>
           </div>
         </div>
@@ -84,7 +86,7 @@ export const WinnerScreen: React.FC<WinnerScreenProps> = ({ teams, onRestart, on
         {/* Final Rankings */}
         <div className="glass w-full flex-col" style={{ padding: '24px', minWidth: '320px' }}>
           <h4 style={{ fontSize: '11px', fontWeight: 700, color: 'hsl(var(--text-muted))', textTransform: 'uppercase', letterSpacing: '0.05em', borderBottom: '1px solid rgba(255, 255, 255, 0.05)', paddingBottom: '10px', marginBottom: '16px' }}>
-            Klasyfikacja Końcowa
+            {language === 'EN' ? 'Final Standings' : 'Klasyfikacja Końcowa'}
           </h4>
           <div className="leaderboard-list">
             {sortedTeams.map((team, index) => {
@@ -108,7 +110,7 @@ export const WinnerScreen: React.FC<WinnerScreenProps> = ({ teams, onRestart, on
                       {team.name}
                     </span>
                   </div>
-                  <span style={{ fontWeight: 900, color: 'white', fontSize: '14px' }}>{team.points} pkt</span>
+                  <span style={{ fontWeight: 900, color: 'white', fontSize: '14px' }}>{team.points} {language === 'EN' ? 'pts' : 'pkt'}</span>
                 </div>
               );
             })}
@@ -123,7 +125,7 @@ export const WinnerScreen: React.FC<WinnerScreenProps> = ({ teams, onRestart, on
             style={{ flexGrow: 1, padding: '14px', fontSize: '13px' }}
           >
             <RefreshCw size={14} />
-            ZAGRAJ PONOWNIE
+            {language === 'EN' ? 'PLAY AGAIN' : 'ZAGRAJ PONOWNIE'}
           </button>
           <button
             onClick={handleHomeClick}
@@ -131,7 +133,7 @@ export const WinnerScreen: React.FC<WinnerScreenProps> = ({ teams, onRestart, on
             style={{ flexGrow: 1, padding: '14px', fontSize: '13px' }}
           >
             <Home size={14} />
-            STRONA GŁÓWNA
+            {language === 'EN' ? 'MAIN MENU' : 'STRONA GŁÓWNA'}
           </button>
         </div>
       </div>

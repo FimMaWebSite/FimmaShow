@@ -6,11 +6,26 @@ import { GameBoard } from './components/GameBoard';
 import { Scoreboard } from './components/Scoreboard';
 import { WinnerScreen } from './components/WinnerScreen';
 import { Tv, Sparkles } from 'lucide-react';
+import { KeepAwake } from '@capacitor-community/keep-awake';
+import { App as CapApp } from '@capacitor/app';
 
-import { DEFAULT_WORDS, DEFAULT_NINE_SECONDS, DEFAULT_REVERSE_CHARADES, DEFAULT_BOMB_WORDS, DEFAULT_P_GAME, DEFAULT_SPY_LOCATIONS, DEFAULT_SPY_QUESTIONS, DEFAULT_LIPS_WORDS } from './data/defaultData';
+import {
+  DEFAULT_WORDS,
+  DEFAULT_NINE_SECONDS,
+  DEFAULT_REVERSE_CHARADES,
+  DEFAULT_BOMB_WORDS,
+  DEFAULT_P_GAME,
+  DEFAULT_SPY_LOCATIONS,
+  DEFAULT_SPY_QUESTIONS,
+  DEFAULT_LIPS_WORDS,
+  DEFAULT_REVOLVER_WORDS,
+  DEFAULT_WAVELENGTH_WORDS
+} from './data/defaultDataMulti';
+import { Language, getTranslation } from './data/translations';
+import { WavelengthGame } from './components/WavelengthGame';
 
 type GameView = 'DASHBOARD' | 'DATABASE' | 'SETUP' | 'GAMEPLAY' | 'SCOREBOARD' | 'WINNER';
-export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME' | 'SPY' | 'LIPS' | 'REVOLVER';
+export type GameMode = 'MARYLIN_MONROE' | 'NINE_SECONDS' | 'REVERSE_CHARADES' | 'TOURNAMENT' | 'BOMB' | 'P_GAME' | 'SPY' | 'LIPS' | 'REVOLVER' | 'WAVELENGTH';
 
 const ADMIN_HASH = '1ec3e7600872b0de2ac7d720cb588b63f1979dce3e19eb0eda2c3698dd773b77';
 
@@ -24,12 +39,26 @@ async function sha256(message: string): Promise<string> {
 
 const App: React.FC = () => {
   const [view, setView] = useState<GameView>('DASHBOARD');
+  const [language, setLanguage] = useState<Language>(() => {
+    const saved = localStorage.getItem('fimma_language') as Language;
+    const validLangs: Language[] = ['PL', 'EN', 'DE', 'ES', 'FR', 'IT'];
+    return (validLangs.includes(saved) ? saved : 'PL');
+  });
+
+  const handleSetLanguage = (lang: Language) => {
+    setLanguage(lang);
+    localStorage.setItem('fimma_language', lang);
+  };
+
+  const [playedWordsHistory, setPlayedWordsHistory] = useState<string[]>([]);
+
   const [showAdminModal, setShowAdminModal] = useState(false);
   const [adminInput, setAdminInput] = useState('');
   const [adminError, setAdminError] = useState(false);
   const [adminShake, setAdminShake] = useState(false);
   const [selectedGame, setSelectedGame] = useState<GameMode>('MARYLIN_MONROE');
-  const [availableWords, setAvailableWords] = useState<any[]>([]);
+  const [sessionWords, setSessionWords] = useState<any[]>([]);
+  const [sessionWordIndex, setSessionWordIndex] = useState(0);
   const [teams, setTeams] = useState<Team[]>([]);
   const [settings, setSettings] = useState<GameSettings>({
     roundTime: 60,
@@ -57,87 +86,129 @@ const App: React.FC = () => {
     return selectedGame;
   };
 
-  // Initialize localStorage if empty
+  // Initialize localStorage if empty or outdated
   const initLocalDb = () => {
-    const oldNineSec = localStorage.getItem('fimma_nine_seconds');
-    if (oldNineSec && oldNineSec.includes('Wymień 3')) {
-      localStorage.removeItem('fimma_nine_seconds');
-    }
-    const oldCharades = localStorage.getItem('fimma_reverse_charades');
-    if (oldCharades && oldCharades.includes('Picie gorącej kawy')) {
-      localStorage.removeItem('fimma_reverse_charades');
-    }
+    const checkAndUpgrade = (key: string, defaultData: any[]) => {
+      const stored = localStorage.getItem(key);
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed) && (parsed.length < defaultData.length * 0.8 || parsed.length > defaultData.length * 1.5)) {
+            localStorage.setItem(key, JSON.stringify(defaultData));
+          }
+        } catch {
+          localStorage.setItem(key, JSON.stringify(defaultData));
+        }
+      } else {
+        localStorage.setItem(key, JSON.stringify(defaultData));
+      }
+    };
 
-    if (!localStorage.getItem('fimma_words')) {
-      localStorage.setItem('fimma_words', JSON.stringify(DEFAULT_WORDS));
-    }
-    if (!localStorage.getItem('fimma_nine_seconds')) {
-      localStorage.setItem('fimma_nine_seconds', JSON.stringify(DEFAULT_NINE_SECONDS));
-    }
-    if (!localStorage.getItem('fimma_reverse_charades')) {
-      localStorage.setItem('fimma_reverse_charades', JSON.stringify(DEFAULT_REVERSE_CHARADES));
-    }
-    if (!localStorage.getItem('fimma_bomb_words')) {
-      localStorage.setItem('fimma_bomb_words', JSON.stringify(DEFAULT_BOMB_WORDS));
-    }
-    if (!localStorage.getItem('fimma_p_game')) {
-      localStorage.setItem('fimma_p_game', JSON.stringify(DEFAULT_P_GAME));
-    }
-    if (!localStorage.getItem('fimma_spy_locations')) {
-      localStorage.setItem('fimma_spy_locations', JSON.stringify(DEFAULT_SPY_LOCATIONS));
-    }
-    if (!localStorage.getItem('fimma_spy_questions')) {
-      localStorage.setItem('fimma_spy_questions', JSON.stringify(DEFAULT_SPY_QUESTIONS));
-    }
-    if (!localStorage.getItem('fimma_lips_words')) {
-      localStorage.setItem('fimma_lips_words', JSON.stringify(DEFAULT_LIPS_WORDS));
-    }
+    const langs: Language[] = ['PL', 'EN', 'DE', 'ES', 'FR', 'IT'];
+    langs.forEach(lang => {
+      checkAndUpgrade(`fimma_words_${lang}`, DEFAULT_WORDS[lang] || []);
+      checkAndUpgrade(`fimma_nine_seconds_${lang}`, DEFAULT_NINE_SECONDS[lang] || []);
+      checkAndUpgrade(`fimma_reverse_charades_${lang}`, DEFAULT_REVERSE_CHARADES[lang] || []);
+      checkAndUpgrade(`fimma_bomb_words_${lang}`, DEFAULT_BOMB_WORDS[lang] || []);
+      checkAndUpgrade(`fimma_p_game_${lang}`, DEFAULT_P_GAME[lang] || []);
+      checkAndUpgrade(`fimma_spy_locations_${lang}`, DEFAULT_SPY_LOCATIONS[lang] || []);
+      checkAndUpgrade(`fimma_spy_questions_${lang}`, DEFAULT_SPY_QUESTIONS[lang] || []);
+      checkAndUpgrade(`fimma_lips_words_${lang}`, DEFAULT_LIPS_WORDS[lang] || []);
+      checkAndUpgrade(`fimma_revolver_words_${lang}`, DEFAULT_REVOLVER_WORDS[lang] || []);
+      checkAndUpgrade(`fimma_wavelength_words_${lang}`, DEFAULT_WAVELENGTH_WORDS[lang] || []);
+    });
   };
 
   useEffect(() => {
     initLocalDb();
-  }, []);
+  }, [language]);
 
-  // Fetch database items based on selected game
-  const loadGameData = (game: GameMode) => {
+  const getWordsSynchronously = (game: GameMode): any[] => {
     initLocalDb();
-    let localKey = 'fimma_words';
-    let defaultBackup: any[] = DEFAULT_WORDS;
+    let localKey = `fimma_words_${language}`;
+    let defaultBackup: any[] = DEFAULT_WORDS[language] || DEFAULT_WORDS['PL'] || [];
 
     if (game === 'NINE_SECONDS') {
-      localKey = 'fimma_nine_seconds';
-      defaultBackup = DEFAULT_NINE_SECONDS;
+      localKey = `fimma_nine_seconds_${language}`;
+      defaultBackup = DEFAULT_NINE_SECONDS[language] || DEFAULT_NINE_SECONDS['PL'] || [];
     } else if (game === 'REVERSE_CHARADES') {
-      localKey = 'fimma_reverse_charades';
-      defaultBackup = DEFAULT_REVERSE_CHARADES;
+      localKey = `fimma_reverse_charades_${language}`;
+      defaultBackup = DEFAULT_REVERSE_CHARADES[language] || DEFAULT_REVERSE_CHARADES['PL'] || [];
     } else if (game === 'BOMB') {
-      localKey = 'fimma_bomb_words';
-      defaultBackup = DEFAULT_BOMB_WORDS;
+      localKey = `fimma_bomb_words_${language}`;
+      defaultBackup = DEFAULT_BOMB_WORDS[language] || DEFAULT_BOMB_WORDS['PL'] || [];
     } else if (game === 'P_GAME') {
-      localKey = 'fimma_p_game';
-      defaultBackup = DEFAULT_P_GAME;
+      localKey = `fimma_p_game_${language}`;
+      defaultBackup = DEFAULT_P_GAME[language] || DEFAULT_P_GAME['PL'] || [];
     } else if (game === 'SPY') {
-      localKey = 'fimma_spy_locations';
-      defaultBackup = DEFAULT_SPY_LOCATIONS;
+      localKey = `fimma_spy_locations_${language}`;
+      defaultBackup = DEFAULT_SPY_LOCATIONS[language] || DEFAULT_SPY_LOCATIONS['PL'] || [];
     } else if (game === 'LIPS') {
-      localKey = 'fimma_lips_words';
-      defaultBackup = DEFAULT_LIPS_WORDS;
+      localKey = `fimma_lips_words_${language}`;
+      defaultBackup = DEFAULT_LIPS_WORDS[language] || DEFAULT_LIPS_WORDS['PL'] || [];
     } else if (game === 'REVOLVER') {
-      localKey = 'fimma_words';
-      defaultBackup = DEFAULT_WORDS;
+      localKey = `fimma_revolver_words_${language}`;
+      defaultBackup = DEFAULT_REVOLVER_WORDS[language] || DEFAULT_REVOLVER_WORDS['PL'] || [];
+    } else if (game === 'WAVELENGTH') {
+      localKey = `fimma_wavelength_words_${language}`;
+      defaultBackup = DEFAULT_WAVELENGTH_WORDS[language] || DEFAULT_WAVELENGTH_WORDS['PL'] || [];
     }
 
-    // Load from local storage
     const localData = localStorage.getItem(localKey);
     if (localData) {
       try {
-        setAvailableWords(JSON.parse(localData));
+        const parsed = JSON.parse(localData);
+        return Array.isArray(parsed) ? parsed : defaultBackup;
       } catch {
-        setAvailableWords(defaultBackup);
+        return defaultBackup;
       }
-    } else {
-      setAvailableWords(defaultBackup);
     }
+    return defaultBackup;
+  };
+
+  // Fetch database items based on selected game
+  const loadGameData = (game: GameMode) => {
+    getWordsSynchronously(game);
+  };
+
+  const initializeSessionWords = (wordsList: any[], mode: GameMode, selectedCats: string[]) => {
+    let filtered = wordsList;
+    if (mode !== 'SPY' && selectedCats && selectedCats.length > 0) {
+      filtered = wordsList.filter(w => selectedCats.includes(w.category));
+    }
+
+    // Deduplicate to prevent word repetitions during the game session
+    const seen = new Set();
+    const unique = [];
+    for (const item of filtered) {
+      const text = (item.word || item.question || '').trim().toLowerCase();
+      if (!seen.has(text)) {
+        seen.add(text);
+        unique.push(item);
+      }
+    }
+
+    // Filter out recently played words (from global session history)
+    let pool = unique;
+    const recentlyPlayed = playedWordsHistory.map(w => w.toLowerCase());
+    const filteredPool = unique.filter(item => {
+      const text = (item.word || item.question || '').trim().toLowerCase();
+      return !recentlyPlayed.includes(text);
+    });
+
+    // Only apply filter if we have a reasonable amount of words left
+    if (filteredPool.length >= 8) {
+      pool = filteredPool;
+    }
+
+    // Fisher-Yates Shuffle
+    const shuffled = [...pool];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    setSessionWords(shuffled);
+    setSessionWordIndex(0);
   };
 
   useEffect(() => {
@@ -145,6 +216,33 @@ const App: React.FC = () => {
       loadGameData(selectedGame);
     }
   }, [selectedGame]);
+
+  // Keep screen awake during gameplay
+  useEffect(() => {
+    if (view === 'GAMEPLAY') {
+      KeepAwake.keepAwake().catch((err) => {
+        console.warn('KeepAwake failed', err);
+      });
+    } else {
+      KeepAwake.allowSleep().catch((err) => {
+        console.warn('AllowSleep failed', err);
+      });
+    }
+  }, [view]);
+
+  // Handle Android back button
+  useEffect(() => {
+    const handleBackButton = CapApp.addListener('backButton', () => {
+      if (view === 'DASHBOARD') {
+        CapApp.exitApp();
+      } else {
+        setView('DASHBOARD');
+      }
+    });
+    return () => {
+      handleBackButton.then((listener) => listener.remove());
+    };
+  }, [view]);
 
   const handleStartSetup = (game: GameMode) => {
     setSelectedGame(game);
@@ -160,6 +258,9 @@ const App: React.FC = () => {
 
   const handleStartGame = (teamsSetup: Team[], gameSettings: GameSettings) => {
     setTeams(teamsSetup);
+    let activeGameMode = selectedGame;
+    let cats = gameSettings.selectedCategories;
+
     if (selectedGame === 'TOURNAMENT') {
       const customGames = gameSettings.tournamentGames || ['MARYLIN_MONROE', 'NINE_SECONDS', 'REVERSE_CHARADES'];
       const firstGame = customGames[0] || 'MARYLIN_MONROE';
@@ -176,18 +277,53 @@ const App: React.FC = () => {
       setTournamentRound(1);
       setTournamentTurnsPlayedInRound(0);
       loadGameData(firstGame);
+      activeGameMode = firstGame;
+      cats = [];
     } else {
       setSettings(gameSettings);
     }
     setCurrentTeamIndex(0);
+
+    const loadedWords = getWordsSynchronously(activeGameMode);
+    initializeSessionWords(loadedWords, activeGameMode, cats);
+
     setView('GAMEPLAY');
   };
 
-  const handleRoundEnd = (pointsEarned: number, loserTeamId?: number, opponentPointsEarned?: number) => {
+  const handleRoundEnd = (pointsEarned: number, loserTeamId?: number, opponentPointsEarned?: number, winnerTeamId?: number) => {
+    // Add words played during this round to history to prevent duplicates
+    if (sessionWords && sessionWords.length > 0) {
+      const playedInRound = sessionWords.slice(0, sessionWordIndex + 1).map(item => item.word || item.question || '');
+      setPlayedWordsHistory(prev => {
+        const next = [...prev, ...playedInRound];
+        if (next.length > 100) return next.slice(next.length - 100);
+        return next;
+      });
+    }
+
     setLastPointsEarned(pointsEarned);
     setLastTeamIndex(currentTeamIndex);
 
     let updatedTeams = [...teams];
+
+    if (winnerTeamId !== undefined) {
+      updatedTeams = teams.map((team) => {
+        if (team.id === winnerTeamId) {
+          return { ...team, points: team.points + pointsEarned };
+        }
+        return team;
+      });
+      setTeams(updatedTeams);
+
+      const winnerIdx = teams.findIndex(t => t.id === winnerTeamId);
+      setLastPointsEarned(pointsEarned);
+      setLastTeamIndex(winnerIdx >= 0 ? winnerIdx : currentTeamIndex);
+
+      const nextIdx = (currentTeamIndex + 1) % teams.length;
+      setCurrentTeamIndex(nextIdx);
+      setView('SCOREBOARD');
+      return;
+    }
 
     if (selectedGame === 'SPY') {
       updatedTeams = teams.map((team, idx) => {
@@ -300,6 +436,9 @@ const App: React.FC = () => {
       }));
 
       loadGameData(nextMode);
+
+      const loadedWords = getWordsSynchronously(nextMode);
+      initializeSessionWords(loadedWords, nextMode, []);
     }
     setView('GAMEPLAY');
   };
@@ -308,6 +447,9 @@ const App: React.FC = () => {
     const resetTeams = teams.map(t => ({ ...t, points: 0 }));
     setTeams(resetTeams);
     setCurrentTeamIndex(0);
+    let mode = selectedGame;
+    let cats = settings.selectedCategories;
+
     if (selectedGame === 'TOURNAMENT') {
       setTournamentRound(1);
       setTournamentTurnsPlayedInRound(0);
@@ -317,7 +459,13 @@ const App: React.FC = () => {
         selectedCategories: []
       });
       loadGameData('MARYLIN_MONROE');
+      mode = 'MARYLIN_MONROE';
+      cats = [];
     }
+
+    const loadedWords = getWordsSynchronously(mode);
+    initializeSessionWords(loadedWords, mode, cats);
+
     setView('GAMEPLAY');
   };
 
@@ -336,13 +484,15 @@ const App: React.FC = () => {
                 <Tv size={18} />
               </div>
               <span className="nav-logo-text">
-                Fimma Show
+                FimmaShow
               </span>
             </div>
 
-            <div className="nav-badge">
-              <Sparkles size={11} style={{ color: '#ffd700' }} fill="currentColor" />
-              <span>Wersja 1.0</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div className="nav-badge">
+                <Sparkles size={11} style={{ color: '#ffd700' }} fill="currentColor" />
+                <span>{getTranslation('version', language)} 1.4</span>
+              </div>
             </div>
           </div>
         </header>
@@ -358,6 +508,8 @@ const App: React.FC = () => {
               setAdminError(false);
               setShowAdminModal(true);
             }} 
+            language={language}
+            onSetLanguage={handleSetLanguage}
           />
         )}
         {/* Admin Password Modal */}
@@ -465,6 +617,7 @@ const App: React.FC = () => {
         {view === 'DATABASE' && (
           <DatabaseEditor 
             onBack={() => setView('DASHBOARD')} 
+            language={language}
           />
         )}
         {view === 'SETUP' && (
@@ -472,17 +625,30 @@ const App: React.FC = () => {
             onBack={() => setView('DASHBOARD')} 
             onStart={handleStartGame} 
             gameMode={selectedGame}
+            language={language}
           />
         )}
-        {view === 'GAMEPLAY' && (
+        {view === 'GAMEPLAY' && getActiveGameMode() === 'WAVELENGTH' ? (
+          <WavelengthGame
+            language={language}
+            teams={teams}
+            currentTeamIndex={currentTeamIndex}
+            onNextTurn={(pointsEarned) => {
+              handleRoundEnd(pointsEarned);
+            }}
+          />
+        ) : view === 'GAMEPLAY' && (
           <GameBoard
             currentTeam={teams[currentTeamIndex]}
             settings={settings}
-            availableWords={availableWords}
             onRoundEnd={handleRoundEnd}
             onExitGame={handleHome}
             gameMode={getActiveGameMode()}
             teams={teams}
+            shuffledWords={sessionWords}
+            currentWordIndex={sessionWordIndex}
+            onWordIndexChange={setSessionWordIndex}
+            language={language}
           />
         )}
         {view === 'SCOREBOARD' && (
@@ -495,6 +661,7 @@ const App: React.FC = () => {
             isTournament={selectedGame === 'TOURNAMENT'}
             tournamentRound={tournamentRound}
             isRoundOver={tournamentTurnsPlayedInRound === teams.length * 2}
+            language={language}
           />
         )}
         {view === 'WINNER' && (
@@ -502,6 +669,7 @@ const App: React.FC = () => {
             teams={teams}
             onRestart={handleRestart}
             onHome={handleHome}
+            language={language}
           />
         )}
       </main>

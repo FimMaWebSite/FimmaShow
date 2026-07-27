@@ -1,4 +1,5 @@
 // Web Audio API Synthesizer for game sound effects to avoid external assets
+import { Haptics, ImpactStyle } from '@capacitor/haptics';
 
 let audioCtx: AudioContext | null = null;
 
@@ -38,6 +39,7 @@ const playTone = (freq: number, type: OscillatorType, duration: number, gainStar
 
 export const playClick = () => {
   playTone(800, 'sine', 0.08, 0.1);
+  Haptics.impact({ style: ImpactStyle.Light }).catch(() => {});
 };
 
 export const playCorrect = () => {
@@ -46,6 +48,7 @@ export const playCorrect = () => {
   notes.forEach((freq, index) => {
     playTone(freq, 'triangle', 0.3, 0.15, index * 0.08);
   });
+  Haptics.vibrate({ duration: 120 }).catch(() => {});
 };
 
 export const playWrong = () => {
@@ -70,11 +73,13 @@ export const playWrong = () => {
   } catch (e) {
     console.error('Audio playback failed', e);
   }
+  Haptics.vibrate({ duration: 300 }).catch(() => {});
 };
 
 export const playTick = () => {
   // High clicky tick sound
   playTone(1200, 'sine', 0.03, 0.05);
+  Haptics.impact({ style: ImpactStyle.Light }).catch(() => {});
 };
 
 export const playBuzzer = () => {
@@ -107,6 +112,7 @@ export const playBuzzer = () => {
   } catch (e) {
     console.error('Audio playback failed', e);
   }
+  Haptics.vibrate({ duration: 500 }).catch(() => {});
 };
 
 export const playExplosion = () => {
@@ -158,4 +164,5 @@ export const playExplosion = () => {
   } catch (e) {
     console.error('Audio playback failed', e);
   }
+  Haptics.vibrate({ duration: 900 }).catch(() => {});
 };

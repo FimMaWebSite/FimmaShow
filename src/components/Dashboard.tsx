@@ -1,14 +1,28 @@
-import React from 'react';
-import { Play, Database, Sparkles, Tv, Timer, Users } from 'lucide-react';
+import React, { useState } from 'react';
+import { Play, Database, Sparkles, Tv } from 'lucide-react';
 import { playClick } from '../utils/audio';
 import { GameMode } from '../App';
+import { Language, getTranslation } from '../data/translations';
+
+import logoMarilyn from '../assets/logo_marilyn.png';
+import logoNinesec from '../assets/logo_ninesec.png';
+import logoReverse from '../assets/logo_reverse.png';
+import logoPgame from '../assets/logo_pgame.png';
+import logoSpy from '../assets/logo_spy.png';
+import logoLips from '../assets/logo_lips.png';
+import logoRevolver from '../assets/logo_revolver.png';
+import logoWavelength from '../assets/logo_wavelength.png';
 
 interface DashboardProps {
   onStartGame: (game: GameMode) => void;
   onOpenDatabase: () => void;
+  language: Language;
+  onSetLanguage: (lang: Language) => void;
 }
 
-export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabase }) => {
+export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabase, language, onSetLanguage }) => {
+  const [showRoadmap, setShowRoadmap] = useState(false);
+
   const handleStartMarilyn = () => {
     playClick();
     onStartGame('MARYLIN_MONROE');
@@ -44,6 +58,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
     onStartGame('REVOLVER');
   };
 
+  const handleStartWavelength = () => {
+    playClick();
+    onStartGame('WAVELENGTH');
+  };
+
   const handleDbClick = () => {
     playClick();
     onOpenDatabase();
@@ -52,35 +71,90 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
   return (
     <div className="flex-container max-w-xl mx-auto fade-in" style={{ padding: '36px 12px', minHeight: '85vh', justifyContent: 'center' }}>
       {/* Hero Header */}
-      <div className="flex-container" style={{ textAlign: 'center', marginBottom: '48px', position: 'relative' }}>
+      <div className="flex-container" style={{ textAlign: 'center', marginBottom: '32px', position: 'relative' }}>
         <div className="floating" style={{ position: 'absolute', top: '-40px', color: 'rgba(249, 115, 22, 0.1)', zIndex: 0 }}>
           <Tv size={120} />
         </div>
         <div className="flex-row gap-xs items-center" style={{ marginBottom: '12px', position: 'relative', zIndex: 1 }}>
           <Sparkles className="text-gold" style={{ color: 'hsl(var(--secondary))', animation: 'pulse 2s infinite' }} size={20} />
           <span style={{ fontSize: '12px', fontWeight: 800, letterSpacing: '0.1em', color: 'hsl(var(--secondary))', textTransform: 'uppercase' }}>
-            Najlepsze Teleturnieje YT
+            {getTranslation('heroBadge', language)}
           </span>
           <Sparkles className="text-gold" style={{ color: 'hsl(var(--secondary))', animation: 'pulse 2s infinite' }} size={20} />
         </div>
         <h1 style={{ fontSize: 'clamp(2.8rem, 7vw, 5.5rem)', fontWeight: 900, textTransform: 'uppercase', lineHeight: 1.05, background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 50%, #ffd700 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', letterSpacing: '-0.02em', position: 'relative', zIndex: 1 }}>
-          Fimma Show
+          FimmaShow
         </h1>
+        <div style={{ fontSize: '13px', fontWeight: 900, letterSpacing: '0.25em', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', marginTop: '6px', zIndex: 1 }}>
+          {getTranslation('partyGame', language)}
+        </div>
         <p style={{ fontSize: 'clamp(0.95rem, 2vw, 1.25rem)', color: 'hsl(var(--text-secondary))', marginTop: '16px', maxWidth: '500px', fontWeight: 500, position: 'relative', zIndex: 1 }}>
-          Zagraj ze znajomymi w gry inspirowane kultowym programem <span style={{ color: 'hsl(var(--primary))', fontWeight: 700 }}>Zero Presji</span>!
+          {getTranslation('heroDesc', language)}
         </p>
       </div>
 
+      {/* Dashboard Language Bar */}
+      <div className="dashboard-lang-bar fade-in" style={{ marginBottom: '40px', zIndex: 1 }}>
+        <span style={{ fontSize: '11px', fontWeight: 800, color: 'hsl(var(--text-muted))', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          {getTranslation('selectLanguage', language)}
+        </span>
+        <div className="lang-switcher-container" style={{ marginTop: '10px', display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+          <button
+            onClick={() => { playClick(); onSetLanguage('PL'); }}
+            className={`lang-btn ${language === 'PL' ? 'active' : ''}`}
+            style={{ padding: '6px 12px', fontSize: '12px' }}
+          >
+            <span className="flag" style={{ fontSize: '14px', marginRight: '4px' }}>🇵🇱</span>
+            <span>PL</span>
+          </button>
+          <button
+            onClick={() => { playClick(); onSetLanguage('EN'); }}
+            className={`lang-btn ${language === 'EN' ? 'active' : ''}`}
+            style={{ padding: '6px 12px', fontSize: '12px' }}
+          >
+            <span className="flag" style={{ fontSize: '14px', marginRight: '4px' }}>🇬🇧</span>
+            <span>EN</span>
+          </button>
+          <button
+            onClick={() => { playClick(); onSetLanguage('DE'); }}
+            className={`lang-btn ${language === 'DE' ? 'active' : ''}`}
+            style={{ padding: '6px 12px', fontSize: '12px' }}
+          >
+            <span className="flag" style={{ fontSize: '14px', marginRight: '4px' }}>🇩🇪</span>
+            <span>DE</span>
+          </button>
+          <button
+            onClick={() => { playClick(); onSetLanguage('ES'); }}
+            className={`lang-btn ${language === 'ES' ? 'active' : ''}`}
+            style={{ padding: '6px 12px', fontSize: '12px' }}
+          >
+            <span className="flag" style={{ fontSize: '14px', marginRight: '4px' }}>🇪🇸</span>
+            <span>ES</span>
+          </button>
+          <button
+            onClick={() => { playClick(); onSetLanguage('FR'); }}
+            className={`lang-btn ${language === 'FR' ? 'active' : ''}`}
+            style={{ padding: '6px 12px', fontSize: '12px' }}
+          >
+            <span className="flag" style={{ fontSize: '14px', marginRight: '4px' }}>🇫🇷</span>
+            <span>FR</span>
+          </button>
+          <button
+            onClick={() => { playClick(); onSetLanguage('IT'); }}
+            className={`lang-btn ${language === 'IT' ? 'active' : ''}`}
+            style={{ padding: '6px 12px', fontSize: '12px' }}
+          >
+            <span className="flag" style={{ fontSize: '14px', marginRight: '4px' }}>🇮🇹</span>
+            <span>IT</span>
+          </button>
+        </div>
+      </div>
+
       {/* Tournament Banner / Card */}
-      <div className="glass glass-interactive portal-card w-full" style={{
-        position: 'relative',
-        overflow: 'hidden',
-        background: 'linear-gradient(135deg, rgba(255, 60, 0, 0.08) 0%, rgba(255, 215, 0, 0.08) 100%)',
-        border: '2px solid hsl(var(--primary))',
-        boxShadow: '0 0 25px rgba(255, 60, 0, 0.2)',
-        marginBottom: '32px',
+      <div className="portal-card card-tournament w-full" style={{
         padding: '28px',
-        minHeight: 'auto'
+        minHeight: 'auto',
+        marginBottom: '32px'
       }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <div className="badge-active" style={{
@@ -90,13 +164,13 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
             letterSpacing: '0.1em',
             boxShadow: '0 4px 10px rgba(255, 60, 0, 0.3)'
           }}>
-            TRYB TELETURNIEJU (POLECANY)
+            {getTranslation('tournamentBadge', language)}
           </div>
           <h2 style={{ fontSize: '26px', fontWeight: 900, color: 'white', textTransform: 'uppercase', marginTop: '8px' }}>
-            WIELKI SHOW: FIMMA SHOW
+            {getTranslation('tournamentTitle', language)}
           </h2>
           <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6', maxWidth: '600px' }}>
-            Rozegraj pełny turniej składający się z 3 rund eliminacyjnych (Marylin Monroe, 9,5 Sekundy, Odwrócone Kalambury) i weź udział w ekscytującym finale z wybuchową Bombą!
+            {getTranslation('tournamentDesc', language)}
           </p>
         </div>
         <button
@@ -104,188 +178,330 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
             playClick();
             onStartGame('TOURNAMENT');
           }}
-          className="btn btn-primary"
+          className="btn-tournament"
           style={{
             alignSelf: 'flex-start',
-            marginTop: '20px',
-            padding: '12px 28px',
-            fontSize: '15px',
-            background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 50%, #ffd700 100%)',
-            border: 'none',
-            boxShadow: '0 6px 18px rgba(255, 60, 0, 0.3)',
+            marginTop: '20px'
           }}
         >
           <Play size={16} fill="currentColor" />
-          ROZPOCZNIJ TELETURNIEJ
+          {getTranslation('startTournament', language)}
         </button>
       </div>
 
       {/* Game Selection Grid */}
-      <div className="grid-layout grid-2 gap-lg w-full" style={{ marginBottom: '48px' }}>
-        {/* Active Game: Marylin Monroe */}
-        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden' }}>
-          <div>
-            <div className="badge-active" style={{ marginBottom: '16px' }}>
-              AKTYWNA GRA
-            </div>
-            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
-              Marylin Monroe
-            </h3>
-            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-              Kultowa gra w tabu. Opisuj postacie swojej drużynie unikając 3 słów zakazanych. Szybkość i spryt są kluczem do zwycięstwa!
-            </p>
-          </div>
-          <button
-            onClick={handleStartMarilyn}
-            className="btn btn-primary"
-            style={{ width: '100%', marginTop: '24px' }}
-          >
-            <Play size={16} fill="currentColor" />
-            GRAJ TERAZ
-          </button>
+      <div 
+        style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(2, 1fr)', 
+          gap: '12px', 
+          width: '100%',
+          marginBottom: '48px' 
+        }}
+      >
+        {/* Tile: Marylin Monroe */}
+        <div 
+          onClick={handleStartMarilyn} 
+          className="game-tile tile-marilyn" 
+          style={{ padding: 0, position: 'relative', overflow: 'hidden' }}
+        >
+          <img 
+            src={logoMarilyn} 
+            alt="Marilyn" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%)',
+            zIndex: 1
+          }} />
+          <span className="tile-badge" style={{ zIndex: 2, top: '10px', right: '10px' }}>{getTranslation('activeGame', language)}</span>
+          <span className="tile-title" style={{ zIndex: 2, position: 'absolute', bottom: '12px', left: '8px', right: '8px', textAlign: 'center', fontSize: '13.5px', fontWeight: 800 }}>
+            {getTranslation('marilynTitle', language)}
+          </span>
         </div>
 
-        {/* Active Game: 9,5 Sekundy */}
-        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(249, 115, 22, 0.05) 100%)', border: '1px solid rgba(249, 115, 22, 0.15)' }}>
-          <div>
-            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #ff3c00, #ff8c00)', color: 'white' }}>
-              NOWA GRA
-            </div>
-            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
-              9,5 Sekundy
-            </h3>
-            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-              Masz tylko 9.5 sekundy, aby udzielić jak najwięcej poprawnych odpowiedzi na wylosowane pytanie. Presja czasu gwarantowana!
-            </p>
-          </div>
-          <button
-            onClick={handleStartNineSeconds}
-            className="btn btn-primary"
-            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 100%)', border: 'none' }}
-          >
-            <Timer size={16} />
-            GRAJ TERAZ
-          </button>
+        {/* Tile: 9,5 Sekundy */}
+        <div 
+          onClick={handleStartNineSeconds} 
+          className="game-tile tile-nine-sec" 
+          style={{ padding: 0, position: 'relative', overflow: 'hidden' }}
+        >
+          <img 
+            src={logoNinesec} 
+            alt="9.5s" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%)',
+            zIndex: 1
+          }} />
+          <span className="tile-badge" style={{ zIndex: 2, top: '10px', right: '10px' }}>{getTranslation('newGame', language)}</span>
+          <span className="tile-title" style={{ zIndex: 2, position: 'absolute', bottom: '12px', left: '8px', right: '8px', textAlign: 'center', fontSize: '13.5px', fontWeight: 800 }}>
+            {getTranslation('nineSecTitle', language)}
+          </span>
         </div>
 
-        {/* Active Game: Odwrócone Kalambury */}
-        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%)', border: '1px solid rgba(139, 92, 246, 0.15)' }}>
-          <div>
-            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #8b5cf6, #ec4899)', color: 'white' }}>
-              NOWA GRA
-            </div>
-            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
-              Odwrócone Kalambury
-            </h3>
-            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-              Pokazuj hasła-czynności partnerowi, nakazując mu wykonywanie pantomimy! Masz na to dwie minuty.
-            </p>
-          </div>
-          <button
-            onClick={handleStartReverseCharades}
-            className="btn btn-primary"
-            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)', border: 'none' }}
-          >
-            <Users size={16} />
-            GRAJ TERAZ
-          </button>
+        {/* Tile: Odwrócone Kalambury */}
+        <div 
+          onClick={handleStartReverseCharades} 
+          className="game-tile tile-reverse" 
+          style={{ padding: 0, position: 'relative', overflow: 'hidden' }}
+        >
+          <img 
+            src={logoReverse} 
+            alt="Reverse" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%)',
+            zIndex: 1
+          }} />
+          <span className="tile-badge" style={{ zIndex: 2, top: '10px', right: '10px' }}>{getTranslation('newGame', language)}</span>
+          <span className="tile-title" style={{ zIndex: 2, position: 'absolute', bottom: '12px', left: '8px', right: '8px', textAlign: 'center', fontSize: '13.5px', fontWeight: 800 }}>
+            {getTranslation('reverseCharadesTitle', language)}
+          </span>
         </div>
 
-        {/* Active Game: Gra na P */}
-        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(234, 179, 8, 0.05) 100%)', border: '1px solid rgba(234, 179, 8, 0.15)' }}>
-          <div>
-            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #ff3c00, #eab308)', color: 'white' }}>
-              NOWA GRA
-            </div>
-            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
-              Gra na P
-            </h3>
-            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-              Odgadnij jak najwięcej haseł. Twój partner podpowiada Ci, używając wyłącznie słów zaczynających się na literę „P”!
-            </p>
-          </div>
-          <button
-            onClick={handleStartPGame}
-            className="btn btn-primary"
-            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ff3c00 0%, #eab308 100%)', border: 'none' }}
-          >
-            <Play size={16} fill="currentColor" />
-            GRAJ TERAZ
-          </button>
+        {/* Tile: Gra na P */}
+        <div 
+          onClick={handleStartPGame} 
+          className="game-tile tile-pgame" 
+          style={{ padding: 0, position: 'relative', overflow: 'hidden' }}
+        >
+          <img 
+            src={logoPgame} 
+            alt="P Game" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%)',
+            zIndex: 1
+          }} />
+          <span className="tile-badge" style={{ zIndex: 2, top: '10px', right: '10px' }}>{getTranslation('newGame', language)}</span>
+          <span className="tile-title" style={{ zIndex: 2, position: 'absolute', bottom: '12px', left: '8px', right: '8px', textAlign: 'center', fontSize: '13.5px', fontWeight: 800 }}>
+            {getTranslation('pGameTitle', language)}
+          </span>
         </div>
 
-        {/* Active Game: Szpieg */}
-        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(30, 30, 35, 0.5) 0%, rgba(10, 10, 10, 0.7) 100%)', border: '1px solid rgba(255, 255, 255, 0.12)' }}>
-          <div>
-            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #111111, #333333)', color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}>
-              NOWA GRA
-            </div>
-            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
-              Szpieg
-            </h3>
-            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-              Wszyscy gracze znają tę samą lokalizację, z wyjątkiem jednej osoby – Szpiega. Odpowiadajcie na pytania i zdemaskujcie szpiega!
-            </p>
-          </div>
-          <button
-            onClick={handleStartSpy}
-            className="btn btn-primary"
-            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #222 0%, #000 100%)', border: '1px solid rgba(255,255,255,0.1)' }}
-          >
-            <Play size={16} fill="currentColor" />
-            GRAJ TERAZ
-          </button>
+        {/* Tile: Szpieg */}
+        <div 
+          onClick={handleStartSpy} 
+          className="game-tile tile-spy" 
+          style={{ padding: 0, position: 'relative', overflow: 'hidden' }}
+        >
+          <img 
+            src={logoSpy} 
+            alt="Spy" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%)',
+            zIndex: 1
+          }} />
+          <span className="tile-badge" style={{ zIndex: 2, top: '10px', right: '10px' }}>{getTranslation('newGame', language)}</span>
+          <span className="tile-title" style={{ zIndex: 2, position: 'absolute', bottom: '12px', left: '8px', right: '8px', textAlign: 'center', fontSize: '13.5px', fontWeight: 800 }}>
+            {getTranslation('spyTitle', language)}
+          </span>
         </div>
 
-        {/* Active Game: Usta Usta */}
-        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(219, 39, 119, 0.05) 100%)', border: '1px solid rgba(219, 39, 119, 0.15)' }}>
-          <div>
-            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #ef4444, #db2777)', color: 'white' }}>
-              NOWA GRA 🎧
-            </div>
-            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
-              Usta Usta
-            </h3>
-            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-              Czytanie z ruchu warg! Jeden gracz zakłada słuchawki z głośną muzyką, a partner próbuje przekazać mu hasło ruchem ust.
-            </p>
-            <div style={{ marginTop: '10px', padding: '8px 12px', background: 'rgba(239, 68, 68, 0.12)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '10px', fontSize: '11px', fontWeight: 700, color: '#ef4444' }}>
-              ⚠️ Wymagane słuchawki z głośną muzyką!
-            </div>
-          </div>
-          <button
-            onClick={handleStartLips}
-            className="btn btn-primary"
-            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #ef4444 0%, #db2777 100%)', border: 'none' }}
-          >
-            <Play size={16} fill="currentColor" />
-            GRAJ TERAZ
-          </button>
+        {/* Tile: Usta Usta */}
+        <div 
+          onClick={handleStartLips} 
+          className="game-tile tile-lips" 
+          style={{ padding: 0, position: 'relative', overflow: 'hidden' }}
+        >
+          <img 
+            src={logoLips} 
+            alt="Lips" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%)',
+            zIndex: 1
+          }} />
+          <span className="tile-badge" style={{ zIndex: 2, top: '10px', right: '10px' }}>{getTranslation('newGame', language)}</span>
+          <span className="tile-title" style={{ zIndex: 2, position: 'absolute', bottom: '12px', left: '8px', right: '8px', textAlign: 'center', fontSize: '13.5px', fontWeight: 800 }}>
+            {getTranslation('lipsTitle', language)}
+          </span>
         </div>
 
-        {/* Active Game: Rewolwer */}
-        <div className="glass glass-interactive portal-card" style={{ position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(120, 53, 15, 0.15) 0%, rgba(180, 83, 9, 0.1) 100%)', border: '1px solid rgba(180, 83, 9, 0.25)' }}>
-          <div>
-            <div className="badge-active" style={{ marginBottom: '16px', background: 'linear-gradient(90deg, #78350f, #b45309)', color: '#fde68a' }}>
-              NOWA GRA 🔫
-            </div>
-            <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white', marginBottom: '8px' }}>
-              Rewolwer
-            </h3>
-            <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-              Jedno hasło, które zna jeden gracz z każdej drużyny. Drużyny na zmianę dają jedną wskazówkę słowem – punkt dla tej, która odgadnie!
-            </p>
-          </div>
-          <button
-            onClick={handleStartRevolver}
-            className="btn btn-primary"
-            style={{ width: '100%', marginTop: '24px', background: 'linear-gradient(135deg, #78350f 0%, #b45309 100%)', border: 'none' }}
-          >
-            <Play size={16} fill="currentColor" />
-            GRAJ TERAZ
-          </button>
+        {/* Tile: Rewolwer */}
+        <div 
+          onClick={handleStartRevolver} 
+          className="game-tile tile-revolver" 
+          style={{ padding: 0, position: 'relative', overflow: 'hidden' }}
+        >
+          <img 
+            src={logoRevolver} 
+            alt="Revolver" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%)',
+            zIndex: 1
+          }} />
+          <span className="tile-badge" style={{ zIndex: 2, top: '10px', right: '10px' }}>{getTranslation('newGame', language)}</span>
+          <span className="tile-title" style={{ zIndex: 2, position: 'absolute', bottom: '12px', left: '8px', right: '8px', textAlign: 'center', fontSize: '13.5px', fontWeight: 800 }}>
+            {getTranslation('revolverTitle', language)}
+          </span>
         </div>
 
+        {/* Tile: Wavelength */}
+        <div 
+          onClick={handleStartWavelength} 
+          className="game-tile tile-wavelength" 
+          style={{ padding: 0, position: 'relative', overflow: 'hidden' }}
+        >
+          <img 
+            src={logoWavelength} 
+            alt="Wavelength" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0 }} 
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%)',
+            zIndex: 1
+          }} />
+          <span className="tile-badge" style={{ zIndex: 2, top: '10px', right: '10px' }}>{getTranslation('newGame', language)}</span>
+          <span className="tile-title" style={{ zIndex: 2, position: 'absolute', bottom: '12px', left: '8px', right: '8px', textAlign: 'center', fontSize: '13.5px', fontWeight: 800 }}>
+            {getTranslation('wavelengthTitle', language)}
+          </span>
+        </div>
+      </div>
+
+      {/* Roadmap Collapsible Card */}
+      <div 
+        className="glass" 
+        style={{ 
+          width: '100%', 
+          borderRadius: '20px', 
+          padding: '16px 20px', 
+          marginBottom: '20px', 
+          border: '1px solid rgba(255,255,255,0.08)',
+          textAlign: 'left'
+        }}
+      >
+        <div 
+          onClick={() => { playClick(); setShowRoadmap(!showRoadmap); }}
+          style={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center', 
+            cursor: 'pointer',
+            fontWeight: 800,
+            color: 'white',
+            fontSize: '14px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em'
+          }}
+        >
+          <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Sparkles size={16} style={{ color: 'hsl(var(--secondary))' }} />
+            {language === 'PL' ? 'Plan na wersję 1.5 🚀' : 'Plan for version 1.5 🚀'}
+          </span>
+          <span style={{ fontSize: '11px', opacity: 0.6 }}>{showRoadmap ? '▲' : '▼'}</span>
+        </div>
+
+        {showRoadmap && (
+          <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '14px', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '16px' }}>
+            {language === 'PL' ? (
+              <>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>🔊 Dźwięk i wibracje (Audio & Haptics)</span>
+                  <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    Dodanie haptycznych wibracji podczas fizycznego kręcenia pokrętłem w Wavelength oraz głośniejszych efektów dźwiękowych przy wybuchu Bomby i poprawnych odpowiedziach. Opcjonalna, klimatyczna muzyka w tle podczas tury.
+                  </span>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>🎮 Nowe tryby gier</span>
+                  <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    <strong>Mind Meld (Złączenie umysłów):</strong> Bardzo popularna, kooperacyjna gra imprezowa, w której para graczy na "trzy-cztery" wypowiada słowo i próbuje zbliżyć swoje skojarzenia, aż wypowiedzą dokładnie to samo słowo.<br />
+                    <strong>Kto to powiedział? (Cytaty / Fakty):</strong> Quiz z zabawnymi historiami i cytatami wprowadzonymi przez graczy o sobie nawzajem.
+                  </span>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>📊 Statystyki i Tytuły</span>
+                  <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    Zapisywanie wyników poprzednich gier w pamięci urządzenia. Przyznawanie humorystycznych nagród i tytułów na ekranie podsumowania (np. "Najszybszy rewolwerowiec", "Sprytny Szpieg").
+                  </span>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>☁️ Własne hasła w chmurze (Cloud Decks)</span>
+                  <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    Tworzenie własnych talii haseł przez graczy i pobieranie ich na inne telefony za pomocą prostego kodu PIN (np. hasła urodzinowe).
+                  </span>
+                </div>
+              </>
+            ) : (
+              <>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>🔊 Audio & Haptics</span>
+                  <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    Adding haptic vibrations during Wavelength dial turning, louder sound effects for Bomb explosions and correct answers, and optional ambient background music during turns.
+                  </span>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>🎮 New Game Modes</span>
+                  <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    <strong>Mind Meld:</strong> Cooperative game where two players say a word on 3-2-1 and try to match skojarzenia until they say the exact same word.<br />
+                    <strong>Who Said That? (Quotes / Facts):</strong> Quiz with funny stories and quotes entered by players about each other.
+                  </span>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>📊 Stats & Titles</span>
+                  <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    Saving history of previous games in device memory and awarding funny titles on the summary screen (e.g., "Fastest Gun", "Sly Spy").
+                  </span>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))' }}>☁️ Custom Cloud Decks</span>
+                  <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    Allowing players to create custom word decks and share/download them on other phones via a simple PIN code (e.g. birthday words).
+                  </span>
+                </div>
+              </>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Database Admin Button */}
@@ -295,7 +511,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onStartGame, onOpenDatabas
         style={{ padding: '12px 24px', borderRadius: '14px' }}
       >
         <Database size={16} style={{ color: 'hsl(var(--secondary))' }} />
-        Zarządzaj Bazą Haseł
+        {getTranslation('dbEditor', language)}
       </button>
     </div>
   );

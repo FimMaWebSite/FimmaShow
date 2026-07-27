@@ -4,32 +4,39 @@ import { Play, Pause, Check, X, AlertTriangle, HelpCircle, ArrowLeft } from 'luc
 import { Team, GameSettings } from './GameSetup';
 import { playClick, playCorrect, playWrong, playTick, playBuzzer, playExplosion } from '../utils/audio';
 import { GameMode } from '../App';
+import { DEFAULT_SPY_QUESTIONS } from '../data/defaultDataMulti';
+import { Language, getTranslation } from '../data/translations';
 
 interface GameBoardProps {
   currentTeam: Team;
   settings: GameSettings;
-  availableWords: any[];
-  onRoundEnd: (teamPointsThisRound: number, loserTeamId?: number, opponentPointsEarned?: number) => void;
+  onRoundEnd: (teamPointsThisRound: number, loserTeamId?: number, opponentPointsEarned?: number, winnerTeamId?: number) => void;
   onExitGame: () => void;
   gameMode: GameMode;
   teams?: Team[];
+  shuffledWords: any[];
+  currentWordIndex: number;
+  onWordIndexChange: (index: number) => void;
+  language: Language;
 }
 
 export const GameBoard: React.FC<GameBoardProps> = ({
   currentTeam,
   settings,
-  availableWords,
   onRoundEnd,
   onExitGame,
   gameMode,
   teams,
+  shuffledWords,
+  currentWordIndex,
+  onWordIndexChange,
+  language,
 }) => {
-  const [shuffledWords, setShuffledWords] = useState<any[]>([]);
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isReadyPhase, setIsReadyPhase] = useState(true);
   const [timeLeft, setTimeLeft] = useState(settings.roundTime);
   const [pointsThisRound, setPointsThisRound] = useState(0);
+  const [isTimeUp, setIsTimeUp] = useState(false);
 
   // Bomb state variables
   const [activeTeamIdx, setActiveTeamIdx] = useState(0);
@@ -62,7 +69,6 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
   // Revolver game state
   const [revolverPhase, setRevolverPhase] = useState<'SETUP' | 'REVEAL' | 'PLAYING' | 'WON' | 'ALL_FAILED'>('SETUP');
-  const [revolverWordIdx, _setRevolverWordIdx] = useState(0);
   const [revolverTeamTurnIdx, setRevolverTeamTurnIdx] = useState(0);
   const [revolverWordRevealed, setRevolverWordRevealed] = useState(false);
   const [revolverFailedTeams, setRevolverFailedTeams] = useState<number[]>([]);
@@ -92,20 +98,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     }
   }, [gameMode, teams]);
 
-  // Filter and shuffle items on mount
-  useEffect(() => {
-    let filtered = availableWords;
-    if (gameMode !== 'BOMB' && gameMode !== 'SPY' && gameMode !== 'LIPS' && gameMode !== 'REVOLVER' && settings.selectedCategories && settings.selectedCategories.length > 0) {
-      filtered = availableWords.filter(w => settings.selectedCategories.includes(w.category));
-    }
-    // Fisher-Yates Shuffle
-    const shuffled = [...filtered];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    setShuffledWords(shuffled);
-  }, [availableWords, settings.selectedCategories, gameMode]);
+
 
   // Normal Timer logic (runs at 100ms interval for non-Bomb modes)
   useEffect(() => {
@@ -124,7 +117,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               setNineSecFinished(true);
             } else {
               // Automatically complete the round after a short delay
+              setIsTimeUp(true);
               setTimeout(() => {
+                nextWord();
                 onRoundEnd(pointsThisRound);
               }, 1500);
             }
@@ -180,6 +175,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               hasExplodedRef.current = true;
               setIsExploded(true);
               playExplosion();
+              nextWord();
               setTimeout(() => {
                 onRoundEnd(0, teams ? teams[activeTeamIdx].id : undefined);
               }, 4000);
@@ -262,14 +258,16 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     }
   };
 
+  const currentWordIndexRef = useRef(currentWordIndex);
+  useEffect(() => {
+    currentWordIndexRef.current = currentWordIndex;
+  }, [currentWordIndex]);
+
   const nextWord = () => {
-    setCurrentWordIndex(prev => {
-      // Loop if we reach the end of the list
-      if (prev >= shuffledWords.length - 1) {
-        return 0;
-      }
-      return prev + 1;
-    });
+    if (shuffledWords.length === 0) return;
+    const latestIdx = currentWordIndexRef.current;
+    const nextIdx = latestIdx >= shuffledWords.length - 1 ? 0 : latestIdx + 1;
+    onWordIndexChange(nextIdx);
   };
 
   const triggerPopup = (value: string, type: 'plus' | 'minus') => {
@@ -298,7 +296,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   };
 
   const handleExitClick = () => {
-    if (window.confirm('Czy na pewno chcesz zakończyć grę i wrócić do menu?')) {
+    if (window.confirm(language === 'EN' ? 'Are you sure you want to end the game and return to the main menu?' : 'Czy na pewno chcesz zakończyć grę i wrócić do menu?')) {
       playClick();
       onExitGame();
     }
@@ -306,7 +304,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
   const startSpyGame = () => {
     // Select location
-    const location = shuffledWords.length > 0 ? shuffledWords[0].word : "Samolot";
+    const location = (shuffledWords.length > 0 && currentWordIndex < shuffledWords.length)
+      ? shuffledWords[currentWordIndex].word
+      : (shuffledWords.length > 0 ? shuffledWords[0].word : (language === 'EN' ? "Airplane" : "Samolot"));
     setSelectedLocation(location);
 
     // Total players = spyPlayerCount * 2 (e.g. 2 players per team = 4 players total)
@@ -317,20 +317,19 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     setSpyIndex(randomSpy);
 
     // Select questions
-    const localQuestions = localStorage.getItem('fimma_spy_questions');
-    const defaultQuestions = [
-      { "question": "Jakie dźwięki najczęściej pojawiają się w tym miejscu?" },
-      { "question": "Podaj 2 przykłady akcesoriów/przedmiotów w tym miejscu." },
-      { "question": "Co ludzie najczęściej tam robią?" },
-      { "question": "Jacy profesjonaliści tam pracują?" },
-      { "question": "Jak się ubieramy, idąc w to miejsce?" },
-      { "question": "Czy wstęp tam jest zazwyczaj płatny?" },
-      { "question": "Jaka pogoda lub pora dnia sprzyja wizycie w tym miejscu?" },
-      { "question": "Czego absolutnie nie wolno tam robić?" },
-      { "question": "Jaki jest główny cel wizyty w tym miejscu?" },
-      { "question": "Czy to miejsce jest zazwyczaj głośne czy ciche?" }
-    ];
-    const questionsDb = localQuestions ? JSON.parse(localQuestions) : defaultQuestions;
+    const localQuestions = localStorage.getItem(`fimma_spy_questions_${language}`);
+    const defaultQuestions = DEFAULT_SPY_QUESTIONS[language] || DEFAULT_SPY_QUESTIONS['PL'] || [];
+    let questionsDb = defaultQuestions;
+    if (localQuestions) {
+      try {
+        const parsed = JSON.parse(localQuestions);
+        if (Array.isArray(parsed)) {
+          questionsDb = parsed;
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
     const shuffledQ = [...questionsDb].sort(() => Math.random() - 0.5);
     
     // Assign questions for Round 1 and Round 2
@@ -352,20 +351,20 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   // Helper to resolve player name and team color for multiplayer SPY mode
   const getSpyPlayerName = (idx: number) => {
     if (!teams || teams.length < 2) {
-      return { name: `Gracz ${idx + 1}`, color: '#fff' };
+      return { name: language === 'EN' ? `Player ${idx + 1}` : `Gracz ${idx + 1}`, color: '#fff' };
     }
     const teamIdx = idx % 2; // alternates: 0 for Team A, 1 for Team B
     const playerNum = Math.floor(idx / 2) + 1;
     const team = teams[teamIdx];
     return {
-      name: `${team.name} - Gracz ${playerNum}`,
+      name: language === 'EN' ? `${team.name} - Player ${playerNum}` : `${team.name} - Gracz ${playerNum}`,
       color: team.color
     };
   };
 
   if (gameMode === 'REVOLVER') {
     const allTeams = teams || [currentTeam];
-    const revolverWord = shuffledWords[revolverWordIdx];
+    const revolverWord = shuffledWords[currentWordIndex];
 
     const startRevolver = () => {
       playClick();
@@ -393,10 +392,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
     const handleRevolverNext = (won: boolean) => {
       playClick();
+      nextWord();
       if (won) {
         const winnerTeam = allTeams[revolverWinnerIdx];
-        const isCurrentTeamWinner = winnerTeam.id === currentTeam.id;
-        onRoundEnd(isCurrentTeamWinner ? 1 : 0);
+        onRoundEnd(1, undefined, undefined, winnerTeam.id);
       } else {
         onRoundEnd(0);
       }
@@ -443,13 +442,13 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
           <button onClick={handleExitClick} className="btn btn-secondary" style={{ padding: '8px 14px', fontSize: '12px', borderRadius: '12px', color: '#ff5c75', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <ArrowLeft size={13} /> Powrót
+            <ArrowLeft size={13} /> {getTranslation('backBtn', language)}
           </button>
           <div style={{ fontSize: '22px', fontWeight: 900, color: '#fcd34d', letterSpacing: '0.05em' }}>
-            🔫 REWOLWER
+            🔫 {language === 'EN' ? 'REVOLVER' : 'REWOLWER'}
           </div>
           <div style={{ fontSize: '13px', fontWeight: 700, color: 'hsl(var(--text-secondary))' }}>
-            {allTeams.map(t => t.points).join(' – ')} pkt
+            {allTeams.map(t => t.points).join(' – ')} {language === 'EN' ? 'pts' : 'pkt'}
           </div>
         </div>
 
@@ -457,9 +456,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '28px', textAlign: 'center' }}>
             <div style={{ fontSize: '56px' }}>🔫</div>
             <div>
-              <div style={{ fontSize: '28px', fontWeight: 900, color: 'white', marginBottom: '12px' }}>Rewolwer</div>
+              <div style={{ fontSize: '28px', fontWeight: 900, color: 'white', marginBottom: '12px' }}>{language === 'EN' ? 'Revolver' : 'Rewolwer'}</div>
               <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', maxWidth: '360px', lineHeight: '1.7' }}>
-                Jedno hasło – drużyny dają po jednej wskazówce na zmianę. Kto odgadnie, zgarnia punkt!
+                {getTranslation('revolverDesc2', language)}
               </div>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
@@ -467,13 +466,13 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 <div key={i} className="revolver-team-pill" style={{ background: `${t.color}22`, border: `1px solid ${t.color}55` }}>
                   <div className="revolver-dot" style={{ background: t.color }} />
                   <span style={{ color: t.color }}>{t.name}</span>
-                  <span style={{ color: 'rgba(255,255,255,0.5)' }}>{t.points} pkt</span>
+                  <span style={{ color: 'rgba(255,255,255,0.5)' }}>{t.points} {language === 'EN' ? 'pts' : 'pkt'}</span>
                 </div>
               ))}
             </div>
             <button onClick={startRevolver} className="btn btn-primary" style={{ padding: '16px 40px', fontSize: '17px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}>
               <Play size={18} fill="currentColor" />
-              LOSUJ HASŁO
+              {language === 'EN' ? 'DRAW WORD' : 'LOSUJ HASŁO'}
             </button>
           </div>
         )}
@@ -481,7 +480,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         {revolverPhase === 'REVEAL' && revolverWord && (
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '24px', width: '100%' }}>
             <div style={{ fontSize: '14px', fontWeight: 700, color: 'hsl(var(--text-secondary))', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
-              Hasło rundy
+              {language === 'EN' ? 'Round Word' : 'Hasło rundy'}
             </div>
 
             {/* Word Card — tap to reveal */}
@@ -499,19 +498,21 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                       {revolverWord.category}
                     </div>
                   )}
-                  <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', marginTop: '10px' }}>Stuknij aby ukryć</div>
+                  <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', marginTop: '10px' }}>{language === 'EN' ? 'Tap to hide' : 'Stuknij aby ukryć'}</div>
                 </div>
               ) : (
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ fontSize: '42px', marginBottom: '12px' }}>🔒</div>
-                  <div style={{ fontSize: '15px', color: 'rgba(253, 230, 138, 0.7)', fontWeight: 700 }}>Stuknij aby odsłonić hasło</div>
-                  <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', marginTop: '8px' }}>Tylko podpowiadacze patrzą!</div>
+                  <div style={{ fontSize: '15px', color: 'rgba(253, 230, 138, 0.7)', fontWeight: 700 }}>{language === 'EN' ? 'Tap to reveal word' : 'Stuknij aby odsłonić hasło'}</div>
+                  <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', marginTop: '8px' }}>{language === 'EN' ? 'Only clue-givers look!' : 'Tylko podpowiadacze patrzą!'}</div>
                 </div>
               )}
             </div>
 
             <div style={{ fontSize: '13px', color: 'hsl(var(--text-secondary))', textAlign: 'center', maxWidth: '360px', lineHeight: '1.6' }}>
-              Każdy podpowiadacz (jedna osoba z drużyny) niech podejdzie i zapamięta hasło. Gracze-odgadujący odwracają wzrok!
+              {language === 'EN' 
+                ? 'Each clue-giver (one person per team) should come and memorize the word. Guessers look away!' 
+                : 'Każdy podpowiadacz (jedna osoba z drużyny) niech podejdzie i zapamięta hasło. Gracze-odgadujący odwracają wzrok!'}
             </div>
 
             <button
@@ -519,7 +520,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               className="btn btn-primary"
               style={{ padding: '14px 36px', fontSize: '15px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}
             >
-              Wszyscy zapamiętali → START
+              {language === 'EN' ? 'Everyone memorized → START' : 'Wszyscy zapamiętali → START'}
             </button>
           </div>
         )}
@@ -529,7 +530,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             {/* Active team indicator */}
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '12px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>
-                Teraz gra
+                {language === 'EN' ? 'Now playing' : 'Teraz gra'}
               </div>
               <div className="revolver-team-pill" style={{ fontSize: '18px', padding: '10px 24px', background: `${activeTeam.color}22`, border: `2px solid ${activeTeam.color}88` }}>
                 <div className="revolver-dot" style={{ background: activeTeam.color, width: '14px', height: '14px' }} />
@@ -540,17 +541,21 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             {/* Instruction */}
             <div className="glass" style={{ width: '100%', padding: '20px 24px', textAlign: 'center', borderRadius: '20px', background: 'rgba(255,255,255,0.03)' }}>
               <div style={{ fontSize: '15px', color: 'white', fontWeight: 800, marginBottom: '8px' }}>
-                Podpowiadacz z <span style={{ color: activeTeam.color }}>{activeTeam.name}</span> daje JEDNO słowo wskazówki
+                {language === 'EN' 
+                  ? <>Clue-giver from <span style={{ color: activeTeam.color }}>{activeTeam.name}</span> gives ONE word clue</>
+                  : <>Podpowiadacz z <span style={{ color: activeTeam.color }}>{activeTeam.name}</span> daje JEDNO słowo wskazówki</>}
               </div>
               <div style={{ fontSize: '12.5px', color: 'hsl(var(--text-secondary))', lineHeight: '1.6' }}>
-                Jeśli nie trafią — kolej przechodzi do następnej drużyny. Gra trwa aż ktoś odgadnie!
+                {language === 'EN' 
+                  ? 'If they miss - the turn passes to the next team. The game continues until someone guesses!'
+                  : 'Jeśli nie trafią — kolej przechodzi do następnej drużyny. Gra trwa aż ktoś odgadnie!'}
               </div>
             </div>
 
             {/* Clue counter */}
             {revolverFailedTeams.length > 0 && (
               <div style={{ fontSize: '12px', color: 'hsl(var(--text-secondary))', fontWeight: 600 }}>
-                Dano już wskazówek: {revolverFailedTeams.length} 🔫
+                {language === 'EN' ? 'Clues given so far: ' : 'Dano już wskazówek: '}{revolverFailedTeams.length} 🔫
               </div>
             )}
 
@@ -562,7 +567,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 style={{ flex: 2, padding: '18px', fontSize: '16px', background: 'linear-gradient(135deg, #16a34a, #15803d)', border: 'none', borderRadius: '18px' }}
               >
                 <Check size={20} />
-                Odgadli! ✅
+                {getTranslation('correctBtn', language)}
               </button>
               <button
                 onClick={handleRevolverFailed}
@@ -570,15 +575,15 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 style={{ flex: 2, padding: '18px', fontSize: '16px', borderRadius: '18px' }}
               >
                 <X size={20} />
-                Nie trafili →
+                {getTranslation('wrongBtn', language)} →
               </button>
             </div>
             {/* Skip word option */}
             <button
-              onClick={() => { playClick(); onRoundEnd(0); }}
+              onClick={() => { playClick(); nextWord(); onRoundEnd(0); }}
               style={{ fontSize: '12px', color: 'hsl(var(--text-secondary))', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline', padding: '4px' }}
             >
-              Pomiń hasło (brak punktów)
+              {getTranslation('skipBtn', language)}
             </button>
           </div>
         )}
@@ -588,14 +593,14 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             <div style={{ fontSize: '72px' }}>🎯</div>
             <div>
               <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
-                Odgadnięto!
+                {language === 'EN' ? 'Guessed!' : 'Odgadnięto!'}
               </div>
               <div style={{ fontSize: '36px', fontWeight: 900, color: '#fde68a', marginBottom: '8px' }}>
                 {revolverWord?.word}
               </div>
               <div className="revolver-team-pill" style={{ fontSize: '18px', padding: '10px 24px', background: `${winnerTeam.color}22`, border: `2px solid ${winnerTeam.color}88`, margin: '0 auto' }}>
                 <div className="revolver-dot" style={{ background: winnerTeam.color, width: '14px', height: '14px' }} />
-                <span style={{ color: winnerTeam.color, fontWeight: 900 }}>{winnerTeam.name} +1 pkt</span>
+                <span style={{ color: winnerTeam.color, fontWeight: 900 }}>{winnerTeam.name} +1 {language === 'EN' ? 'pts' : 'pkt'}</span>
               </div>
             </div>
             <button
@@ -603,7 +608,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               className="btn btn-primary"
               style={{ padding: '16px 40px', fontSize: '16px', background: 'linear-gradient(135deg, #78350f, #b45309)', border: 'none' }}
             >
-              Następna runda →
+              {language === 'EN' ? 'Next round →' : 'Następna runda →'}
             </button>
           </div>
         )}
@@ -663,15 +668,15 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         <div className="game-header-bar" style={{ borderColor: 'rgba(255, 255, 255, 0.1)', background: 'rgba(255, 255, 255, 0.02)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <button onClick={handleExitClick} className="btn btn-secondary" style={{ padding: '6px 12px', fontSize: '11px', borderRadius: '10px', color: '#ff5c75', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <ArrowLeft size={12} /> Powrót
+              <ArrowLeft size={12} /> {getTranslation('backBtn', language)}
             </button>
             <span style={{ fontSize: '12px', fontWeight: 900, color: 'white', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-              GRA: SZPIEG 🕵️‍♂️
+              {language === 'EN' ? 'GAME: SPY 🕵️‍♂️' : 'GRA: SZPIEG 🕵️‍♂️'}
             </span>
           </div>
           <div className="game-header-stats">
             <div className="stat-box">
-              <span className="stat-label">Typuje Drużyna</span>
+              <span className="stat-label">{language === 'EN' ? 'Voting Team' : 'Typuje Drużyna'}</span>
               <span className="stat-value" style={{ color: currentTeam.color }}>{currentTeam.name}</span>
             </div>
           </div>
@@ -682,9 +687,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           <div className="glass flex-col items-center" style={{ padding: '36px', textAlign: 'center', maxWidth: '500px', width: '100%', gap: '24px' }}>
             <div style={{ width: '80px', height: '80px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '40px' }}>🕵️‍♂️</div>
             <div className="flex-col gap-xs">
-              <h3 style={{ fontSize: '20px', fontWeight: 800, color: 'white' }}>LICZBA GRACZY NA DRUŻYNĘ</h3>
+              <h3 style={{ fontSize: '20px', fontWeight: 800, color: 'white' }}>{getTranslation('spyPlayerCountTitle', language)}</h3>
               <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))' }}>
-                W tej grze każda drużyna składa się z dokładnie 2 graczy.
+                {getTranslation('spyPlayerCountDesc', language)}
               </p>
             </div>
             
@@ -693,7 +698,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             </div>
 
             <p style={{ fontSize: '12px', color: 'hsl(var(--text-muted))' }}>
-              Łącznie graczy w grze: <strong>4</strong> (po 2 z {teams?.[0]?.name || 'Drużyny A'} i {teams?.[1]?.name || 'Drużyny B'})
+              {getTranslation('spyTotalPlayers', language)} <strong>{totalPlayers}</strong> ({language === 'EN' ? <>2 each from {teams?.[0]?.name || 'Team A'} and {teams?.[1]?.name || 'Team B'}</> : <>po 2 z {teams?.[0]?.name || 'Drużyny A'} i {teams?.[1]?.name || 'Drużyny B'}</>})
             </p>
 
             <button
@@ -701,7 +706,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               className="btn btn-primary w-full"
               style={{ padding: '16px', fontSize: '16px', background: 'linear-gradient(135deg, #333 0%, #111 100%)', border: '1px solid rgba(255,255,255,0.1)' }}
             >
-              ROZPOCZNIJ ROZDAWANIE RÓL
+              {getTranslation('spyStartRevealBtn', language)}
             </button>
           </div>
         )}
@@ -712,7 +717,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             <div className="spy-card-container">
               <div className="spy-card-inner">
                 <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--text-muted))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
-                  KROK {revealPlayerIdx + 1} Z {totalPlayers}
+                  {getTranslation('spyStepTitle', language)} {revealPlayerIdx + 1} {language === 'EN' ? 'OF' : 'Z'} {totalPlayers}
                 </span>
 
                 {!cardRevealed ? (
@@ -721,25 +726,25 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                       {activePlayerInfo.name}
                     </h2>
                     <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', marginBottom: '24px', maxWidth: '300px' }}>
-                      Weź telefon i kliknij przycisk poniżej, aby potajemnie sprawdzić swoją rolę.
+                      {getTranslation('spyRevealInstruction', language)}
                     </p>
                     <button
                       onClick={() => { playClick(); setCardRevealed(true); }}
                       className="btn btn-primary"
                       style={{ padding: '14px 28px', background: 'linear-gradient(135deg, #555 0%, #222 100%)', border: 'none' }}
                     >
-                      POKAŻ MOJĄ KARTĘ
+                      {getTranslation('spyShowCardBtn', language)}
                     </button>
                   </>
                 ) : (
                   <>
                     <h4 style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
-                      TWOJA ROLA TO:
+                      {getTranslation('spyRoleTitle', language)}
                     </h4>
                     
                     {revealPlayerIdx === spyIndex ? (
                       <h2 className="spy-text-gold" style={{ fontSize: '42px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '16px' }}>
-                        🕵️‍♂️ SZPIEG
+                        {getTranslation('spyRoleSpy', language)}
                       </h2>
                     ) : (
                       <h2 style={{ fontSize: '42px', fontWeight: 900, color: 'white', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '16px' }}>
@@ -749,8 +754,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
                     <p style={{ fontSize: '13px', color: 'hsl(var(--text-muted))', marginBottom: '24px', maxWidth: '360px' }}>
                       {revealPlayerIdx === spyIndex 
-                        ? 'Nie znasz lokalizacji. Musisz słuchać innych i udawać, że wiesz o jakie miejsce chodzi!' 
-                        : 'Zapamiętaj to miejsce i nie pokazuj go nikomu. Odpowiadaj sprytnie na pytania.'}
+                        ? getTranslation('spySpyDesc', language)
+                        : getTranslation('spyCivilianDesc', language)}
                     </p>
 
                     <button
@@ -770,8 +775,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                       style={{ padding: '14px 28px' }}
                     >
                       {revealPlayerIdx < totalPlayers - 1 
-                        ? `UKRYJ I PRZEKAŻ: ${getSpyPlayerName(revealPlayerIdx + 1).name}`
-                        : 'ROZPOCZNIJ RUNDĘ PYTAŃ'
+                        ? `${getTranslation('spyHideAndPass', language)}: ${getSpyPlayerName(revealPlayerIdx + 1).name}`
+                        : getTranslation('spyStartQuestionsBtn', language)
                       }
                     </button>
                   </>
@@ -793,13 +798,13 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               color: 'white',
               fontSize: '15px'
             }}>
-              RUNDA PYTAŃ: {spyRound} Z 2
+              {getTranslation('spyQuestionsRound', language)}: {spyRound} {language === 'EN' ? 'OF' : 'Z'} 2
             </div>
 
             <div className="spy-card-container">
               <div className="spy-card-inner">
                 <span style={{ fontSize: '12px', fontWeight: 800, color: questionPlayerInfo.color, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
-                  PYTANIE DLA: {questionPlayerInfo.name.toUpperCase()}
+                  {getTranslation('spyQuestionFor', language)}: {questionPlayerInfo.name.toUpperCase()}
                 </span>
 
                 <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -817,7 +822,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 </div>
 
                 <div style={{ fontSize: '11px', color: 'hsl(var(--text-muted))', marginTop: '16px' }}>
-                  Odpowiedz głośno na to pytanie!
+                  {getTranslation('spyAnswerLoudly', language)}
                 </div>
               </div>
             </div>
@@ -842,7 +847,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 className="btn btn-primary w-full"
                 style={{ padding: '16px', background: 'linear-gradient(135deg, #444 0%, #222 100%)', border: 'none' }}
               >
-                NASTĘPNE PYTANIE
+                {getTranslation('spyNextQuestionBtn', language)}
               </button>
 
               {/* Voting shortcut option only during Round 1 */}
@@ -855,7 +860,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                   className="btn btn-secondary w-full"
                   style={{ border: '1px dashed rgba(255,255,255,0.2)', padding: '12px' }}
                 >
-                  TYPUJ SZPIEGA JUŻ TERAZ 🕵️‍♂️
+                  {getTranslation('spyVoteNowBtn', language)}
                 </button>
               )}
             </div>
@@ -867,10 +872,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           <div className="glass flex-col items-center" style={{ padding: '32px', maxWidth: '550px', width: '100%', gap: '20px' }}>
             <div style={{ fontSize: '32px' }}>🕵️‍♂️</div>
             <div className="flex-col gap-xs" style={{ textAlign: 'center' }}>
-              <h3 style={{ fontSize: '24px', fontWeight: 900, color: 'white' }}>TYPOWANIE SZPIEGA</h3>
+              <h3 style={{ fontSize: '24px', fontWeight: 900, color: 'white' }}>{getTranslation('spyVotingTitle', language)}</h3>
               <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))' }}>
-                Przedyskutujcie odpowiedzi. Kto Waszym zdaniem jest szpiegiem? <br/>
-                Kliknij na wybranego gracza. Typuje drużyna: <strong style={{ color: currentTeam.color }}>{currentTeam.name}</strong>.
+                {getTranslation('spyVotingDesc', language)} <strong style={{ color: currentTeam.color }}>{currentTeam.name}</strong>.
               </p>
             </div>
 
@@ -889,7 +893,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     style={{ padding: '14px', fontSize: '14px', borderRadius: '12px', borderLeft: `5px solid ${playerInfo.color}`, textAlign: 'left', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
                   >
                     <span>{playerInfo.name}</span>
-                    <span style={{ fontSize: '11px', color: 'hsl(var(--text-muted))' }}>Kliknij, by wytypować</span>
+                    <span style={{ fontSize: '11px', color: 'hsl(var(--text-muted))' }}>{getTranslation('spyClickToVote', language)}</span>
                   </button>
                 );
               })}
@@ -904,51 +908,60 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <>
                 <div style={{ fontSize: '64px', animation: 'bounce 0.5s infinite' }}>🎯</div>
                 <h2 style={{ fontSize: '32px', fontWeight: 900, color: '#10b981', textTransform: 'uppercase' }}>
-                  TRAFIONY!
+                  {getTranslation('spyHitTitle', language)}
                 </h2>
                 <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))' }}>
-                  Szpiegiem był rzeczywiście <strong style={{ color: getSpyPlayerName(spyIndex).color }}>{getSpyPlayerName(spyIndex).name}</strong>! <br/>
-                  Lokalizacja to: <strong>{selectedLocation}</strong>.
+                  {language === 'EN' ? (
+                    <>The spy was indeed <strong style={{ color: getSpyPlayerName(spyIndex).color }}>{getSpyPlayerName(spyIndex).name}</strong>!</>
+                  ) : (
+                    <>Szpiegiem był rzeczywiście <strong style={{ color: getSpyPlayerName(spyIndex).color }}>{getSpyPlayerName(spyIndex).name}</strong>!</>
+                  )} <br/>
+                  {getTranslation('spyLocationWas', language)} <strong>{selectedLocation}</strong>.
                 </p>
                 <div style={{ background: 'rgba(16, 185, 129, 0.15)', border: '2.5px solid #10b981', borderRadius: '16px', padding: '12px 36px', color: 'white', fontWeight: 900, fontSize: '20px' }}>
-                  +5 PUNKTÓW DLA {currentTeam.name.toUpperCase()}!
+                  +5 {getTranslation('spyPointsForTeam', language)} {currentTeam.name.toUpperCase()}!
                 </div>
                 
                 <button
                   onClick={() => {
                     playClick();
+                    nextWord();
                     onRoundEnd(5, undefined, 0); // +5 for current team, 0 for opponent
                   }}
                   className="btn btn-primary w-full"
                   style={{ marginTop: '12px', padding: '16px' }}
                 >
-                  ZAKOŃCZ TURĘ
+                  {language === 'EN' ? 'END TURN' : 'ZAKOŃCZ TURĘ'}
                 </button>
               </>
             ) : (
               <>
                 <div style={{ fontSize: '64px' }}>❌</div>
                 <h2 style={{ fontSize: '32px', fontWeight: 900, color: '#ef4444', textTransform: 'uppercase' }}>
-                  PUDŁO!
+                  {getTranslation('spyMissTitle', language)}
                 </h2>
                 <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))' }}>
-                  Wytypowaliście gracza: <strong style={{ color: getSpyPlayerName(votedPlayerIdx).color }}>{getSpyPlayerName(votedPlayerIdx).name}</strong>. <br/>
-                  Prawdziwym szpiegiem był <strong style={{ color: getSpyPlayerName(spyIndex).color }}>{getSpyPlayerName(spyIndex).name}</strong>! <br/>
-                  Lokalizacja to: <strong>{selectedLocation}</strong>.
+                  {language === 'EN' ? (
+                    <>You voted for player: <strong style={{ color: getSpyPlayerName(votedPlayerIdx).color }}>{getSpyPlayerName(votedPlayerIdx).name}</strong>. <br/> The real spy was <strong style={{ color: getSpyPlayerName(spyIndex).color }}>{getSpyPlayerName(spyIndex).name}</strong>!</>
+                  ) : (
+                    <>Wytypowaliście gracza: <strong style={{ color: getSpyPlayerName(votedPlayerIdx).color }}>{getSpyPlayerName(votedPlayerIdx).name}</strong>. <br/> Prawdziwym szpiegiem był <strong style={{ color: getSpyPlayerName(spyIndex).color }}>{getSpyPlayerName(spyIndex).name}</strong>!</>
+                  )} <br/>
+                  {getTranslation('spyLocationWas', language)} <strong>{selectedLocation}</strong>.
                 </p>
                 <div style={{ background: 'rgba(239, 68, 68, 0.15)', border: '2.5px solid #ef4444', borderRadius: '16px', padding: '12px 36px', color: 'white', fontWeight: 900, fontSize: '16px', lineHeight: 1.4 }}>
-                  +5 PUNKTÓW DLA DRUGIEJ DRUŻYNY!
+                  +5 {getTranslation('spyPointsForOpponent', language)}
                 </div>
 
                 <button
                   onClick={() => {
                     playClick();
+                    nextWord();
                     onRoundEnd(0, undefined, 5); // 0 for current team, +5 for opponent
                   }}
                   className="btn btn-primary w-full"
                   style={{ marginTop: '12px', padding: '16px' }}
                 >
-                  ZAKOŃCZ TURĘ
+                  {language === 'EN' ? 'END TURN' : 'ZAKOŃCZ TURĘ'}
                 </button>
               </>
             )}
@@ -1018,16 +1031,16 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           }}>
             <div style={{ fontSize: '100px', filter: 'drop-shadow(0 0 20px rgba(255, 60, 0, 0.8))', animation: 'bounce 0.5s infinite' }}>💥</div>
             <h1 style={{ fontSize: '48px', fontWeight: 900, color: 'white', textTransform: 'uppercase', textShadow: '0 0 15px rgba(255, 0, 0, 0.8)', textAlign: 'center', margin: '20px 0' }}>
-              BOMBA WYBUCHŁA!
+              {getTranslation('bombExploded', language)}
             </h1>
             <div style={{ fontSize: '20px', fontWeight: 600, color: 'hsl(var(--text-secondary))' }}>
-              W rękach drużyny:
+              {language === 'EN' ? 'In the hands of team:' : 'W rękach drużyny:'}
             </div>
             <div style={{ fontSize: '36px', fontWeight: 900, color: activeTeam.color, textShadow: '0 0 8px rgba(255,255,255,0.2)', margin: '10px 0' }}>
               {activeTeam.name}
             </div>
             <div style={{ background: 'rgba(239, 68, 68, 0.2)', border: '2.5px solid #ef4444', borderRadius: '16px', padding: '10px 30px', marginTop: '24px', color: 'white', fontWeight: 900, fontSize: '22px', letterSpacing: '0.05em' }}>
-              -3 PUNKTY 📉
+              {language === 'EN' ? '-3 POINTS 📉' : '-3 PUNKTY 📉'}
             </div>
           </div>
         )}
@@ -1036,7 +1049,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         <div className="game-header-bar" style={{ borderColor: 'rgba(255, 60, 0, 0.2)', background: 'rgba(255, 60, 0, 0.03)' }}>
           <div className="game-header-team">
             <span style={{ fontSize: '12px', fontWeight: 900, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-              RUNDA FINAŁOWA: BOMBA! 💣
+              {getTranslation('bombFinalTitle', language)}
             </span>
           </div>
           <div className="game-header-stats">
@@ -1044,7 +1057,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <div key={t.id} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span className="team-indicator-dot" style={{ color: t.color, backgroundColor: t.color, width: '8px', height: '8px' }} />
                 <span style={{ fontSize: '12.5px', fontWeight: 800, color: t.id === activeTeam.id ? 'white' : 'hsl(var(--text-muted))' }}>
-                  {t.points} pkt
+                  {t.points} {language === 'EN' ? 'pts' : 'pkt'}
                 </span>
               </div>
             ))}
@@ -1060,10 +1073,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 <span style={{ fontSize: '48px' }}>💣</span>
               </div>
               <div className="flex-col gap-xs">
-                <h3 style={{ fontSize: '26px', fontWeight: 900, color: 'white' }}>WIELKI FINAŁ</h3>
+                <h3 style={{ fontSize: '26px', fontWeight: 900, color: 'white' }}>{language === 'EN' ? 'GRAND FINALE' : 'WIELKI FINAŁ'}</h3>
                 <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', lineHeight: 1.5 }}>
-                  Zaczyna drużyna: <span style={{ color: activeTeam.color, fontWeight: 800 }}>{activeTeam.name}</span>.<br/><br/>
-                  Opisujcie hasła bez używania słów pokrewnych. Gdy Wasza drużyna zgadnie hasło, kliknijcie przycisk, aby przekazać bombę kolejnej drużynie. Bomba wybuchnie w losowym momencie!
+                  {getTranslation('bombActiveTeam', language)}: <span style={{ color: activeTeam.color, fontWeight: 800 }}>{activeTeam.name}</span>.<br/><br/>
+                  {getTranslation('bombInstructions', language)}
                 </p>
               </div>
               <button
@@ -1071,7 +1084,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 className="btn btn-primary"
                 style={{ width: '100%', padding: '16px', fontSize: '16px', background: 'linear-gradient(135deg, #ff3c00 0%, #ff8c00 100%)', border: 'none' }}
               >
-                ODPAL KNOT BOMBY 🧨
+                {getTranslation('bombStartBtn', language)}
               </button>
             </div>
           ) : (
@@ -1091,7 +1104,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 textTransform: 'uppercase',
                 boxShadow: `0 0 15px ${activeTeam.color}1a`
               }}>
-                Bomba jest u: <span style={{ color: activeTeam.color }}>{activeTeam.name}</span>
+                {language === 'EN' ? 'Bomb is with: ' : 'Bomba jest u: '}<span style={{ color: activeTeam.color }}>{activeTeam.name}</span>
               </div>
 
               {/* Zero Presji Card for Bomb round */}
@@ -1109,7 +1122,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                           letterSpacing: '0.05em',
                           textTransform: 'uppercase'
                         }}>
-                          Czas oczekiwania na kartę
+                          {language === 'EN' ? 'Waiting for card' : 'Czas oczekiwania na kartę'}
                         </div>
                         <div style={{
                           fontSize: '56px',
@@ -1120,7 +1133,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                           {currentBombDelayLeft.toFixed(1)}s
                         </div>
                         <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.4)', maxWidth: '300px', lineHeight: 1.4, textAlign: 'center' }}>
-                          Jesteście w tyle z punktami! Musicie odczekać karne sekundy przed zobaczeniem hasła!
+                          {language === 'EN'
+                            ? 'You are behind in points! You must wait penalty seconds before seeing the word!'
+                            : 'Jesteście w tyle z punktami! Musicie odczekać karne sekundy przed zobaczeniem hasła!'}
                         </div>
                       </div>
                     ) : (
@@ -1134,7 +1149,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                           textTransform: 'uppercase',
                           marginBottom: '16px'
                         }}>
-                          HASŁO DO OPISANIA (BEZ ZAKAZANYCH SŁÓW)
+                          {language === 'EN' ? 'WORD TO DESCRIBE (NO FORBIDDEN WORDS)' : 'HASŁO DO OPISANIA (BEZ ZAKAZANYCH SŁÓW)'}
                         </div>
 
                         <div style={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -1162,7 +1177,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 </div>
               ) : (
                 <div className="glass flex-col items-center" style={{ padding: '32px', textAlign: 'center', color: '#ff5c75' }}>
-                  <span>Brak haseł w bazie!</span>
+                  <span>{language === 'EN' ? 'No words in the database!' : 'Brak haseł w bazie!'}</span>
                 </div>
               )}
 
@@ -1188,9 +1203,13 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 </div>
 
                 <div className="flex-col" style={{ alignItems: 'flex-start' }}>
-                  <span className="stat-label" style={{ color: 'hsl(var(--primary))' }}>KNOT PŁONIE! 🧨</span>
+                  <span className="stat-label" style={{ color: 'hsl(var(--primary))' }}>{language === 'EN' ? 'FUSE IS BURNING! 🧨' : 'KNOT PŁONIE! 🧨'}</span>
                   <span style={{ fontSize: '13px', fontWeight: 600, color: 'hsl(var(--text-secondary))' }}>
-                    {bombTimeLeft > 25 ? 'Bomba tyka powoli...' : bombTimeLeft > 12 ? 'Tyk-tak! Przyspiesza!' : 'Zaraz wybuchnie!!!'}
+                    {language === 'EN' ? (
+                      bombTimeLeft > 25 ? 'Bomb ticking slowly...' : bombTimeLeft > 12 ? 'Tick-tock! Accelerating!' : 'About to explode!!!'
+                    ) : (
+                      bombTimeLeft > 25 ? 'Bomba tyka powoli...' : bombTimeLeft > 12 ? 'Tyk-tak! Przyspiesza!' : 'Zaraz wybuchnie!!!'
+                    )}
                   </span>
                 </div>
               </div>
@@ -1219,7 +1238,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               }}
             >
               <Check size={22} />
-              {currentBombDelayLeft > 0 ? 'CZEKAJ NA PODNIESIENIE...' : 'ZGADNIĘTE (PRZEKAŻ BOMBĘ!) 💣'}
+              {currentBombDelayLeft > 0 ? getTranslation('bombWaitBtn', language) : getTranslation('bombPassBtn', language)}
             </button>
 
             {/* Exit button */}
@@ -1243,7 +1262,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               title="Wyjdź do menu głównego"
             >
               <ArrowLeft size={15} />
-              POWRÓT DO MENU
+              {language === 'EN' ? 'BACK TO MENU' : 'POWRÓT DO MENU'}
             </button>
           </div>
         )}
@@ -1265,18 +1284,18 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         <div className="game-header-team">
           <span className="team-indicator-dot" style={{ color: currentTeam.color, backgroundColor: currentTeam.color }} />
           <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'white' }}>
-            Tura: <span style={{ color: currentTeam.color }}>{currentTeam.name}</span>
+            {language === 'EN' ? 'Turn: ' : 'Tura: '}<span style={{ color: currentTeam.color }}>{currentTeam.name}</span>
           </h3>
         </div>
         <div className="game-header-stats">
           <div className="stat-box">
-            <span className="stat-label">Wynik ogólny</span>
-            <span className="stat-value">{currentTeam.points} pkt</span>
+            <span className="stat-label">{language === 'EN' ? 'Overall Score' : 'Wynik ogólny'}</span>
+            <span className="stat-value">{currentTeam.points} {language === 'EN' ? 'pts' : 'pkt'}</span>
           </div>
           <div style={{ width: '1px', background: 'rgba(255, 255, 255, 0.1)', alignSelf: 'stretch' }} />
           <div className="stat-box">
-            <span className="stat-label">Ta runda</span>
-            <span className="stat-value" style={{ color: 'hsl(var(--secondary))' }}>{pointsThisRound} pkt</span>
+            <span className="stat-label">{language === 'EN' ? 'This Round' : 'Ta runda'}</span>
+            <span className="stat-value" style={{ color: 'hsl(var(--secondary))' }}>{pointsThisRound} {language === 'EN' ? 'pts' : 'pkt'}</span>
           </div>
         </div>
       </div>
@@ -1290,17 +1309,17 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <HelpCircle size={40} />
             </div>
             <div className="flex-col gap-xs">
-              <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white' }}>Kolej na {currentTeam.name}</h3>
+              <h3 style={{ fontSize: '24px', fontWeight: 800, color: 'white' }}>{language === 'EN' ? `Turn for ${currentTeam.name}` : `Kolej na ${currentTeam.name}`}</h3>
               <p style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', lineHeight: 1.5 }}>
                 {gameMode === 'MARYLIN_MONROE' 
-                  ? 'Oddaj telefon/urządzenie osobie, która będzie opisywać hasło. Inni członkowie drużyny nie mogą patrzeć na ekran!'
+                  ? (language === 'EN' ? 'Pass the device to the person who will describe the word. Other team members must not look at the screen!' : 'Oddaj telefon/urządzenie osobie, która będzie opisywać hasło. Inni członkowie drużyny nie mogą patrzeć na ekran!')
                   : gameMode === 'NINE_SECONDS'
-                  ? 'Wylosowane pytanie przeczyta Wam Mistrz Gry! Oddaj telefon osobie pełniącej rolę prowadzącego. Inni członkowie drużyny nie patrzą na ekran!'
+                  ? (language === 'EN' ? 'The Game Master will read the question to you! Pass the phone to the person acting as the host. Other team members must not look at the screen!' : 'Wylosowane pytanie przeczyta Wam Mistrz Gry! Oddaj telefon osobie pełniącej rolę prowadzącego. Inni członkowie drużyny nie patrzą na ekran!')
                   : gameMode === 'P_GAME'
-                  ? 'Będziesz opisywać hasło swojej drużynie używając WYŁĄCZNIE słów zaczynających się na literę P! Inni członkowie drużyny nie patrzą na ekran!'
+                  ? (language === 'EN' ? 'You will describe the word to your team using ONLY words starting with the letter P! Other team members must not look at the screen!' : 'Będziesz opisywać hasło swojej drużynie używając WYŁĄCZNIE słów zaczynających się na literę P! Inni członkowie drużyny nie patrzą na ekran!')
                   : gameMode === 'LIPS'
-                  ? '⚠️ OSOBA ZGADUJĄCA ZAKŁADA SŁUCHAWKI I WŁĄCZA GŁOŚNĄ MUZYKĘ! Osoba podpowiadająca bierze telefon i pokazuje hasło ruchem warg!'
-                  : 'Pokazujesz hasła-czynności partnerowi, nakazując mu wykonywanie pantomimy! Oddaj telefon osobie pokazującej. Współgracz zgadujący nie patrzy na ekran!'}
+                  ? (language === 'EN' ? '⚠️ THE GUESSER PUTS ON HEADPHONES WITH LOUD MUSIC! The describer takes the phone and shows the word using lips only!' : '⚠️ OSOBA ZGADUJĄCA ZAKŁADA SŁUCHAWKI I WŁĄCZA GŁOŚNĄ MUZYKĘ! Osoba podpowiadająca bierze telefon i pokazuje hasło ruchem warg!')
+                  : (language === 'EN' ? 'You show action-words to your partner, ordering them to act it out! Pass the phone to the describer. The guessing teammate must not look at the screen!' : 'Pokazujesz hasła-czynności partnerowi, nakazując mu wykonywanie pantomimy! Oddaj telefon osobie pokazującej. Współgracz zgadujący nie patrzy na ekran!')}
               </p>
             </div>
             <button
@@ -1318,14 +1337,14 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               className="btn btn-primary"
               style={{ width: '100%', padding: '16px', fontSize: '16px' }}
             >
-              ROZPOCZNIJ RUNDĘ
+              {getTranslation('startRoundBtn', language)}
             </button>
           </div>
         ) : nineSecReady && gameMode === 'NINE_SECONDS' ? (
           /* 9.5s — Question Preview: MG reads the question, then taps START */
           <div className="glass flex-col items-center" style={{ padding: '36px', textAlign: 'center', maxWidth: '500px', width: '100%', gap: '24px', border: '2px solid rgba(211, 16, 16, 0.4)' }}>
             <div style={{ fontSize: '13px', fontWeight: 800, color: '#d31010', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-              🎙️ Pytanie do odczytania
+              🎙️ {language === 'EN' ? 'Question to read' : 'Pytanie do odczytania'}
             </div>
             <div style={{
               background: 'radial-gradient(circle, #fffdf9 0%, #fff9f0 60%, #fff3e0 100%)',
@@ -1340,18 +1359,20 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 color: '#1a0a03',
                 lineHeight: 1.4,
               }}>
-                {currentWord?.question || currentWord?.word || 'Brak pytania'}
+                {currentWord?.question || currentWord?.word || (language === 'EN' ? 'No question' : 'Brak pytania')}
               </div>
             </div>
             <p style={{ fontSize: '13px', color: 'hsl(var(--text-secondary))', lineHeight: 1.6 }}>
-              Mistrz Gry głośno czyta pytanie drużynie. Gdy wszyscy są gotowi — kliknij START!
+              {language === 'EN' 
+                ? 'The Game Master reads the question out loud to the team. When everyone is ready - click START!'
+                : 'Mistrz Gry głośno czyta pytanie drużynie. Gdy wszyscy są gotowi — kliknij START!'}
             </p>
             <button
               onClick={() => { setNineSecReady(false); handleStartRound(); }}
               className="btn btn-primary"
               style={{ width: '100%', padding: '18px', fontSize: '18px', background: 'linear-gradient(135deg, #d31010 0%, #ff6b00 100%)', border: 'none', fontWeight: 900, letterSpacing: '0.05em' }}
             >
-              ⏱ START — LEĆ!
+              {language === 'EN' ? '⏱ START - GO!' : '⏱ START — LEĆ!'}
             </button>
           </div>
         ) : nineSecFinished && gameMode === 'NINE_SECONDS' ? (
@@ -1359,8 +1380,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           <div className="glass flex-col items-center" style={{ padding: '40px', textAlign: 'center', maxWidth: '480px', width: '100%', gap: '20px' }}>
             <div style={{ fontSize: '64px' }}>⏰</div>
             <div>
-              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Czas minął!</div>
-              <div style={{ fontSize: '15px', color: 'hsl(var(--text-secondary))', marginTop: '4px', fontStyle: 'italic' }}>„{currentWord?.question || currentWord?.word || ''}"</div>
+              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>{getTranslation('timeOutTitle', language)}</div>
+              <div style={{ fontSize: '15px', color: 'hsl(var(--text-secondary))', marginTop: '4px', fontStyle: 'italic' }}>„{currentWord?.question || currentWord?.word || ''}”</div>
             </div>
 
             {/* Score display + adjustment buttons */}
@@ -1371,7 +1392,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               padding: '20px 24px',
               width: '100%',
             }}>
-              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', marginBottom: '12px' }}>Punkty tej rundy — możesz poprawić:</div>
+              <div style={{ fontSize: '14px', color: 'hsl(var(--text-secondary))', marginBottom: '12px' }}>{language === 'EN' ? 'Points this round - you can adjust:' : 'Punkty tej rundy — możesz poprawić:'}</div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
                 <button
                   onClick={() => { playWrong(); setNineSecFinalPoints(p => p - 1); }}
@@ -1394,12 +1415,23 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             </div>
 
             <button
-              onClick={() => { playClick(); onRoundEnd(nineSecFinalPoints); }}
+              onClick={() => { playClick(); nextWord(); onRoundEnd(nineSecFinalPoints); }}
               className="btn btn-primary"
               style={{ width: '100%', padding: '16px', fontSize: '16px' }}
             >
-              ZAKOŃCZ TURĘ →
+              {getTranslation('nextTurnBtn', language)}
             </button>
+          </div>
+        ) : isTimeUp ? (
+          /* Time is Up screen */
+          <div className="glass flex-col items-center justify-center fade-in" style={{ padding: '40px', textAlign: 'center', maxWidth: '480px', width: '100%', gap: '20px', minHeight: '300px' }}>
+            <div style={{ fontSize: '64px' }}>⏰</div>
+            <h2 style={{ fontSize: '32px', fontWeight: 900, color: '#ef4444' }}>
+              {language === 'EN' ? "TIME'S UP!" : "KONIEC CZASU!"}
+            </h2>
+            <p style={{ fontSize: '15px', color: 'hsl(var(--text-secondary))' }}>
+              {language === 'EN' ? "Preparing scoreboard..." : "Podliczanie punktów..."}
+            </p>
           </div>
         ) : (
           /* Active Card Screen */
@@ -1433,7 +1465,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                       {currentWord.forbidden && Array.isArray(currentWord.forbidden) && (
                         <div className="taboo-container">
                           <span className="taboo-header">
-                            Słowa Zakazane
+                            {language === 'EN' ? 'Forbidden Words' : 'Słowa Zakazane'}
                           </span>
                           <div className="taboo-words-list">
                             {currentWord.forbidden.map((fw: string, idx: number) => (
@@ -1464,7 +1496,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         width: '100%',
                         maxWidth: '450px'
                       }}>
-                        9,5 Sekundy
+                        {language === 'EN' ? '9.5 Seconds' : '9,5 Sekundy'}
                       </div>
 
                       {/* Question */}
@@ -1497,7 +1529,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         width: '100%',
                         maxWidth: '450px'
                       }}>
-                        Gra na P
+                        {language === 'EN' ? 'P Game' : 'Gra na P'}
                       </div>
 
                       {/* Prompt */}
@@ -1519,7 +1551,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         textTransform: 'uppercase',
                         letterSpacing: '0.05em'
                       }}>
-                        Podpowiadaj tylko słowami na literę P!
+                        {language === 'EN' ? 'Only describe using words starting with P!' : 'Podpowiadaj tylko słowami na literę P!'}
                       </div>
                     </>
                   ) : gameMode === 'REVERSE_CHARADES' ? (
@@ -1538,7 +1570,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         width: '100%',
                         maxWidth: '450px'
                       }}>
-                        Odwrócone Kalambury
+                        {language === 'EN' ? 'Reverse Charades' : 'Odwrócone Kalambury'}
                       </div>
 
                       {/* Action */}
@@ -1571,7 +1603,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         width: '100%',
                         maxWidth: '450px'
                       }}>
-                        Usta Usta 🎧
+                        {language === 'EN' ? 'Lips 🎧' : 'Usta Usta 🎧'}
                       </div>
 
                       {/* Word to guess */}
@@ -1593,7 +1625,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         textTransform: 'uppercase',
                         letterSpacing: '0.05em'
                       }}>
-                        Złóż usta i pokazuj bez głosu!
+                        {language === 'EN' ? 'Close your mouth and show without sound!' : 'Złóż usta i pokazuj bez głosu!'}
                       </div>
                     </>
                   ) : (
@@ -1617,7 +1649,11 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               <div className="glass flex-col items-center" style={{ padding: '32px', textAlign: 'center', color: '#ff5c75', gap: '8px' }}>
                 <AlertTriangle size={32} />
                 <span>
-                  {gameMode === 'MARYLIN_MONROE' ? 'Brak haseł' : gameMode === 'NINE_SECONDS' ? 'Brak pytań' : gameMode === 'P_GAME' ? 'Brak haseł' : gameMode === 'LIPS' ? 'Brak haseł' : 'Brak czynności'} w wybranej kategorii!
+                  {language === 'EN' ? (
+                    gameMode === 'MARYLIN_MONROE' ? 'No words' : gameMode === 'NINE_SECONDS' ? 'No questions' : gameMode === 'P_GAME' ? 'No words' : gameMode === 'LIPS' ? 'No words' : 'No actions'
+                  ) : (
+                    gameMode === 'MARYLIN_MONROE' ? 'Brak haseł' : gameMode === 'NINE_SECONDS' ? 'Brak pytań' : gameMode === 'P_GAME' ? 'Brak haseł' : gameMode === 'LIPS' ? 'Brak haseł' : 'Brak czynności'
+                  )}{language === 'EN' ? ' in the selected category!' : ' w wybranej kategorii!'}
                 </span>
               </div>
             )}
@@ -1631,7 +1667,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           {/* Circular Timer Display */}
           <div className="timer-area">
             <div className="timer-circle-wrapper">
-              <svg className="timer-circle-svg">
+              <svg className="timer-circle-svg" viewBox="0 0 76 76">
                 {/* Background circle */}
                 <circle
                   cx="38"
@@ -1660,9 +1696,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               </div>
             </div>
             <div className="flex-col">
-              <span className="stat-label">Pozostały Czas</span>
+              <span className="stat-label">{language === 'EN' ? 'Time Remaining' : 'Pozostały Czas'}</span>
               <span style={{ fontSize: '13px', fontWeight: 600, color: 'hsl(var(--text-secondary))' }}>
-                {!isPlaying ? 'Gra wstrzymana' : timeLeft <= (gameMode === 'NINE_SECONDS' ? 3 : 10) ? 'Ostatnie sekundy!' : 'Czas ucieka!'}
+                {!isPlaying ? (language === 'EN' ? 'Game paused' : 'Gra wstrzymana') : timeLeft <= (gameMode === 'NINE_SECONDS' ? 3 : 10) ? (language === 'EN' ? 'Last seconds!' : 'Ostatnie sekundy!') : (language === 'EN' ? 'Time is ticking!' : 'Czas ucieka!')}
               </span>
             </div>
           </div>
@@ -1676,7 +1712,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               style={{ flexGrow: 1, padding: '16px', fontSize: '15px' }}
             >
               <X size={18} />
-              BŁĄD (-1)
+              {language === 'EN' ? 'WRONG (-1)' : 'BŁĄD (-1)'}
             </button>
             <button
               onClick={handleCorrect}
@@ -1685,7 +1721,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               style={{ flexGrow: 1, padding: '16px', fontSize: '15px' }}
             >
               <Check size={18} />
-              ZGADNIĘTE (+1)
+              {language === 'EN' ? 'GUESSED (+1)' : 'ZGADNIĘTE (+1)'}
             </button>
           </div>
 
@@ -1695,10 +1731,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               onClick={handlePauseToggle}
               className="btn btn-secondary"
               style={{ padding: '12px 18px', fontSize: '13px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}
-              title={isPlaying ? 'Wstrzymaj grę' : 'Wznów grę'}
+              title={isPlaying ? (language === 'EN' ? 'Pause game' : 'Wstrzymaj grę') : (language === 'EN' ? 'Resume game' : 'Wznów grę')}
             >
               {isPlaying ? <Pause size={15} /> : <Play size={15} fill="currentColor" />}
-              <span>{isPlaying ? 'PAUZA' : 'WZNÓW'}</span>
+              <span>{isPlaying ? (language === 'EN' ? 'PAUSE' : 'PAUZA') : (language === 'EN' ? 'RESUME' : 'WZNÓW')}</span>
             </button>
             <button
               onClick={handleExitClick}
@@ -1718,7 +1754,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               title="Wyjdź do menu głównego"
             >
               <ArrowLeft size={15} />
-              <span>POWRÓT DO MENU</span>
+              <span>{language === 'EN' ? 'BACK TO MENU' : 'POWRÓT DO MENU'}</span>
             </button>
           </div>
         </div>
