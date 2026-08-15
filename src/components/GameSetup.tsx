@@ -47,6 +47,12 @@ const PRESET_COLORS = [
 
 const getCategoryEmoji = (cat: string): string => {
   const c = cat.toLowerCase();
+  if (c.includes('film') || c.includes('movie')) return '🎬';
+  if (c.includes('gry') || c.includes('game')) return '🎮';
+  if (c.includes('bajk') || c.includes('cartoon') || c.includes('animac')) return '🏰';
+  if (c.includes('superbohater') || c.includes('hero')) return '🦸‍♂️';
+  if (c.includes('sławne') || c.includes('celebryt')) return '🌟';
+  if (c.includes('książk') || c.includes('mitolog') || c.includes('książki')) return '📚';
   if (c.includes('fikcyjn')) return '🧙‍♂️';
   if (c.includes('ludzie') && c.includes('relac')) return '🤝';
   if (c.includes('ludzie') && c.includes('zawod')) return '👨‍⚕️';
