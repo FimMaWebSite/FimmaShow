@@ -447,10 +447,10 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode,
                 <button
                   onClick={() => {
                     playClick();
-                    if (tournamentGames.length >= 5) return;
+                    if (tournamentGames.length >= 7) return;
                     setTournamentGames([...tournamentGames, 'MARYLIN_MONROE']);
                   }}
-                  disabled={tournamentGames.length >= 5}
+                  disabled={tournamentGames.length >= 7}
                   className="btn btn-icon"
                   style={{ padding: '6px', borderRadius: '8px' }}
                 >
@@ -481,6 +481,8 @@ export const GameSetup: React.FC<GameSetupProps> = ({ onBack, onStart, gameMode,
                     <option value="REVERSE_CHARADES">{language === 'EN' ? 'Reverse Charades (Actions)' : 'Odwrócone Kalambury (Czynności)'}</option>
                     <option value="LIPS">{language === 'EN' ? 'Lips (Lip movements)' : 'Usta Usta (Ruch warg)'}</option>
                     <option value="P_GAME">{language === 'EN' ? 'P Game' : 'Gra na P'}</option>
+                    <option value="SPY">{language === 'EN' ? 'Spy (Secret Location)' : 'Szpieg (Sekretna Lokacja)'}</option>
+                    <option value="REVOLVER">{language === 'EN' ? 'Revolver (Shared Word)' : 'Rewolwer (Wspólne Hasło)'}</option>
                   </select>
                 </div>
               ))}
