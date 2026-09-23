@@ -645,32 +645,29 @@ export const GameBoard: React.FC<GameBoardProps> = ({
       <div className="flex-container max-w-xl mx-auto fade-in" style={{ padding: '12px', minHeight: '85vh', justifyContent: 'space-between', position: 'relative' }}>
         <style>{`
           .spy-card-container {
-            aspect-ratio: 16 / 10;
             width: 100%;
             max-width: 680px;
             background: linear-gradient(135deg, #1f1f23 0%, #111113 100%);
-            border-radius: 40px;
-            padding: 14px;
+            border-radius: 28px;
+            padding: 10px;
             box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
             border: 2px solid rgba(255,255,255,0.05);
           }
 
           .spy-card-inner {
             background: radial-gradient(circle, #2d2d35 0%, #151518 100%);
-            border-radius: 30px;
+            border-radius: 20px;
             width: 100%;
-            height: 100%;
-            border: 4px solid #000;
+            border: 3px solid #000;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 24px 32px;
+            padding: 20px 16px;
             text-align: center;
             position: relative;
             box-shadow: inset 0 4px 15px rgba(0,0,0,0.4);
@@ -746,75 +743,80 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
         {/* Reveal Roles Phase */}
         {spyPhase === 'REVEAL' && (
-          <div className="flex-container w-full" style={{ flexGrow: 1, justifyContent: 'center', margin: '20px 0' }}>
+          <div className="flex-container w-full" style={{ flexGrow: 1, justifyContent: 'center', margin: '12px 0', gap: '16px', flexDirection: 'column', alignItems: 'center' }}>
             <div className="spy-card-container">
               <div className="spy-card-inner">
-                <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--text-muted))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+                <span style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--text-muted))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
                   {getTranslation('spyStepTitle', language)} {revealPlayerIdx + 1} {language === 'EN' ? 'OF' : 'Z'} {totalPlayers}
                 </span>
 
                 {!cardRevealed ? (
                   <>
-                    <h2 style={{ fontSize: '28px', fontWeight: 900, color: activePlayerInfo.color, marginBottom: '8px' }}>
+                    <h2 style={{ fontSize: 'clamp(1.5rem, 5vw, 2.2rem)', fontWeight: 900, color: activePlayerInfo.color, marginBottom: '8px', wordBreak: 'break-word' }}>
                       {activePlayerInfo.name}
                     </h2>
-                    <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', marginBottom: '24px', maxWidth: '300px' }}>
+                    <p style={{ fontSize: '13.5px', color: 'hsl(var(--text-secondary))', marginBottom: '8px', maxWidth: '320px', lineHeight: 1.4 }}>
                       {getTranslation('spyRevealInstruction', language)}
                     </p>
-                    <button
-                      onClick={() => { playClick(); setCardRevealed(true); }}
-                      className="btn btn-primary"
-                      style={{ padding: '14px 28px', background: 'linear-gradient(135deg, #555 0%, #222 100%)', border: 'none' }}
-                    >
-                      {getTranslation('spyShowCardBtn', language)}
-                    </button>
                   </>
                 ) : (
                   <>
-                    <h4 style={{ fontSize: '13px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+                    <h4 style={{ fontSize: '12px', fontWeight: 800, color: 'hsl(var(--secondary))', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '6px' }}>
                       {getTranslation('spyRoleTitle', language)}
                     </h4>
                     
                     {revealPlayerIdx === spyIndex ? (
-                      <h2 className="spy-text-gold" style={{ fontSize: '42px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '16px' }}>
+                      <h2 className="spy-text-gold" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px', wordBreak: 'break-word' }}>
                         {getTranslation('spyRoleSpy', language)}
                       </h2>
                     ) : (
-                      <h2 style={{ fontSize: '42px', fontWeight: 900, color: 'white', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '16px' }}>
+                      <h2 style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', fontWeight: 900, color: 'white', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px', lineHeight: 1.15, wordBreak: 'break-word' }}>
                         {selectedLocation}
                       </h2>
                     )}
 
-                    <p style={{ fontSize: '13px', color: 'hsl(var(--text-muted))', marginBottom: '24px', maxWidth: '360px' }}>
+                    <p style={{ fontSize: '13px', color: 'hsl(var(--text-muted))', marginBottom: '8px', maxWidth: '360px', lineHeight: 1.4 }}>
                       {revealPlayerIdx === spyIndex 
                         ? getTranslation('spySpyDesc', language)
                         : getTranslation('spyCivilianDesc', language)}
                     </p>
-
-                    <button
-                      onClick={() => {
-                        playClick();
-                        if (revealPlayerIdx < totalPlayers - 1) {
-                          setRevealPlayerIdx(prev => prev + 1);
-                          setCardRevealed(false);
-                        } else {
-                          // All players checked roles, advance to questions
-                          setQuestionPlayerIdx(0);
-                          setSpyRound(1);
-                          setSpyPhase('QUESTIONS');
-                        }
-                      }}
-                      className="btn btn-secondary"
-                      style={{ padding: '14px 28px' }}
-                    >
-                      {revealPlayerIdx < totalPlayers - 1 
-                        ? `${getTranslation('spyHideAndPass', language)}: ${getSpyPlayerName(revealPlayerIdx + 1).name}`
-                        : getTranslation('spyStartQuestionsBtn', language)
-                      }
-                    </button>
                   </>
                 )}
               </div>
+            </div>
+
+            <div style={{ width: '100%', maxWidth: '500px' }}>
+              {!cardRevealed ? (
+                <button
+                  onClick={() => { playClick(); setCardRevealed(true); }}
+                  className="btn btn-primary w-full"
+                  style={{ padding: '16px', fontSize: '16px', background: 'linear-gradient(135deg, #555 0%, #222 100%)', border: 'none' }}
+                >
+                  {getTranslation('spyShowCardBtn', language)}
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    playClick();
+                    if (revealPlayerIdx < totalPlayers - 1) {
+                      setRevealPlayerIdx(prev => prev + 1);
+                      setCardRevealed(false);
+                    } else {
+                      // All players checked roles, advance to questions
+                      setQuestionPlayerIdx(0);
+                      setSpyRound(1);
+                      setSpyPhase('QUESTIONS');
+                    }
+                  }}
+                  className="btn btn-secondary w-full"
+                  style={{ padding: '16px', fontSize: '15px', fontWeight: 800 }}
+                >
+                  {revealPlayerIdx < totalPlayers - 1 
+                    ? `${getTranslation('spyHideAndPass', language)}: ${getSpyPlayerName(revealPlayerIdx + 1).name}`
+                    : getTranslation('spyStartQuestionsBtn', language)
+                  }
+                </button>
+              )}
             </div>
           </div>
         )}
