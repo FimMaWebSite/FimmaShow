@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, Check, X, AlertTriangle, HelpCircle, ArrowLeft } from 'lucide-react';
+import { Play, Pause, Check, X, AlertTriangle, HelpCircle, ArrowLeft, Plus, Minus } from 'lucide-react';
 
 import { Team, GameSettings } from './GameSetup';
 import { playClick, playCorrect, playWrong, playTick, playBuzzer, playExplosion } from '../utils/audio';
@@ -56,7 +56,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   // Spy game state
-  const [spyPlayerCount] = useState(2);
+  const [spyPlayerCount, setSpyPlayerCount] = useState(2);
   const [spyPhase, setSpyPhase] = useState<'SETUP' | 'REVEAL' | 'QUESTIONS' | 'VOTING' | 'RESULT'>('SETUP');
   const [revealPlayerIdx, setRevealPlayerIdx] = useState(0);
   const [cardRevealed, setCardRevealed] = useState(false);
@@ -303,27 +303,33 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   };
 
   const startSpyGame = () => {
-    // Select location
-    const location = (shuffledWords.length > 0 && currentWordIndex < shuffledWords.length)
-      ? shuffledWords[currentWordIndex].word
-      : (shuffledWords.length > 0 ? shuffledWords[0].word : (language === 'EN' ? "Airplane" : "Samolot"));
+    // Select location safely
+    let location = language === 'EN' ? "Airplane" : "Samolot";
+    if (shuffledWords && shuffledWords.length > 0) {
+      const item = shuffledWords[currentWordIndex] || shuffledWords[0];
+      if (typeof item === 'string') {
+        location = item;
+      } else if (item && typeof item === 'object') {
+        location = item.word || item.question || item.name || location;
+      }
+    }
     setSelectedLocation(location);
 
-    // Total players = spyPlayerCount * 2 (e.g. 2 players per team = 4 players total)
-    const totalPlayers = spyPlayerCount * 2;
+    const teamCount = teams && teams.length > 0 ? teams.length : 2;
+    const totalPlayersCount = spyPlayerCount * teamCount;
 
     // Select spy index
-    const randomSpy = Math.floor(Math.random() * totalPlayers);
+    const randomSpy = Math.floor(Math.random() * totalPlayersCount);
     setSpyIndex(randomSpy);
 
-    // Select questions
+    // Select questions safely
     const localQuestions = localStorage.getItem(`fimma_spy_questions_${language}`);
     const defaultQuestions = DEFAULT_SPY_QUESTIONS[language] || DEFAULT_SPY_QUESTIONS['PL'] || [];
     let questionsDb = defaultQuestions;
     if (localQuestions) {
       try {
         const parsed = JSON.parse(localQuestions);
-        if (Array.isArray(parsed)) {
+        if (Array.isArray(parsed) && parsed.length > 0) {
           questionsDb = parsed;
         }
       } catch (e) {
@@ -331,11 +337,22 @@ export const GameBoard: React.FC<GameBoardProps> = ({
       }
     }
     const shuffledQ = [...questionsDb].sort(() => Math.random() - 0.5);
-    
-    // Assign questions for Round 1 and Round 2
-    const round1Q = shuffledQ.slice(0, totalPlayers).map(q => q.question);
-    const round2Q = shuffledQ.slice(totalPlayers, totalPlayers * 2).map(q => q.question);
-    
+
+    const getQuestionText = (item: any): string => {
+      if (!item) return language === 'EN' ? 'What do you like about this place?' : 'Co najbardziej lubisz w tym miejscu?';
+      if (typeof item === 'string') return item;
+      return item.question || item.word || item.name || '';
+    };
+
+    const round1Q: string[] = [];
+    const round2Q: string[] = [];
+    for (let i = 0; i < totalPlayersCount; i++) {
+      const q1 = shuffledQ[i % shuffledQ.length];
+      const q2 = shuffledQ[(i + totalPlayersCount) % shuffledQ.length];
+      round1Q.push(getQuestionText(q1));
+      round2Q.push(getQuestionText(q2));
+    }
+
     setSpyQuestions({
       round1: round1Q,
       round2: round2Q
@@ -350,15 +367,16 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
   // Helper to resolve player name and team color for multiplayer SPY mode
   const getSpyPlayerName = (idx: number) => {
-    if (!teams || teams.length < 2) {
+    if (!teams || teams.length === 0) {
       return { name: language === 'EN' ? `Player ${idx + 1}` : `Gracz ${idx + 1}`, color: '#fff' };
     }
-    const teamIdx = idx % 2; // alternates: 0 for Team A, 1 for Team B
-    const playerNum = Math.floor(idx / 2) + 1;
+    const teamCount = teams.length;
+    const teamIdx = idx % teamCount;
+    const playerNum = Math.floor(idx / teamCount) + 1;
     const team = teams[teamIdx];
     return {
       name: language === 'EN' ? `${team.name} - Player ${playerNum}` : `${team.name} - Gracz ${playerNum}`,
-      color: team.color
+      color: team ? team.color : '#fff'
     };
   };
 
@@ -618,7 +636,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
   if (gameMode === 'SPY') {
 
-    const totalPlayers = spyPlayerCount * 2;
+    const teamCount = teams && teams.length > 0 ? teams.length : 2;
+    const totalPlayers = spyPlayerCount * teamCount;
     const activePlayerInfo = getSpyPlayerName(revealPlayerIdx);
     const questionPlayerInfo = getSpyPlayerName(questionPlayerIdx);
 
@@ -694,11 +713,25 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             </div>
             
             <div className="flex-row gap-md items-center" style={{ margin: '10px 0' }}>
-              <span style={{ fontSize: '32px', fontWeight: 900, color: 'white', minWidth: '60px' }}>2</span>
+              <button
+                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.max(1, prev - 1)); }}
+                className="btn btn-secondary"
+                style={{ width: '40px', height: '40px', borderRadius: '50%', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '20px', fontWeight: 900 }}
+              >
+                <Minus size={18} />
+              </button>
+              <span style={{ fontSize: '32px', fontWeight: 900, color: 'white', minWidth: '60px', textAlign: 'center' }}>{spyPlayerCount}</span>
+              <button
+                onClick={() => { playClick(); setSpyPlayerCount(prev => Math.min(6, prev + 1)); }}
+                className="btn btn-secondary"
+                style={{ width: '40px', height: '40px', borderRadius: '50%', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '20px', fontWeight: 900 }}
+              >
+                <Plus size={18} />
+              </button>
             </div>
 
             <p style={{ fontSize: '12px', color: 'hsl(var(--text-muted))' }}>
-              {getTranslation('spyTotalPlayers', language)} <strong>{totalPlayers}</strong> ({language === 'EN' ? <>2 each from {teams?.[0]?.name || 'Team A'} and {teams?.[1]?.name || 'Team B'}</> : <>po 2 z {teams?.[0]?.name || 'Drużyny A'} i {teams?.[1]?.name || 'Drużyny B'}</>})
+              {getTranslation('spyTotalPlayers', language)} <strong>{totalPlayers}</strong> ({language === 'EN' ? `${spyPlayerCount} each from ${teams?.map(t => t.name).join(', ') || 'teams'}` : `po ${spyPlayerCount} z ${teams?.map(t => t.name).join(', ') || 'drużyn'}`})
             </p>
 
             <button
