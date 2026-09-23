@@ -70726,289 +70726,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_3",
-      "word": "Parasol",
+      "word": "Komputer",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_4",
-      "word": "Telefon",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_5",
-      "word": "Rower",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_6",
-      "word": "Bomba",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_7",
-      "word": "Gitara",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_8",
-      "word": "Okulary",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_9",
-      "word": "Kamera",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_10",
-      "word": "Pistolet",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_11",
-      "word": "Namiot",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_12",
-      "word": "Złoty medal",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_13",
-      "word": "Żarówka",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_14",
-      "word": "Kompas",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_15",
-      "word": "Teleskop",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_16",
-      "word": "Portfel",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_17",
-      "word": "Sofa",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_18",
-      "word": "Buty",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_19",
-      "word": "Lustro",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_20",
-      "word": "Klucz",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_21",
       "word": "Nożyczki",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_5",
+      "word": "Karton",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_6",
+      "word": "Kafel",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_7",
+      "word": "Trofeum",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_8",
+      "word": "Dysk",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_9",
+      "word": "Ogrodzenie",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_10",
+      "word": "Obrączka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_11",
+      "word": "Kurtka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_12",
+      "word": "Drożdżówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_13",
+      "word": "Afisz",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_14",
+      "word": "Fortepian",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_15",
+      "word": "Etui",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_16",
+      "word": "Futbolówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_17",
+      "word": "Nabój",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_18",
+      "word": "Słoik",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_19",
+      "word": "Kask",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_20",
+      "word": "Okulary",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_21",
+      "word": "Lustro",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_22",
-      "word": "Portret",
+      "word": "Klucz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_23",
-      "word": "Plecak",
+      "word": "Łóżko",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_24",
-      "word": "Poduszka",
+      "word": "Stół",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_25",
-      "word": "Pędzel",
+      "word": "Krzesło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_26",
-      "word": "Pióro",
+      "word": "Szafa",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_27",
-      "word": "Pudełko",
+      "word": "Lodówka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_28",
-      "word": "Płytka",
+      "word": "Suszarka do ubrań",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_29",
-      "word": "Puchar",
+      "word": "Kuchenka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_30",
-      "word": "Puzderko",
+      "word": "Garnek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_31",
-      "word": "Płyta",
+      "word": "Rondel",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_32",
-      "word": "Płot",
+      "word": "Talerz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_33",
-      "word": "Pierścień",
+      "word": "Kubek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_34",
-      "word": "Pas",
+      "word": "Widelec",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_35",
-      "word": "Płaszcz",
+      "word": "Łyżka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_36",
-      "word": "Pączek",
+      "word": "Nóż",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_37",
-      "word": "Paterka",
+      "word": "Ręcznik",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_38",
-      "word": "Plakat",
+      "word": "Mydło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_39",
-      "word": "Pianino",
+      "word": "Szczoteczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_40",
-      "word": "Pedał",
+      "word": "Grzebień",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_41",
-      "word": "Paleta",
+      "word": "Latarka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_42",
-      "word": "Pędzel",
+      "word": "Termos",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_43",
-      "word": "Pociąg",
+      "word": "Biżuteria",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_44",
-      "word": "Piórnik",
+      "word": "Wazon",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_45",
-      "word": "Piłka",
+      "word": "Świeca",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_46",
-      "word": "Pistolet",
+      "word": "Dywan",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_47",
-      "word": "Pocisk",
+      "word": "Koc",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_48",
-      "word": "Pojemnik",
+      "word": "Zasłona",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_49",
-      "word": "Pokrowiec",
+      "word": "Zapalniczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_50",
-      "word": "Pompa",
+      "word": "Mieszek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
@@ -71032,583 +71032,583 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_54",
-      "word": "Policjant",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_55",
       "word": "Kucharz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_56",
-      "word": "Piosenkarz",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_57",
+      "id": "pg_55",
       "word": "Strażak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_58",
+      "id": "pg_56",
       "word": "Dentysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_57",
+      "word": "Heros",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_58",
+      "word": "Doktor",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_59",
-      "word": "Superbohater",
+      "word": "Żołnierz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_60",
-      "word": "Prezydent",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_61",
-      "word": "Pediatra",
+      "word": "Aktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_62",
-      "word": "Pianista",
+      "word": "Reżyser",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_63",
-      "word": "Pilot",
+      "word": "Kierowca",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_64",
-      "word": "Pisarz",
+      "word": "Listonosz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_65",
-      "word": "Piłkarz",
+      "word": "Mechanik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_66",
-      "word": "Pływak",
+      "word": "Fryzjer",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_67",
-      "word": "Policjant",
+      "word": "Krawiec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_68",
-      "word": "Polityk",
+      "word": "Sprzątaczka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_69",
-      "word": "Pomocnik",
+      "word": "Ochroniarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_70",
-      "word": "Poeta",
+      "word": "Taksówkarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_71",
-      "word": "Prawnik",
+      "word": "Modelka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_72",
-      "word": "Programista",
+      "word": "Fotograf",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_73",
-      "word": "Przewodnik",
+      "word": "Rzeźbiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_74",
-      "word": "Psycholog",
+      "word": "Rolnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_75",
-      "word": "Przedsiębiorca",
+      "word": "Rybak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_76",
-      "word": "Pszczelarz",
+      "word": "Zegarmistrz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_77",
-      "word": "Piekarz",
+      "word": "Barman",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_78",
-      "word": "Pielęgniarka",
+      "word": "Krupier",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_79",
-      "word": "Plastyk",
+      "word": "Sędzia",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_80",
-      "word": "Podróżnik",
+      "word": "Budowlaniec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_81",
-      "word": "Postaci",
+      "word": "Architekt",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_82",
-      "word": "Peryferia",
+      "word": "Weterynarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_83",
-      "word": "Parch",
+      "word": "Masażysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_84",
-      "word": "Przyjaciel",
+      "word": "Dyrygent",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_85",
-      "word": "Pasażer",
+      "word": "Malarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_86",
-      "word": "Pasterz",
+      "word": "Stolarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_87",
-      "word": "Pacjent",
+      "word": "Hydraulik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_88",
-      "word": "Patent",
+      "word": "Kominiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_89",
-      "word": "Patron",
+      "word": "Kwiaciarka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_90",
-      "word": "Pionier",
+      "word": "Instruktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_91",
-      "word": "Pitbul",
+      "word": "Ratownik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_92",
-      "word": "Plebejusz",
+      "word": "Lider wycieczki",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_93",
-      "word": "Płatnik",
+      "word": "Szpieg",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_94",
-      "word": "Poborowy",
+      "word": "Rycerz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_95",
-      "word": "Podwładny",
+      "word": "Kat",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_96",
-      "word": "Pojedynek",
+      "word": "Czarownica",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_97",
-      "word": "Pomagacz",
+      "word": "Błazen",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_98",
-      "word": "Pomoc",
+      "word": "Alchemik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_99",
-      "word": "Potomek",
+      "word": "Detektyw",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_100",
-      "word": "Praojciec",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_101",
-      "word": "Plaża",
+      "word": "Szkoła",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_102",
-      "word": "Piramida",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_103",
-      "word": "Więzienie",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_104",
       "word": "Szpital",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_105",
+      "id": "pg_103",
+      "word": "Akwarium",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_104",
       "word": "Kino",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_106",
+      "id": "pg_105",
       "word": "Zamek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_107",
+      "id": "pg_106",
       "word": "ZOO",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_108",
+      "id": "pg_107",
       "word": "Basen",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_109",
+      "id": "pg_108",
       "word": "Kolejka górska",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_109",
+      "word": "Cukiernia",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_110",
-      "word": "Park",
+      "word": "Suterena",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_111",
-      "word": "Piekarnia",
+      "word": "Rynek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_112",
-      "word": "Piwnica",
+      "word": "Ziemia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_113",
-      "word": "Plac",
+      "word": "Urząd",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_114",
-      "word": "Planeta",
+      "word": "Ogród",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_115",
-      "word": "Poczta",
+      "word": "Salon",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_116",
-      "word": "Podwórko",
+      "word": "Łąka",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_117",
-      "word": "Pokój",
+      "word": "Kajakowy pomost",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_118",
-      "word": "Polana",
+      "word": "Komenda",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_119",
-      "word": "Port",
+      "word": "Studio",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_120",
-      "word": "Posterunek",
+      "word": "Dworzec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_121",
-      "word": "Pracownia",
+      "word": "Sahara",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_122",
-      "word": "Przystanek",
+      "word": "Karuzela",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_123",
-      "word": "Pustynia",
+      "word": "Hotel",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_124",
-      "word": "Punkt",
+      "word": "Teatr",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_125",
-      "word": "Pub",
+      "word": "Muzeum",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_126",
-      "word": "Półwysep",
+      "word": "Stadion",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_127",
-      "word": "Pole",
+      "word": "Lotnisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_128",
-      "word": "Parter",
+      "word": "Siłownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_129",
-      "word": "Poddasze",
+      "word": "Sauna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_130",
-      "word": "Pomost",
+      "word": "Kopalnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_131",
-      "word": "Park rozrywki",
+      "word": "Cmentarz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_132",
-      "word": "Parking",
+      "word": "Restauracja",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_133",
-      "word": "Pojedynek",
+      "word": "Kasyno",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_134",
-      "word": "Palmiarnia",
+      "word": "Łódź podwodna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_135",
-      "word": "Pałac",
+      "word": "Obóz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_136",
-      "word": "Pizzeria",
+      "word": "Wieżowiec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_137",
-      "word": "Pływalnia",
+      "word": "Schronisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_138",
-      "word": "Podziemia",
+      "word": "Warsztat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_139",
-      "word": "Pogotowie",
+      "word": "Klub",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_140",
-      "word": "Pralnia",
+      "word": "Cyrk",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_141",
-      "word": "Przejście",
+      "word": "Filharmonia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_142",
-      "word": "Punkt widokowy",
+      "word": "Aquapark",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_143",
-      "word": "Przełęcz",
+      "word": "Elektrownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_144",
-      "word": "Przystań",
+      "word": "Laboratorium",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_145",
-      "word": "Pustkowie",
+      "word": "Rezerwat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_146",
-      "word": "Prześwit",
+      "word": "Wulkan",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_147",
-      "word": "Płaskowyż",
+      "word": "Bunkier",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_148",
-      "word": "Pobocze",
+      "word": "Dwór",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_149",
-      "word": "Pogranicze",
+      "word": "Schron",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_150",
-      "word": "Południe",
+      "word": "Kawiarnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
@@ -71632,301 +71632,301 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_154",
-      "word": "Pizza",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_155",
       "word": "Lody",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_156",
-      "word": "Kawałek tortu",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_157",
+      "id": "pg_155",
       "word": "Mleko",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_158",
+      "id": "pg_156",
       "word": "Chleb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_157",
+      "word": "Masło",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_158",
+      "word": "Ser",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_159",
-      "word": "Papryka",
+      "word": "Szarlotka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_160",
-      "word": "Pomidor",
+      "word": "Sernik",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_161",
-      "word": "Pączek",
+      "word": "Tort",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_162",
-      "word": "Pierogi",
+      "word": "Drożdżówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_163",
-      "word": "Pieczeń",
+      "word": "Kebab",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_164",
-      "word": "Pieczarka",
+      "word": "Sushi",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_165",
-      "word": "Pietruszka",
+      "word": "Zapiekanka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_166",
-      "word": "Płatki",
+      "word": "Rosół",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_167",
-      "word": "Placki",
+      "word": "Gulasz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_168",
-      "word": "Polędwica",
+      "word": "Spaghetti",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_169",
-      "word": "Pomarańcza",
+      "word": "Sałatka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_170",
-      "word": "Por",
+      "word": "Tatar",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_171",
-      "word": "Popcorn",
+      "word": "Gofry",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_172",
-      "word": "Przekąska",
+      "word": "Kiełbasa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_173",
-      "word": "Pstrąg",
+      "word": "Bigos",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_174",
-      "word": "Ptysiowy",
+      "word": "Żurek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_175",
-      "word": "Przyprawa",
+      "word": "Barszcz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_176",
-      "word": "Pianka",
+      "word": "Naleśniki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_177",
-      "word": "Piernik",
+      "word": "Krokiety",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_178",
-      "word": "Pączek",
+      "word": "Śledź",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_179",
-      "word": "Pasztet",
+      "word": "Herbata",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_180",
-      "word": "Pierożki",
+      "word": "Kakao",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_181",
-      "word": "Pigwa",
+      "word": "Kompot",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_182",
-      "word": "Pesto",
+      "word": "Lemoniada",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_183",
-      "word": "Piwo",
+      "word": "Arbuz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_184",
-      "word": "Poncz",
+      "word": "Truskawka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_185",
-      "word": "Pita",
+      "word": "Malina",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_186",
-      "word": "Pyzy",
+      "word": "Borówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_187",
-      "word": "Paella",
+      "word": "Gruszka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_188",
-      "word": "Parówka",
+      "word": "Śliwka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_189",
-      "word": "Proszek do pieczenia",
+      "word": "Banan",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_190",
-      "word": "Pudding",
+      "word": "Cytrus",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_191",
-      "word": "Purée",
+      "word": "Cytryna",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_192",
-      "word": "Prazynki",
+      "word": "Orzech",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_193",
-      "word": "Pączek z dżemem",
+      "word": "Grzyb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_194",
-      "word": "Polędwiczka",
+      "word": "Frytki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_195",
-      "word": "Powidła",
+      "word": "Burger",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_196",
-      "word": "Przecier",
+      "word": "Ogórek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_197",
-      "word": "Ptasie mleczko",
+      "word": "Ciasto",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_198",
-      "word": "Puder",
+      "word": "Babeczka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_199",
-      "word": "Puszka",
+      "word": "Zupa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_200",
-      "word": "Pyszotka",
+      "word": "Deser",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_201",
-      "word": "Ptak",
+      "word": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_202",
-      "word": "Dinozaur",
+      "word": "Zwierzak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_203",
-      "word": "Pies",
+      "word": "Dinozaur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
@@ -71950,271 +71950,271 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_207",
-      "word": "Kot",
-      "category": "Zwierzęta & Natura",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_208",
       "word": "Kaktus",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_208",
+      "word": "Rzeka",
+      "category": "Zwierzęta & Natura",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_209",
-      "word": "Papuga",
+      "word": "Jezioro",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_210",
-      "word": "Piesek",
+      "word": "Morze",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_211",
-      "word": "Pająk",
+      "word": "Ocean",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_212",
-      "word": "Pantera",
+      "word": "Góra",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_213",
-      "word": "Panda",
+      "word": "Las",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_214",
-      "word": "Puma",
+      "word": "Łąka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_215",
-      "word": "Płetwal",
+      "word": "Drzewo",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_216",
-      "word": "Pingwin",
+      "word": "Kwiat",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_217",
-      "word": "Pstrąg",
+      "word": "Róża",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_218",
-      "word": "Pszczoła",
+      "word": "Sosna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_219",
-      "word": "Puchacz",
+      "word": "Dąb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_220",
-      "word": "Pustułka",
+      "word": "Grzyb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_221",
-      "word": "Płaszczka",
+      "word": "Chmura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_222",
-      "word": "Pijawka",
+      "word": "Deszcz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_223",
-      "word": "Płaszcz ziemi",
+      "word": "Śnieg",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_224",
-      "word": "Pustynia",
+      "word": "Wiatr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_225",
-      "word": "Potok",
+      "word": "Tęcza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_226",
-      "word": "Piorun",
+      "word": "Mgła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_227",
-      "word": "Piana",
+      "word": "Wodospad",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_228",
-      "word": "Pędy",
+      "word": "Skała",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_229",
-      "word": "Płatki",
+      "word": "Bursztyn",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_230",
-      "word": "Pączek kwiatu",
+      "word": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_231",
-      "word": "Pajęczyna",
+      "word": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_232",
-      "word": "Paproć",
+      "word": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_233",
-      "word": "Pustynia",
+      "word": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_234",
-      "word": "Pogoda",
+      "word": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_235",
-      "word": "Podmuch",
+      "word": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_236",
-      "word": "Południe",
+      "word": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_237",
-      "word": "Przełęcz",
+      "word": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_238",
-      "word": "Puszcza",
+      "word": "Bocian",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_239",
-      "word": "Pióro",
+      "word": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_240",
-      "word": "Pysk",
+      "word": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_241",
-      "word": "Pazur",
+      "word": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_242",
-      "word": "Pancerz",
+      "word": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_243",
-      "word": "Płetwa",
+      "word": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_244",
-      "word": "Pysk",
+      "word": "Jeleń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_245",
-      "word": "Pigi",
+      "word": "Sarna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_246",
-      "word": "Pelikan",
+      "word": "Dzik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_247",
-      "word": "Pływak",
+      "word": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_248",
-      "word": "Polnik",
+      "word": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_249",
-      "word": "Pudiel",
+      "word": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_250",
-      "word": "Pies dingo",
+      "word": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_251",
-      "word": "Samolot",
+      "word": "Samochód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -72226,289 +72226,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_253",
-      "word": "Telefon",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_254",
       "word": "Rower",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_255",
-      "word": "Samochód",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_256",
+      "id": "pg_254",
       "word": "Statek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_257",
+      "id": "pg_255",
       "word": "Hulajnoga",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_258",
+      "id": "pg_256",
       "word": "Żarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_259",
+      "id": "pg_257",
       "word": "Teleskop",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_258",
+      "word": "Dron",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_259",
+      "word": "Słuchawki",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_260",
-      "word": "Pojazd",
+      "word": "Klawiatura",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_261",
-      "word": "Pociąg",
+      "word": "Myszka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_262",
-      "word": "Parowiec",
+      "word": "Monitor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_263",
-      "word": "Pilot",
+      "word": "Drukarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_264",
-      "word": "Płytka",
+      "word": "Skaner",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_265",
-      "word": "Procesor",
+      "word": "Kamera",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_266",
-      "word": "Program",
+      "word": "Ruter Wi-Fi",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_267",
-      "word": "Pendrive",
+      "word": "Konsola",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_268",
-      "word": "Pralka",
+      "word": "Tablet",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_269",
-      "word": "Piekarnik",
+      "word": "Smartwatch",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_270",
-      "word": "Pojemnik",
+      "word": "Bateria",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_271",
-      "word": "Płytka drukowana",
+      "word": "Ładowarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_272",
-      "word": "Poduszkowiec",
+      "word": "Światłowód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_273",
-      "word": "Polonez",
+      "word": "Mikrofon",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_274",
-      "word": "Porsche",
+      "word": "Głośnik",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_275",
-      "word": "Przekładnia",
+      "word": "Klimatyzacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_276",
-      "word": "Pompa",
+      "word": "Robot",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_277",
-      "word": "Paliwo",
+      "word": "Satelita",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_278",
-      "word": "Przewód",
+      "word": "Rakieta",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_279",
-      "word": "Przełącznik",
+      "word": "Motocykl",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_280",
-      "word": "Potencjometr",
+      "word": "Traktor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_281",
-      "word": "Pojemnik",
+      "word": "Autobus",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_282",
-      "word": "Przeglądarka",
+      "word": "Tramwaj",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_283",
-      "word": "Pulpit",
+      "word": "Metro",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_284",
-      "word": "Pamięć",
+      "word": "Helikopter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_285",
-      "word": "Piksel",
+      "word": "Szybowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_286",
-      "word": "Port",
+      "word": "Żaglowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_287",
-      "word": "Powerbank",
+      "word": "Czołg",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_288",
-      "word": "Pistolet",
+      "word": "Koparka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_289",
-      "word": "Pikser",
+      "word": "Dźwig",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_290",
-      "word": "Projektor",
+      "word": "Ciężarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_291",
-      "word": "Prostownik",
+      "word": "Skuter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_292",
-      "word": "Pustka",
+      "word": "Wózek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_293",
-      "word": "Podzespół",
+      "word": "Zegarek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_294",
-      "word": "Płyta główna",
+      "word": "Telewizor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_295",
-      "word": "Pojemnościowy",
+      "word": "Radio",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_296",
-      "word": "Przetwornik",
+      "word": "Nawigacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_297",
-      "word": "Pneumatyka",
+      "word": "Mikrofalówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_298",
-      "word": "Podwozie",
+      "word": "Odkurzacz",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_299",
-      "word": "Pokrywa",
+      "word": "Suszarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_300",
-      "word": "Pancerz",
+      "word": "Ekran",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -72520,1195 +72520,1195 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_302",
-      "word": "Superbohater",
+      "word": "Heros",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_303",
-      "word": "Pikachu",
+      "word": "Władca Pierścieni",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_304",
-      "word": "Pac-Man",
+      "word": "Harry Potter",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_305",
-      "word": "Piksel",
+      "word": "Gwiezdne Wojny",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_306",
-      "word": "Postać",
+      "word": "Matrix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_307",
-      "word": "Przygoda",
+      "word": "Batman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_308",
-      "word": "Planszówka",
+      "word": "Spider-Man",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_309",
-      "word": "Piosenka",
+      "word": "Shrek",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_310",
-      "word": "Przebój",
+      "word": "Kraina Lodu",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_311",
-      "word": "Plakat",
+      "word": "Król Lew",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_312",
-      "word": "Premiera",
+      "word": "Toy Story",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_313",
-      "word": "Post",
+      "word": "Minecraft",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_314",
-      "word": "Podkast",
+      "word": "GTA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_315",
-      "word": "Powieść",
+      "word": "Fortnite",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_316",
-      "word": "Prasa",
+      "word": "League of Legends",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_317",
-      "word": "Program TV",
+      "word": "Mario",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_318",
-      "word": "Przegląd",
+      "word": "The Sims",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_319",
-      "word": "Publiczność",
+      "word": "James Bond",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_320",
-      "word": "Publika",
+      "word": "Indiana Jones",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_321",
-      "word": "Park rozrywki",
+      "word": "Terminator",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_322",
-      "word": "PlayStation",
+      "word": "Joker",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_323",
-      "word": "Pokemon",
+      "word": "Marvel",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_324",
-      "word": "Peppa",
+      "word": "DC",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_325",
-      "word": "Pinokio",
+      "word": "Netflix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_326",
-      "word": "Piotruś Pan",
+      "word": "YouTube",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_327",
-      "word": "Pumba",
+      "word": "TikTok",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_328",
-      "word": "Pocahontas",
+      "word": "Instagram",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_329",
-      "word": "Po (Kung Fu)",
+      "word": "Spotify",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_330",
-      "word": "Punisher",
+      "word": "Oscar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_331",
-      "word": "Pająk (Spidey)",
+      "word": "Grammy",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_332",
-      "word": "Paryż",
+      "word": "Avengers",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_333",
-      "word": "Pop",
+      "word": "Barbie",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_334",
-      "word": "Punk",
+      "word": "Oppenheimer",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_335",
-      "word": "Pojedynek",
+      "word": "Titanic",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_336",
-      "word": "Puchar",
+      "word": "Avatar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_337",
-      "word": "Punkty",
+      "word": "Fast & Furious",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_338",
-      "word": "Poziom",
+      "word": "Stranger Things",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_339",
-      "word": "Postać fikcyjna",
+      "word": "Gra o Tron",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_340",
-      "word": "Parkur",
+      "word": "Dragon Ball",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_341",
-      "word": "Piosenkarz",
+      "word": "Naruto",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_342",
-      "word": "Producent",
+      "word": "CS:GO",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_343",
-      "word": "Projekt",
+      "word": "FIFA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_344",
-      "word": "Półfinał",
+      "word": "Cyberpunk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_345",
-      "word": "Plebiscyt",
+      "word": "Superman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_346",
-      "word": "Przegrana",
+      "word": "Thor",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_347",
-      "word": "Polonia",
+      "word": "Hulk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_348",
-      "word": "Piknik",
+      "word": "Deadpool",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_349",
-      "word": "Publiczność",
+      "word": "Zelda",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_350",
-      "word": "Premia",
+      "word": "Gollum",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_351",
-      "word": "Piłka",
+      "word": "Bieganie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_352",
-      "word": "Pływanie",
+      "word": "Kąpiel",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_353",
-      "word": "Piłka nożna",
+      "word": "Szachy",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_354",
-      "word": "Piłka siatkowa",
+      "word": "Koszykówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_355",
-      "word": "Piłka koszykowa",
+      "word": "Siatkówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_356",
-      "word": "Pchnięcie kulą",
+      "word": "Tenis",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_357",
-      "word": "Pojedynek",
+      "word": "Boks",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_358",
-      "word": "Puchar",
+      "word": "Gimnastyka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_359",
-      "word": "Punkty",
+      "word": "Kolarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_360",
-      "word": "Podanie",
+      "word": "Hokej",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_361",
-      "word": "Postój",
+      "word": "Narciarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_362",
-      "word": "Podejście",
+      "word": "Łyżwiarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_363",
-      "word": "Piruet",
+      "word": "Surfing",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_364",
-      "word": "Pływak",
+      "word": "Golf",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_365",
-      "word": "Pięściarz",
+      "word": "Badminton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_366",
-      "word": "Płotki",
+      "word": "Wspinaczka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_367",
-      "word": "Półmaraton",
+      "word": "Żeglarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_368",
-      "word": "Parkur",
+      "word": "Wędkarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_369",
-      "word": "Peleton",
+      "word": "Majsterkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_370",
-      "word": "Pierwsza liga",
+      "word": "Fotografia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_371",
-      "word": "Pustelnik",
+      "word": "Malarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_372",
-      "word": "Polowanie",
+      "word": "Rysowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_373",
-      "word": "Podróże",
+      "word": "Czytanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_374",
-      "word": "Pstrągowanie",
+      "word": "Taniec",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_375",
-      "word": "Pięciobój",
+      "word": "Śpiew",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_376",
-      "word": "Przeciąganie liny",
+      "word": "Joga",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_377",
-      "word": "Przewrót",
+      "word": "Karate",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_378",
-      "word": "Paletka",
+      "word": "Judo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_379",
-      "word": "Park linowy",
+      "word": "Szermierka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_380",
-      "word": "Przejście",
+      "word": "Łucznictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_381",
-      "word": "Ping-pong",
+      "word": "Kręgle",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_382",
-      "word": "Pustelnik",
+      "word": "Bilard",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_383",
-      "word": "Piknik",
+      "word": "Darts",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_384",
-      "word": "Paintball",
+      "word": "Deskorolka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_385",
-      "word": "Paralotnia",
+      "word": "Rolki",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_386",
-      "word": "Podnoszenie ciężarów",
+      "word": "Brydż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_387",
-      "word": "Pustynny rajdy",
+      "word": "Domino",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_388",
-      "word": "Paliwo",
+      "word": "Origami",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_389",
-      "word": "Prosta trasa",
+      "word": "Szydełkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_390",
-      "word": "Punkty klasyfikacji",
+      "word": "Ceramika",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_391",
-      "word": "Pasy bezpieczeństwa",
+      "word": "Ogrodnictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_392",
-      "word": "Parawan",
+      "word": "Maraton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_393",
-      "word": "Pikowanie",
+      "word": "Sprint",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_394",
-      "word": "Pompka rowerowa",
+      "word": "Skok w dal",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_395",
-      "word": "Pachołek",
+      "word": "Skok wzwyż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_396",
-      "word": "Pianka pływacka",
+      "word": "Rzut oszczepem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_397",
-      "word": "Płetwy",
+      "word": "Rzut dyskiem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_398",
-      "word": "Przybory",
+      "word": "Wiosłowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_399",
-      "word": "Pędzel",
+      "word": "Żonglerka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_400",
-      "word": "Płótno",
+      "word": "Kaligrafia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_401",
-      "word": "Pływanie",
+      "word": "Gotowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_402",
-      "word": "Pisanie",
+      "word": "Zmywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_403",
-      "word": "Pieczenie",
+      "word": "Odkurzanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_404",
-      "word": "Prasowanie",
+      "word": "Koszenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_405",
-      "word": "Podróżowanie",
+      "word": "Malowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_406",
-      "word": "Pielęgnacja",
+      "word": "Rysowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_407",
-      "word": "Płaczenie",
+      "word": "Śpiewanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_408",
-      "word": "Pielenie",
+      "word": "Tańczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_409",
-      "word": "Pobudka",
+      "word": "Czytanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_410",
-      "word": "Pasteryzacja",
+      "word": "Szycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_411",
-      "word": "Pakowanie",
+      "word": "Majsterkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_412",
-      "word": "Pukanie",
+      "word": "Mycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_413",
-      "word": "Pchanie",
+      "word": "Golenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_414",
-      "word": "Pociąganie",
+      "word": "Czesanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_415",
-      "word": "Płukanie",
+      "word": "Ćwiczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_416",
-      "word": "Pranie",
+      "word": "Spacerowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_417",
-      "word": "Picie",
+      "word": "Łowienie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_418",
-      "word": "Palenie",
+      "word": "Skakanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_419",
-      "word": "Pytanie",
+      "word": "Wspinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_420",
-      "word": "Proszalnie",
+      "word": "Nurkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_421",
-      "word": "Pływanie",
+      "word": "Jeżdżenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_422",
-      "word": "Pocałunek",
+      "word": "Rozmawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_423",
-      "word": "Pospiech",
+      "word": "Słuchanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_424",
-      "word": "Podglądanie",
+      "word": "Oglądanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_425",
-      "word": "Przesuwanie",
+      "word": "Śmianie się",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_426",
-      "word": "Przesadzanie",
+      "word": "Lamentowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_427",
-      "word": "Pielęgnowanie",
+      "word": "Spanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_428",
-      "word": "Podejmowanie",
+      "word": "Jedzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_429",
-      "word": "Przekazywanie",
+      "word": "Sączenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_430",
-      "word": "Protestowanie",
+      "word": "Kupowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_431",
-      "word": "Podpisywanie",
+      "word": "Sprzedawanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_432",
-      "word": "Przepraszanie",
+      "word": "Bieganie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_433",
-      "word": "Podziwianie",
+      "word": "Liczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_434",
-      "word": "Poszukiwanie",
+      "word": "Szukanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_435",
-      "word": "Polowanie",
+      "word": "Sprzątanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_436",
-      "word": "Przeglądanie",
+      "word": "Budowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_437",
-      "word": "Pobieranie",
+      "word": "Naprawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_438",
-      "word": "Przenoszenie",
+      "word": "Otwieranie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_439",
-      "word": "Przekładanie",
+      "word": "Zamykanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_440",
-      "word": "Przesypianie",
+      "word": "Wycinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_441",
-      "word": "Pocieszanie",
+      "word": "Klejenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_442",
-      "word": "Przymierzanie",
+      "word": "Ważenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_443",
-      "word": "Przecinanie",
+      "word": "Mierzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_444",
-      "word": "Pieczenie",
+      "word": "Szykowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_445",
-      "word": "Powiadamianie",
+      "word": "Rozpakowywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_446",
-      "word": "Podjadanie",
+      "word": "Granie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_447",
-      "word": "Płoszenie",
+      "word": "Wygrywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_448",
-      "word": "Przesłuchiwanie",
+      "word": "Czekanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_449",
-      "word": "Przestrzeganie",
+      "word": "Marzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_450",
-      "word": "Przygarnianie",
+      "word": "Kąpanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_451",
-      "word": "Pieniądze",
+      "word": "Zgoda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_452",
-      "word": "Prawo",
+      "word": "Miłość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_453",
-      "word": "Praca",
+      "word": "Wolność",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_454",
-      "word": "Przyjaźń",
+      "word": "Czas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_455",
-      "word": "Prawda",
+      "word": "Szczęście",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_456",
-      "word": "Pamięć",
+      "word": "Nadzieja",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_457",
-      "word": "Północ",
+      "word": "Wiara",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_458",
-      "word": "Południe",
+      "word": "Sprawiedliwość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_459",
-      "word": "Przeszłość",
+      "word": "Zajęcie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_460",
-      "word": "Przyszłość",
+      "word": "Sukces",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_461",
-      "word": "Pojęcie",
+      "word": "Klęska",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_462",
-      "word": "Pomysł",
+      "word": "Hobby",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_463",
-      "word": "Problem",
+      "word": "Wyprawa",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_464",
-      "word": "Pytanie",
+      "word": "Kraj",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_465",
-      "word": "Powód",
+      "word": "Jutro",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_466",
-      "word": "Pora",
+      "word": "Dawne czasy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_467",
-      "word": "Pojedynek",
+      "word": "Marzenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_468",
-      "word": "Podróż",
+      "word": "Radość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_469",
-      "word": "Przygoda",
+      "word": "Smutek",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_470",
-      "word": "Pech",
+      "word": "Złość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_471",
-      "word": "Powodzenie",
+      "word": "Strach",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_472",
-      "word": "Praca domowa",
+      "word": "Odwaga",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_473",
-      "word": "Pokój (spokój)",
+      "word": "Duma",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_474",
-      "word": "Przemoc",
+      "word": "Wstyd",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_475",
-      "word": "Poczucie humoru",
+      "word": "Zazdroszczenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_476",
-      "word": "Porządek",
+      "word": "Uczucie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_477",
-      "word": "Przepis",
+      "word": "Koncept",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_478",
-      "word": "Projekt",
+      "word": "Kłopot",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_479",
-      "word": "Pakt",
+      "word": "Zagadka",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_480",
-      "word": "Patent",
+      "word": "Odpowiedź",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_481",
-      "word": "Poczucie",
+      "word": "Ład",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_482",
-      "word": "Pozór",
+      "word": "Chaos",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_483",
-      "word": "Podstęp",
+      "word": "Cisza",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_484",
-      "word": "Przysięga",
+      "word": "Hałas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_485",
-      "word": "Przekonanie",
+      "word": "Światło",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_486",
-      "word": "Potęga",
+      "word": "Cień",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_487",
-      "word": "Pasja",
+      "word": "Energia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_488",
-      "word": "Porażka",
+      "word": "Zdrowie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_489",
-      "word": "Pewność",
+      "word": "Śmiech",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_490",
-      "word": "Przypadek",
+      "word": "Łzy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_491",
-      "word": "Porozumienie",
+      "word": "Zwycięstwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_492",
-      "word": "Podwójność",
+      "word": "Remis",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_493",
-      "word": "Prostota",
+      "word": "Mądrość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_494",
-      "word": "Płynność",
+      "word": "Głupota",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_495",
-      "word": "Przestrzeń",
+      "word": "Bogactwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_496",
-      "word": "Prędkość",
+      "word": "Bieda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_497",
-      "word": "Podstawa",
+      "word": "Życie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_498",
-      "word": "Próg",
+      "word": "Śmierć",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_499",
-      "word": "Polityka",
+      "word": "Słońce",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_500",
-      "word": "Przyroda",
+      "word": "Ziemia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     }
@@ -73728,289 +73728,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_3",
-      "word": "Parasol",
+      "word": "Komputer",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_4",
-      "word": "Telefon",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_5",
-      "word": "Rower",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_6",
-      "word": "Bomba",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_7",
-      "word": "Gitara",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_8",
-      "word": "Okulary",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_9",
-      "word": "Kamera",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_10",
-      "word": "Pistolet",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_11",
-      "word": "Namiot",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_12",
-      "word": "Złoty medal",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_13",
-      "word": "Żarówka",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_14",
-      "word": "Kompas",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_15",
-      "word": "Teleskop",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_16",
-      "word": "Portfel",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_17",
-      "word": "Sofa",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_18",
-      "word": "Buty",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_19",
-      "word": "Lustro",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_20",
-      "word": "Klucz",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_21",
       "word": "Nożyczki",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_5",
+      "word": "Karton",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_6",
+      "word": "Kafel",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_7",
+      "word": "Trofeum",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_8",
+      "word": "Dysk",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_9",
+      "word": "Ogrodzenie",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_10",
+      "word": "Obrączka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_11",
+      "word": "Kurtka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_12",
+      "word": "Drożdżówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_13",
+      "word": "Afisz",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_14",
+      "word": "Fortepian",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_15",
+      "word": "Etui",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_16",
+      "word": "Futbolówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_17",
+      "word": "Nabój",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_18",
+      "word": "Słoik",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_19",
+      "word": "Kask",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_20",
+      "word": "Okulary",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_21",
+      "word": "Lustro",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_22",
-      "word": "Portret",
+      "word": "Klucz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_23",
-      "word": "Plecak",
+      "word": "Łóżko",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_24",
-      "word": "Poduszka",
+      "word": "Stół",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_25",
-      "word": "Pędzel",
+      "word": "Krzesło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_26",
-      "word": "Pióro",
+      "word": "Szafa",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_27",
-      "word": "Pudełko",
+      "word": "Lodówka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_28",
-      "word": "Płytka",
+      "word": "Suszarka do ubrań",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_29",
-      "word": "Puchar",
+      "word": "Kuchenka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_30",
-      "word": "Puzderko",
+      "word": "Garnek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_31",
-      "word": "Płyta",
+      "word": "Rondel",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_32",
-      "word": "Płot",
+      "word": "Talerz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_33",
-      "word": "Pierścień",
+      "word": "Kubek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_34",
-      "word": "Pas",
+      "word": "Widelec",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_35",
-      "word": "Płaszcz",
+      "word": "Łyżka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_36",
-      "word": "Pączek",
+      "word": "Nóż",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_37",
-      "word": "Paterka",
+      "word": "Ręcznik",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_38",
-      "word": "Plakat",
+      "word": "Mydło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_39",
-      "word": "Pianino",
+      "word": "Szczoteczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_40",
-      "word": "Pedał",
+      "word": "Grzebień",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_41",
-      "word": "Paleta",
+      "word": "Latarka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_42",
-      "word": "Pędzel",
+      "word": "Termos",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_43",
-      "word": "Pociąg",
+      "word": "Biżuteria",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_44",
-      "word": "Piórnik",
+      "word": "Wazon",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_45",
-      "word": "Piłka",
+      "word": "Świeca",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_46",
-      "word": "Pistolet",
+      "word": "Dywan",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_47",
-      "word": "Pocisk",
+      "word": "Koc",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_48",
-      "word": "Pojemnik",
+      "word": "Zasłona",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_49",
-      "word": "Pokrowiec",
+      "word": "Zapalniczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_50",
-      "word": "Pompa",
+      "word": "Mieszek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
@@ -74034,583 +74034,583 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_54",
-      "word": "Policjant",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_55",
       "word": "Kucharz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_56",
-      "word": "Piosenkarz",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_57",
+      "id": "pg_55",
       "word": "Strażak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_58",
+      "id": "pg_56",
       "word": "Dentysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_57",
+      "word": "Heros",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_58",
+      "word": "Doktor",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_59",
-      "word": "Superbohater",
+      "word": "Żołnierz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_60",
-      "word": "Prezydent",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_61",
-      "word": "Pediatra",
+      "word": "Aktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_62",
-      "word": "Pianista",
+      "word": "Reżyser",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_63",
-      "word": "Pilot",
+      "word": "Kierowca",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_64",
-      "word": "Pisarz",
+      "word": "Listonosz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_65",
-      "word": "Piłkarz",
+      "word": "Mechanik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_66",
-      "word": "Pływak",
+      "word": "Fryzjer",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_67",
-      "word": "Policjant",
+      "word": "Krawiec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_68",
-      "word": "Polityk",
+      "word": "Sprzątaczka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_69",
-      "word": "Pomocnik",
+      "word": "Ochroniarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_70",
-      "word": "Poeta",
+      "word": "Taksówkarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_71",
-      "word": "Prawnik",
+      "word": "Modelka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_72",
-      "word": "Programista",
+      "word": "Fotograf",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_73",
-      "word": "Przewodnik",
+      "word": "Rzeźbiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_74",
-      "word": "Psycholog",
+      "word": "Rolnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_75",
-      "word": "Przedsiębiorca",
+      "word": "Rybak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_76",
-      "word": "Pszczelarz",
+      "word": "Zegarmistrz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_77",
-      "word": "Piekarz",
+      "word": "Barman",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_78",
-      "word": "Pielęgniarka",
+      "word": "Krupier",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_79",
-      "word": "Plastyk",
+      "word": "Sędzia",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_80",
-      "word": "Podróżnik",
+      "word": "Budowlaniec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_81",
-      "word": "Postaci",
+      "word": "Architekt",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_82",
-      "word": "Peryferia",
+      "word": "Weterynarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_83",
-      "word": "Parch",
+      "word": "Masażysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_84",
-      "word": "Przyjaciel",
+      "word": "Dyrygent",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_85",
-      "word": "Pasażer",
+      "word": "Malarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_86",
-      "word": "Pasterz",
+      "word": "Stolarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_87",
-      "word": "Pacjent",
+      "word": "Hydraulik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_88",
-      "word": "Patent",
+      "word": "Kominiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_89",
-      "word": "Patron",
+      "word": "Kwiaciarka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_90",
-      "word": "Pionier",
+      "word": "Instruktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_91",
-      "word": "Pitbul",
+      "word": "Ratownik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_92",
-      "word": "Plebejusz",
+      "word": "Lider wycieczki",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_93",
-      "word": "Płatnik",
+      "word": "Szpieg",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_94",
-      "word": "Poborowy",
+      "word": "Rycerz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_95",
-      "word": "Podwładny",
+      "word": "Kat",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_96",
-      "word": "Pojedynek",
+      "word": "Czarownica",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_97",
-      "word": "Pomagacz",
+      "word": "Błazen",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_98",
-      "word": "Pomoc",
+      "word": "Alchemik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_99",
-      "word": "Potomek",
+      "word": "Detektyw",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_100",
-      "word": "Praojciec",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_101",
-      "word": "Plaża",
+      "word": "Szkoła",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_102",
-      "word": "Piramida",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_103",
-      "word": "Więzienie",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_104",
       "word": "Szpital",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_105",
+      "id": "pg_103",
+      "word": "Akwarium",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_104",
       "word": "Kino",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_106",
+      "id": "pg_105",
       "word": "Zamek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_107",
+      "id": "pg_106",
       "word": "ZOO",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_108",
+      "id": "pg_107",
       "word": "Basen",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_109",
+      "id": "pg_108",
       "word": "Kolejka górska",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_109",
+      "word": "Cukiernia",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_110",
-      "word": "Park",
+      "word": "Suterena",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_111",
-      "word": "Piekarnia",
+      "word": "Rynek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_112",
-      "word": "Piwnica",
+      "word": "Ziemia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_113",
-      "word": "Plac",
+      "word": "Urząd",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_114",
-      "word": "Planeta",
+      "word": "Ogród",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_115",
-      "word": "Poczta",
+      "word": "Salon",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_116",
-      "word": "Podwórko",
+      "word": "Łąka",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_117",
-      "word": "Pokój",
+      "word": "Kajakowy pomost",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_118",
-      "word": "Polana",
+      "word": "Komenda",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_119",
-      "word": "Port",
+      "word": "Studio",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_120",
-      "word": "Posterunek",
+      "word": "Dworzec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_121",
-      "word": "Pracownia",
+      "word": "Sahara",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_122",
-      "word": "Przystanek",
+      "word": "Karuzela",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_123",
-      "word": "Pustynia",
+      "word": "Hotel",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_124",
-      "word": "Punkt",
+      "word": "Teatr",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_125",
-      "word": "Pub",
+      "word": "Muzeum",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_126",
-      "word": "Półwysep",
+      "word": "Stadion",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_127",
-      "word": "Pole",
+      "word": "Lotnisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_128",
-      "word": "Parter",
+      "word": "Siłownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_129",
-      "word": "Poddasze",
+      "word": "Sauna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_130",
-      "word": "Pomost",
+      "word": "Kopalnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_131",
-      "word": "Park rozrywki",
+      "word": "Cmentarz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_132",
-      "word": "Parking",
+      "word": "Restauracja",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_133",
-      "word": "Pojedynek",
+      "word": "Kasyno",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_134",
-      "word": "Palmiarnia",
+      "word": "Łódź podwodna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_135",
-      "word": "Pałac",
+      "word": "Obóz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_136",
-      "word": "Pizzeria",
+      "word": "Wieżowiec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_137",
-      "word": "Pływalnia",
+      "word": "Schronisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_138",
-      "word": "Podziemia",
+      "word": "Warsztat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_139",
-      "word": "Pogotowie",
+      "word": "Klub",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_140",
-      "word": "Pralnia",
+      "word": "Cyrk",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_141",
-      "word": "Przejście",
+      "word": "Filharmonia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_142",
-      "word": "Punkt widokowy",
+      "word": "Aquapark",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_143",
-      "word": "Przełęcz",
+      "word": "Elektrownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_144",
-      "word": "Przystań",
+      "word": "Laboratorium",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_145",
-      "word": "Pustkowie",
+      "word": "Rezerwat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_146",
-      "word": "Prześwit",
+      "word": "Wulkan",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_147",
-      "word": "Płaskowyż",
+      "word": "Bunkier",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_148",
-      "word": "Pobocze",
+      "word": "Dwór",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_149",
-      "word": "Pogranicze",
+      "word": "Schron",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_150",
-      "word": "Południe",
+      "word": "Kawiarnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
@@ -74634,301 +74634,301 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_154",
-      "word": "Pizza",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_155",
       "word": "Lody",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_156",
-      "word": "Kawałek tortu",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_157",
+      "id": "pg_155",
       "word": "Mleko",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_158",
+      "id": "pg_156",
       "word": "Chleb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_157",
+      "word": "Masło",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_158",
+      "word": "Ser",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_159",
-      "word": "Papryka",
+      "word": "Szarlotka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_160",
-      "word": "Pomidor",
+      "word": "Sernik",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_161",
-      "word": "Pączek",
+      "word": "Tort",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_162",
-      "word": "Pierogi",
+      "word": "Drożdżówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_163",
-      "word": "Pieczeń",
+      "word": "Kebab",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_164",
-      "word": "Pieczarka",
+      "word": "Sushi",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_165",
-      "word": "Pietruszka",
+      "word": "Zapiekanka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_166",
-      "word": "Płatki",
+      "word": "Rosół",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_167",
-      "word": "Placki",
+      "word": "Gulasz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_168",
-      "word": "Polędwica",
+      "word": "Spaghetti",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_169",
-      "word": "Pomarańcza",
+      "word": "Sałatka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_170",
-      "word": "Por",
+      "word": "Tatar",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_171",
-      "word": "Popcorn",
+      "word": "Gofry",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_172",
-      "word": "Przekąska",
+      "word": "Kiełbasa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_173",
-      "word": "Pstrąg",
+      "word": "Bigos",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_174",
-      "word": "Ptysiowy",
+      "word": "Żurek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_175",
-      "word": "Przyprawa",
+      "word": "Barszcz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_176",
-      "word": "Pianka",
+      "word": "Naleśniki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_177",
-      "word": "Piernik",
+      "word": "Krokiety",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_178",
-      "word": "Pączek",
+      "word": "Śledź",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_179",
-      "word": "Pasztet",
+      "word": "Herbata",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_180",
-      "word": "Pierożki",
+      "word": "Kakao",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_181",
-      "word": "Pigwa",
+      "word": "Kompot",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_182",
-      "word": "Pesto",
+      "word": "Lemoniada",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_183",
-      "word": "Piwo",
+      "word": "Arbuz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_184",
-      "word": "Poncz",
+      "word": "Truskawka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_185",
-      "word": "Pita",
+      "word": "Malina",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_186",
-      "word": "Pyzy",
+      "word": "Borówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_187",
-      "word": "Paella",
+      "word": "Gruszka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_188",
-      "word": "Parówka",
+      "word": "Śliwka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_189",
-      "word": "Proszek do pieczenia",
+      "word": "Banan",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_190",
-      "word": "Pudding",
+      "word": "Cytrus",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_191",
-      "word": "Purée",
+      "word": "Cytryna",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_192",
-      "word": "Prazynki",
+      "word": "Orzech",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_193",
-      "word": "Pączek z dżemem",
+      "word": "Grzyb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_194",
-      "word": "Polędwiczka",
+      "word": "Frytki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_195",
-      "word": "Powidła",
+      "word": "Burger",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_196",
-      "word": "Przecier",
+      "word": "Ogórek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_197",
-      "word": "Ptasie mleczko",
+      "word": "Ciasto",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_198",
-      "word": "Puder",
+      "word": "Babeczka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_199",
-      "word": "Puszka",
+      "word": "Zupa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_200",
-      "word": "Pyszotka",
+      "word": "Deser",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_201",
-      "word": "Ptak",
+      "word": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_202",
-      "word": "Dinozaur",
+      "word": "Zwierzak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_203",
-      "word": "Pies",
+      "word": "Dinozaur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
@@ -74952,271 +74952,271 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_207",
-      "word": "Kot",
-      "category": "Zwierzęta & Natura",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_208",
       "word": "Kaktus",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_208",
+      "word": "Rzeka",
+      "category": "Zwierzęta & Natura",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_209",
-      "word": "Papuga",
+      "word": "Jezioro",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_210",
-      "word": "Piesek",
+      "word": "Morze",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_211",
-      "word": "Pająk",
+      "word": "Ocean",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_212",
-      "word": "Pantera",
+      "word": "Góra",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_213",
-      "word": "Panda",
+      "word": "Las",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_214",
-      "word": "Puma",
+      "word": "Łąka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_215",
-      "word": "Płetwal",
+      "word": "Drzewo",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_216",
-      "word": "Pingwin",
+      "word": "Kwiat",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_217",
-      "word": "Pstrąg",
+      "word": "Róża",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_218",
-      "word": "Pszczoła",
+      "word": "Sosna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_219",
-      "word": "Puchacz",
+      "word": "Dąb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_220",
-      "word": "Pustułka",
+      "word": "Grzyb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_221",
-      "word": "Płaszczka",
+      "word": "Chmura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_222",
-      "word": "Pijawka",
+      "word": "Deszcz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_223",
-      "word": "Płaszcz ziemi",
+      "word": "Śnieg",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_224",
-      "word": "Pustynia",
+      "word": "Wiatr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_225",
-      "word": "Potok",
+      "word": "Tęcza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_226",
-      "word": "Piorun",
+      "word": "Mgła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_227",
-      "word": "Piana",
+      "word": "Wodospad",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_228",
-      "word": "Pędy",
+      "word": "Skała",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_229",
-      "word": "Płatki",
+      "word": "Bursztyn",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_230",
-      "word": "Pączek kwiatu",
+      "word": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_231",
-      "word": "Pajęczyna",
+      "word": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_232",
-      "word": "Paproć",
+      "word": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_233",
-      "word": "Pustynia",
+      "word": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_234",
-      "word": "Pogoda",
+      "word": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_235",
-      "word": "Podmuch",
+      "word": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_236",
-      "word": "Południe",
+      "word": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_237",
-      "word": "Przełęcz",
+      "word": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_238",
-      "word": "Puszcza",
+      "word": "Bocian",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_239",
-      "word": "Pióro",
+      "word": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_240",
-      "word": "Pysk",
+      "word": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_241",
-      "word": "Pazur",
+      "word": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_242",
-      "word": "Pancerz",
+      "word": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_243",
-      "word": "Płetwa",
+      "word": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_244",
-      "word": "Pysk",
+      "word": "Jeleń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_245",
-      "word": "Pigi",
+      "word": "Sarna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_246",
-      "word": "Pelikan",
+      "word": "Dzik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_247",
-      "word": "Pływak",
+      "word": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_248",
-      "word": "Polnik",
+      "word": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_249",
-      "word": "Pudiel",
+      "word": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_250",
-      "word": "Pies dingo",
+      "word": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_251",
-      "word": "Samolot",
+      "word": "Samochód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -75228,289 +75228,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_253",
-      "word": "Telefon",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_254",
       "word": "Rower",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_255",
-      "word": "Samochód",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_256",
+      "id": "pg_254",
       "word": "Statek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_257",
+      "id": "pg_255",
       "word": "Hulajnoga",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_258",
+      "id": "pg_256",
       "word": "Żarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_259",
+      "id": "pg_257",
       "word": "Teleskop",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_258",
+      "word": "Dron",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_259",
+      "word": "Słuchawki",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_260",
-      "word": "Pojazd",
+      "word": "Klawiatura",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_261",
-      "word": "Pociąg",
+      "word": "Myszka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_262",
-      "word": "Parowiec",
+      "word": "Monitor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_263",
-      "word": "Pilot",
+      "word": "Drukarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_264",
-      "word": "Płytka",
+      "word": "Skaner",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_265",
-      "word": "Procesor",
+      "word": "Kamera",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_266",
-      "word": "Program",
+      "word": "Ruter Wi-Fi",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_267",
-      "word": "Pendrive",
+      "word": "Konsola",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_268",
-      "word": "Pralka",
+      "word": "Tablet",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_269",
-      "word": "Piekarnik",
+      "word": "Smartwatch",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_270",
-      "word": "Pojemnik",
+      "word": "Bateria",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_271",
-      "word": "Płytka drukowana",
+      "word": "Ładowarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_272",
-      "word": "Poduszkowiec",
+      "word": "Światłowód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_273",
-      "word": "Polonez",
+      "word": "Mikrofon",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_274",
-      "word": "Porsche",
+      "word": "Głośnik",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_275",
-      "word": "Przekładnia",
+      "word": "Klimatyzacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_276",
-      "word": "Pompa",
+      "word": "Robot",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_277",
-      "word": "Paliwo",
+      "word": "Satelita",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_278",
-      "word": "Przewód",
+      "word": "Rakieta",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_279",
-      "word": "Przełącznik",
+      "word": "Motocykl",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_280",
-      "word": "Potencjometr",
+      "word": "Traktor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_281",
-      "word": "Pojemnik",
+      "word": "Autobus",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_282",
-      "word": "Przeglądarka",
+      "word": "Tramwaj",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_283",
-      "word": "Pulpit",
+      "word": "Metro",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_284",
-      "word": "Pamięć",
+      "word": "Helikopter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_285",
-      "word": "Piksel",
+      "word": "Szybowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_286",
-      "word": "Port",
+      "word": "Żaglowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_287",
-      "word": "Powerbank",
+      "word": "Czołg",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_288",
-      "word": "Pistolet",
+      "word": "Koparka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_289",
-      "word": "Pikser",
+      "word": "Dźwig",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_290",
-      "word": "Projektor",
+      "word": "Ciężarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_291",
-      "word": "Prostownik",
+      "word": "Skuter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_292",
-      "word": "Pustka",
+      "word": "Wózek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_293",
-      "word": "Podzespół",
+      "word": "Zegarek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_294",
-      "word": "Płyta główna",
+      "word": "Telewizor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_295",
-      "word": "Pojemnościowy",
+      "word": "Radio",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_296",
-      "word": "Przetwornik",
+      "word": "Nawigacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_297",
-      "word": "Pneumatyka",
+      "word": "Mikrofalówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_298",
-      "word": "Podwozie",
+      "word": "Odkurzacz",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_299",
-      "word": "Pokrywa",
+      "word": "Suszarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_300",
-      "word": "Pancerz",
+      "word": "Ekran",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -75522,1195 +75522,1195 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_302",
-      "word": "Superbohater",
+      "word": "Heros",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_303",
-      "word": "Pikachu",
+      "word": "Władca Pierścieni",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_304",
-      "word": "Pac-Man",
+      "word": "Harry Potter",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_305",
-      "word": "Piksel",
+      "word": "Gwiezdne Wojny",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_306",
-      "word": "Postać",
+      "word": "Matrix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_307",
-      "word": "Przygoda",
+      "word": "Batman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_308",
-      "word": "Planszówka",
+      "word": "Spider-Man",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_309",
-      "word": "Piosenka",
+      "word": "Shrek",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_310",
-      "word": "Przebój",
+      "word": "Kraina Lodu",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_311",
-      "word": "Plakat",
+      "word": "Król Lew",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_312",
-      "word": "Premiera",
+      "word": "Toy Story",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_313",
-      "word": "Post",
+      "word": "Minecraft",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_314",
-      "word": "Podkast",
+      "word": "GTA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_315",
-      "word": "Powieść",
+      "word": "Fortnite",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_316",
-      "word": "Prasa",
+      "word": "League of Legends",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_317",
-      "word": "Program TV",
+      "word": "Mario",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_318",
-      "word": "Przegląd",
+      "word": "The Sims",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_319",
-      "word": "Publiczność",
+      "word": "James Bond",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_320",
-      "word": "Publika",
+      "word": "Indiana Jones",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_321",
-      "word": "Park rozrywki",
+      "word": "Terminator",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_322",
-      "word": "PlayStation",
+      "word": "Joker",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_323",
-      "word": "Pokemon",
+      "word": "Marvel",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_324",
-      "word": "Peppa",
+      "word": "DC",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_325",
-      "word": "Pinokio",
+      "word": "Netflix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_326",
-      "word": "Piotruś Pan",
+      "word": "YouTube",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_327",
-      "word": "Pumba",
+      "word": "TikTok",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_328",
-      "word": "Pocahontas",
+      "word": "Instagram",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_329",
-      "word": "Po (Kung Fu)",
+      "word": "Spotify",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_330",
-      "word": "Punisher",
+      "word": "Oscar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_331",
-      "word": "Pająk (Spidey)",
+      "word": "Grammy",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_332",
-      "word": "Paryż",
+      "word": "Avengers",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_333",
-      "word": "Pop",
+      "word": "Barbie",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_334",
-      "word": "Punk",
+      "word": "Oppenheimer",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_335",
-      "word": "Pojedynek",
+      "word": "Titanic",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_336",
-      "word": "Puchar",
+      "word": "Avatar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_337",
-      "word": "Punkty",
+      "word": "Fast & Furious",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_338",
-      "word": "Poziom",
+      "word": "Stranger Things",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_339",
-      "word": "Postać fikcyjna",
+      "word": "Gra o Tron",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_340",
-      "word": "Parkur",
+      "word": "Dragon Ball",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_341",
-      "word": "Piosenkarz",
+      "word": "Naruto",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_342",
-      "word": "Producent",
+      "word": "CS:GO",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_343",
-      "word": "Projekt",
+      "word": "FIFA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_344",
-      "word": "Półfinał",
+      "word": "Cyberpunk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_345",
-      "word": "Plebiscyt",
+      "word": "Superman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_346",
-      "word": "Przegrana",
+      "word": "Thor",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_347",
-      "word": "Polonia",
+      "word": "Hulk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_348",
-      "word": "Piknik",
+      "word": "Deadpool",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_349",
-      "word": "Publiczność",
+      "word": "Zelda",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_350",
-      "word": "Premia",
+      "word": "Gollum",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_351",
-      "word": "Piłka",
+      "word": "Bieganie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_352",
-      "word": "Pływanie",
+      "word": "Kąpiel",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_353",
-      "word": "Piłka nożna",
+      "word": "Szachy",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_354",
-      "word": "Piłka siatkowa",
+      "word": "Koszykówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_355",
-      "word": "Piłka koszykowa",
+      "word": "Siatkówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_356",
-      "word": "Pchnięcie kulą",
+      "word": "Tenis",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_357",
-      "word": "Pojedynek",
+      "word": "Boks",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_358",
-      "word": "Puchar",
+      "word": "Gimnastyka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_359",
-      "word": "Punkty",
+      "word": "Kolarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_360",
-      "word": "Podanie",
+      "word": "Hokej",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_361",
-      "word": "Postój",
+      "word": "Narciarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_362",
-      "word": "Podejście",
+      "word": "Łyżwiarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_363",
-      "word": "Piruet",
+      "word": "Surfing",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_364",
-      "word": "Pływak",
+      "word": "Golf",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_365",
-      "word": "Pięściarz",
+      "word": "Badminton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_366",
-      "word": "Płotki",
+      "word": "Wspinaczka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_367",
-      "word": "Półmaraton",
+      "word": "Żeglarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_368",
-      "word": "Parkur",
+      "word": "Wędkarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_369",
-      "word": "Peleton",
+      "word": "Majsterkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_370",
-      "word": "Pierwsza liga",
+      "word": "Fotografia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_371",
-      "word": "Pustelnik",
+      "word": "Malarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_372",
-      "word": "Polowanie",
+      "word": "Rysowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_373",
-      "word": "Podróże",
+      "word": "Czytanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_374",
-      "word": "Pstrągowanie",
+      "word": "Taniec",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_375",
-      "word": "Pięciobój",
+      "word": "Śpiew",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_376",
-      "word": "Przeciąganie liny",
+      "word": "Joga",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_377",
-      "word": "Przewrót",
+      "word": "Karate",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_378",
-      "word": "Paletka",
+      "word": "Judo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_379",
-      "word": "Park linowy",
+      "word": "Szermierka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_380",
-      "word": "Przejście",
+      "word": "Łucznictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_381",
-      "word": "Ping-pong",
+      "word": "Kręgle",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_382",
-      "word": "Pustelnik",
+      "word": "Bilard",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_383",
-      "word": "Piknik",
+      "word": "Darts",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_384",
-      "word": "Paintball",
+      "word": "Deskorolka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_385",
-      "word": "Paralotnia",
+      "word": "Rolki",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_386",
-      "word": "Podnoszenie ciężarów",
+      "word": "Brydż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_387",
-      "word": "Pustynny rajdy",
+      "word": "Domino",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_388",
-      "word": "Paliwo",
+      "word": "Origami",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_389",
-      "word": "Prosta trasa",
+      "word": "Szydełkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_390",
-      "word": "Punkty klasyfikacji",
+      "word": "Ceramika",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_391",
-      "word": "Pasy bezpieczeństwa",
+      "word": "Ogrodnictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_392",
-      "word": "Parawan",
+      "word": "Maraton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_393",
-      "word": "Pikowanie",
+      "word": "Sprint",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_394",
-      "word": "Pompka rowerowa",
+      "word": "Skok w dal",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_395",
-      "word": "Pachołek",
+      "word": "Skok wzwyż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_396",
-      "word": "Pianka pływacka",
+      "word": "Rzut oszczepem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_397",
-      "word": "Płetwy",
+      "word": "Rzut dyskiem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_398",
-      "word": "Przybory",
+      "word": "Wiosłowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_399",
-      "word": "Pędzel",
+      "word": "Żonglerka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_400",
-      "word": "Płótno",
+      "word": "Kaligrafia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_401",
-      "word": "Pływanie",
+      "word": "Gotowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_402",
-      "word": "Pisanie",
+      "word": "Zmywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_403",
-      "word": "Pieczenie",
+      "word": "Odkurzanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_404",
-      "word": "Prasowanie",
+      "word": "Koszenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_405",
-      "word": "Podróżowanie",
+      "word": "Malowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_406",
-      "word": "Pielęgnacja",
+      "word": "Rysowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_407",
-      "word": "Płaczenie",
+      "word": "Śpiewanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_408",
-      "word": "Pielenie",
+      "word": "Tańczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_409",
-      "word": "Pobudka",
+      "word": "Czytanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_410",
-      "word": "Pasteryzacja",
+      "word": "Szycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_411",
-      "word": "Pakowanie",
+      "word": "Majsterkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_412",
-      "word": "Pukanie",
+      "word": "Mycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_413",
-      "word": "Pchanie",
+      "word": "Golenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_414",
-      "word": "Pociąganie",
+      "word": "Czesanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_415",
-      "word": "Płukanie",
+      "word": "Ćwiczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_416",
-      "word": "Pranie",
+      "word": "Spacerowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_417",
-      "word": "Picie",
+      "word": "Łowienie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_418",
-      "word": "Palenie",
+      "word": "Skakanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_419",
-      "word": "Pytanie",
+      "word": "Wspinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_420",
-      "word": "Proszalnie",
+      "word": "Nurkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_421",
-      "word": "Pływanie",
+      "word": "Jeżdżenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_422",
-      "word": "Pocałunek",
+      "word": "Rozmawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_423",
-      "word": "Pospiech",
+      "word": "Słuchanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_424",
-      "word": "Podglądanie",
+      "word": "Oglądanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_425",
-      "word": "Przesuwanie",
+      "word": "Śmianie się",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_426",
-      "word": "Przesadzanie",
+      "word": "Lamentowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_427",
-      "word": "Pielęgnowanie",
+      "word": "Spanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_428",
-      "word": "Podejmowanie",
+      "word": "Jedzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_429",
-      "word": "Przekazywanie",
+      "word": "Sączenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_430",
-      "word": "Protestowanie",
+      "word": "Kupowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_431",
-      "word": "Podpisywanie",
+      "word": "Sprzedawanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_432",
-      "word": "Przepraszanie",
+      "word": "Bieganie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_433",
-      "word": "Podziwianie",
+      "word": "Liczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_434",
-      "word": "Poszukiwanie",
+      "word": "Szukanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_435",
-      "word": "Polowanie",
+      "word": "Sprzątanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_436",
-      "word": "Przeglądanie",
+      "word": "Budowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_437",
-      "word": "Pobieranie",
+      "word": "Naprawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_438",
-      "word": "Przenoszenie",
+      "word": "Otwieranie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_439",
-      "word": "Przekładanie",
+      "word": "Zamykanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_440",
-      "word": "Przesypianie",
+      "word": "Wycinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_441",
-      "word": "Pocieszanie",
+      "word": "Klejenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_442",
-      "word": "Przymierzanie",
+      "word": "Ważenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_443",
-      "word": "Przecinanie",
+      "word": "Mierzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_444",
-      "word": "Pieczenie",
+      "word": "Szykowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_445",
-      "word": "Powiadamianie",
+      "word": "Rozpakowywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_446",
-      "word": "Podjadanie",
+      "word": "Granie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_447",
-      "word": "Płoszenie",
+      "word": "Wygrywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_448",
-      "word": "Przesłuchiwanie",
+      "word": "Czekanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_449",
-      "word": "Przestrzeganie",
+      "word": "Marzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_450",
-      "word": "Przygarnianie",
+      "word": "Kąpanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_451",
-      "word": "Pieniądze",
+      "word": "Zgoda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_452",
-      "word": "Prawo",
+      "word": "Miłość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_453",
-      "word": "Praca",
+      "word": "Wolność",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_454",
-      "word": "Przyjaźń",
+      "word": "Czas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_455",
-      "word": "Prawda",
+      "word": "Szczęście",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_456",
-      "word": "Pamięć",
+      "word": "Nadzieja",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_457",
-      "word": "Północ",
+      "word": "Wiara",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_458",
-      "word": "Południe",
+      "word": "Sprawiedliwość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_459",
-      "word": "Przeszłość",
+      "word": "Zajęcie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_460",
-      "word": "Przyszłość",
+      "word": "Sukces",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_461",
-      "word": "Pojęcie",
+      "word": "Klęska",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_462",
-      "word": "Pomysł",
+      "word": "Hobby",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_463",
-      "word": "Problem",
+      "word": "Wyprawa",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_464",
-      "word": "Pytanie",
+      "word": "Kraj",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_465",
-      "word": "Powód",
+      "word": "Jutro",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_466",
-      "word": "Pora",
+      "word": "Dawne czasy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_467",
-      "word": "Pojedynek",
+      "word": "Marzenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_468",
-      "word": "Podróż",
+      "word": "Radość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_469",
-      "word": "Przygoda",
+      "word": "Smutek",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_470",
-      "word": "Pech",
+      "word": "Złość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_471",
-      "word": "Powodzenie",
+      "word": "Strach",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_472",
-      "word": "Praca domowa",
+      "word": "Odwaga",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_473",
-      "word": "Pokój (spokój)",
+      "word": "Duma",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_474",
-      "word": "Przemoc",
+      "word": "Wstyd",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_475",
-      "word": "Poczucie humoru",
+      "word": "Zazdroszczenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_476",
-      "word": "Porządek",
+      "word": "Uczucie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_477",
-      "word": "Przepis",
+      "word": "Koncept",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_478",
-      "word": "Projekt",
+      "word": "Kłopot",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_479",
-      "word": "Pakt",
+      "word": "Zagadka",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_480",
-      "word": "Patent",
+      "word": "Odpowiedź",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_481",
-      "word": "Poczucie",
+      "word": "Ład",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_482",
-      "word": "Pozór",
+      "word": "Chaos",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_483",
-      "word": "Podstęp",
+      "word": "Cisza",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_484",
-      "word": "Przysięga",
+      "word": "Hałas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_485",
-      "word": "Przekonanie",
+      "word": "Światło",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_486",
-      "word": "Potęga",
+      "word": "Cień",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_487",
-      "word": "Pasja",
+      "word": "Energia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_488",
-      "word": "Porażka",
+      "word": "Zdrowie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_489",
-      "word": "Pewność",
+      "word": "Śmiech",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_490",
-      "word": "Przypadek",
+      "word": "Łzy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_491",
-      "word": "Porozumienie",
+      "word": "Zwycięstwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_492",
-      "word": "Podwójność",
+      "word": "Remis",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_493",
-      "word": "Prostota",
+      "word": "Mądrość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_494",
-      "word": "Płynność",
+      "word": "Głupota",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_495",
-      "word": "Przestrzeń",
+      "word": "Bogactwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_496",
-      "word": "Prędkość",
+      "word": "Bieda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_497",
-      "word": "Podstawa",
+      "word": "Życie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_498",
-      "word": "Próg",
+      "word": "Śmierć",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_499",
-      "word": "Polityka",
+      "word": "Słońce",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_500",
-      "word": "Przyroda",
+      "word": "Ziemia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     }
@@ -76730,289 +76730,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_3",
-      "word": "Parasol",
+      "word": "Komputer",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_4",
-      "word": "Telefon",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_5",
-      "word": "Rower",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_6",
-      "word": "Bomba",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_7",
-      "word": "Gitara",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_8",
-      "word": "Okulary",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_9",
-      "word": "Kamera",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_10",
-      "word": "Pistolet",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_11",
-      "word": "Namiot",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_12",
-      "word": "Złoty medal",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_13",
-      "word": "Żarówka",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_14",
-      "word": "Kompas",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_15",
-      "word": "Teleskop",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_16",
-      "word": "Portfel",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_17",
-      "word": "Sofa",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_18",
-      "word": "Buty",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_19",
-      "word": "Lustro",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_20",
-      "word": "Klucz",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_21",
       "word": "Nożyczki",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_5",
+      "word": "Karton",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_6",
+      "word": "Kafel",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_7",
+      "word": "Trofeum",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_8",
+      "word": "Dysk",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_9",
+      "word": "Ogrodzenie",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_10",
+      "word": "Obrączka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_11",
+      "word": "Kurtka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_12",
+      "word": "Drożdżówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_13",
+      "word": "Afisz",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_14",
+      "word": "Fortepian",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_15",
+      "word": "Etui",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_16",
+      "word": "Futbolówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_17",
+      "word": "Nabój",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_18",
+      "word": "Słoik",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_19",
+      "word": "Kask",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_20",
+      "word": "Okulary",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_21",
+      "word": "Lustro",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_22",
-      "word": "Portret",
+      "word": "Klucz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_23",
-      "word": "Plecak",
+      "word": "Łóżko",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_24",
-      "word": "Poduszka",
+      "word": "Stół",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_25",
-      "word": "Pędzel",
+      "word": "Krzesło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_26",
-      "word": "Pióro",
+      "word": "Szafa",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_27",
-      "word": "Pudełko",
+      "word": "Lodówka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_28",
-      "word": "Płytka",
+      "word": "Suszarka do ubrań",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_29",
-      "word": "Puchar",
+      "word": "Kuchenka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_30",
-      "word": "Puzderko",
+      "word": "Garnek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_31",
-      "word": "Płyta",
+      "word": "Rondel",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_32",
-      "word": "Płot",
+      "word": "Talerz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_33",
-      "word": "Pierścień",
+      "word": "Kubek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_34",
-      "word": "Pas",
+      "word": "Widelec",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_35",
-      "word": "Płaszcz",
+      "word": "Łyżka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_36",
-      "word": "Pączek",
+      "word": "Nóż",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_37",
-      "word": "Paterka",
+      "word": "Ręcznik",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_38",
-      "word": "Plakat",
+      "word": "Mydło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_39",
-      "word": "Pianino",
+      "word": "Szczoteczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_40",
-      "word": "Pedał",
+      "word": "Grzebień",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_41",
-      "word": "Paleta",
+      "word": "Latarka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_42",
-      "word": "Pędzel",
+      "word": "Termos",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_43",
-      "word": "Pociąg",
+      "word": "Biżuteria",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_44",
-      "word": "Piórnik",
+      "word": "Wazon",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_45",
-      "word": "Piłka",
+      "word": "Świeca",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_46",
-      "word": "Pistolet",
+      "word": "Dywan",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_47",
-      "word": "Pocisk",
+      "word": "Koc",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_48",
-      "word": "Pojemnik",
+      "word": "Zasłona",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_49",
-      "word": "Pokrowiec",
+      "word": "Zapalniczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_50",
-      "word": "Pompa",
+      "word": "Mieszek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
@@ -77036,583 +77036,583 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_54",
-      "word": "Policjant",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_55",
       "word": "Kucharz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_56",
-      "word": "Piosenkarz",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_57",
+      "id": "pg_55",
       "word": "Strażak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_58",
+      "id": "pg_56",
       "word": "Dentysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_57",
+      "word": "Heros",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_58",
+      "word": "Doktor",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_59",
-      "word": "Superbohater",
+      "word": "Żołnierz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_60",
-      "word": "Prezydent",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_61",
-      "word": "Pediatra",
+      "word": "Aktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_62",
-      "word": "Pianista",
+      "word": "Reżyser",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_63",
-      "word": "Pilot",
+      "word": "Kierowca",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_64",
-      "word": "Pisarz",
+      "word": "Listonosz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_65",
-      "word": "Piłkarz",
+      "word": "Mechanik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_66",
-      "word": "Pływak",
+      "word": "Fryzjer",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_67",
-      "word": "Policjant",
+      "word": "Krawiec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_68",
-      "word": "Polityk",
+      "word": "Sprzątaczka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_69",
-      "word": "Pomocnik",
+      "word": "Ochroniarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_70",
-      "word": "Poeta",
+      "word": "Taksówkarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_71",
-      "word": "Prawnik",
+      "word": "Modelka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_72",
-      "word": "Programista",
+      "word": "Fotograf",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_73",
-      "word": "Przewodnik",
+      "word": "Rzeźbiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_74",
-      "word": "Psycholog",
+      "word": "Rolnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_75",
-      "word": "Przedsiębiorca",
+      "word": "Rybak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_76",
-      "word": "Pszczelarz",
+      "word": "Zegarmistrz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_77",
-      "word": "Piekarz",
+      "word": "Barman",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_78",
-      "word": "Pielęgniarka",
+      "word": "Krupier",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_79",
-      "word": "Plastyk",
+      "word": "Sędzia",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_80",
-      "word": "Podróżnik",
+      "word": "Budowlaniec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_81",
-      "word": "Postaci",
+      "word": "Architekt",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_82",
-      "word": "Peryferia",
+      "word": "Weterynarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_83",
-      "word": "Parch",
+      "word": "Masażysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_84",
-      "word": "Przyjaciel",
+      "word": "Dyrygent",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_85",
-      "word": "Pasażer",
+      "word": "Malarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_86",
-      "word": "Pasterz",
+      "word": "Stolarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_87",
-      "word": "Pacjent",
+      "word": "Hydraulik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_88",
-      "word": "Patent",
+      "word": "Kominiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_89",
-      "word": "Patron",
+      "word": "Kwiaciarka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_90",
-      "word": "Pionier",
+      "word": "Instruktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_91",
-      "word": "Pitbul",
+      "word": "Ratownik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_92",
-      "word": "Plebejusz",
+      "word": "Lider wycieczki",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_93",
-      "word": "Płatnik",
+      "word": "Szpieg",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_94",
-      "word": "Poborowy",
+      "word": "Rycerz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_95",
-      "word": "Podwładny",
+      "word": "Kat",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_96",
-      "word": "Pojedynek",
+      "word": "Czarownica",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_97",
-      "word": "Pomagacz",
+      "word": "Błazen",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_98",
-      "word": "Pomoc",
+      "word": "Alchemik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_99",
-      "word": "Potomek",
+      "word": "Detektyw",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_100",
-      "word": "Praojciec",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_101",
-      "word": "Plaża",
+      "word": "Szkoła",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_102",
-      "word": "Piramida",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_103",
-      "word": "Więzienie",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_104",
       "word": "Szpital",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_105",
+      "id": "pg_103",
+      "word": "Akwarium",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_104",
       "word": "Kino",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_106",
+      "id": "pg_105",
       "word": "Zamek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_107",
+      "id": "pg_106",
       "word": "ZOO",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_108",
+      "id": "pg_107",
       "word": "Basen",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_109",
+      "id": "pg_108",
       "word": "Kolejka górska",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_109",
+      "word": "Cukiernia",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_110",
-      "word": "Park",
+      "word": "Suterena",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_111",
-      "word": "Piekarnia",
+      "word": "Rynek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_112",
-      "word": "Piwnica",
+      "word": "Ziemia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_113",
-      "word": "Plac",
+      "word": "Urząd",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_114",
-      "word": "Planeta",
+      "word": "Ogród",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_115",
-      "word": "Poczta",
+      "word": "Salon",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_116",
-      "word": "Podwórko",
+      "word": "Łąka",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_117",
-      "word": "Pokój",
+      "word": "Kajakowy pomost",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_118",
-      "word": "Polana",
+      "word": "Komenda",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_119",
-      "word": "Port",
+      "word": "Studio",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_120",
-      "word": "Posterunek",
+      "word": "Dworzec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_121",
-      "word": "Pracownia",
+      "word": "Sahara",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_122",
-      "word": "Przystanek",
+      "word": "Karuzela",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_123",
-      "word": "Pustynia",
+      "word": "Hotel",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_124",
-      "word": "Punkt",
+      "word": "Teatr",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_125",
-      "word": "Pub",
+      "word": "Muzeum",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_126",
-      "word": "Półwysep",
+      "word": "Stadion",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_127",
-      "word": "Pole",
+      "word": "Lotnisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_128",
-      "word": "Parter",
+      "word": "Siłownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_129",
-      "word": "Poddasze",
+      "word": "Sauna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_130",
-      "word": "Pomost",
+      "word": "Kopalnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_131",
-      "word": "Park rozrywki",
+      "word": "Cmentarz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_132",
-      "word": "Parking",
+      "word": "Restauracja",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_133",
-      "word": "Pojedynek",
+      "word": "Kasyno",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_134",
-      "word": "Palmiarnia",
+      "word": "Łódź podwodna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_135",
-      "word": "Pałac",
+      "word": "Obóz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_136",
-      "word": "Pizzeria",
+      "word": "Wieżowiec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_137",
-      "word": "Pływalnia",
+      "word": "Schronisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_138",
-      "word": "Podziemia",
+      "word": "Warsztat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_139",
-      "word": "Pogotowie",
+      "word": "Klub",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_140",
-      "word": "Pralnia",
+      "word": "Cyrk",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_141",
-      "word": "Przejście",
+      "word": "Filharmonia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_142",
-      "word": "Punkt widokowy",
+      "word": "Aquapark",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_143",
-      "word": "Przełęcz",
+      "word": "Elektrownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_144",
-      "word": "Przystań",
+      "word": "Laboratorium",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_145",
-      "word": "Pustkowie",
+      "word": "Rezerwat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_146",
-      "word": "Prześwit",
+      "word": "Wulkan",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_147",
-      "word": "Płaskowyż",
+      "word": "Bunkier",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_148",
-      "word": "Pobocze",
+      "word": "Dwór",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_149",
-      "word": "Pogranicze",
+      "word": "Schron",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_150",
-      "word": "Południe",
+      "word": "Kawiarnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
@@ -77636,301 +77636,301 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_154",
-      "word": "Pizza",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_155",
       "word": "Lody",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_156",
-      "word": "Kawałek tortu",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_157",
+      "id": "pg_155",
       "word": "Mleko",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_158",
+      "id": "pg_156",
       "word": "Chleb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_157",
+      "word": "Masło",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_158",
+      "word": "Ser",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_159",
-      "word": "Papryka",
+      "word": "Szarlotka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_160",
-      "word": "Pomidor",
+      "word": "Sernik",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_161",
-      "word": "Pączek",
+      "word": "Tort",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_162",
-      "word": "Pierogi",
+      "word": "Drożdżówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_163",
-      "word": "Pieczeń",
+      "word": "Kebab",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_164",
-      "word": "Pieczarka",
+      "word": "Sushi",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_165",
-      "word": "Pietruszka",
+      "word": "Zapiekanka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_166",
-      "word": "Płatki",
+      "word": "Rosół",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_167",
-      "word": "Placki",
+      "word": "Gulasz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_168",
-      "word": "Polędwica",
+      "word": "Spaghetti",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_169",
-      "word": "Pomarańcza",
+      "word": "Sałatka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_170",
-      "word": "Por",
+      "word": "Tatar",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_171",
-      "word": "Popcorn",
+      "word": "Gofry",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_172",
-      "word": "Przekąska",
+      "word": "Kiełbasa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_173",
-      "word": "Pstrąg",
+      "word": "Bigos",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_174",
-      "word": "Ptysiowy",
+      "word": "Żurek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_175",
-      "word": "Przyprawa",
+      "word": "Barszcz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_176",
-      "word": "Pianka",
+      "word": "Naleśniki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_177",
-      "word": "Piernik",
+      "word": "Krokiety",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_178",
-      "word": "Pączek",
+      "word": "Śledź",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_179",
-      "word": "Pasztet",
+      "word": "Herbata",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_180",
-      "word": "Pierożki",
+      "word": "Kakao",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_181",
-      "word": "Pigwa",
+      "word": "Kompot",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_182",
-      "word": "Pesto",
+      "word": "Lemoniada",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_183",
-      "word": "Piwo",
+      "word": "Arbuz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_184",
-      "word": "Poncz",
+      "word": "Truskawka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_185",
-      "word": "Pita",
+      "word": "Malina",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_186",
-      "word": "Pyzy",
+      "word": "Borówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_187",
-      "word": "Paella",
+      "word": "Gruszka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_188",
-      "word": "Parówka",
+      "word": "Śliwka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_189",
-      "word": "Proszek do pieczenia",
+      "word": "Banan",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_190",
-      "word": "Pudding",
+      "word": "Cytrus",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_191",
-      "word": "Purée",
+      "word": "Cytryna",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_192",
-      "word": "Prazynki",
+      "word": "Orzech",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_193",
-      "word": "Pączek z dżemem",
+      "word": "Grzyb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_194",
-      "word": "Polędwiczka",
+      "word": "Frytki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_195",
-      "word": "Powidła",
+      "word": "Burger",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_196",
-      "word": "Przecier",
+      "word": "Ogórek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_197",
-      "word": "Ptasie mleczko",
+      "word": "Ciasto",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_198",
-      "word": "Puder",
+      "word": "Babeczka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_199",
-      "word": "Puszka",
+      "word": "Zupa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_200",
-      "word": "Pyszotka",
+      "word": "Deser",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_201",
-      "word": "Ptak",
+      "word": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_202",
-      "word": "Dinozaur",
+      "word": "Zwierzak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_203",
-      "word": "Pies",
+      "word": "Dinozaur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
@@ -77954,271 +77954,271 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_207",
-      "word": "Kot",
-      "category": "Zwierzęta & Natura",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_208",
       "word": "Kaktus",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_208",
+      "word": "Rzeka",
+      "category": "Zwierzęta & Natura",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_209",
-      "word": "Papuga",
+      "word": "Jezioro",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_210",
-      "word": "Piesek",
+      "word": "Morze",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_211",
-      "word": "Pająk",
+      "word": "Ocean",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_212",
-      "word": "Pantera",
+      "word": "Góra",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_213",
-      "word": "Panda",
+      "word": "Las",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_214",
-      "word": "Puma",
+      "word": "Łąka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_215",
-      "word": "Płetwal",
+      "word": "Drzewo",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_216",
-      "word": "Pingwin",
+      "word": "Kwiat",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_217",
-      "word": "Pstrąg",
+      "word": "Róża",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_218",
-      "word": "Pszczoła",
+      "word": "Sosna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_219",
-      "word": "Puchacz",
+      "word": "Dąb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_220",
-      "word": "Pustułka",
+      "word": "Grzyb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_221",
-      "word": "Płaszczka",
+      "word": "Chmura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_222",
-      "word": "Pijawka",
+      "word": "Deszcz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_223",
-      "word": "Płaszcz ziemi",
+      "word": "Śnieg",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_224",
-      "word": "Pustynia",
+      "word": "Wiatr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_225",
-      "word": "Potok",
+      "word": "Tęcza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_226",
-      "word": "Piorun",
+      "word": "Mgła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_227",
-      "word": "Piana",
+      "word": "Wodospad",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_228",
-      "word": "Pędy",
+      "word": "Skała",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_229",
-      "word": "Płatki",
+      "word": "Bursztyn",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_230",
-      "word": "Pączek kwiatu",
+      "word": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_231",
-      "word": "Pajęczyna",
+      "word": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_232",
-      "word": "Paproć",
+      "word": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_233",
-      "word": "Pustynia",
+      "word": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_234",
-      "word": "Pogoda",
+      "word": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_235",
-      "word": "Podmuch",
+      "word": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_236",
-      "word": "Południe",
+      "word": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_237",
-      "word": "Przełęcz",
+      "word": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_238",
-      "word": "Puszcza",
+      "word": "Bocian",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_239",
-      "word": "Pióro",
+      "word": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_240",
-      "word": "Pysk",
+      "word": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_241",
-      "word": "Pazur",
+      "word": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_242",
-      "word": "Pancerz",
+      "word": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_243",
-      "word": "Płetwa",
+      "word": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_244",
-      "word": "Pysk",
+      "word": "Jeleń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_245",
-      "word": "Pigi",
+      "word": "Sarna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_246",
-      "word": "Pelikan",
+      "word": "Dzik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_247",
-      "word": "Pływak",
+      "word": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_248",
-      "word": "Polnik",
+      "word": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_249",
-      "word": "Pudiel",
+      "word": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_250",
-      "word": "Pies dingo",
+      "word": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_251",
-      "word": "Samolot",
+      "word": "Samochód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -78230,289 +78230,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_253",
-      "word": "Telefon",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_254",
       "word": "Rower",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_255",
-      "word": "Samochód",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_256",
+      "id": "pg_254",
       "word": "Statek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_257",
+      "id": "pg_255",
       "word": "Hulajnoga",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_258",
+      "id": "pg_256",
       "word": "Żarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_259",
+      "id": "pg_257",
       "word": "Teleskop",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_258",
+      "word": "Dron",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_259",
+      "word": "Słuchawki",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_260",
-      "word": "Pojazd",
+      "word": "Klawiatura",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_261",
-      "word": "Pociąg",
+      "word": "Myszka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_262",
-      "word": "Parowiec",
+      "word": "Monitor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_263",
-      "word": "Pilot",
+      "word": "Drukarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_264",
-      "word": "Płytka",
+      "word": "Skaner",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_265",
-      "word": "Procesor",
+      "word": "Kamera",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_266",
-      "word": "Program",
+      "word": "Ruter Wi-Fi",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_267",
-      "word": "Pendrive",
+      "word": "Konsola",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_268",
-      "word": "Pralka",
+      "word": "Tablet",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_269",
-      "word": "Piekarnik",
+      "word": "Smartwatch",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_270",
-      "word": "Pojemnik",
+      "word": "Bateria",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_271",
-      "word": "Płytka drukowana",
+      "word": "Ładowarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_272",
-      "word": "Poduszkowiec",
+      "word": "Światłowód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_273",
-      "word": "Polonez",
+      "word": "Mikrofon",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_274",
-      "word": "Porsche",
+      "word": "Głośnik",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_275",
-      "word": "Przekładnia",
+      "word": "Klimatyzacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_276",
-      "word": "Pompa",
+      "word": "Robot",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_277",
-      "word": "Paliwo",
+      "word": "Satelita",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_278",
-      "word": "Przewód",
+      "word": "Rakieta",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_279",
-      "word": "Przełącznik",
+      "word": "Motocykl",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_280",
-      "word": "Potencjometr",
+      "word": "Traktor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_281",
-      "word": "Pojemnik",
+      "word": "Autobus",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_282",
-      "word": "Przeglądarka",
+      "word": "Tramwaj",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_283",
-      "word": "Pulpit",
+      "word": "Metro",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_284",
-      "word": "Pamięć",
+      "word": "Helikopter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_285",
-      "word": "Piksel",
+      "word": "Szybowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_286",
-      "word": "Port",
+      "word": "Żaglowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_287",
-      "word": "Powerbank",
+      "word": "Czołg",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_288",
-      "word": "Pistolet",
+      "word": "Koparka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_289",
-      "word": "Pikser",
+      "word": "Dźwig",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_290",
-      "word": "Projektor",
+      "word": "Ciężarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_291",
-      "word": "Prostownik",
+      "word": "Skuter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_292",
-      "word": "Pustka",
+      "word": "Wózek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_293",
-      "word": "Podzespół",
+      "word": "Zegarek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_294",
-      "word": "Płyta główna",
+      "word": "Telewizor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_295",
-      "word": "Pojemnościowy",
+      "word": "Radio",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_296",
-      "word": "Przetwornik",
+      "word": "Nawigacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_297",
-      "word": "Pneumatyka",
+      "word": "Mikrofalówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_298",
-      "word": "Podwozie",
+      "word": "Odkurzacz",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_299",
-      "word": "Pokrywa",
+      "word": "Suszarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_300",
-      "word": "Pancerz",
+      "word": "Ekran",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -78524,1195 +78524,1195 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_302",
-      "word": "Superbohater",
+      "word": "Heros",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_303",
-      "word": "Pikachu",
+      "word": "Władca Pierścieni",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_304",
-      "word": "Pac-Man",
+      "word": "Harry Potter",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_305",
-      "word": "Piksel",
+      "word": "Gwiezdne Wojny",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_306",
-      "word": "Postać",
+      "word": "Matrix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_307",
-      "word": "Przygoda",
+      "word": "Batman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_308",
-      "word": "Planszówka",
+      "word": "Spider-Man",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_309",
-      "word": "Piosenka",
+      "word": "Shrek",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_310",
-      "word": "Przebój",
+      "word": "Kraina Lodu",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_311",
-      "word": "Plakat",
+      "word": "Król Lew",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_312",
-      "word": "Premiera",
+      "word": "Toy Story",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_313",
-      "word": "Post",
+      "word": "Minecraft",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_314",
-      "word": "Podkast",
+      "word": "GTA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_315",
-      "word": "Powieść",
+      "word": "Fortnite",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_316",
-      "word": "Prasa",
+      "word": "League of Legends",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_317",
-      "word": "Program TV",
+      "word": "Mario",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_318",
-      "word": "Przegląd",
+      "word": "The Sims",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_319",
-      "word": "Publiczność",
+      "word": "James Bond",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_320",
-      "word": "Publika",
+      "word": "Indiana Jones",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_321",
-      "word": "Park rozrywki",
+      "word": "Terminator",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_322",
-      "word": "PlayStation",
+      "word": "Joker",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_323",
-      "word": "Pokemon",
+      "word": "Marvel",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_324",
-      "word": "Peppa",
+      "word": "DC",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_325",
-      "word": "Pinokio",
+      "word": "Netflix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_326",
-      "word": "Piotruś Pan",
+      "word": "YouTube",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_327",
-      "word": "Pumba",
+      "word": "TikTok",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_328",
-      "word": "Pocahontas",
+      "word": "Instagram",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_329",
-      "word": "Po (Kung Fu)",
+      "word": "Spotify",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_330",
-      "word": "Punisher",
+      "word": "Oscar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_331",
-      "word": "Pająk (Spidey)",
+      "word": "Grammy",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_332",
-      "word": "Paryż",
+      "word": "Avengers",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_333",
-      "word": "Pop",
+      "word": "Barbie",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_334",
-      "word": "Punk",
+      "word": "Oppenheimer",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_335",
-      "word": "Pojedynek",
+      "word": "Titanic",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_336",
-      "word": "Puchar",
+      "word": "Avatar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_337",
-      "word": "Punkty",
+      "word": "Fast & Furious",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_338",
-      "word": "Poziom",
+      "word": "Stranger Things",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_339",
-      "word": "Postać fikcyjna",
+      "word": "Gra o Tron",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_340",
-      "word": "Parkur",
+      "word": "Dragon Ball",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_341",
-      "word": "Piosenkarz",
+      "word": "Naruto",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_342",
-      "word": "Producent",
+      "word": "CS:GO",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_343",
-      "word": "Projekt",
+      "word": "FIFA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_344",
-      "word": "Półfinał",
+      "word": "Cyberpunk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_345",
-      "word": "Plebiscyt",
+      "word": "Superman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_346",
-      "word": "Przegrana",
+      "word": "Thor",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_347",
-      "word": "Polonia",
+      "word": "Hulk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_348",
-      "word": "Piknik",
+      "word": "Deadpool",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_349",
-      "word": "Publiczność",
+      "word": "Zelda",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_350",
-      "word": "Premia",
+      "word": "Gollum",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_351",
-      "word": "Piłka",
+      "word": "Bieganie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_352",
-      "word": "Pływanie",
+      "word": "Kąpiel",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_353",
-      "word": "Piłka nożna",
+      "word": "Szachy",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_354",
-      "word": "Piłka siatkowa",
+      "word": "Koszykówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_355",
-      "word": "Piłka koszykowa",
+      "word": "Siatkówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_356",
-      "word": "Pchnięcie kulą",
+      "word": "Tenis",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_357",
-      "word": "Pojedynek",
+      "word": "Boks",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_358",
-      "word": "Puchar",
+      "word": "Gimnastyka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_359",
-      "word": "Punkty",
+      "word": "Kolarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_360",
-      "word": "Podanie",
+      "word": "Hokej",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_361",
-      "word": "Postój",
+      "word": "Narciarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_362",
-      "word": "Podejście",
+      "word": "Łyżwiarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_363",
-      "word": "Piruet",
+      "word": "Surfing",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_364",
-      "word": "Pływak",
+      "word": "Golf",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_365",
-      "word": "Pięściarz",
+      "word": "Badminton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_366",
-      "word": "Płotki",
+      "word": "Wspinaczka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_367",
-      "word": "Półmaraton",
+      "word": "Żeglarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_368",
-      "word": "Parkur",
+      "word": "Wędkarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_369",
-      "word": "Peleton",
+      "word": "Majsterkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_370",
-      "word": "Pierwsza liga",
+      "word": "Fotografia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_371",
-      "word": "Pustelnik",
+      "word": "Malarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_372",
-      "word": "Polowanie",
+      "word": "Rysowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_373",
-      "word": "Podróże",
+      "word": "Czytanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_374",
-      "word": "Pstrągowanie",
+      "word": "Taniec",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_375",
-      "word": "Pięciobój",
+      "word": "Śpiew",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_376",
-      "word": "Przeciąganie liny",
+      "word": "Joga",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_377",
-      "word": "Przewrót",
+      "word": "Karate",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_378",
-      "word": "Paletka",
+      "word": "Judo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_379",
-      "word": "Park linowy",
+      "word": "Szermierka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_380",
-      "word": "Przejście",
+      "word": "Łucznictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_381",
-      "word": "Ping-pong",
+      "word": "Kręgle",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_382",
-      "word": "Pustelnik",
+      "word": "Bilard",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_383",
-      "word": "Piknik",
+      "word": "Darts",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_384",
-      "word": "Paintball",
+      "word": "Deskorolka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_385",
-      "word": "Paralotnia",
+      "word": "Rolki",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_386",
-      "word": "Podnoszenie ciężarów",
+      "word": "Brydż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_387",
-      "word": "Pustynny rajdy",
+      "word": "Domino",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_388",
-      "word": "Paliwo",
+      "word": "Origami",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_389",
-      "word": "Prosta trasa",
+      "word": "Szydełkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_390",
-      "word": "Punkty klasyfikacji",
+      "word": "Ceramika",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_391",
-      "word": "Pasy bezpieczeństwa",
+      "word": "Ogrodnictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_392",
-      "word": "Parawan",
+      "word": "Maraton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_393",
-      "word": "Pikowanie",
+      "word": "Sprint",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_394",
-      "word": "Pompka rowerowa",
+      "word": "Skok w dal",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_395",
-      "word": "Pachołek",
+      "word": "Skok wzwyż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_396",
-      "word": "Pianka pływacka",
+      "word": "Rzut oszczepem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_397",
-      "word": "Płetwy",
+      "word": "Rzut dyskiem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_398",
-      "word": "Przybory",
+      "word": "Wiosłowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_399",
-      "word": "Pędzel",
+      "word": "Żonglerka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_400",
-      "word": "Płótno",
+      "word": "Kaligrafia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_401",
-      "word": "Pływanie",
+      "word": "Gotowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_402",
-      "word": "Pisanie",
+      "word": "Zmywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_403",
-      "word": "Pieczenie",
+      "word": "Odkurzanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_404",
-      "word": "Prasowanie",
+      "word": "Koszenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_405",
-      "word": "Podróżowanie",
+      "word": "Malowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_406",
-      "word": "Pielęgnacja",
+      "word": "Rysowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_407",
-      "word": "Płaczenie",
+      "word": "Śpiewanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_408",
-      "word": "Pielenie",
+      "word": "Tańczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_409",
-      "word": "Pobudka",
+      "word": "Czytanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_410",
-      "word": "Pasteryzacja",
+      "word": "Szycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_411",
-      "word": "Pakowanie",
+      "word": "Majsterkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_412",
-      "word": "Pukanie",
+      "word": "Mycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_413",
-      "word": "Pchanie",
+      "word": "Golenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_414",
-      "word": "Pociąganie",
+      "word": "Czesanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_415",
-      "word": "Płukanie",
+      "word": "Ćwiczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_416",
-      "word": "Pranie",
+      "word": "Spacerowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_417",
-      "word": "Picie",
+      "word": "Łowienie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_418",
-      "word": "Palenie",
+      "word": "Skakanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_419",
-      "word": "Pytanie",
+      "word": "Wspinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_420",
-      "word": "Proszalnie",
+      "word": "Nurkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_421",
-      "word": "Pływanie",
+      "word": "Jeżdżenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_422",
-      "word": "Pocałunek",
+      "word": "Rozmawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_423",
-      "word": "Pospiech",
+      "word": "Słuchanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_424",
-      "word": "Podglądanie",
+      "word": "Oglądanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_425",
-      "word": "Przesuwanie",
+      "word": "Śmianie się",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_426",
-      "word": "Przesadzanie",
+      "word": "Lamentowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_427",
-      "word": "Pielęgnowanie",
+      "word": "Spanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_428",
-      "word": "Podejmowanie",
+      "word": "Jedzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_429",
-      "word": "Przekazywanie",
+      "word": "Sączenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_430",
-      "word": "Protestowanie",
+      "word": "Kupowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_431",
-      "word": "Podpisywanie",
+      "word": "Sprzedawanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_432",
-      "word": "Przepraszanie",
+      "word": "Bieganie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_433",
-      "word": "Podziwianie",
+      "word": "Liczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_434",
-      "word": "Poszukiwanie",
+      "word": "Szukanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_435",
-      "word": "Polowanie",
+      "word": "Sprzątanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_436",
-      "word": "Przeglądanie",
+      "word": "Budowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_437",
-      "word": "Pobieranie",
+      "word": "Naprawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_438",
-      "word": "Przenoszenie",
+      "word": "Otwieranie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_439",
-      "word": "Przekładanie",
+      "word": "Zamykanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_440",
-      "word": "Przesypianie",
+      "word": "Wycinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_441",
-      "word": "Pocieszanie",
+      "word": "Klejenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_442",
-      "word": "Przymierzanie",
+      "word": "Ważenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_443",
-      "word": "Przecinanie",
+      "word": "Mierzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_444",
-      "word": "Pieczenie",
+      "word": "Szykowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_445",
-      "word": "Powiadamianie",
+      "word": "Rozpakowywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_446",
-      "word": "Podjadanie",
+      "word": "Granie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_447",
-      "word": "Płoszenie",
+      "word": "Wygrywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_448",
-      "word": "Przesłuchiwanie",
+      "word": "Czekanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_449",
-      "word": "Przestrzeganie",
+      "word": "Marzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_450",
-      "word": "Przygarnianie",
+      "word": "Kąpanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_451",
-      "word": "Pieniądze",
+      "word": "Zgoda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_452",
-      "word": "Prawo",
+      "word": "Miłość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_453",
-      "word": "Praca",
+      "word": "Wolność",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_454",
-      "word": "Przyjaźń",
+      "word": "Czas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_455",
-      "word": "Prawda",
+      "word": "Szczęście",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_456",
-      "word": "Pamięć",
+      "word": "Nadzieja",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_457",
-      "word": "Północ",
+      "word": "Wiara",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_458",
-      "word": "Południe",
+      "word": "Sprawiedliwość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_459",
-      "word": "Przeszłość",
+      "word": "Zajęcie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_460",
-      "word": "Przyszłość",
+      "word": "Sukces",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_461",
-      "word": "Pojęcie",
+      "word": "Klęska",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_462",
-      "word": "Pomysł",
+      "word": "Hobby",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_463",
-      "word": "Problem",
+      "word": "Wyprawa",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_464",
-      "word": "Pytanie",
+      "word": "Kraj",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_465",
-      "word": "Powód",
+      "word": "Jutro",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_466",
-      "word": "Pora",
+      "word": "Dawne czasy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_467",
-      "word": "Pojedynek",
+      "word": "Marzenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_468",
-      "word": "Podróż",
+      "word": "Radość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_469",
-      "word": "Przygoda",
+      "word": "Smutek",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_470",
-      "word": "Pech",
+      "word": "Złość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_471",
-      "word": "Powodzenie",
+      "word": "Strach",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_472",
-      "word": "Praca domowa",
+      "word": "Odwaga",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_473",
-      "word": "Pokój (spokój)",
+      "word": "Duma",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_474",
-      "word": "Przemoc",
+      "word": "Wstyd",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_475",
-      "word": "Poczucie humoru",
+      "word": "Zazdroszczenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_476",
-      "word": "Porządek",
+      "word": "Uczucie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_477",
-      "word": "Przepis",
+      "word": "Koncept",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_478",
-      "word": "Projekt",
+      "word": "Kłopot",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_479",
-      "word": "Pakt",
+      "word": "Zagadka",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_480",
-      "word": "Patent",
+      "word": "Odpowiedź",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_481",
-      "word": "Poczucie",
+      "word": "Ład",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_482",
-      "word": "Pozór",
+      "word": "Chaos",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_483",
-      "word": "Podstęp",
+      "word": "Cisza",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_484",
-      "word": "Przysięga",
+      "word": "Hałas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_485",
-      "word": "Przekonanie",
+      "word": "Światło",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_486",
-      "word": "Potęga",
+      "word": "Cień",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_487",
-      "word": "Pasja",
+      "word": "Energia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_488",
-      "word": "Porażka",
+      "word": "Zdrowie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_489",
-      "word": "Pewność",
+      "word": "Śmiech",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_490",
-      "word": "Przypadek",
+      "word": "Łzy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_491",
-      "word": "Porozumienie",
+      "word": "Zwycięstwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_492",
-      "word": "Podwójność",
+      "word": "Remis",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_493",
-      "word": "Prostota",
+      "word": "Mądrość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_494",
-      "word": "Płynność",
+      "word": "Głupota",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_495",
-      "word": "Przestrzeń",
+      "word": "Bogactwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_496",
-      "word": "Prędkość",
+      "word": "Bieda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_497",
-      "word": "Podstawa",
+      "word": "Życie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_498",
-      "word": "Próg",
+      "word": "Śmierć",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_499",
-      "word": "Polityka",
+      "word": "Słońce",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_500",
-      "word": "Przyroda",
+      "word": "Ziemia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     }
@@ -79732,289 +79732,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_3",
-      "word": "Parasol",
+      "word": "Komputer",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_4",
-      "word": "Telefon",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_5",
-      "word": "Rower",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_6",
-      "word": "Bomba",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_7",
-      "word": "Gitara",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_8",
-      "word": "Okulary",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_9",
-      "word": "Kamera",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_10",
-      "word": "Pistolet",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_11",
-      "word": "Namiot",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_12",
-      "word": "Złoty medal",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_13",
-      "word": "Żarówka",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_14",
-      "word": "Kompas",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_15",
-      "word": "Teleskop",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_16",
-      "word": "Portfel",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_17",
-      "word": "Sofa",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_18",
-      "word": "Buty",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_19",
-      "word": "Lustro",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_20",
-      "word": "Klucz",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_21",
       "word": "Nożyczki",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_5",
+      "word": "Karton",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_6",
+      "word": "Kafel",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_7",
+      "word": "Trofeum",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_8",
+      "word": "Dysk",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_9",
+      "word": "Ogrodzenie",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_10",
+      "word": "Obrączka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_11",
+      "word": "Kurtka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_12",
+      "word": "Drożdżówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_13",
+      "word": "Afisz",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_14",
+      "word": "Fortepian",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_15",
+      "word": "Etui",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_16",
+      "word": "Futbolówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_17",
+      "word": "Nabój",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_18",
+      "word": "Słoik",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_19",
+      "word": "Kask",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_20",
+      "word": "Okulary",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_21",
+      "word": "Lustro",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_22",
-      "word": "Portret",
+      "word": "Klucz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_23",
-      "word": "Plecak",
+      "word": "Łóżko",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_24",
-      "word": "Poduszka",
+      "word": "Stół",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_25",
-      "word": "Pędzel",
+      "word": "Krzesło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_26",
-      "word": "Pióro",
+      "word": "Szafa",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_27",
-      "word": "Pudełko",
+      "word": "Lodówka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_28",
-      "word": "Płytka",
+      "word": "Suszarka do ubrań",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_29",
-      "word": "Puchar",
+      "word": "Kuchenka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_30",
-      "word": "Puzderko",
+      "word": "Garnek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_31",
-      "word": "Płyta",
+      "word": "Rondel",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_32",
-      "word": "Płot",
+      "word": "Talerz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_33",
-      "word": "Pierścień",
+      "word": "Kubek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_34",
-      "word": "Pas",
+      "word": "Widelec",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_35",
-      "word": "Płaszcz",
+      "word": "Łyżka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_36",
-      "word": "Pączek",
+      "word": "Nóż",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_37",
-      "word": "Paterka",
+      "word": "Ręcznik",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_38",
-      "word": "Plakat",
+      "word": "Mydło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_39",
-      "word": "Pianino",
+      "word": "Szczoteczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_40",
-      "word": "Pedał",
+      "word": "Grzebień",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_41",
-      "word": "Paleta",
+      "word": "Latarka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_42",
-      "word": "Pędzel",
+      "word": "Termos",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_43",
-      "word": "Pociąg",
+      "word": "Biżuteria",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_44",
-      "word": "Piórnik",
+      "word": "Wazon",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_45",
-      "word": "Piłka",
+      "word": "Świeca",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_46",
-      "word": "Pistolet",
+      "word": "Dywan",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_47",
-      "word": "Pocisk",
+      "word": "Koc",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_48",
-      "word": "Pojemnik",
+      "word": "Zasłona",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_49",
-      "word": "Pokrowiec",
+      "word": "Zapalniczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_50",
-      "word": "Pompa",
+      "word": "Mieszek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
@@ -80038,583 +80038,583 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_54",
-      "word": "Policjant",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_55",
       "word": "Kucharz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_56",
-      "word": "Piosenkarz",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_57",
+      "id": "pg_55",
       "word": "Strażak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_58",
+      "id": "pg_56",
       "word": "Dentysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_57",
+      "word": "Heros",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_58",
+      "word": "Doktor",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_59",
-      "word": "Superbohater",
+      "word": "Żołnierz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_60",
-      "word": "Prezydent",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_61",
-      "word": "Pediatra",
+      "word": "Aktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_62",
-      "word": "Pianista",
+      "word": "Reżyser",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_63",
-      "word": "Pilot",
+      "word": "Kierowca",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_64",
-      "word": "Pisarz",
+      "word": "Listonosz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_65",
-      "word": "Piłkarz",
+      "word": "Mechanik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_66",
-      "word": "Pływak",
+      "word": "Fryzjer",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_67",
-      "word": "Policjant",
+      "word": "Krawiec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_68",
-      "word": "Polityk",
+      "word": "Sprzątaczka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_69",
-      "word": "Pomocnik",
+      "word": "Ochroniarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_70",
-      "word": "Poeta",
+      "word": "Taksówkarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_71",
-      "word": "Prawnik",
+      "word": "Modelka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_72",
-      "word": "Programista",
+      "word": "Fotograf",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_73",
-      "word": "Przewodnik",
+      "word": "Rzeźbiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_74",
-      "word": "Psycholog",
+      "word": "Rolnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_75",
-      "word": "Przedsiębiorca",
+      "word": "Rybak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_76",
-      "word": "Pszczelarz",
+      "word": "Zegarmistrz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_77",
-      "word": "Piekarz",
+      "word": "Barman",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_78",
-      "word": "Pielęgniarka",
+      "word": "Krupier",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_79",
-      "word": "Plastyk",
+      "word": "Sędzia",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_80",
-      "word": "Podróżnik",
+      "word": "Budowlaniec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_81",
-      "word": "Postaci",
+      "word": "Architekt",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_82",
-      "word": "Peryferia",
+      "word": "Weterynarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_83",
-      "word": "Parch",
+      "word": "Masażysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_84",
-      "word": "Przyjaciel",
+      "word": "Dyrygent",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_85",
-      "word": "Pasażer",
+      "word": "Malarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_86",
-      "word": "Pasterz",
+      "word": "Stolarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_87",
-      "word": "Pacjent",
+      "word": "Hydraulik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_88",
-      "word": "Patent",
+      "word": "Kominiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_89",
-      "word": "Patron",
+      "word": "Kwiaciarka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_90",
-      "word": "Pionier",
+      "word": "Instruktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_91",
-      "word": "Pitbul",
+      "word": "Ratownik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_92",
-      "word": "Plebejusz",
+      "word": "Lider wycieczki",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_93",
-      "word": "Płatnik",
+      "word": "Szpieg",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_94",
-      "word": "Poborowy",
+      "word": "Rycerz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_95",
-      "word": "Podwładny",
+      "word": "Kat",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_96",
-      "word": "Pojedynek",
+      "word": "Czarownica",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_97",
-      "word": "Pomagacz",
+      "word": "Błazen",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_98",
-      "word": "Pomoc",
+      "word": "Alchemik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_99",
-      "word": "Potomek",
+      "word": "Detektyw",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_100",
-      "word": "Praojciec",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_101",
-      "word": "Plaża",
+      "word": "Szkoła",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_102",
-      "word": "Piramida",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_103",
-      "word": "Więzienie",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_104",
       "word": "Szpital",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_105",
+      "id": "pg_103",
+      "word": "Akwarium",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_104",
       "word": "Kino",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_106",
+      "id": "pg_105",
       "word": "Zamek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_107",
+      "id": "pg_106",
       "word": "ZOO",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_108",
+      "id": "pg_107",
       "word": "Basen",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_109",
+      "id": "pg_108",
       "word": "Kolejka górska",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_109",
+      "word": "Cukiernia",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_110",
-      "word": "Park",
+      "word": "Suterena",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_111",
-      "word": "Piekarnia",
+      "word": "Rynek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_112",
-      "word": "Piwnica",
+      "word": "Ziemia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_113",
-      "word": "Plac",
+      "word": "Urząd",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_114",
-      "word": "Planeta",
+      "word": "Ogród",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_115",
-      "word": "Poczta",
+      "word": "Salon",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_116",
-      "word": "Podwórko",
+      "word": "Łąka",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_117",
-      "word": "Pokój",
+      "word": "Kajakowy pomost",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_118",
-      "word": "Polana",
+      "word": "Komenda",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_119",
-      "word": "Port",
+      "word": "Studio",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_120",
-      "word": "Posterunek",
+      "word": "Dworzec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_121",
-      "word": "Pracownia",
+      "word": "Sahara",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_122",
-      "word": "Przystanek",
+      "word": "Karuzela",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_123",
-      "word": "Pustynia",
+      "word": "Hotel",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_124",
-      "word": "Punkt",
+      "word": "Teatr",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_125",
-      "word": "Pub",
+      "word": "Muzeum",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_126",
-      "word": "Półwysep",
+      "word": "Stadion",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_127",
-      "word": "Pole",
+      "word": "Lotnisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_128",
-      "word": "Parter",
+      "word": "Siłownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_129",
-      "word": "Poddasze",
+      "word": "Sauna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_130",
-      "word": "Pomost",
+      "word": "Kopalnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_131",
-      "word": "Park rozrywki",
+      "word": "Cmentarz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_132",
-      "word": "Parking",
+      "word": "Restauracja",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_133",
-      "word": "Pojedynek",
+      "word": "Kasyno",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_134",
-      "word": "Palmiarnia",
+      "word": "Łódź podwodna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_135",
-      "word": "Pałac",
+      "word": "Obóz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_136",
-      "word": "Pizzeria",
+      "word": "Wieżowiec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_137",
-      "word": "Pływalnia",
+      "word": "Schronisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_138",
-      "word": "Podziemia",
+      "word": "Warsztat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_139",
-      "word": "Pogotowie",
+      "word": "Klub",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_140",
-      "word": "Pralnia",
+      "word": "Cyrk",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_141",
-      "word": "Przejście",
+      "word": "Filharmonia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_142",
-      "word": "Punkt widokowy",
+      "word": "Aquapark",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_143",
-      "word": "Przełęcz",
+      "word": "Elektrownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_144",
-      "word": "Przystań",
+      "word": "Laboratorium",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_145",
-      "word": "Pustkowie",
+      "word": "Rezerwat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_146",
-      "word": "Prześwit",
+      "word": "Wulkan",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_147",
-      "word": "Płaskowyż",
+      "word": "Bunkier",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_148",
-      "word": "Pobocze",
+      "word": "Dwór",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_149",
-      "word": "Pogranicze",
+      "word": "Schron",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_150",
-      "word": "Południe",
+      "word": "Kawiarnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
@@ -80638,301 +80638,301 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_154",
-      "word": "Pizza",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_155",
       "word": "Lody",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_156",
-      "word": "Kawałek tortu",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_157",
+      "id": "pg_155",
       "word": "Mleko",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_158",
+      "id": "pg_156",
       "word": "Chleb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_157",
+      "word": "Masło",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_158",
+      "word": "Ser",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_159",
-      "word": "Papryka",
+      "word": "Szarlotka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_160",
-      "word": "Pomidor",
+      "word": "Sernik",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_161",
-      "word": "Pączek",
+      "word": "Tort",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_162",
-      "word": "Pierogi",
+      "word": "Drożdżówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_163",
-      "word": "Pieczeń",
+      "word": "Kebab",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_164",
-      "word": "Pieczarka",
+      "word": "Sushi",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_165",
-      "word": "Pietruszka",
+      "word": "Zapiekanka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_166",
-      "word": "Płatki",
+      "word": "Rosół",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_167",
-      "word": "Placki",
+      "word": "Gulasz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_168",
-      "word": "Polędwica",
+      "word": "Spaghetti",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_169",
-      "word": "Pomarańcza",
+      "word": "Sałatka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_170",
-      "word": "Por",
+      "word": "Tatar",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_171",
-      "word": "Popcorn",
+      "word": "Gofry",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_172",
-      "word": "Przekąska",
+      "word": "Kiełbasa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_173",
-      "word": "Pstrąg",
+      "word": "Bigos",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_174",
-      "word": "Ptysiowy",
+      "word": "Żurek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_175",
-      "word": "Przyprawa",
+      "word": "Barszcz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_176",
-      "word": "Pianka",
+      "word": "Naleśniki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_177",
-      "word": "Piernik",
+      "word": "Krokiety",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_178",
-      "word": "Pączek",
+      "word": "Śledź",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_179",
-      "word": "Pasztet",
+      "word": "Herbata",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_180",
-      "word": "Pierożki",
+      "word": "Kakao",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_181",
-      "word": "Pigwa",
+      "word": "Kompot",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_182",
-      "word": "Pesto",
+      "word": "Lemoniada",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_183",
-      "word": "Piwo",
+      "word": "Arbuz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_184",
-      "word": "Poncz",
+      "word": "Truskawka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_185",
-      "word": "Pita",
+      "word": "Malina",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_186",
-      "word": "Pyzy",
+      "word": "Borówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_187",
-      "word": "Paella",
+      "word": "Gruszka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_188",
-      "word": "Parówka",
+      "word": "Śliwka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_189",
-      "word": "Proszek do pieczenia",
+      "word": "Banan",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_190",
-      "word": "Pudding",
+      "word": "Cytrus",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_191",
-      "word": "Purée",
+      "word": "Cytryna",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_192",
-      "word": "Prazynki",
+      "word": "Orzech",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_193",
-      "word": "Pączek z dżemem",
+      "word": "Grzyb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_194",
-      "word": "Polędwiczka",
+      "word": "Frytki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_195",
-      "word": "Powidła",
+      "word": "Burger",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_196",
-      "word": "Przecier",
+      "word": "Ogórek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_197",
-      "word": "Ptasie mleczko",
+      "word": "Ciasto",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_198",
-      "word": "Puder",
+      "word": "Babeczka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_199",
-      "word": "Puszka",
+      "word": "Zupa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_200",
-      "word": "Pyszotka",
+      "word": "Deser",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_201",
-      "word": "Ptak",
+      "word": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_202",
-      "word": "Dinozaur",
+      "word": "Zwierzak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_203",
-      "word": "Pies",
+      "word": "Dinozaur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
@@ -80956,271 +80956,271 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_207",
-      "word": "Kot",
-      "category": "Zwierzęta & Natura",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_208",
       "word": "Kaktus",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_208",
+      "word": "Rzeka",
+      "category": "Zwierzęta & Natura",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_209",
-      "word": "Papuga",
+      "word": "Jezioro",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_210",
-      "word": "Piesek",
+      "word": "Morze",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_211",
-      "word": "Pająk",
+      "word": "Ocean",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_212",
-      "word": "Pantera",
+      "word": "Góra",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_213",
-      "word": "Panda",
+      "word": "Las",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_214",
-      "word": "Puma",
+      "word": "Łąka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_215",
-      "word": "Płetwal",
+      "word": "Drzewo",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_216",
-      "word": "Pingwin",
+      "word": "Kwiat",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_217",
-      "word": "Pstrąg",
+      "word": "Róża",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_218",
-      "word": "Pszczoła",
+      "word": "Sosna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_219",
-      "word": "Puchacz",
+      "word": "Dąb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_220",
-      "word": "Pustułka",
+      "word": "Grzyb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_221",
-      "word": "Płaszczka",
+      "word": "Chmura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_222",
-      "word": "Pijawka",
+      "word": "Deszcz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_223",
-      "word": "Płaszcz ziemi",
+      "word": "Śnieg",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_224",
-      "word": "Pustynia",
+      "word": "Wiatr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_225",
-      "word": "Potok",
+      "word": "Tęcza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_226",
-      "word": "Piorun",
+      "word": "Mgła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_227",
-      "word": "Piana",
+      "word": "Wodospad",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_228",
-      "word": "Pędy",
+      "word": "Skała",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_229",
-      "word": "Płatki",
+      "word": "Bursztyn",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_230",
-      "word": "Pączek kwiatu",
+      "word": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_231",
-      "word": "Pajęczyna",
+      "word": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_232",
-      "word": "Paproć",
+      "word": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_233",
-      "word": "Pustynia",
+      "word": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_234",
-      "word": "Pogoda",
+      "word": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_235",
-      "word": "Podmuch",
+      "word": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_236",
-      "word": "Południe",
+      "word": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_237",
-      "word": "Przełęcz",
+      "word": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_238",
-      "word": "Puszcza",
+      "word": "Bocian",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_239",
-      "word": "Pióro",
+      "word": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_240",
-      "word": "Pysk",
+      "word": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_241",
-      "word": "Pazur",
+      "word": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_242",
-      "word": "Pancerz",
+      "word": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_243",
-      "word": "Płetwa",
+      "word": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_244",
-      "word": "Pysk",
+      "word": "Jeleń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_245",
-      "word": "Pigi",
+      "word": "Sarna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_246",
-      "word": "Pelikan",
+      "word": "Dzik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_247",
-      "word": "Pływak",
+      "word": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_248",
-      "word": "Polnik",
+      "word": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_249",
-      "word": "Pudiel",
+      "word": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_250",
-      "word": "Pies dingo",
+      "word": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_251",
-      "word": "Samolot",
+      "word": "Samochód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -81232,289 +81232,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_253",
-      "word": "Telefon",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_254",
       "word": "Rower",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_255",
-      "word": "Samochód",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_256",
+      "id": "pg_254",
       "word": "Statek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_257",
+      "id": "pg_255",
       "word": "Hulajnoga",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_258",
+      "id": "pg_256",
       "word": "Żarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_259",
+      "id": "pg_257",
       "word": "Teleskop",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_258",
+      "word": "Dron",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_259",
+      "word": "Słuchawki",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_260",
-      "word": "Pojazd",
+      "word": "Klawiatura",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_261",
-      "word": "Pociąg",
+      "word": "Myszka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_262",
-      "word": "Parowiec",
+      "word": "Monitor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_263",
-      "word": "Pilot",
+      "word": "Drukarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_264",
-      "word": "Płytka",
+      "word": "Skaner",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_265",
-      "word": "Procesor",
+      "word": "Kamera",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_266",
-      "word": "Program",
+      "word": "Ruter Wi-Fi",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_267",
-      "word": "Pendrive",
+      "word": "Konsola",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_268",
-      "word": "Pralka",
+      "word": "Tablet",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_269",
-      "word": "Piekarnik",
+      "word": "Smartwatch",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_270",
-      "word": "Pojemnik",
+      "word": "Bateria",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_271",
-      "word": "Płytka drukowana",
+      "word": "Ładowarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_272",
-      "word": "Poduszkowiec",
+      "word": "Światłowód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_273",
-      "word": "Polonez",
+      "word": "Mikrofon",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_274",
-      "word": "Porsche",
+      "word": "Głośnik",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_275",
-      "word": "Przekładnia",
+      "word": "Klimatyzacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_276",
-      "word": "Pompa",
+      "word": "Robot",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_277",
-      "word": "Paliwo",
+      "word": "Satelita",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_278",
-      "word": "Przewód",
+      "word": "Rakieta",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_279",
-      "word": "Przełącznik",
+      "word": "Motocykl",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_280",
-      "word": "Potencjometr",
+      "word": "Traktor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_281",
-      "word": "Pojemnik",
+      "word": "Autobus",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_282",
-      "word": "Przeglądarka",
+      "word": "Tramwaj",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_283",
-      "word": "Pulpit",
+      "word": "Metro",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_284",
-      "word": "Pamięć",
+      "word": "Helikopter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_285",
-      "word": "Piksel",
+      "word": "Szybowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_286",
-      "word": "Port",
+      "word": "Żaglowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_287",
-      "word": "Powerbank",
+      "word": "Czołg",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_288",
-      "word": "Pistolet",
+      "word": "Koparka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_289",
-      "word": "Pikser",
+      "word": "Dźwig",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_290",
-      "word": "Projektor",
+      "word": "Ciężarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_291",
-      "word": "Prostownik",
+      "word": "Skuter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_292",
-      "word": "Pustka",
+      "word": "Wózek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_293",
-      "word": "Podzespół",
+      "word": "Zegarek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_294",
-      "word": "Płyta główna",
+      "word": "Telewizor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_295",
-      "word": "Pojemnościowy",
+      "word": "Radio",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_296",
-      "word": "Przetwornik",
+      "word": "Nawigacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_297",
-      "word": "Pneumatyka",
+      "word": "Mikrofalówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_298",
-      "word": "Podwozie",
+      "word": "Odkurzacz",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_299",
-      "word": "Pokrywa",
+      "word": "Suszarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_300",
-      "word": "Pancerz",
+      "word": "Ekran",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -81526,1195 +81526,1195 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_302",
-      "word": "Superbohater",
+      "word": "Heros",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_303",
-      "word": "Pikachu",
+      "word": "Władca Pierścieni",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_304",
-      "word": "Pac-Man",
+      "word": "Harry Potter",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_305",
-      "word": "Piksel",
+      "word": "Gwiezdne Wojny",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_306",
-      "word": "Postać",
+      "word": "Matrix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_307",
-      "word": "Przygoda",
+      "word": "Batman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_308",
-      "word": "Planszówka",
+      "word": "Spider-Man",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_309",
-      "word": "Piosenka",
+      "word": "Shrek",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_310",
-      "word": "Przebój",
+      "word": "Kraina Lodu",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_311",
-      "word": "Plakat",
+      "word": "Król Lew",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_312",
-      "word": "Premiera",
+      "word": "Toy Story",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_313",
-      "word": "Post",
+      "word": "Minecraft",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_314",
-      "word": "Podkast",
+      "word": "GTA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_315",
-      "word": "Powieść",
+      "word": "Fortnite",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_316",
-      "word": "Prasa",
+      "word": "League of Legends",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_317",
-      "word": "Program TV",
+      "word": "Mario",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_318",
-      "word": "Przegląd",
+      "word": "The Sims",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_319",
-      "word": "Publiczność",
+      "word": "James Bond",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_320",
-      "word": "Publika",
+      "word": "Indiana Jones",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_321",
-      "word": "Park rozrywki",
+      "word": "Terminator",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_322",
-      "word": "PlayStation",
+      "word": "Joker",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_323",
-      "word": "Pokemon",
+      "word": "Marvel",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_324",
-      "word": "Peppa",
+      "word": "DC",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_325",
-      "word": "Pinokio",
+      "word": "Netflix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_326",
-      "word": "Piotruś Pan",
+      "word": "YouTube",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_327",
-      "word": "Pumba",
+      "word": "TikTok",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_328",
-      "word": "Pocahontas",
+      "word": "Instagram",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_329",
-      "word": "Po (Kung Fu)",
+      "word": "Spotify",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_330",
-      "word": "Punisher",
+      "word": "Oscar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_331",
-      "word": "Pająk (Spidey)",
+      "word": "Grammy",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_332",
-      "word": "Paryż",
+      "word": "Avengers",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_333",
-      "word": "Pop",
+      "word": "Barbie",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_334",
-      "word": "Punk",
+      "word": "Oppenheimer",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_335",
-      "word": "Pojedynek",
+      "word": "Titanic",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_336",
-      "word": "Puchar",
+      "word": "Avatar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_337",
-      "word": "Punkty",
+      "word": "Fast & Furious",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_338",
-      "word": "Poziom",
+      "word": "Stranger Things",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_339",
-      "word": "Postać fikcyjna",
+      "word": "Gra o Tron",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_340",
-      "word": "Parkur",
+      "word": "Dragon Ball",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_341",
-      "word": "Piosenkarz",
+      "word": "Naruto",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_342",
-      "word": "Producent",
+      "word": "CS:GO",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_343",
-      "word": "Projekt",
+      "word": "FIFA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_344",
-      "word": "Półfinał",
+      "word": "Cyberpunk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_345",
-      "word": "Plebiscyt",
+      "word": "Superman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_346",
-      "word": "Przegrana",
+      "word": "Thor",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_347",
-      "word": "Polonia",
+      "word": "Hulk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_348",
-      "word": "Piknik",
+      "word": "Deadpool",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_349",
-      "word": "Publiczność",
+      "word": "Zelda",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_350",
-      "word": "Premia",
+      "word": "Gollum",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_351",
-      "word": "Piłka",
+      "word": "Bieganie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_352",
-      "word": "Pływanie",
+      "word": "Kąpiel",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_353",
-      "word": "Piłka nożna",
+      "word": "Szachy",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_354",
-      "word": "Piłka siatkowa",
+      "word": "Koszykówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_355",
-      "word": "Piłka koszykowa",
+      "word": "Siatkówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_356",
-      "word": "Pchnięcie kulą",
+      "word": "Tenis",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_357",
-      "word": "Pojedynek",
+      "word": "Boks",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_358",
-      "word": "Puchar",
+      "word": "Gimnastyka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_359",
-      "word": "Punkty",
+      "word": "Kolarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_360",
-      "word": "Podanie",
+      "word": "Hokej",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_361",
-      "word": "Postój",
+      "word": "Narciarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_362",
-      "word": "Podejście",
+      "word": "Łyżwiarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_363",
-      "word": "Piruet",
+      "word": "Surfing",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_364",
-      "word": "Pływak",
+      "word": "Golf",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_365",
-      "word": "Pięściarz",
+      "word": "Badminton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_366",
-      "word": "Płotki",
+      "word": "Wspinaczka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_367",
-      "word": "Półmaraton",
+      "word": "Żeglarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_368",
-      "word": "Parkur",
+      "word": "Wędkarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_369",
-      "word": "Peleton",
+      "word": "Majsterkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_370",
-      "word": "Pierwsza liga",
+      "word": "Fotografia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_371",
-      "word": "Pustelnik",
+      "word": "Malarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_372",
-      "word": "Polowanie",
+      "word": "Rysowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_373",
-      "word": "Podróże",
+      "word": "Czytanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_374",
-      "word": "Pstrągowanie",
+      "word": "Taniec",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_375",
-      "word": "Pięciobój",
+      "word": "Śpiew",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_376",
-      "word": "Przeciąganie liny",
+      "word": "Joga",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_377",
-      "word": "Przewrót",
+      "word": "Karate",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_378",
-      "word": "Paletka",
+      "word": "Judo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_379",
-      "word": "Park linowy",
+      "word": "Szermierka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_380",
-      "word": "Przejście",
+      "word": "Łucznictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_381",
-      "word": "Ping-pong",
+      "word": "Kręgle",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_382",
-      "word": "Pustelnik",
+      "word": "Bilard",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_383",
-      "word": "Piknik",
+      "word": "Darts",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_384",
-      "word": "Paintball",
+      "word": "Deskorolka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_385",
-      "word": "Paralotnia",
+      "word": "Rolki",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_386",
-      "word": "Podnoszenie ciężarów",
+      "word": "Brydż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_387",
-      "word": "Pustynny rajdy",
+      "word": "Domino",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_388",
-      "word": "Paliwo",
+      "word": "Origami",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_389",
-      "word": "Prosta trasa",
+      "word": "Szydełkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_390",
-      "word": "Punkty klasyfikacji",
+      "word": "Ceramika",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_391",
-      "word": "Pasy bezpieczeństwa",
+      "word": "Ogrodnictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_392",
-      "word": "Parawan",
+      "word": "Maraton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_393",
-      "word": "Pikowanie",
+      "word": "Sprint",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_394",
-      "word": "Pompka rowerowa",
+      "word": "Skok w dal",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_395",
-      "word": "Pachołek",
+      "word": "Skok wzwyż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_396",
-      "word": "Pianka pływacka",
+      "word": "Rzut oszczepem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_397",
-      "word": "Płetwy",
+      "word": "Rzut dyskiem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_398",
-      "word": "Przybory",
+      "word": "Wiosłowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_399",
-      "word": "Pędzel",
+      "word": "Żonglerka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_400",
-      "word": "Płótno",
+      "word": "Kaligrafia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_401",
-      "word": "Pływanie",
+      "word": "Gotowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_402",
-      "word": "Pisanie",
+      "word": "Zmywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_403",
-      "word": "Pieczenie",
+      "word": "Odkurzanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_404",
-      "word": "Prasowanie",
+      "word": "Koszenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_405",
-      "word": "Podróżowanie",
+      "word": "Malowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_406",
-      "word": "Pielęgnacja",
+      "word": "Rysowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_407",
-      "word": "Płaczenie",
+      "word": "Śpiewanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_408",
-      "word": "Pielenie",
+      "word": "Tańczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_409",
-      "word": "Pobudka",
+      "word": "Czytanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_410",
-      "word": "Pasteryzacja",
+      "word": "Szycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_411",
-      "word": "Pakowanie",
+      "word": "Majsterkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_412",
-      "word": "Pukanie",
+      "word": "Mycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_413",
-      "word": "Pchanie",
+      "word": "Golenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_414",
-      "word": "Pociąganie",
+      "word": "Czesanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_415",
-      "word": "Płukanie",
+      "word": "Ćwiczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_416",
-      "word": "Pranie",
+      "word": "Spacerowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_417",
-      "word": "Picie",
+      "word": "Łowienie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_418",
-      "word": "Palenie",
+      "word": "Skakanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_419",
-      "word": "Pytanie",
+      "word": "Wspinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_420",
-      "word": "Proszalnie",
+      "word": "Nurkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_421",
-      "word": "Pływanie",
+      "word": "Jeżdżenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_422",
-      "word": "Pocałunek",
+      "word": "Rozmawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_423",
-      "word": "Pospiech",
+      "word": "Słuchanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_424",
-      "word": "Podglądanie",
+      "word": "Oglądanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_425",
-      "word": "Przesuwanie",
+      "word": "Śmianie się",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_426",
-      "word": "Przesadzanie",
+      "word": "Lamentowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_427",
-      "word": "Pielęgnowanie",
+      "word": "Spanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_428",
-      "word": "Podejmowanie",
+      "word": "Jedzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_429",
-      "word": "Przekazywanie",
+      "word": "Sączenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_430",
-      "word": "Protestowanie",
+      "word": "Kupowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_431",
-      "word": "Podpisywanie",
+      "word": "Sprzedawanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_432",
-      "word": "Przepraszanie",
+      "word": "Bieganie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_433",
-      "word": "Podziwianie",
+      "word": "Liczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_434",
-      "word": "Poszukiwanie",
+      "word": "Szukanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_435",
-      "word": "Polowanie",
+      "word": "Sprzątanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_436",
-      "word": "Przeglądanie",
+      "word": "Budowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_437",
-      "word": "Pobieranie",
+      "word": "Naprawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_438",
-      "word": "Przenoszenie",
+      "word": "Otwieranie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_439",
-      "word": "Przekładanie",
+      "word": "Zamykanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_440",
-      "word": "Przesypianie",
+      "word": "Wycinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_441",
-      "word": "Pocieszanie",
+      "word": "Klejenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_442",
-      "word": "Przymierzanie",
+      "word": "Ważenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_443",
-      "word": "Przecinanie",
+      "word": "Mierzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_444",
-      "word": "Pieczenie",
+      "word": "Szykowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_445",
-      "word": "Powiadamianie",
+      "word": "Rozpakowywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_446",
-      "word": "Podjadanie",
+      "word": "Granie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_447",
-      "word": "Płoszenie",
+      "word": "Wygrywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_448",
-      "word": "Przesłuchiwanie",
+      "word": "Czekanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_449",
-      "word": "Przestrzeganie",
+      "word": "Marzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_450",
-      "word": "Przygarnianie",
+      "word": "Kąpanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_451",
-      "word": "Pieniądze",
+      "word": "Zgoda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_452",
-      "word": "Prawo",
+      "word": "Miłość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_453",
-      "word": "Praca",
+      "word": "Wolność",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_454",
-      "word": "Przyjaźń",
+      "word": "Czas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_455",
-      "word": "Prawda",
+      "word": "Szczęście",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_456",
-      "word": "Pamięć",
+      "word": "Nadzieja",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_457",
-      "word": "Północ",
+      "word": "Wiara",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_458",
-      "word": "Południe",
+      "word": "Sprawiedliwość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_459",
-      "word": "Przeszłość",
+      "word": "Zajęcie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_460",
-      "word": "Przyszłość",
+      "word": "Sukces",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_461",
-      "word": "Pojęcie",
+      "word": "Klęska",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_462",
-      "word": "Pomysł",
+      "word": "Hobby",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_463",
-      "word": "Problem",
+      "word": "Wyprawa",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_464",
-      "word": "Pytanie",
+      "word": "Kraj",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_465",
-      "word": "Powód",
+      "word": "Jutro",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_466",
-      "word": "Pora",
+      "word": "Dawne czasy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_467",
-      "word": "Pojedynek",
+      "word": "Marzenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_468",
-      "word": "Podróż",
+      "word": "Radość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_469",
-      "word": "Przygoda",
+      "word": "Smutek",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_470",
-      "word": "Pech",
+      "word": "Złość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_471",
-      "word": "Powodzenie",
+      "word": "Strach",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_472",
-      "word": "Praca domowa",
+      "word": "Odwaga",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_473",
-      "word": "Pokój (spokój)",
+      "word": "Duma",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_474",
-      "word": "Przemoc",
+      "word": "Wstyd",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_475",
-      "word": "Poczucie humoru",
+      "word": "Zazdroszczenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_476",
-      "word": "Porządek",
+      "word": "Uczucie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_477",
-      "word": "Przepis",
+      "word": "Koncept",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_478",
-      "word": "Projekt",
+      "word": "Kłopot",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_479",
-      "word": "Pakt",
+      "word": "Zagadka",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_480",
-      "word": "Patent",
+      "word": "Odpowiedź",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_481",
-      "word": "Poczucie",
+      "word": "Ład",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_482",
-      "word": "Pozór",
+      "word": "Chaos",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_483",
-      "word": "Podstęp",
+      "word": "Cisza",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_484",
-      "word": "Przysięga",
+      "word": "Hałas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_485",
-      "word": "Przekonanie",
+      "word": "Światło",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_486",
-      "word": "Potęga",
+      "word": "Cień",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_487",
-      "word": "Pasja",
+      "word": "Energia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_488",
-      "word": "Porażka",
+      "word": "Zdrowie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_489",
-      "word": "Pewność",
+      "word": "Śmiech",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_490",
-      "word": "Przypadek",
+      "word": "Łzy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_491",
-      "word": "Porozumienie",
+      "word": "Zwycięstwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_492",
-      "word": "Podwójność",
+      "word": "Remis",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_493",
-      "word": "Prostota",
+      "word": "Mądrość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_494",
-      "word": "Płynność",
+      "word": "Głupota",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_495",
-      "word": "Przestrzeń",
+      "word": "Bogactwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_496",
-      "word": "Prędkość",
+      "word": "Bieda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_497",
-      "word": "Podstawa",
+      "word": "Życie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_498",
-      "word": "Próg",
+      "word": "Śmierć",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_499",
-      "word": "Polityka",
+      "word": "Słońce",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_500",
-      "word": "Przyroda",
+      "word": "Ziemia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     }
@@ -82734,289 +82734,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_3",
-      "word": "Parasol",
+      "word": "Komputer",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_4",
-      "word": "Telefon",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_5",
-      "word": "Rower",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_6",
-      "word": "Bomba",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_7",
-      "word": "Gitara",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_8",
-      "word": "Okulary",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_9",
-      "word": "Kamera",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_10",
-      "word": "Pistolet",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_11",
-      "word": "Namiot",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_12",
-      "word": "Złoty medal",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_13",
-      "word": "Żarówka",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_14",
-      "word": "Kompas",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_15",
-      "word": "Teleskop",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_16",
-      "word": "Portfel",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_17",
-      "word": "Sofa",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_18",
-      "word": "Buty",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_19",
-      "word": "Lustro",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_20",
-      "word": "Klucz",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_21",
       "word": "Nożyczki",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_5",
+      "word": "Karton",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_6",
+      "word": "Kafel",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_7",
+      "word": "Trofeum",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_8",
+      "word": "Dysk",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_9",
+      "word": "Ogrodzenie",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_10",
+      "word": "Obrączka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_11",
+      "word": "Kurtka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_12",
+      "word": "Drożdżówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_13",
+      "word": "Afisz",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_14",
+      "word": "Fortepian",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_15",
+      "word": "Etui",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_16",
+      "word": "Futbolówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_17",
+      "word": "Nabój",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_18",
+      "word": "Słoik",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_19",
+      "word": "Kask",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_20",
+      "word": "Okulary",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_21",
+      "word": "Lustro",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_22",
-      "word": "Portret",
+      "word": "Klucz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_23",
-      "word": "Plecak",
+      "word": "Łóżko",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_24",
-      "word": "Poduszka",
+      "word": "Stół",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_25",
-      "word": "Pędzel",
+      "word": "Krzesło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_26",
-      "word": "Pióro",
+      "word": "Szafa",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_27",
-      "word": "Pudełko",
+      "word": "Lodówka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_28",
-      "word": "Płytka",
+      "word": "Suszarka do ubrań",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_29",
-      "word": "Puchar",
+      "word": "Kuchenka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_30",
-      "word": "Puzderko",
+      "word": "Garnek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_31",
-      "word": "Płyta",
+      "word": "Rondel",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_32",
-      "word": "Płot",
+      "word": "Talerz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_33",
-      "word": "Pierścień",
+      "word": "Kubek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_34",
-      "word": "Pas",
+      "word": "Widelec",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_35",
-      "word": "Płaszcz",
+      "word": "Łyżka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_36",
-      "word": "Pączek",
+      "word": "Nóż",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_37",
-      "word": "Paterka",
+      "word": "Ręcznik",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_38",
-      "word": "Plakat",
+      "word": "Mydło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_39",
-      "word": "Pianino",
+      "word": "Szczoteczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_40",
-      "word": "Pedał",
+      "word": "Grzebień",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_41",
-      "word": "Paleta",
+      "word": "Latarka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_42",
-      "word": "Pędzel",
+      "word": "Termos",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_43",
-      "word": "Pociąg",
+      "word": "Biżuteria",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_44",
-      "word": "Piórnik",
+      "word": "Wazon",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_45",
-      "word": "Piłka",
+      "word": "Świeca",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_46",
-      "word": "Pistolet",
+      "word": "Dywan",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_47",
-      "word": "Pocisk",
+      "word": "Koc",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_48",
-      "word": "Pojemnik",
+      "word": "Zasłona",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_49",
-      "word": "Pokrowiec",
+      "word": "Zapalniczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_50",
-      "word": "Pompa",
+      "word": "Mieszek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
@@ -83040,583 +83040,583 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_54",
-      "word": "Policjant",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_55",
       "word": "Kucharz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_56",
-      "word": "Piosenkarz",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_57",
+      "id": "pg_55",
       "word": "Strażak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_58",
+      "id": "pg_56",
       "word": "Dentysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_57",
+      "word": "Heros",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_58",
+      "word": "Doktor",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_59",
-      "word": "Superbohater",
+      "word": "Żołnierz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_60",
-      "word": "Prezydent",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_61",
-      "word": "Pediatra",
+      "word": "Aktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_62",
-      "word": "Pianista",
+      "word": "Reżyser",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_63",
-      "word": "Pilot",
+      "word": "Kierowca",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_64",
-      "word": "Pisarz",
+      "word": "Listonosz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_65",
-      "word": "Piłkarz",
+      "word": "Mechanik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_66",
-      "word": "Pływak",
+      "word": "Fryzjer",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_67",
-      "word": "Policjant",
+      "word": "Krawiec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_68",
-      "word": "Polityk",
+      "word": "Sprzątaczka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_69",
-      "word": "Pomocnik",
+      "word": "Ochroniarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_70",
-      "word": "Poeta",
+      "word": "Taksówkarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_71",
-      "word": "Prawnik",
+      "word": "Modelka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_72",
-      "word": "Programista",
+      "word": "Fotograf",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_73",
-      "word": "Przewodnik",
+      "word": "Rzeźbiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_74",
-      "word": "Psycholog",
+      "word": "Rolnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_75",
-      "word": "Przedsiębiorca",
+      "word": "Rybak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_76",
-      "word": "Pszczelarz",
+      "word": "Zegarmistrz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_77",
-      "word": "Piekarz",
+      "word": "Barman",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_78",
-      "word": "Pielęgniarka",
+      "word": "Krupier",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_79",
-      "word": "Plastyk",
+      "word": "Sędzia",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_80",
-      "word": "Podróżnik",
+      "word": "Budowlaniec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_81",
-      "word": "Postaci",
+      "word": "Architekt",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_82",
-      "word": "Peryferia",
+      "word": "Weterynarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_83",
-      "word": "Parch",
+      "word": "Masażysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_84",
-      "word": "Przyjaciel",
+      "word": "Dyrygent",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_85",
-      "word": "Pasażer",
+      "word": "Malarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_86",
-      "word": "Pasterz",
+      "word": "Stolarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_87",
-      "word": "Pacjent",
+      "word": "Hydraulik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_88",
-      "word": "Patent",
+      "word": "Kominiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_89",
-      "word": "Patron",
+      "word": "Kwiaciarka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_90",
-      "word": "Pionier",
+      "word": "Instruktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_91",
-      "word": "Pitbul",
+      "word": "Ratownik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_92",
-      "word": "Plebejusz",
+      "word": "Lider wycieczki",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_93",
-      "word": "Płatnik",
+      "word": "Szpieg",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_94",
-      "word": "Poborowy",
+      "word": "Rycerz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_95",
-      "word": "Podwładny",
+      "word": "Kat",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_96",
-      "word": "Pojedynek",
+      "word": "Czarownica",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_97",
-      "word": "Pomagacz",
+      "word": "Błazen",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_98",
-      "word": "Pomoc",
+      "word": "Alchemik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_99",
-      "word": "Potomek",
+      "word": "Detektyw",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_100",
-      "word": "Praojciec",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_101",
-      "word": "Plaża",
+      "word": "Szkoła",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_102",
-      "word": "Piramida",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_103",
-      "word": "Więzienie",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_104",
       "word": "Szpital",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_105",
+      "id": "pg_103",
+      "word": "Akwarium",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_104",
       "word": "Kino",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_106",
+      "id": "pg_105",
       "word": "Zamek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_107",
+      "id": "pg_106",
       "word": "ZOO",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_108",
+      "id": "pg_107",
       "word": "Basen",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_109",
+      "id": "pg_108",
       "word": "Kolejka górska",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_109",
+      "word": "Cukiernia",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_110",
-      "word": "Park",
+      "word": "Suterena",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_111",
-      "word": "Piekarnia",
+      "word": "Rynek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_112",
-      "word": "Piwnica",
+      "word": "Ziemia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_113",
-      "word": "Plac",
+      "word": "Urząd",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_114",
-      "word": "Planeta",
+      "word": "Ogród",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_115",
-      "word": "Poczta",
+      "word": "Salon",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_116",
-      "word": "Podwórko",
+      "word": "Łąka",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_117",
-      "word": "Pokój",
+      "word": "Kajakowy pomost",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_118",
-      "word": "Polana",
+      "word": "Komenda",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_119",
-      "word": "Port",
+      "word": "Studio",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_120",
-      "word": "Posterunek",
+      "word": "Dworzec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_121",
-      "word": "Pracownia",
+      "word": "Sahara",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_122",
-      "word": "Przystanek",
+      "word": "Karuzela",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_123",
-      "word": "Pustynia",
+      "word": "Hotel",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_124",
-      "word": "Punkt",
+      "word": "Teatr",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_125",
-      "word": "Pub",
+      "word": "Muzeum",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_126",
-      "word": "Półwysep",
+      "word": "Stadion",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_127",
-      "word": "Pole",
+      "word": "Lotnisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_128",
-      "word": "Parter",
+      "word": "Siłownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_129",
-      "word": "Poddasze",
+      "word": "Sauna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_130",
-      "word": "Pomost",
+      "word": "Kopalnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_131",
-      "word": "Park rozrywki",
+      "word": "Cmentarz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_132",
-      "word": "Parking",
+      "word": "Restauracja",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_133",
-      "word": "Pojedynek",
+      "word": "Kasyno",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_134",
-      "word": "Palmiarnia",
+      "word": "Łódź podwodna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_135",
-      "word": "Pałac",
+      "word": "Obóz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_136",
-      "word": "Pizzeria",
+      "word": "Wieżowiec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_137",
-      "word": "Pływalnia",
+      "word": "Schronisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_138",
-      "word": "Podziemia",
+      "word": "Warsztat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_139",
-      "word": "Pogotowie",
+      "word": "Klub",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_140",
-      "word": "Pralnia",
+      "word": "Cyrk",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_141",
-      "word": "Przejście",
+      "word": "Filharmonia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_142",
-      "word": "Punkt widokowy",
+      "word": "Aquapark",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_143",
-      "word": "Przełęcz",
+      "word": "Elektrownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_144",
-      "word": "Przystań",
+      "word": "Laboratorium",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_145",
-      "word": "Pustkowie",
+      "word": "Rezerwat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_146",
-      "word": "Prześwit",
+      "word": "Wulkan",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_147",
-      "word": "Płaskowyż",
+      "word": "Bunkier",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_148",
-      "word": "Pobocze",
+      "word": "Dwór",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_149",
-      "word": "Pogranicze",
+      "word": "Schron",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_150",
-      "word": "Południe",
+      "word": "Kawiarnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
@@ -83640,301 +83640,301 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_154",
-      "word": "Pizza",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_155",
       "word": "Lody",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_156",
-      "word": "Kawałek tortu",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_157",
+      "id": "pg_155",
       "word": "Mleko",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_158",
+      "id": "pg_156",
       "word": "Chleb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_157",
+      "word": "Masło",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_158",
+      "word": "Ser",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_159",
-      "word": "Papryka",
+      "word": "Szarlotka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_160",
-      "word": "Pomidor",
+      "word": "Sernik",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_161",
-      "word": "Pączek",
+      "word": "Tort",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_162",
-      "word": "Pierogi",
+      "word": "Drożdżówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_163",
-      "word": "Pieczeń",
+      "word": "Kebab",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_164",
-      "word": "Pieczarka",
+      "word": "Sushi",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_165",
-      "word": "Pietruszka",
+      "word": "Zapiekanka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_166",
-      "word": "Płatki",
+      "word": "Rosół",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_167",
-      "word": "Placki",
+      "word": "Gulasz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_168",
-      "word": "Polędwica",
+      "word": "Spaghetti",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_169",
-      "word": "Pomarańcza",
+      "word": "Sałatka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_170",
-      "word": "Por",
+      "word": "Tatar",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_171",
-      "word": "Popcorn",
+      "word": "Gofry",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_172",
-      "word": "Przekąska",
+      "word": "Kiełbasa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_173",
-      "word": "Pstrąg",
+      "word": "Bigos",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_174",
-      "word": "Ptysiowy",
+      "word": "Żurek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_175",
-      "word": "Przyprawa",
+      "word": "Barszcz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_176",
-      "word": "Pianka",
+      "word": "Naleśniki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_177",
-      "word": "Piernik",
+      "word": "Krokiety",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_178",
-      "word": "Pączek",
+      "word": "Śledź",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_179",
-      "word": "Pasztet",
+      "word": "Herbata",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_180",
-      "word": "Pierożki",
+      "word": "Kakao",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_181",
-      "word": "Pigwa",
+      "word": "Kompot",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_182",
-      "word": "Pesto",
+      "word": "Lemoniada",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_183",
-      "word": "Piwo",
+      "word": "Arbuz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_184",
-      "word": "Poncz",
+      "word": "Truskawka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_185",
-      "word": "Pita",
+      "word": "Malina",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_186",
-      "word": "Pyzy",
+      "word": "Borówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_187",
-      "word": "Paella",
+      "word": "Gruszka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_188",
-      "word": "Parówka",
+      "word": "Śliwka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_189",
-      "word": "Proszek do pieczenia",
+      "word": "Banan",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_190",
-      "word": "Pudding",
+      "word": "Cytrus",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_191",
-      "word": "Purée",
+      "word": "Cytryna",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_192",
-      "word": "Prazynki",
+      "word": "Orzech",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_193",
-      "word": "Pączek z dżemem",
+      "word": "Grzyb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_194",
-      "word": "Polędwiczka",
+      "word": "Frytki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_195",
-      "word": "Powidła",
+      "word": "Burger",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_196",
-      "word": "Przecier",
+      "word": "Ogórek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_197",
-      "word": "Ptasie mleczko",
+      "word": "Ciasto",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_198",
-      "word": "Puder",
+      "word": "Babeczka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_199",
-      "word": "Puszka",
+      "word": "Zupa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_200",
-      "word": "Pyszotka",
+      "word": "Deser",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_201",
-      "word": "Ptak",
+      "word": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_202",
-      "word": "Dinozaur",
+      "word": "Zwierzak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_203",
-      "word": "Pies",
+      "word": "Dinozaur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
@@ -83958,271 +83958,271 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_207",
-      "word": "Kot",
-      "category": "Zwierzęta & Natura",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_208",
       "word": "Kaktus",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_208",
+      "word": "Rzeka",
+      "category": "Zwierzęta & Natura",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_209",
-      "word": "Papuga",
+      "word": "Jezioro",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_210",
-      "word": "Piesek",
+      "word": "Morze",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_211",
-      "word": "Pająk",
+      "word": "Ocean",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_212",
-      "word": "Pantera",
+      "word": "Góra",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_213",
-      "word": "Panda",
+      "word": "Las",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_214",
-      "word": "Puma",
+      "word": "Łąka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_215",
-      "word": "Płetwal",
+      "word": "Drzewo",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_216",
-      "word": "Pingwin",
+      "word": "Kwiat",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_217",
-      "word": "Pstrąg",
+      "word": "Róża",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_218",
-      "word": "Pszczoła",
+      "word": "Sosna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_219",
-      "word": "Puchacz",
+      "word": "Dąb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_220",
-      "word": "Pustułka",
+      "word": "Grzyb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_221",
-      "word": "Płaszczka",
+      "word": "Chmura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_222",
-      "word": "Pijawka",
+      "word": "Deszcz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_223",
-      "word": "Płaszcz ziemi",
+      "word": "Śnieg",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_224",
-      "word": "Pustynia",
+      "word": "Wiatr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_225",
-      "word": "Potok",
+      "word": "Tęcza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_226",
-      "word": "Piorun",
+      "word": "Mgła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_227",
-      "word": "Piana",
+      "word": "Wodospad",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_228",
-      "word": "Pędy",
+      "word": "Skała",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_229",
-      "word": "Płatki",
+      "word": "Bursztyn",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_230",
-      "word": "Pączek kwiatu",
+      "word": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_231",
-      "word": "Pajęczyna",
+      "word": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_232",
-      "word": "Paproć",
+      "word": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_233",
-      "word": "Pustynia",
+      "word": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_234",
-      "word": "Pogoda",
+      "word": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_235",
-      "word": "Podmuch",
+      "word": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_236",
-      "word": "Południe",
+      "word": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_237",
-      "word": "Przełęcz",
+      "word": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_238",
-      "word": "Puszcza",
+      "word": "Bocian",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_239",
-      "word": "Pióro",
+      "word": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_240",
-      "word": "Pysk",
+      "word": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_241",
-      "word": "Pazur",
+      "word": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_242",
-      "word": "Pancerz",
+      "word": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_243",
-      "word": "Płetwa",
+      "word": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_244",
-      "word": "Pysk",
+      "word": "Jeleń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_245",
-      "word": "Pigi",
+      "word": "Sarna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_246",
-      "word": "Pelikan",
+      "word": "Dzik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_247",
-      "word": "Pływak",
+      "word": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_248",
-      "word": "Polnik",
+      "word": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_249",
-      "word": "Pudiel",
+      "word": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_250",
-      "word": "Pies dingo",
+      "word": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_251",
-      "word": "Samolot",
+      "word": "Samochód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -84234,289 +84234,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_253",
-      "word": "Telefon",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_254",
       "word": "Rower",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_255",
-      "word": "Samochód",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_256",
+      "id": "pg_254",
       "word": "Statek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_257",
+      "id": "pg_255",
       "word": "Hulajnoga",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_258",
+      "id": "pg_256",
       "word": "Żarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_259",
+      "id": "pg_257",
       "word": "Teleskop",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_258",
+      "word": "Dron",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_259",
+      "word": "Słuchawki",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_260",
-      "word": "Pojazd",
+      "word": "Klawiatura",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_261",
-      "word": "Pociąg",
+      "word": "Myszka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_262",
-      "word": "Parowiec",
+      "word": "Monitor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_263",
-      "word": "Pilot",
+      "word": "Drukarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_264",
-      "word": "Płytka",
+      "word": "Skaner",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_265",
-      "word": "Procesor",
+      "word": "Kamera",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_266",
-      "word": "Program",
+      "word": "Ruter Wi-Fi",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_267",
-      "word": "Pendrive",
+      "word": "Konsola",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_268",
-      "word": "Pralka",
+      "word": "Tablet",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_269",
-      "word": "Piekarnik",
+      "word": "Smartwatch",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_270",
-      "word": "Pojemnik",
+      "word": "Bateria",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_271",
-      "word": "Płytka drukowana",
+      "word": "Ładowarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_272",
-      "word": "Poduszkowiec",
+      "word": "Światłowód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_273",
-      "word": "Polonez",
+      "word": "Mikrofon",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_274",
-      "word": "Porsche",
+      "word": "Głośnik",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_275",
-      "word": "Przekładnia",
+      "word": "Klimatyzacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_276",
-      "word": "Pompa",
+      "word": "Robot",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_277",
-      "word": "Paliwo",
+      "word": "Satelita",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_278",
-      "word": "Przewód",
+      "word": "Rakieta",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_279",
-      "word": "Przełącznik",
+      "word": "Motocykl",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_280",
-      "word": "Potencjometr",
+      "word": "Traktor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_281",
-      "word": "Pojemnik",
+      "word": "Autobus",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_282",
-      "word": "Przeglądarka",
+      "word": "Tramwaj",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_283",
-      "word": "Pulpit",
+      "word": "Metro",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_284",
-      "word": "Pamięć",
+      "word": "Helikopter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_285",
-      "word": "Piksel",
+      "word": "Szybowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_286",
-      "word": "Port",
+      "word": "Żaglowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_287",
-      "word": "Powerbank",
+      "word": "Czołg",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_288",
-      "word": "Pistolet",
+      "word": "Koparka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_289",
-      "word": "Pikser",
+      "word": "Dźwig",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_290",
-      "word": "Projektor",
+      "word": "Ciężarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_291",
-      "word": "Prostownik",
+      "word": "Skuter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_292",
-      "word": "Pustka",
+      "word": "Wózek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_293",
-      "word": "Podzespół",
+      "word": "Zegarek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_294",
-      "word": "Płyta główna",
+      "word": "Telewizor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_295",
-      "word": "Pojemnościowy",
+      "word": "Radio",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_296",
-      "word": "Przetwornik",
+      "word": "Nawigacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_297",
-      "word": "Pneumatyka",
+      "word": "Mikrofalówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_298",
-      "word": "Podwozie",
+      "word": "Odkurzacz",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_299",
-      "word": "Pokrywa",
+      "word": "Suszarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_300",
-      "word": "Pancerz",
+      "word": "Ekran",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -84528,1195 +84528,1195 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_302",
-      "word": "Superbohater",
+      "word": "Heros",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_303",
-      "word": "Pikachu",
+      "word": "Władca Pierścieni",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_304",
-      "word": "Pac-Man",
+      "word": "Harry Potter",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_305",
-      "word": "Piksel",
+      "word": "Gwiezdne Wojny",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_306",
-      "word": "Postać",
+      "word": "Matrix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_307",
-      "word": "Przygoda",
+      "word": "Batman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_308",
-      "word": "Planszówka",
+      "word": "Spider-Man",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_309",
-      "word": "Piosenka",
+      "word": "Shrek",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_310",
-      "word": "Przebój",
+      "word": "Kraina Lodu",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_311",
-      "word": "Plakat",
+      "word": "Król Lew",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_312",
-      "word": "Premiera",
+      "word": "Toy Story",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_313",
-      "word": "Post",
+      "word": "Minecraft",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_314",
-      "word": "Podkast",
+      "word": "GTA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_315",
-      "word": "Powieść",
+      "word": "Fortnite",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_316",
-      "word": "Prasa",
+      "word": "League of Legends",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_317",
-      "word": "Program TV",
+      "word": "Mario",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_318",
-      "word": "Przegląd",
+      "word": "The Sims",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_319",
-      "word": "Publiczność",
+      "word": "James Bond",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_320",
-      "word": "Publika",
+      "word": "Indiana Jones",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_321",
-      "word": "Park rozrywki",
+      "word": "Terminator",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_322",
-      "word": "PlayStation",
+      "word": "Joker",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_323",
-      "word": "Pokemon",
+      "word": "Marvel",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_324",
-      "word": "Peppa",
+      "word": "DC",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_325",
-      "word": "Pinokio",
+      "word": "Netflix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_326",
-      "word": "Piotruś Pan",
+      "word": "YouTube",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_327",
-      "word": "Pumba",
+      "word": "TikTok",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_328",
-      "word": "Pocahontas",
+      "word": "Instagram",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_329",
-      "word": "Po (Kung Fu)",
+      "word": "Spotify",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_330",
-      "word": "Punisher",
+      "word": "Oscar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_331",
-      "word": "Pająk (Spidey)",
+      "word": "Grammy",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_332",
-      "word": "Paryż",
+      "word": "Avengers",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_333",
-      "word": "Pop",
+      "word": "Barbie",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_334",
-      "word": "Punk",
+      "word": "Oppenheimer",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_335",
-      "word": "Pojedynek",
+      "word": "Titanic",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_336",
-      "word": "Puchar",
+      "word": "Avatar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_337",
-      "word": "Punkty",
+      "word": "Fast & Furious",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_338",
-      "word": "Poziom",
+      "word": "Stranger Things",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_339",
-      "word": "Postać fikcyjna",
+      "word": "Gra o Tron",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_340",
-      "word": "Parkur",
+      "word": "Dragon Ball",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_341",
-      "word": "Piosenkarz",
+      "word": "Naruto",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_342",
-      "word": "Producent",
+      "word": "CS:GO",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_343",
-      "word": "Projekt",
+      "word": "FIFA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_344",
-      "word": "Półfinał",
+      "word": "Cyberpunk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_345",
-      "word": "Plebiscyt",
+      "word": "Superman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_346",
-      "word": "Przegrana",
+      "word": "Thor",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_347",
-      "word": "Polonia",
+      "word": "Hulk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_348",
-      "word": "Piknik",
+      "word": "Deadpool",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_349",
-      "word": "Publiczność",
+      "word": "Zelda",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_350",
-      "word": "Premia",
+      "word": "Gollum",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_351",
-      "word": "Piłka",
+      "word": "Bieganie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_352",
-      "word": "Pływanie",
+      "word": "Kąpiel",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_353",
-      "word": "Piłka nożna",
+      "word": "Szachy",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_354",
-      "word": "Piłka siatkowa",
+      "word": "Koszykówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_355",
-      "word": "Piłka koszykowa",
+      "word": "Siatkówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_356",
-      "word": "Pchnięcie kulą",
+      "word": "Tenis",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_357",
-      "word": "Pojedynek",
+      "word": "Boks",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_358",
-      "word": "Puchar",
+      "word": "Gimnastyka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_359",
-      "word": "Punkty",
+      "word": "Kolarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_360",
-      "word": "Podanie",
+      "word": "Hokej",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_361",
-      "word": "Postój",
+      "word": "Narciarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_362",
-      "word": "Podejście",
+      "word": "Łyżwiarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_363",
-      "word": "Piruet",
+      "word": "Surfing",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_364",
-      "word": "Pływak",
+      "word": "Golf",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_365",
-      "word": "Pięściarz",
+      "word": "Badminton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_366",
-      "word": "Płotki",
+      "word": "Wspinaczka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_367",
-      "word": "Półmaraton",
+      "word": "Żeglarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_368",
-      "word": "Parkur",
+      "word": "Wędkarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_369",
-      "word": "Peleton",
+      "word": "Majsterkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_370",
-      "word": "Pierwsza liga",
+      "word": "Fotografia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_371",
-      "word": "Pustelnik",
+      "word": "Malarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_372",
-      "word": "Polowanie",
+      "word": "Rysowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_373",
-      "word": "Podróże",
+      "word": "Czytanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_374",
-      "word": "Pstrągowanie",
+      "word": "Taniec",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_375",
-      "word": "Pięciobój",
+      "word": "Śpiew",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_376",
-      "word": "Przeciąganie liny",
+      "word": "Joga",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_377",
-      "word": "Przewrót",
+      "word": "Karate",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_378",
-      "word": "Paletka",
+      "word": "Judo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_379",
-      "word": "Park linowy",
+      "word": "Szermierka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_380",
-      "word": "Przejście",
+      "word": "Łucznictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_381",
-      "word": "Ping-pong",
+      "word": "Kręgle",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_382",
-      "word": "Pustelnik",
+      "word": "Bilard",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_383",
-      "word": "Piknik",
+      "word": "Darts",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_384",
-      "word": "Paintball",
+      "word": "Deskorolka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_385",
-      "word": "Paralotnia",
+      "word": "Rolki",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_386",
-      "word": "Podnoszenie ciężarów",
+      "word": "Brydż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_387",
-      "word": "Pustynny rajdy",
+      "word": "Domino",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_388",
-      "word": "Paliwo",
+      "word": "Origami",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_389",
-      "word": "Prosta trasa",
+      "word": "Szydełkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_390",
-      "word": "Punkty klasyfikacji",
+      "word": "Ceramika",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_391",
-      "word": "Pasy bezpieczeństwa",
+      "word": "Ogrodnictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_392",
-      "word": "Parawan",
+      "word": "Maraton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_393",
-      "word": "Pikowanie",
+      "word": "Sprint",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_394",
-      "word": "Pompka rowerowa",
+      "word": "Skok w dal",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_395",
-      "word": "Pachołek",
+      "word": "Skok wzwyż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_396",
-      "word": "Pianka pływacka",
+      "word": "Rzut oszczepem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_397",
-      "word": "Płetwy",
+      "word": "Rzut dyskiem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_398",
-      "word": "Przybory",
+      "word": "Wiosłowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_399",
-      "word": "Pędzel",
+      "word": "Żonglerka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_400",
-      "word": "Płótno",
+      "word": "Kaligrafia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_401",
-      "word": "Pływanie",
+      "word": "Gotowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_402",
-      "word": "Pisanie",
+      "word": "Zmywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_403",
-      "word": "Pieczenie",
+      "word": "Odkurzanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_404",
-      "word": "Prasowanie",
+      "word": "Koszenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_405",
-      "word": "Podróżowanie",
+      "word": "Malowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_406",
-      "word": "Pielęgnacja",
+      "word": "Rysowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_407",
-      "word": "Płaczenie",
+      "word": "Śpiewanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_408",
-      "word": "Pielenie",
+      "word": "Tańczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_409",
-      "word": "Pobudka",
+      "word": "Czytanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_410",
-      "word": "Pasteryzacja",
+      "word": "Szycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_411",
-      "word": "Pakowanie",
+      "word": "Majsterkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_412",
-      "word": "Pukanie",
+      "word": "Mycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_413",
-      "word": "Pchanie",
+      "word": "Golenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_414",
-      "word": "Pociąganie",
+      "word": "Czesanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_415",
-      "word": "Płukanie",
+      "word": "Ćwiczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_416",
-      "word": "Pranie",
+      "word": "Spacerowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_417",
-      "word": "Picie",
+      "word": "Łowienie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_418",
-      "word": "Palenie",
+      "word": "Skakanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_419",
-      "word": "Pytanie",
+      "word": "Wspinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_420",
-      "word": "Proszalnie",
+      "word": "Nurkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_421",
-      "word": "Pływanie",
+      "word": "Jeżdżenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_422",
-      "word": "Pocałunek",
+      "word": "Rozmawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_423",
-      "word": "Pospiech",
+      "word": "Słuchanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_424",
-      "word": "Podglądanie",
+      "word": "Oglądanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_425",
-      "word": "Przesuwanie",
+      "word": "Śmianie się",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_426",
-      "word": "Przesadzanie",
+      "word": "Lamentowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_427",
-      "word": "Pielęgnowanie",
+      "word": "Spanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_428",
-      "word": "Podejmowanie",
+      "word": "Jedzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_429",
-      "word": "Przekazywanie",
+      "word": "Sączenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_430",
-      "word": "Protestowanie",
+      "word": "Kupowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_431",
-      "word": "Podpisywanie",
+      "word": "Sprzedawanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_432",
-      "word": "Przepraszanie",
+      "word": "Bieganie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_433",
-      "word": "Podziwianie",
+      "word": "Liczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_434",
-      "word": "Poszukiwanie",
+      "word": "Szukanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_435",
-      "word": "Polowanie",
+      "word": "Sprzątanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_436",
-      "word": "Przeglądanie",
+      "word": "Budowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_437",
-      "word": "Pobieranie",
+      "word": "Naprawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_438",
-      "word": "Przenoszenie",
+      "word": "Otwieranie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_439",
-      "word": "Przekładanie",
+      "word": "Zamykanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_440",
-      "word": "Przesypianie",
+      "word": "Wycinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_441",
-      "word": "Pocieszanie",
+      "word": "Klejenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_442",
-      "word": "Przymierzanie",
+      "word": "Ważenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_443",
-      "word": "Przecinanie",
+      "word": "Mierzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_444",
-      "word": "Pieczenie",
+      "word": "Szykowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_445",
-      "word": "Powiadamianie",
+      "word": "Rozpakowywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_446",
-      "word": "Podjadanie",
+      "word": "Granie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_447",
-      "word": "Płoszenie",
+      "word": "Wygrywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_448",
-      "word": "Przesłuchiwanie",
+      "word": "Czekanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_449",
-      "word": "Przestrzeganie",
+      "word": "Marzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_450",
-      "word": "Przygarnianie",
+      "word": "Kąpanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_451",
-      "word": "Pieniądze",
+      "word": "Zgoda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_452",
-      "word": "Prawo",
+      "word": "Miłość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_453",
-      "word": "Praca",
+      "word": "Wolność",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_454",
-      "word": "Przyjaźń",
+      "word": "Czas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_455",
-      "word": "Prawda",
+      "word": "Szczęście",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_456",
-      "word": "Pamięć",
+      "word": "Nadzieja",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_457",
-      "word": "Północ",
+      "word": "Wiara",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_458",
-      "word": "Południe",
+      "word": "Sprawiedliwość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_459",
-      "word": "Przeszłość",
+      "word": "Zajęcie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_460",
-      "word": "Przyszłość",
+      "word": "Sukces",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_461",
-      "word": "Pojęcie",
+      "word": "Klęska",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_462",
-      "word": "Pomysł",
+      "word": "Hobby",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_463",
-      "word": "Problem",
+      "word": "Wyprawa",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_464",
-      "word": "Pytanie",
+      "word": "Kraj",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_465",
-      "word": "Powód",
+      "word": "Jutro",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_466",
-      "word": "Pora",
+      "word": "Dawne czasy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_467",
-      "word": "Pojedynek",
+      "word": "Marzenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_468",
-      "word": "Podróż",
+      "word": "Radość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_469",
-      "word": "Przygoda",
+      "word": "Smutek",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_470",
-      "word": "Pech",
+      "word": "Złość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_471",
-      "word": "Powodzenie",
+      "word": "Strach",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_472",
-      "word": "Praca domowa",
+      "word": "Odwaga",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_473",
-      "word": "Pokój (spokój)",
+      "word": "Duma",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_474",
-      "word": "Przemoc",
+      "word": "Wstyd",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_475",
-      "word": "Poczucie humoru",
+      "word": "Zazdroszczenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_476",
-      "word": "Porządek",
+      "word": "Uczucie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_477",
-      "word": "Przepis",
+      "word": "Koncept",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_478",
-      "word": "Projekt",
+      "word": "Kłopot",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_479",
-      "word": "Pakt",
+      "word": "Zagadka",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_480",
-      "word": "Patent",
+      "word": "Odpowiedź",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_481",
-      "word": "Poczucie",
+      "word": "Ład",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_482",
-      "word": "Pozór",
+      "word": "Chaos",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_483",
-      "word": "Podstęp",
+      "word": "Cisza",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_484",
-      "word": "Przysięga",
+      "word": "Hałas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_485",
-      "word": "Przekonanie",
+      "word": "Światło",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_486",
-      "word": "Potęga",
+      "word": "Cień",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_487",
-      "word": "Pasja",
+      "word": "Energia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_488",
-      "word": "Porażka",
+      "word": "Zdrowie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_489",
-      "word": "Pewność",
+      "word": "Śmiech",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_490",
-      "word": "Przypadek",
+      "word": "Łzy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_491",
-      "word": "Porozumienie",
+      "word": "Zwycięstwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_492",
-      "word": "Podwójność",
+      "word": "Remis",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_493",
-      "word": "Prostota",
+      "word": "Mądrość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_494",
-      "word": "Płynność",
+      "word": "Głupota",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_495",
-      "word": "Przestrzeń",
+      "word": "Bogactwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_496",
-      "word": "Prędkość",
+      "word": "Bieda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_497",
-      "word": "Podstawa",
+      "word": "Życie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_498",
-      "word": "Próg",
+      "word": "Śmierć",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_499",
-      "word": "Polityka",
+      "word": "Słońce",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_500",
-      "word": "Przyroda",
+      "word": "Ziemia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     }
@@ -85736,289 +85736,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_3",
-      "word": "Parasol",
+      "word": "Komputer",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_4",
-      "word": "Telefon",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_5",
-      "word": "Rower",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_6",
-      "word": "Bomba",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_7",
-      "word": "Gitara",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_8",
-      "word": "Okulary",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_9",
-      "word": "Kamera",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_10",
-      "word": "Pistolet",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_11",
-      "word": "Namiot",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_12",
-      "word": "Złoty medal",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_13",
-      "word": "Żarówka",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_14",
-      "word": "Kompas",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_15",
-      "word": "Teleskop",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_16",
-      "word": "Portfel",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_17",
-      "word": "Sofa",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_18",
-      "word": "Buty",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_19",
-      "word": "Lustro",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_20",
-      "word": "Klucz",
-      "category": "Przedmioty",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_21",
       "word": "Nożyczki",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_5",
+      "word": "Karton",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_6",
+      "word": "Kafel",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_7",
+      "word": "Trofeum",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_8",
+      "word": "Dysk",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_9",
+      "word": "Ogrodzenie",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_10",
+      "word": "Obrączka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_11",
+      "word": "Kurtka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_12",
+      "word": "Drożdżówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_13",
+      "word": "Afisz",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_14",
+      "word": "Fortepian",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_15",
+      "word": "Etui",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_16",
+      "word": "Futbolówka",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_17",
+      "word": "Nabój",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_18",
+      "word": "Słoik",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_19",
+      "word": "Kask",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_20",
+      "word": "Okulary",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_21",
+      "word": "Lustro",
+      "category": "Przedmioty",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_22",
-      "word": "Portret",
+      "word": "Klucz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_23",
-      "word": "Plecak",
+      "word": "Łóżko",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_24",
-      "word": "Poduszka",
+      "word": "Stół",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_25",
-      "word": "Pędzel",
+      "word": "Krzesło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_26",
-      "word": "Pióro",
+      "word": "Szafa",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_27",
-      "word": "Pudełko",
+      "word": "Lodówka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_28",
-      "word": "Płytka",
+      "word": "Suszarka do ubrań",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_29",
-      "word": "Puchar",
+      "word": "Kuchenka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_30",
-      "word": "Puzderko",
+      "word": "Garnek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_31",
-      "word": "Płyta",
+      "word": "Rondel",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_32",
-      "word": "Płot",
+      "word": "Talerz",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_33",
-      "word": "Pierścień",
+      "word": "Kubek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_34",
-      "word": "Pas",
+      "word": "Widelec",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_35",
-      "word": "Płaszcz",
+      "word": "Łyżka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_36",
-      "word": "Pączek",
+      "word": "Nóż",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_37",
-      "word": "Paterka",
+      "word": "Ręcznik",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_38",
-      "word": "Plakat",
+      "word": "Mydło",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_39",
-      "word": "Pianino",
+      "word": "Szczoteczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_40",
-      "word": "Pedał",
+      "word": "Grzebień",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_41",
-      "word": "Paleta",
+      "word": "Latarka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_42",
-      "word": "Pędzel",
+      "word": "Termos",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_43",
-      "word": "Pociąg",
+      "word": "Biżuteria",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_44",
-      "word": "Piórnik",
+      "word": "Wazon",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_45",
-      "word": "Piłka",
+      "word": "Świeca",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_46",
-      "word": "Pistolet",
+      "word": "Dywan",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_47",
-      "word": "Pocisk",
+      "word": "Koc",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_48",
-      "word": "Pojemnik",
+      "word": "Zasłona",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_49",
-      "word": "Pokrowiec",
+      "word": "Zapalniczka",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_50",
-      "word": "Pompa",
+      "word": "Mieszek",
       "category": "Przedmioty",
       "difficulty": "Łatwy"
     },
@@ -86042,583 +86042,583 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_54",
-      "word": "Policjant",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_55",
       "word": "Kucharz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_56",
-      "word": "Piosenkarz",
-      "category": "Ludzie & Zawody",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_57",
+      "id": "pg_55",
       "word": "Strażak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_58",
+      "id": "pg_56",
       "word": "Dentysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_57",
+      "word": "Heros",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_58",
+      "word": "Doktor",
+      "category": "Ludzie & Zawody",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_59",
-      "word": "Superbohater",
+      "word": "Żołnierz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_60",
-      "word": "Prezydent",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_61",
-      "word": "Pediatra",
+      "word": "Aktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_62",
-      "word": "Pianista",
+      "word": "Reżyser",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_63",
-      "word": "Pilot",
+      "word": "Kierowca",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_64",
-      "word": "Pisarz",
+      "word": "Listonosz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_65",
-      "word": "Piłkarz",
+      "word": "Mechanik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_66",
-      "word": "Pływak",
+      "word": "Fryzjer",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_67",
-      "word": "Policjant",
+      "word": "Krawiec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_68",
-      "word": "Polityk",
+      "word": "Sprzątaczka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_69",
-      "word": "Pomocnik",
+      "word": "Ochroniarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_70",
-      "word": "Poeta",
+      "word": "Taksówkarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_71",
-      "word": "Prawnik",
+      "word": "Modelka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_72",
-      "word": "Programista",
+      "word": "Fotograf",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_73",
-      "word": "Przewodnik",
+      "word": "Rzeźbiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_74",
-      "word": "Psycholog",
+      "word": "Rolnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_75",
-      "word": "Przedsiębiorca",
+      "word": "Rybak",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_76",
-      "word": "Pszczelarz",
+      "word": "Zegarmistrz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_77",
-      "word": "Piekarz",
+      "word": "Barman",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_78",
-      "word": "Pielęgniarka",
+      "word": "Krupier",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_79",
-      "word": "Plastyk",
+      "word": "Sędzia",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_80",
-      "word": "Podróżnik",
+      "word": "Budowlaniec",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_81",
-      "word": "Postaci",
+      "word": "Architekt",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_82",
-      "word": "Peryferia",
+      "word": "Weterynarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_83",
-      "word": "Parch",
+      "word": "Masażysta",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_84",
-      "word": "Przyjaciel",
+      "word": "Dyrygent",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_85",
-      "word": "Pasażer",
+      "word": "Malarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_86",
-      "word": "Pasterz",
+      "word": "Stolarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_87",
-      "word": "Pacjent",
+      "word": "Hydraulik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_88",
-      "word": "Patent",
+      "word": "Kominiarz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_89",
-      "word": "Patron",
+      "word": "Kwiaciarka",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_90",
-      "word": "Pionier",
+      "word": "Instruktor",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_91",
-      "word": "Pitbul",
+      "word": "Ratownik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_92",
-      "word": "Plebejusz",
+      "word": "Lider wycieczki",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_93",
-      "word": "Płatnik",
+      "word": "Szpieg",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_94",
-      "word": "Poborowy",
+      "word": "Rycerz",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_95",
-      "word": "Podwładny",
+      "word": "Kat",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_96",
-      "word": "Pojedynek",
+      "word": "Czarownica",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_97",
-      "word": "Pomagacz",
+      "word": "Błazen",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_98",
-      "word": "Pomoc",
+      "word": "Alchemik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_99",
-      "word": "Potomek",
+      "word": "Detektyw",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_100",
-      "word": "Praojciec",
+      "word": "Górnik",
       "category": "Ludzie & Zawody",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_101",
-      "word": "Plaża",
+      "word": "Szkoła",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_102",
-      "word": "Piramida",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_103",
-      "word": "Więzienie",
-      "category": "Miejsca",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_104",
       "word": "Szpital",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_105",
+      "id": "pg_103",
+      "word": "Akwarium",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_104",
       "word": "Kino",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_106",
+      "id": "pg_105",
       "word": "Zamek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_107",
+      "id": "pg_106",
       "word": "ZOO",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_108",
+      "id": "pg_107",
       "word": "Basen",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_109",
+      "id": "pg_108",
       "word": "Kolejka górska",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_109",
+      "word": "Cukiernia",
+      "category": "Miejsca",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_110",
-      "word": "Park",
+      "word": "Suterena",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_111",
-      "word": "Piekarnia",
+      "word": "Rynek",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_112",
-      "word": "Piwnica",
+      "word": "Ziemia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_113",
-      "word": "Plac",
+      "word": "Urząd",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_114",
-      "word": "Planeta",
+      "word": "Ogród",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_115",
-      "word": "Poczta",
+      "word": "Salon",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_116",
-      "word": "Podwórko",
+      "word": "Łąka",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_117",
-      "word": "Pokój",
+      "word": "Kajakowy pomost",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_118",
-      "word": "Polana",
+      "word": "Komenda",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_119",
-      "word": "Port",
+      "word": "Studio",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_120",
-      "word": "Posterunek",
+      "word": "Dworzec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_121",
-      "word": "Pracownia",
+      "word": "Sahara",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_122",
-      "word": "Przystanek",
+      "word": "Karuzela",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_123",
-      "word": "Pustynia",
+      "word": "Hotel",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_124",
-      "word": "Punkt",
+      "word": "Teatr",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_125",
-      "word": "Pub",
+      "word": "Muzeum",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_126",
-      "word": "Półwysep",
+      "word": "Stadion",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_127",
-      "word": "Pole",
+      "word": "Lotnisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_128",
-      "word": "Parter",
+      "word": "Siłownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_129",
-      "word": "Poddasze",
+      "word": "Sauna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_130",
-      "word": "Pomost",
+      "word": "Kopalnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_131",
-      "word": "Park rozrywki",
+      "word": "Cmentarz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_132",
-      "word": "Parking",
+      "word": "Restauracja",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_133",
-      "word": "Pojedynek",
+      "word": "Kasyno",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_134",
-      "word": "Palmiarnia",
+      "word": "Łódź podwodna",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_135",
-      "word": "Pałac",
+      "word": "Obóz",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_136",
-      "word": "Pizzeria",
+      "word": "Wieżowiec",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_137",
-      "word": "Pływalnia",
+      "word": "Schronisko",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_138",
-      "word": "Podziemia",
+      "word": "Warsztat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_139",
-      "word": "Pogotowie",
+      "word": "Klub",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_140",
-      "word": "Pralnia",
+      "word": "Cyrk",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_141",
-      "word": "Przejście",
+      "word": "Filharmonia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_142",
-      "word": "Punkt widokowy",
+      "word": "Aquapark",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_143",
-      "word": "Przełęcz",
+      "word": "Elektrownia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_144",
-      "word": "Przystań",
+      "word": "Laboratorium",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_145",
-      "word": "Pustkowie",
+      "word": "Rezerwat",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_146",
-      "word": "Prześwit",
+      "word": "Wulkan",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_147",
-      "word": "Płaskowyż",
+      "word": "Bunkier",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_148",
-      "word": "Pobocze",
+      "word": "Dwór",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_149",
-      "word": "Pogranicze",
+      "word": "Schron",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_150",
-      "word": "Południe",
+      "word": "Kawiarnia",
       "category": "Miejsca",
       "difficulty": "Łatwy"
     },
@@ -86642,301 +86642,301 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_154",
-      "word": "Pizza",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_155",
       "word": "Lody",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_156",
-      "word": "Kawałek tortu",
-      "category": "Jedzenie",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_157",
+      "id": "pg_155",
       "word": "Mleko",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_158",
+      "id": "pg_156",
       "word": "Chleb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_157",
+      "word": "Masło",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_158",
+      "word": "Ser",
+      "category": "Jedzenie",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_159",
-      "word": "Papryka",
+      "word": "Szarlotka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_160",
-      "word": "Pomidor",
+      "word": "Sernik",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_161",
-      "word": "Pączek",
+      "word": "Tort",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_162",
-      "word": "Pierogi",
+      "word": "Drożdżówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_163",
-      "word": "Pieczeń",
+      "word": "Kebab",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_164",
-      "word": "Pieczarka",
+      "word": "Sushi",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_165",
-      "word": "Pietruszka",
+      "word": "Zapiekanka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_166",
-      "word": "Płatki",
+      "word": "Rosół",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_167",
-      "word": "Placki",
+      "word": "Gulasz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_168",
-      "word": "Polędwica",
+      "word": "Spaghetti",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_169",
-      "word": "Pomarańcza",
+      "word": "Sałatka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_170",
-      "word": "Por",
+      "word": "Tatar",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_171",
-      "word": "Popcorn",
+      "word": "Gofry",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_172",
-      "word": "Przekąska",
+      "word": "Kiełbasa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_173",
-      "word": "Pstrąg",
+      "word": "Bigos",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_174",
-      "word": "Ptysiowy",
+      "word": "Żurek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_175",
-      "word": "Przyprawa",
+      "word": "Barszcz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_176",
-      "word": "Pianka",
+      "word": "Naleśniki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_177",
-      "word": "Piernik",
+      "word": "Krokiety",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_178",
-      "word": "Pączek",
+      "word": "Śledź",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_179",
-      "word": "Pasztet",
+      "word": "Herbata",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_180",
-      "word": "Pierożki",
+      "word": "Kakao",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_181",
-      "word": "Pigwa",
+      "word": "Kompot",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_182",
-      "word": "Pesto",
+      "word": "Lemoniada",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_183",
-      "word": "Piwo",
+      "word": "Arbuz",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_184",
-      "word": "Poncz",
+      "word": "Truskawka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_185",
-      "word": "Pita",
+      "word": "Malina",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_186",
-      "word": "Pyzy",
+      "word": "Borówka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_187",
-      "word": "Paella",
+      "word": "Gruszka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_188",
-      "word": "Parówka",
+      "word": "Śliwka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_189",
-      "word": "Proszek do pieczenia",
+      "word": "Banan",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_190",
-      "word": "Pudding",
+      "word": "Cytrus",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_191",
-      "word": "Purée",
+      "word": "Cytryna",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_192",
-      "word": "Prazynki",
+      "word": "Orzech",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_193",
-      "word": "Pączek z dżemem",
+      "word": "Grzyb",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_194",
-      "word": "Polędwiczka",
+      "word": "Frytki",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_195",
-      "word": "Powidła",
+      "word": "Burger",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_196",
-      "word": "Przecier",
+      "word": "Ogórek",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_197",
-      "word": "Ptasie mleczko",
+      "word": "Ciasto",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_198",
-      "word": "Puder",
+      "word": "Babeczka",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_199",
-      "word": "Puszka",
+      "word": "Zupa",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_200",
-      "word": "Pyszotka",
+      "word": "Deser",
       "category": "Jedzenie",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_201",
-      "word": "Ptak",
+      "word": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_202",
-      "word": "Dinozaur",
+      "word": "Zwierzak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_203",
-      "word": "Pies",
+      "word": "Dinozaur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
@@ -86960,271 +86960,271 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_207",
-      "word": "Kot",
-      "category": "Zwierzęta & Natura",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_208",
       "word": "Kaktus",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_208",
+      "word": "Rzeka",
+      "category": "Zwierzęta & Natura",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_209",
-      "word": "Papuga",
+      "word": "Jezioro",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_210",
-      "word": "Piesek",
+      "word": "Morze",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_211",
-      "word": "Pająk",
+      "word": "Ocean",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_212",
-      "word": "Pantera",
+      "word": "Góra",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_213",
-      "word": "Panda",
+      "word": "Las",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_214",
-      "word": "Puma",
+      "word": "Łąka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_215",
-      "word": "Płetwal",
+      "word": "Drzewo",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_216",
-      "word": "Pingwin",
+      "word": "Kwiat",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_217",
-      "word": "Pstrąg",
+      "word": "Róża",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_218",
-      "word": "Pszczoła",
+      "word": "Sosna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_219",
-      "word": "Puchacz",
+      "word": "Dąb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_220",
-      "word": "Pustułka",
+      "word": "Grzyb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_221",
-      "word": "Płaszczka",
+      "word": "Chmura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_222",
-      "word": "Pijawka",
+      "word": "Deszcz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_223",
-      "word": "Płaszcz ziemi",
+      "word": "Śnieg",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_224",
-      "word": "Pustynia",
+      "word": "Wiatr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_225",
-      "word": "Potok",
+      "word": "Tęcza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_226",
-      "word": "Piorun",
+      "word": "Mgła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_227",
-      "word": "Piana",
+      "word": "Wodospad",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_228",
-      "word": "Pędy",
+      "word": "Skała",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_229",
-      "word": "Płatki",
+      "word": "Bursztyn",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_230",
-      "word": "Pączek kwiatu",
+      "word": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_231",
-      "word": "Pajęczyna",
+      "word": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_232",
-      "word": "Paproć",
+      "word": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_233",
-      "word": "Pustynia",
+      "word": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_234",
-      "word": "Pogoda",
+      "word": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_235",
-      "word": "Podmuch",
+      "word": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_236",
-      "word": "Południe",
+      "word": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_237",
-      "word": "Przełęcz",
+      "word": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_238",
-      "word": "Puszcza",
+      "word": "Bocian",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_239",
-      "word": "Pióro",
+      "word": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_240",
-      "word": "Pysk",
+      "word": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_241",
-      "word": "Pazur",
+      "word": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_242",
-      "word": "Pancerz",
+      "word": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_243",
-      "word": "Płetwa",
+      "word": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_244",
-      "word": "Pysk",
+      "word": "Jeleń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_245",
-      "word": "Pigi",
+      "word": "Sarna",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_246",
-      "word": "Pelikan",
+      "word": "Dzik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_247",
-      "word": "Pływak",
+      "word": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_248",
-      "word": "Polnik",
+      "word": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_249",
-      "word": "Pudiel",
+      "word": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_250",
-      "word": "Pies dingo",
+      "word": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_251",
-      "word": "Samolot",
+      "word": "Samochód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -87236,289 +87236,289 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_253",
-      "word": "Telefon",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_254",
       "word": "Rower",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_255",
-      "word": "Samochód",
-      "category": "Technologia & Pojazdy",
-      "difficulty": "Łatwy"
-    },
-    {
-      "id": "pg_256",
+      "id": "pg_254",
       "word": "Statek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_257",
+      "id": "pg_255",
       "word": "Hulajnoga",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_258",
+      "id": "pg_256",
       "word": "Żarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
-      "id": "pg_259",
+      "id": "pg_257",
       "word": "Teleskop",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
+      "id": "pg_258",
+      "word": "Dron",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
+      "id": "pg_259",
+      "word": "Słuchawki",
+      "category": "Technologia & Pojazdy",
+      "difficulty": "Łatwy"
+    },
+    {
       "id": "pg_260",
-      "word": "Pojazd",
+      "word": "Klawiatura",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_261",
-      "word": "Pociąg",
+      "word": "Myszka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_262",
-      "word": "Parowiec",
+      "word": "Monitor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_263",
-      "word": "Pilot",
+      "word": "Drukarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_264",
-      "word": "Płytka",
+      "word": "Skaner",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_265",
-      "word": "Procesor",
+      "word": "Kamera",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_266",
-      "word": "Program",
+      "word": "Ruter Wi-Fi",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_267",
-      "word": "Pendrive",
+      "word": "Konsola",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_268",
-      "word": "Pralka",
+      "word": "Tablet",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_269",
-      "word": "Piekarnik",
+      "word": "Smartwatch",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_270",
-      "word": "Pojemnik",
+      "word": "Bateria",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_271",
-      "word": "Płytka drukowana",
+      "word": "Ładowarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_272",
-      "word": "Poduszkowiec",
+      "word": "Światłowód",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_273",
-      "word": "Polonez",
+      "word": "Mikrofon",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_274",
-      "word": "Porsche",
+      "word": "Głośnik",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_275",
-      "word": "Przekładnia",
+      "word": "Klimatyzacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_276",
-      "word": "Pompa",
+      "word": "Robot",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_277",
-      "word": "Paliwo",
+      "word": "Satelita",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_278",
-      "word": "Przewód",
+      "word": "Rakieta",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_279",
-      "word": "Przełącznik",
+      "word": "Motocykl",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_280",
-      "word": "Potencjometr",
+      "word": "Traktor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_281",
-      "word": "Pojemnik",
+      "word": "Autobus",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_282",
-      "word": "Przeglądarka",
+      "word": "Tramwaj",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_283",
-      "word": "Pulpit",
+      "word": "Metro",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_284",
-      "word": "Pamięć",
+      "word": "Helikopter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_285",
-      "word": "Piksel",
+      "word": "Szybowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_286",
-      "word": "Port",
+      "word": "Żaglowiec",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_287",
-      "word": "Powerbank",
+      "word": "Czołg",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_288",
-      "word": "Pistolet",
+      "word": "Koparka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_289",
-      "word": "Pikser",
+      "word": "Dźwig",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_290",
-      "word": "Projektor",
+      "word": "Ciężarówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_291",
-      "word": "Prostownik",
+      "word": "Skuter",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_292",
-      "word": "Pustka",
+      "word": "Wózek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_293",
-      "word": "Podzespół",
+      "word": "Zegarek",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_294",
-      "word": "Płyta główna",
+      "word": "Telewizor",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_295",
-      "word": "Pojemnościowy",
+      "word": "Radio",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_296",
-      "word": "Przetwornik",
+      "word": "Nawigacja",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_297",
-      "word": "Pneumatyka",
+      "word": "Mikrofalówka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_298",
-      "word": "Podwozie",
+      "word": "Odkurzacz",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_299",
-      "word": "Pokrywa",
+      "word": "Suszarka",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_300",
-      "word": "Pancerz",
+      "word": "Ekran",
       "category": "Technologia & Pojazdy",
       "difficulty": "Łatwy"
     },
@@ -87530,1195 +87530,1195 @@ export const DEFAULT_P_GAME: { [key in Language]: any[] } = {
     },
     {
       "id": "pg_302",
-      "word": "Superbohater",
+      "word": "Heros",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_303",
-      "word": "Pikachu",
+      "word": "Władca Pierścieni",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_304",
-      "word": "Pac-Man",
+      "word": "Harry Potter",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_305",
-      "word": "Piksel",
+      "word": "Gwiezdne Wojny",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_306",
-      "word": "Postać",
+      "word": "Matrix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_307",
-      "word": "Przygoda",
+      "word": "Batman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_308",
-      "word": "Planszówka",
+      "word": "Spider-Man",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_309",
-      "word": "Piosenka",
+      "word": "Shrek",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_310",
-      "word": "Przebój",
+      "word": "Kraina Lodu",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_311",
-      "word": "Plakat",
+      "word": "Król Lew",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_312",
-      "word": "Premiera",
+      "word": "Toy Story",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_313",
-      "word": "Post",
+      "word": "Minecraft",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_314",
-      "word": "Podkast",
+      "word": "GTA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_315",
-      "word": "Powieść",
+      "word": "Fortnite",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_316",
-      "word": "Prasa",
+      "word": "League of Legends",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_317",
-      "word": "Program TV",
+      "word": "Mario",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_318",
-      "word": "Przegląd",
+      "word": "The Sims",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_319",
-      "word": "Publiczność",
+      "word": "James Bond",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_320",
-      "word": "Publika",
+      "word": "Indiana Jones",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_321",
-      "word": "Park rozrywki",
+      "word": "Terminator",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_322",
-      "word": "PlayStation",
+      "word": "Joker",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_323",
-      "word": "Pokemon",
+      "word": "Marvel",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_324",
-      "word": "Peppa",
+      "word": "DC",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_325",
-      "word": "Pinokio",
+      "word": "Netflix",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_326",
-      "word": "Piotruś Pan",
+      "word": "YouTube",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_327",
-      "word": "Pumba",
+      "word": "TikTok",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_328",
-      "word": "Pocahontas",
+      "word": "Instagram",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_329",
-      "word": "Po (Kung Fu)",
+      "word": "Spotify",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_330",
-      "word": "Punisher",
+      "word": "Oscar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_331",
-      "word": "Pająk (Spidey)",
+      "word": "Grammy",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_332",
-      "word": "Paryż",
+      "word": "Avengers",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_333",
-      "word": "Pop",
+      "word": "Barbie",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_334",
-      "word": "Punk",
+      "word": "Oppenheimer",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_335",
-      "word": "Pojedynek",
+      "word": "Titanic",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_336",
-      "word": "Puchar",
+      "word": "Avatar",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_337",
-      "word": "Punkty",
+      "word": "Fast & Furious",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_338",
-      "word": "Poziom",
+      "word": "Stranger Things",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_339",
-      "word": "Postać fikcyjna",
+      "word": "Gra o Tron",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_340",
-      "word": "Parkur",
+      "word": "Dragon Ball",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_341",
-      "word": "Piosenkarz",
+      "word": "Naruto",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_342",
-      "word": "Producent",
+      "word": "CS:GO",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_343",
-      "word": "Projekt",
+      "word": "FIFA",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_344",
-      "word": "Półfinał",
+      "word": "Cyberpunk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_345",
-      "word": "Plebiscyt",
+      "word": "Superman",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_346",
-      "word": "Przegrana",
+      "word": "Thor",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_347",
-      "word": "Polonia",
+      "word": "Hulk",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_348",
-      "word": "Piknik",
+      "word": "Deadpool",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_349",
-      "word": "Publiczność",
+      "word": "Zelda",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_350",
-      "word": "Premia",
+      "word": "Gollum",
       "category": "Popkultura & Gry",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_351",
-      "word": "Piłka",
+      "word": "Bieganie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_352",
-      "word": "Pływanie",
+      "word": "Kąpiel",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_353",
-      "word": "Piłka nożna",
+      "word": "Szachy",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_354",
-      "word": "Piłka siatkowa",
+      "word": "Koszykówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_355",
-      "word": "Piłka koszykowa",
+      "word": "Siatkówka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_356",
-      "word": "Pchnięcie kulą",
+      "word": "Tenis",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_357",
-      "word": "Pojedynek",
+      "word": "Boks",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_358",
-      "word": "Puchar",
+      "word": "Gimnastyka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_359",
-      "word": "Punkty",
+      "word": "Kolarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_360",
-      "word": "Podanie",
+      "word": "Hokej",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_361",
-      "word": "Postój",
+      "word": "Narciarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_362",
-      "word": "Podejście",
+      "word": "Łyżwiarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_363",
-      "word": "Piruet",
+      "word": "Surfing",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_364",
-      "word": "Pływak",
+      "word": "Golf",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_365",
-      "word": "Pięściarz",
+      "word": "Badminton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_366",
-      "word": "Płotki",
+      "word": "Wspinaczka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_367",
-      "word": "Półmaraton",
+      "word": "Żeglarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_368",
-      "word": "Parkur",
+      "word": "Wędkarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_369",
-      "word": "Peleton",
+      "word": "Majsterkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_370",
-      "word": "Pierwsza liga",
+      "word": "Fotografia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_371",
-      "word": "Pustelnik",
+      "word": "Malarstwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_372",
-      "word": "Polowanie",
+      "word": "Rysowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_373",
-      "word": "Podróże",
+      "word": "Czytanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_374",
-      "word": "Pstrągowanie",
+      "word": "Taniec",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_375",
-      "word": "Pięciobój",
+      "word": "Śpiew",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_376",
-      "word": "Przeciąganie liny",
+      "word": "Joga",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_377",
-      "word": "Przewrót",
+      "word": "Karate",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_378",
-      "word": "Paletka",
+      "word": "Judo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_379",
-      "word": "Park linowy",
+      "word": "Szermierka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_380",
-      "word": "Przejście",
+      "word": "Łucznictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_381",
-      "word": "Ping-pong",
+      "word": "Kręgle",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_382",
-      "word": "Pustelnik",
+      "word": "Bilard",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_383",
-      "word": "Piknik",
+      "word": "Darts",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_384",
-      "word": "Paintball",
+      "word": "Deskorolka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_385",
-      "word": "Paralotnia",
+      "word": "Rolki",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_386",
-      "word": "Podnoszenie ciężarów",
+      "word": "Brydż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_387",
-      "word": "Pustynny rajdy",
+      "word": "Domino",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_388",
-      "word": "Paliwo",
+      "word": "Origami",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_389",
-      "word": "Prosta trasa",
+      "word": "Szydełkowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_390",
-      "word": "Punkty klasyfikacji",
+      "word": "Ceramika",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_391",
-      "word": "Pasy bezpieczeństwa",
+      "word": "Ogrodnictwo",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_392",
-      "word": "Parawan",
+      "word": "Maraton",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_393",
-      "word": "Pikowanie",
+      "word": "Sprint",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_394",
-      "word": "Pompka rowerowa",
+      "word": "Skok w dal",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_395",
-      "word": "Pachołek",
+      "word": "Skok wzwyż",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_396",
-      "word": "Pianka pływacka",
+      "word": "Rzut oszczepem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_397",
-      "word": "Płetwy",
+      "word": "Rzut dyskiem",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_398",
-      "word": "Przybory",
+      "word": "Wiosłowanie",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_399",
-      "word": "Pędzel",
+      "word": "Żonglerka",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_400",
-      "word": "Płótno",
+      "word": "Kaligrafia",
       "category": "Sport & Hobby",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_401",
-      "word": "Pływanie",
+      "word": "Gotowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_402",
-      "word": "Pisanie",
+      "word": "Zmywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_403",
-      "word": "Pieczenie",
+      "word": "Odkurzanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_404",
-      "word": "Prasowanie",
+      "word": "Koszenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_405",
-      "word": "Podróżowanie",
+      "word": "Malowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_406",
-      "word": "Pielęgnacja",
+      "word": "Rysowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_407",
-      "word": "Płaczenie",
+      "word": "Śpiewanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_408",
-      "word": "Pielenie",
+      "word": "Tańczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_409",
-      "word": "Pobudka",
+      "word": "Czytanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_410",
-      "word": "Pasteryzacja",
+      "word": "Szycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_411",
-      "word": "Pakowanie",
+      "word": "Majsterkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_412",
-      "word": "Pukanie",
+      "word": "Mycie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_413",
-      "word": "Pchanie",
+      "word": "Golenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_414",
-      "word": "Pociąganie",
+      "word": "Czesanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_415",
-      "word": "Płukanie",
+      "word": "Ćwiczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_416",
-      "word": "Pranie",
+      "word": "Spacerowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_417",
-      "word": "Picie",
+      "word": "Łowienie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_418",
-      "word": "Palenie",
+      "word": "Skakanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_419",
-      "word": "Pytanie",
+      "word": "Wspinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_420",
-      "word": "Proszalnie",
+      "word": "Nurkowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_421",
-      "word": "Pływanie",
+      "word": "Jeżdżenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_422",
-      "word": "Pocałunek",
+      "word": "Rozmawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_423",
-      "word": "Pospiech",
+      "word": "Słuchanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_424",
-      "word": "Podglądanie",
+      "word": "Oglądanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_425",
-      "word": "Przesuwanie",
+      "word": "Śmianie się",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_426",
-      "word": "Przesadzanie",
+      "word": "Lamentowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_427",
-      "word": "Pielęgnowanie",
+      "word": "Spanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_428",
-      "word": "Podejmowanie",
+      "word": "Jedzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_429",
-      "word": "Przekazywanie",
+      "word": "Sączenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_430",
-      "word": "Protestowanie",
+      "word": "Kupowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_431",
-      "word": "Podpisywanie",
+      "word": "Sprzedawanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_432",
-      "word": "Przepraszanie",
+      "word": "Bieganie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_433",
-      "word": "Podziwianie",
+      "word": "Liczenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_434",
-      "word": "Poszukiwanie",
+      "word": "Szukanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_435",
-      "word": "Polowanie",
+      "word": "Sprzątanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_436",
-      "word": "Przeglądanie",
+      "word": "Budowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_437",
-      "word": "Pobieranie",
+      "word": "Naprawianie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_438",
-      "word": "Przenoszenie",
+      "word": "Otwieranie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_439",
-      "word": "Przekładanie",
+      "word": "Zamykanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_440",
-      "word": "Przesypianie",
+      "word": "Wycinanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_441",
-      "word": "Pocieszanie",
+      "word": "Klejenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_442",
-      "word": "Przymierzanie",
+      "word": "Ważenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_443",
-      "word": "Przecinanie",
+      "word": "Mierzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_444",
-      "word": "Pieczenie",
+      "word": "Szykowanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_445",
-      "word": "Powiadamianie",
+      "word": "Rozpakowywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_446",
-      "word": "Podjadanie",
+      "word": "Granie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_447",
-      "word": "Płoszenie",
+      "word": "Wygrywanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_448",
-      "word": "Przesłuchiwanie",
+      "word": "Czekanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_449",
-      "word": "Przestrzeganie",
+      "word": "Marzenie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_450",
-      "word": "Przygarnianie",
+      "word": "Kąpanie",
       "category": "Czynności",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_451",
-      "word": "Pieniądze",
+      "word": "Zgoda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_452",
-      "word": "Prawo",
+      "word": "Miłość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_453",
-      "word": "Praca",
+      "word": "Wolność",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_454",
-      "word": "Przyjaźń",
+      "word": "Czas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_455",
-      "word": "Prawda",
+      "word": "Szczęście",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_456",
-      "word": "Pamięć",
+      "word": "Nadzieja",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_457",
-      "word": "Północ",
+      "word": "Wiara",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_458",
-      "word": "Południe",
+      "word": "Sprawiedliwość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_459",
-      "word": "Przeszłość",
+      "word": "Zajęcie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_460",
-      "word": "Przyszłość",
+      "word": "Sukces",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_461",
-      "word": "Pojęcie",
+      "word": "Klęska",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_462",
-      "word": "Pomysł",
+      "word": "Hobby",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_463",
-      "word": "Problem",
+      "word": "Wyprawa",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_464",
-      "word": "Pytanie",
+      "word": "Kraj",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_465",
-      "word": "Powód",
+      "word": "Jutro",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_466",
-      "word": "Pora",
+      "word": "Dawne czasy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_467",
-      "word": "Pojedynek",
+      "word": "Marzenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_468",
-      "word": "Podróż",
+      "word": "Radość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_469",
-      "word": "Przygoda",
+      "word": "Smutek",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_470",
-      "word": "Pech",
+      "word": "Złość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_471",
-      "word": "Powodzenie",
+      "word": "Strach",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_472",
-      "word": "Praca domowa",
+      "word": "Odwaga",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_473",
-      "word": "Pokój (spokój)",
+      "word": "Duma",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_474",
-      "word": "Przemoc",
+      "word": "Wstyd",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_475",
-      "word": "Poczucie humoru",
+      "word": "Zazdroszczenie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_476",
-      "word": "Porządek",
+      "word": "Uczucie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_477",
-      "word": "Przepis",
+      "word": "Koncept",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_478",
-      "word": "Projekt",
+      "word": "Kłopot",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_479",
-      "word": "Pakt",
+      "word": "Zagadka",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_480",
-      "word": "Patent",
+      "word": "Odpowiedź",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_481",
-      "word": "Poczucie",
+      "word": "Ład",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_482",
-      "word": "Pozór",
+      "word": "Chaos",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_483",
-      "word": "Podstęp",
+      "word": "Cisza",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_484",
-      "word": "Przysięga",
+      "word": "Hałas",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_485",
-      "word": "Przekonanie",
+      "word": "Światło",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_486",
-      "word": "Potęga",
+      "word": "Cień",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_487",
-      "word": "Pasja",
+      "word": "Energia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_488",
-      "word": "Porażka",
+      "word": "Zdrowie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_489",
-      "word": "Pewność",
+      "word": "Śmiech",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_490",
-      "word": "Przypadek",
+      "word": "Łzy",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_491",
-      "word": "Porozumienie",
+      "word": "Zwycięstwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_492",
-      "word": "Podwójność",
+      "word": "Remis",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_493",
-      "word": "Prostota",
+      "word": "Mądrość",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_494",
-      "word": "Płynność",
+      "word": "Głupota",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_495",
-      "word": "Przestrzeń",
+      "word": "Bogactwo",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_496",
-      "word": "Prędkość",
+      "word": "Bieda",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_497",
-      "word": "Podstawa",
+      "word": "Życie",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_498",
-      "word": "Próg",
+      "word": "Śmierć",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_499",
-      "word": "Polityka",
+      "word": "Słońce",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     },
     {
       "id": "pg_500",
-      "word": "Przyroda",
+      "word": "Ziemia",
       "category": "Pojęcia & Rzeczy",
       "difficulty": "Łatwy"
     }
