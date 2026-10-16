@@ -21,7 +21,7 @@ export const translations = {
     nineSecTitle: "9,5 Sekundy",
     nineSecDesc: "Masz tylko 9.5 sekundy, aby udzielić jak najwięcej poprawnych odpowiedzi na wylosowane pytanie.",
     reverseCharadesTitle: "Odwrócone Kalambury",
-    reverseCharadesDesc: "Pokazujesz hasła-czynności partnerowi, nakazując mu wykonywanie pantomimy!",
+    reverseCharadesDesc: "Pokazujesz hasła partnerowi, nakazując mu wykonywanie pantomimy!",
     pGameTitle: "Gra na P",
     pGameDesc: "Opisujesz hasła swojej drużynie używając wyłącznie słów zaczynających się na literę P!",
     spyTitle: "Szpieg",

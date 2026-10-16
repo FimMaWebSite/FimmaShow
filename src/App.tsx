@@ -88,7 +88,16 @@ const App: React.FC = () => {
 
   // Initialize localStorage if empty or outdated
   const initLocalDb = () => {
-    const checkAndUpgrade = (key: string, defaultData: any[]) => {
+    const checkAndUpgrade = (key: string, defaultData: any[], version?: number) => {
+      // Wymuszona aktualizacja, gdy zmieniła się zawartość bazy (a nie tylko jej rozmiar)
+      if (version !== undefined) {
+        const versionKey = `${key}_version`;
+        if (localStorage.getItem(versionKey) !== String(version)) {
+          localStorage.setItem(key, JSON.stringify(defaultData));
+          localStorage.setItem(versionKey, String(version));
+          return;
+        }
+      }
       const stored = localStorage.getItem(key);
       if (stored) {
         try {
@@ -108,7 +117,7 @@ const App: React.FC = () => {
     langs.forEach(lang => {
       checkAndUpgrade(`fimma_words_${lang}`, DEFAULT_WORDS[lang] || []);
       checkAndUpgrade(`fimma_nine_seconds_${lang}`, DEFAULT_NINE_SECONDS[lang] || []);
-      checkAndUpgrade(`fimma_reverse_charades_${lang}`, DEFAULT_REVERSE_CHARADES[lang] || []);
+      checkAndUpgrade(`fimma_reverse_charades_${lang}`, DEFAULT_REVERSE_CHARADES[lang] || [], 2);
       checkAndUpgrade(`fimma_bomb_words_${lang}`, DEFAULT_BOMB_WORDS[lang] || []);
       checkAndUpgrade(`fimma_p_game_${lang}`, DEFAULT_P_GAME[lang] || []);
       checkAndUpgrade(`fimma_spy_locations_${lang}`, DEFAULT_SPY_LOCATIONS[lang] || []);

@@ -37834,3001 +37834,3001 @@ export const DEFAULT_REVERSE_CHARADES: { [key in Language]: any[] } = {
   "PL": [
     {
       "id": "rc_1",
-      "question": "Lekarz przeprowadzający operację",
+      "question": "Lekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_2",
-      "question": "Strażak gaszący pożar",
+      "question": "Strażak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_3",
-      "question": "Policjant kierujący ruchem",
+      "question": "Policjant",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_4",
-      "question": "Kucharz smażący naleśniki",
+      "question": "Kucharz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_5",
-      "question": "Nauczyciel piszący na tablicy",
+      "question": "Fryzjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_6",
-      "question": "Kelner niosący tacę z napojami",
+      "question": "Dentysta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_7",
-      "question": "Fryzjer ścinający włosy",
+      "question": "Pilot",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_8",
-      "question": "Krawiec szyjący ubranie",
+      "question": "Kelner",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_9",
-      "question": "Fotograf robiący zdjęcie",
+      "question": "Listonosz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_10",
-      "question": "Sędzia piłkarski pokazujący czerwoną kartkę",
+      "question": "Hydraulik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_11",
-      "question": "Astronauta chodzący po Księżycu",
+      "question": "Elektryk",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_12",
-      "question": "Szef kuchni degustujący zupę",
+      "question": "Murarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_13",
-      "question": "Malarz malujący obraz na sztaludze",
+      "question": "Malarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_14",
-      "question": "Dyrygent prowadzący orkiestrę",
+      "question": "Stolarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_15",
-      "question": "Modelka na wybiegu",
+      "question": "Nauczyciel",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_16",
-      "question": "Piekarz wyciągający chleb z pieca",
+      "question": "Sprzedawca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_17",
-      "question": "Górnik pracujący z kilofem",
+      "question": "Kierowca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_18",
-      "question": "Budowlaniec układający cegły",
+      "question": "Taksówkarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_19",
-      "question": "Masażysta wykonujący masaż",
+      "question": "Żołnierz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_20",
-      "question": "Listonosz wręczający list",
+      "question": "Ratownik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_21",
-      "question": "Stolarz piłujący drewno",
+      "question": "Pielęgniarka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_22",
-      "question": "Przewodnik oprowadzający wycieczkę",
+      "question": "Weterynarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_23",
-      "question": "Pilot kierujący samolotem",
+      "question": "Rolnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_24",
-      "question": "Mechanik naprawiający silnik",
+      "question": "Piekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_25",
-      "question": "Sprzątaczka myjąca podłogę mopa",
+      "question": "Rzeźnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_26",
-      "question": "Programista piszący kod na klawiaturze",
+      "question": "Kosmonauta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_27",
-      "question": "Dziennikarz przeprowadzający wywiad",
+      "question": "Detektyw",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_28",
-      "question": "Ochroniarz sprawdzający bilety",
+      "question": "Sędzia",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_29",
-      "question": "Taksówkarz trzymający kierownicę",
+      "question": "Adwokat",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_30",
-      "question": "Bibliotekarz układający książki",
+      "question": "Dyrygent",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_31",
-      "question": "Kolejarz dający sygnał gwizdkiem",
+      "question": "Fotograf",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_32",
-      "question": "Kwiaciarka robiąca bukiet",
+      "question": "Kasjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_33",
-      "question": "Kominiarz czyszczący komin",
+      "question": "Barman",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_34",
-      "question": "Hydraulik naprawiający rurę",
+      "question": "Ogrodnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_35",
-      "question": "Dentysta borujący ząb",
+      "question": "Górnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_36",
-      "question": "Weterynarz badający psa",
+      "question": "Rybak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_37",
-      "question": "Architekt rysujący plan",
+      "question": "Mechanik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_38",
-      "question": "Aktor ukłaniający się na scenie",
+      "question": "Krawiec",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_39",
-      "question": "Rzeźbiarz pracujący w dłucie",
+      "question": "Sprzątaczka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_40",
-      "question": "Rolnik prowadzący traktor",
+      "question": "Ochroniarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_41",
-      "question": "Rybak wyciągający sieć",
+      "question": "Programista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_42",
-      "question": "Zegarmistrz naprawiający zegarek",
+      "question": "Księgowy",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_43",
-      "question": "Barman mieszający drinka w shakerze",
+      "question": "Kominiarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_44",
-      "question": "Dostawca pizzy pukający do drzwi",
+      "question": "Szewc",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_45",
-      "question": "Bileter sprawdzający bilety w kinie",
+      "question": "Chirurg",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_46",
-      "question": "Bankier liczący plik pieniędzy",
+      "question": "Archeolog",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_47",
-      "question": "Ratownik medyczny robiący resuscytację",
+      "question": "Akrobata",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_48",
-      "question": "Krupier rozdający karty w kasynie",
+      "question": "Iluzjonista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_49",
-      "question": "Pracownik magazynu przenoszący pudło",
+      "question": "Klaun",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_50",
-      "question": "Lektor czytający bajkę",
+      "question": "Treser",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_51",
-      "question": "Kot polujący na mysz",
+      "question": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_52",
-      "question": "Małpa jedząca banana",
+      "question": "Pies",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_53",
-      "question": "Pies goniący własny ogon",
+      "question": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_54",
-      "question": "Żaba skacząca po liściach",
+      "question": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_55",
-      "question": "Królik jedzący marchewkę",
+      "question": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_56",
-      "question": "Nurek pod wodą ze sprzętem",
+      "question": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_57",
-      "question": "Niedźwiedź łowiący łososia",
+      "question": "Kogut",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_58",
-      "question": "Ptak budujący gniazdo z gałązek",
+      "question": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_59",
-      "question": "Żyrafa sięgająca do wysokich liści",
+      "question": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_60",
-      "question": "Pies potrząsający mokrą sierścią",
+      "question": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_61",
-      "question": "Kura znosząca jajko",
+      "question": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_62",
-      "question": "Kangur skaczący po pustyni",
+      "question": "Królik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_63",
-      "question": "Kret kopiący kopiec",
+      "question": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_64",
-      "question": "Pingwin ślizgający się po lodzie",
+      "question": "Wąż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_65",
-      "question": "Wąż pełzający po trawie",
+      "question": "Krokodyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_66",
-      "question": "Dzięcioł stukający w pnie drzewa",
+      "question": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_67",
-      "question": "Bocian stojący na jednej nodze",
+      "question": "Żyrafa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_68",
-      "question": "Leniwiec powoli poruszający się po gałęzi",
+      "question": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_69",
-      "question": "Słoń pryskający wodą z trąby",
+      "question": "Goryl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_70",
-      "question": "Sowa kręcąca głową w nocy",
+      "question": "Lew",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_71",
-      "question": "Delfin wyskakujący z wody",
+      "question": "Tygrys",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_72",
-      "question": "Koń skaczący przez przeszkodę",
+      "question": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_73",
-      "question": "Skorpion groźnie unoszący ogon",
+      "question": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_74",
-      "question": "Bóbr budujący tamę z drewna",
+      "question": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_75",
-      "question": "Zebra uciekająca przed lwem",
+      "question": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_76",
-      "question": "Kameleon zmieniający kolor na gałęzi",
+      "question": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_77",
-      "question": "Krowa żująca trawę na łące",
+      "question": "Jeż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_78",
-      "question": "Pszczoła zbierająca pyłek z kwiatka",
+      "question": "Kangur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_79",
-      "question": "Wiewiórka zakopująca orzech",
+      "question": "Pingwin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_80",
-      "question": "Koala śpiący na drzewie eukaliptusowym",
+      "question": "Foka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_81",
-      "question": "Wielbłąd idący przez gorący piasek",
+      "question": "Delfin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_82",
-      "question": "Goryl uderzający się w pierś",
+      "question": "Rekin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_83",
-      "question": "Orzeł szybujący wysoko na wietrze",
+      "question": "Wieloryb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_84",
-      "question": "Homar machający szczypcami",
+      "question": "Ośmiornica",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_85",
-      "question": "Struś chowający głowę w piasek",
+      "question": "Krab",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_86",
-      "question": "Panda jedząca gałązki bambusa",
+      "question": "Pająk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_87",
-      "question": "Wilk wyjący do księżyca",
+      "question": "Pszczoła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_88",
-      "question": "Hipopotam otwierający wielką paszczę",
+      "question": "Motyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_89",
-      "question": "Krokodyl czatujący w wodzie",
+      "question": "Komar",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_90",
-      "question": "Indyk machający skrzydłami i gdaczący",
+      "question": "Mrówka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_91",
-      "question": "Nietoperz wiszący głową w dół",
+      "question": "Ślimak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_92",
-      "question": "Gęś idąca ciągiem za przewodnikem",
+      "question": "Sowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_93",
-      "question": "Rak chodzący tyłem",
+      "question": "Orzeł",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_94",
-      "question": "Żółw powoli chowający się w skorupie",
+      "question": "Papuga",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_95",
-      "question": "Meduza unosząca się w wodzie",
+      "question": "Paw",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_96",
-      "question": "Pawie prężący kolorowy ogon",
+      "question": "Flaming",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_97",
-      "question": "Kozica skacząca po skałach",
+      "question": "Struś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_98",
-      "question": "Komar bzyczący nad uchem",
+      "question": "Nietoperz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_99",
-      "question": "Świnia tarzająca się w błocie",
+      "question": "Kret",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_100",
-      "question": "Ślimak ciągnący swoją muszlę",
+      "question": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_101",
-      "question": "Narciarz zjeżdżający ze stoku",
+      "question": "Boks",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_102",
-      "question": "Piłkarz strzelający karnego",
+      "question": "Tenis",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_103",
-      "question": "Bokser w ringu",
+      "question": "Golf",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_104",
-      "question": "Tenisista serwujący piłkę",
+      "question": "Pływanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_105",
-      "question": "Pływak płynący żabką",
+      "question": "Narciarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_106",
-      "question": "Koszykarz robiący wsad",
+      "question": "Snowboard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_107",
-      "question": "Kultura fizyczna i podnoszenie ciężarów",
+      "question": "Łyżwiarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_108",
-      "question": "Osoba jeżdżąca na łyżwach",
+      "question": "Hokej",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_109",
-      "question": "Osoba grająca w kręgle",
+      "question": "Koszykówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_110",
-      "question": "Sumita wypychający przeciwnika z maty",
+      "question": "Siatkówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_111",
-      "question": "Siatkarz blokujący piłkę przy siatce",
+      "question": "Piłkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_112",
-      "question": "Biegacz finiszujący na mecie",
+      "question": "Bramkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_113",
-      "question": "Łucznik naciągający cięciwę",
+      "question": "Siłownia",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_114",
-      "question": "Szachista rozmyślający nad ruchem",
+      "question": "Joga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_115",
-      "question": "Wioślarz wiosłujący w łodzi",
+      "question": "Bieganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_116",
-      "question": "Szermierz wykonujący pchnięcie szpadą",
+      "question": "Maraton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_117",
-      "question": "Gimnastyczka robiąca salto",
+      "question": "Kolarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_118",
-      "question": "Jeździec skaczący na koniu",
+      "question": "Wioślarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_119",
-      "question": "Kolarz pedałujący pod górę",
+      "question": "Kajakarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_120",
-      "question": "Karateka rozbijający deskę dłonią",
+      "question": "Surfing",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_121",
-      "question": "Hokeista strzelający krążkiem",
+      "question": "Nurkowanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_122",
-      "question": "Surfer łapiący wielką falę",
+      "question": "Szermierka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_123",
-      "question": "Golfista uderzający piłeczkę",
+      "question": "Łucznictwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_124",
-      "question": "Skoczek o tyczce",
+      "question": "Judo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_125",
-      "question": "Skoczek narciarski w locie",
+      "question": "Karate",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_126",
-      "question": "Rzucający dyskiem na stadionie",
+      "question": "Zapasy",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_127",
-      "question": "Osoba grająca w badmintona",
+      "question": "Sumo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_128",
-      "question": "Kulturyści prezentujący mięśnie",
+      "question": "Gimnastyka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_129",
-      "question": "Biegacz przez płotki",
+      "question": "Skakanka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_130",
-      "question": "Osoba uprawiająca rafting na rzece",
+      "question": "Przysiady",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_131",
-      "question": "Nurek skaczący z wieży do wody",
+      "question": "Pompki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_132",
-      "question": "Osoba grająca w tenisa stołowego (ping-pong)",
+      "question": "Brzuszki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_133",
-      "question": "Osoba jeżdżąca na deskorolce (triki)",
+      "question": "Rozciąganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_134",
-      "question": "Osoba wspinająca się po ściance wspinaczkowej",
+      "question": "Badminton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_135",
-      "question": "Osoba grająca w bilard",
+      "question": "Kręgle",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_136",
-      "question": "Skoczek w dal rozbiegający się",
+      "question": "Bilard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_137",
-      "question": "Łyżwiarz figurowy robiący piruet",
+      "question": "Rzutki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_138",
-      "question": "Osoba strzelająca z pistoletu sportowego",
+      "question": "Curling",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_139",
-      "question": "Osoba uprawiająca windsurfing",
+      "question": "Skoczek",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_140",
-      "question": "Zawodnik sumo wykonujący ukłon",
+      "question": "Oszczep",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_141",
-      "question": "Biegacz narciarski na trasie",
+      "question": "Sztafeta",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_142",
-      "question": "Bobsleista wbijający się do sanki",
+      "question": "Jeździectwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_143",
-      "question": "Osoba tańcząca breakdance",
+      "question": "Rugby",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_144",
-      "question": "Rzucający oszczepem",
+      "question": "Baseball",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_145",
-      "question": "Zawodnik MMA walczący w parterze",
+      "question": "Taniec",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_146",
-      "question": "Osoba grająca w darta (rzutki)",
+      "question": "Aerobik",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_147",
-      "question": "Zapaśnik wykonujący rzut",
+      "question": "Trampolina",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_148",
-      "question": "Pływak wykonujący nawrót",
+      "question": "Hulajnoga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_149",
-      "question": "Sędzia bokserski odliczający zawodnika",
+      "question": "Rolki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_150",
-      "question": "Osoba skacząca na trampolinie",
+      "question": "Deskorolka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_151",
-      "question": "Osoba prasująca koszulę",
+      "question": "Odkurzanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_152",
-      "question": "Osoba malująca ścianę wałkiem",
+      "question": "Prasowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_153",
-      "question": "Osoba kosząca trawnik kosiarką",
+      "question": "Zmywanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_154",
-      "question": "Osoba wbijająca gwóźdź młotkiem",
+      "question": "Gotowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_155",
-      "question": "Osoba myjąca okno",
+      "question": "Pieczenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_156",
-      "question": "Osoba pompująca koło w rowerze",
+      "question": "Sprzątanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_157",
-      "question": "Osoba szukająca zgubionych kluczy w trawie",
+      "question": "Pranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_158",
-      "question": "Osoba obierająca ziemniaki",
+      "question": "Zamiatanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_159",
-      "question": "Osoba zmywająca naczynia",
+      "question": "Żelazko",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_160",
-      "question": "Osoba odkurzająca dywan",
+      "question": "Pralka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_161",
-      "question": "Osoba składająca pranie",
+      "question": "Odkurzacz",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_162",
-      "question": "Osoba wieszająca obraz na ścianie",
+      "question": "Mop",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_163",
-      "question": "Osoba parząca gorącą kawę",
+      "question": "Miotła",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_164",
-      "question": "Osoba podlewająca kwiaty konewką",
+      "question": "Zmywarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_165",
-      "question": "Osoba ścierająca kurze z półek",
+      "question": "Mikrofalówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_166",
-      "question": "Osoba krojąca cebulę ze łzami w oczach",
+      "question": "Toster",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_167",
-      "question": "Osoba wyrzucająca ciężki worek ze śmieciami",
+      "question": "Czajnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_168",
-      "question": "Osoba czyszcząca buty szczotką",
+      "question": "Lodówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_169",
-      "question": "Osoba ścieląca łóżko",
+      "question": "Piekarnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_170",
-      "question": "Osoba zmieniająca żarówkę na drabinie",
+      "question": "Patelnia",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_171",
-      "question": "Osoba trzepiąca dywan trzepaczką",
+      "question": "Blender",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_172",
-      "question": "Osoba wykręcająca mokrą ścierkę",
+      "question": "Suszarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_173",
-      "question": "Osoba piekąca ciasto w piekarniku",
+      "question": "Szczoteczka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_174",
-      "question": "Osoba myjąca samochód gąbką",
+      "question": "Prysznic",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_175",
-      "question": "Osoba szorująca przypalony garnek",
+      "question": "Wanna",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_176",
-      "question": "Osoba naprawiająca cieknący kran",
+      "question": "Golenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_177",
-      "question": "Osoba skręcająca meble kluczem imbusowym",
+      "question": "Czesanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_178",
-      "question": "Osoba nakładająca jedzenie dla psa",
+      "question": "Makijaż",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_179",
-      "question": "Osoba czyszcząca okulary ściereczką",
+      "question": "Podlewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_180",
-      "question": "Osoba pakująca walizkę na wakacje",
+      "question": "Grabienie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_181",
-      "question": "Osoba rozpalająca w kominku",
+      "question": "Koszenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_182",
-      "question": "Osoba ubierająca choinkę",
+      "question": "Odśnieżanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_183",
-      "question": "Osoba myjąca zęby szczoteczką",
+      "question": "Wiercenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_184",
-      "question": "Osoba czesząca poplątane włosy",
+      "question": "Młotek",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_185",
-      "question": "Osoba przycinająca żywopłot nożycami",
+      "question": "Śrubokręt",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_186",
-      "question": "Osoba grabiąca suche liście",
+      "question": "Drabina",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_187",
-      "question": "Osoba obcinająca paznokcie",
+      "question": "Żarówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_188",
-      "question": "Osoba rozwijająca taśmę klejącą",
+      "question": "Kanapka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_189",
-      "question": "Osoba otwierająca puszkę otwieraczem",
+      "question": "Śniadanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_190",
-      "question": "Osoba smarująca chleb masłem",
+      "question": "Budzik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_191",
-      "question": "Osoba myjąca włosy szamponem",
+      "question": "Ziewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_192",
-      "question": "Osoba nakładająca maseczkę na twarz",
+      "question": "Drzemka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_193",
-      "question": "Osoba parząca herbatę w zaparzaczu",
+      "question": "Chrapanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_194",
-      "question": "Osoba trzepiąca poduszkę",
+      "question": "Kąpiel",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_195",
-      "question": "Osoba czyszcząca ucho patyczkiem",
+      "question": "Zakupy",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_196",
-      "question": "Osoba zaklejająca kopertę jęzorem",
+      "question": "Pakowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_197",
-      "question": "Osoba nawlekająca nitkę na igłę",
+      "question": "Szycie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_198",
-      "question": "Osoba składająca kartonowe pudełko",
+      "question": "Krojenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_199",
-      "question": "Osoba wyciągająca gorącą blachę z piekarnika",
+      "question": "Obieranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_200",
-      "question": "Osoba zapalająca świeczkę zapałką",
+      "question": "Smażenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_201",
-      "question": "Iluzjonista wyciągający królika z kapelusza",
+      "question": "Batman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_202",
-      "question": "Gitarzysta na koncercie rockowym",
+      "question": "Superman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_203",
-      "question": "Szpieg skradający się w ciemności",
+      "question": "Spiderman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_204",
-      "question": "Rycerz walczący mieczem",
+      "question": "Hulk",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_205",
-      "question": "Harry Potter rzucający czar różdżką",
+      "question": "Thor",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_206",
-      "question": "Spider-Man strzelający pajęczyną",
+      "question": "Shrek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_207",
-      "question": "Michael Jackson tańczący moonwalk",
+      "question": "Pinokio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_208",
-      "question": "Batman obserwujący miasto z dachu",
+      "question": "Kopciuszek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_209",
-      "question": "Darth Vader dławiący przeciwnika Mocą",
+      "question": "Śnieżka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_210",
-      "question": "Jack Sparrow zataczający się na statku",
+      "question": "Roszpunka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_211",
-      "question": "Sherlock Holmes badający ślady lupą",
+      "question": "Elsa",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_212",
-      "question": "Robin Hood strzelający z łuku",
+      "question": "Tarzan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_213",
-      "question": "Tarzan skaczący na lianie",
+      "question": "Zorro",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_214",
-      "question": "Superman latający z wyciągniętą ręką",
+      "question": "Sherlock",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_215",
-      "question": "Shrek ryczący na swoim bagnie",
+      "question": "Dracula",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_216",
-      "question": "Zorro kreślący literę Z szpadą",
+      "question": "Frankenstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_217",
-      "question": "Geralt z Rivii dobywający miecza",
+      "question": "Gandalf",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_218",
-      "question": "Elsa zamrażająca wszystko wokół",
+      "question": "Yoda",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_219",
-      "question": "Freddie Mercury śpiewający z statywem",
+      "question": "Gollum",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_220",
-      "question": "Joker śmiejący się maniacznie",
+      "question": "Pikachu",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_221",
-      "question": "Terminator zakładający okulary przeciwsłoneczne",
+      "question": "Mario",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_222",
-      "question": "Rocky Balboa biegający po schodach",
+      "question": "Garfield",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_223",
-      "question": "Indiana Jones uciekający przed toczącym się głazem",
+      "question": "Smerfetka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_224",
-      "question": "Hulk wpadający w szał i niszczący rzeczy",
+      "question": "Gargamel",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_225",
-      "question": "Kopciuszek gubiący pantofelek",
+      "question": "Reksio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_226",
-      "question": "Czerwony Kapturek idący z koszyczkiem",
+      "question": "Matołek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_227",
-      "question": "Piotruś Pan walczący z Kapitanem Hakiem",
+      "question": "Napoleon",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_228",
-      "question": "Forrest Gump biegający w poprzek kraju",
+      "question": "Kopernik",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_229",
-      "question": "Wolverine wyciągający metalowe szpony",
+      "question": "Chopin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_230",
-      "question": "Thor zamachujący się młotem",
+      "question": "Einstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_231",
-      "question": "Pikachu rażący piorunem",
+      "question": "Kleopatra",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_232",
-      "question": "Super Mario skaczący na grzyba",
+      "question": "Elvis",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_233",
-      "question": "Dracula gryzący w szyję",
+      "question": "Rambo",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_234",
-      "question": "Frankenstein budzący się do życia",
+      "question": "Terminator",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_235",
-      "question": "Willy Wonka prezentujący fabrykę czekolady",
+      "question": "Joker",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_236",
-      "question": "Krzyk (Ghostface) dzwoniący z nożem",
+      "question": "Pocahontas",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_237",
-      "question": "Deadpool machający mieczami i żartujący",
+      "question": "Aladyn",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_238",
-      "question": "Barbie prezentująca idealną figurę",
+      "question": "Popeye",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_239",
-      "question": "Legolas strzelający serią strzał",
+      "question": "Asterix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_240",
-      "question": "Gollum pieszcząc swój cenne pierścień",
+      "question": "Obelix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_241",
-      "question": "Gandalf uderzający laską i krzyczący Nie przejdziesz",
+      "question": "Kolumb",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_242",
-      "question": "Mikołaj wręczający prezenty z worka",
+      "question": "Mulan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_243",
-      "question": "Diabeł wymachujący widłami",
+      "question": "Herkules",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_244",
-      "question": "Anioł grający na harfie",
+      "question": "Zeus",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_245",
-      "question": "Syrenka płynąca i podwijająca ogon",
+      "question": "Wiedźmin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_246",
-      "question": "Kowboj wyciągający rewolwer z kabury",
+      "question": "Mikołaj",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_247",
-      "question": "Ninja rzucający shurikeny",
+      "question": "Stitch",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_248",
-      "question": "Pirat patrzący przez lunetę",
+      "question": "Robocop",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_249",
-      "question": "Wiking wiosłujący na drakkarze",
+      "question": "Pippi",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_250",
-      "question": "Wampir chroniący się przed słońcem",
+      "question": "Hobbit",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_251",
-      "question": "Osoba próbująca złapać komara",
+      "question": "Karaoke",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_252",
-      "question": "Osoba chodząca po gorącym piasku",
+      "question": "Toast",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_253",
-      "question": "Osoba zakładająca ciasne buty",
+      "question": "Wesele",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_254",
-      "question": "Osoba jedząca bardzo ostre papryczki",
+      "question": "Urodziny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_255",
-      "question": "Osoba wędrująca po górach w zamieci",
+      "question": "Sylwester",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_256",
-      "question": "Osoba próbująca otworzyć wino bez korkociągu",
+      "question": "Ślub",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_257",
-      "question": "Osoba tańcząca hip-hop",
+      "question": "Oświadczyny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_258",
-      "question": "Osoba próbująca zapalić zapałkę na wietrze",
+      "question": "Randka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_259",
-      "question": "Osoba próbująca uciec przed rojem pszczół",
+      "question": "Kac",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_260",
-      "question": "Osoba grająca w wirtualnej rzeczywistości (VR)",
+      "question": "Selfie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_261",
-      "question": "Kierowca zepsutego auta na skrzyżowaniu",
+      "question": "Tort",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_262",
-      "question": "Pasażer ze spóźnionym pociągiem",
+      "question": "Prezent",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_263",
-      "question": "Osoba z niesamowicie mocnym ból zęba",
+      "question": "Konfetti",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_264",
-      "question": "Osoba poślizgująca się na skórce od banana",
+      "question": "Fajerwerki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_265",
-      "question": "Osoba wchodząca do bardzo zimnej wody",
+      "question": "Balony",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_266",
-      "question": "Osoba niosąca zbyt wiele siatek z zakupami",
+      "question": "Dyskoteka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_267",
-      "question": "Osoba szukająca telefonu, trzymając go w ręku",
+      "question": "Grill",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_268",
-      "question": "Osoba śpiewająca pod prysznicem",
+      "question": "Ognisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_269",
-      "question": "Osoba próbująca nawlec nitkę na igłę po ciemku",
+      "question": "Piknik",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_270",
-      "question": "Osoba wstrzymująca oddech pod wodą",
+      "question": "Kolejka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_271",
-      "question": "Osoba niespodziewanie oblana zimną wodą",
+      "question": "Spóźnienie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_272",
-      "question": "Osoba jedząca gorącą pizzę i parząca język",
+      "question": "Korek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_273",
-      "question": "Osoba zacięta przy goleniu",
+      "question": "Kłótnia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_274",
-      "question": "Osoba przymierzająca ciasne dżinsy",
+      "question": "Pocałunek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_275",
-      "question": "Osoba próbująca złapać uciekający autobus",
+      "question": "Pożegnanie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_276",
-      "question": "Osoba czkająca bez przerwy",
+      "question": "Egzamin",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_277",
-      "question": "Osoba potykająca się na prostej drodze",
+      "question": "Przeprowadzka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_278",
-      "question": "Osoba kichająca kilka razy z rzędu",
+      "question": "Wakacje",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_279",
-      "question": "Osoba zepsuła zamki w kurtce",
+      "question": "Lotnisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_280",
-      "question": "Osoba próbująca cicho otworzyć paczkę chipsów w nocy",
+      "question": "Walizka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_281",
-      "question": "Osoba, której zgasł telefon podczas ważnej rozmowy",
+      "question": "Winda",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_282",
-      "question": "Osoba pijąca zepsute mleko",
+      "question": "Imieniny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_283",
-      "question": "Osoba zablokowana w toalecie publicznej",
+      "question": "Matura",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_284",
-      "question": "Osoba z mokrymi skarpetkami",
+      "question": "Studniówka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_285",
-      "question": "Osoba, której ptak zanieczyścił ubranie",
+      "question": "Wigilia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_286",
-      "question": "Osoba próbująca zabić muchę gazeta",
+      "question": "Choinka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_287",
-      "question": "Osoba nadeptująca na klocki Lego boso",
+      "question": "Pisanki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_288",
-      "question": "Osoba marznąca na przystanku autobusowym",
+      "question": "Śmigus",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_289",
-      "question": "Osoba po użądleniu przez pszczołę w nos",
+      "question": "Andrzejki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_290",
-      "question": "Osoba zgubiła się w wielkim centrum handlowym",
+      "question": "Walentynki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_291",
-      "question": "Osoba próbująca zapamiętać kod PIN",
+      "question": "Halloween",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_292",
-      "question": "Osoba walcząca z parasolką na wietrze",
+      "question": "Kostium",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_293",
-      "question": "Osoba, która wylała sok na białą koszulę",
+      "question": "Polonez",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_294",
-      "question": "Osoba udająca że rozumie obcy język",
+      "question": "Szampan",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_295",
-      "question": "Osoba zasypiająca na nudnym wykładzie",
+      "question": "Bufet",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_296",
-      "question": "Osoba, której wypadł klucz do studzienki",
+      "question": "Plotka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_297",
-      "question": "Osoba próbująca dogonić psa bez smyczy",
+      "question": "Mandat",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_298",
-      "question": "Osoba marząca o zimnym piwie w upał",
+      "question": "Stłuczka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_299",
-      "question": "Osoba próbująca przeczytać drobny druk bez okularów",
+      "question": "Namiot",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_300",
-      "question": "Osoba powstrzymująca śmiech w kościele",
+      "question": "Autostop",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_301",
-      "question": "Dziecko budujące zamek z piasku",
+      "question": "Titanic",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_302",
-      "question": "Złodziej otwierający sejf",
+      "question": "Matrix",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_303",
-      "question": "Piosenkarz śpiewający do mikrofonu",
+      "question": "Avatar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_304",
-      "question": "Osoba grająca na perkusji",
+      "question": "Gladiator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_305",
-      "question": "Wędkarz złapawszy wielką rybę",
+      "question": "Rocky",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_306",
-      "question": "Osoba grająca na skrzypcami",
+      "question": "Szczęki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_307",
-      "question": "Piosenkarz rockowy rozbijający gitarę",
+      "question": "Psychoza",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_308",
-      "question": "Król nakładający koronę na głowę",
+      "question": "Obcy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_309",
-      "question": "Kat zamachujący się toporem",
+      "question": "Predator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_310",
-      "question": "Czarownica mieszająca wywar w kotle",
+      "question": "Incepcja",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_311",
-      "question": "Rycerz ratujący księżniczkę z wieży",
+      "question": "Interstellar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_312",
-      "question": "Gladiator walczący z lwem",
+      "question": "Godzilla",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_313",
-      "question": "Pirat szukający zakopanego skarbu",
+      "question": "Kevin",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_314",
-      "question": "Astronauta wychodzący w otwartą przestrzeń",
+      "question": "Madagaskar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_315",
-      "question": "Superbohater ratujący spadający autobus",
+      "question": "Zwierzogród",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_316",
-      "question": "Zombi powoli idące i wyciągające ręce",
+      "question": "Odlot",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_317",
-      "question": "Robot poruszający się sztywno",
+      "question": "Coco",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_318",
-      "question": "Mumia wyłaniająca się z grobowca",
+      "question": "Auta",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_319",
-      "question": "Duch latający i straszący ludzi",
+      "question": "Nemo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_320",
-      "question": "Kosmita badający ziemski przedmiot",
+      "question": "Dumbo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_321",
-      "question": "Syrena śpiewająca na skale",
+      "question": "Bambi",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_322",
-      "question": "Wilkołak zmieniający się podczas pełni",
+      "question": "Vaiana",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_323",
-      "question": "Wampir śpiący w trumnie",
+      "question": "Ratatuj",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_324",
-      "question": "Krasnolud kopiący diamenty w kopalni",
+      "question": "Minionki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_325",
-      "question": "Elf strzelający łukiem z drzewa",
+      "question": "Smerfy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_326",
-      "question": "Smok ziejący ogniem",
+      "question": "Muminki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_327",
-      "question": "Jednorożec biegający po tęczy",
+      "question": "Teletubisie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_328",
-      "question": "Kowboj jeżdżący na dzikim koniu",
+      "question": "Pokemon",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_329",
-      "question": "Indianin tańczący taniec deszczu",
+      "question": "Simpsonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_330",
-      "question": "Samuraj wykonujący cięcie kataną",
+      "question": "Flintstonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_331",
-      "question": "Ninja skaczący z dachu na dach",
+      "question": "Scooby",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_332",
-      "question": "Wiking pijący miód z rogu",
+      "question": "Puchatek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_333",
-      "question": "Gladiator wznoszący kciuk w górę",
+      "question": "Krzyżacy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_334",
-      "question": "Królowa wydająca wyrok skazujący",
+      "question": "Potop",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_335",
-      "question": "Błazen zabawiąjący dwór królewski",
+      "question": "Pianista",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_336",
-      "question": "Alchemik mieszający eliksiry",
+      "question": "Miś",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_337",
-      "question": "Detektyw szukający śladów z lupą",
+      "question": "Rejs",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_338",
-      "question": "Złodziej skradający się przez laserowe zabezpieczenia",
+      "question": "Kiler",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_339",
-      "question": "Tajna agentka rzucająca granat błyskowy",
+      "question": "Hydrozagadka",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_340",
-      "question": "Superzłoczyńca śmiejący się w swojej bazie",
+      "question": "Piraci",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_341",
-      "question": "Robot bojowy strzelający z laserów",
+      "question": "Rango",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_342",
-      "question": "Syrena wciągająca żeglarza pod wodę",
+      "question": "Zaplątani",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_343",
-      "question": "Minotaur krążący po labiryncie",
+      "question": "Merida",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_344",
-      "question": "Cyklop patrzący jednym wielkim okiem",
+      "question": "Bolt",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_345",
-      "question": "Meduza zamieniająca ludzi w kamień wzrokiem",
+      "question": "Gremliny",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_346",
-      "question": "Gargulec siedzący nieruchomo na dachu",
+      "question": "Casper",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_347",
-      "question": "Dżin wychodzący z zakurzonej lampy",
+      "question": "Mumia",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_348",
-      "question": "Pegaz machający skrzydłami",
+      "question": "Transformers",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_349",
-      "question": "Kraken zatapiający żaglowiec",
+      "question": "Tron",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_350",
-      "question": "Sfinks zadający trudną zagadkę",
+      "question": "Bajtek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_351",
-      "question": "Osoba grająca na gitarze akustycznej",
+      "question": "Wędkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_352",
-      "question": "Osoba malująca obraz pędzlem",
+      "question": "Szydełkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_353",
-      "question": "Osoba układająca puzzle na stole",
+      "question": "Dzierganie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_354",
-      "question": "Osoba szydełkująca szalik z włóczki",
+      "question": "Rysowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_355",
-      "question": "Osoba rzeźbiąca w drewnie",
+      "question": "Fotografia",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_356",
-      "question": "Osoba fotografująca ptaki w lesie",
+      "question": "Ogrodnictwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_357",
-      "question": "Osoba czytająca wciągającą książkę",
+      "question": "Szachy",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_358",
-      "question": "Osoba układająca klocki Lego",
+      "question": "Warcaby",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_359",
-      "question": "Osoba pielęgnująca rośliny w ogrodzie",
+      "question": "Puzzle",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_360",
-      "question": "Osoba tańcząca salsę",
+      "question": "Sudoku",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_361",
-      "question": "Osoba grająca w planszówki z przyjaciółmi",
+      "question": "Krzyżówka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_362",
-      "question": "Osoba łowiąca ryby na kanapie",
+      "question": "Karty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_363",
-      "question": "Osoba majsterkująca w garażu",
+      "question": "Poker",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_364",
-      "question": "Osoba piekąca domowy chleb",
+      "question": "Gitara",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_365",
-      "question": "Osoba obserwująca gwiazdy przez teleskop",
+      "question": "Perkusja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_366",
-      "question": "Osoba zbierająca grzyby w lesie",
+      "question": "Pianino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_367",
-      "question": "Osoba nurkująca z rurką (snorkeling)",
+      "question": "Skrzypce",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_368",
-      "question": "Osoba jeżdżąca na rolkach w parku",
+      "question": "Trąbka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_369",
-      "question": "Osoba śpiewająca karaoke",
+      "question": "Harmonijka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_370",
-      "question": "Osoba układająca kostkę Rubika",
+      "question": "Śpiewanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_371",
-      "question": "Osoba grająca w szachy",
+      "question": "Czytanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_372",
-      "question": "Osoba tworząca ceramikę na kole garncarskim",
+      "question": "Medytacja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_373",
-      "question": "Osoba robiąca zdjęcia aparat analogowym",
+      "question": "Origami",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_374",
-      "question": "Osoba tańcząca pole dance",
+      "question": "Grzybobranie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_375",
-      "question": "Osoba pisząca wiersz w notatniku",
+      "question": "Spacer",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_376",
-      "question": "Osoba szyjąca maskotkę na maszynie",
+      "question": "Rower",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_377",
-      "question": "Osoba piekąca dekoracyjne babeczki",
+      "question": "Biwakowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_378",
-      "question": "Osoba grająca w darta w pubie",
+      "question": "Żeglarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_379",
-      "question": "Osoba ćwicząca kaligrafię pędzlem",
+      "question": "Konsola",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_380",
-      "question": "Osoba miksująca muzykę jako DJ",
+      "question": "Granie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_381",
-      "question": "Osoba zbierająca znaczki pocztowe w klasztorze",
+      "question": "Kolekcjonowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_382",
-      "question": "Osoba jeżdżąca na deskorolce",
+      "question": "Majsterkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_383",
-      "question": "Osoba ćwicząca jogę w plenerze",
+      "question": "Garncarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_384",
-      "question": "Osoba składająca origami z papieru",
+      "question": "Rzeźbienie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_385",
-      "question": "Osoba grająca na ukulele",
+      "question": "Haftowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_386",
-      "question": "Osoba trenująca sztuki walki",
+      "question": "Tatuaż",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_387",
-      "question": "Osoba spacerująca z wykrywaczem metalu",
+      "question": "Kino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_388",
-      "question": "Osoba puszczająca latawiec na wietrze",
+      "question": "Teatr",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_389",
-      "question": "Osoba jeżdżąca na monocyklu",
+      "question": "Opera",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_390",
-      "question": "Osoba żonglująca piłeczkami",
+      "question": "Koncert",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_391",
-      "question": "Osoba grająca na harmonijce ustnej",
+      "question": "Akwarium",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_392",
-      "question": "Osoba wspinająca się na drzewo",
+      "question": "Latawiec",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_393",
-      "question": "Osoba puszczająca bańki mydlane",
+      "question": "Bańki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_394",
-      "question": "Osoba robiąca tatuaż maszynką",
+      "question": "Huśtawka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_395",
-      "question": "Osoba jeżdżąca na hulajnodze wyczynowej",
+      "question": "Karuzela",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_396",
-      "question": "Osoba kempingująca pod namiotem",
+      "question": "Paintball",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_397",
-      "question": "Osoba grająca na pianinie",
+      "question": "Gokarty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_398",
-      "question": "Osoba trenująca łucznictwo",
+      "question": "Planszówki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_399",
-      "question": "Osoba układająca domino",
+      "question": "Jojo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_400",
-      "question": "Osoba ucząca się sztuczek z kartami",
+      "question": "Ogród",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_401",
-      "question": "Osoba bardzo wystraszona horrorem",
+      "question": "Złość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_402",
-      "question": "Osoba płacząca ze wzruszenia",
+      "question": "Radość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_403",
-      "question": "Osoba wściekła z powodu zepsutego auta",
+      "question": "Smutek",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_404",
-      "question": "Osoba śmiejąca się do łez",
+      "question": "Strach",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_405",
-      "question": "Osoba bardzo senna i ziewająca",
+      "question": "Zazdrość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_406",
-      "question": "Osoba zakochana z motylami w brzuchu",
+      "question": "Wstyd",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_407",
-      "question": "Osoba oburzona i machająca rękami",
+      "question": "Zdziwienie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_408",
-      "question": "Osoba dumna ze swojego sukcesu",
+      "question": "Obrzydzenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_409",
-      "question": "Osoba zestresowana przed egzaminem",
+      "question": "Nuda",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_410",
-      "question": "Osoba podejrzliwa i rozglądająca się",
+      "question": "Zmęczenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_411",
-      "question": "Osoba wściekła na spóźniony autobus",
+      "question": "Zakochanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_412",
-      "question": "Osoba bardzo znudzona na spotkaniu",
+      "question": "Duma",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_413",
-      "question": "Osoba marząca z głową w chmurach",
+      "question": "Stres",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_414",
-      "question": "Osoba zawstydzona po gafie",
+      "question": "Panika",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_415",
-      "question": "Osoba przerażona pająkiem",
+      "question": "Euforia",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_416",
-      "question": "Osoba zachwycona pięknym widokiem",
+      "question": "Ekscytacja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_417",
-      "question": "Osoba zniecierpliwiona stojąca w kolejce",
+      "question": "Rozczarowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_418",
-      "question": "Osoba zazdrosna patrząca z boku",
+      "question": "Zakłopotanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_419",
-      "question": "Osoba w głębokiej rozpaczy",
+      "question": "Tęsknota",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_420",
-      "question": "Osoba bardzo odważna prężąca klatkę",
+      "question": "Ulga",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_421",
-      "question": "Osoba obrzydzona zepsutym jedzeniem",
+      "question": "Lenistwo",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_422",
-      "question": "Osoba oszołomiona i kręcąca się w głowie",
+      "question": "Niecierpliwość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_423",
-      "question": "Osoba skryta chowająca twarz",
+      "question": "Ciekawość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_424",
-      "question": "Osoba chciwa zgarniająca monety",
+      "question": "Nieśmiałość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_425",
-      "question": "Osoba wściekła grająca w grę i rzucająca padem",
+      "question": "Arogancja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_426",
-      "question": "Osoba podejrzewająca zdradę",
+      "question": "Płacz",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_427",
-      "question": "Osoba rozkojarzona zapominająca co robi",
+      "question": "Śmiech",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_428",
-      "question": "Osoba zachłanna jedząca łapczywie",
+      "question": "Chichot",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_429",
-      "question": "Osoba cieszaca się jak dziecko z prezentu",
+      "question": "Krzyk",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_430",
-      "question": "Osoba bezradna rozkładająca ręce",
+      "question": "Szept",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_431",
-      "question": "Osoba udająca twardziela",
+      "question": "Czkawka",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_432",
-      "question": "Osoba zestresowana rozmową telefoniczną",
+      "question": "Kichanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_433",
-      "question": "Osoba panikująca z powodu zgubionego dziecka",
+      "question": "Kaszel",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_434",
-      "question": "Osoba czująca ulgę po zdany teście",
+      "question": "Drżenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_435",
-      "question": "Osoba wściekła na hałasujących sąsiadów",
+      "question": "Rumieniec",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_436",
-      "question": "Osoba zamyślona drapiąca się po głowie",
+      "question": "Mruganie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_437",
-      "question": "Osoba zszokowana niespodziewaną wiadomością",
+      "question": "Podglądanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_438",
-      "question": "Osoba obojętna wzruszająca ramionami",
+      "question": "Skradanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_439",
-      "question": "Osoba pewna siebie krocząca z wysoko podniesioną głową",
+      "question": "Foch",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_440",
-      "question": "Osoba podejrzana próbująca coś ukryć za plecami",
+      "question": "Przytulanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_441",
-      "question": "Osoba przestraszona nagłym grzmotem",
+      "question": "Klaskanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_442",
-      "question": "Osoba zniecierpliwiona stukająca palcami w stół",
+      "question": "Machanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_443",
-      "question": "Osoba złośliwa knująca spisek",
+      "question": "Ukłon",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_444",
-      "question": "Osoba wzruszona słuchając pięknej muzyki",
+      "question": "Salutowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_445",
-      "question": "Osoba wstydząca się zabrać głos",
+      "question": "Wzruszenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_446",
-      "question": "Osoba zrezygnowana machająca ręką",
+      "question": "Histeria",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_447",
-      "question": "Osoba podekscytowana nadchodzącą podróżą",
+      "question": "Zamyślenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_448",
-      "question": "Osoba uśmiechająca się nieszczerze",
+      "question": "Senność",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_449",
-      "question": "Osoba przestraszona własnym odbiciem",
+      "question": "Głód",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_450",
-      "question": "Osoba płacząca ze złości",
+      "question": "Flirt",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_451",
-      "question": "Skok na bungee nad przepaścią",
+      "question": "Bungee",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_452",
-      "question": "Chodzenie po rozżarzonych węglach",
+      "question": "Spadochron",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_453",
-      "question": "Walka z niedźwiedziem w lesie",
+      "question": "Paralotnia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_454",
-      "question": "Skok ze spadochronem z samolotu",
+      "question": "Alpinizm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_455",
-      "question": "Przeżycie w dżungli bez jedzenia",
+      "question": "Everest",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_456",
-      "question": "Ucieczka przed lawiną na nartach",
+      "question": "Rafting",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_457",
-      "question": "Osoba zamknięta w klatce z rekinami",
+      "question": "Kitesurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_458",
-      "question": "Wspinaczka na Mount Everest w zamieci",
+      "question": "Windsurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_459",
-      "question": "Przeprawa przez pustynię bez wody",
+      "question": "Wakeboard",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_460",
-      "question": "Chodzenie po linie między wieżowcami",
+      "question": "Parkour",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_461",
-      "question": "Osoba gasząca płonący budynek",
+      "question": "Motocross",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_462",
-      "question": "Ucieczka przed tornadem samochodem",
+      "question": "Rajd",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_463",
-      "question": "Jedzenie żywego skorpiona",
+      "question": "Wyścig",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_464",
-      "question": "Próba wydostania się z tonącego samochodu",
+      "question": "Żonglerka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_465",
-      "question": "Ucieczka przed stadem szarżujących byków",
+      "question": "Linoskoczek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_466",
-      "question": "Osoba lądująca uszkodzonym samolotem",
+      "question": "Rodeo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_467",
-      "question": "Przeprawa przez rzekę pełną piranii",
+      "question": "Korrida",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_468",
-      "question": "Osoba uwięziona w płonącym windzie",
+      "question": "Morsowanie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_469",
-      "question": "Kierowca Formuły 1 w padającym deszczu przy 300 km/h",
+      "question": "Speleologia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_470",
-      "question": "Ucieczka z walącego się budynku podczas trzęsienia ziemi",
+      "question": "Jaskinia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_471",
-      "question": "Lądowanie bez spadochronu na stóg siana",
+      "question": "Lodowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_472",
-      "question": "Walka z aligatorem na bagnach",
+      "question": "Lawina",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_473",
-      "question": "Chodzenie po szkle boso",
+      "question": "Sztorm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_474",
-      "question": "Szybki zjazd na linie (zipline) nad wielkim kanionem",
+      "question": "Huragan",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_475",
-      "question": "Nurek schodzący na 100 metrów bez akwalungu",
+      "question": "Pustynia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_476",
-      "question": "Przeprawa przez pole minowe",
+      "question": "Dżungla",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_477",
-      "question": "Rozbrajanie bomby zegarowej na 3 sekundy przed wybuchem",
+      "question": "Survival",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_478",
-      "question": "Ucieczka z więzienia o maksymalnym rygorze",
+      "question": "Rozbitek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_479",
-      "question": "Stawienie czoła tsunami na plaży",
+      "question": "Ucieczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_480",
-      "question": "Latanie w kombinezonie wingsuit blisko skał",
+      "question": "Pościg",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_481",
-      "question": "Próba powstrzymania rozpędzonego pociągu",
+      "question": "Kaskader",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_482",
-      "question": "Osoba utknęła na diabelskim młynie na samej górze",
+      "question": "Szybowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_483",
-      "question": "Osoba wciągana przez ruchome piaski",
+      "question": "Sterowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_484",
-      "question": "Przeżycie na bezludnej wyspie przez rok",
+      "question": "Wingsuit",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_485",
-      "question": "Wspinaczka bez zabezpieczenia (free solo)",
+      "question": "Freediving",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_486",
-      "question": "Ucieczka przed watahą głodnych wilków",
+      "question": "Triathlon",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_487",
-      "question": "Przejście przez płonący tunel",
+      "question": "Ironman",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_488",
-      "question": "Osoba na tratwie podczas sztormu na oceanie",
+      "question": "Ultramaraton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_489",
-      "question": "Zjazd na desce po zboczu aktywnego wulkanu",
+      "question": "Skeleton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_490",
-      "question": "Skok z klifu do wzburzonego morza",
+      "question": "Bobsleje",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_491",
-      "question": "Osoba osaczona przez jadowite węże",
+      "question": "Saneczkarstwo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_492",
-      "question": "Próba opanowania szalejącego pożaru lasu",
+      "question": "Rollercoaster",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_493",
-      "question": "Zjazd bobslejem po oblodzonym torze",
+      "question": "Labirynt",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_494",
-      "question": "Przeprawa przez lodowatą rzekę na Syberii",
+      "question": "Pożar",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_495",
-      "question": "Osoba potrącona przez falę uderzeniową wybuchu",
+      "question": "Powódź",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_496",
-      "question": "Ucieczka przed rojem szerszeni aziatyckich",
+      "question": "Duch",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_497",
-      "question": "Lot motolotnią w trakcie burzy z piorunami",
+      "question": "Zombie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_498",
-      "question": "Kaskader wykonujący dachowanie autem",
+      "question": "Wampir",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_499",
-      "question": "Walka o ogień w epoce kamienia",
+      "question": "Egzorcyzm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_500",
-      "question": "Osoba wciągnięta w wir wodny",
+      "question": "Wspinaczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     }
@@ -40836,3001 +40836,3001 @@ export const DEFAULT_REVERSE_CHARADES: { [key in Language]: any[] } = {
   "EN": [
     {
       "id": "rc_1",
-      "question": "Lekarz przeprowadzający operację",
+      "question": "Lekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_2",
-      "question": "Strażak gaszący pożar",
+      "question": "Strażak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_3",
-      "question": "Policjant kierujący ruchem",
+      "question": "Policjant",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_4",
-      "question": "Kucharz smażący naleśniki",
+      "question": "Kucharz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_5",
-      "question": "Nauczyciel piszący na tablicy",
+      "question": "Fryzjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_6",
-      "question": "Kelner niosący tacę z napojami",
+      "question": "Dentysta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_7",
-      "question": "Fryzjer ścinający włosy",
+      "question": "Pilot",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_8",
-      "question": "Krawiec szyjący ubranie",
+      "question": "Kelner",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_9",
-      "question": "Fotograf robiący zdjęcie",
+      "question": "Listonosz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_10",
-      "question": "Sędzia piłkarski pokazujący czerwoną kartkę",
+      "question": "Hydraulik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_11",
-      "question": "Astronauta chodzący po Księżycu",
+      "question": "Elektryk",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_12",
-      "question": "Szef kuchni degustujący zupę",
+      "question": "Murarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_13",
-      "question": "Malarz malujący obraz na sztaludze",
+      "question": "Malarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_14",
-      "question": "Dyrygent prowadzący orkiestrę",
+      "question": "Stolarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_15",
-      "question": "Modelka na wybiegu",
+      "question": "Nauczyciel",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_16",
-      "question": "Piekarz wyciągający chleb z pieca",
+      "question": "Sprzedawca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_17",
-      "question": "Górnik pracujący z kilofem",
+      "question": "Kierowca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_18",
-      "question": "Budowlaniec układający cegły",
+      "question": "Taksówkarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_19",
-      "question": "Masażysta wykonujący masaż",
+      "question": "Żołnierz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_20",
-      "question": "Listonosz wręczający list",
+      "question": "Ratownik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_21",
-      "question": "Stolarz piłujący drewno",
+      "question": "Pielęgniarka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_22",
-      "question": "Przewodnik oprowadzający wycieczkę",
+      "question": "Weterynarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_23",
-      "question": "Pilot kierujący samolotem",
+      "question": "Rolnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_24",
-      "question": "Mechanik naprawiający silnik",
+      "question": "Piekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_25",
-      "question": "Sprzątaczka myjąca podłogę mopa",
+      "question": "Rzeźnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_26",
-      "question": "Programista piszący kod na klawiaturze",
+      "question": "Kosmonauta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_27",
-      "question": "Dziennikarz przeprowadzający wywiad",
+      "question": "Detektyw",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_28",
-      "question": "Ochroniarz sprawdzający bilety",
+      "question": "Sędzia",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_29",
-      "question": "Taksówkarz trzymający kierownicę",
+      "question": "Adwokat",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_30",
-      "question": "Bibliotekarz układający książki",
+      "question": "Dyrygent",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_31",
-      "question": "Kolejarz dający sygnał gwizdkiem",
+      "question": "Fotograf",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_32",
-      "question": "Kwiaciarka robiąca bukiet",
+      "question": "Kasjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_33",
-      "question": "Kominiarz czyszczący komin",
+      "question": "Barman",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_34",
-      "question": "Hydraulik naprawiający rurę",
+      "question": "Ogrodnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_35",
-      "question": "Dentysta borujący ząb",
+      "question": "Górnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_36",
-      "question": "Weterynarz badający psa",
+      "question": "Rybak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_37",
-      "question": "Architekt rysujący plan",
+      "question": "Mechanik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_38",
-      "question": "Aktor ukłaniający się na scenie",
+      "question": "Krawiec",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_39",
-      "question": "Rzeźbiarz pracujący w dłucie",
+      "question": "Sprzątaczka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_40",
-      "question": "Rolnik prowadzący traktor",
+      "question": "Ochroniarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_41",
-      "question": "Rybak wyciągający sieć",
+      "question": "Programista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_42",
-      "question": "Zegarmistrz naprawiający zegarek",
+      "question": "Księgowy",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_43",
-      "question": "Barman mieszający drinka w shakerze",
+      "question": "Kominiarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_44",
-      "question": "Dostawca pizzy pukający do drzwi",
+      "question": "Szewc",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_45",
-      "question": "Bileter sprawdzający bilety w kinie",
+      "question": "Chirurg",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_46",
-      "question": "Bankier liczący plik pieniędzy",
+      "question": "Archeolog",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_47",
-      "question": "Ratownik medyczny robiący resuscytację",
+      "question": "Akrobata",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_48",
-      "question": "Krupier rozdający karty w kasynie",
+      "question": "Iluzjonista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_49",
-      "question": "Pracownik magazynu przenoszący pudło",
+      "question": "Klaun",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_50",
-      "question": "Lektor czytający bajkę",
+      "question": "Treser",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_51",
-      "question": "Kot polujący na mysz",
+      "question": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_52",
-      "question": "Małpa jedząca banana",
+      "question": "Pies",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_53",
-      "question": "Pies goniący własny ogon",
+      "question": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_54",
-      "question": "Żaba skacząca po liściach",
+      "question": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_55",
-      "question": "Królik jedzący marchewkę",
+      "question": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_56",
-      "question": "Nurek pod wodą ze sprzętem",
+      "question": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_57",
-      "question": "Niedźwiedź łowiący łososia",
+      "question": "Kogut",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_58",
-      "question": "Ptak budujący gniazdo z gałązek",
+      "question": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_59",
-      "question": "Żyrafa sięgająca do wysokich liści",
+      "question": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_60",
-      "question": "Pies potrząsający mokrą sierścią",
+      "question": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_61",
-      "question": "Kura znosząca jajko",
+      "question": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_62",
-      "question": "Kangur skaczący po pustyni",
+      "question": "Królik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_63",
-      "question": "Kret kopiący kopiec",
+      "question": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_64",
-      "question": "Pingwin ślizgający się po lodzie",
+      "question": "Wąż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_65",
-      "question": "Wąż pełzający po trawie",
+      "question": "Krokodyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_66",
-      "question": "Dzięcioł stukający w pnie drzewa",
+      "question": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_67",
-      "question": "Bocian stojący na jednej nodze",
+      "question": "Żyrafa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_68",
-      "question": "Leniwiec powoli poruszający się po gałęzi",
+      "question": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_69",
-      "question": "Słoń pryskający wodą z trąby",
+      "question": "Goryl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_70",
-      "question": "Sowa kręcąca głową w nocy",
+      "question": "Lew",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_71",
-      "question": "Delfin wyskakujący z wody",
+      "question": "Tygrys",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_72",
-      "question": "Koń skaczący przez przeszkodę",
+      "question": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_73",
-      "question": "Skorpion groźnie unoszący ogon",
+      "question": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_74",
-      "question": "Bóbr budujący tamę z drewna",
+      "question": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_75",
-      "question": "Zebra uciekająca przed lwem",
+      "question": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_76",
-      "question": "Kameleon zmieniający kolor na gałęzi",
+      "question": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_77",
-      "question": "Krowa żująca trawę na łące",
+      "question": "Jeż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_78",
-      "question": "Pszczoła zbierająca pyłek z kwiatka",
+      "question": "Kangur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_79",
-      "question": "Wiewiórka zakopująca orzech",
+      "question": "Pingwin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_80",
-      "question": "Koala śpiący na drzewie eukaliptusowym",
+      "question": "Foka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_81",
-      "question": "Wielbłąd idący przez gorący piasek",
+      "question": "Delfin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_82",
-      "question": "Goryl uderzający się w pierś",
+      "question": "Rekin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_83",
-      "question": "Orzeł szybujący wysoko na wietrze",
+      "question": "Wieloryb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_84",
-      "question": "Homar machający szczypcami",
+      "question": "Ośmiornica",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_85",
-      "question": "Struś chowający głowę w piasek",
+      "question": "Krab",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_86",
-      "question": "Panda jedząca gałązki bambusa",
+      "question": "Pająk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_87",
-      "question": "Wilk wyjący do księżyca",
+      "question": "Pszczoła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_88",
-      "question": "Hipopotam otwierający wielką paszczę",
+      "question": "Motyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_89",
-      "question": "Krokodyl czatujący w wodzie",
+      "question": "Komar",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_90",
-      "question": "Indyk machający skrzydłami i gdaczący",
+      "question": "Mrówka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_91",
-      "question": "Nietoperz wiszący głową w dół",
+      "question": "Ślimak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_92",
-      "question": "Gęś idąca ciągiem za przewodnikem",
+      "question": "Sowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_93",
-      "question": "Rak chodzący tyłem",
+      "question": "Orzeł",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_94",
-      "question": "Żółw powoli chowający się w skorupie",
+      "question": "Papuga",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_95",
-      "question": "Meduza unosząca się w wodzie",
+      "question": "Paw",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_96",
-      "question": "Pawie prężący kolorowy ogon",
+      "question": "Flaming",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_97",
-      "question": "Kozica skacząca po skałach",
+      "question": "Struś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_98",
-      "question": "Komar bzyczący nad uchem",
+      "question": "Nietoperz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_99",
-      "question": "Świnia tarzająca się w błocie",
+      "question": "Kret",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_100",
-      "question": "Ślimak ciągnący swoją muszlę",
+      "question": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_101",
-      "question": "Narciarz zjeżdżający ze stoku",
+      "question": "Boks",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_102",
-      "question": "Piłkarz strzelający karnego",
+      "question": "Tenis",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_103",
-      "question": "Bokser w ringu",
+      "question": "Golf",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_104",
-      "question": "Tenisista serwujący piłkę",
+      "question": "Pływanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_105",
-      "question": "Pływak płynący żabką",
+      "question": "Narciarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_106",
-      "question": "Koszykarz robiący wsad",
+      "question": "Snowboard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_107",
-      "question": "Kultura fizyczna i podnoszenie ciężarów",
+      "question": "Łyżwiarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_108",
-      "question": "Osoba jeżdżąca na łyżwach",
+      "question": "Hokej",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_109",
-      "question": "Osoba grająca w kręgle",
+      "question": "Koszykówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_110",
-      "question": "Sumita wypychający przeciwnika z maty",
+      "question": "Siatkówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_111",
-      "question": "Siatkarz blokujący piłkę przy siatce",
+      "question": "Piłkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_112",
-      "question": "Biegacz finiszujący na mecie",
+      "question": "Bramkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_113",
-      "question": "Łucznik naciągający cięciwę",
+      "question": "Siłownia",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_114",
-      "question": "Szachista rozmyślający nad ruchem",
+      "question": "Joga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_115",
-      "question": "Wioślarz wiosłujący w łodzi",
+      "question": "Bieganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_116",
-      "question": "Szermierz wykonujący pchnięcie szpadą",
+      "question": "Maraton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_117",
-      "question": "Gimnastyczka robiąca salto",
+      "question": "Kolarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_118",
-      "question": "Jeździec skaczący na koniu",
+      "question": "Wioślarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_119",
-      "question": "Kolarz pedałujący pod górę",
+      "question": "Kajakarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_120",
-      "question": "Karateka rozbijający deskę dłonią",
+      "question": "Surfing",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_121",
-      "question": "Hokeista strzelający krążkiem",
+      "question": "Nurkowanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_122",
-      "question": "Surfer łapiący wielką falę",
+      "question": "Szermierka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_123",
-      "question": "Golfista uderzający piłeczkę",
+      "question": "Łucznictwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_124",
-      "question": "Skoczek o tyczce",
+      "question": "Judo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_125",
-      "question": "Skoczek narciarski w locie",
+      "question": "Karate",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_126",
-      "question": "Rzucający dyskiem na stadionie",
+      "question": "Zapasy",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_127",
-      "question": "Osoba grająca w badmintona",
+      "question": "Sumo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_128",
-      "question": "Kulturyści prezentujący mięśnie",
+      "question": "Gimnastyka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_129",
-      "question": "Biegacz przez płotki",
+      "question": "Skakanka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_130",
-      "question": "Osoba uprawiająca rafting na rzece",
+      "question": "Przysiady",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_131",
-      "question": "Nurek skaczący z wieży do wody",
+      "question": "Pompki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_132",
-      "question": "Osoba grająca w tenisa stołowego (ping-pong)",
+      "question": "Brzuszki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_133",
-      "question": "Osoba jeżdżąca na deskorolce (triki)",
+      "question": "Rozciąganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_134",
-      "question": "Osoba wspinająca się po ściance wspinaczkowej",
+      "question": "Badminton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_135",
-      "question": "Osoba grająca w bilard",
+      "question": "Kręgle",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_136",
-      "question": "Skoczek w dal rozbiegający się",
+      "question": "Bilard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_137",
-      "question": "Łyżwiarz figurowy robiący piruet",
+      "question": "Rzutki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_138",
-      "question": "Osoba strzelająca z pistoletu sportowego",
+      "question": "Curling",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_139",
-      "question": "Osoba uprawiająca windsurfing",
+      "question": "Skoczek",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_140",
-      "question": "Zawodnik sumo wykonujący ukłon",
+      "question": "Oszczep",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_141",
-      "question": "Biegacz narciarski na trasie",
+      "question": "Sztafeta",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_142",
-      "question": "Bobsleista wbijający się do sanki",
+      "question": "Jeździectwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_143",
-      "question": "Osoba tańcząca breakdance",
+      "question": "Rugby",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_144",
-      "question": "Rzucający oszczepem",
+      "question": "Baseball",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_145",
-      "question": "Zawodnik MMA walczący w parterze",
+      "question": "Taniec",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_146",
-      "question": "Osoba grająca w darta (rzutki)",
+      "question": "Aerobik",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_147",
-      "question": "Zapaśnik wykonujący rzut",
+      "question": "Trampolina",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_148",
-      "question": "Pływak wykonujący nawrót",
+      "question": "Hulajnoga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_149",
-      "question": "Sędzia bokserski odliczający zawodnika",
+      "question": "Rolki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_150",
-      "question": "Osoba skacząca na trampolinie",
+      "question": "Deskorolka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_151",
-      "question": "Osoba prasująca koszulę",
+      "question": "Odkurzanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_152",
-      "question": "Osoba malująca ścianę wałkiem",
+      "question": "Prasowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_153",
-      "question": "Osoba kosząca trawnik kosiarką",
+      "question": "Zmywanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_154",
-      "question": "Osoba wbijająca gwóźdź młotkiem",
+      "question": "Gotowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_155",
-      "question": "Osoba myjąca okno",
+      "question": "Pieczenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_156",
-      "question": "Osoba pompująca koło w rowerze",
+      "question": "Sprzątanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_157",
-      "question": "Osoba szukająca zgubionych kluczy w trawie",
+      "question": "Pranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_158",
-      "question": "Osoba obierająca ziemniaki",
+      "question": "Zamiatanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_159",
-      "question": "Osoba zmywająca naczynia",
+      "question": "Żelazko",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_160",
-      "question": "Osoba odkurzająca dywan",
+      "question": "Pralka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_161",
-      "question": "Osoba składająca pranie",
+      "question": "Odkurzacz",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_162",
-      "question": "Osoba wieszająca obraz na ścianie",
+      "question": "Mop",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_163",
-      "question": "Osoba parząca gorącą kawę",
+      "question": "Miotła",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_164",
-      "question": "Osoba podlewająca kwiaty konewką",
+      "question": "Zmywarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_165",
-      "question": "Osoba ścierająca kurze z półek",
+      "question": "Mikrofalówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_166",
-      "question": "Osoba krojąca cebulę ze łzami w oczach",
+      "question": "Toster",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_167",
-      "question": "Osoba wyrzucająca ciężki worek ze śmieciami",
+      "question": "Czajnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_168",
-      "question": "Osoba czyszcząca buty szczotką",
+      "question": "Lodówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_169",
-      "question": "Osoba ścieląca łóżko",
+      "question": "Piekarnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_170",
-      "question": "Osoba zmieniająca żarówkę na drabinie",
+      "question": "Patelnia",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_171",
-      "question": "Osoba trzepiąca dywan trzepaczką",
+      "question": "Blender",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_172",
-      "question": "Osoba wykręcająca mokrą ścierkę",
+      "question": "Suszarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_173",
-      "question": "Osoba piekąca ciasto w piekarniku",
+      "question": "Szczoteczka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_174",
-      "question": "Osoba myjąca samochód gąbką",
+      "question": "Prysznic",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_175",
-      "question": "Osoba szorująca przypalony garnek",
+      "question": "Wanna",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_176",
-      "question": "Osoba naprawiająca cieknący kran",
+      "question": "Golenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_177",
-      "question": "Osoba skręcająca meble kluczem imbusowym",
+      "question": "Czesanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_178",
-      "question": "Osoba nakładająca jedzenie dla psa",
+      "question": "Makijaż",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_179",
-      "question": "Osoba czyszcząca okulary ściereczką",
+      "question": "Podlewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_180",
-      "question": "Osoba pakująca walizkę na wakacje",
+      "question": "Grabienie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_181",
-      "question": "Osoba rozpalająca w kominku",
+      "question": "Koszenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_182",
-      "question": "Osoba ubierająca choinkę",
+      "question": "Odśnieżanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_183",
-      "question": "Osoba myjąca zęby szczoteczką",
+      "question": "Wiercenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_184",
-      "question": "Osoba czesząca poplątane włosy",
+      "question": "Młotek",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_185",
-      "question": "Osoba przycinająca żywopłot nożycami",
+      "question": "Śrubokręt",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_186",
-      "question": "Osoba grabiąca suche liście",
+      "question": "Drabina",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_187",
-      "question": "Osoba obcinająca paznokcie",
+      "question": "Żarówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_188",
-      "question": "Osoba rozwijająca taśmę klejącą",
+      "question": "Kanapka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_189",
-      "question": "Osoba otwierająca puszkę otwieraczem",
+      "question": "Śniadanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_190",
-      "question": "Osoba smarująca chleb masłem",
+      "question": "Budzik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_191",
-      "question": "Osoba myjąca włosy szamponem",
+      "question": "Ziewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_192",
-      "question": "Osoba nakładająca maseczkę na twarz",
+      "question": "Drzemka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_193",
-      "question": "Osoba parząca herbatę w zaparzaczu",
+      "question": "Chrapanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_194",
-      "question": "Osoba trzepiąca poduszkę",
+      "question": "Kąpiel",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_195",
-      "question": "Osoba czyszcząca ucho patyczkiem",
+      "question": "Zakupy",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_196",
-      "question": "Osoba zaklejająca kopertę jęzorem",
+      "question": "Pakowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_197",
-      "question": "Osoba nawlekająca nitkę na igłę",
+      "question": "Szycie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_198",
-      "question": "Osoba składająca kartonowe pudełko",
+      "question": "Krojenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_199",
-      "question": "Osoba wyciągająca gorącą blachę z piekarnika",
+      "question": "Obieranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_200",
-      "question": "Osoba zapalająca świeczkę zapałką",
+      "question": "Smażenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_201",
-      "question": "Iluzjonista wyciągający królika z kapelusza",
+      "question": "Batman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_202",
-      "question": "Gitarzysta na koncercie rockowym",
+      "question": "Superman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_203",
-      "question": "Szpieg skradający się w ciemności",
+      "question": "Spiderman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_204",
-      "question": "Rycerz walczący mieczem",
+      "question": "Hulk",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_205",
-      "question": "Harry Potter rzucający czar różdżką",
+      "question": "Thor",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_206",
-      "question": "Spider-Man strzelający pajęczyną",
+      "question": "Shrek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_207",
-      "question": "Michael Jackson tańczący moonwalk",
+      "question": "Pinokio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_208",
-      "question": "Batman obserwujący miasto z dachu",
+      "question": "Kopciuszek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_209",
-      "question": "Darth Vader dławiący przeciwnika Mocą",
+      "question": "Śnieżka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_210",
-      "question": "Jack Sparrow zataczający się na statku",
+      "question": "Roszpunka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_211",
-      "question": "Sherlock Holmes badający ślady lupą",
+      "question": "Elsa",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_212",
-      "question": "Robin Hood strzelający z łuku",
+      "question": "Tarzan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_213",
-      "question": "Tarzan skaczący na lianie",
+      "question": "Zorro",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_214",
-      "question": "Superman latający z wyciągniętą ręką",
+      "question": "Sherlock",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_215",
-      "question": "Shrek ryczący na swoim bagnie",
+      "question": "Dracula",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_216",
-      "question": "Zorro kreślący literę Z szpadą",
+      "question": "Frankenstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_217",
-      "question": "Geralt z Rivii dobywający miecza",
+      "question": "Gandalf",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_218",
-      "question": "Elsa zamrażająca wszystko wokół",
+      "question": "Yoda",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_219",
-      "question": "Freddie Mercury śpiewający z statywem",
+      "question": "Gollum",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_220",
-      "question": "Joker śmiejący się maniacznie",
+      "question": "Pikachu",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_221",
-      "question": "Terminator zakładający okulary przeciwsłoneczne",
+      "question": "Mario",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_222",
-      "question": "Rocky Balboa biegający po schodach",
+      "question": "Garfield",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_223",
-      "question": "Indiana Jones uciekający przed toczącym się głazem",
+      "question": "Smerfetka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_224",
-      "question": "Hulk wpadający w szał i niszczący rzeczy",
+      "question": "Gargamel",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_225",
-      "question": "Kopciuszek gubiący pantofelek",
+      "question": "Reksio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_226",
-      "question": "Czerwony Kapturek idący z koszyczkiem",
+      "question": "Matołek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_227",
-      "question": "Piotruś Pan walczący z Kapitanem Hakiem",
+      "question": "Napoleon",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_228",
-      "question": "Forrest Gump biegający w poprzek kraju",
+      "question": "Kopernik",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_229",
-      "question": "Wolverine wyciągający metalowe szpony",
+      "question": "Chopin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_230",
-      "question": "Thor zamachujący się młotem",
+      "question": "Einstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_231",
-      "question": "Pikachu rażący piorunem",
+      "question": "Kleopatra",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_232",
-      "question": "Super Mario skaczący na grzyba",
+      "question": "Elvis",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_233",
-      "question": "Dracula gryzący w szyję",
+      "question": "Rambo",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_234",
-      "question": "Frankenstein budzący się do życia",
+      "question": "Terminator",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_235",
-      "question": "Willy Wonka prezentujący fabrykę czekolady",
+      "question": "Joker",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_236",
-      "question": "Krzyk (Ghostface) dzwoniący z nożem",
+      "question": "Pocahontas",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_237",
-      "question": "Deadpool machający mieczami i żartujący",
+      "question": "Aladyn",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_238",
-      "question": "Barbie prezentująca idealną figurę",
+      "question": "Popeye",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_239",
-      "question": "Legolas strzelający serią strzał",
+      "question": "Asterix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_240",
-      "question": "Gollum pieszcząc swój cenne pierścień",
+      "question": "Obelix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_241",
-      "question": "Gandalf uderzający laską i krzyczący Nie przejdziesz",
+      "question": "Kolumb",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_242",
-      "question": "Mikołaj wręczający prezenty z worka",
+      "question": "Mulan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_243",
-      "question": "Diabeł wymachujący widłami",
+      "question": "Herkules",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_244",
-      "question": "Anioł grający na harfie",
+      "question": "Zeus",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_245",
-      "question": "Syrenka płynąca i podwijająca ogon",
+      "question": "Wiedźmin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_246",
-      "question": "Kowboj wyciągający rewolwer z kabury",
+      "question": "Mikołaj",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_247",
-      "question": "Ninja rzucający shurikeny",
+      "question": "Stitch",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_248",
-      "question": "Pirat patrzący przez lunetę",
+      "question": "Robocop",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_249",
-      "question": "Wiking wiosłujący na drakkarze",
+      "question": "Pippi",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_250",
-      "question": "Wampir chroniący się przed słońcem",
+      "question": "Hobbit",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_251",
-      "question": "Osoba próbująca złapać komara",
+      "question": "Karaoke",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_252",
-      "question": "Osoba chodząca po gorącym piasku",
+      "question": "Toast",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_253",
-      "question": "Osoba zakładająca ciasne buty",
+      "question": "Wesele",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_254",
-      "question": "Osoba jedząca bardzo ostre papryczki",
+      "question": "Urodziny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_255",
-      "question": "Osoba wędrująca po górach w zamieci",
+      "question": "Sylwester",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_256",
-      "question": "Osoba próbująca otworzyć wino bez korkociągu",
+      "question": "Ślub",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_257",
-      "question": "Osoba tańcząca hip-hop",
+      "question": "Oświadczyny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_258",
-      "question": "Osoba próbująca zapalić zapałkę na wietrze",
+      "question": "Randka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_259",
-      "question": "Osoba próbująca uciec przed rojem pszczół",
+      "question": "Kac",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_260",
-      "question": "Osoba grająca w wirtualnej rzeczywistości (VR)",
+      "question": "Selfie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_261",
-      "question": "Kierowca zepsutego auta na skrzyżowaniu",
+      "question": "Tort",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_262",
-      "question": "Pasażer ze spóźnionym pociągiem",
+      "question": "Prezent",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_263",
-      "question": "Osoba z niesamowicie mocnym ból zęba",
+      "question": "Konfetti",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_264",
-      "question": "Osoba poślizgująca się na skórce od banana",
+      "question": "Fajerwerki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_265",
-      "question": "Osoba wchodząca do bardzo zimnej wody",
+      "question": "Balony",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_266",
-      "question": "Osoba niosąca zbyt wiele siatek z zakupami",
+      "question": "Dyskoteka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_267",
-      "question": "Osoba szukająca telefonu, trzymając go w ręku",
+      "question": "Grill",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_268",
-      "question": "Osoba śpiewająca pod prysznicem",
+      "question": "Ognisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_269",
-      "question": "Osoba próbująca nawlec nitkę na igłę po ciemku",
+      "question": "Piknik",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_270",
-      "question": "Osoba wstrzymująca oddech pod wodą",
+      "question": "Kolejka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_271",
-      "question": "Osoba niespodziewanie oblana zimną wodą",
+      "question": "Spóźnienie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_272",
-      "question": "Osoba jedząca gorącą pizzę i parząca język",
+      "question": "Korek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_273",
-      "question": "Osoba zacięta przy goleniu",
+      "question": "Kłótnia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_274",
-      "question": "Osoba przymierzająca ciasne dżinsy",
+      "question": "Pocałunek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_275",
-      "question": "Osoba próbująca złapać uciekający autobus",
+      "question": "Pożegnanie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_276",
-      "question": "Osoba czkająca bez przerwy",
+      "question": "Egzamin",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_277",
-      "question": "Osoba potykająca się na prostej drodze",
+      "question": "Przeprowadzka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_278",
-      "question": "Osoba kichająca kilka razy z rzędu",
+      "question": "Wakacje",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_279",
-      "question": "Osoba zepsuła zamki w kurtce",
+      "question": "Lotnisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_280",
-      "question": "Osoba próbująca cicho otworzyć paczkę chipsów w nocy",
+      "question": "Walizka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_281",
-      "question": "Osoba, której zgasł telefon podczas ważnej rozmowy",
+      "question": "Winda",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_282",
-      "question": "Osoba pijąca zepsute mleko",
+      "question": "Imieniny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_283",
-      "question": "Osoba zablokowana w toalecie publicznej",
+      "question": "Matura",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_284",
-      "question": "Osoba z mokrymi skarpetkami",
+      "question": "Studniówka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_285",
-      "question": "Osoba, której ptak zanieczyścił ubranie",
+      "question": "Wigilia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_286",
-      "question": "Osoba próbująca zabić muchę gazeta",
+      "question": "Choinka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_287",
-      "question": "Osoba nadeptująca na klocki Lego boso",
+      "question": "Pisanki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_288",
-      "question": "Osoba marznąca na przystanku autobusowym",
+      "question": "Śmigus",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_289",
-      "question": "Osoba po użądleniu przez pszczołę w nos",
+      "question": "Andrzejki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_290",
-      "question": "Osoba zgubiła się w wielkim centrum handlowym",
+      "question": "Walentynki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_291",
-      "question": "Osoba próbująca zapamiętać kod PIN",
+      "question": "Halloween",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_292",
-      "question": "Osoba walcząca z parasolką na wietrze",
+      "question": "Kostium",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_293",
-      "question": "Osoba, która wylała sok na białą koszulę",
+      "question": "Polonez",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_294",
-      "question": "Osoba udająca że rozumie obcy język",
+      "question": "Szampan",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_295",
-      "question": "Osoba zasypiająca na nudnym wykładzie",
+      "question": "Bufet",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_296",
-      "question": "Osoba, której wypadł klucz do studzienki",
+      "question": "Plotka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_297",
-      "question": "Osoba próbująca dogonić psa bez smyczy",
+      "question": "Mandat",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_298",
-      "question": "Osoba marząca o zimnym piwie w upał",
+      "question": "Stłuczka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_299",
-      "question": "Osoba próbująca przeczytać drobny druk bez okularów",
+      "question": "Namiot",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_300",
-      "question": "Osoba powstrzymująca śmiech w kościele",
+      "question": "Autostop",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_301",
-      "question": "Dziecko budujące zamek z piasku",
+      "question": "Titanic",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_302",
-      "question": "Złodziej otwierający sejf",
+      "question": "Matrix",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_303",
-      "question": "Piosenkarz śpiewający do mikrofonu",
+      "question": "Avatar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_304",
-      "question": "Osoba grająca na perkusji",
+      "question": "Gladiator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_305",
-      "question": "Wędkarz złapawszy wielką rybę",
+      "question": "Rocky",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_306",
-      "question": "Osoba grająca na skrzypcami",
+      "question": "Szczęki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_307",
-      "question": "Piosenkarz rockowy rozbijający gitarę",
+      "question": "Psychoza",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_308",
-      "question": "Król nakładający koronę na głowę",
+      "question": "Obcy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_309",
-      "question": "Kat zamachujący się toporem",
+      "question": "Predator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_310",
-      "question": "Czarownica mieszająca wywar w kotle",
+      "question": "Incepcja",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_311",
-      "question": "Rycerz ratujący księżniczkę z wieży",
+      "question": "Interstellar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_312",
-      "question": "Gladiator walczący z lwem",
+      "question": "Godzilla",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_313",
-      "question": "Pirat szukający zakopanego skarbu",
+      "question": "Kevin",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_314",
-      "question": "Astronauta wychodzący w otwartą przestrzeń",
+      "question": "Madagaskar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_315",
-      "question": "Superbohater ratujący spadający autobus",
+      "question": "Zwierzogród",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_316",
-      "question": "Zombi powoli idące i wyciągające ręce",
+      "question": "Odlot",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_317",
-      "question": "Robot poruszający się sztywno",
+      "question": "Coco",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_318",
-      "question": "Mumia wyłaniająca się z grobowca",
+      "question": "Auta",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_319",
-      "question": "Duch latający i straszący ludzi",
+      "question": "Nemo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_320",
-      "question": "Kosmita badający ziemski przedmiot",
+      "question": "Dumbo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_321",
-      "question": "Syrena śpiewająca na skale",
+      "question": "Bambi",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_322",
-      "question": "Wilkołak zmieniający się podczas pełni",
+      "question": "Vaiana",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_323",
-      "question": "Wampir śpiący w trumnie",
+      "question": "Ratatuj",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_324",
-      "question": "Krasnolud kopiący diamenty w kopalni",
+      "question": "Minionki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_325",
-      "question": "Elf strzelający łukiem z drzewa",
+      "question": "Smerfy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_326",
-      "question": "Smok ziejący ogniem",
+      "question": "Muminki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_327",
-      "question": "Jednorożec biegający po tęczy",
+      "question": "Teletubisie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_328",
-      "question": "Kowboj jeżdżący na dzikim koniu",
+      "question": "Pokemon",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_329",
-      "question": "Indianin tańczący taniec deszczu",
+      "question": "Simpsonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_330",
-      "question": "Samuraj wykonujący cięcie kataną",
+      "question": "Flintstonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_331",
-      "question": "Ninja skaczący z dachu na dach",
+      "question": "Scooby",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_332",
-      "question": "Wiking pijący miód z rogu",
+      "question": "Puchatek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_333",
-      "question": "Gladiator wznoszący kciuk w górę",
+      "question": "Krzyżacy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_334",
-      "question": "Królowa wydająca wyrok skazujący",
+      "question": "Potop",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_335",
-      "question": "Błazen zabawiąjący dwór królewski",
+      "question": "Pianista",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_336",
-      "question": "Alchemik mieszający eliksiry",
+      "question": "Miś",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_337",
-      "question": "Detektyw szukający śladów z lupą",
+      "question": "Rejs",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_338",
-      "question": "Złodziej skradający się przez laserowe zabezpieczenia",
+      "question": "Kiler",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_339",
-      "question": "Tajna agentka rzucająca granat błyskowy",
+      "question": "Hydrozagadka",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_340",
-      "question": "Superzłoczyńca śmiejący się w swojej bazie",
+      "question": "Piraci",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_341",
-      "question": "Robot bojowy strzelający z laserów",
+      "question": "Rango",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_342",
-      "question": "Syrena wciągająca żeglarza pod wodę",
+      "question": "Zaplątani",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_343",
-      "question": "Minotaur krążący po labiryncie",
+      "question": "Merida",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_344",
-      "question": "Cyklop patrzący jednym wielkim okiem",
+      "question": "Bolt",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_345",
-      "question": "Meduza zamieniająca ludzi w kamień wzrokiem",
+      "question": "Gremliny",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_346",
-      "question": "Gargulec siedzący nieruchomo na dachu",
+      "question": "Casper",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_347",
-      "question": "Dżin wychodzący z zakurzonej lampy",
+      "question": "Mumia",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_348",
-      "question": "Pegaz machający skrzydłami",
+      "question": "Transformers",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_349",
-      "question": "Kraken zatapiający żaglowiec",
+      "question": "Tron",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_350",
-      "question": "Sfinks zadający trudną zagadkę",
+      "question": "Bajtek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_351",
-      "question": "Osoba grająca na gitarze akustycznej",
+      "question": "Wędkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_352",
-      "question": "Osoba malująca obraz pędzlem",
+      "question": "Szydełkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_353",
-      "question": "Osoba układająca puzzle na stole",
+      "question": "Dzierganie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_354",
-      "question": "Osoba szydełkująca szalik z włóczki",
+      "question": "Rysowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_355",
-      "question": "Osoba rzeźbiąca w drewnie",
+      "question": "Fotografia",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_356",
-      "question": "Osoba fotografująca ptaki w lesie",
+      "question": "Ogrodnictwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_357",
-      "question": "Osoba czytająca wciągającą książkę",
+      "question": "Szachy",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_358",
-      "question": "Osoba układająca klocki Lego",
+      "question": "Warcaby",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_359",
-      "question": "Osoba pielęgnująca rośliny w ogrodzie",
+      "question": "Puzzle",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_360",
-      "question": "Osoba tańcząca salsę",
+      "question": "Sudoku",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_361",
-      "question": "Osoba grająca w planszówki z przyjaciółmi",
+      "question": "Krzyżówka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_362",
-      "question": "Osoba łowiąca ryby na kanapie",
+      "question": "Karty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_363",
-      "question": "Osoba majsterkująca w garażu",
+      "question": "Poker",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_364",
-      "question": "Osoba piekąca domowy chleb",
+      "question": "Gitara",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_365",
-      "question": "Osoba obserwująca gwiazdy przez teleskop",
+      "question": "Perkusja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_366",
-      "question": "Osoba zbierająca grzyby w lesie",
+      "question": "Pianino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_367",
-      "question": "Osoba nurkująca z rurką (snorkeling)",
+      "question": "Skrzypce",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_368",
-      "question": "Osoba jeżdżąca na rolkach w parku",
+      "question": "Trąbka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_369",
-      "question": "Osoba śpiewająca karaoke",
+      "question": "Harmonijka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_370",
-      "question": "Osoba układająca kostkę Rubika",
+      "question": "Śpiewanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_371",
-      "question": "Osoba grająca w szachy",
+      "question": "Czytanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_372",
-      "question": "Osoba tworząca ceramikę na kole garncarskim",
+      "question": "Medytacja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_373",
-      "question": "Osoba robiąca zdjęcia aparat analogowym",
+      "question": "Origami",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_374",
-      "question": "Osoba tańcząca pole dance",
+      "question": "Grzybobranie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_375",
-      "question": "Osoba pisząca wiersz w notatniku",
+      "question": "Spacer",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_376",
-      "question": "Osoba szyjąca maskotkę na maszynie",
+      "question": "Rower",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_377",
-      "question": "Osoba piekąca dekoracyjne babeczki",
+      "question": "Biwakowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_378",
-      "question": "Osoba grająca w darta w pubie",
+      "question": "Żeglarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_379",
-      "question": "Osoba ćwicząca kaligrafię pędzlem",
+      "question": "Konsola",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_380",
-      "question": "Osoba miksująca muzykę jako DJ",
+      "question": "Granie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_381",
-      "question": "Osoba zbierająca znaczki pocztowe w klasztorze",
+      "question": "Kolekcjonowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_382",
-      "question": "Osoba jeżdżąca na deskorolce",
+      "question": "Majsterkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_383",
-      "question": "Osoba ćwicząca jogę w plenerze",
+      "question": "Garncarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_384",
-      "question": "Osoba składająca origami z papieru",
+      "question": "Rzeźbienie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_385",
-      "question": "Osoba grająca na ukulele",
+      "question": "Haftowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_386",
-      "question": "Osoba trenująca sztuki walki",
+      "question": "Tatuaż",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_387",
-      "question": "Osoba spacerująca z wykrywaczem metalu",
+      "question": "Kino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_388",
-      "question": "Osoba puszczająca latawiec na wietrze",
+      "question": "Teatr",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_389",
-      "question": "Osoba jeżdżąca na monocyklu",
+      "question": "Opera",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_390",
-      "question": "Osoba żonglująca piłeczkami",
+      "question": "Koncert",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_391",
-      "question": "Osoba grająca na harmonijce ustnej",
+      "question": "Akwarium",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_392",
-      "question": "Osoba wspinająca się na drzewo",
+      "question": "Latawiec",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_393",
-      "question": "Osoba puszczająca bańki mydlane",
+      "question": "Bańki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_394",
-      "question": "Osoba robiąca tatuaż maszynką",
+      "question": "Huśtawka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_395",
-      "question": "Osoba jeżdżąca na hulajnodze wyczynowej",
+      "question": "Karuzela",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_396",
-      "question": "Osoba kempingująca pod namiotem",
+      "question": "Paintball",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_397",
-      "question": "Osoba grająca na pianinie",
+      "question": "Gokarty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_398",
-      "question": "Osoba trenująca łucznictwo",
+      "question": "Planszówki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_399",
-      "question": "Osoba układająca domino",
+      "question": "Jojo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_400",
-      "question": "Osoba ucząca się sztuczek z kartami",
+      "question": "Ogród",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_401",
-      "question": "Osoba bardzo wystraszona horrorem",
+      "question": "Złość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_402",
-      "question": "Osoba płacząca ze wzruszenia",
+      "question": "Radość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_403",
-      "question": "Osoba wściekła z powodu zepsutego auta",
+      "question": "Smutek",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_404",
-      "question": "Osoba śmiejąca się do łez",
+      "question": "Strach",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_405",
-      "question": "Osoba bardzo senna i ziewająca",
+      "question": "Zazdrość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_406",
-      "question": "Osoba zakochana z motylami w brzuchu",
+      "question": "Wstyd",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_407",
-      "question": "Osoba oburzona i machająca rękami",
+      "question": "Zdziwienie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_408",
-      "question": "Osoba dumna ze swojego sukcesu",
+      "question": "Obrzydzenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_409",
-      "question": "Osoba zestresowana przed egzaminem",
+      "question": "Nuda",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_410",
-      "question": "Osoba podejrzliwa i rozglądająca się",
+      "question": "Zmęczenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_411",
-      "question": "Osoba wściekła na spóźniony autobus",
+      "question": "Zakochanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_412",
-      "question": "Osoba bardzo znudzona na spotkaniu",
+      "question": "Duma",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_413",
-      "question": "Osoba marząca z głową w chmurach",
+      "question": "Stres",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_414",
-      "question": "Osoba zawstydzona po gafie",
+      "question": "Panika",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_415",
-      "question": "Osoba przerażona pająkiem",
+      "question": "Euforia",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_416",
-      "question": "Osoba zachwycona pięknym widokiem",
+      "question": "Ekscytacja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_417",
-      "question": "Osoba zniecierpliwiona stojąca w kolejce",
+      "question": "Rozczarowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_418",
-      "question": "Osoba zazdrosna patrząca z boku",
+      "question": "Zakłopotanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_419",
-      "question": "Osoba w głębokiej rozpaczy",
+      "question": "Tęsknota",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_420",
-      "question": "Osoba bardzo odważna prężąca klatkę",
+      "question": "Ulga",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_421",
-      "question": "Osoba obrzydzona zepsutym jedzeniem",
+      "question": "Lenistwo",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_422",
-      "question": "Osoba oszołomiona i kręcąca się w głowie",
+      "question": "Niecierpliwość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_423",
-      "question": "Osoba skryta chowająca twarz",
+      "question": "Ciekawość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_424",
-      "question": "Osoba chciwa zgarniająca monety",
+      "question": "Nieśmiałość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_425",
-      "question": "Osoba wściekła grająca w grę i rzucająca padem",
+      "question": "Arogancja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_426",
-      "question": "Osoba podejrzewająca zdradę",
+      "question": "Płacz",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_427",
-      "question": "Osoba rozkojarzona zapominająca co robi",
+      "question": "Śmiech",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_428",
-      "question": "Osoba zachłanna jedząca łapczywie",
+      "question": "Chichot",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_429",
-      "question": "Osoba cieszaca się jak dziecko z prezentu",
+      "question": "Krzyk",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_430",
-      "question": "Osoba bezradna rozkładająca ręce",
+      "question": "Szept",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_431",
-      "question": "Osoba udająca twardziela",
+      "question": "Czkawka",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_432",
-      "question": "Osoba zestresowana rozmową telefoniczną",
+      "question": "Kichanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_433",
-      "question": "Osoba panikująca z powodu zgubionego dziecka",
+      "question": "Kaszel",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_434",
-      "question": "Osoba czująca ulgę po zdany teście",
+      "question": "Drżenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_435",
-      "question": "Osoba wściekła na hałasujących sąsiadów",
+      "question": "Rumieniec",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_436",
-      "question": "Osoba zamyślona drapiąca się po głowie",
+      "question": "Mruganie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_437",
-      "question": "Osoba zszokowana niespodziewaną wiadomością",
+      "question": "Podglądanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_438",
-      "question": "Osoba obojętna wzruszająca ramionami",
+      "question": "Skradanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_439",
-      "question": "Osoba pewna siebie krocząca z wysoko podniesioną głową",
+      "question": "Foch",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_440",
-      "question": "Osoba podejrzana próbująca coś ukryć za plecami",
+      "question": "Przytulanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_441",
-      "question": "Osoba przestraszona nagłym grzmotem",
+      "question": "Klaskanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_442",
-      "question": "Osoba zniecierpliwiona stukająca palcami w stół",
+      "question": "Machanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_443",
-      "question": "Osoba złośliwa knująca spisek",
+      "question": "Ukłon",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_444",
-      "question": "Osoba wzruszona słuchając pięknej muzyki",
+      "question": "Salutowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_445",
-      "question": "Osoba wstydząca się zabrać głos",
+      "question": "Wzruszenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_446",
-      "question": "Osoba zrezygnowana machająca ręką",
+      "question": "Histeria",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_447",
-      "question": "Osoba podekscytowana nadchodzącą podróżą",
+      "question": "Zamyślenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_448",
-      "question": "Osoba uśmiechająca się nieszczerze",
+      "question": "Senność",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_449",
-      "question": "Osoba przestraszona własnym odbiciem",
+      "question": "Głód",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_450",
-      "question": "Osoba płacząca ze złości",
+      "question": "Flirt",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_451",
-      "question": "Skok na bungee nad przepaścią",
+      "question": "Bungee",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_452",
-      "question": "Chodzenie po rozżarzonych węglach",
+      "question": "Spadochron",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_453",
-      "question": "Walka z niedźwiedziem w lesie",
+      "question": "Paralotnia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_454",
-      "question": "Skok ze spadochronem z samolotu",
+      "question": "Alpinizm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_455",
-      "question": "Przeżycie w dżungli bez jedzenia",
+      "question": "Everest",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_456",
-      "question": "Ucieczka przed lawiną na nartach",
+      "question": "Rafting",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_457",
-      "question": "Osoba zamknięta w klatce z rekinami",
+      "question": "Kitesurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_458",
-      "question": "Wspinaczka na Mount Everest w zamieci",
+      "question": "Windsurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_459",
-      "question": "Przeprawa przez pustynię bez wody",
+      "question": "Wakeboard",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_460",
-      "question": "Chodzenie po linie między wieżowcami",
+      "question": "Parkour",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_461",
-      "question": "Osoba gasząca płonący budynek",
+      "question": "Motocross",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_462",
-      "question": "Ucieczka przed tornadem samochodem",
+      "question": "Rajd",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_463",
-      "question": "Jedzenie żywego skorpiona",
+      "question": "Wyścig",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_464",
-      "question": "Próba wydostania się z tonącego samochodu",
+      "question": "Żonglerka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_465",
-      "question": "Ucieczka przed stadem szarżujących byków",
+      "question": "Linoskoczek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_466",
-      "question": "Osoba lądująca uszkodzonym samolotem",
+      "question": "Rodeo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_467",
-      "question": "Przeprawa przez rzekę pełną piranii",
+      "question": "Korrida",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_468",
-      "question": "Osoba uwięziona w płonącym windzie",
+      "question": "Morsowanie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_469",
-      "question": "Kierowca Formuły 1 w padającym deszczu przy 300 km/h",
+      "question": "Speleologia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_470",
-      "question": "Ucieczka z walącego się budynku podczas trzęsienia ziemi",
+      "question": "Jaskinia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_471",
-      "question": "Lądowanie bez spadochronu na stóg siana",
+      "question": "Lodowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_472",
-      "question": "Walka z aligatorem na bagnach",
+      "question": "Lawina",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_473",
-      "question": "Chodzenie po szkle boso",
+      "question": "Sztorm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_474",
-      "question": "Szybki zjazd na linie (zipline) nad wielkim kanionem",
+      "question": "Huragan",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_475",
-      "question": "Nurek schodzący na 100 metrów bez akwalungu",
+      "question": "Pustynia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_476",
-      "question": "Przeprawa przez pole minowe",
+      "question": "Dżungla",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_477",
-      "question": "Rozbrajanie bomby zegarowej na 3 sekundy przed wybuchem",
+      "question": "Survival",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_478",
-      "question": "Ucieczka z więzienia o maksymalnym rygorze",
+      "question": "Rozbitek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_479",
-      "question": "Stawienie czoła tsunami na plaży",
+      "question": "Ucieczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_480",
-      "question": "Latanie w kombinezonie wingsuit blisko skał",
+      "question": "Pościg",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_481",
-      "question": "Próba powstrzymania rozpędzonego pociągu",
+      "question": "Kaskader",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_482",
-      "question": "Osoba utknęła na diabelskim młynie na samej górze",
+      "question": "Szybowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_483",
-      "question": "Osoba wciągana przez ruchome piaski",
+      "question": "Sterowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_484",
-      "question": "Przeżycie na bezludnej wyspie przez rok",
+      "question": "Wingsuit",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_485",
-      "question": "Wspinaczka bez zabezpieczenia (free solo)",
+      "question": "Freediving",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_486",
-      "question": "Ucieczka przed watahą głodnych wilków",
+      "question": "Triathlon",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_487",
-      "question": "Przejście przez płonący tunel",
+      "question": "Ironman",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_488",
-      "question": "Osoba na tratwie podczas sztormu na oceanie",
+      "question": "Ultramaraton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_489",
-      "question": "Zjazd na desce po zboczu aktywnego wulkanu",
+      "question": "Skeleton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_490",
-      "question": "Skok z klifu do wzburzonego morza",
+      "question": "Bobsleje",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_491",
-      "question": "Osoba osaczona przez jadowite węże",
+      "question": "Saneczkarstwo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_492",
-      "question": "Próba opanowania szalejącego pożaru lasu",
+      "question": "Rollercoaster",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_493",
-      "question": "Zjazd bobslejem po oblodzonym torze",
+      "question": "Labirynt",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_494",
-      "question": "Przeprawa przez lodowatą rzekę na Syberii",
+      "question": "Pożar",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_495",
-      "question": "Osoba potrącona przez falę uderzeniową wybuchu",
+      "question": "Powódź",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_496",
-      "question": "Ucieczka przed rojem szerszeni aziatyckich",
+      "question": "Duch",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_497",
-      "question": "Lot motolotnią w trakcie burzy z piorunami",
+      "question": "Zombie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_498",
-      "question": "Kaskader wykonujący dachowanie autem",
+      "question": "Wampir",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_499",
-      "question": "Walka o ogień w epoce kamienia",
+      "question": "Egzorcyzm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_500",
-      "question": "Osoba wciągnięta w wir wodny",
+      "question": "Wspinaczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     }
@@ -43838,3001 +43838,3001 @@ export const DEFAULT_REVERSE_CHARADES: { [key in Language]: any[] } = {
   "DE": [
     {
       "id": "rc_1",
-      "question": "Lekarz przeprowadzający operację",
+      "question": "Lekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_2",
-      "question": "Strażak gaszący pożar",
+      "question": "Strażak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_3",
-      "question": "Policjant kierujący ruchem",
+      "question": "Policjant",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_4",
-      "question": "Kucharz smażący naleśniki",
+      "question": "Kucharz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_5",
-      "question": "Nauczyciel piszący na tablicy",
+      "question": "Fryzjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_6",
-      "question": "Kelner niosący tacę z napojami",
+      "question": "Dentysta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_7",
-      "question": "Fryzjer ścinający włosy",
+      "question": "Pilot",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_8",
-      "question": "Krawiec szyjący ubranie",
+      "question": "Kelner",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_9",
-      "question": "Fotograf robiący zdjęcie",
+      "question": "Listonosz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_10",
-      "question": "Sędzia piłkarski pokazujący czerwoną kartkę",
+      "question": "Hydraulik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_11",
-      "question": "Astronauta chodzący po Księżycu",
+      "question": "Elektryk",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_12",
-      "question": "Szef kuchni degustujący zupę",
+      "question": "Murarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_13",
-      "question": "Malarz malujący obraz na sztaludze",
+      "question": "Malarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_14",
-      "question": "Dyrygent prowadzący orkiestrę",
+      "question": "Stolarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_15",
-      "question": "Modelka na wybiegu",
+      "question": "Nauczyciel",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_16",
-      "question": "Piekarz wyciągający chleb z pieca",
+      "question": "Sprzedawca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_17",
-      "question": "Górnik pracujący z kilofem",
+      "question": "Kierowca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_18",
-      "question": "Budowlaniec układający cegły",
+      "question": "Taksówkarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_19",
-      "question": "Masażysta wykonujący masaż",
+      "question": "Żołnierz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_20",
-      "question": "Listonosz wręczający list",
+      "question": "Ratownik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_21",
-      "question": "Stolarz piłujący drewno",
+      "question": "Pielęgniarka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_22",
-      "question": "Przewodnik oprowadzający wycieczkę",
+      "question": "Weterynarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_23",
-      "question": "Pilot kierujący samolotem",
+      "question": "Rolnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_24",
-      "question": "Mechanik naprawiający silnik",
+      "question": "Piekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_25",
-      "question": "Sprzątaczka myjąca podłogę mopa",
+      "question": "Rzeźnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_26",
-      "question": "Programista piszący kod na klawiaturze",
+      "question": "Kosmonauta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_27",
-      "question": "Dziennikarz przeprowadzający wywiad",
+      "question": "Detektyw",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_28",
-      "question": "Ochroniarz sprawdzający bilety",
+      "question": "Sędzia",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_29",
-      "question": "Taksówkarz trzymający kierownicę",
+      "question": "Adwokat",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_30",
-      "question": "Bibliotekarz układający książki",
+      "question": "Dyrygent",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_31",
-      "question": "Kolejarz dający sygnał gwizdkiem",
+      "question": "Fotograf",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_32",
-      "question": "Kwiaciarka robiąca bukiet",
+      "question": "Kasjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_33",
-      "question": "Kominiarz czyszczący komin",
+      "question": "Barman",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_34",
-      "question": "Hydraulik naprawiający rurę",
+      "question": "Ogrodnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_35",
-      "question": "Dentysta borujący ząb",
+      "question": "Górnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_36",
-      "question": "Weterynarz badający psa",
+      "question": "Rybak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_37",
-      "question": "Architekt rysujący plan",
+      "question": "Mechanik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_38",
-      "question": "Aktor ukłaniający się na scenie",
+      "question": "Krawiec",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_39",
-      "question": "Rzeźbiarz pracujący w dłucie",
+      "question": "Sprzątaczka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_40",
-      "question": "Rolnik prowadzący traktor",
+      "question": "Ochroniarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_41",
-      "question": "Rybak wyciągający sieć",
+      "question": "Programista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_42",
-      "question": "Zegarmistrz naprawiający zegarek",
+      "question": "Księgowy",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_43",
-      "question": "Barman mieszający drinka w shakerze",
+      "question": "Kominiarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_44",
-      "question": "Dostawca pizzy pukający do drzwi",
+      "question": "Szewc",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_45",
-      "question": "Bileter sprawdzający bilety w kinie",
+      "question": "Chirurg",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_46",
-      "question": "Bankier liczący plik pieniędzy",
+      "question": "Archeolog",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_47",
-      "question": "Ratownik medyczny robiący resuscytację",
+      "question": "Akrobata",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_48",
-      "question": "Krupier rozdający karty w kasynie",
+      "question": "Iluzjonista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_49",
-      "question": "Pracownik magazynu przenoszący pudło",
+      "question": "Klaun",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_50",
-      "question": "Lektor czytający bajkę",
+      "question": "Treser",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_51",
-      "question": "Kot polujący na mysz",
+      "question": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_52",
-      "question": "Małpa jedząca banana",
+      "question": "Pies",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_53",
-      "question": "Pies goniący własny ogon",
+      "question": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_54",
-      "question": "Żaba skacząca po liściach",
+      "question": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_55",
-      "question": "Królik jedzący marchewkę",
+      "question": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_56",
-      "question": "Nurek pod wodą ze sprzętem",
+      "question": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_57",
-      "question": "Niedźwiedź łowiący łososia",
+      "question": "Kogut",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_58",
-      "question": "Ptak budujący gniazdo z gałązek",
+      "question": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_59",
-      "question": "Żyrafa sięgająca do wysokich liści",
+      "question": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_60",
-      "question": "Pies potrząsający mokrą sierścią",
+      "question": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_61",
-      "question": "Kura znosząca jajko",
+      "question": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_62",
-      "question": "Kangur skaczący po pustyni",
+      "question": "Królik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_63",
-      "question": "Kret kopiący kopiec",
+      "question": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_64",
-      "question": "Pingwin ślizgający się po lodzie",
+      "question": "Wąż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_65",
-      "question": "Wąż pełzający po trawie",
+      "question": "Krokodyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_66",
-      "question": "Dzięcioł stukający w pnie drzewa",
+      "question": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_67",
-      "question": "Bocian stojący na jednej nodze",
+      "question": "Żyrafa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_68",
-      "question": "Leniwiec powoli poruszający się po gałęzi",
+      "question": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_69",
-      "question": "Słoń pryskający wodą z trąby",
+      "question": "Goryl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_70",
-      "question": "Sowa kręcąca głową w nocy",
+      "question": "Lew",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_71",
-      "question": "Delfin wyskakujący z wody",
+      "question": "Tygrys",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_72",
-      "question": "Koń skaczący przez przeszkodę",
+      "question": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_73",
-      "question": "Skorpion groźnie unoszący ogon",
+      "question": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_74",
-      "question": "Bóbr budujący tamę z drewna",
+      "question": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_75",
-      "question": "Zebra uciekająca przed lwem",
+      "question": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_76",
-      "question": "Kameleon zmieniający kolor na gałęzi",
+      "question": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_77",
-      "question": "Krowa żująca trawę na łące",
+      "question": "Jeż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_78",
-      "question": "Pszczoła zbierająca pyłek z kwiatka",
+      "question": "Kangur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_79",
-      "question": "Wiewiórka zakopująca orzech",
+      "question": "Pingwin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_80",
-      "question": "Koala śpiący na drzewie eukaliptusowym",
+      "question": "Foka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_81",
-      "question": "Wielbłąd idący przez gorący piasek",
+      "question": "Delfin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_82",
-      "question": "Goryl uderzający się w pierś",
+      "question": "Rekin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_83",
-      "question": "Orzeł szybujący wysoko na wietrze",
+      "question": "Wieloryb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_84",
-      "question": "Homar machający szczypcami",
+      "question": "Ośmiornica",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_85",
-      "question": "Struś chowający głowę w piasek",
+      "question": "Krab",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_86",
-      "question": "Panda jedząca gałązki bambusa",
+      "question": "Pająk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_87",
-      "question": "Wilk wyjący do księżyca",
+      "question": "Pszczoła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_88",
-      "question": "Hipopotam otwierający wielką paszczę",
+      "question": "Motyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_89",
-      "question": "Krokodyl czatujący w wodzie",
+      "question": "Komar",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_90",
-      "question": "Indyk machający skrzydłami i gdaczący",
+      "question": "Mrówka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_91",
-      "question": "Nietoperz wiszący głową w dół",
+      "question": "Ślimak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_92",
-      "question": "Gęś idąca ciągiem za przewodnikem",
+      "question": "Sowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_93",
-      "question": "Rak chodzący tyłem",
+      "question": "Orzeł",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_94",
-      "question": "Żółw powoli chowający się w skorupie",
+      "question": "Papuga",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_95",
-      "question": "Meduza unosząca się w wodzie",
+      "question": "Paw",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_96",
-      "question": "Pawie prężący kolorowy ogon",
+      "question": "Flaming",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_97",
-      "question": "Kozica skacząca po skałach",
+      "question": "Struś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_98",
-      "question": "Komar bzyczący nad uchem",
+      "question": "Nietoperz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_99",
-      "question": "Świnia tarzająca się w błocie",
+      "question": "Kret",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_100",
-      "question": "Ślimak ciągnący swoją muszlę",
+      "question": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_101",
-      "question": "Narciarz zjeżdżający ze stoku",
+      "question": "Boks",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_102",
-      "question": "Piłkarz strzelający karnego",
+      "question": "Tenis",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_103",
-      "question": "Bokser w ringu",
+      "question": "Golf",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_104",
-      "question": "Tenisista serwujący piłkę",
+      "question": "Pływanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_105",
-      "question": "Pływak płynący żabką",
+      "question": "Narciarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_106",
-      "question": "Koszykarz robiący wsad",
+      "question": "Snowboard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_107",
-      "question": "Kultura fizyczna i podnoszenie ciężarów",
+      "question": "Łyżwiarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_108",
-      "question": "Osoba jeżdżąca na łyżwach",
+      "question": "Hokej",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_109",
-      "question": "Osoba grająca w kręgle",
+      "question": "Koszykówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_110",
-      "question": "Sumita wypychający przeciwnika z maty",
+      "question": "Siatkówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_111",
-      "question": "Siatkarz blokujący piłkę przy siatce",
+      "question": "Piłkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_112",
-      "question": "Biegacz finiszujący na mecie",
+      "question": "Bramkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_113",
-      "question": "Łucznik naciągający cięciwę",
+      "question": "Siłownia",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_114",
-      "question": "Szachista rozmyślający nad ruchem",
+      "question": "Joga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_115",
-      "question": "Wioślarz wiosłujący w łodzi",
+      "question": "Bieganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_116",
-      "question": "Szermierz wykonujący pchnięcie szpadą",
+      "question": "Maraton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_117",
-      "question": "Gimnastyczka robiąca salto",
+      "question": "Kolarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_118",
-      "question": "Jeździec skaczący na koniu",
+      "question": "Wioślarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_119",
-      "question": "Kolarz pedałujący pod górę",
+      "question": "Kajakarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_120",
-      "question": "Karateka rozbijający deskę dłonią",
+      "question": "Surfing",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_121",
-      "question": "Hokeista strzelający krążkiem",
+      "question": "Nurkowanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_122",
-      "question": "Surfer łapiący wielką falę",
+      "question": "Szermierka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_123",
-      "question": "Golfista uderzający piłeczkę",
+      "question": "Łucznictwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_124",
-      "question": "Skoczek o tyczce",
+      "question": "Judo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_125",
-      "question": "Skoczek narciarski w locie",
+      "question": "Karate",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_126",
-      "question": "Rzucający dyskiem na stadionie",
+      "question": "Zapasy",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_127",
-      "question": "Osoba grająca w badmintona",
+      "question": "Sumo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_128",
-      "question": "Kulturyści prezentujący mięśnie",
+      "question": "Gimnastyka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_129",
-      "question": "Biegacz przez płotki",
+      "question": "Skakanka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_130",
-      "question": "Osoba uprawiająca rafting na rzece",
+      "question": "Przysiady",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_131",
-      "question": "Nurek skaczący z wieży do wody",
+      "question": "Pompki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_132",
-      "question": "Osoba grająca w tenisa stołowego (ping-pong)",
+      "question": "Brzuszki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_133",
-      "question": "Osoba jeżdżąca na deskorolce (triki)",
+      "question": "Rozciąganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_134",
-      "question": "Osoba wspinająca się po ściance wspinaczkowej",
+      "question": "Badminton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_135",
-      "question": "Osoba grająca w bilard",
+      "question": "Kręgle",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_136",
-      "question": "Skoczek w dal rozbiegający się",
+      "question": "Bilard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_137",
-      "question": "Łyżwiarz figurowy robiący piruet",
+      "question": "Rzutki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_138",
-      "question": "Osoba strzelająca z pistoletu sportowego",
+      "question": "Curling",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_139",
-      "question": "Osoba uprawiająca windsurfing",
+      "question": "Skoczek",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_140",
-      "question": "Zawodnik sumo wykonujący ukłon",
+      "question": "Oszczep",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_141",
-      "question": "Biegacz narciarski na trasie",
+      "question": "Sztafeta",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_142",
-      "question": "Bobsleista wbijający się do sanki",
+      "question": "Jeździectwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_143",
-      "question": "Osoba tańcząca breakdance",
+      "question": "Rugby",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_144",
-      "question": "Rzucający oszczepem",
+      "question": "Baseball",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_145",
-      "question": "Zawodnik MMA walczący w parterze",
+      "question": "Taniec",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_146",
-      "question": "Osoba grająca w darta (rzutki)",
+      "question": "Aerobik",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_147",
-      "question": "Zapaśnik wykonujący rzut",
+      "question": "Trampolina",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_148",
-      "question": "Pływak wykonujący nawrót",
+      "question": "Hulajnoga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_149",
-      "question": "Sędzia bokserski odliczający zawodnika",
+      "question": "Rolki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_150",
-      "question": "Osoba skacząca na trampolinie",
+      "question": "Deskorolka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_151",
-      "question": "Osoba prasująca koszulę",
+      "question": "Odkurzanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_152",
-      "question": "Osoba malująca ścianę wałkiem",
+      "question": "Prasowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_153",
-      "question": "Osoba kosząca trawnik kosiarką",
+      "question": "Zmywanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_154",
-      "question": "Osoba wbijająca gwóźdź młotkiem",
+      "question": "Gotowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_155",
-      "question": "Osoba myjąca okno",
+      "question": "Pieczenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_156",
-      "question": "Osoba pompująca koło w rowerze",
+      "question": "Sprzątanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_157",
-      "question": "Osoba szukająca zgubionych kluczy w trawie",
+      "question": "Pranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_158",
-      "question": "Osoba obierająca ziemniaki",
+      "question": "Zamiatanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_159",
-      "question": "Osoba zmywająca naczynia",
+      "question": "Żelazko",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_160",
-      "question": "Osoba odkurzająca dywan",
+      "question": "Pralka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_161",
-      "question": "Osoba składająca pranie",
+      "question": "Odkurzacz",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_162",
-      "question": "Osoba wieszająca obraz na ścianie",
+      "question": "Mop",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_163",
-      "question": "Osoba parząca gorącą kawę",
+      "question": "Miotła",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_164",
-      "question": "Osoba podlewająca kwiaty konewką",
+      "question": "Zmywarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_165",
-      "question": "Osoba ścierająca kurze z półek",
+      "question": "Mikrofalówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_166",
-      "question": "Osoba krojąca cebulę ze łzami w oczach",
+      "question": "Toster",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_167",
-      "question": "Osoba wyrzucająca ciężki worek ze śmieciami",
+      "question": "Czajnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_168",
-      "question": "Osoba czyszcząca buty szczotką",
+      "question": "Lodówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_169",
-      "question": "Osoba ścieląca łóżko",
+      "question": "Piekarnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_170",
-      "question": "Osoba zmieniająca żarówkę na drabinie",
+      "question": "Patelnia",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_171",
-      "question": "Osoba trzepiąca dywan trzepaczką",
+      "question": "Blender",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_172",
-      "question": "Osoba wykręcająca mokrą ścierkę",
+      "question": "Suszarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_173",
-      "question": "Osoba piekąca ciasto w piekarniku",
+      "question": "Szczoteczka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_174",
-      "question": "Osoba myjąca samochód gąbką",
+      "question": "Prysznic",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_175",
-      "question": "Osoba szorująca przypalony garnek",
+      "question": "Wanna",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_176",
-      "question": "Osoba naprawiająca cieknący kran",
+      "question": "Golenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_177",
-      "question": "Osoba skręcająca meble kluczem imbusowym",
+      "question": "Czesanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_178",
-      "question": "Osoba nakładająca jedzenie dla psa",
+      "question": "Makijaż",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_179",
-      "question": "Osoba czyszcząca okulary ściereczką",
+      "question": "Podlewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_180",
-      "question": "Osoba pakująca walizkę na wakacje",
+      "question": "Grabienie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_181",
-      "question": "Osoba rozpalająca w kominku",
+      "question": "Koszenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_182",
-      "question": "Osoba ubierająca choinkę",
+      "question": "Odśnieżanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_183",
-      "question": "Osoba myjąca zęby szczoteczką",
+      "question": "Wiercenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_184",
-      "question": "Osoba czesząca poplątane włosy",
+      "question": "Młotek",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_185",
-      "question": "Osoba przycinająca żywopłot nożycami",
+      "question": "Śrubokręt",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_186",
-      "question": "Osoba grabiąca suche liście",
+      "question": "Drabina",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_187",
-      "question": "Osoba obcinająca paznokcie",
+      "question": "Żarówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_188",
-      "question": "Osoba rozwijająca taśmę klejącą",
+      "question": "Kanapka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_189",
-      "question": "Osoba otwierająca puszkę otwieraczem",
+      "question": "Śniadanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_190",
-      "question": "Osoba smarująca chleb masłem",
+      "question": "Budzik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_191",
-      "question": "Osoba myjąca włosy szamponem",
+      "question": "Ziewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_192",
-      "question": "Osoba nakładająca maseczkę na twarz",
+      "question": "Drzemka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_193",
-      "question": "Osoba parząca herbatę w zaparzaczu",
+      "question": "Chrapanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_194",
-      "question": "Osoba trzepiąca poduszkę",
+      "question": "Kąpiel",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_195",
-      "question": "Osoba czyszcząca ucho patyczkiem",
+      "question": "Zakupy",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_196",
-      "question": "Osoba zaklejająca kopertę jęzorem",
+      "question": "Pakowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_197",
-      "question": "Osoba nawlekająca nitkę na igłę",
+      "question": "Szycie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_198",
-      "question": "Osoba składająca kartonowe pudełko",
+      "question": "Krojenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_199",
-      "question": "Osoba wyciągająca gorącą blachę z piekarnika",
+      "question": "Obieranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_200",
-      "question": "Osoba zapalająca świeczkę zapałką",
+      "question": "Smażenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_201",
-      "question": "Iluzjonista wyciągający królika z kapelusza",
+      "question": "Batman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_202",
-      "question": "Gitarzysta na koncercie rockowym",
+      "question": "Superman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_203",
-      "question": "Szpieg skradający się w ciemności",
+      "question": "Spiderman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_204",
-      "question": "Rycerz walczący mieczem",
+      "question": "Hulk",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_205",
-      "question": "Harry Potter rzucający czar różdżką",
+      "question": "Thor",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_206",
-      "question": "Spider-Man strzelający pajęczyną",
+      "question": "Shrek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_207",
-      "question": "Michael Jackson tańczący moonwalk",
+      "question": "Pinokio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_208",
-      "question": "Batman obserwujący miasto z dachu",
+      "question": "Kopciuszek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_209",
-      "question": "Darth Vader dławiący przeciwnika Mocą",
+      "question": "Śnieżka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_210",
-      "question": "Jack Sparrow zataczający się na statku",
+      "question": "Roszpunka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_211",
-      "question": "Sherlock Holmes badający ślady lupą",
+      "question": "Elsa",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_212",
-      "question": "Robin Hood strzelający z łuku",
+      "question": "Tarzan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_213",
-      "question": "Tarzan skaczący na lianie",
+      "question": "Zorro",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_214",
-      "question": "Superman latający z wyciągniętą ręką",
+      "question": "Sherlock",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_215",
-      "question": "Shrek ryczący na swoim bagnie",
+      "question": "Dracula",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_216",
-      "question": "Zorro kreślący literę Z szpadą",
+      "question": "Frankenstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_217",
-      "question": "Geralt z Rivii dobywający miecza",
+      "question": "Gandalf",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_218",
-      "question": "Elsa zamrażająca wszystko wokół",
+      "question": "Yoda",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_219",
-      "question": "Freddie Mercury śpiewający z statywem",
+      "question": "Gollum",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_220",
-      "question": "Joker śmiejący się maniacznie",
+      "question": "Pikachu",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_221",
-      "question": "Terminator zakładający okulary przeciwsłoneczne",
+      "question": "Mario",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_222",
-      "question": "Rocky Balboa biegający po schodach",
+      "question": "Garfield",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_223",
-      "question": "Indiana Jones uciekający przed toczącym się głazem",
+      "question": "Smerfetka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_224",
-      "question": "Hulk wpadający w szał i niszczący rzeczy",
+      "question": "Gargamel",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_225",
-      "question": "Kopciuszek gubiący pantofelek",
+      "question": "Reksio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_226",
-      "question": "Czerwony Kapturek idący z koszyczkiem",
+      "question": "Matołek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_227",
-      "question": "Piotruś Pan walczący z Kapitanem Hakiem",
+      "question": "Napoleon",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_228",
-      "question": "Forrest Gump biegający w poprzek kraju",
+      "question": "Kopernik",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_229",
-      "question": "Wolverine wyciągający metalowe szpony",
+      "question": "Chopin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_230",
-      "question": "Thor zamachujący się młotem",
+      "question": "Einstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_231",
-      "question": "Pikachu rażący piorunem",
+      "question": "Kleopatra",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_232",
-      "question": "Super Mario skaczący na grzyba",
+      "question": "Elvis",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_233",
-      "question": "Dracula gryzący w szyję",
+      "question": "Rambo",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_234",
-      "question": "Frankenstein budzący się do życia",
+      "question": "Terminator",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_235",
-      "question": "Willy Wonka prezentujący fabrykę czekolady",
+      "question": "Joker",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_236",
-      "question": "Krzyk (Ghostface) dzwoniący z nożem",
+      "question": "Pocahontas",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_237",
-      "question": "Deadpool machający mieczami i żartujący",
+      "question": "Aladyn",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_238",
-      "question": "Barbie prezentująca idealną figurę",
+      "question": "Popeye",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_239",
-      "question": "Legolas strzelający serią strzał",
+      "question": "Asterix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_240",
-      "question": "Gollum pieszcząc swój cenne pierścień",
+      "question": "Obelix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_241",
-      "question": "Gandalf uderzający laską i krzyczący Nie przejdziesz",
+      "question": "Kolumb",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_242",
-      "question": "Mikołaj wręczający prezenty z worka",
+      "question": "Mulan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_243",
-      "question": "Diabeł wymachujący widłami",
+      "question": "Herkules",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_244",
-      "question": "Anioł grający na harfie",
+      "question": "Zeus",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_245",
-      "question": "Syrenka płynąca i podwijająca ogon",
+      "question": "Wiedźmin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_246",
-      "question": "Kowboj wyciągający rewolwer z kabury",
+      "question": "Mikołaj",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_247",
-      "question": "Ninja rzucający shurikeny",
+      "question": "Stitch",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_248",
-      "question": "Pirat patrzący przez lunetę",
+      "question": "Robocop",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_249",
-      "question": "Wiking wiosłujący na drakkarze",
+      "question": "Pippi",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_250",
-      "question": "Wampir chroniący się przed słońcem",
+      "question": "Hobbit",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_251",
-      "question": "Osoba próbująca złapać komara",
+      "question": "Karaoke",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_252",
-      "question": "Osoba chodząca po gorącym piasku",
+      "question": "Toast",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_253",
-      "question": "Osoba zakładająca ciasne buty",
+      "question": "Wesele",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_254",
-      "question": "Osoba jedząca bardzo ostre papryczki",
+      "question": "Urodziny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_255",
-      "question": "Osoba wędrująca po górach w zamieci",
+      "question": "Sylwester",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_256",
-      "question": "Osoba próbująca otworzyć wino bez korkociągu",
+      "question": "Ślub",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_257",
-      "question": "Osoba tańcząca hip-hop",
+      "question": "Oświadczyny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_258",
-      "question": "Osoba próbująca zapalić zapałkę na wietrze",
+      "question": "Randka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_259",
-      "question": "Osoba próbująca uciec przed rojem pszczół",
+      "question": "Kac",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_260",
-      "question": "Osoba grająca w wirtualnej rzeczywistości (VR)",
+      "question": "Selfie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_261",
-      "question": "Kierowca zepsutego auta na skrzyżowaniu",
+      "question": "Tort",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_262",
-      "question": "Pasażer ze spóźnionym pociągiem",
+      "question": "Prezent",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_263",
-      "question": "Osoba z niesamowicie mocnym ból zęba",
+      "question": "Konfetti",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_264",
-      "question": "Osoba poślizgująca się na skórce od banana",
+      "question": "Fajerwerki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_265",
-      "question": "Osoba wchodząca do bardzo zimnej wody",
+      "question": "Balony",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_266",
-      "question": "Osoba niosąca zbyt wiele siatek z zakupami",
+      "question": "Dyskoteka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_267",
-      "question": "Osoba szukająca telefonu, trzymając go w ręku",
+      "question": "Grill",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_268",
-      "question": "Osoba śpiewająca pod prysznicem",
+      "question": "Ognisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_269",
-      "question": "Osoba próbująca nawlec nitkę na igłę po ciemku",
+      "question": "Piknik",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_270",
-      "question": "Osoba wstrzymująca oddech pod wodą",
+      "question": "Kolejka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_271",
-      "question": "Osoba niespodziewanie oblana zimną wodą",
+      "question": "Spóźnienie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_272",
-      "question": "Osoba jedząca gorącą pizzę i parząca język",
+      "question": "Korek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_273",
-      "question": "Osoba zacięta przy goleniu",
+      "question": "Kłótnia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_274",
-      "question": "Osoba przymierzająca ciasne dżinsy",
+      "question": "Pocałunek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_275",
-      "question": "Osoba próbująca złapać uciekający autobus",
+      "question": "Pożegnanie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_276",
-      "question": "Osoba czkająca bez przerwy",
+      "question": "Egzamin",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_277",
-      "question": "Osoba potykająca się na prostej drodze",
+      "question": "Przeprowadzka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_278",
-      "question": "Osoba kichająca kilka razy z rzędu",
+      "question": "Wakacje",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_279",
-      "question": "Osoba zepsuła zamki w kurtce",
+      "question": "Lotnisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_280",
-      "question": "Osoba próbująca cicho otworzyć paczkę chipsów w nocy",
+      "question": "Walizka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_281",
-      "question": "Osoba, której zgasł telefon podczas ważnej rozmowy",
+      "question": "Winda",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_282",
-      "question": "Osoba pijąca zepsute mleko",
+      "question": "Imieniny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_283",
-      "question": "Osoba zablokowana w toalecie publicznej",
+      "question": "Matura",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_284",
-      "question": "Osoba z mokrymi skarpetkami",
+      "question": "Studniówka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_285",
-      "question": "Osoba, której ptak zanieczyścił ubranie",
+      "question": "Wigilia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_286",
-      "question": "Osoba próbująca zabić muchę gazeta",
+      "question": "Choinka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_287",
-      "question": "Osoba nadeptująca na klocki Lego boso",
+      "question": "Pisanki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_288",
-      "question": "Osoba marznąca na przystanku autobusowym",
+      "question": "Śmigus",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_289",
-      "question": "Osoba po użądleniu przez pszczołę w nos",
+      "question": "Andrzejki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_290",
-      "question": "Osoba zgubiła się w wielkim centrum handlowym",
+      "question": "Walentynki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_291",
-      "question": "Osoba próbująca zapamiętać kod PIN",
+      "question": "Halloween",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_292",
-      "question": "Osoba walcząca z parasolką na wietrze",
+      "question": "Kostium",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_293",
-      "question": "Osoba, która wylała sok na białą koszulę",
+      "question": "Polonez",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_294",
-      "question": "Osoba udająca że rozumie obcy język",
+      "question": "Szampan",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_295",
-      "question": "Osoba zasypiająca na nudnym wykładzie",
+      "question": "Bufet",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_296",
-      "question": "Osoba, której wypadł klucz do studzienki",
+      "question": "Plotka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_297",
-      "question": "Osoba próbująca dogonić psa bez smyczy",
+      "question": "Mandat",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_298",
-      "question": "Osoba marząca o zimnym piwie w upał",
+      "question": "Stłuczka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_299",
-      "question": "Osoba próbująca przeczytać drobny druk bez okularów",
+      "question": "Namiot",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_300",
-      "question": "Osoba powstrzymująca śmiech w kościele",
+      "question": "Autostop",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_301",
-      "question": "Dziecko budujące zamek z piasku",
+      "question": "Titanic",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_302",
-      "question": "Złodziej otwierający sejf",
+      "question": "Matrix",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_303",
-      "question": "Piosenkarz śpiewający do mikrofonu",
+      "question": "Avatar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_304",
-      "question": "Osoba grająca na perkusji",
+      "question": "Gladiator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_305",
-      "question": "Wędkarz złapawszy wielką rybę",
+      "question": "Rocky",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_306",
-      "question": "Osoba grająca na skrzypcami",
+      "question": "Szczęki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_307",
-      "question": "Piosenkarz rockowy rozbijający gitarę",
+      "question": "Psychoza",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_308",
-      "question": "Król nakładający koronę na głowę",
+      "question": "Obcy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_309",
-      "question": "Kat zamachujący się toporem",
+      "question": "Predator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_310",
-      "question": "Czarownica mieszająca wywar w kotle",
+      "question": "Incepcja",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_311",
-      "question": "Rycerz ratujący księżniczkę z wieży",
+      "question": "Interstellar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_312",
-      "question": "Gladiator walczący z lwem",
+      "question": "Godzilla",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_313",
-      "question": "Pirat szukający zakopanego skarbu",
+      "question": "Kevin",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_314",
-      "question": "Astronauta wychodzący w otwartą przestrzeń",
+      "question": "Madagaskar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_315",
-      "question": "Superbohater ratujący spadający autobus",
+      "question": "Zwierzogród",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_316",
-      "question": "Zombi powoli idące i wyciągające ręce",
+      "question": "Odlot",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_317",
-      "question": "Robot poruszający się sztywno",
+      "question": "Coco",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_318",
-      "question": "Mumia wyłaniająca się z grobowca",
+      "question": "Auta",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_319",
-      "question": "Duch latający i straszący ludzi",
+      "question": "Nemo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_320",
-      "question": "Kosmita badający ziemski przedmiot",
+      "question": "Dumbo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_321",
-      "question": "Syrena śpiewająca na skale",
+      "question": "Bambi",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_322",
-      "question": "Wilkołak zmieniający się podczas pełni",
+      "question": "Vaiana",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_323",
-      "question": "Wampir śpiący w trumnie",
+      "question": "Ratatuj",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_324",
-      "question": "Krasnolud kopiący diamenty w kopalni",
+      "question": "Minionki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_325",
-      "question": "Elf strzelający łukiem z drzewa",
+      "question": "Smerfy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_326",
-      "question": "Smok ziejący ogniem",
+      "question": "Muminki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_327",
-      "question": "Jednorożec biegający po tęczy",
+      "question": "Teletubisie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_328",
-      "question": "Kowboj jeżdżący na dzikim koniu",
+      "question": "Pokemon",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_329",
-      "question": "Indianin tańczący taniec deszczu",
+      "question": "Simpsonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_330",
-      "question": "Samuraj wykonujący cięcie kataną",
+      "question": "Flintstonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_331",
-      "question": "Ninja skaczący z dachu na dach",
+      "question": "Scooby",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_332",
-      "question": "Wiking pijący miód z rogu",
+      "question": "Puchatek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_333",
-      "question": "Gladiator wznoszący kciuk w górę",
+      "question": "Krzyżacy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_334",
-      "question": "Królowa wydająca wyrok skazujący",
+      "question": "Potop",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_335",
-      "question": "Błazen zabawiąjący dwór królewski",
+      "question": "Pianista",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_336",
-      "question": "Alchemik mieszający eliksiry",
+      "question": "Miś",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_337",
-      "question": "Detektyw szukający śladów z lupą",
+      "question": "Rejs",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_338",
-      "question": "Złodziej skradający się przez laserowe zabezpieczenia",
+      "question": "Kiler",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_339",
-      "question": "Tajna agentka rzucająca granat błyskowy",
+      "question": "Hydrozagadka",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_340",
-      "question": "Superzłoczyńca śmiejący się w swojej bazie",
+      "question": "Piraci",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_341",
-      "question": "Robot bojowy strzelający z laserów",
+      "question": "Rango",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_342",
-      "question": "Syrena wciągająca żeglarza pod wodę",
+      "question": "Zaplątani",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_343",
-      "question": "Minotaur krążący po labiryncie",
+      "question": "Merida",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_344",
-      "question": "Cyklop patrzący jednym wielkim okiem",
+      "question": "Bolt",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_345",
-      "question": "Meduza zamieniająca ludzi w kamień wzrokiem",
+      "question": "Gremliny",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_346",
-      "question": "Gargulec siedzący nieruchomo na dachu",
+      "question": "Casper",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_347",
-      "question": "Dżin wychodzący z zakurzonej lampy",
+      "question": "Mumia",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_348",
-      "question": "Pegaz machający skrzydłami",
+      "question": "Transformers",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_349",
-      "question": "Kraken zatapiający żaglowiec",
+      "question": "Tron",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_350",
-      "question": "Sfinks zadający trudną zagadkę",
+      "question": "Bajtek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_351",
-      "question": "Osoba grająca na gitarze akustycznej",
+      "question": "Wędkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_352",
-      "question": "Osoba malująca obraz pędzlem",
+      "question": "Szydełkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_353",
-      "question": "Osoba układająca puzzle na stole",
+      "question": "Dzierganie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_354",
-      "question": "Osoba szydełkująca szalik z włóczki",
+      "question": "Rysowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_355",
-      "question": "Osoba rzeźbiąca w drewnie",
+      "question": "Fotografia",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_356",
-      "question": "Osoba fotografująca ptaki w lesie",
+      "question": "Ogrodnictwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_357",
-      "question": "Osoba czytająca wciągającą książkę",
+      "question": "Szachy",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_358",
-      "question": "Osoba układająca klocki Lego",
+      "question": "Warcaby",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_359",
-      "question": "Osoba pielęgnująca rośliny w ogrodzie",
+      "question": "Puzzle",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_360",
-      "question": "Osoba tańcząca salsę",
+      "question": "Sudoku",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_361",
-      "question": "Osoba grająca w planszówki z przyjaciółmi",
+      "question": "Krzyżówka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_362",
-      "question": "Osoba łowiąca ryby na kanapie",
+      "question": "Karty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_363",
-      "question": "Osoba majsterkująca w garażu",
+      "question": "Poker",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_364",
-      "question": "Osoba piekąca domowy chleb",
+      "question": "Gitara",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_365",
-      "question": "Osoba obserwująca gwiazdy przez teleskop",
+      "question": "Perkusja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_366",
-      "question": "Osoba zbierająca grzyby w lesie",
+      "question": "Pianino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_367",
-      "question": "Osoba nurkująca z rurką (snorkeling)",
+      "question": "Skrzypce",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_368",
-      "question": "Osoba jeżdżąca na rolkach w parku",
+      "question": "Trąbka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_369",
-      "question": "Osoba śpiewająca karaoke",
+      "question": "Harmonijka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_370",
-      "question": "Osoba układająca kostkę Rubika",
+      "question": "Śpiewanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_371",
-      "question": "Osoba grająca w szachy",
+      "question": "Czytanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_372",
-      "question": "Osoba tworząca ceramikę na kole garncarskim",
+      "question": "Medytacja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_373",
-      "question": "Osoba robiąca zdjęcia aparat analogowym",
+      "question": "Origami",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_374",
-      "question": "Osoba tańcząca pole dance",
+      "question": "Grzybobranie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_375",
-      "question": "Osoba pisząca wiersz w notatniku",
+      "question": "Spacer",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_376",
-      "question": "Osoba szyjąca maskotkę na maszynie",
+      "question": "Rower",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_377",
-      "question": "Osoba piekąca dekoracyjne babeczki",
+      "question": "Biwakowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_378",
-      "question": "Osoba grająca w darta w pubie",
+      "question": "Żeglarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_379",
-      "question": "Osoba ćwicząca kaligrafię pędzlem",
+      "question": "Konsola",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_380",
-      "question": "Osoba miksująca muzykę jako DJ",
+      "question": "Granie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_381",
-      "question": "Osoba zbierająca znaczki pocztowe w klasztorze",
+      "question": "Kolekcjonowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_382",
-      "question": "Osoba jeżdżąca na deskorolce",
+      "question": "Majsterkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_383",
-      "question": "Osoba ćwicząca jogę w plenerze",
+      "question": "Garncarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_384",
-      "question": "Osoba składająca origami z papieru",
+      "question": "Rzeźbienie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_385",
-      "question": "Osoba grająca na ukulele",
+      "question": "Haftowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_386",
-      "question": "Osoba trenująca sztuki walki",
+      "question": "Tatuaż",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_387",
-      "question": "Osoba spacerująca z wykrywaczem metalu",
+      "question": "Kino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_388",
-      "question": "Osoba puszczająca latawiec na wietrze",
+      "question": "Teatr",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_389",
-      "question": "Osoba jeżdżąca na monocyklu",
+      "question": "Opera",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_390",
-      "question": "Osoba żonglująca piłeczkami",
+      "question": "Koncert",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_391",
-      "question": "Osoba grająca na harmonijce ustnej",
+      "question": "Akwarium",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_392",
-      "question": "Osoba wspinająca się na drzewo",
+      "question": "Latawiec",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_393",
-      "question": "Osoba puszczająca bańki mydlane",
+      "question": "Bańki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_394",
-      "question": "Osoba robiąca tatuaż maszynką",
+      "question": "Huśtawka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_395",
-      "question": "Osoba jeżdżąca na hulajnodze wyczynowej",
+      "question": "Karuzela",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_396",
-      "question": "Osoba kempingująca pod namiotem",
+      "question": "Paintball",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_397",
-      "question": "Osoba grająca na pianinie",
+      "question": "Gokarty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_398",
-      "question": "Osoba trenująca łucznictwo",
+      "question": "Planszówki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_399",
-      "question": "Osoba układająca domino",
+      "question": "Jojo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_400",
-      "question": "Osoba ucząca się sztuczek z kartami",
+      "question": "Ogród",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_401",
-      "question": "Osoba bardzo wystraszona horrorem",
+      "question": "Złość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_402",
-      "question": "Osoba płacząca ze wzruszenia",
+      "question": "Radość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_403",
-      "question": "Osoba wściekła z powodu zepsutego auta",
+      "question": "Smutek",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_404",
-      "question": "Osoba śmiejąca się do łez",
+      "question": "Strach",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_405",
-      "question": "Osoba bardzo senna i ziewająca",
+      "question": "Zazdrość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_406",
-      "question": "Osoba zakochana z motylami w brzuchu",
+      "question": "Wstyd",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_407",
-      "question": "Osoba oburzona i machająca rękami",
+      "question": "Zdziwienie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_408",
-      "question": "Osoba dumna ze swojego sukcesu",
+      "question": "Obrzydzenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_409",
-      "question": "Osoba zestresowana przed egzaminem",
+      "question": "Nuda",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_410",
-      "question": "Osoba podejrzliwa i rozglądająca się",
+      "question": "Zmęczenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_411",
-      "question": "Osoba wściekła na spóźniony autobus",
+      "question": "Zakochanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_412",
-      "question": "Osoba bardzo znudzona na spotkaniu",
+      "question": "Duma",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_413",
-      "question": "Osoba marząca z głową w chmurach",
+      "question": "Stres",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_414",
-      "question": "Osoba zawstydzona po gafie",
+      "question": "Panika",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_415",
-      "question": "Osoba przerażona pająkiem",
+      "question": "Euforia",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_416",
-      "question": "Osoba zachwycona pięknym widokiem",
+      "question": "Ekscytacja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_417",
-      "question": "Osoba zniecierpliwiona stojąca w kolejce",
+      "question": "Rozczarowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_418",
-      "question": "Osoba zazdrosna patrząca z boku",
+      "question": "Zakłopotanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_419",
-      "question": "Osoba w głębokiej rozpaczy",
+      "question": "Tęsknota",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_420",
-      "question": "Osoba bardzo odważna prężąca klatkę",
+      "question": "Ulga",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_421",
-      "question": "Osoba obrzydzona zepsutym jedzeniem",
+      "question": "Lenistwo",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_422",
-      "question": "Osoba oszołomiona i kręcąca się w głowie",
+      "question": "Niecierpliwość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_423",
-      "question": "Osoba skryta chowająca twarz",
+      "question": "Ciekawość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_424",
-      "question": "Osoba chciwa zgarniająca monety",
+      "question": "Nieśmiałość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_425",
-      "question": "Osoba wściekła grająca w grę i rzucająca padem",
+      "question": "Arogancja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_426",
-      "question": "Osoba podejrzewająca zdradę",
+      "question": "Płacz",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_427",
-      "question": "Osoba rozkojarzona zapominająca co robi",
+      "question": "Śmiech",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_428",
-      "question": "Osoba zachłanna jedząca łapczywie",
+      "question": "Chichot",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_429",
-      "question": "Osoba cieszaca się jak dziecko z prezentu",
+      "question": "Krzyk",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_430",
-      "question": "Osoba bezradna rozkładająca ręce",
+      "question": "Szept",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_431",
-      "question": "Osoba udająca twardziela",
+      "question": "Czkawka",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_432",
-      "question": "Osoba zestresowana rozmową telefoniczną",
+      "question": "Kichanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_433",
-      "question": "Osoba panikująca z powodu zgubionego dziecka",
+      "question": "Kaszel",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_434",
-      "question": "Osoba czująca ulgę po zdany teście",
+      "question": "Drżenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_435",
-      "question": "Osoba wściekła na hałasujących sąsiadów",
+      "question": "Rumieniec",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_436",
-      "question": "Osoba zamyślona drapiąca się po głowie",
+      "question": "Mruganie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_437",
-      "question": "Osoba zszokowana niespodziewaną wiadomością",
+      "question": "Podglądanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_438",
-      "question": "Osoba obojętna wzruszająca ramionami",
+      "question": "Skradanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_439",
-      "question": "Osoba pewna siebie krocząca z wysoko podniesioną głową",
+      "question": "Foch",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_440",
-      "question": "Osoba podejrzana próbująca coś ukryć za plecami",
+      "question": "Przytulanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_441",
-      "question": "Osoba przestraszona nagłym grzmotem",
+      "question": "Klaskanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_442",
-      "question": "Osoba zniecierpliwiona stukająca palcami w stół",
+      "question": "Machanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_443",
-      "question": "Osoba złośliwa knująca spisek",
+      "question": "Ukłon",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_444",
-      "question": "Osoba wzruszona słuchając pięknej muzyki",
+      "question": "Salutowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_445",
-      "question": "Osoba wstydząca się zabrać głos",
+      "question": "Wzruszenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_446",
-      "question": "Osoba zrezygnowana machająca ręką",
+      "question": "Histeria",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_447",
-      "question": "Osoba podekscytowana nadchodzącą podróżą",
+      "question": "Zamyślenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_448",
-      "question": "Osoba uśmiechająca się nieszczerze",
+      "question": "Senność",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_449",
-      "question": "Osoba przestraszona własnym odbiciem",
+      "question": "Głód",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_450",
-      "question": "Osoba płacząca ze złości",
+      "question": "Flirt",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_451",
-      "question": "Skok na bungee nad przepaścią",
+      "question": "Bungee",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_452",
-      "question": "Chodzenie po rozżarzonych węglach",
+      "question": "Spadochron",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_453",
-      "question": "Walka z niedźwiedziem w lesie",
+      "question": "Paralotnia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_454",
-      "question": "Skok ze spadochronem z samolotu",
+      "question": "Alpinizm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_455",
-      "question": "Przeżycie w dżungli bez jedzenia",
+      "question": "Everest",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_456",
-      "question": "Ucieczka przed lawiną na nartach",
+      "question": "Rafting",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_457",
-      "question": "Osoba zamknięta w klatce z rekinami",
+      "question": "Kitesurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_458",
-      "question": "Wspinaczka na Mount Everest w zamieci",
+      "question": "Windsurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_459",
-      "question": "Przeprawa przez pustynię bez wody",
+      "question": "Wakeboard",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_460",
-      "question": "Chodzenie po linie między wieżowcami",
+      "question": "Parkour",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_461",
-      "question": "Osoba gasząca płonący budynek",
+      "question": "Motocross",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_462",
-      "question": "Ucieczka przed tornadem samochodem",
+      "question": "Rajd",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_463",
-      "question": "Jedzenie żywego skorpiona",
+      "question": "Wyścig",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_464",
-      "question": "Próba wydostania się z tonącego samochodu",
+      "question": "Żonglerka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_465",
-      "question": "Ucieczka przed stadem szarżujących byków",
+      "question": "Linoskoczek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_466",
-      "question": "Osoba lądująca uszkodzonym samolotem",
+      "question": "Rodeo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_467",
-      "question": "Przeprawa przez rzekę pełną piranii",
+      "question": "Korrida",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_468",
-      "question": "Osoba uwięziona w płonącym windzie",
+      "question": "Morsowanie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_469",
-      "question": "Kierowca Formuły 1 w padającym deszczu przy 300 km/h",
+      "question": "Speleologia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_470",
-      "question": "Ucieczka z walącego się budynku podczas trzęsienia ziemi",
+      "question": "Jaskinia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_471",
-      "question": "Lądowanie bez spadochronu na stóg siana",
+      "question": "Lodowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_472",
-      "question": "Walka z aligatorem na bagnach",
+      "question": "Lawina",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_473",
-      "question": "Chodzenie po szkle boso",
+      "question": "Sztorm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_474",
-      "question": "Szybki zjazd na linie (zipline) nad wielkim kanionem",
+      "question": "Huragan",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_475",
-      "question": "Nurek schodzący na 100 metrów bez akwalungu",
+      "question": "Pustynia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_476",
-      "question": "Przeprawa przez pole minowe",
+      "question": "Dżungla",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_477",
-      "question": "Rozbrajanie bomby zegarowej na 3 sekundy przed wybuchem",
+      "question": "Survival",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_478",
-      "question": "Ucieczka z więzienia o maksymalnym rygorze",
+      "question": "Rozbitek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_479",
-      "question": "Stawienie czoła tsunami na plaży",
+      "question": "Ucieczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_480",
-      "question": "Latanie w kombinezonie wingsuit blisko skał",
+      "question": "Pościg",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_481",
-      "question": "Próba powstrzymania rozpędzonego pociągu",
+      "question": "Kaskader",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_482",
-      "question": "Osoba utknęła na diabelskim młynie na samej górze",
+      "question": "Szybowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_483",
-      "question": "Osoba wciągana przez ruchome piaski",
+      "question": "Sterowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_484",
-      "question": "Przeżycie na bezludnej wyspie przez rok",
+      "question": "Wingsuit",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_485",
-      "question": "Wspinaczka bez zabezpieczenia (free solo)",
+      "question": "Freediving",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_486",
-      "question": "Ucieczka przed watahą głodnych wilków",
+      "question": "Triathlon",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_487",
-      "question": "Przejście przez płonący tunel",
+      "question": "Ironman",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_488",
-      "question": "Osoba na tratwie podczas sztormu na oceanie",
+      "question": "Ultramaraton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_489",
-      "question": "Zjazd na desce po zboczu aktywnego wulkanu",
+      "question": "Skeleton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_490",
-      "question": "Skok z klifu do wzburzonego morza",
+      "question": "Bobsleje",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_491",
-      "question": "Osoba osaczona przez jadowite węże",
+      "question": "Saneczkarstwo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_492",
-      "question": "Próba opanowania szalejącego pożaru lasu",
+      "question": "Rollercoaster",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_493",
-      "question": "Zjazd bobslejem po oblodzonym torze",
+      "question": "Labirynt",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_494",
-      "question": "Przeprawa przez lodowatą rzekę na Syberii",
+      "question": "Pożar",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_495",
-      "question": "Osoba potrącona przez falę uderzeniową wybuchu",
+      "question": "Powódź",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_496",
-      "question": "Ucieczka przed rojem szerszeni aziatyckich",
+      "question": "Duch",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_497",
-      "question": "Lot motolotnią w trakcie burzy z piorunami",
+      "question": "Zombie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_498",
-      "question": "Kaskader wykonujący dachowanie autem",
+      "question": "Wampir",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_499",
-      "question": "Walka o ogień w epoce kamienia",
+      "question": "Egzorcyzm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_500",
-      "question": "Osoba wciągnięta w wir wodny",
+      "question": "Wspinaczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     }
@@ -46840,3001 +46840,3001 @@ export const DEFAULT_REVERSE_CHARADES: { [key in Language]: any[] } = {
   "ES": [
     {
       "id": "rc_1",
-      "question": "Lekarz przeprowadzający operację",
+      "question": "Lekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_2",
-      "question": "Strażak gaszący pożar",
+      "question": "Strażak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_3",
-      "question": "Policjant kierujący ruchem",
+      "question": "Policjant",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_4",
-      "question": "Kucharz smażący naleśniki",
+      "question": "Kucharz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_5",
-      "question": "Nauczyciel piszący na tablicy",
+      "question": "Fryzjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_6",
-      "question": "Kelner niosący tacę z napojami",
+      "question": "Dentysta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_7",
-      "question": "Fryzjer ścinający włosy",
+      "question": "Pilot",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_8",
-      "question": "Krawiec szyjący ubranie",
+      "question": "Kelner",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_9",
-      "question": "Fotograf robiący zdjęcie",
+      "question": "Listonosz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_10",
-      "question": "Sędzia piłkarski pokazujący czerwoną kartkę",
+      "question": "Hydraulik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_11",
-      "question": "Astronauta chodzący po Księżycu",
+      "question": "Elektryk",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_12",
-      "question": "Szef kuchni degustujący zupę",
+      "question": "Murarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_13",
-      "question": "Malarz malujący obraz na sztaludze",
+      "question": "Malarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_14",
-      "question": "Dyrygent prowadzący orkiestrę",
+      "question": "Stolarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_15",
-      "question": "Modelka na wybiegu",
+      "question": "Nauczyciel",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_16",
-      "question": "Piekarz wyciągający chleb z pieca",
+      "question": "Sprzedawca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_17",
-      "question": "Górnik pracujący z kilofem",
+      "question": "Kierowca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_18",
-      "question": "Budowlaniec układający cegły",
+      "question": "Taksówkarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_19",
-      "question": "Masażysta wykonujący masaż",
+      "question": "Żołnierz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_20",
-      "question": "Listonosz wręczający list",
+      "question": "Ratownik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_21",
-      "question": "Stolarz piłujący drewno",
+      "question": "Pielęgniarka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_22",
-      "question": "Przewodnik oprowadzający wycieczkę",
+      "question": "Weterynarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_23",
-      "question": "Pilot kierujący samolotem",
+      "question": "Rolnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_24",
-      "question": "Mechanik naprawiający silnik",
+      "question": "Piekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_25",
-      "question": "Sprzątaczka myjąca podłogę mopa",
+      "question": "Rzeźnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_26",
-      "question": "Programista piszący kod na klawiaturze",
+      "question": "Kosmonauta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_27",
-      "question": "Dziennikarz przeprowadzający wywiad",
+      "question": "Detektyw",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_28",
-      "question": "Ochroniarz sprawdzający bilety",
+      "question": "Sędzia",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_29",
-      "question": "Taksówkarz trzymający kierownicę",
+      "question": "Adwokat",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_30",
-      "question": "Bibliotekarz układający książki",
+      "question": "Dyrygent",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_31",
-      "question": "Kolejarz dający sygnał gwizdkiem",
+      "question": "Fotograf",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_32",
-      "question": "Kwiaciarka robiąca bukiet",
+      "question": "Kasjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_33",
-      "question": "Kominiarz czyszczący komin",
+      "question": "Barman",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_34",
-      "question": "Hydraulik naprawiający rurę",
+      "question": "Ogrodnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_35",
-      "question": "Dentysta borujący ząb",
+      "question": "Górnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_36",
-      "question": "Weterynarz badający psa",
+      "question": "Rybak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_37",
-      "question": "Architekt rysujący plan",
+      "question": "Mechanik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_38",
-      "question": "Aktor ukłaniający się na scenie",
+      "question": "Krawiec",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_39",
-      "question": "Rzeźbiarz pracujący w dłucie",
+      "question": "Sprzątaczka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_40",
-      "question": "Rolnik prowadzący traktor",
+      "question": "Ochroniarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_41",
-      "question": "Rybak wyciągający sieć",
+      "question": "Programista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_42",
-      "question": "Zegarmistrz naprawiający zegarek",
+      "question": "Księgowy",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_43",
-      "question": "Barman mieszający drinka w shakerze",
+      "question": "Kominiarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_44",
-      "question": "Dostawca pizzy pukający do drzwi",
+      "question": "Szewc",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_45",
-      "question": "Bileter sprawdzający bilety w kinie",
+      "question": "Chirurg",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_46",
-      "question": "Bankier liczący plik pieniędzy",
+      "question": "Archeolog",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_47",
-      "question": "Ratownik medyczny robiący resuscytację",
+      "question": "Akrobata",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_48",
-      "question": "Krupier rozdający karty w kasynie",
+      "question": "Iluzjonista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_49",
-      "question": "Pracownik magazynu przenoszący pudło",
+      "question": "Klaun",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_50",
-      "question": "Lektor czytający bajkę",
+      "question": "Treser",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_51",
-      "question": "Kot polujący na mysz",
+      "question": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_52",
-      "question": "Małpa jedząca banana",
+      "question": "Pies",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_53",
-      "question": "Pies goniący własny ogon",
+      "question": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_54",
-      "question": "Żaba skacząca po liściach",
+      "question": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_55",
-      "question": "Królik jedzący marchewkę",
+      "question": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_56",
-      "question": "Nurek pod wodą ze sprzętem",
+      "question": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_57",
-      "question": "Niedźwiedź łowiący łososia",
+      "question": "Kogut",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_58",
-      "question": "Ptak budujący gniazdo z gałązek",
+      "question": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_59",
-      "question": "Żyrafa sięgająca do wysokich liści",
+      "question": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_60",
-      "question": "Pies potrząsający mokrą sierścią",
+      "question": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_61",
-      "question": "Kura znosząca jajko",
+      "question": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_62",
-      "question": "Kangur skaczący po pustyni",
+      "question": "Królik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_63",
-      "question": "Kret kopiący kopiec",
+      "question": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_64",
-      "question": "Pingwin ślizgający się po lodzie",
+      "question": "Wąż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_65",
-      "question": "Wąż pełzający po trawie",
+      "question": "Krokodyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_66",
-      "question": "Dzięcioł stukający w pnie drzewa",
+      "question": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_67",
-      "question": "Bocian stojący na jednej nodze",
+      "question": "Żyrafa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_68",
-      "question": "Leniwiec powoli poruszający się po gałęzi",
+      "question": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_69",
-      "question": "Słoń pryskający wodą z trąby",
+      "question": "Goryl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_70",
-      "question": "Sowa kręcąca głową w nocy",
+      "question": "Lew",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_71",
-      "question": "Delfin wyskakujący z wody",
+      "question": "Tygrys",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_72",
-      "question": "Koń skaczący przez przeszkodę",
+      "question": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_73",
-      "question": "Skorpion groźnie unoszący ogon",
+      "question": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_74",
-      "question": "Bóbr budujący tamę z drewna",
+      "question": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_75",
-      "question": "Zebra uciekająca przed lwem",
+      "question": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_76",
-      "question": "Kameleon zmieniający kolor na gałęzi",
+      "question": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_77",
-      "question": "Krowa żująca trawę na łące",
+      "question": "Jeż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_78",
-      "question": "Pszczoła zbierająca pyłek z kwiatka",
+      "question": "Kangur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_79",
-      "question": "Wiewiórka zakopująca orzech",
+      "question": "Pingwin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_80",
-      "question": "Koala śpiący na drzewie eukaliptusowym",
+      "question": "Foka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_81",
-      "question": "Wielbłąd idący przez gorący piasek",
+      "question": "Delfin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_82",
-      "question": "Goryl uderzający się w pierś",
+      "question": "Rekin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_83",
-      "question": "Orzeł szybujący wysoko na wietrze",
+      "question": "Wieloryb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_84",
-      "question": "Homar machający szczypcami",
+      "question": "Ośmiornica",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_85",
-      "question": "Struś chowający głowę w piasek",
+      "question": "Krab",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_86",
-      "question": "Panda jedząca gałązki bambusa",
+      "question": "Pająk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_87",
-      "question": "Wilk wyjący do księżyca",
+      "question": "Pszczoła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_88",
-      "question": "Hipopotam otwierający wielką paszczę",
+      "question": "Motyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_89",
-      "question": "Krokodyl czatujący w wodzie",
+      "question": "Komar",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_90",
-      "question": "Indyk machający skrzydłami i gdaczący",
+      "question": "Mrówka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_91",
-      "question": "Nietoperz wiszący głową w dół",
+      "question": "Ślimak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_92",
-      "question": "Gęś idąca ciągiem za przewodnikem",
+      "question": "Sowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_93",
-      "question": "Rak chodzący tyłem",
+      "question": "Orzeł",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_94",
-      "question": "Żółw powoli chowający się w skorupie",
+      "question": "Papuga",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_95",
-      "question": "Meduza unosząca się w wodzie",
+      "question": "Paw",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_96",
-      "question": "Pawie prężący kolorowy ogon",
+      "question": "Flaming",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_97",
-      "question": "Kozica skacząca po skałach",
+      "question": "Struś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_98",
-      "question": "Komar bzyczący nad uchem",
+      "question": "Nietoperz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_99",
-      "question": "Świnia tarzająca się w błocie",
+      "question": "Kret",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_100",
-      "question": "Ślimak ciągnący swoją muszlę",
+      "question": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_101",
-      "question": "Narciarz zjeżdżający ze stoku",
+      "question": "Boks",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_102",
-      "question": "Piłkarz strzelający karnego",
+      "question": "Tenis",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_103",
-      "question": "Bokser w ringu",
+      "question": "Golf",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_104",
-      "question": "Tenisista serwujący piłkę",
+      "question": "Pływanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_105",
-      "question": "Pływak płynący żabką",
+      "question": "Narciarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_106",
-      "question": "Koszykarz robiący wsad",
+      "question": "Snowboard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_107",
-      "question": "Kultura fizyczna i podnoszenie ciężarów",
+      "question": "Łyżwiarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_108",
-      "question": "Osoba jeżdżąca na łyżwach",
+      "question": "Hokej",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_109",
-      "question": "Osoba grająca w kręgle",
+      "question": "Koszykówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_110",
-      "question": "Sumita wypychający przeciwnika z maty",
+      "question": "Siatkówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_111",
-      "question": "Siatkarz blokujący piłkę przy siatce",
+      "question": "Piłkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_112",
-      "question": "Biegacz finiszujący na mecie",
+      "question": "Bramkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_113",
-      "question": "Łucznik naciągający cięciwę",
+      "question": "Siłownia",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_114",
-      "question": "Szachista rozmyślający nad ruchem",
+      "question": "Joga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_115",
-      "question": "Wioślarz wiosłujący w łodzi",
+      "question": "Bieganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_116",
-      "question": "Szermierz wykonujący pchnięcie szpadą",
+      "question": "Maraton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_117",
-      "question": "Gimnastyczka robiąca salto",
+      "question": "Kolarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_118",
-      "question": "Jeździec skaczący na koniu",
+      "question": "Wioślarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_119",
-      "question": "Kolarz pedałujący pod górę",
+      "question": "Kajakarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_120",
-      "question": "Karateka rozbijający deskę dłonią",
+      "question": "Surfing",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_121",
-      "question": "Hokeista strzelający krążkiem",
+      "question": "Nurkowanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_122",
-      "question": "Surfer łapiący wielką falę",
+      "question": "Szermierka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_123",
-      "question": "Golfista uderzający piłeczkę",
+      "question": "Łucznictwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_124",
-      "question": "Skoczek o tyczce",
+      "question": "Judo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_125",
-      "question": "Skoczek narciarski w locie",
+      "question": "Karate",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_126",
-      "question": "Rzucający dyskiem na stadionie",
+      "question": "Zapasy",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_127",
-      "question": "Osoba grająca w badmintona",
+      "question": "Sumo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_128",
-      "question": "Kulturyści prezentujący mięśnie",
+      "question": "Gimnastyka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_129",
-      "question": "Biegacz przez płotki",
+      "question": "Skakanka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_130",
-      "question": "Osoba uprawiająca rafting na rzece",
+      "question": "Przysiady",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_131",
-      "question": "Nurek skaczący z wieży do wody",
+      "question": "Pompki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_132",
-      "question": "Osoba grająca w tenisa stołowego (ping-pong)",
+      "question": "Brzuszki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_133",
-      "question": "Osoba jeżdżąca na deskorolce (triki)",
+      "question": "Rozciąganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_134",
-      "question": "Osoba wspinająca się po ściance wspinaczkowej",
+      "question": "Badminton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_135",
-      "question": "Osoba grająca w bilard",
+      "question": "Kręgle",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_136",
-      "question": "Skoczek w dal rozbiegający się",
+      "question": "Bilard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_137",
-      "question": "Łyżwiarz figurowy robiący piruet",
+      "question": "Rzutki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_138",
-      "question": "Osoba strzelająca z pistoletu sportowego",
+      "question": "Curling",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_139",
-      "question": "Osoba uprawiająca windsurfing",
+      "question": "Skoczek",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_140",
-      "question": "Zawodnik sumo wykonujący ukłon",
+      "question": "Oszczep",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_141",
-      "question": "Biegacz narciarski na trasie",
+      "question": "Sztafeta",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_142",
-      "question": "Bobsleista wbijający się do sanki",
+      "question": "Jeździectwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_143",
-      "question": "Osoba tańcząca breakdance",
+      "question": "Rugby",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_144",
-      "question": "Rzucający oszczepem",
+      "question": "Baseball",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_145",
-      "question": "Zawodnik MMA walczący w parterze",
+      "question": "Taniec",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_146",
-      "question": "Osoba grająca w darta (rzutki)",
+      "question": "Aerobik",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_147",
-      "question": "Zapaśnik wykonujący rzut",
+      "question": "Trampolina",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_148",
-      "question": "Pływak wykonujący nawrót",
+      "question": "Hulajnoga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_149",
-      "question": "Sędzia bokserski odliczający zawodnika",
+      "question": "Rolki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_150",
-      "question": "Osoba skacząca na trampolinie",
+      "question": "Deskorolka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_151",
-      "question": "Osoba prasująca koszulę",
+      "question": "Odkurzanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_152",
-      "question": "Osoba malująca ścianę wałkiem",
+      "question": "Prasowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_153",
-      "question": "Osoba kosząca trawnik kosiarką",
+      "question": "Zmywanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_154",
-      "question": "Osoba wbijająca gwóźdź młotkiem",
+      "question": "Gotowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_155",
-      "question": "Osoba myjąca okno",
+      "question": "Pieczenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_156",
-      "question": "Osoba pompująca koło w rowerze",
+      "question": "Sprzątanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_157",
-      "question": "Osoba szukająca zgubionych kluczy w trawie",
+      "question": "Pranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_158",
-      "question": "Osoba obierająca ziemniaki",
+      "question": "Zamiatanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_159",
-      "question": "Osoba zmywająca naczynia",
+      "question": "Żelazko",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_160",
-      "question": "Osoba odkurzająca dywan",
+      "question": "Pralka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_161",
-      "question": "Osoba składająca pranie",
+      "question": "Odkurzacz",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_162",
-      "question": "Osoba wieszająca obraz na ścianie",
+      "question": "Mop",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_163",
-      "question": "Osoba parząca gorącą kawę",
+      "question": "Miotła",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_164",
-      "question": "Osoba podlewająca kwiaty konewką",
+      "question": "Zmywarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_165",
-      "question": "Osoba ścierająca kurze z półek",
+      "question": "Mikrofalówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_166",
-      "question": "Osoba krojąca cebulę ze łzami w oczach",
+      "question": "Toster",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_167",
-      "question": "Osoba wyrzucająca ciężki worek ze śmieciami",
+      "question": "Czajnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_168",
-      "question": "Osoba czyszcząca buty szczotką",
+      "question": "Lodówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_169",
-      "question": "Osoba ścieląca łóżko",
+      "question": "Piekarnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_170",
-      "question": "Osoba zmieniająca żarówkę na drabinie",
+      "question": "Patelnia",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_171",
-      "question": "Osoba trzepiąca dywan trzepaczką",
+      "question": "Blender",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_172",
-      "question": "Osoba wykręcająca mokrą ścierkę",
+      "question": "Suszarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_173",
-      "question": "Osoba piekąca ciasto w piekarniku",
+      "question": "Szczoteczka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_174",
-      "question": "Osoba myjąca samochód gąbką",
+      "question": "Prysznic",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_175",
-      "question": "Osoba szorująca przypalony garnek",
+      "question": "Wanna",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_176",
-      "question": "Osoba naprawiająca cieknący kran",
+      "question": "Golenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_177",
-      "question": "Osoba skręcająca meble kluczem imbusowym",
+      "question": "Czesanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_178",
-      "question": "Osoba nakładająca jedzenie dla psa",
+      "question": "Makijaż",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_179",
-      "question": "Osoba czyszcząca okulary ściereczką",
+      "question": "Podlewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_180",
-      "question": "Osoba pakująca walizkę na wakacje",
+      "question": "Grabienie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_181",
-      "question": "Osoba rozpalająca w kominku",
+      "question": "Koszenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_182",
-      "question": "Osoba ubierająca choinkę",
+      "question": "Odśnieżanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_183",
-      "question": "Osoba myjąca zęby szczoteczką",
+      "question": "Wiercenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_184",
-      "question": "Osoba czesząca poplątane włosy",
+      "question": "Młotek",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_185",
-      "question": "Osoba przycinająca żywopłot nożycami",
+      "question": "Śrubokręt",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_186",
-      "question": "Osoba grabiąca suche liście",
+      "question": "Drabina",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_187",
-      "question": "Osoba obcinająca paznokcie",
+      "question": "Żarówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_188",
-      "question": "Osoba rozwijająca taśmę klejącą",
+      "question": "Kanapka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_189",
-      "question": "Osoba otwierająca puszkę otwieraczem",
+      "question": "Śniadanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_190",
-      "question": "Osoba smarująca chleb masłem",
+      "question": "Budzik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_191",
-      "question": "Osoba myjąca włosy szamponem",
+      "question": "Ziewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_192",
-      "question": "Osoba nakładająca maseczkę na twarz",
+      "question": "Drzemka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_193",
-      "question": "Osoba parząca herbatę w zaparzaczu",
+      "question": "Chrapanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_194",
-      "question": "Osoba trzepiąca poduszkę",
+      "question": "Kąpiel",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_195",
-      "question": "Osoba czyszcząca ucho patyczkiem",
+      "question": "Zakupy",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_196",
-      "question": "Osoba zaklejająca kopertę jęzorem",
+      "question": "Pakowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_197",
-      "question": "Osoba nawlekająca nitkę na igłę",
+      "question": "Szycie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_198",
-      "question": "Osoba składająca kartonowe pudełko",
+      "question": "Krojenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_199",
-      "question": "Osoba wyciągająca gorącą blachę z piekarnika",
+      "question": "Obieranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_200",
-      "question": "Osoba zapalająca świeczkę zapałką",
+      "question": "Smażenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_201",
-      "question": "Iluzjonista wyciągający królika z kapelusza",
+      "question": "Batman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_202",
-      "question": "Gitarzysta na koncercie rockowym",
+      "question": "Superman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_203",
-      "question": "Szpieg skradający się w ciemności",
+      "question": "Spiderman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_204",
-      "question": "Rycerz walczący mieczem",
+      "question": "Hulk",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_205",
-      "question": "Harry Potter rzucający czar różdżką",
+      "question": "Thor",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_206",
-      "question": "Spider-Man strzelający pajęczyną",
+      "question": "Shrek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_207",
-      "question": "Michael Jackson tańczący moonwalk",
+      "question": "Pinokio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_208",
-      "question": "Batman obserwujący miasto z dachu",
+      "question": "Kopciuszek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_209",
-      "question": "Darth Vader dławiący przeciwnika Mocą",
+      "question": "Śnieżka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_210",
-      "question": "Jack Sparrow zataczający się na statku",
+      "question": "Roszpunka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_211",
-      "question": "Sherlock Holmes badający ślady lupą",
+      "question": "Elsa",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_212",
-      "question": "Robin Hood strzelający z łuku",
+      "question": "Tarzan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_213",
-      "question": "Tarzan skaczący na lianie",
+      "question": "Zorro",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_214",
-      "question": "Superman latający z wyciągniętą ręką",
+      "question": "Sherlock",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_215",
-      "question": "Shrek ryczący na swoim bagnie",
+      "question": "Dracula",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_216",
-      "question": "Zorro kreślący literę Z szpadą",
+      "question": "Frankenstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_217",
-      "question": "Geralt z Rivii dobywający miecza",
+      "question": "Gandalf",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_218",
-      "question": "Elsa zamrażająca wszystko wokół",
+      "question": "Yoda",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_219",
-      "question": "Freddie Mercury śpiewający z statywem",
+      "question": "Gollum",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_220",
-      "question": "Joker śmiejący się maniacznie",
+      "question": "Pikachu",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_221",
-      "question": "Terminator zakładający okulary przeciwsłoneczne",
+      "question": "Mario",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_222",
-      "question": "Rocky Balboa biegający po schodach",
+      "question": "Garfield",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_223",
-      "question": "Indiana Jones uciekający przed toczącym się głazem",
+      "question": "Smerfetka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_224",
-      "question": "Hulk wpadający w szał i niszczący rzeczy",
+      "question": "Gargamel",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_225",
-      "question": "Kopciuszek gubiący pantofelek",
+      "question": "Reksio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_226",
-      "question": "Czerwony Kapturek idący z koszyczkiem",
+      "question": "Matołek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_227",
-      "question": "Piotruś Pan walczący z Kapitanem Hakiem",
+      "question": "Napoleon",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_228",
-      "question": "Forrest Gump biegający w poprzek kraju",
+      "question": "Kopernik",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_229",
-      "question": "Wolverine wyciągający metalowe szpony",
+      "question": "Chopin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_230",
-      "question": "Thor zamachujący się młotem",
+      "question": "Einstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_231",
-      "question": "Pikachu rażący piorunem",
+      "question": "Kleopatra",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_232",
-      "question": "Super Mario skaczący na grzyba",
+      "question": "Elvis",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_233",
-      "question": "Dracula gryzący w szyję",
+      "question": "Rambo",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_234",
-      "question": "Frankenstein budzący się do życia",
+      "question": "Terminator",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_235",
-      "question": "Willy Wonka prezentujący fabrykę czekolady",
+      "question": "Joker",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_236",
-      "question": "Krzyk (Ghostface) dzwoniący z nożem",
+      "question": "Pocahontas",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_237",
-      "question": "Deadpool machający mieczami i żartujący",
+      "question": "Aladyn",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_238",
-      "question": "Barbie prezentująca idealną figurę",
+      "question": "Popeye",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_239",
-      "question": "Legolas strzelający serią strzał",
+      "question": "Asterix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_240",
-      "question": "Gollum pieszcząc swój cenne pierścień",
+      "question": "Obelix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_241",
-      "question": "Gandalf uderzający laską i krzyczący Nie przejdziesz",
+      "question": "Kolumb",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_242",
-      "question": "Mikołaj wręczający prezenty z worka",
+      "question": "Mulan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_243",
-      "question": "Diabeł wymachujący widłami",
+      "question": "Herkules",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_244",
-      "question": "Anioł grający na harfie",
+      "question": "Zeus",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_245",
-      "question": "Syrenka płynąca i podwijająca ogon",
+      "question": "Wiedźmin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_246",
-      "question": "Kowboj wyciągający rewolwer z kabury",
+      "question": "Mikołaj",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_247",
-      "question": "Ninja rzucający shurikeny",
+      "question": "Stitch",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_248",
-      "question": "Pirat patrzący przez lunetę",
+      "question": "Robocop",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_249",
-      "question": "Wiking wiosłujący na drakkarze",
+      "question": "Pippi",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_250",
-      "question": "Wampir chroniący się przed słońcem",
+      "question": "Hobbit",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_251",
-      "question": "Osoba próbująca złapać komara",
+      "question": "Karaoke",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_252",
-      "question": "Osoba chodząca po gorącym piasku",
+      "question": "Toast",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_253",
-      "question": "Osoba zakładająca ciasne buty",
+      "question": "Wesele",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_254",
-      "question": "Osoba jedząca bardzo ostre papryczki",
+      "question": "Urodziny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_255",
-      "question": "Osoba wędrująca po górach w zamieci",
+      "question": "Sylwester",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_256",
-      "question": "Osoba próbująca otworzyć wino bez korkociągu",
+      "question": "Ślub",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_257",
-      "question": "Osoba tańcząca hip-hop",
+      "question": "Oświadczyny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_258",
-      "question": "Osoba próbująca zapalić zapałkę na wietrze",
+      "question": "Randka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_259",
-      "question": "Osoba próbująca uciec przed rojem pszczół",
+      "question": "Kac",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_260",
-      "question": "Osoba grająca w wirtualnej rzeczywistości (VR)",
+      "question": "Selfie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_261",
-      "question": "Kierowca zepsutego auta na skrzyżowaniu",
+      "question": "Tort",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_262",
-      "question": "Pasażer ze spóźnionym pociągiem",
+      "question": "Prezent",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_263",
-      "question": "Osoba z niesamowicie mocnym ból zęba",
+      "question": "Konfetti",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_264",
-      "question": "Osoba poślizgująca się na skórce od banana",
+      "question": "Fajerwerki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_265",
-      "question": "Osoba wchodząca do bardzo zimnej wody",
+      "question": "Balony",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_266",
-      "question": "Osoba niosąca zbyt wiele siatek z zakupami",
+      "question": "Dyskoteka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_267",
-      "question": "Osoba szukająca telefonu, trzymając go w ręku",
+      "question": "Grill",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_268",
-      "question": "Osoba śpiewająca pod prysznicem",
+      "question": "Ognisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_269",
-      "question": "Osoba próbująca nawlec nitkę na igłę po ciemku",
+      "question": "Piknik",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_270",
-      "question": "Osoba wstrzymująca oddech pod wodą",
+      "question": "Kolejka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_271",
-      "question": "Osoba niespodziewanie oblana zimną wodą",
+      "question": "Spóźnienie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_272",
-      "question": "Osoba jedząca gorącą pizzę i parząca język",
+      "question": "Korek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_273",
-      "question": "Osoba zacięta przy goleniu",
+      "question": "Kłótnia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_274",
-      "question": "Osoba przymierzająca ciasne dżinsy",
+      "question": "Pocałunek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_275",
-      "question": "Osoba próbująca złapać uciekający autobus",
+      "question": "Pożegnanie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_276",
-      "question": "Osoba czkająca bez przerwy",
+      "question": "Egzamin",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_277",
-      "question": "Osoba potykająca się na prostej drodze",
+      "question": "Przeprowadzka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_278",
-      "question": "Osoba kichająca kilka razy z rzędu",
+      "question": "Wakacje",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_279",
-      "question": "Osoba zepsuła zamki w kurtce",
+      "question": "Lotnisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_280",
-      "question": "Osoba próbująca cicho otworzyć paczkę chipsów w nocy",
+      "question": "Walizka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_281",
-      "question": "Osoba, której zgasł telefon podczas ważnej rozmowy",
+      "question": "Winda",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_282",
-      "question": "Osoba pijąca zepsute mleko",
+      "question": "Imieniny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_283",
-      "question": "Osoba zablokowana w toalecie publicznej",
+      "question": "Matura",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_284",
-      "question": "Osoba z mokrymi skarpetkami",
+      "question": "Studniówka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_285",
-      "question": "Osoba, której ptak zanieczyścił ubranie",
+      "question": "Wigilia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_286",
-      "question": "Osoba próbująca zabić muchę gazeta",
+      "question": "Choinka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_287",
-      "question": "Osoba nadeptująca na klocki Lego boso",
+      "question": "Pisanki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_288",
-      "question": "Osoba marznąca na przystanku autobusowym",
+      "question": "Śmigus",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_289",
-      "question": "Osoba po użądleniu przez pszczołę w nos",
+      "question": "Andrzejki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_290",
-      "question": "Osoba zgubiła się w wielkim centrum handlowym",
+      "question": "Walentynki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_291",
-      "question": "Osoba próbująca zapamiętać kod PIN",
+      "question": "Halloween",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_292",
-      "question": "Osoba walcząca z parasolką na wietrze",
+      "question": "Kostium",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_293",
-      "question": "Osoba, która wylała sok na białą koszulę",
+      "question": "Polonez",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_294",
-      "question": "Osoba udająca że rozumie obcy język",
+      "question": "Szampan",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_295",
-      "question": "Osoba zasypiająca na nudnym wykładzie",
+      "question": "Bufet",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_296",
-      "question": "Osoba, której wypadł klucz do studzienki",
+      "question": "Plotka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_297",
-      "question": "Osoba próbująca dogonić psa bez smyczy",
+      "question": "Mandat",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_298",
-      "question": "Osoba marząca o zimnym piwie w upał",
+      "question": "Stłuczka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_299",
-      "question": "Osoba próbująca przeczytać drobny druk bez okularów",
+      "question": "Namiot",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_300",
-      "question": "Osoba powstrzymująca śmiech w kościele",
+      "question": "Autostop",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_301",
-      "question": "Dziecko budujące zamek z piasku",
+      "question": "Titanic",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_302",
-      "question": "Złodziej otwierający sejf",
+      "question": "Matrix",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_303",
-      "question": "Piosenkarz śpiewający do mikrofonu",
+      "question": "Avatar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_304",
-      "question": "Osoba grająca na perkusji",
+      "question": "Gladiator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_305",
-      "question": "Wędkarz złapawszy wielką rybę",
+      "question": "Rocky",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_306",
-      "question": "Osoba grająca na skrzypcami",
+      "question": "Szczęki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_307",
-      "question": "Piosenkarz rockowy rozbijający gitarę",
+      "question": "Psychoza",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_308",
-      "question": "Król nakładający koronę na głowę",
+      "question": "Obcy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_309",
-      "question": "Kat zamachujący się toporem",
+      "question": "Predator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_310",
-      "question": "Czarownica mieszająca wywar w kotle",
+      "question": "Incepcja",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_311",
-      "question": "Rycerz ratujący księżniczkę z wieży",
+      "question": "Interstellar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_312",
-      "question": "Gladiator walczący z lwem",
+      "question": "Godzilla",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_313",
-      "question": "Pirat szukający zakopanego skarbu",
+      "question": "Kevin",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_314",
-      "question": "Astronauta wychodzący w otwartą przestrzeń",
+      "question": "Madagaskar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_315",
-      "question": "Superbohater ratujący spadający autobus",
+      "question": "Zwierzogród",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_316",
-      "question": "Zombi powoli idące i wyciągające ręce",
+      "question": "Odlot",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_317",
-      "question": "Robot poruszający się sztywno",
+      "question": "Coco",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_318",
-      "question": "Mumia wyłaniająca się z grobowca",
+      "question": "Auta",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_319",
-      "question": "Duch latający i straszący ludzi",
+      "question": "Nemo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_320",
-      "question": "Kosmita badający ziemski przedmiot",
+      "question": "Dumbo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_321",
-      "question": "Syrena śpiewająca na skale",
+      "question": "Bambi",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_322",
-      "question": "Wilkołak zmieniający się podczas pełni",
+      "question": "Vaiana",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_323",
-      "question": "Wampir śpiący w trumnie",
+      "question": "Ratatuj",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_324",
-      "question": "Krasnolud kopiący diamenty w kopalni",
+      "question": "Minionki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_325",
-      "question": "Elf strzelający łukiem z drzewa",
+      "question": "Smerfy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_326",
-      "question": "Smok ziejący ogniem",
+      "question": "Muminki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_327",
-      "question": "Jednorożec biegający po tęczy",
+      "question": "Teletubisie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_328",
-      "question": "Kowboj jeżdżący na dzikim koniu",
+      "question": "Pokemon",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_329",
-      "question": "Indianin tańczący taniec deszczu",
+      "question": "Simpsonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_330",
-      "question": "Samuraj wykonujący cięcie kataną",
+      "question": "Flintstonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_331",
-      "question": "Ninja skaczący z dachu na dach",
+      "question": "Scooby",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_332",
-      "question": "Wiking pijący miód z rogu",
+      "question": "Puchatek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_333",
-      "question": "Gladiator wznoszący kciuk w górę",
+      "question": "Krzyżacy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_334",
-      "question": "Królowa wydająca wyrok skazujący",
+      "question": "Potop",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_335",
-      "question": "Błazen zabawiąjący dwór królewski",
+      "question": "Pianista",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_336",
-      "question": "Alchemik mieszający eliksiry",
+      "question": "Miś",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_337",
-      "question": "Detektyw szukający śladów z lupą",
+      "question": "Rejs",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_338",
-      "question": "Złodziej skradający się przez laserowe zabezpieczenia",
+      "question": "Kiler",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_339",
-      "question": "Tajna agentka rzucająca granat błyskowy",
+      "question": "Hydrozagadka",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_340",
-      "question": "Superzłoczyńca śmiejący się w swojej bazie",
+      "question": "Piraci",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_341",
-      "question": "Robot bojowy strzelający z laserów",
+      "question": "Rango",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_342",
-      "question": "Syrena wciągająca żeglarza pod wodę",
+      "question": "Zaplątani",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_343",
-      "question": "Minotaur krążący po labiryncie",
+      "question": "Merida",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_344",
-      "question": "Cyklop patrzący jednym wielkim okiem",
+      "question": "Bolt",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_345",
-      "question": "Meduza zamieniająca ludzi w kamień wzrokiem",
+      "question": "Gremliny",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_346",
-      "question": "Gargulec siedzący nieruchomo na dachu",
+      "question": "Casper",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_347",
-      "question": "Dżin wychodzący z zakurzonej lampy",
+      "question": "Mumia",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_348",
-      "question": "Pegaz machający skrzydłami",
+      "question": "Transformers",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_349",
-      "question": "Kraken zatapiający żaglowiec",
+      "question": "Tron",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_350",
-      "question": "Sfinks zadający trudną zagadkę",
+      "question": "Bajtek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_351",
-      "question": "Osoba grająca na gitarze akustycznej",
+      "question": "Wędkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_352",
-      "question": "Osoba malująca obraz pędzlem",
+      "question": "Szydełkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_353",
-      "question": "Osoba układająca puzzle na stole",
+      "question": "Dzierganie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_354",
-      "question": "Osoba szydełkująca szalik z włóczki",
+      "question": "Rysowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_355",
-      "question": "Osoba rzeźbiąca w drewnie",
+      "question": "Fotografia",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_356",
-      "question": "Osoba fotografująca ptaki w lesie",
+      "question": "Ogrodnictwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_357",
-      "question": "Osoba czytająca wciągającą książkę",
+      "question": "Szachy",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_358",
-      "question": "Osoba układająca klocki Lego",
+      "question": "Warcaby",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_359",
-      "question": "Osoba pielęgnująca rośliny w ogrodzie",
+      "question": "Puzzle",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_360",
-      "question": "Osoba tańcząca salsę",
+      "question": "Sudoku",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_361",
-      "question": "Osoba grająca w planszówki z przyjaciółmi",
+      "question": "Krzyżówka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_362",
-      "question": "Osoba łowiąca ryby na kanapie",
+      "question": "Karty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_363",
-      "question": "Osoba majsterkująca w garażu",
+      "question": "Poker",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_364",
-      "question": "Osoba piekąca domowy chleb",
+      "question": "Gitara",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_365",
-      "question": "Osoba obserwująca gwiazdy przez teleskop",
+      "question": "Perkusja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_366",
-      "question": "Osoba zbierająca grzyby w lesie",
+      "question": "Pianino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_367",
-      "question": "Osoba nurkująca z rurką (snorkeling)",
+      "question": "Skrzypce",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_368",
-      "question": "Osoba jeżdżąca na rolkach w parku",
+      "question": "Trąbka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_369",
-      "question": "Osoba śpiewająca karaoke",
+      "question": "Harmonijka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_370",
-      "question": "Osoba układająca kostkę Rubika",
+      "question": "Śpiewanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_371",
-      "question": "Osoba grająca w szachy",
+      "question": "Czytanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_372",
-      "question": "Osoba tworząca ceramikę na kole garncarskim",
+      "question": "Medytacja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_373",
-      "question": "Osoba robiąca zdjęcia aparat analogowym",
+      "question": "Origami",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_374",
-      "question": "Osoba tańcząca pole dance",
+      "question": "Grzybobranie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_375",
-      "question": "Osoba pisząca wiersz w notatniku",
+      "question": "Spacer",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_376",
-      "question": "Osoba szyjąca maskotkę na maszynie",
+      "question": "Rower",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_377",
-      "question": "Osoba piekąca dekoracyjne babeczki",
+      "question": "Biwakowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_378",
-      "question": "Osoba grająca w darta w pubie",
+      "question": "Żeglarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_379",
-      "question": "Osoba ćwicząca kaligrafię pędzlem",
+      "question": "Konsola",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_380",
-      "question": "Osoba miksująca muzykę jako DJ",
+      "question": "Granie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_381",
-      "question": "Osoba zbierająca znaczki pocztowe w klasztorze",
+      "question": "Kolekcjonowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_382",
-      "question": "Osoba jeżdżąca na deskorolce",
+      "question": "Majsterkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_383",
-      "question": "Osoba ćwicząca jogę w plenerze",
+      "question": "Garncarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_384",
-      "question": "Osoba składająca origami z papieru",
+      "question": "Rzeźbienie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_385",
-      "question": "Osoba grająca na ukulele",
+      "question": "Haftowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_386",
-      "question": "Osoba trenująca sztuki walki",
+      "question": "Tatuaż",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_387",
-      "question": "Osoba spacerująca z wykrywaczem metalu",
+      "question": "Kino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_388",
-      "question": "Osoba puszczająca latawiec na wietrze",
+      "question": "Teatr",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_389",
-      "question": "Osoba jeżdżąca na monocyklu",
+      "question": "Opera",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_390",
-      "question": "Osoba żonglująca piłeczkami",
+      "question": "Koncert",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_391",
-      "question": "Osoba grająca na harmonijce ustnej",
+      "question": "Akwarium",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_392",
-      "question": "Osoba wspinająca się na drzewo",
+      "question": "Latawiec",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_393",
-      "question": "Osoba puszczająca bańki mydlane",
+      "question": "Bańki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_394",
-      "question": "Osoba robiąca tatuaż maszynką",
+      "question": "Huśtawka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_395",
-      "question": "Osoba jeżdżąca na hulajnodze wyczynowej",
+      "question": "Karuzela",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_396",
-      "question": "Osoba kempingująca pod namiotem",
+      "question": "Paintball",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_397",
-      "question": "Osoba grająca na pianinie",
+      "question": "Gokarty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_398",
-      "question": "Osoba trenująca łucznictwo",
+      "question": "Planszówki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_399",
-      "question": "Osoba układająca domino",
+      "question": "Jojo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_400",
-      "question": "Osoba ucząca się sztuczek z kartami",
+      "question": "Ogród",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_401",
-      "question": "Osoba bardzo wystraszona horrorem",
+      "question": "Złość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_402",
-      "question": "Osoba płacząca ze wzruszenia",
+      "question": "Radość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_403",
-      "question": "Osoba wściekła z powodu zepsutego auta",
+      "question": "Smutek",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_404",
-      "question": "Osoba śmiejąca się do łez",
+      "question": "Strach",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_405",
-      "question": "Osoba bardzo senna i ziewająca",
+      "question": "Zazdrość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_406",
-      "question": "Osoba zakochana z motylami w brzuchu",
+      "question": "Wstyd",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_407",
-      "question": "Osoba oburzona i machająca rękami",
+      "question": "Zdziwienie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_408",
-      "question": "Osoba dumna ze swojego sukcesu",
+      "question": "Obrzydzenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_409",
-      "question": "Osoba zestresowana przed egzaminem",
+      "question": "Nuda",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_410",
-      "question": "Osoba podejrzliwa i rozglądająca się",
+      "question": "Zmęczenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_411",
-      "question": "Osoba wściekła na spóźniony autobus",
+      "question": "Zakochanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_412",
-      "question": "Osoba bardzo znudzona na spotkaniu",
+      "question": "Duma",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_413",
-      "question": "Osoba marząca z głową w chmurach",
+      "question": "Stres",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_414",
-      "question": "Osoba zawstydzona po gafie",
+      "question": "Panika",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_415",
-      "question": "Osoba przerażona pająkiem",
+      "question": "Euforia",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_416",
-      "question": "Osoba zachwycona pięknym widokiem",
+      "question": "Ekscytacja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_417",
-      "question": "Osoba zniecierpliwiona stojąca w kolejce",
+      "question": "Rozczarowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_418",
-      "question": "Osoba zazdrosna patrząca z boku",
+      "question": "Zakłopotanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_419",
-      "question": "Osoba w głębokiej rozpaczy",
+      "question": "Tęsknota",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_420",
-      "question": "Osoba bardzo odważna prężąca klatkę",
+      "question": "Ulga",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_421",
-      "question": "Osoba obrzydzona zepsutym jedzeniem",
+      "question": "Lenistwo",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_422",
-      "question": "Osoba oszołomiona i kręcąca się w głowie",
+      "question": "Niecierpliwość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_423",
-      "question": "Osoba skryta chowająca twarz",
+      "question": "Ciekawość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_424",
-      "question": "Osoba chciwa zgarniająca monety",
+      "question": "Nieśmiałość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_425",
-      "question": "Osoba wściekła grająca w grę i rzucająca padem",
+      "question": "Arogancja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_426",
-      "question": "Osoba podejrzewająca zdradę",
+      "question": "Płacz",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_427",
-      "question": "Osoba rozkojarzona zapominająca co robi",
+      "question": "Śmiech",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_428",
-      "question": "Osoba zachłanna jedząca łapczywie",
+      "question": "Chichot",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_429",
-      "question": "Osoba cieszaca się jak dziecko z prezentu",
+      "question": "Krzyk",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_430",
-      "question": "Osoba bezradna rozkładająca ręce",
+      "question": "Szept",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_431",
-      "question": "Osoba udająca twardziela",
+      "question": "Czkawka",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_432",
-      "question": "Osoba zestresowana rozmową telefoniczną",
+      "question": "Kichanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_433",
-      "question": "Osoba panikująca z powodu zgubionego dziecka",
+      "question": "Kaszel",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_434",
-      "question": "Osoba czująca ulgę po zdany teście",
+      "question": "Drżenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_435",
-      "question": "Osoba wściekła na hałasujących sąsiadów",
+      "question": "Rumieniec",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_436",
-      "question": "Osoba zamyślona drapiąca się po głowie",
+      "question": "Mruganie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_437",
-      "question": "Osoba zszokowana niespodziewaną wiadomością",
+      "question": "Podglądanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_438",
-      "question": "Osoba obojętna wzruszająca ramionami",
+      "question": "Skradanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_439",
-      "question": "Osoba pewna siebie krocząca z wysoko podniesioną głową",
+      "question": "Foch",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_440",
-      "question": "Osoba podejrzana próbująca coś ukryć za plecami",
+      "question": "Przytulanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_441",
-      "question": "Osoba przestraszona nagłym grzmotem",
+      "question": "Klaskanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_442",
-      "question": "Osoba zniecierpliwiona stukająca palcami w stół",
+      "question": "Machanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_443",
-      "question": "Osoba złośliwa knująca spisek",
+      "question": "Ukłon",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_444",
-      "question": "Osoba wzruszona słuchając pięknej muzyki",
+      "question": "Salutowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_445",
-      "question": "Osoba wstydząca się zabrać głos",
+      "question": "Wzruszenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_446",
-      "question": "Osoba zrezygnowana machająca ręką",
+      "question": "Histeria",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_447",
-      "question": "Osoba podekscytowana nadchodzącą podróżą",
+      "question": "Zamyślenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_448",
-      "question": "Osoba uśmiechająca się nieszczerze",
+      "question": "Senność",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_449",
-      "question": "Osoba przestraszona własnym odbiciem",
+      "question": "Głód",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_450",
-      "question": "Osoba płacząca ze złości",
+      "question": "Flirt",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_451",
-      "question": "Skok na bungee nad przepaścią",
+      "question": "Bungee",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_452",
-      "question": "Chodzenie po rozżarzonych węglach",
+      "question": "Spadochron",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_453",
-      "question": "Walka z niedźwiedziem w lesie",
+      "question": "Paralotnia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_454",
-      "question": "Skok ze spadochronem z samolotu",
+      "question": "Alpinizm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_455",
-      "question": "Przeżycie w dżungli bez jedzenia",
+      "question": "Everest",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_456",
-      "question": "Ucieczka przed lawiną na nartach",
+      "question": "Rafting",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_457",
-      "question": "Osoba zamknięta w klatce z rekinami",
+      "question": "Kitesurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_458",
-      "question": "Wspinaczka na Mount Everest w zamieci",
+      "question": "Windsurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_459",
-      "question": "Przeprawa przez pustynię bez wody",
+      "question": "Wakeboard",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_460",
-      "question": "Chodzenie po linie między wieżowcami",
+      "question": "Parkour",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_461",
-      "question": "Osoba gasząca płonący budynek",
+      "question": "Motocross",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_462",
-      "question": "Ucieczka przed tornadem samochodem",
+      "question": "Rajd",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_463",
-      "question": "Jedzenie żywego skorpiona",
+      "question": "Wyścig",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_464",
-      "question": "Próba wydostania się z tonącego samochodu",
+      "question": "Żonglerka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_465",
-      "question": "Ucieczka przed stadem szarżujących byków",
+      "question": "Linoskoczek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_466",
-      "question": "Osoba lądująca uszkodzonym samolotem",
+      "question": "Rodeo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_467",
-      "question": "Przeprawa przez rzekę pełną piranii",
+      "question": "Korrida",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_468",
-      "question": "Osoba uwięziona w płonącym windzie",
+      "question": "Morsowanie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_469",
-      "question": "Kierowca Formuły 1 w padającym deszczu przy 300 km/h",
+      "question": "Speleologia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_470",
-      "question": "Ucieczka z walącego się budynku podczas trzęsienia ziemi",
+      "question": "Jaskinia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_471",
-      "question": "Lądowanie bez spadochronu na stóg siana",
+      "question": "Lodowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_472",
-      "question": "Walka z aligatorem na bagnach",
+      "question": "Lawina",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_473",
-      "question": "Chodzenie po szkle boso",
+      "question": "Sztorm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_474",
-      "question": "Szybki zjazd na linie (zipline) nad wielkim kanionem",
+      "question": "Huragan",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_475",
-      "question": "Nurek schodzący na 100 metrów bez akwalungu",
+      "question": "Pustynia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_476",
-      "question": "Przeprawa przez pole minowe",
+      "question": "Dżungla",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_477",
-      "question": "Rozbrajanie bomby zegarowej na 3 sekundy przed wybuchem",
+      "question": "Survival",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_478",
-      "question": "Ucieczka z więzienia o maksymalnym rygorze",
+      "question": "Rozbitek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_479",
-      "question": "Stawienie czoła tsunami na plaży",
+      "question": "Ucieczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_480",
-      "question": "Latanie w kombinezonie wingsuit blisko skał",
+      "question": "Pościg",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_481",
-      "question": "Próba powstrzymania rozpędzonego pociągu",
+      "question": "Kaskader",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_482",
-      "question": "Osoba utknęła na diabelskim młynie na samej górze",
+      "question": "Szybowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_483",
-      "question": "Osoba wciągana przez ruchome piaski",
+      "question": "Sterowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_484",
-      "question": "Przeżycie na bezludnej wyspie przez rok",
+      "question": "Wingsuit",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_485",
-      "question": "Wspinaczka bez zabezpieczenia (free solo)",
+      "question": "Freediving",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_486",
-      "question": "Ucieczka przed watahą głodnych wilków",
+      "question": "Triathlon",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_487",
-      "question": "Przejście przez płonący tunel",
+      "question": "Ironman",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_488",
-      "question": "Osoba na tratwie podczas sztormu na oceanie",
+      "question": "Ultramaraton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_489",
-      "question": "Zjazd na desce po zboczu aktywnego wulkanu",
+      "question": "Skeleton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_490",
-      "question": "Skok z klifu do wzburzonego morza",
+      "question": "Bobsleje",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_491",
-      "question": "Osoba osaczona przez jadowite węże",
+      "question": "Saneczkarstwo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_492",
-      "question": "Próba opanowania szalejącego pożaru lasu",
+      "question": "Rollercoaster",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_493",
-      "question": "Zjazd bobslejem po oblodzonym torze",
+      "question": "Labirynt",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_494",
-      "question": "Przeprawa przez lodowatą rzekę na Syberii",
+      "question": "Pożar",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_495",
-      "question": "Osoba potrącona przez falę uderzeniową wybuchu",
+      "question": "Powódź",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_496",
-      "question": "Ucieczka przed rojem szerszeni aziatyckich",
+      "question": "Duch",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_497",
-      "question": "Lot motolotnią w trakcie burzy z piorunami",
+      "question": "Zombie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_498",
-      "question": "Kaskader wykonujący dachowanie autem",
+      "question": "Wampir",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_499",
-      "question": "Walka o ogień w epoce kamienia",
+      "question": "Egzorcyzm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_500",
-      "question": "Osoba wciągnięta w wir wodny",
+      "question": "Wspinaczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     }
@@ -49842,3001 +49842,3001 @@ export const DEFAULT_REVERSE_CHARADES: { [key in Language]: any[] } = {
   "FR": [
     {
       "id": "rc_1",
-      "question": "Lekarz przeprowadzający operację",
+      "question": "Lekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_2",
-      "question": "Strażak gaszący pożar",
+      "question": "Strażak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_3",
-      "question": "Policjant kierujący ruchem",
+      "question": "Policjant",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_4",
-      "question": "Kucharz smażący naleśniki",
+      "question": "Kucharz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_5",
-      "question": "Nauczyciel piszący na tablicy",
+      "question": "Fryzjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_6",
-      "question": "Kelner niosący tacę z napojami",
+      "question": "Dentysta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_7",
-      "question": "Fryzjer ścinający włosy",
+      "question": "Pilot",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_8",
-      "question": "Krawiec szyjący ubranie",
+      "question": "Kelner",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_9",
-      "question": "Fotograf robiący zdjęcie",
+      "question": "Listonosz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_10",
-      "question": "Sędzia piłkarski pokazujący czerwoną kartkę",
+      "question": "Hydraulik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_11",
-      "question": "Astronauta chodzący po Księżycu",
+      "question": "Elektryk",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_12",
-      "question": "Szef kuchni degustujący zupę",
+      "question": "Murarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_13",
-      "question": "Malarz malujący obraz na sztaludze",
+      "question": "Malarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_14",
-      "question": "Dyrygent prowadzący orkiestrę",
+      "question": "Stolarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_15",
-      "question": "Modelka na wybiegu",
+      "question": "Nauczyciel",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_16",
-      "question": "Piekarz wyciągający chleb z pieca",
+      "question": "Sprzedawca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_17",
-      "question": "Górnik pracujący z kilofem",
+      "question": "Kierowca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_18",
-      "question": "Budowlaniec układający cegły",
+      "question": "Taksówkarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_19",
-      "question": "Masażysta wykonujący masaż",
+      "question": "Żołnierz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_20",
-      "question": "Listonosz wręczający list",
+      "question": "Ratownik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_21",
-      "question": "Stolarz piłujący drewno",
+      "question": "Pielęgniarka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_22",
-      "question": "Przewodnik oprowadzający wycieczkę",
+      "question": "Weterynarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_23",
-      "question": "Pilot kierujący samolotem",
+      "question": "Rolnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_24",
-      "question": "Mechanik naprawiający silnik",
+      "question": "Piekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_25",
-      "question": "Sprzątaczka myjąca podłogę mopa",
+      "question": "Rzeźnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_26",
-      "question": "Programista piszący kod na klawiaturze",
+      "question": "Kosmonauta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_27",
-      "question": "Dziennikarz przeprowadzający wywiad",
+      "question": "Detektyw",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_28",
-      "question": "Ochroniarz sprawdzający bilety",
+      "question": "Sędzia",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_29",
-      "question": "Taksówkarz trzymający kierownicę",
+      "question": "Adwokat",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_30",
-      "question": "Bibliotekarz układający książki",
+      "question": "Dyrygent",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_31",
-      "question": "Kolejarz dający sygnał gwizdkiem",
+      "question": "Fotograf",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_32",
-      "question": "Kwiaciarka robiąca bukiet",
+      "question": "Kasjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_33",
-      "question": "Kominiarz czyszczący komin",
+      "question": "Barman",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_34",
-      "question": "Hydraulik naprawiający rurę",
+      "question": "Ogrodnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_35",
-      "question": "Dentysta borujący ząb",
+      "question": "Górnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_36",
-      "question": "Weterynarz badający psa",
+      "question": "Rybak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_37",
-      "question": "Architekt rysujący plan",
+      "question": "Mechanik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_38",
-      "question": "Aktor ukłaniający się na scenie",
+      "question": "Krawiec",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_39",
-      "question": "Rzeźbiarz pracujący w dłucie",
+      "question": "Sprzątaczka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_40",
-      "question": "Rolnik prowadzący traktor",
+      "question": "Ochroniarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_41",
-      "question": "Rybak wyciągający sieć",
+      "question": "Programista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_42",
-      "question": "Zegarmistrz naprawiający zegarek",
+      "question": "Księgowy",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_43",
-      "question": "Barman mieszający drinka w shakerze",
+      "question": "Kominiarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_44",
-      "question": "Dostawca pizzy pukający do drzwi",
+      "question": "Szewc",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_45",
-      "question": "Bileter sprawdzający bilety w kinie",
+      "question": "Chirurg",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_46",
-      "question": "Bankier liczący plik pieniędzy",
+      "question": "Archeolog",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_47",
-      "question": "Ratownik medyczny robiący resuscytację",
+      "question": "Akrobata",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_48",
-      "question": "Krupier rozdający karty w kasynie",
+      "question": "Iluzjonista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_49",
-      "question": "Pracownik magazynu przenoszący pudło",
+      "question": "Klaun",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_50",
-      "question": "Lektor czytający bajkę",
+      "question": "Treser",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_51",
-      "question": "Kot polujący na mysz",
+      "question": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_52",
-      "question": "Małpa jedząca banana",
+      "question": "Pies",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_53",
-      "question": "Pies goniący własny ogon",
+      "question": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_54",
-      "question": "Żaba skacząca po liściach",
+      "question": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_55",
-      "question": "Królik jedzący marchewkę",
+      "question": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_56",
-      "question": "Nurek pod wodą ze sprzętem",
+      "question": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_57",
-      "question": "Niedźwiedź łowiący łososia",
+      "question": "Kogut",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_58",
-      "question": "Ptak budujący gniazdo z gałązek",
+      "question": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_59",
-      "question": "Żyrafa sięgająca do wysokich liści",
+      "question": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_60",
-      "question": "Pies potrząsający mokrą sierścią",
+      "question": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_61",
-      "question": "Kura znosząca jajko",
+      "question": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_62",
-      "question": "Kangur skaczący po pustyni",
+      "question": "Królik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_63",
-      "question": "Kret kopiący kopiec",
+      "question": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_64",
-      "question": "Pingwin ślizgający się po lodzie",
+      "question": "Wąż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_65",
-      "question": "Wąż pełzający po trawie",
+      "question": "Krokodyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_66",
-      "question": "Dzięcioł stukający w pnie drzewa",
+      "question": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_67",
-      "question": "Bocian stojący na jednej nodze",
+      "question": "Żyrafa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_68",
-      "question": "Leniwiec powoli poruszający się po gałęzi",
+      "question": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_69",
-      "question": "Słoń pryskający wodą z trąby",
+      "question": "Goryl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_70",
-      "question": "Sowa kręcąca głową w nocy",
+      "question": "Lew",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_71",
-      "question": "Delfin wyskakujący z wody",
+      "question": "Tygrys",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_72",
-      "question": "Koń skaczący przez przeszkodę",
+      "question": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_73",
-      "question": "Skorpion groźnie unoszący ogon",
+      "question": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_74",
-      "question": "Bóbr budujący tamę z drewna",
+      "question": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_75",
-      "question": "Zebra uciekająca przed lwem",
+      "question": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_76",
-      "question": "Kameleon zmieniający kolor na gałęzi",
+      "question": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_77",
-      "question": "Krowa żująca trawę na łące",
+      "question": "Jeż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_78",
-      "question": "Pszczoła zbierająca pyłek z kwiatka",
+      "question": "Kangur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_79",
-      "question": "Wiewiórka zakopująca orzech",
+      "question": "Pingwin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_80",
-      "question": "Koala śpiący na drzewie eukaliptusowym",
+      "question": "Foka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_81",
-      "question": "Wielbłąd idący przez gorący piasek",
+      "question": "Delfin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_82",
-      "question": "Goryl uderzający się w pierś",
+      "question": "Rekin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_83",
-      "question": "Orzeł szybujący wysoko na wietrze",
+      "question": "Wieloryb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_84",
-      "question": "Homar machający szczypcami",
+      "question": "Ośmiornica",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_85",
-      "question": "Struś chowający głowę w piasek",
+      "question": "Krab",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_86",
-      "question": "Panda jedząca gałązki bambusa",
+      "question": "Pająk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_87",
-      "question": "Wilk wyjący do księżyca",
+      "question": "Pszczoła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_88",
-      "question": "Hipopotam otwierający wielką paszczę",
+      "question": "Motyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_89",
-      "question": "Krokodyl czatujący w wodzie",
+      "question": "Komar",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_90",
-      "question": "Indyk machający skrzydłami i gdaczący",
+      "question": "Mrówka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_91",
-      "question": "Nietoperz wiszący głową w dół",
+      "question": "Ślimak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_92",
-      "question": "Gęś idąca ciągiem za przewodnikem",
+      "question": "Sowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_93",
-      "question": "Rak chodzący tyłem",
+      "question": "Orzeł",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_94",
-      "question": "Żółw powoli chowający się w skorupie",
+      "question": "Papuga",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_95",
-      "question": "Meduza unosząca się w wodzie",
+      "question": "Paw",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_96",
-      "question": "Pawie prężący kolorowy ogon",
+      "question": "Flaming",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_97",
-      "question": "Kozica skacząca po skałach",
+      "question": "Struś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_98",
-      "question": "Komar bzyczący nad uchem",
+      "question": "Nietoperz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_99",
-      "question": "Świnia tarzająca się w błocie",
+      "question": "Kret",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_100",
-      "question": "Ślimak ciągnący swoją muszlę",
+      "question": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_101",
-      "question": "Narciarz zjeżdżający ze stoku",
+      "question": "Boks",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_102",
-      "question": "Piłkarz strzelający karnego",
+      "question": "Tenis",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_103",
-      "question": "Bokser w ringu",
+      "question": "Golf",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_104",
-      "question": "Tenisista serwujący piłkę",
+      "question": "Pływanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_105",
-      "question": "Pływak płynący żabką",
+      "question": "Narciarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_106",
-      "question": "Koszykarz robiący wsad",
+      "question": "Snowboard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_107",
-      "question": "Kultura fizyczna i podnoszenie ciężarów",
+      "question": "Łyżwiarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_108",
-      "question": "Osoba jeżdżąca na łyżwach",
+      "question": "Hokej",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_109",
-      "question": "Osoba grająca w kręgle",
+      "question": "Koszykówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_110",
-      "question": "Sumita wypychający przeciwnika z maty",
+      "question": "Siatkówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_111",
-      "question": "Siatkarz blokujący piłkę przy siatce",
+      "question": "Piłkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_112",
-      "question": "Biegacz finiszujący na mecie",
+      "question": "Bramkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_113",
-      "question": "Łucznik naciągający cięciwę",
+      "question": "Siłownia",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_114",
-      "question": "Szachista rozmyślający nad ruchem",
+      "question": "Joga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_115",
-      "question": "Wioślarz wiosłujący w łodzi",
+      "question": "Bieganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_116",
-      "question": "Szermierz wykonujący pchnięcie szpadą",
+      "question": "Maraton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_117",
-      "question": "Gimnastyczka robiąca salto",
+      "question": "Kolarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_118",
-      "question": "Jeździec skaczący na koniu",
+      "question": "Wioślarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_119",
-      "question": "Kolarz pedałujący pod górę",
+      "question": "Kajakarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_120",
-      "question": "Karateka rozbijający deskę dłonią",
+      "question": "Surfing",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_121",
-      "question": "Hokeista strzelający krążkiem",
+      "question": "Nurkowanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_122",
-      "question": "Surfer łapiący wielką falę",
+      "question": "Szermierka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_123",
-      "question": "Golfista uderzający piłeczkę",
+      "question": "Łucznictwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_124",
-      "question": "Skoczek o tyczce",
+      "question": "Judo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_125",
-      "question": "Skoczek narciarski w locie",
+      "question": "Karate",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_126",
-      "question": "Rzucający dyskiem na stadionie",
+      "question": "Zapasy",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_127",
-      "question": "Osoba grająca w badmintona",
+      "question": "Sumo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_128",
-      "question": "Kulturyści prezentujący mięśnie",
+      "question": "Gimnastyka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_129",
-      "question": "Biegacz przez płotki",
+      "question": "Skakanka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_130",
-      "question": "Osoba uprawiająca rafting na rzece",
+      "question": "Przysiady",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_131",
-      "question": "Nurek skaczący z wieży do wody",
+      "question": "Pompki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_132",
-      "question": "Osoba grająca w tenisa stołowego (ping-pong)",
+      "question": "Brzuszki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_133",
-      "question": "Osoba jeżdżąca na deskorolce (triki)",
+      "question": "Rozciąganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_134",
-      "question": "Osoba wspinająca się po ściance wspinaczkowej",
+      "question": "Badminton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_135",
-      "question": "Osoba grająca w bilard",
+      "question": "Kręgle",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_136",
-      "question": "Skoczek w dal rozbiegający się",
+      "question": "Bilard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_137",
-      "question": "Łyżwiarz figurowy robiący piruet",
+      "question": "Rzutki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_138",
-      "question": "Osoba strzelająca z pistoletu sportowego",
+      "question": "Curling",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_139",
-      "question": "Osoba uprawiająca windsurfing",
+      "question": "Skoczek",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_140",
-      "question": "Zawodnik sumo wykonujący ukłon",
+      "question": "Oszczep",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_141",
-      "question": "Biegacz narciarski na trasie",
+      "question": "Sztafeta",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_142",
-      "question": "Bobsleista wbijający się do sanki",
+      "question": "Jeździectwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_143",
-      "question": "Osoba tańcząca breakdance",
+      "question": "Rugby",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_144",
-      "question": "Rzucający oszczepem",
+      "question": "Baseball",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_145",
-      "question": "Zawodnik MMA walczący w parterze",
+      "question": "Taniec",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_146",
-      "question": "Osoba grająca w darta (rzutki)",
+      "question": "Aerobik",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_147",
-      "question": "Zapaśnik wykonujący rzut",
+      "question": "Trampolina",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_148",
-      "question": "Pływak wykonujący nawrót",
+      "question": "Hulajnoga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_149",
-      "question": "Sędzia bokserski odliczający zawodnika",
+      "question": "Rolki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_150",
-      "question": "Osoba skacząca na trampolinie",
+      "question": "Deskorolka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_151",
-      "question": "Osoba prasująca koszulę",
+      "question": "Odkurzanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_152",
-      "question": "Osoba malująca ścianę wałkiem",
+      "question": "Prasowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_153",
-      "question": "Osoba kosząca trawnik kosiarką",
+      "question": "Zmywanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_154",
-      "question": "Osoba wbijająca gwóźdź młotkiem",
+      "question": "Gotowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_155",
-      "question": "Osoba myjąca okno",
+      "question": "Pieczenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_156",
-      "question": "Osoba pompująca koło w rowerze",
+      "question": "Sprzątanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_157",
-      "question": "Osoba szukająca zgubionych kluczy w trawie",
+      "question": "Pranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_158",
-      "question": "Osoba obierająca ziemniaki",
+      "question": "Zamiatanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_159",
-      "question": "Osoba zmywająca naczynia",
+      "question": "Żelazko",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_160",
-      "question": "Osoba odkurzająca dywan",
+      "question": "Pralka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_161",
-      "question": "Osoba składająca pranie",
+      "question": "Odkurzacz",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_162",
-      "question": "Osoba wieszająca obraz na ścianie",
+      "question": "Mop",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_163",
-      "question": "Osoba parząca gorącą kawę",
+      "question": "Miotła",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_164",
-      "question": "Osoba podlewająca kwiaty konewką",
+      "question": "Zmywarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_165",
-      "question": "Osoba ścierająca kurze z półek",
+      "question": "Mikrofalówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_166",
-      "question": "Osoba krojąca cebulę ze łzami w oczach",
+      "question": "Toster",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_167",
-      "question": "Osoba wyrzucająca ciężki worek ze śmieciami",
+      "question": "Czajnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_168",
-      "question": "Osoba czyszcząca buty szczotką",
+      "question": "Lodówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_169",
-      "question": "Osoba ścieląca łóżko",
+      "question": "Piekarnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_170",
-      "question": "Osoba zmieniająca żarówkę na drabinie",
+      "question": "Patelnia",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_171",
-      "question": "Osoba trzepiąca dywan trzepaczką",
+      "question": "Blender",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_172",
-      "question": "Osoba wykręcająca mokrą ścierkę",
+      "question": "Suszarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_173",
-      "question": "Osoba piekąca ciasto w piekarniku",
+      "question": "Szczoteczka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_174",
-      "question": "Osoba myjąca samochód gąbką",
+      "question": "Prysznic",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_175",
-      "question": "Osoba szorująca przypalony garnek",
+      "question": "Wanna",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_176",
-      "question": "Osoba naprawiająca cieknący kran",
+      "question": "Golenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_177",
-      "question": "Osoba skręcająca meble kluczem imbusowym",
+      "question": "Czesanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_178",
-      "question": "Osoba nakładająca jedzenie dla psa",
+      "question": "Makijaż",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_179",
-      "question": "Osoba czyszcząca okulary ściereczką",
+      "question": "Podlewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_180",
-      "question": "Osoba pakująca walizkę na wakacje",
+      "question": "Grabienie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_181",
-      "question": "Osoba rozpalająca w kominku",
+      "question": "Koszenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_182",
-      "question": "Osoba ubierająca choinkę",
+      "question": "Odśnieżanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_183",
-      "question": "Osoba myjąca zęby szczoteczką",
+      "question": "Wiercenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_184",
-      "question": "Osoba czesząca poplątane włosy",
+      "question": "Młotek",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_185",
-      "question": "Osoba przycinająca żywopłot nożycami",
+      "question": "Śrubokręt",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_186",
-      "question": "Osoba grabiąca suche liście",
+      "question": "Drabina",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_187",
-      "question": "Osoba obcinająca paznokcie",
+      "question": "Żarówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_188",
-      "question": "Osoba rozwijająca taśmę klejącą",
+      "question": "Kanapka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_189",
-      "question": "Osoba otwierająca puszkę otwieraczem",
+      "question": "Śniadanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_190",
-      "question": "Osoba smarująca chleb masłem",
+      "question": "Budzik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_191",
-      "question": "Osoba myjąca włosy szamponem",
+      "question": "Ziewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_192",
-      "question": "Osoba nakładająca maseczkę na twarz",
+      "question": "Drzemka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_193",
-      "question": "Osoba parząca herbatę w zaparzaczu",
+      "question": "Chrapanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_194",
-      "question": "Osoba trzepiąca poduszkę",
+      "question": "Kąpiel",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_195",
-      "question": "Osoba czyszcząca ucho patyczkiem",
+      "question": "Zakupy",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_196",
-      "question": "Osoba zaklejająca kopertę jęzorem",
+      "question": "Pakowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_197",
-      "question": "Osoba nawlekająca nitkę na igłę",
+      "question": "Szycie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_198",
-      "question": "Osoba składająca kartonowe pudełko",
+      "question": "Krojenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_199",
-      "question": "Osoba wyciągająca gorącą blachę z piekarnika",
+      "question": "Obieranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_200",
-      "question": "Osoba zapalająca świeczkę zapałką",
+      "question": "Smażenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_201",
-      "question": "Iluzjonista wyciągający królika z kapelusza",
+      "question": "Batman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_202",
-      "question": "Gitarzysta na koncercie rockowym",
+      "question": "Superman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_203",
-      "question": "Szpieg skradający się w ciemności",
+      "question": "Spiderman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_204",
-      "question": "Rycerz walczący mieczem",
+      "question": "Hulk",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_205",
-      "question": "Harry Potter rzucający czar różdżką",
+      "question": "Thor",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_206",
-      "question": "Spider-Man strzelający pajęczyną",
+      "question": "Shrek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_207",
-      "question": "Michael Jackson tańczący moonwalk",
+      "question": "Pinokio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_208",
-      "question": "Batman obserwujący miasto z dachu",
+      "question": "Kopciuszek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_209",
-      "question": "Darth Vader dławiący przeciwnika Mocą",
+      "question": "Śnieżka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_210",
-      "question": "Jack Sparrow zataczający się na statku",
+      "question": "Roszpunka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_211",
-      "question": "Sherlock Holmes badający ślady lupą",
+      "question": "Elsa",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_212",
-      "question": "Robin Hood strzelający z łuku",
+      "question": "Tarzan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_213",
-      "question": "Tarzan skaczący na lianie",
+      "question": "Zorro",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_214",
-      "question": "Superman latający z wyciągniętą ręką",
+      "question": "Sherlock",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_215",
-      "question": "Shrek ryczący na swoim bagnie",
+      "question": "Dracula",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_216",
-      "question": "Zorro kreślący literę Z szpadą",
+      "question": "Frankenstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_217",
-      "question": "Geralt z Rivii dobywający miecza",
+      "question": "Gandalf",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_218",
-      "question": "Elsa zamrażająca wszystko wokół",
+      "question": "Yoda",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_219",
-      "question": "Freddie Mercury śpiewający z statywem",
+      "question": "Gollum",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_220",
-      "question": "Joker śmiejący się maniacznie",
+      "question": "Pikachu",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_221",
-      "question": "Terminator zakładający okulary przeciwsłoneczne",
+      "question": "Mario",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_222",
-      "question": "Rocky Balboa biegający po schodach",
+      "question": "Garfield",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_223",
-      "question": "Indiana Jones uciekający przed toczącym się głazem",
+      "question": "Smerfetka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_224",
-      "question": "Hulk wpadający w szał i niszczący rzeczy",
+      "question": "Gargamel",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_225",
-      "question": "Kopciuszek gubiący pantofelek",
+      "question": "Reksio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_226",
-      "question": "Czerwony Kapturek idący z koszyczkiem",
+      "question": "Matołek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_227",
-      "question": "Piotruś Pan walczący z Kapitanem Hakiem",
+      "question": "Napoleon",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_228",
-      "question": "Forrest Gump biegający w poprzek kraju",
+      "question": "Kopernik",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_229",
-      "question": "Wolverine wyciągający metalowe szpony",
+      "question": "Chopin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_230",
-      "question": "Thor zamachujący się młotem",
+      "question": "Einstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_231",
-      "question": "Pikachu rażący piorunem",
+      "question": "Kleopatra",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_232",
-      "question": "Super Mario skaczący na grzyba",
+      "question": "Elvis",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_233",
-      "question": "Dracula gryzący w szyję",
+      "question": "Rambo",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_234",
-      "question": "Frankenstein budzący się do życia",
+      "question": "Terminator",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_235",
-      "question": "Willy Wonka prezentujący fabrykę czekolady",
+      "question": "Joker",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_236",
-      "question": "Krzyk (Ghostface) dzwoniący z nożem",
+      "question": "Pocahontas",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_237",
-      "question": "Deadpool machający mieczami i żartujący",
+      "question": "Aladyn",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_238",
-      "question": "Barbie prezentująca idealną figurę",
+      "question": "Popeye",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_239",
-      "question": "Legolas strzelający serią strzał",
+      "question": "Asterix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_240",
-      "question": "Gollum pieszcząc swój cenne pierścień",
+      "question": "Obelix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_241",
-      "question": "Gandalf uderzający laską i krzyczący Nie przejdziesz",
+      "question": "Kolumb",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_242",
-      "question": "Mikołaj wręczający prezenty z worka",
+      "question": "Mulan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_243",
-      "question": "Diabeł wymachujący widłami",
+      "question": "Herkules",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_244",
-      "question": "Anioł grający na harfie",
+      "question": "Zeus",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_245",
-      "question": "Syrenka płynąca i podwijająca ogon",
+      "question": "Wiedźmin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_246",
-      "question": "Kowboj wyciągający rewolwer z kabury",
+      "question": "Mikołaj",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_247",
-      "question": "Ninja rzucający shurikeny",
+      "question": "Stitch",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_248",
-      "question": "Pirat patrzący przez lunetę",
+      "question": "Robocop",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_249",
-      "question": "Wiking wiosłujący na drakkarze",
+      "question": "Pippi",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_250",
-      "question": "Wampir chroniący się przed słońcem",
+      "question": "Hobbit",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_251",
-      "question": "Osoba próbująca złapać komara",
+      "question": "Karaoke",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_252",
-      "question": "Osoba chodząca po gorącym piasku",
+      "question": "Toast",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_253",
-      "question": "Osoba zakładająca ciasne buty",
+      "question": "Wesele",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_254",
-      "question": "Osoba jedząca bardzo ostre papryczki",
+      "question": "Urodziny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_255",
-      "question": "Osoba wędrująca po górach w zamieci",
+      "question": "Sylwester",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_256",
-      "question": "Osoba próbująca otworzyć wino bez korkociągu",
+      "question": "Ślub",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_257",
-      "question": "Osoba tańcząca hip-hop",
+      "question": "Oświadczyny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_258",
-      "question": "Osoba próbująca zapalić zapałkę na wietrze",
+      "question": "Randka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_259",
-      "question": "Osoba próbująca uciec przed rojem pszczół",
+      "question": "Kac",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_260",
-      "question": "Osoba grająca w wirtualnej rzeczywistości (VR)",
+      "question": "Selfie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_261",
-      "question": "Kierowca zepsutego auta na skrzyżowaniu",
+      "question": "Tort",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_262",
-      "question": "Pasażer ze spóźnionym pociągiem",
+      "question": "Prezent",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_263",
-      "question": "Osoba z niesamowicie mocnym ból zęba",
+      "question": "Konfetti",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_264",
-      "question": "Osoba poślizgująca się na skórce od banana",
+      "question": "Fajerwerki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_265",
-      "question": "Osoba wchodząca do bardzo zimnej wody",
+      "question": "Balony",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_266",
-      "question": "Osoba niosąca zbyt wiele siatek z zakupami",
+      "question": "Dyskoteka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_267",
-      "question": "Osoba szukająca telefonu, trzymając go w ręku",
+      "question": "Grill",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_268",
-      "question": "Osoba śpiewająca pod prysznicem",
+      "question": "Ognisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_269",
-      "question": "Osoba próbująca nawlec nitkę na igłę po ciemku",
+      "question": "Piknik",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_270",
-      "question": "Osoba wstrzymująca oddech pod wodą",
+      "question": "Kolejka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_271",
-      "question": "Osoba niespodziewanie oblana zimną wodą",
+      "question": "Spóźnienie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_272",
-      "question": "Osoba jedząca gorącą pizzę i parząca język",
+      "question": "Korek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_273",
-      "question": "Osoba zacięta przy goleniu",
+      "question": "Kłótnia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_274",
-      "question": "Osoba przymierzająca ciasne dżinsy",
+      "question": "Pocałunek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_275",
-      "question": "Osoba próbująca złapać uciekający autobus",
+      "question": "Pożegnanie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_276",
-      "question": "Osoba czkająca bez przerwy",
+      "question": "Egzamin",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_277",
-      "question": "Osoba potykająca się na prostej drodze",
+      "question": "Przeprowadzka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_278",
-      "question": "Osoba kichająca kilka razy z rzędu",
+      "question": "Wakacje",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_279",
-      "question": "Osoba zepsuła zamki w kurtce",
+      "question": "Lotnisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_280",
-      "question": "Osoba próbująca cicho otworzyć paczkę chipsów w nocy",
+      "question": "Walizka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_281",
-      "question": "Osoba, której zgasł telefon podczas ważnej rozmowy",
+      "question": "Winda",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_282",
-      "question": "Osoba pijąca zepsute mleko",
+      "question": "Imieniny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_283",
-      "question": "Osoba zablokowana w toalecie publicznej",
+      "question": "Matura",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_284",
-      "question": "Osoba z mokrymi skarpetkami",
+      "question": "Studniówka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_285",
-      "question": "Osoba, której ptak zanieczyścił ubranie",
+      "question": "Wigilia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_286",
-      "question": "Osoba próbująca zabić muchę gazeta",
+      "question": "Choinka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_287",
-      "question": "Osoba nadeptująca na klocki Lego boso",
+      "question": "Pisanki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_288",
-      "question": "Osoba marznąca na przystanku autobusowym",
+      "question": "Śmigus",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_289",
-      "question": "Osoba po użądleniu przez pszczołę w nos",
+      "question": "Andrzejki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_290",
-      "question": "Osoba zgubiła się w wielkim centrum handlowym",
+      "question": "Walentynki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_291",
-      "question": "Osoba próbująca zapamiętać kod PIN",
+      "question": "Halloween",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_292",
-      "question": "Osoba walcząca z parasolką na wietrze",
+      "question": "Kostium",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_293",
-      "question": "Osoba, która wylała sok na białą koszulę",
+      "question": "Polonez",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_294",
-      "question": "Osoba udająca że rozumie obcy język",
+      "question": "Szampan",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_295",
-      "question": "Osoba zasypiająca na nudnym wykładzie",
+      "question": "Bufet",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_296",
-      "question": "Osoba, której wypadł klucz do studzienki",
+      "question": "Plotka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_297",
-      "question": "Osoba próbująca dogonić psa bez smyczy",
+      "question": "Mandat",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_298",
-      "question": "Osoba marząca o zimnym piwie w upał",
+      "question": "Stłuczka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_299",
-      "question": "Osoba próbująca przeczytać drobny druk bez okularów",
+      "question": "Namiot",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_300",
-      "question": "Osoba powstrzymująca śmiech w kościele",
+      "question": "Autostop",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_301",
-      "question": "Dziecko budujące zamek z piasku",
+      "question": "Titanic",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_302",
-      "question": "Złodziej otwierający sejf",
+      "question": "Matrix",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_303",
-      "question": "Piosenkarz śpiewający do mikrofonu",
+      "question": "Avatar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_304",
-      "question": "Osoba grająca na perkusji",
+      "question": "Gladiator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_305",
-      "question": "Wędkarz złapawszy wielką rybę",
+      "question": "Rocky",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_306",
-      "question": "Osoba grająca na skrzypcami",
+      "question": "Szczęki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_307",
-      "question": "Piosenkarz rockowy rozbijający gitarę",
+      "question": "Psychoza",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_308",
-      "question": "Król nakładający koronę na głowę",
+      "question": "Obcy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_309",
-      "question": "Kat zamachujący się toporem",
+      "question": "Predator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_310",
-      "question": "Czarownica mieszająca wywar w kotle",
+      "question": "Incepcja",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_311",
-      "question": "Rycerz ratujący księżniczkę z wieży",
+      "question": "Interstellar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_312",
-      "question": "Gladiator walczący z lwem",
+      "question": "Godzilla",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_313",
-      "question": "Pirat szukający zakopanego skarbu",
+      "question": "Kevin",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_314",
-      "question": "Astronauta wychodzący w otwartą przestrzeń",
+      "question": "Madagaskar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_315",
-      "question": "Superbohater ratujący spadający autobus",
+      "question": "Zwierzogród",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_316",
-      "question": "Zombi powoli idące i wyciągające ręce",
+      "question": "Odlot",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_317",
-      "question": "Robot poruszający się sztywno",
+      "question": "Coco",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_318",
-      "question": "Mumia wyłaniająca się z grobowca",
+      "question": "Auta",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_319",
-      "question": "Duch latający i straszący ludzi",
+      "question": "Nemo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_320",
-      "question": "Kosmita badający ziemski przedmiot",
+      "question": "Dumbo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_321",
-      "question": "Syrena śpiewająca na skale",
+      "question": "Bambi",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_322",
-      "question": "Wilkołak zmieniający się podczas pełni",
+      "question": "Vaiana",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_323",
-      "question": "Wampir śpiący w trumnie",
+      "question": "Ratatuj",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_324",
-      "question": "Krasnolud kopiący diamenty w kopalni",
+      "question": "Minionki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_325",
-      "question": "Elf strzelający łukiem z drzewa",
+      "question": "Smerfy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_326",
-      "question": "Smok ziejący ogniem",
+      "question": "Muminki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_327",
-      "question": "Jednorożec biegający po tęczy",
+      "question": "Teletubisie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_328",
-      "question": "Kowboj jeżdżący na dzikim koniu",
+      "question": "Pokemon",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_329",
-      "question": "Indianin tańczący taniec deszczu",
+      "question": "Simpsonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_330",
-      "question": "Samuraj wykonujący cięcie kataną",
+      "question": "Flintstonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_331",
-      "question": "Ninja skaczący z dachu na dach",
+      "question": "Scooby",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_332",
-      "question": "Wiking pijący miód z rogu",
+      "question": "Puchatek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_333",
-      "question": "Gladiator wznoszący kciuk w górę",
+      "question": "Krzyżacy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_334",
-      "question": "Królowa wydająca wyrok skazujący",
+      "question": "Potop",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_335",
-      "question": "Błazen zabawiąjący dwór królewski",
+      "question": "Pianista",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_336",
-      "question": "Alchemik mieszający eliksiry",
+      "question": "Miś",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_337",
-      "question": "Detektyw szukający śladów z lupą",
+      "question": "Rejs",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_338",
-      "question": "Złodziej skradający się przez laserowe zabezpieczenia",
+      "question": "Kiler",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_339",
-      "question": "Tajna agentka rzucająca granat błyskowy",
+      "question": "Hydrozagadka",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_340",
-      "question": "Superzłoczyńca śmiejący się w swojej bazie",
+      "question": "Piraci",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_341",
-      "question": "Robot bojowy strzelający z laserów",
+      "question": "Rango",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_342",
-      "question": "Syrena wciągająca żeglarza pod wodę",
+      "question": "Zaplątani",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_343",
-      "question": "Minotaur krążący po labiryncie",
+      "question": "Merida",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_344",
-      "question": "Cyklop patrzący jednym wielkim okiem",
+      "question": "Bolt",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_345",
-      "question": "Meduza zamieniająca ludzi w kamień wzrokiem",
+      "question": "Gremliny",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_346",
-      "question": "Gargulec siedzący nieruchomo na dachu",
+      "question": "Casper",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_347",
-      "question": "Dżin wychodzący z zakurzonej lampy",
+      "question": "Mumia",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_348",
-      "question": "Pegaz machający skrzydłami",
+      "question": "Transformers",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_349",
-      "question": "Kraken zatapiający żaglowiec",
+      "question": "Tron",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_350",
-      "question": "Sfinks zadający trudną zagadkę",
+      "question": "Bajtek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_351",
-      "question": "Osoba grająca na gitarze akustycznej",
+      "question": "Wędkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_352",
-      "question": "Osoba malująca obraz pędzlem",
+      "question": "Szydełkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_353",
-      "question": "Osoba układająca puzzle na stole",
+      "question": "Dzierganie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_354",
-      "question": "Osoba szydełkująca szalik z włóczki",
+      "question": "Rysowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_355",
-      "question": "Osoba rzeźbiąca w drewnie",
+      "question": "Fotografia",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_356",
-      "question": "Osoba fotografująca ptaki w lesie",
+      "question": "Ogrodnictwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_357",
-      "question": "Osoba czytająca wciągającą książkę",
+      "question": "Szachy",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_358",
-      "question": "Osoba układająca klocki Lego",
+      "question": "Warcaby",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_359",
-      "question": "Osoba pielęgnująca rośliny w ogrodzie",
+      "question": "Puzzle",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_360",
-      "question": "Osoba tańcząca salsę",
+      "question": "Sudoku",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_361",
-      "question": "Osoba grająca w planszówki z przyjaciółmi",
+      "question": "Krzyżówka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_362",
-      "question": "Osoba łowiąca ryby na kanapie",
+      "question": "Karty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_363",
-      "question": "Osoba majsterkująca w garażu",
+      "question": "Poker",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_364",
-      "question": "Osoba piekąca domowy chleb",
+      "question": "Gitara",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_365",
-      "question": "Osoba obserwująca gwiazdy przez teleskop",
+      "question": "Perkusja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_366",
-      "question": "Osoba zbierająca grzyby w lesie",
+      "question": "Pianino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_367",
-      "question": "Osoba nurkująca z rurką (snorkeling)",
+      "question": "Skrzypce",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_368",
-      "question": "Osoba jeżdżąca na rolkach w parku",
+      "question": "Trąbka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_369",
-      "question": "Osoba śpiewająca karaoke",
+      "question": "Harmonijka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_370",
-      "question": "Osoba układająca kostkę Rubika",
+      "question": "Śpiewanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_371",
-      "question": "Osoba grająca w szachy",
+      "question": "Czytanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_372",
-      "question": "Osoba tworząca ceramikę na kole garncarskim",
+      "question": "Medytacja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_373",
-      "question": "Osoba robiąca zdjęcia aparat analogowym",
+      "question": "Origami",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_374",
-      "question": "Osoba tańcząca pole dance",
+      "question": "Grzybobranie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_375",
-      "question": "Osoba pisząca wiersz w notatniku",
+      "question": "Spacer",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_376",
-      "question": "Osoba szyjąca maskotkę na maszynie",
+      "question": "Rower",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_377",
-      "question": "Osoba piekąca dekoracyjne babeczki",
+      "question": "Biwakowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_378",
-      "question": "Osoba grająca w darta w pubie",
+      "question": "Żeglarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_379",
-      "question": "Osoba ćwicząca kaligrafię pędzlem",
+      "question": "Konsola",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_380",
-      "question": "Osoba miksująca muzykę jako DJ",
+      "question": "Granie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_381",
-      "question": "Osoba zbierająca znaczki pocztowe w klasztorze",
+      "question": "Kolekcjonowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_382",
-      "question": "Osoba jeżdżąca na deskorolce",
+      "question": "Majsterkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_383",
-      "question": "Osoba ćwicząca jogę w plenerze",
+      "question": "Garncarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_384",
-      "question": "Osoba składająca origami z papieru",
+      "question": "Rzeźbienie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_385",
-      "question": "Osoba grająca na ukulele",
+      "question": "Haftowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_386",
-      "question": "Osoba trenująca sztuki walki",
+      "question": "Tatuaż",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_387",
-      "question": "Osoba spacerująca z wykrywaczem metalu",
+      "question": "Kino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_388",
-      "question": "Osoba puszczająca latawiec na wietrze",
+      "question": "Teatr",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_389",
-      "question": "Osoba jeżdżąca na monocyklu",
+      "question": "Opera",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_390",
-      "question": "Osoba żonglująca piłeczkami",
+      "question": "Koncert",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_391",
-      "question": "Osoba grająca na harmonijce ustnej",
+      "question": "Akwarium",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_392",
-      "question": "Osoba wspinająca się na drzewo",
+      "question": "Latawiec",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_393",
-      "question": "Osoba puszczająca bańki mydlane",
+      "question": "Bańki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_394",
-      "question": "Osoba robiąca tatuaż maszynką",
+      "question": "Huśtawka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_395",
-      "question": "Osoba jeżdżąca na hulajnodze wyczynowej",
+      "question": "Karuzela",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_396",
-      "question": "Osoba kempingująca pod namiotem",
+      "question": "Paintball",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_397",
-      "question": "Osoba grająca na pianinie",
+      "question": "Gokarty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_398",
-      "question": "Osoba trenująca łucznictwo",
+      "question": "Planszówki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_399",
-      "question": "Osoba układająca domino",
+      "question": "Jojo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_400",
-      "question": "Osoba ucząca się sztuczek z kartami",
+      "question": "Ogród",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_401",
-      "question": "Osoba bardzo wystraszona horrorem",
+      "question": "Złość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_402",
-      "question": "Osoba płacząca ze wzruszenia",
+      "question": "Radość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_403",
-      "question": "Osoba wściekła z powodu zepsutego auta",
+      "question": "Smutek",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_404",
-      "question": "Osoba śmiejąca się do łez",
+      "question": "Strach",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_405",
-      "question": "Osoba bardzo senna i ziewająca",
+      "question": "Zazdrość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_406",
-      "question": "Osoba zakochana z motylami w brzuchu",
+      "question": "Wstyd",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_407",
-      "question": "Osoba oburzona i machająca rękami",
+      "question": "Zdziwienie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_408",
-      "question": "Osoba dumna ze swojego sukcesu",
+      "question": "Obrzydzenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_409",
-      "question": "Osoba zestresowana przed egzaminem",
+      "question": "Nuda",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_410",
-      "question": "Osoba podejrzliwa i rozglądająca się",
+      "question": "Zmęczenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_411",
-      "question": "Osoba wściekła na spóźniony autobus",
+      "question": "Zakochanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_412",
-      "question": "Osoba bardzo znudzona na spotkaniu",
+      "question": "Duma",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_413",
-      "question": "Osoba marząca z głową w chmurach",
+      "question": "Stres",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_414",
-      "question": "Osoba zawstydzona po gafie",
+      "question": "Panika",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_415",
-      "question": "Osoba przerażona pająkiem",
+      "question": "Euforia",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_416",
-      "question": "Osoba zachwycona pięknym widokiem",
+      "question": "Ekscytacja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_417",
-      "question": "Osoba zniecierpliwiona stojąca w kolejce",
+      "question": "Rozczarowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_418",
-      "question": "Osoba zazdrosna patrząca z boku",
+      "question": "Zakłopotanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_419",
-      "question": "Osoba w głębokiej rozpaczy",
+      "question": "Tęsknota",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_420",
-      "question": "Osoba bardzo odważna prężąca klatkę",
+      "question": "Ulga",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_421",
-      "question": "Osoba obrzydzona zepsutym jedzeniem",
+      "question": "Lenistwo",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_422",
-      "question": "Osoba oszołomiona i kręcąca się w głowie",
+      "question": "Niecierpliwość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_423",
-      "question": "Osoba skryta chowająca twarz",
+      "question": "Ciekawość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_424",
-      "question": "Osoba chciwa zgarniająca monety",
+      "question": "Nieśmiałość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_425",
-      "question": "Osoba wściekła grająca w grę i rzucająca padem",
+      "question": "Arogancja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_426",
-      "question": "Osoba podejrzewająca zdradę",
+      "question": "Płacz",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_427",
-      "question": "Osoba rozkojarzona zapominająca co robi",
+      "question": "Śmiech",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_428",
-      "question": "Osoba zachłanna jedząca łapczywie",
+      "question": "Chichot",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_429",
-      "question": "Osoba cieszaca się jak dziecko z prezentu",
+      "question": "Krzyk",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_430",
-      "question": "Osoba bezradna rozkładająca ręce",
+      "question": "Szept",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_431",
-      "question": "Osoba udająca twardziela",
+      "question": "Czkawka",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_432",
-      "question": "Osoba zestresowana rozmową telefoniczną",
+      "question": "Kichanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_433",
-      "question": "Osoba panikująca z powodu zgubionego dziecka",
+      "question": "Kaszel",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_434",
-      "question": "Osoba czująca ulgę po zdany teście",
+      "question": "Drżenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_435",
-      "question": "Osoba wściekła na hałasujących sąsiadów",
+      "question": "Rumieniec",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_436",
-      "question": "Osoba zamyślona drapiąca się po głowie",
+      "question": "Mruganie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_437",
-      "question": "Osoba zszokowana niespodziewaną wiadomością",
+      "question": "Podglądanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_438",
-      "question": "Osoba obojętna wzruszająca ramionami",
+      "question": "Skradanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_439",
-      "question": "Osoba pewna siebie krocząca z wysoko podniesioną głową",
+      "question": "Foch",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_440",
-      "question": "Osoba podejrzana próbująca coś ukryć za plecami",
+      "question": "Przytulanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_441",
-      "question": "Osoba przestraszona nagłym grzmotem",
+      "question": "Klaskanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_442",
-      "question": "Osoba zniecierpliwiona stukająca palcami w stół",
+      "question": "Machanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_443",
-      "question": "Osoba złośliwa knująca spisek",
+      "question": "Ukłon",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_444",
-      "question": "Osoba wzruszona słuchając pięknej muzyki",
+      "question": "Salutowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_445",
-      "question": "Osoba wstydząca się zabrać głos",
+      "question": "Wzruszenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_446",
-      "question": "Osoba zrezygnowana machająca ręką",
+      "question": "Histeria",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_447",
-      "question": "Osoba podekscytowana nadchodzącą podróżą",
+      "question": "Zamyślenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_448",
-      "question": "Osoba uśmiechająca się nieszczerze",
+      "question": "Senność",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_449",
-      "question": "Osoba przestraszona własnym odbiciem",
+      "question": "Głód",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_450",
-      "question": "Osoba płacząca ze złości",
+      "question": "Flirt",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_451",
-      "question": "Skok na bungee nad przepaścią",
+      "question": "Bungee",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_452",
-      "question": "Chodzenie po rozżarzonych węglach",
+      "question": "Spadochron",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_453",
-      "question": "Walka z niedźwiedziem w lesie",
+      "question": "Paralotnia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_454",
-      "question": "Skok ze spadochronem z samolotu",
+      "question": "Alpinizm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_455",
-      "question": "Przeżycie w dżungli bez jedzenia",
+      "question": "Everest",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_456",
-      "question": "Ucieczka przed lawiną na nartach",
+      "question": "Rafting",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_457",
-      "question": "Osoba zamknięta w klatce z rekinami",
+      "question": "Kitesurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_458",
-      "question": "Wspinaczka na Mount Everest w zamieci",
+      "question": "Windsurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_459",
-      "question": "Przeprawa przez pustynię bez wody",
+      "question": "Wakeboard",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_460",
-      "question": "Chodzenie po linie między wieżowcami",
+      "question": "Parkour",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_461",
-      "question": "Osoba gasząca płonący budynek",
+      "question": "Motocross",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_462",
-      "question": "Ucieczka przed tornadem samochodem",
+      "question": "Rajd",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_463",
-      "question": "Jedzenie żywego skorpiona",
+      "question": "Wyścig",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_464",
-      "question": "Próba wydostania się z tonącego samochodu",
+      "question": "Żonglerka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_465",
-      "question": "Ucieczka przed stadem szarżujących byków",
+      "question": "Linoskoczek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_466",
-      "question": "Osoba lądująca uszkodzonym samolotem",
+      "question": "Rodeo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_467",
-      "question": "Przeprawa przez rzekę pełną piranii",
+      "question": "Korrida",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_468",
-      "question": "Osoba uwięziona w płonącym windzie",
+      "question": "Morsowanie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_469",
-      "question": "Kierowca Formuły 1 w padającym deszczu przy 300 km/h",
+      "question": "Speleologia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_470",
-      "question": "Ucieczka z walącego się budynku podczas trzęsienia ziemi",
+      "question": "Jaskinia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_471",
-      "question": "Lądowanie bez spadochronu na stóg siana",
+      "question": "Lodowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_472",
-      "question": "Walka z aligatorem na bagnach",
+      "question": "Lawina",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_473",
-      "question": "Chodzenie po szkle boso",
+      "question": "Sztorm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_474",
-      "question": "Szybki zjazd na linie (zipline) nad wielkim kanionem",
+      "question": "Huragan",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_475",
-      "question": "Nurek schodzący na 100 metrów bez akwalungu",
+      "question": "Pustynia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_476",
-      "question": "Przeprawa przez pole minowe",
+      "question": "Dżungla",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_477",
-      "question": "Rozbrajanie bomby zegarowej na 3 sekundy przed wybuchem",
+      "question": "Survival",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_478",
-      "question": "Ucieczka z więzienia o maksymalnym rygorze",
+      "question": "Rozbitek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_479",
-      "question": "Stawienie czoła tsunami na plaży",
+      "question": "Ucieczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_480",
-      "question": "Latanie w kombinezonie wingsuit blisko skał",
+      "question": "Pościg",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_481",
-      "question": "Próba powstrzymania rozpędzonego pociągu",
+      "question": "Kaskader",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_482",
-      "question": "Osoba utknęła na diabelskim młynie na samej górze",
+      "question": "Szybowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_483",
-      "question": "Osoba wciągana przez ruchome piaski",
+      "question": "Sterowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_484",
-      "question": "Przeżycie na bezludnej wyspie przez rok",
+      "question": "Wingsuit",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_485",
-      "question": "Wspinaczka bez zabezpieczenia (free solo)",
+      "question": "Freediving",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_486",
-      "question": "Ucieczka przed watahą głodnych wilków",
+      "question": "Triathlon",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_487",
-      "question": "Przejście przez płonący tunel",
+      "question": "Ironman",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_488",
-      "question": "Osoba na tratwie podczas sztormu na oceanie",
+      "question": "Ultramaraton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_489",
-      "question": "Zjazd na desce po zboczu aktywnego wulkanu",
+      "question": "Skeleton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_490",
-      "question": "Skok z klifu do wzburzonego morza",
+      "question": "Bobsleje",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_491",
-      "question": "Osoba osaczona przez jadowite węże",
+      "question": "Saneczkarstwo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_492",
-      "question": "Próba opanowania szalejącego pożaru lasu",
+      "question": "Rollercoaster",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_493",
-      "question": "Zjazd bobslejem po oblodzonym torze",
+      "question": "Labirynt",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_494",
-      "question": "Przeprawa przez lodowatą rzekę na Syberii",
+      "question": "Pożar",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_495",
-      "question": "Osoba potrącona przez falę uderzeniową wybuchu",
+      "question": "Powódź",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_496",
-      "question": "Ucieczka przed rojem szerszeni aziatyckich",
+      "question": "Duch",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_497",
-      "question": "Lot motolotnią w trakcie burzy z piorunami",
+      "question": "Zombie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_498",
-      "question": "Kaskader wykonujący dachowanie autem",
+      "question": "Wampir",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_499",
-      "question": "Walka o ogień w epoce kamienia",
+      "question": "Egzorcyzm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_500",
-      "question": "Osoba wciągnięta w wir wodny",
+      "question": "Wspinaczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     }
@@ -52844,3001 +52844,3001 @@ export const DEFAULT_REVERSE_CHARADES: { [key in Language]: any[] } = {
   "IT": [
     {
       "id": "rc_1",
-      "question": "Lekarz przeprowadzający operację",
+      "question": "Lekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_2",
-      "question": "Strażak gaszący pożar",
+      "question": "Strażak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_3",
-      "question": "Policjant kierujący ruchem",
+      "question": "Policjant",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_4",
-      "question": "Kucharz smażący naleśniki",
+      "question": "Kucharz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_5",
-      "question": "Nauczyciel piszący na tablicy",
+      "question": "Fryzjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_6",
-      "question": "Kelner niosący tacę z napojami",
+      "question": "Dentysta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_7",
-      "question": "Fryzjer ścinający włosy",
+      "question": "Pilot",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_8",
-      "question": "Krawiec szyjący ubranie",
+      "question": "Kelner",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_9",
-      "question": "Fotograf robiący zdjęcie",
+      "question": "Listonosz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_10",
-      "question": "Sędzia piłkarski pokazujący czerwoną kartkę",
+      "question": "Hydraulik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_11",
-      "question": "Astronauta chodzący po Księżycu",
+      "question": "Elektryk",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_12",
-      "question": "Szef kuchni degustujący zupę",
+      "question": "Murarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_13",
-      "question": "Malarz malujący obraz na sztaludze",
+      "question": "Malarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_14",
-      "question": "Dyrygent prowadzący orkiestrę",
+      "question": "Stolarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_15",
-      "question": "Modelka na wybiegu",
+      "question": "Nauczyciel",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_16",
-      "question": "Piekarz wyciągający chleb z pieca",
+      "question": "Sprzedawca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_17",
-      "question": "Górnik pracujący z kilofem",
+      "question": "Kierowca",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_18",
-      "question": "Budowlaniec układający cegły",
+      "question": "Taksówkarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_19",
-      "question": "Masażysta wykonujący masaż",
+      "question": "Żołnierz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_20",
-      "question": "Listonosz wręczający list",
+      "question": "Ratownik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_21",
-      "question": "Stolarz piłujący drewno",
+      "question": "Pielęgniarka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_22",
-      "question": "Przewodnik oprowadzający wycieczkę",
+      "question": "Weterynarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_23",
-      "question": "Pilot kierujący samolotem",
+      "question": "Rolnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_24",
-      "question": "Mechanik naprawiający silnik",
+      "question": "Piekarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_25",
-      "question": "Sprzątaczka myjąca podłogę mopa",
+      "question": "Rzeźnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_26",
-      "question": "Programista piszący kod na klawiaturze",
+      "question": "Kosmonauta",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_27",
-      "question": "Dziennikarz przeprowadzający wywiad",
+      "question": "Detektyw",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_28",
-      "question": "Ochroniarz sprawdzający bilety",
+      "question": "Sędzia",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_29",
-      "question": "Taksówkarz trzymający kierownicę",
+      "question": "Adwokat",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_30",
-      "question": "Bibliotekarz układający książki",
+      "question": "Dyrygent",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_31",
-      "question": "Kolejarz dający sygnał gwizdkiem",
+      "question": "Fotograf",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_32",
-      "question": "Kwiaciarka robiąca bukiet",
+      "question": "Kasjer",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_33",
-      "question": "Kominiarz czyszczący komin",
+      "question": "Barman",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_34",
-      "question": "Hydraulik naprawiający rurę",
+      "question": "Ogrodnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_35",
-      "question": "Dentysta borujący ząb",
+      "question": "Górnik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_36",
-      "question": "Weterynarz badający psa",
+      "question": "Rybak",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_37",
-      "question": "Architekt rysujący plan",
+      "question": "Mechanik",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_38",
-      "question": "Aktor ukłaniający się na scenie",
+      "question": "Krawiec",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_39",
-      "question": "Rzeźbiarz pracujący w dłucie",
+      "question": "Sprzątaczka",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_40",
-      "question": "Rolnik prowadzący traktor",
+      "question": "Ochroniarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_41",
-      "question": "Rybak wyciągający sieć",
+      "question": "Programista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_42",
-      "question": "Zegarmistrz naprawiający zegarek",
+      "question": "Księgowy",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_43",
-      "question": "Barman mieszający drinka w shakerze",
+      "question": "Kominiarz",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_44",
-      "question": "Dostawca pizzy pukający do drzwi",
+      "question": "Szewc",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_45",
-      "question": "Bileter sprawdzający bilety w kinie",
+      "question": "Chirurg",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_46",
-      "question": "Bankier liczący plik pieniędzy",
+      "question": "Archeolog",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_47",
-      "question": "Ratownik medyczny robiący resuscytację",
+      "question": "Akrobata",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_48",
-      "question": "Krupier rozdający karty w kasynie",
+      "question": "Iluzjonista",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_49",
-      "question": "Pracownik magazynu przenoszący pudło",
+      "question": "Klaun",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_50",
-      "question": "Lektor czytający bajkę",
+      "question": "Treser",
       "category": "Zawody & Praca",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_51",
-      "question": "Kot polujący na mysz",
+      "question": "Kot",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_52",
-      "question": "Małpa jedząca banana",
+      "question": "Pies",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_53",
-      "question": "Pies goniący własny ogon",
+      "question": "Koń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_54",
-      "question": "Żaba skacząca po liściach",
+      "question": "Krowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_55",
-      "question": "Królik jedzący marchewkę",
+      "question": "Świnia",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_56",
-      "question": "Nurek pod wodą ze sprzętem",
+      "question": "Kura",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_57",
-      "question": "Niedźwiedź łowiący łososia",
+      "question": "Kogut",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_58",
-      "question": "Ptak budujący gniazdo z gałązek",
+      "question": "Kaczka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_59",
-      "question": "Żyrafa sięgająca do wysokich liści",
+      "question": "Gęś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_60",
-      "question": "Pies potrząsający mokrą sierścią",
+      "question": "Owca",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_61",
-      "question": "Kura znosząca jajko",
+      "question": "Koza",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_62",
-      "question": "Kangur skaczący po pustyni",
+      "question": "Królik",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_63",
-      "question": "Kret kopiący kopiec",
+      "question": "Żaba",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_64",
-      "question": "Pingwin ślizgający się po lodzie",
+      "question": "Wąż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_65",
-      "question": "Wąż pełzający po trawie",
+      "question": "Krokodyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_66",
-      "question": "Dzięcioł stukający w pnie drzewa",
+      "question": "Słoń",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_67",
-      "question": "Bocian stojący na jednej nodze",
+      "question": "Żyrafa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_68",
-      "question": "Leniwiec powoli poruszający się po gałęzi",
+      "question": "Małpa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_69",
-      "question": "Słoń pryskający wodą z trąby",
+      "question": "Goryl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_70",
-      "question": "Sowa kręcąca głową w nocy",
+      "question": "Lew",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_71",
-      "question": "Delfin wyskakujący z wody",
+      "question": "Tygrys",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_72",
-      "question": "Koń skaczący przez przeszkodę",
+      "question": "Niedźwiedź",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_73",
-      "question": "Skorpion groźnie unoszący ogon",
+      "question": "Wilk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_74",
-      "question": "Bóbr budujący tamę z drewna",
+      "question": "Lis",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_75",
-      "question": "Zebra uciekająca przed lwem",
+      "question": "Zając",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_76",
-      "question": "Kameleon zmieniający kolor na gałęzi",
+      "question": "Wiewiórka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_77",
-      "question": "Krowa żująca trawę na łące",
+      "question": "Jeż",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_78",
-      "question": "Pszczoła zbierająca pyłek z kwiatka",
+      "question": "Kangur",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_79",
-      "question": "Wiewiórka zakopująca orzech",
+      "question": "Pingwin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_80",
-      "question": "Koala śpiący na drzewie eukaliptusowym",
+      "question": "Foka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_81",
-      "question": "Wielbłąd idący przez gorący piasek",
+      "question": "Delfin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_82",
-      "question": "Goryl uderzający się w pierś",
+      "question": "Rekin",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_83",
-      "question": "Orzeł szybujący wysoko na wietrze",
+      "question": "Wieloryb",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_84",
-      "question": "Homar machający szczypcami",
+      "question": "Ośmiornica",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_85",
-      "question": "Struś chowający głowę w piasek",
+      "question": "Krab",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_86",
-      "question": "Panda jedząca gałązki bambusa",
+      "question": "Pająk",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_87",
-      "question": "Wilk wyjący do księżyca",
+      "question": "Pszczoła",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_88",
-      "question": "Hipopotam otwierający wielką paszczę",
+      "question": "Motyl",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_89",
-      "question": "Krokodyl czatujący w wodzie",
+      "question": "Komar",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_90",
-      "question": "Indyk machający skrzydłami i gdaczący",
+      "question": "Mrówka",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_91",
-      "question": "Nietoperz wiszący głową w dół",
+      "question": "Ślimak",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_92",
-      "question": "Gęś idąca ciągiem za przewodnikem",
+      "question": "Sowa",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_93",
-      "question": "Rak chodzący tyłem",
+      "question": "Orzeł",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_94",
-      "question": "Żółw powoli chowający się w skorupie",
+      "question": "Papuga",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_95",
-      "question": "Meduza unosząca się w wodzie",
+      "question": "Paw",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_96",
-      "question": "Pawie prężący kolorowy ogon",
+      "question": "Flaming",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_97",
-      "question": "Kozica skacząca po skałach",
+      "question": "Struś",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_98",
-      "question": "Komar bzyczący nad uchem",
+      "question": "Nietoperz",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_99",
-      "question": "Świnia tarzająca się w błocie",
+      "question": "Kret",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_100",
-      "question": "Ślimak ciągnący swoją muszlę",
+      "question": "Bóbr",
       "category": "Zwierzęta & Natura",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_101",
-      "question": "Narciarz zjeżdżający ze stoku",
+      "question": "Boks",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_102",
-      "question": "Piłkarz strzelający karnego",
+      "question": "Tenis",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_103",
-      "question": "Bokser w ringu",
+      "question": "Golf",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_104",
-      "question": "Tenisista serwujący piłkę",
+      "question": "Pływanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_105",
-      "question": "Pływak płynący żabką",
+      "question": "Narciarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_106",
-      "question": "Koszykarz robiący wsad",
+      "question": "Snowboard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_107",
-      "question": "Kultura fizyczna i podnoszenie ciężarów",
+      "question": "Łyżwiarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_108",
-      "question": "Osoba jeżdżąca na łyżwach",
+      "question": "Hokej",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_109",
-      "question": "Osoba grająca w kręgle",
+      "question": "Koszykówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_110",
-      "question": "Sumita wypychający przeciwnika z maty",
+      "question": "Siatkówka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_111",
-      "question": "Siatkarz blokujący piłkę przy siatce",
+      "question": "Piłkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_112",
-      "question": "Biegacz finiszujący na mecie",
+      "question": "Bramkarz",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_113",
-      "question": "Łucznik naciągający cięciwę",
+      "question": "Siłownia",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_114",
-      "question": "Szachista rozmyślający nad ruchem",
+      "question": "Joga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_115",
-      "question": "Wioślarz wiosłujący w łodzi",
+      "question": "Bieganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_116",
-      "question": "Szermierz wykonujący pchnięcie szpadą",
+      "question": "Maraton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_117",
-      "question": "Gimnastyczka robiąca salto",
+      "question": "Kolarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_118",
-      "question": "Jeździec skaczący na koniu",
+      "question": "Wioślarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_119",
-      "question": "Kolarz pedałujący pod górę",
+      "question": "Kajakarstwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_120",
-      "question": "Karateka rozbijający deskę dłonią",
+      "question": "Surfing",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_121",
-      "question": "Hokeista strzelający krążkiem",
+      "question": "Nurkowanie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_122",
-      "question": "Surfer łapiący wielką falę",
+      "question": "Szermierka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_123",
-      "question": "Golfista uderzający piłeczkę",
+      "question": "Łucznictwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_124",
-      "question": "Skoczek o tyczce",
+      "question": "Judo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_125",
-      "question": "Skoczek narciarski w locie",
+      "question": "Karate",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_126",
-      "question": "Rzucający dyskiem na stadionie",
+      "question": "Zapasy",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_127",
-      "question": "Osoba grająca w badmintona",
+      "question": "Sumo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_128",
-      "question": "Kulturyści prezentujący mięśnie",
+      "question": "Gimnastyka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_129",
-      "question": "Biegacz przez płotki",
+      "question": "Skakanka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_130",
-      "question": "Osoba uprawiająca rafting na rzece",
+      "question": "Przysiady",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_131",
-      "question": "Nurek skaczący z wieży do wody",
+      "question": "Pompki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_132",
-      "question": "Osoba grająca w tenisa stołowego (ping-pong)",
+      "question": "Brzuszki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_133",
-      "question": "Osoba jeżdżąca na deskorolce (triki)",
+      "question": "Rozciąganie",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_134",
-      "question": "Osoba wspinająca się po ściance wspinaczkowej",
+      "question": "Badminton",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_135",
-      "question": "Osoba grająca w bilard",
+      "question": "Kręgle",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_136",
-      "question": "Skoczek w dal rozbiegający się",
+      "question": "Bilard",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_137",
-      "question": "Łyżwiarz figurowy robiący piruet",
+      "question": "Rzutki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_138",
-      "question": "Osoba strzelająca z pistoletu sportowego",
+      "question": "Curling",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_139",
-      "question": "Osoba uprawiająca windsurfing",
+      "question": "Skoczek",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_140",
-      "question": "Zawodnik sumo wykonujący ukłon",
+      "question": "Oszczep",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_141",
-      "question": "Biegacz narciarski na trasie",
+      "question": "Sztafeta",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_142",
-      "question": "Bobsleista wbijający się do sanki",
+      "question": "Jeździectwo",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_143",
-      "question": "Osoba tańcząca breakdance",
+      "question": "Rugby",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_144",
-      "question": "Rzucający oszczepem",
+      "question": "Baseball",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_145",
-      "question": "Zawodnik MMA walczący w parterze",
+      "question": "Taniec",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_146",
-      "question": "Osoba grająca w darta (rzutki)",
+      "question": "Aerobik",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_147",
-      "question": "Zapaśnik wykonujący rzut",
+      "question": "Trampolina",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_148",
-      "question": "Pływak wykonujący nawrót",
+      "question": "Hulajnoga",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_149",
-      "question": "Sędzia bokserski odliczający zawodnika",
+      "question": "Rolki",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_150",
-      "question": "Osoba skacząca na trampolinie",
+      "question": "Deskorolka",
       "category": "Sport & Aktywność",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_151",
-      "question": "Osoba prasująca koszulę",
+      "question": "Odkurzanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_152",
-      "question": "Osoba malująca ścianę wałkiem",
+      "question": "Prasowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_153",
-      "question": "Osoba kosząca trawnik kosiarką",
+      "question": "Zmywanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_154",
-      "question": "Osoba wbijająca gwóźdź młotkiem",
+      "question": "Gotowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_155",
-      "question": "Osoba myjąca okno",
+      "question": "Pieczenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_156",
-      "question": "Osoba pompująca koło w rowerze",
+      "question": "Sprzątanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_157",
-      "question": "Osoba szukająca zgubionych kluczy w trawie",
+      "question": "Pranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_158",
-      "question": "Osoba obierająca ziemniaki",
+      "question": "Zamiatanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_159",
-      "question": "Osoba zmywająca naczynia",
+      "question": "Żelazko",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_160",
-      "question": "Osoba odkurzająca dywan",
+      "question": "Pralka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_161",
-      "question": "Osoba składająca pranie",
+      "question": "Odkurzacz",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_162",
-      "question": "Osoba wieszająca obraz na ścianie",
+      "question": "Mop",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_163",
-      "question": "Osoba parząca gorącą kawę",
+      "question": "Miotła",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_164",
-      "question": "Osoba podlewająca kwiaty konewką",
+      "question": "Zmywarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_165",
-      "question": "Osoba ścierająca kurze z półek",
+      "question": "Mikrofalówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_166",
-      "question": "Osoba krojąca cebulę ze łzami w oczach",
+      "question": "Toster",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_167",
-      "question": "Osoba wyrzucająca ciężki worek ze śmieciami",
+      "question": "Czajnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_168",
-      "question": "Osoba czyszcząca buty szczotką",
+      "question": "Lodówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_169",
-      "question": "Osoba ścieląca łóżko",
+      "question": "Piekarnik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_170",
-      "question": "Osoba zmieniająca żarówkę na drabinie",
+      "question": "Patelnia",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_171",
-      "question": "Osoba trzepiąca dywan trzepaczką",
+      "question": "Blender",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_172",
-      "question": "Osoba wykręcająca mokrą ścierkę",
+      "question": "Suszarka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_173",
-      "question": "Osoba piekąca ciasto w piekarniku",
+      "question": "Szczoteczka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_174",
-      "question": "Osoba myjąca samochód gąbką",
+      "question": "Prysznic",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_175",
-      "question": "Osoba szorująca przypalony garnek",
+      "question": "Wanna",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_176",
-      "question": "Osoba naprawiająca cieknący kran",
+      "question": "Golenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_177",
-      "question": "Osoba skręcająca meble kluczem imbusowym",
+      "question": "Czesanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_178",
-      "question": "Osoba nakładająca jedzenie dla psa",
+      "question": "Makijaż",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_179",
-      "question": "Osoba czyszcząca okulary ściereczką",
+      "question": "Podlewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_180",
-      "question": "Osoba pakująca walizkę na wakacje",
+      "question": "Grabienie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_181",
-      "question": "Osoba rozpalająca w kominku",
+      "question": "Koszenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_182",
-      "question": "Osoba ubierająca choinkę",
+      "question": "Odśnieżanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_183",
-      "question": "Osoba myjąca zęby szczoteczką",
+      "question": "Wiercenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_184",
-      "question": "Osoba czesząca poplątane włosy",
+      "question": "Młotek",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_185",
-      "question": "Osoba przycinająca żywopłot nożycami",
+      "question": "Śrubokręt",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_186",
-      "question": "Osoba grabiąca suche liście",
+      "question": "Drabina",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_187",
-      "question": "Osoba obcinająca paznokcie",
+      "question": "Żarówka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_188",
-      "question": "Osoba rozwijająca taśmę klejącą",
+      "question": "Kanapka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_189",
-      "question": "Osoba otwierająca puszkę otwieraczem",
+      "question": "Śniadanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_190",
-      "question": "Osoba smarująca chleb masłem",
+      "question": "Budzik",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_191",
-      "question": "Osoba myjąca włosy szamponem",
+      "question": "Ziewanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_192",
-      "question": "Osoba nakładająca maseczkę na twarz",
+      "question": "Drzemka",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_193",
-      "question": "Osoba parząca herbatę w zaparzaczu",
+      "question": "Chrapanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_194",
-      "question": "Osoba trzepiąca poduszkę",
+      "question": "Kąpiel",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_195",
-      "question": "Osoba czyszcząca ucho patyczkiem",
+      "question": "Zakupy",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_196",
-      "question": "Osoba zaklejająca kopertę jęzorem",
+      "question": "Pakowanie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_197",
-      "question": "Osoba nawlekająca nitkę na igłę",
+      "question": "Szycie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_198",
-      "question": "Osoba składająca kartonowe pudełko",
+      "question": "Krojenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_199",
-      "question": "Osoba wyciągająca gorącą blachę z piekarnika",
+      "question": "Obieranie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_200",
-      "question": "Osoba zapalająca świeczkę zapałką",
+      "question": "Smażenie",
       "category": "Czynności Domowe",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_201",
-      "question": "Iluzjonista wyciągający królika z kapelusza",
+      "question": "Batman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_202",
-      "question": "Gitarzysta na koncercie rockowym",
+      "question": "Superman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_203",
-      "question": "Szpieg skradający się w ciemności",
+      "question": "Spiderman",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_204",
-      "question": "Rycerz walczący mieczem",
+      "question": "Hulk",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_205",
-      "question": "Harry Potter rzucający czar różdżką",
+      "question": "Thor",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_206",
-      "question": "Spider-Man strzelający pajęczyną",
+      "question": "Shrek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_207",
-      "question": "Michael Jackson tańczący moonwalk",
+      "question": "Pinokio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_208",
-      "question": "Batman obserwujący miasto z dachu",
+      "question": "Kopciuszek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_209",
-      "question": "Darth Vader dławiący przeciwnika Mocą",
+      "question": "Śnieżka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_210",
-      "question": "Jack Sparrow zataczający się na statku",
+      "question": "Roszpunka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_211",
-      "question": "Sherlock Holmes badający ślady lupą",
+      "question": "Elsa",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_212",
-      "question": "Robin Hood strzelający z łuku",
+      "question": "Tarzan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_213",
-      "question": "Tarzan skaczący na lianie",
+      "question": "Zorro",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_214",
-      "question": "Superman latający z wyciągniętą ręką",
+      "question": "Sherlock",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_215",
-      "question": "Shrek ryczący na swoim bagnie",
+      "question": "Dracula",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_216",
-      "question": "Zorro kreślący literę Z szpadą",
+      "question": "Frankenstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_217",
-      "question": "Geralt z Rivii dobywający miecza",
+      "question": "Gandalf",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_218",
-      "question": "Elsa zamrażająca wszystko wokół",
+      "question": "Yoda",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_219",
-      "question": "Freddie Mercury śpiewający z statywem",
+      "question": "Gollum",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_220",
-      "question": "Joker śmiejący się maniacznie",
+      "question": "Pikachu",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_221",
-      "question": "Terminator zakładający okulary przeciwsłoneczne",
+      "question": "Mario",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_222",
-      "question": "Rocky Balboa biegający po schodach",
+      "question": "Garfield",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_223",
-      "question": "Indiana Jones uciekający przed toczącym się głazem",
+      "question": "Smerfetka",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_224",
-      "question": "Hulk wpadający w szał i niszczący rzeczy",
+      "question": "Gargamel",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_225",
-      "question": "Kopciuszek gubiący pantofelek",
+      "question": "Reksio",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_226",
-      "question": "Czerwony Kapturek idący z koszyczkiem",
+      "question": "Matołek",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_227",
-      "question": "Piotruś Pan walczący z Kapitanem Hakiem",
+      "question": "Napoleon",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_228",
-      "question": "Forrest Gump biegający w poprzek kraju",
+      "question": "Kopernik",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_229",
-      "question": "Wolverine wyciągający metalowe szpony",
+      "question": "Chopin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_230",
-      "question": "Thor zamachujący się młotem",
+      "question": "Einstein",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_231",
-      "question": "Pikachu rażący piorunem",
+      "question": "Kleopatra",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_232",
-      "question": "Super Mario skaczący na grzyba",
+      "question": "Elvis",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_233",
-      "question": "Dracula gryzący w szyję",
+      "question": "Rambo",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_234",
-      "question": "Frankenstein budzący się do życia",
+      "question": "Terminator",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_235",
-      "question": "Willy Wonka prezentujący fabrykę czekolady",
+      "question": "Joker",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_236",
-      "question": "Krzyk (Ghostface) dzwoniący z nożem",
+      "question": "Pocahontas",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_237",
-      "question": "Deadpool machający mieczami i żartujący",
+      "question": "Aladyn",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_238",
-      "question": "Barbie prezentująca idealną figurę",
+      "question": "Popeye",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_239",
-      "question": "Legolas strzelający serią strzał",
+      "question": "Asterix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_240",
-      "question": "Gollum pieszcząc swój cenne pierścień",
+      "question": "Obelix",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_241",
-      "question": "Gandalf uderzający laską i krzyczący Nie przejdziesz",
+      "question": "Kolumb",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_242",
-      "question": "Mikołaj wręczający prezenty z worka",
+      "question": "Mulan",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_243",
-      "question": "Diabeł wymachujący widłami",
+      "question": "Herkules",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_244",
-      "question": "Anioł grający na harfie",
+      "question": "Zeus",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_245",
-      "question": "Syrenka płynąca i podwijająca ogon",
+      "question": "Wiedźmin",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_246",
-      "question": "Kowboj wyciągający rewolwer z kabury",
+      "question": "Mikołaj",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_247",
-      "question": "Ninja rzucający shurikeny",
+      "question": "Stitch",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_248",
-      "question": "Pirat patrzący przez lunetę",
+      "question": "Robocop",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_249",
-      "question": "Wiking wiosłujący na drakkarze",
+      "question": "Pippi",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_250",
-      "question": "Wampir chroniący się przed słońcem",
+      "question": "Hobbit",
       "category": "Sławne Postacie & Postacie Fikcyjne",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_251",
-      "question": "Osoba próbująca złapać komara",
+      "question": "Karaoke",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_252",
-      "question": "Osoba chodząca po gorącym piasku",
+      "question": "Toast",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_253",
-      "question": "Osoba zakładająca ciasne buty",
+      "question": "Wesele",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_254",
-      "question": "Osoba jedząca bardzo ostre papryczki",
+      "question": "Urodziny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_255",
-      "question": "Osoba wędrująca po górach w zamieci",
+      "question": "Sylwester",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_256",
-      "question": "Osoba próbująca otworzyć wino bez korkociągu",
+      "question": "Ślub",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_257",
-      "question": "Osoba tańcząca hip-hop",
+      "question": "Oświadczyny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_258",
-      "question": "Osoba próbująca zapalić zapałkę na wietrze",
+      "question": "Randka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_259",
-      "question": "Osoba próbująca uciec przed rojem pszczół",
+      "question": "Kac",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_260",
-      "question": "Osoba grająca w wirtualnej rzeczywistości (VR)",
+      "question": "Selfie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_261",
-      "question": "Kierowca zepsutego auta na skrzyżowaniu",
+      "question": "Tort",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_262",
-      "question": "Pasażer ze spóźnionym pociągiem",
+      "question": "Prezent",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_263",
-      "question": "Osoba z niesamowicie mocnym ból zęba",
+      "question": "Konfetti",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_264",
-      "question": "Osoba poślizgująca się na skórce od banana",
+      "question": "Fajerwerki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_265",
-      "question": "Osoba wchodząca do bardzo zimnej wody",
+      "question": "Balony",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_266",
-      "question": "Osoba niosąca zbyt wiele siatek z zakupami",
+      "question": "Dyskoteka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_267",
-      "question": "Osoba szukająca telefonu, trzymając go w ręku",
+      "question": "Grill",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_268",
-      "question": "Osoba śpiewająca pod prysznicem",
+      "question": "Ognisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_269",
-      "question": "Osoba próbująca nawlec nitkę na igłę po ciemku",
+      "question": "Piknik",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_270",
-      "question": "Osoba wstrzymująca oddech pod wodą",
+      "question": "Kolejka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_271",
-      "question": "Osoba niespodziewanie oblana zimną wodą",
+      "question": "Spóźnienie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_272",
-      "question": "Osoba jedząca gorącą pizzę i parząca język",
+      "question": "Korek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_273",
-      "question": "Osoba zacięta przy goleniu",
+      "question": "Kłótnia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_274",
-      "question": "Osoba przymierzająca ciasne dżinsy",
+      "question": "Pocałunek",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_275",
-      "question": "Osoba próbująca złapać uciekający autobus",
+      "question": "Pożegnanie",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_276",
-      "question": "Osoba czkająca bez przerwy",
+      "question": "Egzamin",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_277",
-      "question": "Osoba potykająca się na prostej drodze",
+      "question": "Przeprowadzka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_278",
-      "question": "Osoba kichająca kilka razy z rzędu",
+      "question": "Wakacje",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_279",
-      "question": "Osoba zepsuła zamki w kurtce",
+      "question": "Lotnisko",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_280",
-      "question": "Osoba próbująca cicho otworzyć paczkę chipsów w nocy",
+      "question": "Walizka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_281",
-      "question": "Osoba, której zgasł telefon podczas ważnej rozmowy",
+      "question": "Winda",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_282",
-      "question": "Osoba pijąca zepsute mleko",
+      "question": "Imieniny",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_283",
-      "question": "Osoba zablokowana w toalecie publicznej",
+      "question": "Matura",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_284",
-      "question": "Osoba z mokrymi skarpetkami",
+      "question": "Studniówka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_285",
-      "question": "Osoba, której ptak zanieczyścił ubranie",
+      "question": "Wigilia",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_286",
-      "question": "Osoba próbująca zabić muchę gazeta",
+      "question": "Choinka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_287",
-      "question": "Osoba nadeptująca na klocki Lego boso",
+      "question": "Pisanki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_288",
-      "question": "Osoba marznąca na przystanku autobusowym",
+      "question": "Śmigus",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_289",
-      "question": "Osoba po użądleniu przez pszczołę w nos",
+      "question": "Andrzejki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_290",
-      "question": "Osoba zgubiła się w wielkim centrum handlowym",
+      "question": "Walentynki",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_291",
-      "question": "Osoba próbująca zapamiętać kod PIN",
+      "question": "Halloween",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_292",
-      "question": "Osoba walcząca z parasolką na wietrze",
+      "question": "Kostium",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_293",
-      "question": "Osoba, która wylała sok na białą koszulę",
+      "question": "Polonez",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_294",
-      "question": "Osoba udająca że rozumie obcy język",
+      "question": "Szampan",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_295",
-      "question": "Osoba zasypiająca na nudnym wykładzie",
+      "question": "Bufet",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_296",
-      "question": "Osoba, której wypadł klucz do studzienki",
+      "question": "Plotka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_297",
-      "question": "Osoba próbująca dogonić psa bez smyczy",
+      "question": "Mandat",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_298",
-      "question": "Osoba marząca o zimnym piwie w upał",
+      "question": "Stłuczka",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_299",
-      "question": "Osoba próbująca przeczytać drobny druk bez okularów",
+      "question": "Namiot",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_300",
-      "question": "Osoba powstrzymująca śmiech w kościele",
+      "question": "Autostop",
       "category": "Sytuacje Imprezowe & Z życia",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_301",
-      "question": "Dziecko budujące zamek z piasku",
+      "question": "Titanic",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_302",
-      "question": "Złodziej otwierający sejf",
+      "question": "Matrix",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_303",
-      "question": "Piosenkarz śpiewający do mikrofonu",
+      "question": "Avatar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_304",
-      "question": "Osoba grająca na perkusji",
+      "question": "Gladiator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_305",
-      "question": "Wędkarz złapawszy wielką rybę",
+      "question": "Rocky",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_306",
-      "question": "Osoba grająca na skrzypcami",
+      "question": "Szczęki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_307",
-      "question": "Piosenkarz rockowy rozbijający gitarę",
+      "question": "Psychoza",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_308",
-      "question": "Król nakładający koronę na głowę",
+      "question": "Obcy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_309",
-      "question": "Kat zamachujący się toporem",
+      "question": "Predator",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_310",
-      "question": "Czarownica mieszająca wywar w kotle",
+      "question": "Incepcja",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_311",
-      "question": "Rycerz ratujący księżniczkę z wieży",
+      "question": "Interstellar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_312",
-      "question": "Gladiator walczący z lwem",
+      "question": "Godzilla",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_313",
-      "question": "Pirat szukający zakopanego skarbu",
+      "question": "Kevin",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_314",
-      "question": "Astronauta wychodzący w otwartą przestrzeń",
+      "question": "Madagaskar",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_315",
-      "question": "Superbohater ratujący spadający autobus",
+      "question": "Zwierzogród",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_316",
-      "question": "Zombi powoli idące i wyciągające ręce",
+      "question": "Odlot",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_317",
-      "question": "Robot poruszający się sztywno",
+      "question": "Coco",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_318",
-      "question": "Mumia wyłaniająca się z grobowca",
+      "question": "Auta",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_319",
-      "question": "Duch latający i straszący ludzi",
+      "question": "Nemo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_320",
-      "question": "Kosmita badający ziemski przedmiot",
+      "question": "Dumbo",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_321",
-      "question": "Syrena śpiewająca na skale",
+      "question": "Bambi",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_322",
-      "question": "Wilkołak zmieniający się podczas pełni",
+      "question": "Vaiana",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_323",
-      "question": "Wampir śpiący w trumnie",
+      "question": "Ratatuj",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_324",
-      "question": "Krasnolud kopiący diamenty w kopalni",
+      "question": "Minionki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_325",
-      "question": "Elf strzelający łukiem z drzewa",
+      "question": "Smerfy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_326",
-      "question": "Smok ziejący ogniem",
+      "question": "Muminki",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_327",
-      "question": "Jednorożec biegający po tęczy",
+      "question": "Teletubisie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_328",
-      "question": "Kowboj jeżdżący na dzikim koniu",
+      "question": "Pokemon",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_329",
-      "question": "Indianin tańczący taniec deszczu",
+      "question": "Simpsonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_330",
-      "question": "Samuraj wykonujący cięcie kataną",
+      "question": "Flintstonowie",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_331",
-      "question": "Ninja skaczący z dachu na dach",
+      "question": "Scooby",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_332",
-      "question": "Wiking pijący miód z rogu",
+      "question": "Puchatek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_333",
-      "question": "Gladiator wznoszący kciuk w górę",
+      "question": "Krzyżacy",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_334",
-      "question": "Królowa wydająca wyrok skazujący",
+      "question": "Potop",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_335",
-      "question": "Błazen zabawiąjący dwór królewski",
+      "question": "Pianista",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_336",
-      "question": "Alchemik mieszający eliksiry",
+      "question": "Miś",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_337",
-      "question": "Detektyw szukający śladów z lupą",
+      "question": "Rejs",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_338",
-      "question": "Złodziej skradający się przez laserowe zabezpieczenia",
+      "question": "Kiler",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_339",
-      "question": "Tajna agentka rzucająca granat błyskowy",
+      "question": "Hydrozagadka",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_340",
-      "question": "Superzłoczyńca śmiejący się w swojej bazie",
+      "question": "Piraci",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_341",
-      "question": "Robot bojowy strzelający z laserów",
+      "question": "Rango",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_342",
-      "question": "Syrena wciągająca żeglarza pod wodę",
+      "question": "Zaplątani",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_343",
-      "question": "Minotaur krążący po labiryncie",
+      "question": "Merida",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_344",
-      "question": "Cyklop patrzący jednym wielkim okiem",
+      "question": "Bolt",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_345",
-      "question": "Meduza zamieniająca ludzi w kamień wzrokiem",
+      "question": "Gremliny",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_346",
-      "question": "Gargulec siedzący nieruchomo na dachu",
+      "question": "Casper",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_347",
-      "question": "Dżin wychodzący z zakurzonej lampy",
+      "question": "Mumia",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_348",
-      "question": "Pegaz machający skrzydłami",
+      "question": "Transformers",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_349",
-      "question": "Kraken zatapiający żaglowiec",
+      "question": "Tron",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_350",
-      "question": "Sfinks zadający trudną zagadkę",
+      "question": "Bajtek",
       "category": "Filmy & Bajki",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_351",
-      "question": "Osoba grająca na gitarze akustycznej",
+      "question": "Wędkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_352",
-      "question": "Osoba malująca obraz pędzlem",
+      "question": "Szydełkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_353",
-      "question": "Osoba układająca puzzle na stole",
+      "question": "Dzierganie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_354",
-      "question": "Osoba szydełkująca szalik z włóczki",
+      "question": "Rysowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_355",
-      "question": "Osoba rzeźbiąca w drewnie",
+      "question": "Fotografia",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_356",
-      "question": "Osoba fotografująca ptaki w lesie",
+      "question": "Ogrodnictwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_357",
-      "question": "Osoba czytająca wciągającą książkę",
+      "question": "Szachy",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_358",
-      "question": "Osoba układająca klocki Lego",
+      "question": "Warcaby",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_359",
-      "question": "Osoba pielęgnująca rośliny w ogrodzie",
+      "question": "Puzzle",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_360",
-      "question": "Osoba tańcząca salsę",
+      "question": "Sudoku",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_361",
-      "question": "Osoba grająca w planszówki z przyjaciółmi",
+      "question": "Krzyżówka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_362",
-      "question": "Osoba łowiąca ryby na kanapie",
+      "question": "Karty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_363",
-      "question": "Osoba majsterkująca w garażu",
+      "question": "Poker",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_364",
-      "question": "Osoba piekąca domowy chleb",
+      "question": "Gitara",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_365",
-      "question": "Osoba obserwująca gwiazdy przez teleskop",
+      "question": "Perkusja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_366",
-      "question": "Osoba zbierająca grzyby w lesie",
+      "question": "Pianino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_367",
-      "question": "Osoba nurkująca z rurką (snorkeling)",
+      "question": "Skrzypce",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_368",
-      "question": "Osoba jeżdżąca na rolkach w parku",
+      "question": "Trąbka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_369",
-      "question": "Osoba śpiewająca karaoke",
+      "question": "Harmonijka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_370",
-      "question": "Osoba układająca kostkę Rubika",
+      "question": "Śpiewanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_371",
-      "question": "Osoba grająca w szachy",
+      "question": "Czytanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_372",
-      "question": "Osoba tworząca ceramikę na kole garncarskim",
+      "question": "Medytacja",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_373",
-      "question": "Osoba robiąca zdjęcia aparat analogowym",
+      "question": "Origami",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_374",
-      "question": "Osoba tańcząca pole dance",
+      "question": "Grzybobranie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_375",
-      "question": "Osoba pisząca wiersz w notatniku",
+      "question": "Spacer",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_376",
-      "question": "Osoba szyjąca maskotkę na maszynie",
+      "question": "Rower",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_377",
-      "question": "Osoba piekąca dekoracyjne babeczki",
+      "question": "Biwakowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_378",
-      "question": "Osoba grająca w darta w pubie",
+      "question": "Żeglarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_379",
-      "question": "Osoba ćwicząca kaligrafię pędzlem",
+      "question": "Konsola",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_380",
-      "question": "Osoba miksująca muzykę jako DJ",
+      "question": "Granie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_381",
-      "question": "Osoba zbierająca znaczki pocztowe w klasztorze",
+      "question": "Kolekcjonowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_382",
-      "question": "Osoba jeżdżąca na deskorolce",
+      "question": "Majsterkowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_383",
-      "question": "Osoba ćwicząca jogę w plenerze",
+      "question": "Garncarstwo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_384",
-      "question": "Osoba składająca origami z papieru",
+      "question": "Rzeźbienie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_385",
-      "question": "Osoba grająca na ukulele",
+      "question": "Haftowanie",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_386",
-      "question": "Osoba trenująca sztuki walki",
+      "question": "Tatuaż",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_387",
-      "question": "Osoba spacerująca z wykrywaczem metalu",
+      "question": "Kino",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_388",
-      "question": "Osoba puszczająca latawiec na wietrze",
+      "question": "Teatr",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_389",
-      "question": "Osoba jeżdżąca na monocyklu",
+      "question": "Opera",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_390",
-      "question": "Osoba żonglująca piłeczkami",
+      "question": "Koncert",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_391",
-      "question": "Osoba grająca na harmonijce ustnej",
+      "question": "Akwarium",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_392",
-      "question": "Osoba wspinająca się na drzewo",
+      "question": "Latawiec",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_393",
-      "question": "Osoba puszczająca bańki mydlane",
+      "question": "Bańki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_394",
-      "question": "Osoba robiąca tatuaż maszynką",
+      "question": "Huśtawka",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_395",
-      "question": "Osoba jeżdżąca na hulajnodze wyczynowej",
+      "question": "Karuzela",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_396",
-      "question": "Osoba kempingująca pod namiotem",
+      "question": "Paintball",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_397",
-      "question": "Osoba grająca na pianinie",
+      "question": "Gokarty",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_398",
-      "question": "Osoba trenująca łucznictwo",
+      "question": "Planszówki",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_399",
-      "question": "Osoba układająca domino",
+      "question": "Jojo",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_400",
-      "question": "Osoba ucząca się sztuczek z kartami",
+      "question": "Ogród",
       "category": "Hobby & Czas Wolny",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_401",
-      "question": "Osoba bardzo wystraszona horrorem",
+      "question": "Złość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_402",
-      "question": "Osoba płacząca ze wzruszenia",
+      "question": "Radość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_403",
-      "question": "Osoba wściekła z powodu zepsutego auta",
+      "question": "Smutek",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_404",
-      "question": "Osoba śmiejąca się do łez",
+      "question": "Strach",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_405",
-      "question": "Osoba bardzo senna i ziewająca",
+      "question": "Zazdrość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_406",
-      "question": "Osoba zakochana z motylami w brzuchu",
+      "question": "Wstyd",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_407",
-      "question": "Osoba oburzona i machająca rękami",
+      "question": "Zdziwienie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_408",
-      "question": "Osoba dumna ze swojego sukcesu",
+      "question": "Obrzydzenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_409",
-      "question": "Osoba zestresowana przed egzaminem",
+      "question": "Nuda",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_410",
-      "question": "Osoba podejrzliwa i rozglądająca się",
+      "question": "Zmęczenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_411",
-      "question": "Osoba wściekła na spóźniony autobus",
+      "question": "Zakochanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_412",
-      "question": "Osoba bardzo znudzona na spotkaniu",
+      "question": "Duma",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_413",
-      "question": "Osoba marząca z głową w chmurach",
+      "question": "Stres",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_414",
-      "question": "Osoba zawstydzona po gafie",
+      "question": "Panika",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_415",
-      "question": "Osoba przerażona pająkiem",
+      "question": "Euforia",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_416",
-      "question": "Osoba zachwycona pięknym widokiem",
+      "question": "Ekscytacja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_417",
-      "question": "Osoba zniecierpliwiona stojąca w kolejce",
+      "question": "Rozczarowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_418",
-      "question": "Osoba zazdrosna patrząca z boku",
+      "question": "Zakłopotanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_419",
-      "question": "Osoba w głębokiej rozpaczy",
+      "question": "Tęsknota",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_420",
-      "question": "Osoba bardzo odważna prężąca klatkę",
+      "question": "Ulga",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_421",
-      "question": "Osoba obrzydzona zepsutym jedzeniem",
+      "question": "Lenistwo",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_422",
-      "question": "Osoba oszołomiona i kręcąca się w głowie",
+      "question": "Niecierpliwość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_423",
-      "question": "Osoba skryta chowająca twarz",
+      "question": "Ciekawość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_424",
-      "question": "Osoba chciwa zgarniająca monety",
+      "question": "Nieśmiałość",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_425",
-      "question": "Osoba wściekła grająca w grę i rzucająca padem",
+      "question": "Arogancja",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_426",
-      "question": "Osoba podejrzewająca zdradę",
+      "question": "Płacz",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_427",
-      "question": "Osoba rozkojarzona zapominająca co robi",
+      "question": "Śmiech",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_428",
-      "question": "Osoba zachłanna jedząca łapczywie",
+      "question": "Chichot",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_429",
-      "question": "Osoba cieszaca się jak dziecko z prezentu",
+      "question": "Krzyk",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_430",
-      "question": "Osoba bezradna rozkładająca ręce",
+      "question": "Szept",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_431",
-      "question": "Osoba udająca twardziela",
+      "question": "Czkawka",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_432",
-      "question": "Osoba zestresowana rozmową telefoniczną",
+      "question": "Kichanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_433",
-      "question": "Osoba panikująca z powodu zgubionego dziecka",
+      "question": "Kaszel",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_434",
-      "question": "Osoba czująca ulgę po zdany teście",
+      "question": "Drżenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_435",
-      "question": "Osoba wściekła na hałasujących sąsiadów",
+      "question": "Rumieniec",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_436",
-      "question": "Osoba zamyślona drapiąca się po głowie",
+      "question": "Mruganie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_437",
-      "question": "Osoba zszokowana niespodziewaną wiadomością",
+      "question": "Podglądanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_438",
-      "question": "Osoba obojętna wzruszająca ramionami",
+      "question": "Skradanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_439",
-      "question": "Osoba pewna siebie krocząca z wysoko podniesioną głową",
+      "question": "Foch",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_440",
-      "question": "Osoba podejrzana próbująca coś ukryć za plecami",
+      "question": "Przytulanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_441",
-      "question": "Osoba przestraszona nagłym grzmotem",
+      "question": "Klaskanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_442",
-      "question": "Osoba zniecierpliwiona stukająca palcami w stół",
+      "question": "Machanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_443",
-      "question": "Osoba złośliwa knująca spisek",
+      "question": "Ukłon",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_444",
-      "question": "Osoba wzruszona słuchając pięknej muzyki",
+      "question": "Salutowanie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_445",
-      "question": "Osoba wstydząca się zabrać głos",
+      "question": "Wzruszenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_446",
-      "question": "Osoba zrezygnowana machająca ręką",
+      "question": "Histeria",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_447",
-      "question": "Osoba podekscytowana nadchodzącą podróżą",
+      "question": "Zamyślenie",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_448",
-      "question": "Osoba uśmiechająca się nieszczerze",
+      "question": "Senność",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_449",
-      "question": "Osoba przestraszona własnym odbiciem",
+      "question": "Głód",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_450",
-      "question": "Osoba płacząca ze złości",
+      "question": "Flirt",
       "category": "Emocje & Zachowania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_451",
-      "question": "Skok na bungee nad przepaścią",
+      "question": "Bungee",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_452",
-      "question": "Chodzenie po rozżarzonych węglach",
+      "question": "Spadochron",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_453",
-      "question": "Walka z niedźwiedziem w lesie",
+      "question": "Paralotnia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_454",
-      "question": "Skok ze spadochronem z samolotu",
+      "question": "Alpinizm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_455",
-      "question": "Przeżycie w dżungli bez jedzenia",
+      "question": "Everest",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_456",
-      "question": "Ucieczka przed lawiną na nartach",
+      "question": "Rafting",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_457",
-      "question": "Osoba zamknięta w klatce z rekinami",
+      "question": "Kitesurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_458",
-      "question": "Wspinaczka na Mount Everest w zamieci",
+      "question": "Windsurfing",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_459",
-      "question": "Przeprawa przez pustynię bez wody",
+      "question": "Wakeboard",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_460",
-      "question": "Chodzenie po linie między wieżowcami",
+      "question": "Parkour",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_461",
-      "question": "Osoba gasząca płonący budynek",
+      "question": "Motocross",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_462",
-      "question": "Ucieczka przed tornadem samochodem",
+      "question": "Rajd",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_463",
-      "question": "Jedzenie żywego skorpiona",
+      "question": "Wyścig",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_464",
-      "question": "Próba wydostania się z tonącego samochodu",
+      "question": "Żonglerka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_465",
-      "question": "Ucieczka przed stadem szarżujących byków",
+      "question": "Linoskoczek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_466",
-      "question": "Osoba lądująca uszkodzonym samolotem",
+      "question": "Rodeo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_467",
-      "question": "Przeprawa przez rzekę pełną piranii",
+      "question": "Korrida",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_468",
-      "question": "Osoba uwięziona w płonącym windzie",
+      "question": "Morsowanie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_469",
-      "question": "Kierowca Formuły 1 w padającym deszczu przy 300 km/h",
+      "question": "Speleologia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_470",
-      "question": "Ucieczka z walącego się budynku podczas trzęsienia ziemi",
+      "question": "Jaskinia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_471",
-      "question": "Lądowanie bez spadochronu na stóg siana",
+      "question": "Lodowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_472",
-      "question": "Walka z aligatorem na bagnach",
+      "question": "Lawina",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_473",
-      "question": "Chodzenie po szkle boso",
+      "question": "Sztorm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_474",
-      "question": "Szybki zjazd na linie (zipline) nad wielkim kanionem",
+      "question": "Huragan",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_475",
-      "question": "Nurek schodzący na 100 metrów bez akwalungu",
+      "question": "Pustynia",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_476",
-      "question": "Przeprawa przez pole minowe",
+      "question": "Dżungla",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_477",
-      "question": "Rozbrajanie bomby zegarowej na 3 sekundy przed wybuchem",
+      "question": "Survival",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_478",
-      "question": "Ucieczka z więzienia o maksymalnym rygorze",
+      "question": "Rozbitek",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_479",
-      "question": "Stawienie czoła tsunami na plaży",
+      "question": "Ucieczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_480",
-      "question": "Latanie w kombinezonie wingsuit blisko skał",
+      "question": "Pościg",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_481",
-      "question": "Próba powstrzymania rozpędzonego pociągu",
+      "question": "Kaskader",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_482",
-      "question": "Osoba utknęła na diabelskim młynie na samej górze",
+      "question": "Szybowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_483",
-      "question": "Osoba wciągana przez ruchome piaski",
+      "question": "Sterowiec",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_484",
-      "question": "Przeżycie na bezludnej wyspie przez rok",
+      "question": "Wingsuit",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_485",
-      "question": "Wspinaczka bez zabezpieczenia (free solo)",
+      "question": "Freediving",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_486",
-      "question": "Ucieczka przed watahą głodnych wilków",
+      "question": "Triathlon",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_487",
-      "question": "Przejście przez płonący tunel",
+      "question": "Ironman",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_488",
-      "question": "Osoba na tratwie podczas sztormu na oceanie",
+      "question": "Ultramaraton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_489",
-      "question": "Zjazd na desce po zboczu aktywnego wulkanu",
+      "question": "Skeleton",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_490",
-      "question": "Skok z klifu do wzburzonego morza",
+      "question": "Bobsleje",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_491",
-      "question": "Osoba osaczona przez jadowite węże",
+      "question": "Saneczkarstwo",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_492",
-      "question": "Próba opanowania szalejącego pożaru lasu",
+      "question": "Rollercoaster",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_493",
-      "question": "Zjazd bobslejem po oblodzonym torze",
+      "question": "Labirynt",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_494",
-      "question": "Przeprawa przez lodowatą rzekę na Syberii",
+      "question": "Pożar",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_495",
-      "question": "Osoba potrącona przez falę uderzeniową wybuchu",
+      "question": "Powódź",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_496",
-      "question": "Ucieczka przed rojem szerszeni aziatyckich",
+      "question": "Duch",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_497",
-      "question": "Lot motolotnią w trakcie burzy z piorunami",
+      "question": "Zombie",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_498",
-      "question": "Kaskader wykonujący dachowanie autem",
+      "question": "Wampir",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_499",
-      "question": "Walka o ogień w epoce kamienia",
+      "question": "Egzorcyzm",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     },
     {
       "id": "rc_500",
-      "question": "Osoba wciągnięta w wir wodny",
+      "question": "Wspinaczka",
       "category": "Ekstremalne Wyzwania",
       "difficulty": "Łatwy"
     }
